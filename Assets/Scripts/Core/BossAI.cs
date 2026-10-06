@@ -33,7 +33,7 @@ public class BossAI : EnemyAI
     // 이벤트
     public event System.Action<int> OnPhaseChanged; // newPhaseIndex
     public event System.Action OnEnrageActivated;
-    public event System.Action<float> OnShieldChanged; // current, max
+    public event System.Action<float, float> OnShieldChanged; // current, max
 
     protected override void Awake()
     {
@@ -190,7 +190,7 @@ public class BossAI : EnemyAI
         // 보스 사망 이펙트, 드롭 등
     }
 
-    void OnDrawGizmosSelected()
+    protected override void OnDrawGizmosSelected()
     {
         base.OnDrawGizmosSelected();
 

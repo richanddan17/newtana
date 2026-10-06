@@ -58,9 +58,53 @@ public class EnemyAnimation : MonoBehaviour
         // EnemyAI 이벤트 구독
         if (enemyAI != null)
         {
-            // EnemyAI에 상태 변경 이벤트 추가 필요 (현재 없음)
-            // 임시: LateUpdate에서 상태 폴링
+            enemyAI.OnStateChanged += HandleStateChanged;
         }
+        if (enemyHealth != null)
+        {
+            enemyHealth.OnDamaged += HandleDamaged;
+            enemyHealth.OnDied += HandleDied;
+        }
+    }
+
+    void OnDestroy()
+    {
+        if (enemyAI != null)
+            enemyAI.OnStateChanged -= HandleStateChanged;
+        if (enemyHealth != null)
+        {
+            enemyHealth.OnDamaged -= HandleDamaged;
+            enemyHealth.OnDied -= HandleDied;
+        }
+    }
+
+    void HandleStateChanged(EnemyAI.AIState previous, EnemyAI.AIState next)
+    {
+        switch (next)
+        {
+            case EnemyAI.AIState.Shoot:
+                OnShoot();
+                break;
+            case EnemyAI.AIState.Hurt:
+                OnHurt();
+                break;
+            case EnemyAI.AIState.Stagger:
+                OnStagger();
+                break;
+            case EnemyAI.AIState.Dead:
+                OnDeath();
+                break;
+        }
+    }
+
+    void HandleDamaged(DamageInfo info)
+    {
+        OnHurt();
+    }
+
+    void HandleDied()
+    {
+        OnDeath();
     }
 
     void LateUpdate()
@@ -126,16 +170,34 @@ public class EnemyAnimation : MonoBehaviour
     {
         if (dir.sqrMagnitude < 0.01f) return 0;
 
+        // 타입별 조준 방향 수: AR=3(정면/위/아래), RPG/Sniper=1(정면 전용)
+        int dirCount = GetAimDirectionCount();
+        if (dirCount <= 1) return 0;
+
         float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
         if (angle < 0) angle += 360f;
 
-        // PlayerAnimation과 동일한 5구역 매핑
-        if (angle >= 337.5f || angle < 22.5f) return 0;           // 정면 (우)
-        if (angle >= 157.5f && angle < 202.5f) return 0;          // 정면 (좌)
-        if (angle >= 67.5f && angle < 112.5f) return 1;           // 위
-        if ((angle >= 22.5f && angle < 67.5f) || (angle >= 112.5f && angle < 157.5f)) return 2; // 대각위
-        if (angle >= 247.5f && angle < 292.5f) return 3;          // 아래
-        return 4; // 대각아래
+        // 3방향 스냅: 정면(0) / 위(1) / 아래(3)
+        if (angle >= 315f || angle < 45f) return 0;                    // 정면 (우)
+        if (angle >= 135f && angle < 225f) return 0;                   // 정면 (좌)
+        if (angle >= 45f && angle < 135f) return 1;                    // 위
+        return 3;                                                      // 아래
+    }
+
+    int GetAimDirectionCount()
+    {
+        if (enemyAI == null) return 3;
+
+        switch (enemyAI.EnemyType)
+        {
+            case EnemyAIData.EnemyType.RPG:
+            case EnemyAIData.EnemyType.Sniper:
+                return 1;
+            case EnemyAIData.EnemyType.AR:
+                return 3;
+        }
+
+        return enemyAI.AIData != null ? Mathf.Max(1, enemyAI.AIData.aimDirectionCount) : 3;
     }
 
     void UpdateMuzzlePosition()

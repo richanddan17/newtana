@@ -54,6 +54,11 @@ public class EnemyHealth : MonoBehaviour, IDamageable
     public bool IsDead => isDead;
     public Team Team => teamComponent?.Team ?? Team.Enemy;
 
+    public bool IsInvincibleNow()
+    {
+        return invincibilityTimer > 0f;
+    }
+
     public event System.Action<DamageInfo> OnDamagedEvent
     {
         add => OnDamaged += value;
@@ -94,7 +99,7 @@ public class EnemyHealth : MonoBehaviour, IDamageable
                 // AI에 경직 끝 알림
                 if (enemyAI != null)
                 {
-                    // enemyAI.ExitStagger(); // EnemyAI에 메서드 추가 필요
+                    enemyAI.ExitStagger();
                 }
             }
         }
@@ -116,7 +121,6 @@ public class EnemyHealth : MonoBehaviour, IDamageable
         // 데미지 적용
         float finalDamage = info.Damage; // 방어력 계산 확장 가능
         currentHealth = Mathf.Max(0f, currentHealth - finalDamage);
-        OnDamaged?.Invoke(info);
 
         // 피격 무적
         invincibilityTimer = hitInvincibilityDuration;
@@ -125,10 +129,15 @@ public class EnemyHealth : MonoBehaviour, IDamageable
         float poiseDamage = finalDamage * 0.5f; // 데미지의 50%를 poise 데미지로
         currentPoise -= poiseDamage;
 
+        // 1) poise 평가 → 2) Stagger 진입 → 3) OnDamaged 발화
+        // (OnDamaged가 먼저 발화되면 EnemyAI.OnDamaged가 IsStaggered==false를 보고
+        //  Hurt로 전환되어 Stagger 진입이 실패하는 버그 수정)
         if (currentPoise <= 0f && !isStaggered)
         {
             EnterStagger();
         }
+
+        OnDamaged?.Invoke(info);
 
         // 넉백 (약하게)
         if (info.KnockbackForce > 0f)
@@ -197,6 +206,13 @@ public class EnemyHealth : MonoBehaviour, IDamageable
         gameObject.SetActive(true);
     }
 
+    /// <summary>최대 체력 변경 (업그레이드 등)</summary>
+    public void SetMaxHealth(float newMaxHealth)
+    {
+        maxHealth = Mathf.Max(1f, newMaxHealth);
+        currentHealth = Mathf.Min(currentHealth, maxHealth);
+    }
+
     #endregion
 
     void EnterStagger()
@@ -208,7 +224,7 @@ public class EnemyHealth : MonoBehaviour, IDamageable
         // AI에 경직 알림
         if (enemyAI != null)
         {
-            // enemyAI.EnterStagger(); // EnemyAI에 구현 필요
+            enemyAI.EnterStagger();
         }
     }
 

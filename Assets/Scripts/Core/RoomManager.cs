@@ -12,10 +12,6 @@ using System.Collections.Generic;
 [DisallowMultipleComponent]
 public class RoomManager : MonoBehaviour
 {
-    [Header("References")]
-    [SerializeField] RoomCamera roomCamera;
-    [SerializeField] RespawnSystem respawnSystem;
-
     [Header("Settings")]
     [SerializeField] bool autoFindRooms = true;
     [SerializeField] bool debugLogTransitions = true;
@@ -37,14 +33,17 @@ public class RoomManager : MonoBehaviour
             FindAllRooms();
         }
 
-        // Room 이벤트 구독
+        // Room 진입 이벤트 구독 (이탈은 Room이 직접 처리: 적 비활성화)
         foreach (var room in allRooms)
         {
             room.OnPlayerEntered += OnRoomPlayerEntered;
-            room.OnPlayerExited += OnRoomPlayerExited;
         }
+    }
 
-        // 초기 Room 결정 (플레이어 위치 기반)
+    void Start()
+    {
+        // Awake가 모두 끝난 뒤 초기 Room을 확정해 구독자(RoomCamera, HUD)에 알린다.
+        // Awake에서 하면 RoomCamera가 아직 OnRoomChanged를 구독하지 않은 상태가 될 수 있다.
         DetermineInitialRoom();
     }
 
@@ -53,7 +52,6 @@ public class RoomManager : MonoBehaviour
         foreach (var room in allRooms)
         {
             room.OnPlayerEntered -= OnRoomPlayerEntered;
-            room.OnPlayerExited -= OnRoomPlayerExited;
         }
     }
 
@@ -76,17 +74,7 @@ public class RoomManager : MonoBehaviour
         if (player == null) return;
 
         Vector2 playerPos = player.transform.position;
-        currentRoom = null;
-
-        // 플레이어가 속한 Room 찾기
-        foreach (var room in allRooms)
-        {
-            if (room.ContainsPoint(playerPos))
-            {
-                currentRoom = room;
-                break;
-            }
-        }
+        currentRoom = GetRoomAtPosition(playerPos);
 
         // 못 찾으면 첫 번째 Room
         if (currentRoom == null && allRooms.Count > 0)
@@ -94,17 +82,13 @@ public class RoomManager : MonoBehaviour
             currentRoom = allRooms[0];
         }
 
-        if (currentRoom != null)
-        {
-            if (debugLogTransitions)
-                Debug.Log($"[RoomManager] Initial room: {currentRoom.RoomName}");
+        if (currentRoom == null) return;
 
-            // RoomCamera에 알림
-            if (roomCamera != null)
-            {
-                // RoomCamera 내부에서 OnRoomChanged 호출됨
-            }
-        }
+        if (debugLogTransitions)
+            Debug.Log($"[RoomManager] Initial room: {currentRoom.RoomName}");
+
+        // 구독자가 초기 Room을 알 수 있도록 이벤트를 발생시킨다
+        OnRoomChanged?.Invoke(currentRoom, null);
     }
 
     void OnRoomPlayerEntered(Room room)
@@ -118,18 +102,6 @@ public class RoomManager : MonoBehaviour
             Debug.Log($"[RoomManager] Room changed: {oldRoom?.RoomName ?? "None"} -> {currentRoom.RoomName}");
 
         OnRoomChanged?.Invoke(currentRoom, oldRoom);
-
-        // RespawnSystem에 현재 Room 알림 (부활 시 사용)
-        if (respawnSystem != null)
-        {
-            // RespawnSystem 내부에서 현재 Room 참조
-        }
-    }
-
-    void OnRoomPlayerExited(Room room)
-    {
-        // Room 이탈은 Room 진입 시 처리되므로 여기선 별도 처리 안 함
-        // (플레이어가 다른 Room에 진입하면 OnRoomPlayerEntered 호출됨)
     }
 
     /// <summary>외부에서 강제 Room 설정 (부활 시 등)</summary>
@@ -207,7 +179,18 @@ public class RoomManager : MonoBehaviour
     [ContextMenu("Refresh Rooms")]
     public void RefreshRooms()
     {
+        // 재탐색 전 기존 Room의 이벤트 구독을 해제해야 중복 구독이 생기지 않는다
+        foreach (var room in allRooms)
+        {
+            room.OnPlayerEntered -= OnRoomPlayerEntered;
+        }
+
         FindAllRooms();
+
+        foreach (var room in allRooms)
+        {
+            room.OnPlayerEntered += OnRoomPlayerEntered;
+        }
     }
 
     void OnDrawGizmosSelected()

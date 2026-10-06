@@ -4,7 +4,7 @@ using UnityEngine;
 /// 플레이어 이동 시스템.
 /// 계획서 player-movement-system.md [1]~[9] 반영.
 /// PlayerStateController의 상태/허용 규칙을 참조하여 이동 허용 여부 결정.
-/// GroundCheck 컴포넌트로 지상 판정 분리 (이동용 Ground와 카메라용 Room Boundary 분리).
+/// 지상 판정은 StateController 단일 출처 (폴백: GroundCheck 컴포넌트).
 /// 상태 시스템이 애니메이션을 직접 호출하지 않고, 이동 결과값만 읽도록 분리.
 /// </summary>
 [DisallowMultipleComponent]
@@ -20,14 +20,21 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float maxMoveSpeed = 6f;
     [SerializeField] float acceleration = 50f;
     [SerializeField] float deceleration = 60f;
+    [SerializeField] float turnDeceleration = 200f; // 반전 감속 (크면 급정거)
+    [SerializeField] bool instantTurnStop = false;   // 방향 전환 시 즉시 정지 옵션
+
+    [Header("Air Move Settings")]
     [SerializeField] float airAcceleration = 30f;
     [SerializeField] float airDeceleration = 15f;
+    [SerializeField] float airTurnDeceleration = 40f; // 공중 반전 감속 (기본: 지상보다 약하게)
+    [SerializeField] float airControlMultiplier = 1f; // 공중 가속/감속 배율
     [SerializeField] float maxAirMoveSpeed = 5f;
 
     [Header("Shoot Move Modifier")]
     [SerializeField] bool shootMoveEnabled = true;
-    [SerializeField, Range(0f, 1f)] float shootMoveSpeedMultiplier = 1f; // 1.0 = 감속 없음
-    [SerializeField] bool aimLockWhileShooting = false; // 조준 고정 옵션
+    [SerializeField] float whileShootingMultiplier = 1f; // 1.0 = 감속 없음
+    [SerializeField] float airWhileShootingMultiplier = 1f; // 공중 사격 중 별도 배율
+    [SerializeField] bool lockAimWhileShooting = false; // 조준 고정 옵션 (기본 false)
 
     [Header("Jump Settings")]
     [SerializeField] float jumpForce = 14f;
@@ -36,6 +43,28 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float jumpCutGravityScale = 2.5f;
     [SerializeField] float maxFallSpeed = 25f;
     [SerializeField] float fallGravityScale = 1.5f;
+
+    [Header("Apex Modifier (정점 보정)")]
+    [SerializeField] bool enableApexModifier = true;
+    [SerializeField] float apexVelocityThreshold = 2f; // |vy|가 이 값 미만이면 정점 구간
+    [SerializeField] float apexGravityMultiplier = 0.5f; // 정점 구간 중력 약화
+    [SerializeField] float apexAccelerationBonus = 20f;  // 정점 구간 공중 가속 보너스
+
+    [Header("Corner Correction (코너 보정)")]
+    [SerializeField] bool enableCornerCorrection = true;
+    [SerializeField] float cornerCorrectionDistance = 0.3f; // 보정 거리 한도
+    [SerializeField] float cornerCheckDistance = 0.3f;      // 머리 좌/우 체크 거리
+    [SerializeField] LayerMask cornerCorrectionMask = 1 << 3;
+
+    [Header("Ledge Forgiveness (레지 보정)")]
+    [SerializeField] bool enableLedgeForgiveness = true;
+    [SerializeField] float ledgeForgivenessHeight = 0.15f;     // 올려주는 최대 높이 (작게)
+    [SerializeField] float ledgeForgivenessHorizontal = 0.1f;  // 가로 허용 범위 (작게)
+    [SerializeField] LayerMask ledgeForgivenessMask = 1 << 3;
+
+    [Header("Dash Corner Correction")]
+    [SerializeField] bool enableDashCornerCorrection = true;
+    [SerializeField] float dashCornerCorrectionDistance = 0.3f;
 
     [Header("Dash/Knockback (외부 속도 연동)")]
     [SerializeField] bool overrideExternalVelocity = true;
@@ -48,11 +77,13 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] bool drawGizmos = true;
 
     // 내부 상태
-    float coyoteTimer;
-    bool wasGrounded;
+    bool cornerCorrectionUsed; // 점프당 1회만 보정
 
     // 프로퍼티 (애니메이션/다른 시스템이 읽기만 함)
-    public bool IsGrounded => groundCheck != null && groundCheck.IsGrounded;
+    // 지상 판정 단일 출처: StateController.IsGrounded (폴백: GroundCheck 컴포넌트)
+    public bool IsGrounded => stateController != null
+        ? stateController.IsGrounded
+        : (groundCheck != null && groundCheck.IsGrounded);
     public Vector2 Velocity => rb ? rb.linearVelocity : Vector2.zero;
     public float HorizontalSpeed => Mathf.Abs(Velocity.x);
     public float VerticalSpeed => Velocity.y;
@@ -74,12 +105,6 @@ public class PlayerMovement : MonoBehaviour
         rb.freezeRotation = true;
         rb.gravityScale = 1f;
 
-        // GroundCheck 이벤트 구독
-        if (groundCheck != null)
-        {
-            groundCheck.OnGroundedChanged += OnGroundedChanged;
-        }
-
         // StateController 이벤트 구독
         if (stateController != null)
         {
@@ -89,26 +114,11 @@ public class PlayerMovement : MonoBehaviour
 
     void OnDestroy()
     {
-        if (groundCheck != null) groundCheck.OnGroundedChanged -= OnGroundedChanged;
         PlayerStateEvents.OnMoveStateChanged -= OnMoveStateChanged;
-    }
-
-    void OnGroundedChanged(bool grounded)
-    {
-        if (grounded)
-        {
-            coyoteTimer = stateController != null ? stateController.CoyoteTime : 0.1f;
-        }
     }
 
     void Update()
     {
-        // Coyote timer (FixedUpdate에서 감소하지만 Update에서도 동기화)
-        if (!IsGrounded)
-        {
-            coyoteTimer -= Time.deltaTime;
-        }
-
         // 방향 전환 (StateController가 관리하지만 여기에서도 동기화)
         UpdateFacingDirection();
     }
@@ -120,15 +130,29 @@ public class PlayerMovement : MonoBehaviour
         // 상태별 이동 허용 확인
         bool canMove = stateController.CanMove;
         bool isDashing = stateController.IsDashing;
+        bool isCrouching = stateController.IsCrouching;
+
+        // 지상이면 코너 보정 1회 제한 리셋
+        if (IsGrounded) cornerCorrectionUsed = false;
 
         // 외부 속도(대시/넉백) 처리
-        if (isDashing || (overrideExternalVelocity && HasExternalVelocity()))
+        if (isDashing)
         {
+            // 대시 중에는 대시 코너 보정만 허용
+            TryDashCornerCorrection();
             ApplyGravityOnly();
             return;
         }
 
-        if (!canMove)
+        if (overrideExternalVelocity && HasExternalVelocity())
+        {
+            // 외부 속도 중에는 기본 코너 보정만 허용
+            TryCornerCorrection();
+            ApplyGravityOnly();
+            return;
+        }
+
+        if (!canMove || isCrouching)
         {
             Decelerate();
             ApplyGravity();
@@ -140,6 +164,10 @@ public class PlayerMovement : MonoBehaviour
 
         // 점프 처리 (StateController의 버퍼와 연동)
         HandleJump();
+
+        // 관용 시스템 (이동 시스템 안에서 처리, 결과만 전달)
+        TryCornerCorrection();
+        TryLedgeForgiveness();
 
         // 중력 적용
         ApplyGravity();
@@ -158,13 +186,13 @@ public class PlayerMovement : MonoBehaviour
         float speedMultiplier = 1f;
         if (stateController.CurrentOverlayState == PlayerState.Shooting)
         {
-            if (!shootMoveEnabled)
+            if (lockAimWhileShooting || !shootMoveEnabled)
             {
                 inputDir = Vector2.zero; // 조준 고정 시 이동 입력 무시
             }
             else
             {
-                speedMultiplier = shootMoveSpeedMultiplier;
+                speedMultiplier = IsGrounded ? whileShootingMultiplier : airWhileShootingMultiplier;
             }
         }
 
@@ -177,23 +205,55 @@ public class PlayerMovement : MonoBehaviour
             inputDir = slopeDir * inputAlongSlope;
         }
 
+        // 현재 속도
+        float currentSpeed = rb.linearVelocity.x;
+
         // 목표 속도 계산
         if (inputDir.x != 0f)
         {
             targetSpeed = inputDir.x * maxMoveSpeed * speedMultiplier;
-            currentAccel = IsGrounded ? acceleration : airAcceleration;
+            if (IsGrounded)
+            {
+                currentAccel = acceleration;
+            }
+            else
+            {
+                currentAccel = airAcceleration * airControlMultiplier;
+                // 정점 보정: 같은 구간에서 공중 가속 보너스
+                if (IsInApexWindow()) currentAccel += apexAccelerationBonus;
+            }
         }
         else
         {
-            currentDecel = IsGrounded ? deceleration : airDeceleration;
+            currentDecel = IsGrounded ? deceleration : airDeceleration * airControlMultiplier;
         }
 
-        // 현재 속도
-        float currentSpeed = rb.linearVelocity.x;
-        
-        // 가속/감속
+        // 가속/감속/반전 감속 결정
+        float accelRate;
+        if (targetSpeed == 0f)
+        {
+            accelRate = currentDecel;
+        }
+        else if (currentSpeed != 0f && Mathf.Sign(targetSpeed) != Mathf.Sign(currentSpeed))
+        {
+            // 반전 감속 (Turn Deceleration)
+            if (instantTurnStop)
+            {
+                // 즉시 정지 후 남은 프레임에서 반대 방향 가속이 이어지도록
+                currentSpeed = 0f;
+                accelRate = IsGrounded ? acceleration : airAcceleration * airControlMultiplier;
+            }
+            else
+            {
+                accelRate = IsGrounded ? turnDeceleration : airTurnDeceleration;
+            }
+        }
+        else
+        {
+            accelRate = currentAccel;
+        }
+
         float speedDiff = targetSpeed - currentSpeed;
-        float accelRate = (targetSpeed == 0f) ? currentDecel : currentAccel;
         float movement = speedDiff * accelRate * Time.fixedDeltaTime;
 
         // 공중 최대 속도 제한
@@ -209,7 +269,7 @@ public class PlayerMovement : MonoBehaviour
     void Decelerate()
     {
         float currentSpeed = rb.linearVelocity.x;
-        float decel = IsGrounded ? deceleration : airDeceleration;
+        float decel = IsGrounded ? deceleration : airDeceleration * airControlMultiplier;
         float newSpeed = Mathf.MoveTowards(currentSpeed, 0f, decel * Time.fixedDeltaTime);
         rb.linearVelocity = new Vector2(newSpeed, rb.linearVelocity.y);
     }
@@ -220,9 +280,9 @@ public class PlayerMovement : MonoBehaviour
 
     void HandleJump()
     {
-        // StateController의 WasJumpPressedThisFrame + 자체 Coyote 확인
+        // StateController의 WasJumpPressedThisFrame + 단일 출처 Coyote 확인
         bool jumpInput = stateController.WasJumpPressedThisFrame;
-        bool canJump = IsGrounded || coyoteTimer > 0f;
+        bool canJump = IsGrounded || stateController.CanUseCoyoteTime;
 
         if (jumpInput && canJump && stateController.CanJump)
         {
@@ -238,11 +298,9 @@ public class PlayerMovement : MonoBehaviour
 
     void ExecuteJump()
     {
-        coyoteTimer = 0f;
-        
-        // StateController의 점프 버퍼도 소비 (이벤트 또는 직접 호출 필요)
-        // 현재는 StateController 내부에서 관리하므로 여기선 로컬만 리셋
-        
+        // StateController에 점프 실행 통지 (coyote/buffer 소비)
+        stateController.NotifyJumpExecuted();
+
         // 점프 힘 계산 (최대 높이 기반 보정)
         float gravity = Physics2D.gravity.y * rb.gravityScale;
         float requiredVelocity = Mathf.Sqrt(-2f * gravity * maxJumpHeight);
@@ -255,11 +313,21 @@ public class PlayerMovement : MonoBehaviour
 
     #region Gravity
 
+    bool IsInApexWindow()
+    {
+        return enableApexModifier && !IsGrounded && Mathf.Abs(rb.linearVelocity.y) < apexVelocityThreshold;
+    }
+
     void ApplyGravity()
     {
         float gravityScale = 1f;
 
-        if (rb.linearVelocity.y < 0f)
+        // 정점 보정 우선순위 최상: 정점 구간에서는 하강 배율/점프 컷 미적용
+        if (IsInApexWindow())
+        {
+            gravityScale = apexGravityMultiplier;
+        }
+        else if (rb.linearVelocity.y < 0f)
         {
             // 낙하 중: 더 빠른 낙하
             gravityScale = fallGravityScale;
@@ -291,6 +359,77 @@ public class PlayerMovement : MonoBehaviour
 
     #endregion
 
+    #region Forgiveness (코너/레지/대시 보정)
+
+    void TryCornerCorrection()
+    {
+        if (!enableCornerCorrection || cornerCorrectionUsed) return;
+        // 상승 중(vy > 0)에만 작동, 충돌로 vy=0이 되기 전에 판정
+        if (rb.linearVelocity.y <= 0f) return;
+
+        Vector2 headPos = (Vector2)transform.position + Vector2.up * 0.5f;
+        bool leftBlocked = Physics2D.Raycast(headPos, Vector2.left, cornerCheckDistance, cornerCorrectionMask);
+        bool rightBlocked = Physics2D.Raycast(headPos, Vector2.right, cornerCheckDistance, cornerCorrectionMask);
+
+        // 한쪽만 막혔는지 확인
+        if (leftBlocked == rightBlocked) return;
+
+        // 막히지 않은 쪽으로 보정
+        float dir = leftBlocked ? 1f : -1f;
+
+        // 보정 방향에 빈 공간이 있는지 먼저 확인 (벽 쪽으로 끌려가는 이동 방지)
+        bool spaceFree = !Physics2D.Raycast(headPos, new Vector2(dir, 0.5f).normalized, cornerCorrectionDistance, cornerCorrectionMask);
+        if (!spaceFree) return;
+
+        // 수직 속도 유지, 수평으로만 1회 밀어줌
+        rb.position += new Vector2(dir * cornerCorrectionDistance, 0f);
+        cornerCorrectionUsed = true;
+    }
+
+    void TryLedgeForgiveness()
+    {
+        if (!enableLedgeForgiveness || IsGrounded) return;
+        // 하강 중에만 작동
+        if (rb.linearVelocity.y > 0f) return;
+
+        Vector2 feetPos = (Vector2)transform.position + Vector2.down * 0.5f;
+
+        // 발 아래로 짧게 체크: 아주 작은 범위에서만 작동 (벽 타기 방지)
+        RaycastHit2D below = Physics2D.Raycast(feetPos, Vector2.down, ledgeForgivenessHeight, ledgeForgivenessMask);
+        if (below.collider == null) return;
+
+        // 발끝이 발판 모서리에 살짝 걸치는 경우: 발판 위로 올려줌
+        float lift = feetPos.y - below.point.y;
+        if (lift > 0f && lift <= ledgeForgivenessHeight)
+        {
+            // 가로 허용 범위 내인지 확인
+            float horizontalGap = Mathf.Abs(below.point.x - feetPos.x);
+            if (horizontalGap <= ledgeForgivenessHorizontal)
+            {
+                rb.position += new Vector2(0f, lift);
+            }
+        }
+    }
+
+    void TryDashCornerCorrection()
+    {
+        if (!enableDashCornerCorrection) return;
+        // 대시 중 지형 모서리에 걸리면 살짝 밀어서 통과 (코너 보정과 같은 방식, 별도 거리)
+        Vector2 headPos = (Vector2)transform.position + Vector2.up * 0.5f;
+        bool leftBlocked = Physics2D.Raycast(headPos, Vector2.left, cornerCheckDistance, cornerCorrectionMask);
+        bool rightBlocked = Physics2D.Raycast(headPos, Vector2.right, cornerCheckDistance, cornerCorrectionMask);
+
+        if (leftBlocked == rightBlocked) return;
+
+        float dir = leftBlocked ? 1f : -1f;
+        bool spaceFree = !Physics2D.Raycast(headPos, new Vector2(dir, 0.5f).normalized, dashCornerCorrectionDistance, cornerCorrectionMask);
+        if (!spaceFree) return;
+
+        rb.position += new Vector2(dir * dashCornerCorrectionDistance, 0f);
+    }
+
+    #endregion
+
     #region Facing Direction
 
     void UpdateFacingDirection()
@@ -318,15 +457,8 @@ public class PlayerMovement : MonoBehaviour
 
     Vector2 GetAimDirection()
     {
-        // PlayerInputHandler의 AimInput 가져오기
-        var inputHandler = GetComponent<PlayerInputHandler>();
-        if (inputHandler != null)
-        {
-            // 리플렉션으로 AimInput 접근하거나 이벤트 구독 필요
-            // 임시: 오른쪽 스틱/마우스 델타 기반
-            return Vector2.right;
-        }
-        return Vector2.right;
+        // A1이 제공하는 단일 출처 사용
+        return stateController != null ? stateController.AimInput : Vector2.zero;
     }
 
     #endregion
@@ -359,9 +491,6 @@ public class PlayerMovement : MonoBehaviour
             case PlayerState.Jump:
                 // 점프 상태 진입 시 처리 완료됨 (ExecuteJump에서)
                 break;
-            case PlayerState.Dash:
-                // 대시 속도는 StateController에서 externalVelocity로 설정
-                break;
             case PlayerState.Hurt:
                 // 피격 넉백은 StateController.ApplyKnockback으로 처리
                 break;
@@ -373,7 +502,7 @@ public class PlayerMovement : MonoBehaviour
     void OnDrawGizmosSelected()
     {
         if (!drawGizmos) return;
-        
+
         // GroundCheck가 기즈모 그리므로 여기선 추가 정보만
         if (IsGrounded && groundCheck != null)
         {

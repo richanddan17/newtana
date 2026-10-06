@@ -1,4 +1,5 @@
 using UnityEngine;
+using System;
 
 /// <summary>
 /// 독립적인 지상 판정 컴포넌트.

@@ -22,8 +22,17 @@ public class PlayerStateController : MonoBehaviour
     [SerializeField] float coyoteTime = 0.1f;
     [SerializeField] float jumpBufferTime = 0.15f;
 
-    [Header("Dash Settings")]
-    [SerializeField] bool enableDash = true;
+    [Header("Crouch")]
+    [SerializeField] KeyCode crouchKey = KeyCode.LeftControl; // 또는 S/Down
+    [SerializeField] bool holdToCrouch = true; // 누르고 있는 동안만 앉기
+
+    [Header("Shoot Buffer")]
+    [SerializeField] float shootBufferDuration = 0.15f;
+    [SerializeField] bool shootBufferEnabled = true;
+    [SerializeField] bool dashBufferEnabled = false;
+
+    [Header("Dash Settings (비활성 - 에셋에 클립 없음)")]
+    [SerializeField] bool enableDash = false; // 기본 비활성
     [SerializeField] float dashDistance = 5.5f;
     [SerializeField] float dashDuration = 0.2f;
     [SerializeField] float dashCooldown = 1f;
@@ -67,11 +76,32 @@ public class PlayerStateController : MonoBehaviour
     public bool CanShoot => GetPermissions(currentMoveState).CanShoot && CanActivateCurrentOverlay();
     public bool CanDash => enableDash && GetPermissions(currentMoveState).CanDash && dashCooldownTimer <= 0f;
     public bool CanBeHit => GetPermissions(currentMoveState).CanBeHit;
+    public bool IsCrouching => currentMoveState == PlayerState.Crouch;
+    public float CoyoteTime => coyoteTime;
+    public bool WasJumpPressedThisFrame => inputBuffer?.WasJumpPressedThisFrame ?? false;
+    public bool WasJumpReleasedThisFrame => inputBuffer?.WasJumpReleasedThisFrame ?? false;
+    public bool IsJumpHeld => inputBuffer?.IsJumpHeld ?? false;
+
+    // === 공개 API (조준/버퍼/코요테) ===
+    /// <summary>스냅된 조준 방향 (정면/위/공중아래, 대각선 없음)</summary>
+    public Vector2 AimInput { get; private set; }
+    /// <summary>0=정면, 1=위, 2=공중아래</summary>
+    public int AimDirectionIndex { get; private set; }
+    public bool HasJumpBuffer => inputBuffer?.HasJumpBuffer ?? false;
+    public bool ConsumeJumpBuffer() => inputBuffer != null && inputBuffer.ConsumeJumpBuffer();
+    public bool HasShootBuffer => inputBuffer?.HasShootBuffer ?? false;
+    public bool ConsumeShootBuffer() => inputBuffer != null && inputBuffer.ConsumeShootBuffer();
+    public bool IsCrouchHeld => inputBuffer?.IsCrouchHeld ?? false;
+    public bool CanUseCoyoteTime => IsGrounded || coyoteTimer > 0f;
+    public void NotifyJumpExecuted() => coyoteTimer = 0f;
 
     void Awake()
     {
         inputBuffer = new PlayerInputBuffer(coyoteTime, jumpBufferTime);
-        
+        inputBuffer.shootBufferDuration = shootBufferDuration;
+        inputBuffer.shootBufferEnabled = shootBufferEnabled;
+        inputBuffer.dashBufferEnabled = dashBufferEnabled;
+
         // Input System 액션 연결
         if (inputHandler != null)
         {
@@ -81,8 +111,9 @@ public class PlayerStateController : MonoBehaviour
             inputHandler.OnDashPressed += inputBuffer.SetDashPressed;
             inputHandler.OnShootPressed += inputBuffer.SetShootPressed;
             inputHandler.OnShootReleased += inputBuffer.SetShootReleased;
-            inputHandler.OnReloadPressed += inputBuffer.SetReloadPressed;
+            // OnReloadPressed: 비활성 (에셋에 재장전 클립 없음)
             inputHandler.OnAimInput += inputBuffer.SetAimInput;
+            inputHandler.OnCrouchPressed += inputBuffer.SetCrouchHeld;
         }
 
         // 이벤트 핸들러 캐시
@@ -109,11 +140,54 @@ public class PlayerStateController : MonoBehaviour
         // 지상 판정
         CheckGrounded();
 
+        // 앉기 입력 처리 (Old Input System 폴백)
+        HandleCrouchInput();
+
         // 상태 머신 틱
         TickStateMachine();
 
         // 외부 속도 적용
         ApplyExternalVelocity();
+
+        // 조준 방향 스냅 (정면/위/공중아래)
+        if (inputHandler != null)
+        {
+            AimInput = PlayerInputHandler.SnapTo3Directions(inputHandler.AimInput, IsGrounded);
+            AimDirectionIndex = AimInput.y > 0.5f ? 1 : (AimInput.y < -0.5f ? 2 : 0);
+        }
+
+        // 1회성 프레임 플래그 정리 (Input System 콜백은 Update 전에 발화하므로 소비 후 정리)
+        inputBuffer.EndFrame();
+    }
+
+    void HandleCrouchInput()
+    {
+        if (!IsGrounded) return; // 공중에서는 앉기 불가
+        if (currentMoveState == PlayerState.Hurt || currentMoveState == PlayerState.Death) return;
+
+        bool crouchHeld = inputBuffer != null && inputBuffer.IsCrouchHeld;
+
+        // Old Input System 폴백 (Crouch 액션이 없는 경우)
+        if (!crouchHeld)
+        {
+            if (holdToCrouch)
+                crouchHeld = Input.GetKey(crouchKey);
+            else
+                crouchHeld = Input.GetKeyDown(crouchKey);
+        }
+
+        bool wantsCrouch = crouchHeld && InputDirection.sqrMagnitude < 0.01f; // 이동 중이면 앉기 안 함
+
+        if (wantsCrouch && currentMoveState != PlayerState.Crouch)
+        {
+            if (PlayerStateRules.CanTransitionTo(currentMoveState, PlayerState.Crouch))
+                SetMoveState(PlayerState.Crouch);
+        }
+        else if (!wantsCrouch && currentMoveState == PlayerState.Crouch)
+        {
+            // 앉기 해제 → 실제 조건으로 상태 결정
+            SetMoveState(DetermineDesiredMoveState());
+        }
     }
 
     void UpdateTimers()
@@ -173,8 +247,8 @@ public class PlayerStateController : MonoBehaviour
         if (currentMoveState == PlayerState.Hurt || currentMoveState == PlayerState.Death)
             return currentMoveState;
 
-        // PlayerStateRules의 결정 로직 사용
-        return PlayerStateRules.DetermineMoveState(IsGrounded, Velocity, InputDirection, isDashing);
+        // Crouch 포함 모든 상태에서 실제 조건으로 직접 판단 (Crouch 고정 반환 버그 수정)
+        return PlayerStateRules.DetermineMoveState(IsGrounded, Velocity, InputDirection, isDashing, false);
     }
 
     void SetMoveState(PlayerState newState)
@@ -199,6 +273,9 @@ public class PlayerStateController : MonoBehaviour
         {
             case PlayerState.Dash:
                 StartDash();
+                break;
+            case PlayerState.Crouch:
+                // 앉기 진입: 이동 정지, 사격 오버레이는 유지 가능 (정면만)
                 break;
             case PlayerState.Hurt:
                 // Hurt 진입 시 사격 오버레이 강제 해제
@@ -232,11 +309,12 @@ public class PlayerStateController : MonoBehaviour
             return;
         }
 
+        // 앉기 중에는 위 조준 불가 (정면만) - 애니메이션에서 처리
         // 사격 입력 체크
         bool shootHeld = inputBuffer.IsShootHeld;
         bool reloadPressed = inputBuffer.ConsumeReloadPressed();
 
-        // 재장전 우선 (사격 중 재장전 입력 시 사격 해제)
+        // 재장전 우선 (사격 중 재장전 입력 시 사격 해제) - UseAmmo=true일 때만 동작
         if (reloadPressed && PlayerStateRules.CanActivateOverlay(currentMoveState, PlayerState.Reloading))
         {
             SetOverlayState(PlayerState.Reloading, true);

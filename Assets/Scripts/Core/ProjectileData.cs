@@ -1,4 +1,5 @@
 using UnityEngine;
+using System;
 using System.Collections.Generic;
 
 /// <summary>
@@ -35,6 +36,8 @@ public class ProjectileData : MonoBehaviour
     public GameObject Owner => owner;
     public float Damage => damage;
     public float TraveledDistance => traveledDistance;
+    public float KnockbackForce => knockbackForce;
+    public HitType HitType => hitType;
 
     void Awake()
     {
@@ -68,7 +71,7 @@ public class ProjectileData : MonoBehaviour
     /// <summary>풀로 반환 시 정리</summary>
     public void Deinitialize()
     {
-        rb.velocity = Vector2.zero;
+        rb.linearVelocity = Vector2.zero;
         rb.angularVelocity = 0f;
         traveledDistance = 0f;
         hitTargets.Clear();

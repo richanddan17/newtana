@@ -1,5 +1,11 @@
 using UnityEngine;
+using System;
 using System.Collections.Generic;
+
+// Force recompile to clear stale cache
+#if UNITY_CINEMACHINE
+using Cinemachine;
+#endif
 
 /// <summary>
 /// 카메라 흔들림 시스템.
@@ -45,7 +51,11 @@ public class CameraShake : MonoBehaviour
     float trauma = 0f;
 
     // Cinemachine
-    Cinemachine.CinemachineImpulseSource impulseSource;
+#if UNITY_CINEMACHINE
+    CinemachineImpulseSource impulseSource;
+#else
+    object impulseSource; // dummy when Cinemachine not installed
+#endif
 
     public static CameraShake Instance { get; private set; }
 
@@ -63,9 +73,13 @@ public class CameraShake : MonoBehaviour
 
         if (useCinemachine)
         {
-            impulseSource = GetComponent<Cinemachine.CinemachineImpulseSource>();
+#if UNITY_CINEMACHINE
+            impulseSource = GetComponent<CinemachineImpulseSource>();
             if (impulseSource == null)
-                impulseSource = gameObject.AddComponent<Cinemachine.CinemachineImpulseSource>();
+                impulseSource = gameObject.AddComponent<CinemachineImpulseSource>();
+#else
+            // Cinemachine not installed
+#endif
         }
 
         if (cameraTransform != null)
@@ -113,12 +127,12 @@ public class CameraShake : MonoBehaviour
     {
         if (Instance == null) return;
         // 랜덤 방향
-        Vector2 dir = Random.insideUnitCircle.normalized;
+        Vector2 dir = UnityEngine.Random.insideUnitCircle.normalized;
         Instance.AddImpulse(dir, amplitude, duration, frequency, decay);
     }
 
     /// <summary>프리셋 이름으로 흔들림 (데이터 드리븐)</summary>
-    public static void ShakePreset(string presetName)
+    public static void PlayPreset(string presetName)
     {
         if (Instance == null) return;
         Instance.ApplyPreset(presetName);
@@ -138,10 +152,12 @@ public class CameraShake : MonoBehaviour
         });
 
         // Cinemachine Impulse 동시 발생
+#if UNITY_CINEMACHINE
         if (useCinemachine && impulseSource != null)
         {
             impulseSource.GenerateImpulse(direction * amplitude);
         }
+#endif
     }
 
     void UpdateImpulseShake()
@@ -246,7 +262,7 @@ public class CameraShake : MonoBehaviour
         var preset = presets.Find(p => p.Name == name);
         if (preset == null) return;
 
-        Vector2 dir = preset.Directional ? (transform.right * transform.localScale.x) : Random.insideUnitCircle.normalized;
+        Vector2 dir = preset.Directional ? (transform.right * transform.localScale.x) : UnityEngine.Random.insideUnitCircle.normalized;
         AddImpulse(dir, preset.Amplitude, preset.Duration, preset.Frequency, preset.Decay);
     }
 
@@ -257,13 +273,13 @@ public class CameraShake : MonoBehaviour
     /// <summary>플레이어 발사 반동</summary>
     public static void OnPlayerShoot(Vector2 shootDirection)
     {
-        ShakePreset("PlayerShoot");
+        PlayPreset("PlayerShoot");
     }
 
     /// <summary>적 발사 (작은 흔들림)</summary>
     public static void OnEnemyShoot()
     {
-        ShakePreset("EnemyShoot");
+        PlayPreset("EnemyShoot");
     }
 
     /// <summary>플레이어 피격</summary>
@@ -276,7 +292,7 @@ public class CameraShake : MonoBehaviour
     /// <summary>적 피격</summary>
     public static void OnEnemyHit()
     {
-        ShakePreset("LightHit");
+        PlayPreset("LightHit");
         HitStop.Request(0.03f);
     }
 
@@ -299,14 +315,14 @@ public class CameraShake : MonoBehaviour
     /// <summary>플레이어 사망</summary>
     public static void OnPlayerDeath()
     {
-        ShakePreset("Death");
+        PlayPreset("Death");
         HitStop.Request(0.15f);
     }
 
     /// <summary>대시</summary>
     public static void OnDash(Vector2 dashDirection)
     {
-        ShakePreset("Dash");
+        PlayPreset("Dash");
     }
 
     #endregion

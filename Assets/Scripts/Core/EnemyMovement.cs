@@ -13,7 +13,7 @@ public class EnemyMovement : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] GroundCheck groundCheck;
-    [SerializeField] Rigidbody2D rb;
+    [SerializeField] internal Rigidbody2D rb;
 
     [Header("Move Settings")]
     [SerializeField] float maxMoveSpeed = 4f;
@@ -46,6 +46,7 @@ public class EnemyMovement : MonoBehaviour
     public bool IsGrounded => groundCheck != null ? groundCheck.IsGrounded : isGrounded;
     public Vector2 Velocity => rb ? rb.linearVelocity : Vector2.zero;
     public float HorizontalSpeed => Mathf.Abs(Velocity.x);
+    public float VerticalSpeed => Velocity.y;
     public Vector2 MoveInput => moveInput;
     public int FacingDirection => transform.localScale.x > 0 ? 1 : -1;
 

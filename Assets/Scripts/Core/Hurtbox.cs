@@ -71,8 +71,12 @@ public class Hurtbox : MonoBehaviour
         }
 
         // 자기 발사 투사체 무시
-        if (ignoreOwnerProjectiles && projectile.Owner != null && projectile.Owner == damageable as MonoBehaviour?.gameObject)
-            return;
+        if (ignoreOwnerProjectiles && projectile.Owner != null)
+        {
+            var damageableMono = damageable as MonoBehaviour;
+            if (damageableMono != null && projectile.Owner == damageableMono.gameObject)
+                return;
+        }
 
         // 데미지 적용 (IDamageable 통해)
         float applied = damageable.TakeDamage(new DamageInfo(

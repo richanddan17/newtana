@@ -26,6 +26,10 @@ public class RoomCamera : MonoBehaviour
     [SerializeField] float lookAheadSpeed = 5f;
     [SerializeField] PlayerAnimation playerAnimation; // 조준 방향 참조용
 
+    [Header("Enemy Visibility")]
+    [Tooltip("Room 경계가 적 감지 범위를 넘어설 때 경고합니다 (room-camera-system.md [3])")]
+    [SerializeField] bool warnOnEnemyVisionOverflow = true;
+
     [Header("Boundary (Room Confiner)")]
     [SerializeField] bool confineToRoom = true;
     [SerializeField] float boundaryPadding = 0.5f; // 경계 안쪽 여백
@@ -34,11 +38,9 @@ public class RoomCamera : MonoBehaviour
     [SerializeField] float transitionDuration = 0.5f; // Room 전환 시 부드러운 이동 시간
     [SerializeField] AnimationCurve transitionCurve = AnimationCurve.EaseInOut(0, 0, 1, 1);
 
-    [Header("Shake Integration")]
-    [SerializeField] bool applyShakeOffset = true; // CameraShake 오프셋 적용
-
     // 상태
     Room currentRoom;
+    Transform playerTransform;
     Vector3 targetPosition;
     Vector3 currentVelocity;
     Vector2 lookAheadOffset;
@@ -47,9 +49,6 @@ public class RoomCamera : MonoBehaviour
     Room previousRoom;
     Vector3 transitionStartPos;
     Vector3 transitionTargetPos;
-
-    // CameraShake 참조
-    CameraShake cameraShake;
 
     void Awake()
     {
@@ -62,7 +61,7 @@ public class RoomCamera : MonoBehaviour
         if (playerAnimation == null)
             playerAnimation = FindAnyObjectByType<PlayerAnimation>();
 
-        cameraShake = CameraShake.Instance;
+        CachePlayerTransform();
 
         // RoomManager 이벤트 구독
         if (roomManager != null)
@@ -76,6 +75,12 @@ public class RoomCamera : MonoBehaviour
             currentRoom = roomManager.CurrentRoom;
             SnapToRoomBounds();
         }
+    }
+
+    void CachePlayerTransform()
+    {
+        var player = GameObject.FindGameObjectWithTag("Player");
+        playerTransform = player != null ? player.transform : null;
     }
 
     void OnDestroy()
@@ -100,17 +105,19 @@ public class RoomCamera : MonoBehaviour
         // 일반 추적
         UpdateFollow();
         UpdateLookAhead();
+        ApplyLookAhead();
         ApplyBoundary();
-        ApplyShake();
     }
 
     void UpdateFollow()
     {
-        // 플레이어 찾기
-        var player = GameObject.FindGameObjectWithTag("Player");
-        if (player == null) return;
+        // 플레이어가 나중에 생성되거나 풀에서 재활성화되는 경우를 대비
+        if (playerTransform == null)
+            CachePlayerTransform();
 
-        Vector3 playerPos = player.transform.position;
+        if (playerTransform == null) return;
+
+        Vector3 playerPos = playerTransform.position;
         targetPosition = new Vector3(
             playerPos.x + followOffset.x,
             playerPos.y + followOffset.y,
@@ -140,43 +147,23 @@ public class RoomCamera : MonoBehaviour
             lookAheadOffset, targetLookAhead, lookAheadSpeed * Time.deltaTime);
     }
 
+    void ApplyLookAhead()
+    {
+        if (lookAheadOffset == Vector2.zero) return;
+
+        Vector3 camPos = cameraTransform.position;
+        cameraTransform.position = new Vector3(
+            camPos.x + lookAheadOffset.x,
+            camPos.y + lookAheadOffset.y,
+            camPos.z);
+    }
+
     void ApplyBoundary()
     {
         if (!confineToRoom || currentRoom == null) return;
 
-        Bounds roomBounds = currentRoom.Bounds;
-        Vector3 camPos = cameraTransform.position;
-
-        // 카메라 크기 계산 (Orthographic)
-        Camera cam = cameraTransform.GetComponent<Camera>();
-        if (cam == null || !cam.orthographic) return;
-
-        float camHeight = cam.orthographicSize;
-        float camWidth = camHeight * cam.aspect;
-
-        // 경계 내로 클램프 (패딩 고려)
-        float minX = roomBounds.min.x + camWidth + boundaryPadding;
-        float maxX = roomBounds.max.x - camWidth - boundaryPadding;
-        float minY = roomBounds.min.y + camHeight + boundaryPadding;
-        float maxY = roomBounds.max.y - camHeight - boundaryPadding;
-
-        // 유효한 경계인지 확인 (방이 카메라보다 작을 수 있음)
-        if (minX > maxX) minX = maxX = (roomBounds.min.x + roomBounds.max.x) * 0.5f;
-        if (minY > maxY) minY = maxY = (roomBounds.min.y + roomBounds.max.y) * 0.5f;
-
-        float clampedX = Mathf.Clamp(camPos.x + lookAheadOffset.x, minX, maxX);
-        float clampedY = Mathf.Clamp(camPos.y + lookAheadOffset.y, minY, maxY);
-
-        cameraTransform.position = new Vector3(clampedX, clampedY, camPos.z);
-    }
-
-    void ApplyShake()
-    {
-        if (!applyShakeOffset || cameraShake == null) return;
-
-        // CameraShake의 흔들림 오프셋 적용 (CameraShake에서 localPosition 조작하므로 여기선 추가만)
-        // CameraShake가 cameraTransform.localPosition을 직접 조작하므로 별도 처리 불필요
-        // 단, 경계 적용 후 흔들림이 경계를 벗어나지 않게 하려면 여기서 보정 가능
+        // Look Ahead를 이미 적용했으므로 현재 위치만 클램프한다
+        cameraTransform.position = ClampToRoomBounds(cameraTransform.position, currentRoom);
     }
 
     void OnRoomChanged(Room newRoom, Room oldRoom)
@@ -185,6 +172,8 @@ public class RoomCamera : MonoBehaviour
 
         previousRoom = currentRoom;
         currentRoom = newRoom;
+
+        ValidateEnemyVisionRange();
 
         if (transitionDuration > 0f && previousRoom != null)
         {
@@ -201,21 +190,19 @@ public class RoomCamera : MonoBehaviour
         isTransitioning = true;
         transitionTimer = 0f;
 
-        // 현재 위치에서 새 Room 경계 내 중앙으로 전환
         transitionStartPos = cameraTransform.position;
-        
-        // 새 Room의 플레이어 위치 기준 타겟 계산
-        var player = GameObject.FindGameObjectWithTag("Player");
-        if (player != null && currentRoom != null)
+
+        if (currentRoom == null) return;
+
+        if (playerTransform != null)
         {
-            Vector3 playerPos = player.transform.position;
+            Vector3 playerPos = playerTransform.position;
             transitionTargetPos = new Vector3(
                 playerPos.x + followOffset.x,
                 playerPos.y + followOffset.y,
                 cameraTransform.position.z
             );
-            
-            // 새 Room 경계 내로 클램프
+
             transitionTargetPos = ClampToRoomBounds(transitionTargetPos, currentRoom);
         }
         else
@@ -245,12 +232,11 @@ public class RoomCamera : MonoBehaviour
     {
         if (currentRoom == null) return;
 
-        var player = GameObject.FindGameObjectWithTag("Player");
-        if (player != null)
+        if (playerTransform != null)
         {
             Vector3 pos = new Vector3(
-                player.transform.position.x + followOffset.x,
-                player.transform.position.y + followOffset.y,
+                playerTransform.position.x + followOffset.x,
+                playerTransform.position.y + followOffset.y,
                 cameraTransform.position.z
             );
             cameraTransform.position = ClampToRoomBounds(pos, currentRoom);
@@ -317,6 +303,35 @@ public class RoomCamera : MonoBehaviour
 
     /// <summary>현재 Room 경계 반환 (외부 조회용)</summary>
     public Bounds GetCurrentRoomBounds() => currentRoom?.Bounds ?? new Bounds();
+
+    /// <summary>
+    /// 화면 밖에서 적이 플레이어를 쏘지 못하는지 검증한다 (room-camera-system.md [3]).
+    /// 카메라 가시 반경보다 적 감지 거리가 크면 화면 밖 사격이 가능하므로 경고한다.
+    /// </summary>
+    public void ValidateEnemyVisionRange()
+    {
+        if (!warnOnEnemyVisionOverflow || currentRoom == null || cameraTransform == null) return;
+
+        Camera cam = cameraTransform.GetComponent<Camera>();
+        if (cam == null || !cam.orthographic) return;
+
+        float halfWidth = cam.orthographicSize * cam.aspect;
+        float halfHeight = cam.orthographicSize;
+        float visibleRadius = Mathf.Sqrt(halfWidth * halfWidth + halfHeight * halfHeight);
+
+        foreach (var enemyObj in currentRoom.Enemies)
+        {
+            if (enemyObj == null) continue;
+
+            var vision = enemyObj.GetComponent<EnemyVision>();
+            if (vision != null && vision.DetectRange > visibleRadius)
+            {
+                Debug.LogWarning(
+                    $"[RoomCamera] '{enemyObj.name}'의 감지 거리({vision.DetectRange:F1})가 카메라 가시 반경({visibleRadius:F1})보다 큽니다. 화면 밖 사격이 가능합니다.",
+                    this);
+            }
+        }
+    }
 
     void OnDrawGizmosSelected()
     {

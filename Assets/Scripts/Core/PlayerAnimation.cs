@@ -1,4 +1,6 @@
 using UnityEngine;
+using System;
+using System.Collections.Generic;
 
 /// <summary>
 /// 플레이어 애니메이션 상태 시스템.
@@ -24,34 +26,58 @@ public class PlayerAnimation : MonoBehaviour
     [SerializeField] string speedParam = "Speed";           // float: 수평 속도 절댓값
     [SerializeField] string velocityYParam = "VelocityY";   // float: 수직 속도
     [SerializeField] string groundedParam = "IsGrounded";   // bool
+    [SerializeField] string crouchParam = "IsCrouching";    // bool: 앉기
     [SerializeField] string shootingParam = "IsShooting";   // bool: 사격 오버레이
-    [SerializeField] string aimDirParam = "AimDir";         // int: 0=정면, 1=위, 2=대각위, 3=아래, 4=대각아래
-    [SerializeField] string dashingParam = "IsDashing";     // bool
-    [SerializeField] string hurtTrigger = "Hurt";           // trigger
+    [SerializeField] string aimDirParam = "AimDir";         // int: 0=정면, 1=위, 2=아래(공중만)
     [SerializeField] string deadParam = "IsDead";           // bool
-    [SerializeField] string reloadingParam = "IsReloading"; // bool
+    // 대시/재장전/피격트리거: 에셋에 없음 → 비활성
+    // [SerializeField] string dashingParam = "IsDashing";
+    // [SerializeField] string hurtTrigger = "Hurt";
+    // [SerializeField] string reloadingParam = "IsReloading";
 
     [Header("Sprite Structure")]
     [SerializeField] bool upperBodySeparated = false; // true: 상체/하체 분리(Animator Layer), false: 통짜(합본 클립)
 
-    [Header("Aim Direction (8방향 → 애니매션 5구역 매핑)")]
+    [Header("Aim Direction (3방향: 정면/위/공중아래)")]
     [SerializeField] bool useAimDirection = true;
-    [Tooltip("정면(→), 위(↑), 대각위(↗), 아래(↓), 대각아래(↘) 순서")]
-    [SerializeField] string[] aimDirectionNames = { "Forward", "Up", "UpDiagonal", "Down", "DownDiagonal" };
+    [Tooltip("정면(→), 위(↑), 아래(↓) 순서 - 대각선 없음")]
+    [SerializeField] string[] aimDirectionNames = { "Forward", "Up", "Down" };
 
-    [Header("Muzzle Sync")]
-    [SerializeField] Transform muzzleTransform; // 총구 위치 (방향별 오프셋 적용)
-    [SerializeField] Vector2 muzzleOffsetForward = new Vector2(0.5f, 0.1f);
-    [SerializeField] Vector2 muzzleOffsetUp = new Vector2(0.1f, 0.6f);
-    [SerializeField] Vector2 muzzleOffsetUpDiagonal = new Vector2(0.35f, 0.4f);
-    [SerializeField] Vector2 muzzleOffsetDown = new Vector2(0.5f, -0.3f);
-    [SerializeField] Vector2 muzzleOffsetDownDiagonal = new Vector2(0.35f, -0.2f);
+    [System.Serializable]
+    public struct MuzzleOffsetSet
+    {
+        public PlayerState moveState;
+        public int aimDir; // 0=정면, 1=위, 2=아래
+        public Vector2 offset;
+    }
+
+    [Header("Muzzle Sync (자세별 x 조준방향별 오프셋)")]
+    [SerializeField] Transform muzzleTransform; // 총구 위치
+    [SerializeField] MuzzleOffsetSet[] muzzleOffsets = new MuzzleOffsetSet[]
+    {
+        // Idle/Run 정면
+        new MuzzleOffsetSet { moveState = PlayerState.Idle, aimDir = 0, offset = new Vector2(0.5f, 0.1f) },
+        new MuzzleOffsetSet { moveState = PlayerState.Run, aimDir = 0, offset = new Vector2(0.5f, 0.1f) },
+        // Idle/Run 위
+        new MuzzleOffsetSet { moveState = PlayerState.Idle, aimDir = 1, offset = new Vector2(0.1f, 0.6f) },
+        new MuzzleOffsetSet { moveState = PlayerState.Run, aimDir = 1, offset = new Vector2(0.1f, 0.6f) },
+        // 공중 정면/위/아래
+        new MuzzleOffsetSet { moveState = PlayerState.Jump, aimDir = 0, offset = new Vector2(0.5f, 0.1f) },
+        new MuzzleOffsetSet { moveState = PlayerState.Fall, aimDir = 0, offset = new Vector2(0.5f, 0.1f) },
+        new MuzzleOffsetSet { moveState = PlayerState.Jump, aimDir = 1, offset = new Vector2(0.1f, 0.6f) },
+        new MuzzleOffsetSet { moveState = PlayerState.Fall, aimDir = 1, offset = new Vector2(0.1f, 0.6f) },
+        new MuzzleOffsetSet { moveState = PlayerState.Jump, aimDir = 2, offset = new Vector2(0.5f, -0.3f) },
+        new MuzzleOffsetSet { moveState = PlayerState.Fall, aimDir = 2, offset = new Vector2(0.5f, -0.3f) },
+        // Crouch 정면만
+        new MuzzleOffsetSet { moveState = PlayerState.Crouch, aimDir = 0, offset = new Vector2(0.4f, 0f) },
+    };
 
     [Header("Direction Flip")]
     [SerializeField] bool flipByScale = true; // true: Transform.scale.x 반전, false: SpriteRenderer.flipX
     [SerializeField] bool flipMuzzleWithScale = true;
 
     [Header("Events (외부 연결용)")]
+    [SerializeField] int eventsHeaderDummy; // Header용 더미 필드
     public event Action<int> OnAimDirectionChanged; // aimDir index
     public event Action<bool> OnShootingChanged;    // shooting active
     public event Action OnHurtAnimationStart;
@@ -117,28 +143,23 @@ public class PlayerAnimation : MonoBehaviour
         if (!string.IsNullOrEmpty(groundedParam))
             animator.SetBool(groundedParam, movement?.IsGrounded ?? true);
 
-        // IsDashing
-        if (!string.IsNullOrEmpty(dashingParam))
-            animator.SetBool(dashingParam, stateController?.IsDashing ?? false);
+        // IsCrouching
+        if (!string.IsNullOrEmpty(crouchParam))
+        {
+            bool isCrouching = stateController?.CurrentMoveState == PlayerState.Crouch;
+            animator.SetBool(crouchParam, isCrouching);
+        }
 
         // IsDead
         if (!string.IsNullOrEmpty(deadParam))
             animator.SetBool(deadParam, stateController?.CurrentMoveState == PlayerState.Death);
-
-        // IsReloading (오버레이)
-        if (!string.IsNullOrEmpty(reloadingParam))
-        {
-            bool reloading = stateController?.CurrentOverlayState == PlayerState.Reloading;
-            animator.SetBool(reloadingParam, reloading);
-        }
     }
 
     void UpdateAimDirection()
     {
         if (!useAimDirection || stateController == null) return;
 
-        Vector2 aimInput = GetAimInput();
-        int newAimDir = CalculateAimDirectionIndex(aimInput);
+        int newAimDir = stateController.AimDirectionIndex;
 
         if (newAimDir != currentAimDirIndex)
         {
@@ -153,68 +174,58 @@ public class PlayerAnimation : MonoBehaviour
 
     Vector2 GetAimInput()
     {
-        // PlayerInputHandler의 AimInput 가져오기
-        var inputHandler = GetComponent<PlayerInputHandler>();
-        if (inputHandler != null)
-        {
-            // 리플렉션으로 비공개 필드 접근 또는 이벤트 구독 필요
-            // 임시: StateController를 통해 접근 시도
-        }
-
-        // 임시: 조준 입력이 없으면 이동 방향 또는 바라보는 방향 사용
-        Vector2 moveInput = stateController.InputDirection;
-        if (moveInput.sqrMagnitude > 0.01f)
-            return moveInput.normalized;
-
-        // 기본: 정면
-        return transform.localScale.x > 0 ? Vector2.right : Vector2.left;
-    }
-
-    int CalculateAimDirectionIndex(Vector2 dir)
-    {
-        if (dir.sqrMagnitude < 0.01f) return 0; // 정면
-
-        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-        // -180 ~ 180 → 0 ~ 360
-        if (angle < 0) angle += 360f;
-
-        // 8방향을 5구역으로 매핑
-        // 정면: -22.5 ~ 22.5, 157.5 ~ 202.5 (좌우)
-        // 위: 67.5 ~ 112.5
-        // 대각위: 22.5 ~ 67.5, 112.5 ~ 157.5
-        // 아래: 247.5 ~ 292.5
-        // 대각아래: 202.5 ~ 247.5, 292.5 ~ 337.5
-
-        if (angle >= 337.5f || angle < 22.5f) return 0;           // 정면 (우)
-        if (angle >= 157.5f && angle < 202.5f) return 0;          // 정면 (좌)
-        if (angle >= 67.5f && angle < 112.5f) return 1;           // 위
-        if ((angle >= 22.5f && angle < 67.5f) || (angle >= 112.5f && angle < 157.5f)) return 2; // 대각위
-        if (angle >= 247.5f && angle < 292.5f) return 3;          // 아래
-        return 4; // 대각아래 (202.5~247.5, 292.5~337.5)
+        // A1이 제공하는 단일 출처 사용
+        return stateController != null ? stateController.AimInput : Vector2.zero;
     }
 
     void UpdateMuzzlePosition()
     {
         if (muzzleTransform == null) return;
 
-        Vector2 offset = GetMuzzleOffsetForAimDir(currentAimDirIndex);
+        // 현재 이동 상태 결정 (Crouch/Idle/Run/Jump/Fall)
+        PlayerState currentMoveState = GetCurrentMoveStateForMuzzle();
+        Vector2 offset = GetMuzzleOffset(currentMoveState, currentAimDirIndex);
         int facing = transform.localScale.x > 0 ? 1 : -1;
         
-        // 로컬 공간에서 오프셋 적용
         Vector3 localPos = new Vector3(offset.x * facing, offset.y, 0f);
         muzzleTransform.localPosition = localPos;
     }
 
-    Vector2 GetMuzzleOffsetForAimDir(int aimDir)
+    PlayerState GetCurrentMoveStateForMuzzle()
     {
-        switch (aimDir)
+        if (stateController == null) return PlayerState.Idle;
+        
+        // Crouch 상태면 Crouch
+        // 애니메이터 파라미터로 IsCrouching 확인 가능하면 좋지만, 여기선 상태 시스템 기반으로
+        var moveState = stateController.CurrentMoveState;
+        if (moveState == PlayerState.Crouch) return PlayerState.Crouch;
+        
+        // 공중 상태면 Jump/Fall 구분
+        if (moveState == PlayerState.Jump || moveState == PlayerState.Fall)
+            return moveState;
+        
+        // 지상: Idle/Run
+        return moveState;
+    }
+
+    Vector2 GetMuzzleOffset(PlayerState moveState, int aimDir)
+    {
+        // 배열에서 매칭되는 것 찾기 (이동상태 + 조준방향)
+        foreach (var set in muzzleOffsets)
         {
-            case 1: return muzzleOffsetUp;              // 위
-            case 2: return muzzleOffsetUpDiagonal;      // 대각위
-            case 3: return muzzleOffsetDown;            // 아래
-            case 4: return muzzleOffsetDownDiagonal;    // 대각아래
-            default: return muzzleOffsetForward;        // 정면
+            if (set.moveState == moveState && set.aimDir == aimDir)
+                return set.offset;
         }
+        
+        // 폴백: 같은 이동상태의 정면 오프셋
+        foreach (var set in muzzleOffsets)
+        {
+            if (set.moveState == moveState && set.aimDir == 0)
+                return set.offset;
+        }
+        
+        // 최종 폴백
+        return new Vector2(0.5f, 0.1f);
     }
 
     void UpdateDirectionFlip()
@@ -239,14 +250,8 @@ public class PlayerAnimation : MonoBehaviour
             targetScaleX = transform.localScale.x > 0 ? 1f : -1f; // 현재 유지
         }
 
-        if (flipByScale)
-        {
-            if (Mathf.Abs(transform.localScale.x - targetScaleX) > 0.01f)
-            {
-                transform.localScale = new Vector3(targetScaleX, transform.localScale.y, transform.localScale.z);
-            }
-        }
-        else if (spriteRenderer != null)
+        // flipByScale=true일 때 scale 쓰기는 PlayerMovement가 담당 — 여기서는 읽기만 (중복 기록 제거)
+        if (!flipByScale && spriteRenderer != null)
         {
             spriteRenderer.flipX = targetScaleX < 0f;
         }
@@ -261,12 +266,6 @@ public class PlayerAnimation : MonoBehaviour
     {
         switch (to)
         {
-            case PlayerState.Hurt:
-                if (!string.IsNullOrEmpty(hurtTrigger))
-                    animator.SetTrigger(hurtTrigger);
-                OnHurtAnimationStart?.Invoke();
-                break;
-
             case PlayerState.Death:
                 if (!string.IsNullOrEmpty(deadParam))
                     animator.SetBool(deadParam, true);
@@ -277,6 +276,7 @@ public class PlayerAnimation : MonoBehaviour
             case PlayerState.Run:
             case PlayerState.Jump:
             case PlayerState.Fall:
+            case PlayerState.Crouch:
                 // Death/Hurt에서 복귀 시 IsDead 리셋
                 if (from == PlayerState.Death || from == PlayerState.Hurt)
                 {
@@ -297,11 +297,7 @@ public class PlayerAnimation : MonoBehaviour
                 wasShooting = active;
                 OnShootingChanged?.Invoke(active);
                 break;
-
-            case PlayerState.Reloading:
-                if (!string.IsNullOrEmpty(reloadingParam))
-                    animator.SetBool(reloadingParam, active);
-                break;
+            // Reloading: 비활성 (에셋에 클립 없음)
         }
     }
 
@@ -309,12 +305,10 @@ public class PlayerAnimation : MonoBehaviour
 
     #region Public API
 
-    /// <summary>피격 애니메이션 강제 트리거 (상태 시스템 경유 안 할 때)</summary>
-    public void TriggerHurt()
+    /// <summary>피격 플래시 트리거 (Hurt 클립 없음 → 플래시만)</summary>
+    public void TriggerHurtFlash()
     {
-        if (!string.IsNullOrEmpty(hurtTrigger))
-            animator.SetTrigger(hurtTrigger);
-        OnHurtAnimationStart?.Invoke();
+        OnHurtAnimationStart?.Invoke(); // DamageFlash 컴포넌트가 구독해서 처리
     }
 
     /// <summary>사망 애니메이션 시작</summary>
@@ -332,10 +326,8 @@ public class PlayerAnimation : MonoBehaviour
             animator.SetBool(deadParam, false);
         if (!string.IsNullOrEmpty(shootingParam))
             animator.SetBool(shootingParam, false);
-        if (!string.IsNullOrEmpty(reloadingParam))
-            animator.SetBool(reloadingParam, false);
-        if (!string.IsNullOrEmpty(dashingParam))
-            animator.SetBool(dashingParam, false);
+        if (!string.IsNullOrEmpty(crouchParam))
+            animator.SetBool(crouchParam, false);
     }
 
     /// <summary>현재 조준 방향 인덱스 반환 (무기 시스템에서 사용)</summary>
@@ -347,9 +339,7 @@ public class PlayerAnimation : MonoBehaviour
         switch (currentAimDirIndex)
         {
             case 1: return Vector2.up;                          // 위
-            case 2: return new Vector2(0.707f, 0.707f);         // 대각위
-            case 3: return Vector2.down;                        // 아래
-            case 4: return new Vector2(0.707f, -0.707f);        // 대각아래
+            case 2: return Vector2.down;                        // 아래 (공중만)
             default: return transform.localScale.x > 0 ? Vector2.right : Vector2.left; // 정면
         }
     }
@@ -369,12 +359,16 @@ public class PlayerAnimation : MonoBehaviour
             Gizmos.color = Color.yellow;
             Gizmos.DrawWireSphere(muzzleTransform.position, 0.05f);
             
-            // 방향별 오프셋 표시
+            // 방향별 오프셋 표시 (muzzleOffsets 배열에서 고유한 오프셋만)
             Gizmos.color = Color.green;
-            foreach (var offset in new[] { muzzleOffsetForward, muzzleOffsetUp, muzzleOffsetUpDiagonal, muzzleOffsetDown, muzzleOffsetDownDiagonal })
+            var uniqueOffsets = new HashSet<Vector2>();
+            foreach (var set in muzzleOffsets)
             {
-                Vector3 pos = transform.position + new Vector3(offset.x * transform.localScale.x, offset.y, 0);
-                Gizmos.DrawWireSphere(pos, 0.03f);
+                if (uniqueOffsets.Add(set.offset))
+                {
+                    Vector3 pos = transform.position + new Vector3(set.offset.x * transform.localScale.x, set.offset.y, 0);
+                    Gizmos.DrawWireSphere(pos, 0.03f);
+                }
             }
         }
     }

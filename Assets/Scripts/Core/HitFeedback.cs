@@ -24,7 +24,7 @@ public static class HitFeedback
     {
         effectsContainer = new GameObject("[HitFeedbackEffects]");
         effectsContainer.hideFlags = HideFlags.HideInHierarchy;
-        DontDestroyOnLoad(effectsContainer);
+        Object.DontDestroyOnLoad(effectsContainer);
 
         // 전역 오디오 소스 (3D 사운드용)
         globalAudioSource = effectsContainer.AddComponent<AudioSource>();
@@ -45,10 +45,10 @@ public static class HitFeedback
         if (!hitEffectPools.ContainsKey(hitType))
         {
             hitEffectPools[hitType] = new ObjectPool<GameObject>(
-                createFunc: () => Instantiate(effectPrefab, effectsContainer.transform),
+                createFunc: () => Object.Instantiate(effectPrefab, effectsContainer.transform),
                 actionOnGet: obj => obj.SetActive(true),
                 actionOnRelease: obj => obj.SetActive(false),
-                actionOnDestroy: obj => Destroy(obj),
+                actionOnDestroy: obj => Object.Destroy(obj),
                 collectionCheck: false,
                 defaultCapacity: 10,
                 maxSize: 50

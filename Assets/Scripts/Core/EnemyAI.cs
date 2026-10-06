@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using System.Linq;
 
 /// <summary>
 /// 적 AI 상태 머신.
@@ -12,10 +13,10 @@ using System.Collections.Generic;
 public class EnemyAI : MonoBehaviour
 {
     [Header("References")]
-    [SerializeField] EnemyHealth health;
+    [SerializeField] protected EnemyHealth health;
     [SerializeField] EnemyVision vision;
-    [SerializeField] EnemyMovement movement;
-    [SerializeField] WeaponController weaponController;
+    [SerializeField] protected EnemyMovement movement;
+    [SerializeField] protected WeaponController weaponController;
     [SerializeField] TeamComponent teamComponent;
 
     [Header("AI Data (ScriptableObject 권장)")]
@@ -71,7 +72,7 @@ public class EnemyAI : MonoBehaviour
     AIState previousState = AIState.Idle;
 
     // 타입
-    EnemyAIData.EnemyType enemyType = EnemyAIData.EnemyType.RangedShooter;
+    protected EnemyAIData.EnemyType enemyType = EnemyAIData.EnemyType.RangedShooter;
 
     // 타겟
     Transform playerTransform;
@@ -96,9 +97,9 @@ public class EnemyAI : MonoBehaviour
     float hoverTimer;
 
     // 보스 패턴
-    int currentPhase = 0;
-    float patternCooldownTimer;
-    int currentPatternIndex = -1;
+    protected int currentPhase = 0;
+    protected float patternCooldownTimer;
+    protected int currentPatternIndex = -1;
 
     // 컴포넌트 캐시
     Rigidbody2D rb;
@@ -109,8 +110,13 @@ public class EnemyAI : MonoBehaviour
     public bool HasTarget => playerTransform != null;
     public Vector2 TargetDirection => playerTransform != null ? (Vector2)(playerTransform.position - transform.position) : Vector2.zero;
     public float DistanceToTarget => playerTransform != null ? TargetDirection.magnitude : float.MaxValue;
+    public EnemyAIData.EnemyType EnemyType => enemyType;
+    public EnemyAIData AIData => aiData;
 
-    void Awake()
+    // 상태 변경 이벤트 (이전 상태, 새 상태)
+    public event System.Action<AIState, AIState> OnStateChanged;
+
+    protected virtual void Awake()
     {
         if (health == null) health = GetComponent<EnemyHealth>();
         if (vision == null) vision = GetComponent<EnemyVision>();
@@ -147,7 +153,7 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
-    void Update()
+    protected virtual void Update()
     {
         if (health != null && health.IsDead) return;
 
@@ -390,6 +396,7 @@ public class EnemyAI : MonoBehaviour
             Debug.Log($"[EnemyAI] {name}: {previousState} -> {currentState}");
 
         OnStateEnter(newState);
+        OnStateChanged?.Invoke(previousState, currentState);
     }
 
     void OnStateEnter(AIState state)
@@ -600,7 +607,7 @@ public class EnemyAI : MonoBehaviour
         {
             // 타겟 방향으로 조준
             Vector2 aimDir = TargetDirection.normalized;
-            weaponController.TryFire(); // WeaponController가 PlayerAnimation 참조하므로 적용 필요
+            weaponController.TryFire(aimDir);
         }
 
         // 버스트/단발 처리
@@ -1192,7 +1199,7 @@ public class EnemyAI : MonoBehaviour
             ChangeState(AIState.Hurt);
     }
 
-    void OnDied()
+    protected virtual void OnDied()
     {
         ChangeState(AIState.Dead);
     }
@@ -1264,11 +1271,18 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
+    /// <summary>경직 진입 (EnemyHealth에서 호출)</summary>
+    public void EnterStagger()
+    {
+        if (currentState == AIState.Dead) return;
+        ChangeState(AIState.Stagger);
+    }
+
     /// <summary>AI 데이터 적용 (스크립터블 오브젝트에서)</summary>
     public void ApplyAIData(EnemyAIData data)
     {
         aiData = data;
-        enemyType = data.EnemyType;
+        enemyType = data.Type;
         detectRange = data.detectRange;
         attackRange = data.attackRange;
         minAttackRange = data.minAttackRange;
@@ -1307,7 +1321,7 @@ public class EnemyAI : MonoBehaviour
 
     #endregion
 
-    void OnDrawGizmosSelected()
+    protected virtual void OnDrawGizmosSelected()
     {
         if (!drawGizmos) return;
 

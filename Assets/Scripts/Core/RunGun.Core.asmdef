@@ -1,6 +1,10 @@
 {
     "name": "RunGun.Core",
-    "references": [],
+    "references": [
+        "Unity.InputSystem",
+        "Unity.Cinemachine",
+        "Unity.TextMeshPro"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,

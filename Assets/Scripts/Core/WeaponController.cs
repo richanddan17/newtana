@@ -1,4 +1,5 @@
 using UnityEngine;
+using System;
 using System.Collections.Generic;
 
 /// <summary>
@@ -25,6 +26,9 @@ public class WeaponController : MonoBehaviour
 
     [Header("Fire Point Override (옵션)")]
     [SerializeField] Transform firePointOverride; // Muzzle 대신 쓸 커스텀 포인트
+
+    [Header("Overlay Rules")]
+    [SerializeField] bool canShootWhileDashing = false; // 계획서 [2]: Dash 중 사격 기본 불가
 
     // 상태
     float nextFireTime = 0f;
@@ -67,6 +71,14 @@ public class WeaponController : MonoBehaviour
     void Update()
     {
         if (currentWeaponData == null) return;
+
+        // 플레이어 사격 연동: 오버레이 Shooting 상태 + 발사 가능이면 자동 발사
+        if (stateController != null &&
+            stateController.CurrentOverlayState == PlayerState.Shooting &&
+            CanFireInternal())
+        {
+            TryFire();
+        }
 
         HandleBurstFire();
         HandleReloadInput();
@@ -124,6 +136,10 @@ public class WeaponController : MonoBehaviour
     {
         if (!CanFireInternal()) return;
 
+        // 플레이어 사격 요청 소비 (Shoot Buffer)
+        if (stateController != null)
+            stateController.ConsumeShootBuffer();
+
         // 발사 방향: PlayerAnimation의 조준 방향
         Vector2 fireDir = playerAnimation?.GetCurrentAimDirectionVector() ?? Vector2.right;
         Vector3 firePos = GetFirePosition();
@@ -132,13 +148,35 @@ public class WeaponController : MonoBehaviour
         Fire(firePos, fireDir);
     }
 
+    /// <summary>발사 시도 (방향 지정 - 적 AI용)</summary>
+    public void TryFire(Vector2 direction)
+    {
+        if (!CanFireInternal()) return;
+
+        Vector3 firePos = GetFirePosition();
+        Fire(firePos, direction);
+    }
+
     bool CanFireInternal()
     {
         if (currentWeaponData == null) return false;
         if (isReloading) return false;
         if (Time.time < nextFireTime) return false;
-        if (!stateController.CanShoot) return false; // 상태 시스템 확인 (Hurt/Death/Dash 등)
-        
+
+        if (stateController != null)
+        {
+            if (!stateController.CanShoot) return false; // 상태 시스템 확인 (Hurt/Death/Dash 등)
+
+            // Hurt/Death 오버레이 중 사격 차단
+            if (stateController.CurrentOverlayState == PlayerState.Hurt ||
+                stateController.CurrentOverlayState == PlayerState.Death)
+                return false;
+
+            // Dash 중 사격: Inspector 옵션 (기본 불가)
+            if (stateController.CurrentOverlayState == PlayerState.Dash && !canShootWhileDashing)
+                return false;
+        }
+
         // 탄약 확인
         if (currentWeaponData.UseAmmo && currentAmmoInMag <= 0)
         {
@@ -161,7 +199,7 @@ public class WeaponController : MonoBehaviour
         }
 
         // 연사 모드 처리
-        switch (currentWeaponData.FireMode)
+        switch (currentWeaponData.Mode)
         {
             case WeaponData.FireMode.Semi:
                 // 단발: 다음 발사까지 대기
@@ -178,8 +216,8 @@ public class WeaponController : MonoBehaviour
         }
 
         // 단발/연사 첫 발 발사
-        if (currentWeaponData.FireMode != WeaponData.FireMode.Burst &&
-            currentWeaponData.FireMode != WeaponData.FireMode.Shotgun)
+        if (currentWeaponData.Mode != WeaponData.FireMode.Burst &&
+            currentWeaponData.Mode != WeaponData.FireMode.Shotgun)
         {
             SpawnProjectile(position, direction);
         }
@@ -248,7 +286,7 @@ public class WeaponController : MonoBehaviour
 
         for (int i = 0; i < pelletCount; i++)
         {
-            float angleOffset = Random.Range(-spread, spread);
+            float angleOffset = UnityEngine.Random.Range(-spread, spread);
             Vector2 dir = Quaternion.Euler(0, 0, angleOffset) * baseDir;
             SpawnProjectile(position, dir);
         }

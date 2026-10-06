@@ -21,7 +21,7 @@ public class Checkpoint : MonoBehaviour
     [Header("Activation")]
     [SerializeField] bool activateOnTouch = true; // 플레이어 접촉 시 자동 활성화
     [SerializeField] bool requireGrounded = false; // 지상에 있을 때만 활성화
-    [SerializeField] LayerMask playerLayerMask;
+    [SerializeField] LayerMask playerLayerMask; // 0이면 태그만으로 판정
 
     [Header("Feedback")]
     [SerializeField] GameObject activationEffectPrefab; // 활성화 시 이펙트
@@ -39,6 +39,7 @@ public class Checkpoint : MonoBehaviour
     bool isActivated = false;
     bool isCurrentCheckpoint = false;
     float lastActivationTime = -999f;
+    RespawnSystem respawnSystem;
 
     // 이벤트
     public event System.Action<Checkpoint> OnActivated;
@@ -66,9 +67,14 @@ public class Checkpoint : MonoBehaviour
         if (parentRoom == null)
             parentRoom = GetComponentInParent<Room>();
 
+        if (parentRoom == null)
+            Debug.LogWarning($"[Checkpoint] '{checkpointName}'에 연결된 Room이 없습니다. 부활 시 현재 Room을 유지합니다.", this);
+
         // 스프라이트 렌더러 자동 찾기
         if (spriteRenderer == null)
             spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+
+        respawnSystem = FindAnyObjectByType<RespawnSystem>();
 
         UpdateVisual();
     }
@@ -83,6 +89,10 @@ public class Checkpoint : MonoBehaviour
     {
         if (!activateOnTouch) return;
         if (!other.CompareTag("Player")) return;
+
+        if (playerLayerMask.value != 0 && (playerLayerMask.value & (1 << other.gameObject.layer)) == 0)
+            return;
+
         if (Time.time - lastActivationTime < activationCooldown) return;
 
         // Grounded 체크 (옵션)
@@ -103,8 +113,10 @@ public class Checkpoint : MonoBehaviour
         isActivated = true;
         lastActivationTime = Time.time;
         
-        // 현재 체크포인트로 등록 (RespawnSystem이 관리)
-        var respawnSystem = FindAnyObjectByType<RespawnSystem>();
+        // 현재 체크포인트로 등록 (활성 체크포인트는 RespawnSystem이 단일 출처로 관리)
+        if (respawnSystem == null)
+            respawnSystem = FindAnyObjectByType<RespawnSystem>();
+
         if (respawnSystem != null)
         {
             respawnSystem.SetCurrentCheckpoint(this);
@@ -121,9 +133,12 @@ public class Checkpoint : MonoBehaviour
     /// <summary>현재 체크포인트 해제 (다른 체크포인트 활성화 시)</summary>
     public void DeactivateAsCurrent()
     {
+        if (!isCurrentCheckpoint) return;
+
         isCurrentCheckpoint = false;
         UpdateVisual();
         OnLostCurrent?.Invoke(this);
+        OnDeactivated?.Invoke(this);
     }
 
     /// <summary>현재 체크포인트로 설정</summary>

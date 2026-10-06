@@ -1,4 +1,7 @@
 using UnityEngine;
+using System;
+
+// Force recompile to clear stale cache
 
 /// <summary>
 /// 무기 데이터 - 계획서 [공통 규약 5] ScriptableObject로 분리.
@@ -25,7 +28,7 @@ public class WeaponData : ScriptableObject
     [Header("Stats")]
     public float Damage = 10f;
     public float FireRate = 0.2f;          // 초당 발사 수 = 1/FireRate
-    public FireMode FireMode = FireMode.Auto;
+    public FireMode Mode = FireMode.Auto;
     public int BurstCount = 3;             // Burst 모드일 때
     public float BurstInterval = 0.05f;    // 버스트 내 발사 간격
 
@@ -45,18 +48,18 @@ public class WeaponData : ScriptableObject
     public AudioClip FireSound;            // 발사 사운드
     public AudioClip ReloadSound;          // 재장전 사운드
 
-    [Header("Ammo (Optional)")]
-    public bool UseAmmo = false;
+    [Header("Ammo (Optional) - 에셋에 재장전 클립 없음 → 기본 비활성")]
+    public bool UseAmmo = false;            // 기본 무한 탄약 (확장 시 true)
     public int MagazineSize = 30;
     public float ReloadTime = 1.5f;
-    public int StartingAmmo = 90;          // 예비 탄약
-    public bool InfiniteReserveAmmo = false; // 예비 탄약 무한
+    public int StartingAmmo = 90;
+    public bool InfiniteReserveAmmo = false;
 
-    [Header("Recoil (Optional)")]
-    public bool UseRecoil = false;
+    [Header("Recoil (Optional) - 에셋에 대시 클립 없음 → 기본 비활성")]
+    public bool UseRecoil = false;          // 기본 비활성 (확장 시 true)
     public float RecoilForce = 2f;
     public float RecoilRecovery = 10f;
-    public Vector2 RecoilDirection = Vector2.left; // 반동 방향 (로컬)
+    public Vector2 RecoilDirection = Vector2.left;
 
     [Header("Special Effects")]
     public bool Explosive = false;         // 폭발 탄
@@ -76,7 +79,7 @@ public class WeaponData : ScriptableObject
     public float TracerWidth = 0.1f;       // 트레이서 두께
 
     /// <summary>초당 발사 수</summary>
-    public float RoundsPerSecond => FireMode == FireMode.Auto ? 1f / Mathf.Max(FireRate, 0.001f) : 0f;
+    public float RoundsPerSecond => Mode == FireMode.Auto ? 1f / Mathf.Max(FireRate, 0.001f) : 0f;
 
     public enum FireMode
     {

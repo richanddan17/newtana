@@ -1,4 +1,7 @@
 using UnityEngine;
+using System;
+
+// Force recompile to clear stale cache
 
 /// <summary>
 /// 적 AI 데이터 - ScriptableObject로 관리하여 프리팹별/타입별 설정 용이.
@@ -11,7 +14,7 @@ public class EnemyAIData : ScriptableObject
     [Header("Identity")]
     public string EnemyName;
     public GameObject EnemyPrefab; // 프리팹 참조 (풀링용)
-    public EnemyType EnemyType = EnemyType.RangedShooter; // 타입별 로직 분기
+    public EnemyType Type = EnemyType.RangedShooter; // 타입별 로직 분기
 
     public enum EnemyType
     {
@@ -19,7 +22,10 @@ public class EnemyAIData : ScriptableObject
         Turret,          // 고정 포대 (이동 없음)
         MeleeCharger,    // 근접 돌진형
         Flying,          // 비행형 (중력 무시)
-        Boss             // 보스 (패턴 기반)
+        Boss,            // 보스 (패턴 기반)
+        AR,              // 소총병 (3방향 사격)
+        RPG,             // 로켓병 (정면 전용)
+        Sniper           // 저격수 (정면 전용)
     }
 
     [Header("Detection")]
@@ -58,6 +64,7 @@ public class EnemyAIData : ScriptableObject
     [Header("Weapon")]
     public WeaponData weaponData;             // 원거리 무기 (Ranged/Turret/Boss)
     public bool useMeleeAttack = false;       // 근접 공격 사용 여부
+    public int aimDirectionCount = 3;         // 조준 방향 수 (AR=3, RPG/Sniper=1)
 
     [Header("Health/Poise")]
     public float maxHealth = 50f;
@@ -74,7 +81,7 @@ public class EnemyAIData : ScriptableObject
     void Reset()
     {
         EnemyName = "New Enemy";
-        EnemyType = EnemyType.RangedShooter;
+        Type = EnemyType.RangedShooter;
         detectRange = 10f;
         fieldOfView = 110f;
         attackRange = 8f;

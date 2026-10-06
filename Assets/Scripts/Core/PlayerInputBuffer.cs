@@ -1,9 +1,10 @@
 using UnityEngine;
+using System;
 using UnityEngine.InputSystem;
 
 /// <summary>
 /// 입력 버퍼 통합 관리.
-/// 계획서 [6] Jump Buffer, Dash Buffer, Shoot Hold.
+/// 계획서 [6] Jump Buffer, Dash Buffer, Shoot Hold, Shoot Buffer.
 /// 계획서 [7] 입력 차단 (Death, 컷신, 부활 연출).
 /// </summary>
 public class PlayerInputBuffer
@@ -24,6 +25,9 @@ public class PlayerInputBuffer
     bool shootHeld;
     bool shootPressedThisFrame;
     bool shootReleasedThisFrame;
+    float shootBufferTimer;
+
+    bool crouchHeld;
 
     bool reloadPressedThisFrame;
 
@@ -31,6 +35,11 @@ public class PlayerInputBuffer
     readonly float coyoteTime;
     readonly float jumpBufferDuration;
     readonly float dashBufferDuration = 0.1f;
+
+    // Shoot buffer 설정 (Inspector에서 조정 가능하도록 public)
+    public float shootBufferDuration = 0.15f;
+    public bool shootBufferEnabled = true;
+    public bool dashBufferEnabled = false; // 대시 비활성 기본 (에셋 클립 없음)
 
     // 차단 상태
     bool isBlocked;
@@ -41,23 +50,16 @@ public class PlayerInputBuffer
         this.jumpBufferDuration = jumpBufferDuration;
     }
 
+    /// <summary>타이머 감소만 수행. 프레임 플래그 정리는 EndFrame()에서.</summary>
     public void Update(float deltaTime)
     {
-        if (isBlocked)
-        {
-            ClearFrameInputs();
-            return;
-        }
-
-        // 타이머 감소
         if (jumpBufferTimer > 0f) jumpBufferTimer -= deltaTime;
         if (dashBufferTimer > 0f) dashBufferTimer -= deltaTime;
-
-        // 프레임 단위 플래그 리셋
-        ClearFrameInputs();
+        if (shootBufferTimer > 0f) shootBufferTimer -= deltaTime;
     }
 
-    void ClearFrameInputs()
+    /// <summary>1회성 프레임 플래그 정리. Input System 콜백(Update 전 발화) 이후, 상태 머신 소비 후 호출.</summary>
+    public void EndFrame()
     {
         jumpPressedThisFrame = false;
         jumpReleasedThisFrame = false;
@@ -65,6 +67,14 @@ public class PlayerInputBuffer
         shootPressedThisFrame = false;
         shootReleasedThisFrame = false;
         reloadPressedThisFrame = false;
+    }
+
+    /// <summary>타이머만 초기화. 홀드 상태(shootHeld/crouchHeld/jumpHeld)는 유지.</summary>
+    public void ClearTimers()
+    {
+        jumpBufferTimer = 0f;
+        dashBufferTimer = 0f;
+        shootBufferTimer = 0f;
     }
 
     // === 이동 입력 ===
@@ -86,6 +96,8 @@ public class PlayerInputBuffer
         jumpReleasedThisFrame = true;
     }
 
+    public bool HasJumpBuffer => jumpBufferTimer > 0f && !isBlocked;
+
     /// <summary>이번 프레임에 점프 버퍼가 유효한가 (Coyote Time과 함께 사용)</summary>
     public bool ConsumeJumpBuffer()
     {
@@ -106,7 +118,7 @@ public class PlayerInputBuffer
     {
         if (isBlocked) return;
         dashPressedThisFrame = true;
-        dashBufferTimer = dashBufferDuration;
+        if (dashBufferEnabled) dashBufferTimer = dashBufferDuration;
     }
 
     public bool ConsumeDashPressed()
@@ -125,6 +137,7 @@ public class PlayerInputBuffer
         if (isBlocked) return;
         shootHeld = true;
         shootPressedThisFrame = true;
+        if (shootBufferEnabled) shootBufferTimer = shootBufferDuration;
     }
 
     public void SetShootReleased(InputAction.CallbackContext ctx)
@@ -133,9 +146,30 @@ public class PlayerInputBuffer
         shootReleasedThisFrame = true;
     }
 
+    public bool HasShootBuffer => shootBufferEnabled && shootBufferTimer > 0f && !isBlocked;
+
+    public bool ConsumeShootBuffer()
+    {
+        if (shootBufferTimer > 0f)
+        {
+            shootBufferTimer = 0f;
+            return true;
+        }
+        return false;
+    }
+
     public bool IsShootHeld => shootHeld && !isBlocked;
     public bool WasShootPressedThisFrame => shootPressedThisFrame && !isBlocked;
     public bool WasShootReleasedThisFrame => shootReleasedThisFrame;
+
+    // === 앉기 (hold) ===
+    public bool IsCrouchHeld => crouchHeld && !isBlocked;
+
+    public void SetCrouchHeld(bool held)
+    {
+        if (isBlocked && held) return;
+        crouchHeld = held;
+    }
 
     // === 재장전 ===
     public void SetReloadPressed(InputAction.CallbackContext ctx)
@@ -155,7 +189,16 @@ public class PlayerInputBuffer
     }
 
     // === 차단/초기화 ===
-    public void SetBlocked(bool blocked) => isBlocked = blocked;
+    public void SetBlocked(bool blocked)
+    {
+        isBlocked = blocked;
+        if (blocked)
+        {
+            // 홀드 상태(shootHeld/crouchHeld/jumpHeld)는 유지, 타이머만 초기화
+            ClearTimers();
+        }
+    }
+
     public bool IsBlocked => isBlocked;
 
     public void ClearAll()
@@ -163,9 +206,9 @@ public class PlayerInputBuffer
         MoveInput = Vector2.zero;
         AimInput = Vector2.zero;
         jumpHeld = false;
-        jumpBufferTimer = 0f;
-        dashBufferTimer = 0f;
         shootHeld = false;
-        ClearFrameInputs();
+        crouchHeld = false;
+        ClearTimers();
+        EndFrame();
     }
 }

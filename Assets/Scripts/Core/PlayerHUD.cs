@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 
 /// <summary>
 /// 플레이어 HUD - 체력, 탄약, 무기, 미니맵 표시.
@@ -19,21 +18,21 @@ public class PlayerHUD : MonoBehaviour
     [SerializeField] Slider healthBar;
     [SerializeField] Image healthBarFill;
     [SerializeField] Gradient healthBarGradient; // 체력 비율에 따른 색상
-    [SerializeField] TextMeshProUGUI healthText;
+    [SerializeField] Text healthText;
     [SerializeField] GameObject healthWarningEffect; // 낮은 체력 경고
 
     [Header("Ammo UI")]
-    [SerializeField] TextMeshProUGUI currentAmmoText;
-    [SerializeField] TextMeshProUGUI reserveAmmoText;
+    [SerializeField] Text currentAmmoText;
+    [SerializeField] Text reserveAmmoText;
     [SerializeField] GameObject ammoContainer;
     [SerializeField] Image ammoIcon;
     [SerializeField] Slider reloadProgressBar; // 재장전 진행도
     [SerializeField] GameObject noAmmoWarning;
 
     [Header("Weapon UI")]
-    [SerializeField] TextMeshProUGUI weaponNameText;
+    [SerializeField] Text weaponNameText;
     [SerializeField] Image weaponIcon;
-    [SerializeField] TextMeshProUGUI fireModeText;
+    [SerializeField] Text fireModeText;
 
     [Header("Minimap")]
     [SerializeField] RawImage minimapRenderTexture;
@@ -46,7 +45,7 @@ public class PlayerHUD : MonoBehaviour
     [Header("State Indicators")]
     [SerializeField] GameObject dashCooldownOverlay;
     [SerializeField] GameObject invincibilityOverlay;
-    [SerializeField] TextMeshProUGUI dashCooldownText;
+    [SerializeField] Text dashCooldownText;
 
     [Header("Animation")]
     [SerializeField] float healthLerpSpeed = 5f;
@@ -275,7 +274,7 @@ public class PlayerHUD : MonoBehaviour
             weaponIcon.sprite = weapon.Icon;
 
         if (fireModeText != null)
-            fireModeText.text = weapon.FireMode.ToString();
+            fireModeText.text = weapon.Mode.ToString();
     }
 
     void OnReloadStart()
@@ -290,25 +289,8 @@ public class PlayerHUD : MonoBehaviour
 
     System.Collections.IEnumerator UpdateReloadProgress()
     {
-        if (playerWeapon == null || playerWeapon.CurrentWeapon == null) yield break;
-
-        float reloadTime = playerWeapon.CurrentWeapon.ReloadTime;
-        float elapsed = 0f;
-
-        while (elapsed < reloadTime && playerWeapon.IsReloading)
-        {
-            elapsed += Time.deltaTime;
-            if (reloadProgressBar != null)
-                reloadProgressBar.value = elapsed / reloadTime;
-            yield return null;
-        }
-
-        if (reloadProgressBar != null)
-        {
-            reloadProgressBar.value = 1f;
-            yield return new WaitForSeconds(0.3f);
-            reloadProgressBar.gameObject.SetActive(false);
-        }
+        // 재장전 비활성화됨 (에셋에 클립 없음) - 무기 데이터에서 UseAmmo=true이고 재장전 로직 추가 시 활성화
+        yield break;
     }
 
     void OnReloadComplete()
@@ -334,9 +316,9 @@ public class PlayerHUD : MonoBehaviour
             case PlayerState.Shooting:
                 // 사격 중 UI 강조 (선택적)
                 break;
-            case PlayerState.Reloading:
-                // 재장전 중 UI 표시
-                break;
+            // case PlayerState.Reloading: // 재장전 비활성화됨 (에셋에 클립 없음)
+            //     // 재장전 중 UI 표시
+            //     break;
         }
     }
 
@@ -346,23 +328,7 @@ public class PlayerHUD : MonoBehaviour
 
     void UpdateDashCooldown()
     {
-        if (playerState == null) return;
-
-        bool canDash = playerState.CanDash;
-        float cooldownRemaining = 0f;
-
-        // PlayerStateController에서 대시 쿨다운 남은 시간 가져오기 (public 프로퍼티 필요)
-        // 임시: 대시 중이면 쿨다운 표시
-        if (dashCooldownOverlay != null)
-        {
-            dashCooldownOverlay.SetActive(!canDash && playerState.IsDashing == false);
-        }
-
-        if (dashCooldownText != null && !canDash)
-        {
-            // 쿨다운 시간 표시 (PlayerStateController에 public float DashCooldownRemaining 필요)
-            // dashCooldownText.text = $"{cooldownRemaining:F1}s";
-        }
+        // 대시 비활성화됨 (에셋에 클립 없음) - 대시 기능 추가 시 활성화
     }
 
     #endregion

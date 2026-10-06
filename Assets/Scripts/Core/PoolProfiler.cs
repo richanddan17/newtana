@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Profiling;
+using UnityEngine.UI;
 
 /// <summary>
 /// 풀링 시스템 성능 튜닝 및 프로파일링 도구.
@@ -24,7 +25,7 @@ public class PoolProfiler : MonoBehaviour
     [SerializeField] float poolUtilizationTarget = 0.7f; // 70% 활용률 목표
 
     [Header("UI (Optional)")]
-    [SerializeField] TMPro.TextMeshProUGUI statsText;
+    [SerializeField] Text statsText;
     [SerializeField] bool showInGameUI = true;
 
     // 통계
