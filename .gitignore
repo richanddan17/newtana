@@ -112,3 +112,6 @@ InitTestScene*.unity*
 
 # Auto-generated cache in Assets folder
 /[Aa]ssets/[Ss]ceneDependencyCache*
+
+# OMO harness runtime state (per-session continuation bookkeeping; not project source)
+/.omo/run-continuation/
