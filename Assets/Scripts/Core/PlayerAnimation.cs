@@ -28,7 +28,7 @@ public class PlayerAnimation : MonoBehaviour
     [SerializeField] string groundedParam = "IsGrounded";   // bool
     [SerializeField] string crouchParam = "IsCrouching";    // bool: 앉기
     [SerializeField] string shootingParam = "IsShooting";   // bool: 사격 오버레이
-    [SerializeField] string aimDirParam = "AimDir";         // int: 0=정면, 1=위, 2=아래(공중만)
+    [SerializeField] string aimDirParam = "AimDir";         // int: 0=정면, 1=위45, 2=위90, 3=아래45, 4=아래90
     [SerializeField] string deadParam = "IsDead";           // bool
     // 대시/재장전/피격트리거: 에셋에 없음 → 비활성
     // [SerializeField] string dashingParam = "IsDashing";
@@ -38,10 +38,10 @@ public class PlayerAnimation : MonoBehaviour
     [Header("Sprite Structure")]
     [SerializeField] bool upperBodySeparated = false; // true: 상체/하체 분리(Animator Layer), false: 통짜(합본 클립)
 
-    [Header("Aim Direction (3방향: 정면/위/공중아래)")]
+    [Header("Aim Direction (5방향: 정면/위45/위90/아래45/아래90)")]
     [SerializeField] bool useAimDirection = true;
-    [Tooltip("정면(→), 위(↑), 아래(↓) 순서 - 대각선 없음")]
-    [SerializeField] string[] aimDirectionNames = { "Forward", "Up", "Down" };
+    [Tooltip("정면(→), 위45(↗), 위90(↑), 아래45(↘), 아래90(↓) 순서")]
+    [SerializeField] string[] aimDirectionNames = { "Front", "Up45", "Up90", "Down45", "Down90" };
 
     [System.Serializable]
     public struct MuzzleOffsetSet
@@ -336,11 +336,22 @@ public class PlayerAnimation : MonoBehaviour
     /// <summary>현재 조준 방향 벡터 반환 (발사 방향용)</summary>
     public Vector2 GetCurrentAimDirectionVector()
     {
+        // 벡터는 우측 기준(+x)이고 좌우 반전은 루트 scale.x가 담당
+        float facing = transform.localScale.x > 0f ? 1f : -1f;
+        const float kDiagonal = 0.7071068f; // √2/2
+
         switch (currentAimDirIndex)
         {
-            case 1: return Vector2.up;                          // 위
-            case 2: return Vector2.down;                        // 아래 (공중만)
-            default: return transform.localScale.x > 0 ? Vector2.right : Vector2.left; // 정면
+            case PlayerStateController.AimDirUp45:
+                return new Vector2(kDiagonal * facing, kDiagonal);   // 위45 (±0.707, 0.707)
+            case PlayerStateController.AimDirUp90:
+                return Vector2.up;                                   // 위90 (0, 1)
+            case PlayerStateController.AimDirDown45:
+                return new Vector2(kDiagonal * facing, -kDiagonal);  // 아래45 (±0.707, -0.707)
+            case PlayerStateController.AimDirDown90:
+                return Vector2.down;                                 // 아래90 (0, -1)
+            default:
+                return new Vector2(facing, 0f);                      // 정면 (±1, 0)
         }
     }
 
