@@ -3,45 +3,40 @@ using System;
 using System.Collections.Generic;
 
 /// <summary>
-/// 플레이어 애니메이션 상태 시스템.
-/// 계획서 animation-state-system.md [1]~[9] 반영.
-/// - Animator 파라미터만 설정 (로직과 분리)
-/// - 사격 오버레이 (통짜 스프라이트: 합본 클립 / 상체분리: 레이어)
-/// - 조준 방향 연동 (AimDir)
-/// - Muzzle 위치 동기화
-/// - Hurt/Death 트리거
-/// - 방향 전환 (Collider/Muzzle 포함)
+/// 플레이어 애니메이션 상태 시스템 (스크립트 스프라이트 교체).
+/// 계획서 animation-state-system.md [1]~[4] 반영.
+/// - (이동 상태, AimDir) 2차원 조회로 시트 선택, 값이 바뀔 때만 교체
+/// - Animator 미사용 (RequireComponent/필드/파라미터 세팅 전부 제거)
+/// - Muzzle 위치 동기화 / 방향 전환 (scale.x 읽기만)
 /// </summary>
 [DisallowMultipleComponent]
-[RequireComponent(typeof(Animator))]
 public class PlayerAnimation : MonoBehaviour
 {
+    const int AimDirCount = PlayerStateController.AimDirDown90 + 1; // 5 (0~4)
+
     [Header("References")]
     [SerializeField] PlayerStateController stateController;
     [SerializeField] PlayerMovement movement;
-    [SerializeField] Animator animator;
     [SerializeField] SpriteRenderer spriteRenderer;
 
-    [Header("Animator Parameters (이름 일치 필요)")]
-    [SerializeField] string speedParam = "Speed";           // float: 수평 속도 절댓값
-    [SerializeField] string velocityYParam = "VelocityY";   // float: 수직 속도
-    [SerializeField] string groundedParam = "IsGrounded";   // bool
-    [SerializeField] string crouchParam = "IsCrouching";    // bool: 앉기
-    [SerializeField] string shootingParam = "IsShooting";   // bool: 사격 오버레이
-    [SerializeField] string aimDirParam = "AimDir";         // int: 0=정면, 1=위45, 2=위90, 3=아래45, 4=아래90
-    [SerializeField] string deadParam = "IsDead";           // bool
-    // 대시/재장전/피격트리거: 에셋에 없음 → 비활성
-    // [SerializeField] string dashingParam = "IsDashing";
-    // [SerializeField] string hurtTrigger = "Hurt";
-    // [SerializeField] string reloadingParam = "IsReloading";
+    [Header("Sprite Sheets (방향별 5장: 정면/위45/위90/아래45/아래90)")]
+    [SerializeField] Sprite[] aimSprites = new Sprite[AimDirCount]; // Idle 대기 (aim 시트)
+    [SerializeField] Sprite[] runSprites = new Sprite[AimDirCount];
+    [SerializeField] Sprite[] jumpSprites = new Sprite[AimDirCount];
+    [SerializeField] Sprite[] fallSprites = new Sprite[AimDirCount];
+    [SerializeField] Sprite[] shootSprites = new Sprite[AimDirCount];
+    [SerializeField] Sprite[] hurtSprites = new Sprite[AimDirCount];
+
+    [Header("Sprite Sheets (단일)")]
+    [SerializeField] Sprite deathSprite;    // 방향 무시
+    [SerializeField] Sprite wakeSprite;     // 부활 연출
+    [SerializeField] Sprite dormantSprite;  // 시작 전/사후 대기 (등록은 3단계)
 
     [Header("Sprite Structure")]
     [SerializeField] bool upperBodySeparated = false; // true: 상체/하체 분리(Animator Layer), false: 통짜(합본 클립)
 
     [Header("Aim Direction (5방향: 정면/위45/위90/아래45/아래90)")]
     [SerializeField] bool useAimDirection = true;
-    [Tooltip("정면(→), 위45(↗), 위90(↑), 아래45(↘), 아래90(↓) 순서")]
-    [SerializeField] string[] aimDirectionNames = { "Front", "Up45", "Up90", "Down45", "Down90" };
 
     [System.Serializable]
     public struct MuzzleOffsetSet
@@ -76,8 +71,7 @@ public class PlayerAnimation : MonoBehaviour
     [SerializeField] bool flipByScale = true; // true: Transform.scale.x 반전, false: SpriteRenderer.flipX
     [SerializeField] bool flipMuzzleWithScale = true;
 
-    [Header("Events (외부 연결용)")]
-    [SerializeField] int eventsHeaderDummy; // Header용 더미 필드
+    // 이벤트 (외부 연결용)
     public event Action<int> OnAimDirectionChanged; // aimDir index
     public event Action<bool> OnShootingChanged;    // shooting active
     public event Action OnHurtAnimationStart;
@@ -85,13 +79,12 @@ public class PlayerAnimation : MonoBehaviour
 
     // 상태 캐시
     int currentAimDirIndex = 0;
-    bool wasShooting = false;
-    bool wasGrounded = true;
-    float lastVelocityY = 0f;
+
+    /// <summary>부활 연출 중 여부 (선택 순서 2순위. 3단계 타이머가 설정/해제)</summary>
+    public bool IsWakePlaying { get; set; }
 
     void Awake()
     {
-        if (animator == null) animator = GetComponent<Animator>();
         if (spriteRenderer == null) spriteRenderer = GetComponent<SpriteRenderer>();
         if (stateController == null) stateController = GetComponent<PlayerStateController>();
         if (movement == null) movement = GetComponent<PlayerMovement>();
@@ -101,12 +94,6 @@ public class PlayerAnimation : MonoBehaviour
         {
             PlayerStateEvents.OnMoveStateChanged += OnMoveStateChanged;
             PlayerStateEvents.OnOverlayChanged += OnOverlayChanged;
-        }
-
-        // Movement 이벤트 구독
-        if (movement != null)
-        {
-            // GroundCheck 이벤트는 Movement를 통해 간접 확인
         }
     }
 
@@ -121,38 +108,59 @@ public class PlayerAnimation : MonoBehaviour
 
     void LateUpdate()
     {
-        if (animator == null) return;
-
-        UpdateAnimatorParameters();
+        UpdateSprite();
         UpdateAimDirection();
         UpdateMuzzlePosition();
         UpdateDirectionFlip();
     }
 
-    void UpdateAnimatorParameters()
+    /// <summary>선택된 시트가 이전과 다를 때만 교체 (매 프레임 재대입 금지)</summary>
+    void UpdateSprite()
     {
-        // Speed (수평 속도)
-        if (!string.IsNullOrEmpty(speedParam))
-            animator.SetFloat(speedParam, movement?.HorizontalSpeed ?? 0f, 0.1f, Time.deltaTime);
+        if (spriteRenderer == null) return;
 
-        // VelocityY
-        if (!string.IsNullOrEmpty(velocityYParam))
-            animator.SetFloat(velocityYParam, movement?.VerticalSpeed ?? 0f);
+        Sprite next = ResolveSprite();
+        if (next != null && spriteRenderer.sprite != next)
+            spriteRenderer.sprite = next;
+    }
 
-        // IsGrounded
-        if (!string.IsNullOrEmpty(groundedParam))
-            animator.SetBool(groundedParam, movement?.IsGrounded ?? true);
+    /// <summary>시트 선택 순서 (animation-state-system.md [3]): death → wake → hurt → shoot → 이동 상태×AimDir</summary>
+    Sprite ResolveSprite()
+    {
+        if (stateController == null) return null;
 
-        // IsCrouching
-        if (!string.IsNullOrEmpty(crouchParam))
+        PlayerState moveState = stateController.CurrentMoveState;
+
+        // 1. 사망 (방향 무시, 루트 반전으로 처리)
+        if (moveState == PlayerState.Death) return deathSprite;
+
+        // 2. 부활 연출
+        if (IsWakePlaying) return wakeSprite;
+
+        // 3. Hurt (AimDir 사용)
+        if (moveState == PlayerState.Hurt) return PickDirectionSheet(hurtSprites);
+
+        // 4. 사격 오버레이 (이동 중이어도 우선)
+        if (stateController.CurrentOverlayState == PlayerState.Shooting)
+            return PickDirectionSheet(shootSprites);
+
+        // 5. 이동 상태 시트 (Idle→aim, Run→run, Jump→jump, Fall→fall)
+        switch (moveState)
         {
-            bool isCrouching = stateController?.CurrentMoveState == PlayerState.Crouch;
-            animator.SetBool(crouchParam, isCrouching);
+            case PlayerState.Idle: return PickDirectionSheet(aimSprites);
+            case PlayerState.Run: return PickDirectionSheet(runSprites);
+            case PlayerState.Jump: return PickDirectionSheet(jumpSprites);
+            case PlayerState.Fall: return PickDirectionSheet(fallSprites);
+            default: return null; // Crouch/Dash: 시트 미정의 → 조용히 스킵 (4단계 범위)
         }
+    }
 
-        // IsDead
-        if (!string.IsNullOrEmpty(deadParam))
-            animator.SetBool(deadParam, stateController?.CurrentMoveState == PlayerState.Death);
+    /// <summary>방향별 시트 조회. 배열 미등록/인덱스 범위 밖/슬롯 null은 조용히 스킵 (에러 없음)</summary>
+    Sprite PickDirectionSheet(Sprite[] sheet)
+    {
+        int index = useAimDirection ? currentAimDirIndex : PlayerStateController.AimDirFront;
+        if (sheet == null || index < 0 || index >= sheet.Length) return null;
+        return sheet[index];
     }
 
     void UpdateAimDirection()
@@ -160,14 +168,9 @@ public class PlayerAnimation : MonoBehaviour
         if (!useAimDirection || stateController == null) return;
 
         int newAimDir = stateController.AimDirectionIndex;
-
         if (newAimDir != currentAimDirIndex)
         {
             currentAimDirIndex = newAimDir;
-            
-            if (!string.IsNullOrEmpty(aimDirParam))
-                animator.SetInteger(aimDirParam, currentAimDirIndex);
-
             OnAimDirectionChanged?.Invoke(currentAimDirIndex);
         }
     }
@@ -193,19 +196,9 @@ public class PlayerAnimation : MonoBehaviour
 
     PlayerState GetCurrentMoveStateForMuzzle()
     {
+        // 상태 시스템 기반으로 판별 (Crouch/Jump/Fall 구분 포함)
         if (stateController == null) return PlayerState.Idle;
-        
-        // Crouch 상태면 Crouch
-        // 애니메이터 파라미터로 IsCrouching 확인 가능하면 좋지만, 여기선 상태 시스템 기반으로
-        var moveState = stateController.CurrentMoveState;
-        if (moveState == PlayerState.Crouch) return PlayerState.Crouch;
-        
-        // 공중 상태면 Jump/Fall 구분
-        if (moveState == PlayerState.Jump || moveState == PlayerState.Fall)
-            return moveState;
-        
-        // 지상: Idle/Run
-        return moveState;
+        return stateController.CurrentMoveState;
     }
 
     Vector2 GetMuzzleOffset(PlayerState moveState, int aimDir)
@@ -264,70 +257,38 @@ public class PlayerAnimation : MonoBehaviour
 
     void OnMoveStateChanged(PlayerState from, PlayerState to)
     {
-        switch (to)
-        {
-            case PlayerState.Death:
-                if (!string.IsNullOrEmpty(deadParam))
-                    animator.SetBool(deadParam, true);
-                OnDeathAnimationStart?.Invoke();
-                break;
-
-            case PlayerState.Idle:
-            case PlayerState.Run:
-            case PlayerState.Jump:
-            case PlayerState.Fall:
-            case PlayerState.Crouch:
-                // Death/Hurt에서 복귀 시 IsDead 리셋
-                if (from == PlayerState.Death || from == PlayerState.Hurt)
-                {
-                    if (!string.IsNullOrEmpty(deadParam))
-                        animator.SetBool(deadParam, false);
-                }
-                break;
-        }
+        // death/wake/hurt 시트는 ResolveSprite가 상태값으로 판별. 이벤트는 사망 알림만 유지.
+        if (to == PlayerState.Death)
+            OnDeathAnimationStart?.Invoke();
     }
 
     void OnOverlayChanged(PlayerState overlay, bool active)
     {
-        switch (overlay)
-        {
-            case PlayerState.Shooting:
-                if (!string.IsNullOrEmpty(shootingParam))
-                    animator.SetBool(shootingParam, active);
-                wasShooting = active;
-                OnShootingChanged?.Invoke(active);
-                break;
-            // Reloading: 비활성 (에셋에 클립 없음)
-        }
+        // Reloading 연출 없음 (에셋에 클립 없음)
+        if (overlay == PlayerState.Shooting)
+            OnShootingChanged?.Invoke(active);
     }
 
     #endregion
 
     #region Public API
 
-    /// <summary>피격 플래시 트리거 (Hurt 클립 없음 → 플래시만)</summary>
+    /// <summary>피격 플래시 트리거 (OnHurtAnimationStart 구독자에게 전달)</summary>
     public void TriggerHurtFlash()
     {
-        OnHurtAnimationStart?.Invoke(); // DamageFlash 컴포넌트가 구독해서 처리
+        OnHurtAnimationStart?.Invoke();
     }
 
-    /// <summary>사망 애니메이션 시작</summary>
+    /// <summary>사망 애니메이션 시작 (death 시트 선택은 ResolveSprite가 상태로 처리)</summary>
     public void TriggerDeath()
     {
-        if (!string.IsNullOrEmpty(deadParam))
-            animator.SetBool(deadParam, true);
         OnDeathAnimationStart?.Invoke();
     }
 
     /// <summary>부활 시 애니메이션 리셋</summary>
     public void ResetAnimation()
     {
-        if (!string.IsNullOrEmpty(deadParam))
-            animator.SetBool(deadParam, false);
-        if (!string.IsNullOrEmpty(shootingParam))
-            animator.SetBool(shootingParam, false);
-        if (!string.IsNullOrEmpty(crouchParam))
-            animator.SetBool(crouchParam, false);
+        IsWakePlaying = false;
     }
 
     /// <summary>현재 조준 방향 인덱스 반환 (무기 시스템에서 사용)</summary>
