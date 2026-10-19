@@ -228,7 +228,9 @@ public class Room : MonoBehaviour
             Gizmos.DrawWireCube(Bounds.center, Bounds.size);
         }
 
+#if UNITY_EDITOR
         // Room ID 표시
         UnityEditor.Handles.Label(transform.position + Vector3.up * 2f, $"Room: {roomId}");
+#endif
     }
 }

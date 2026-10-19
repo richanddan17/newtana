@@ -1401,7 +1401,9 @@ public class EnemyAI : MonoBehaviour
             Gizmos.DrawRay(groundCheckBack.position, Vector2.down * edgeCheckDistance);
         }
 
+#if UNITY_EDITOR
         // 상태 표시
         UnityEditor.Handles.Label(transform.position + Vector3.up * 2f, $"AI: {currentState}");
+#endif
     }
 }
