@@ -1,6 +1,14 @@
-# Run & Gun Platformer - 종합 계획서 & 로드맵 (v4)
+# Run & Gun Platformer - 종합 계획서 & 로드맵 (v5)
 
 Unity 6 2D 횡스크롤 총게임(Run & Gun) 전체 시스템 계획서의 구현 순서, 문서 현황, 공통 규약을 한곳에 정리한다.
+
+v5에서 바뀐 점 (최종 플레이어 에셋 구조에 맞춰 참조를 정리한 개정):
+- 플레이어 스프라이트 구조를 **단일 스프라이트 + 스크립트 교체**로 확정. Body/Arm 분리와 Animator/Clip은 사용하지 않는다.
+- PPU를 16 가정에서 **100**(에셋 실측값)으로 확정. pivot은 중앙(0.5, 0.5).
+- bot_wheel_sprites 폴더와 manifest.json은 존재하지 않는다. Muzzle은 TBD 보정 절차로 진행한다. (sprite-asset-spec v5)
+- animation-state-system v5, sprite-asset-spec v5 재작성 반영. 달리기 중 사격 = 이동 유지 + 스프라이트 교체로 확정.
+- 신규 문서: background-parallax-system v1 (Room 단위 배경 + 패럴랙스). Phase 7에 편성.
+- 적 스프라이트 구조 확인 완료: Assets/sprite/enemies에 body/aim/dash/hurt/idle/run/shoot 프레임 세트 존재 (통짜 스프라이트, Arm 없음).
 
 v4에서 바뀐 점 (설계 결정은 바꾸지 않고, 문서 간 표기와 참조를 정리한 개정):
 - 패키지 버전을 v4로 통일. (이전에는 폴더 plans_v2, 로드맵 v3, 개별 문서 머리말 v2/v3/표기 없음이 섞여 있었다.)
@@ -26,8 +34,9 @@ v3에서 바뀐 점:
 - 장르: 2D 횡스크롤 총게임
 - 엔진: Unity 6
 - 근접/패링/콤보는 삭제
-- 플레이어 스프라이트: 상체/하체 분리 (Body + Arm). 합본 클립(Run+Shoot 등)은 만들지 않는다.
+- 플레이어 스프라이트: 단일 스프라이트 + 스크립트 교체 (Animator/Clip 미사용). 합본 클립은 만들지 않는다.
 - 조준: 방향 입력 기반 5방향 스냅 (정면 / 위 45° / 위 90° / 아래 45° / 아래 90°). 왼쪽은 scale.x 반전.
+- 달리기 중 사격: 가능 (이동 유지, 스프라이트를 shoot 프레임으로 교체)
 - 바라보는 방향: 조준 방향 우선 (조준 입력 좌우 성분 → 이동 방향 → 유지)
 - Crouch(앉기): 포함하지 않음
 
@@ -37,12 +46,12 @@ v3에서 바뀐 점:
 |---|---|---|
 | 사격 방식 | 눈에 보이는 투사체(Projectile) | weapon, hitbox, enemy-ai |
 | 아래 조준 | 공중에서만 허용 (지상에서는 정면으로 스냅) | input, animation |
-| 사격 중 이동 | 가능 (이동하면서 사격) | movement, animation |
+| 사격 중 이동 | 가능 확정 (이동 유지 + shoot 스프라이트 교체) | movement, animation |
 | 대시 | 포함 여부 미정. 미정이면 선택 기능으로 둠 | movement, state, animation |
 | 탄약/재장전 | 미정. 무한 탄약으로 시작해 확장 가능하게 | weapon |
 | 무기 교체 | 미정. Phase 8 전까지 구현하지 않음 | weapon, state |
 | 피격 후 무적 | 짧은 무적 시간 포함 | health-damage |
-| PPU | 16 | sprite-asset-spec |
+| PPU | 100 (에셋 실측 확정) | sprite-asset-spec |
 | 입력 방식 | 새 Input System 권장, 프로젝트 확인 후 결정 | input |
 
 ==================================================
@@ -53,14 +62,15 @@ v3에서 바뀐 점:
 |---|---|---|
 | player-state-input-system | v4 | 5방향 Aim Snap, 바라보는 방향 규칙, Crouch 제외, Unity 6. v4: 머리말 버전만 정리 |
 | player-movement-system | v4 | Unity 6 API(linearVelocity), 바라보는 방향 참조. v4: 머리말 버전만 정리 |
-| animation-state-system | v4 | Body/Arm 분리, 5방향 Arm, 앵커/Muzzle, Arm 표시 규칙. v4: 머리말 버전만 정리 |
-| sprite-asset-spec | v4 | 셀 크기, pivot, 앵커, Muzzle 값, 임포트 설정. v4: 임포트 PPU를 가정값 [1]과 연결 |
-| weapon-projectile-system | v4 | AimDir 5방향 발사 벡터, 방향별 Muzzle, OnFired 연출 연결, Unity 6 풀링. v4: 머리말 버전만 정리 |
-| hitbox-hurtbox-system | v4 | Crouch 제거, Hurtbox는 Body 기준. v4: 머리말 표현 통일 |
+| animation-state-system | **v5** | 단일 스프라이트 + 스크립트 교체, 5방향 표, 달리기 중 사격, 코드 수정 체크리스트 [10]. (v4까지 Body/Arm/Animator) |
+| sprite-asset-spec | **v5** | 최종 에셋 경로/프레임 수 실측 반영, PPU 100, 중앙 pivot, Muzzle TBD 보정 절차. (v4까지 셀 크기/앵커 표) |
+| weapon-projectile-system | v4 | AimDir 5방향 발사 벡터, 방향별 Muzzle, OnFired 연출 연결, Unity 6 풀링. v5 대응: Arm 참조 제거 |
+| hitbox-hurtbox-system | v4 | Crouch 제거. v5 대응: Hurtbox 단일 Body 기준으로 문구 정리 |
 | health-damage-system | v4 | DamageInfo, 피격, 무적 시간, 사망. v4: 머리말 버전만 정리 (내용은 v3과 동일) |
-| enemy-ai-system | v4 | 적 스프라이트 구조 확인 문구. v4: 사망 시 총알 처리 기본값 명시 |
+| enemy-ai-system | v4 | 적 스프라이트 구조 확인 완료(통짜 스프라이트). 사망 시 총알 처리 기본값 명시. v5 대응: Arm 참조 제거 |
 | room-camera-system | v4 | Cinemachine 3 확인 문구. v4: 머리말 버전만 정리 |
-| checkpoint-respawn-system | v4 | Arm 상태 초기화, Wake 연출 연결. v4: 머리말 버전만 정리 |
+| checkpoint-respawn-system | v4 | Wake 연출 연결. v5 대응: Arm 상태 초기화 문구 제거 |
+| background-parallax-system | **v1** | 신규. Room 단위 배경, ParallaxLayer, 레이어/factor 표 (Phase 7 편성) |
 | combat-system | 폐기 | weapon-projectile과 health-damage로 흡수 |
 | parry-system | 삭제 | 장르 변경으로 불필요 |
 
@@ -77,7 +87,7 @@ v3에서 바뀐 점:
 5. WeaponData / ProjectileData: ScriptableObject 등 데이터로 분리해 플레이어와 적이 같은 구조를 쓴다.
 6. 좌우 방향 규칙: 바라보는 방향은 player-state-input-system [5]에서 한 곳에서 정한다. 반전은 루트 scale.x로 하고 Collider, Muzzle, 이펙트가 함께 따라간다.
 7. 월드 좌표 하드코딩 금지. 위치는 Transform, 스포너, 체크포인트 오브젝트에서 가져온다.
-8. 이동 Collider와 전투(Hurtbox) Collider 분리. Hurtbox는 Body 기준이며 Arm(총)은 포함하지 않는다.
+8. 이동 Collider와 전투(Hurtbox) Collider 분리. Hurtbox는 플레이어/적 스프라이트 본체 기준이다.
 9. 조준 방향은 AimDir 값(0 정면, 1 위45, 2 위90, 3 아래45, 4 아래90) 하나로 전달한다. 입력 시스템이 계산하고, 무기와 애니메이션은 이 값만 받는다.
 10. Unity 6 API: Rigidbody2D는 linearVelocity / linearDamping을 쓴다. 오브젝트 풀은 UnityEngine.Pool.ObjectPool<T> 사용을 검토한다.
 11. 스프라이트 규격(셀, pivot, 앵커, Muzzle)은 sprite-asset-spec 한 곳에서만 정의하고 다른 문서는 참조한다.
@@ -131,15 +141,15 @@ Phase 2. 플레이어 이동
 Phase 3. 플레이어 애니메이션
 --------------------------------------------------
 
-문서: animation-state-system (v3), sprite-asset-spec
+문서: animation-state-system (v5), sprite-asset-spec (v5)
 
-- Body Animator (Idle/Run/Jump/Fall/Hurt/Death), 파라미터 연동
-- Arm 스크립트: AimDir에 따른 5방향 스프라이트 교체, 사격 연출(총알 없이 PlayShot 테스트)
-- Body 프레임별 Arm 앵커, 방향별 Muzzle 위치 갱신
-- Hurt/Death/Dash/Wake 중 Arm 숨김
-- 방향 전환 규칙 (루트 scale.x, Collider/Muzzle 포함)
+- 단일 SpriteRenderer + 스크립트 스프라이트 교체 (Animator/Clip 미사용)
+- 상태별 5방향 프레임 세트 (aim/run/shoot/hurt/jump/fall, death/wake/idle_dormant)
+- 달리기 중 사격: 이동 유지 + 스프라이트를 shoot 프레임으로 교체
+- 방향별 Muzzle 오프셋 (TBD 보정 절차로 확정)
+- Hurt/Death/Wake 중 사격 연출 중단, facing 루트 scale.x 반전 (Collider/Muzzle 포함)
 
-완료 기준: 이동 상태와 조준/사격 연출이 겹쳐 올바르게 재생되고, 방향을 바꾸거나 좌우를 뒤집어도 Muzzle 위치가 맞고, 달리는 중에 팔이 몸에서 떨어지지 않는다. (이 시점에서는 총알이 없어도 된다.)
+완료 기준: 이동 상태와 조준/사격 연출이 겹쳐 올바르게 재생되고, 방향을 바꾸거나 좌우를 뒤집어도 Muzzle 위치가 맞는다. (이 시점에서는 총알이 없어도 된다.)
 
 --------------------------------------------------
 Phase 4. 무기, 투사체, 판정, 체력
@@ -148,7 +158,7 @@ Phase 4. 무기, 투사체, 판정, 체력
 문서: weapon-projectile-system, hitbox-hurtbox-system, health-damage-system
 
 - 무기 데이터, 발사 속도, Muzzle 발사, 투사체 이동/수명/풀링
-- AimDir 5방향 발사 벡터, OnFired 이벤트로 Arm 사격 연출 연결
+- AimDir 5방향 발사 벡터, OnFired 이벤트로 사격 프레임 연출 연결
 - 투사체와 Hurtbox 판정, Team 필터, 지형 충돌
 - DamageInfo 전달, Health 처리, 피격 무적, 사망 이벤트
 - 중복 타격 방지 (관통 총알일 때)
