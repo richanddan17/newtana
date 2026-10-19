@@ -16,6 +16,7 @@ public class RespawnSystem : MonoBehaviour
     [SerializeField] PlayerStateController playerState;
     [SerializeField] PlayerMovement playerMovement;
     [SerializeField] WeaponController playerWeapon;
+    [SerializeField] PlayerAnimation playerAnimation; // 애니메이션 잔여 상태 정리 + wake 연출용
     [SerializeField] RoomCamera roomCamera;
     [SerializeField] RoomManager roomManager;
 
@@ -73,6 +74,7 @@ public class RespawnSystem : MonoBehaviour
         if (playerState == null) playerState = FindAnyObjectByType<PlayerStateController>();
         if (playerMovement == null) playerMovement = FindAnyObjectByType<PlayerMovement>();
         if (playerWeapon == null) playerWeapon = FindAnyObjectByType<WeaponController>();
+        if (playerAnimation == null) playerAnimation = FindAnyObjectByType<PlayerAnimation>();
         if (roomCamera == null) roomCamera = FindAnyObjectByType<RoomCamera>();
         if (roomManager == null) roomManager = FindAnyObjectByType<RoomManager>();
 
@@ -167,10 +169,16 @@ public class RespawnSystem : MonoBehaviour
             playerHealth.GrantRespawnInvincibility(respawnInvincibilityDuration);
         }
 
-        // 8. 페이드 인
+        // 8. wake 연출 시작 → 페이드 인(0.5s)과 겹쳐 wake 5프레임(0.4s)이 플레이어 화면에 보임 (플랜 [7])
+        if (playerAnimation != null)
+        {
+            playerAnimation.IsWakePlaying = true;
+        }
+
+        // 9. 페이드 인
         yield return StartCoroutine(FadeCoroutine(1f, 0f, fadeDuration));
 
-        // 9. 사망 중 입력 잠금 해제
+        // 10. 사망 중 입력 잠금 해제
         if (playerState != null)
             playerState.SetInputBlocked(false);
 
@@ -286,6 +294,13 @@ public class RespawnSystem : MonoBehaviour
         if (playerState != null)
         {
             playerState.ResetState();
+        }
+
+        // 애니메이션 잔여 상태 정리 (deathDone, muzzleFX 잔여 프레임 — 플랜 [7])
+        // ResetState는 이벤트를 발화하지 않으므로 여기서 직접 리셋
+        if (playerAnimation != null)
+        {
+            playerAnimation.ResetAnimation();
         }
 
         // 사격 상태 (연사 쿨다운, 재장전 진행) 초기화
