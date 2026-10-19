@@ -191,14 +191,15 @@ Phase 6. 플레이어 피격과 적 애니메이션 정리
 Phase 7. Room, 카메라, 체크포인트
 --------------------------------------------------
 
-문서: room-camera-system, checkpoint-respawn-system
+문서: room-camera-system, checkpoint-respawn-system, background-parallax-system
 
 - Room 경계와 카메라 전환
-- 체크포인트 활성화, 사망 → 부활, 상태 초기화 (Arm 상태 포함)
+- 체크포인트 활성화, 사망 → 부활, 상태 초기화
 - 적 리셋 정책 (Room 기준), 부활 후 무적과 카메라 Room 갱신
 - 낙사/함정 사망 처리와 낙사 구제 (가장자리 구제, 즉시 부활)
+- 배경/패럴랙스: ParallaxLayer, Room 단위 배경 배치 (background-parallax-system v1)
 
-완료 기준: 사망 후 마지막 체크포인트에서 부활하고, 카메라가 올바른 Room을 사용하며, 적 리셋 정책이 동작한다.
+완료 기준: 사망 후 마지막 체크포인트에서 부활하고, 카메라가 올바른 Room을 사용하며, 적 리셋 정책이 동작한다. Room 전환 중 배경이 어긋나지 않는다.
 
 --------------------------------------------------
 Phase 8. 확장과 마감
@@ -208,7 +209,6 @@ Phase 8. 확장과 마감
 - 무기 종류 추가, 무기 교체 규칙, 탄약/재장전
 - UI/HUD (체력바, 탄약 표시), 일시정지 처리 (별도 문서 필요)
 - 보스 패턴 (필요 시)
-- 위/아래 방향 팔 그림, Jump/Fall 몸통 최종 그림으로 교체 (sprite-asset-spec [8])
 - 밸런싱과 Inspector 값 정리, 성능 점검 (풀링, 동시 사격 제한)
 
 ==================================================
@@ -250,49 +250,50 @@ Phase 3(애니메이션)과 Phase 4(무기)는 Muzzle 규칙에서 만난다. �
 3. 한 Phase가 끝나면 완료 기준을 직접 확인한 뒤 다음 Phase로 넘어간다.
 4. 이전 Phase에서 만든 코드를 수정해야 하면, 문서를 다시 쓰지 말고 영향받는 부분만 수정 요청한다.
 5. 새 문서를 쓸 때는 항상 "먼저 현재 프로젝트 확인" 단계를 첫 줄에 넣는다.
-6. 스프라이트 관련 작업(Phase 0, 3)에는 sprite-asset-spec과 에셋 폴더(manifest.json 포함)를 함께 준다.
+6. 스프라이트 관련 작업(Phase 0, 3)에는 sprite-asset-spec과 에셋 폴더 경로(Assets/sprite/)를 함께 준다. (manifest.json은 존재하지 않음)
 
 ==================================================
 [8. 지금 결정이 필요한 것]
 ==================================================
 
-확정됨 (v3):
+확정됨:
 
-1. 플레이어 스프라이트: 상체/하체 분리 (Body + Arm)
+1. 플레이어 스프라이트: 단일 스프라이트 + 스크립트 교체 (Body/Arm 분리 아님, Animator 미사용)
 2. 조준: 5방향 스냅
 3. 바라보는 방향: 조준 방향 우선
 4. Crouch: 제외
+5. PPU: 100 (에셋 실측), pivot 중앙
+6. 달리기 중 사격: 가능 (이동 유지 + shoot 스프라이트 교체)
 
 아직 필요한 결정:
 
 1. 사격이 투사체인가, 즉시 판정(히트스캔)인가 (기본 가정: 투사체)
-2. 대시를 넣을 것인가
+2. 대시를 넣을 것인가 (에셋은 dash 프레임 존재)
 3. 탄약과 재장전을 처음부터 넣을 것인가
 4. 무기 교체를 넣을 것인가
 5. 새 Input System을 쓸 것인가
-6. PPU 값 (기본 가정 16)
-7. 아래 조준을 지상에서도 허용할 것인가 (기본 가정: 공중에서만)
+6. 아래 조준을 지상에서도 허용할 것인가 (기본 가정: 공중에서만)
 
 ==================================================
-[9. 개정(v4) 중 발견한 열린 항목 (결정하지 않고 기록만)]
+[9. 열린 항목 (v5 기준으로 갱신)]
 ==================================================
 
-문서 11개를 처음부터 끝까지 읽으며 확인한 사항이다. 해당 Phase에 들어가기 전에 정하면 된다.
+v4까지 읽으며 기록한 항목 중 v5에서 해소된 것은 아래에 표시했다. 남은 항목은 해당 Phase에 들어가기 전에 정하면 된다.
 
-1. Wake의 소속
-   - animation-state-system은 Wake(부활 연출)를 Body 선택 상태로 두고, player-state-input-system [7]은 "부활 연출 중" 입력 차단을 언급한다.
+1. Wake의 소속 (남음)
+   - animation-state-system v5은 Wake(부활 연출)를 선택 상태로 두고, player-state-input-system [7]은 "부활 연출 중" 입력 차단을 언급한다.
    - 그런데 player-state-input-system [1]의 상태 목록에는 Wake가 없다.
    - Wake를 Player State로 넣을지, 입력 차단 사유로만 둘지 정해야 한다. (영향: input, animation, checkpoint, Phase 7)
 
-2. Animator 파라미터 부족
-   - animation-state-system [3]에는 Wake, Charge, Reload에 해당하는 파라미터가 없다. 해당 클립을 실제로 쓸 때 추가한다.
+2. Animator 파라미터 부족 (해소 - Animator 미사용)
+   - v5에서는 Animator/Clip을 쓰지 않으므로 파라미터 표는 폐기 대상. 스크립트 스프라이트 교체로 대체.
 
-3. idle_dormant 사용 여부
-   - sprite-asset-spec [6]에는 "비활성(시작 전)" 스프라이트가 있지만 animation-state-system 상태 목록에는 없다. 시작 전 상태를 쓸지 정한다.
+3. idle_dormant 사용 여부 (남음)
+   - sprite-asset-spec v5에는 idle_dormant(비활성) 스프라이트가 있으나 animation-state-system 상태 목록과의 연결은 TBD. 시작 전 상태를 쓸지 정한다.
 
-4. 에셋 원본 미확인
-   - bot_wheel_sprites 폴더와 manifest.json이 이번 자료에 없어 Muzzle 값(sprite-asset-spec [5])은 원본과 대조하지 못했다.
-   - Arm 앵커 표(sprite-asset-spec [4])는 문서의 계산식과 pivot 값으로 모든 행을 검산했고 일치한다.
+4. Muzzle 값 미확정 (남음 - 절차는 확정)
+   - bot_wheel_sprites 폴더와 manifest.json은 존재하지 않는다. (v4 대비 해소)
+   - Muzzle 값은 TBD 표로 관리하며, sprite-asset-spec v5의 보정 절차로 확정한다.
 
-5. 적 스프라이트 구조
-   - enemy-ai-system 머리말대로 적 에셋이 Body/Arm 분리인지 통짜인지는 아직 확인되지 않았다. Phase 5 전에 확인한다.
+5. 적 스프라이트 구조 (해소)
+   - Assets/sprite/enemies에 body/aim/dash/hurt/idle/run/shoot 프레임 세트 확인. 통짜 스프라이트이며 Arm 분리 아님.
