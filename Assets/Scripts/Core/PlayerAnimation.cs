@@ -58,11 +58,13 @@ public partial class PlayerAnimation : MonoBehaviour
     // 필드명 개명(muzzleOffsets→aimMuzzleOffsets): moveState 포함 레거시 직렬화 데이터를 강제 리셋
     [SerializeField] MuzzleOffsetSet[] aimMuzzleOffsets = new MuzzleOffsetSet[]
     {
-        new MuzzleOffsetSet { aimDir = 0, offset = new Vector2(0.5f, 0.1f) },    // 정면
-        new MuzzleOffsetSet { aimDir = 1, offset = new Vector2(0.3f, 0.4f) },    // 위45
-        new MuzzleOffsetSet { aimDir = 2, offset = new Vector2(0.1f, 0.6f) },    // 위90
-        new MuzzleOffsetSet { aimDir = 3, offset = new Vector2(0.5f, -0.15f) },  // 아래45
-        new MuzzleOffsetSet { aimDir = 4, offset = new Vector2(0.5f, -0.3f) },   // 아래90
+    // aim 시트(64×32, 셀 20×24 등, pivot=셀 중앙)에서 픽셀 극단점(조준 벡터 내적 최대)으로 실측한 값
+    // 아래 방향(3,4)은 발끝 픽셀과 겹칠 수 있어 플레이 중 총구 확인 후 미세 보정 필요
+    new MuzzleOffsetSet { aimDir = 0, offset = new Vector2(0.080f, 0.040f) },   // 정면
+    new MuzzleOffsetSet { aimDir = 1, offset = new Vector2(0.060f, 0.080f) },   // 위45
+    new MuzzleOffsetSet { aimDir = 2, offset = new Vector2(-0.015f, 0.100f) },  // 위90
+    new MuzzleOffsetSet { aimDir = 3, offset = new Vector2(0.005f, -0.100f) },  // 아래45 (플레이 확인)
+    new MuzzleOffsetSet { aimDir = 4, offset = new Vector2(-0.005f, -0.110f) }, // 아래90 (플레이 확인)
     };
 
     [Header("Direction Flip")]
@@ -204,8 +206,8 @@ public partial class PlayerAnimation : MonoBehaviour
             }
         }
 
-        // 최종 폴백 (정면 기본값)
-        return new Vector2(0.5f, 0.1f);
+        // 최종 폴백 (정면 실측값)
+        return new Vector2(0.080f, 0.040f);
     }
 
     void UpdateDirectionFlip()
