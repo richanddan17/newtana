@@ -244,7 +244,7 @@ public class EnemyHealth : MonoBehaviour, IDamageable
 
         if (enemyAI != null)
         {
-            // enemyAI.EnterDead(); // EnemyAI에 구현 필요
+            enemyAI.EnterDead();
         }
 
         if (disableOnDeath)
@@ -256,6 +256,7 @@ public class EnemyHealth : MonoBehaviour, IDamageable
     System.Collections.IEnumerator DisableAfterDeath()
     {
         yield return new WaitForSeconds(deathDelay);
+        if (!isDead) yield break; // 대기 중 체크포인트로 리셋된 적은 비활성화하지 않음
         gameObject.SetActive(false); // 풀 반환용
     }
 

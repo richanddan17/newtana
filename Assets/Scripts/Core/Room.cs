@@ -191,7 +191,7 @@ public class Room : MonoBehaviour
             if (ai != null)
             {
                 // AI 상태 리셋 (순찰/대기로)
-                // ai.ResetState(); // EnemyAI에 메서드 추가 필요
+                ai.ResetState();
             }
             
             enemyObj.SetActive(true);
