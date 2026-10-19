@@ -12,6 +12,7 @@ public class PlayerStateController : MonoBehaviour
     [Header("References")]
     [SerializeField] PlayerInputHandler inputHandler;
     [SerializeField] Rigidbody2D rb;
+    [SerializeField] Health health;
 
     [Header("Ground Check")]
     [SerializeField] Transform groundCheckPoint;
@@ -38,6 +39,8 @@ public class PlayerStateController : MonoBehaviour
     [SerializeField] float dashCooldown = 1f;
     [SerializeField] bool dashInvincibility = true;
     [SerializeField] float dashInvincibilityDuration = 0.15f;
+
+    const string DashSourceId = "Dash";
 
     [Header("State Debug")]
     [SerializeField] bool logStateChanges = false;
@@ -97,6 +100,8 @@ public class PlayerStateController : MonoBehaviour
 
     void Awake()
     {
+        if (health == null) health = GetComponent<Health>();
+
         inputBuffer = new PlayerInputBuffer(coyoteTime, jumpBufferTime);
         inputBuffer.shootBufferDuration = shootBufferDuration;
         inputBuffer.shootBufferEnabled = shootBufferEnabled;
@@ -402,10 +407,10 @@ public class PlayerStateController : MonoBehaviour
         isDashing = true;
 
         // 대시 방향 결정 (이미 RequestDash에서 설정됨)
-        // 무적 프레임은 Health 시스템에서 별도 관리하거나 여기서 트리거
+        // 대시 무적: Health에 무적 요청, EndDash에서 해제
         if (dashInvincibility)
         {
-            // Health에 무적 요청 이벤트 발생 (구현 시 연결)
+            health?.AddInvincibility(DashSourceId, dashInvincibilityDuration, false);
         }
     }
 
@@ -415,6 +420,7 @@ public class PlayerStateController : MonoBehaviour
         isDashing = false;
         externalVelocity = Vector2.zero;
         externalVelocityTimer = 0f;
+        health?.RemoveInvincibility(DashSourceId);
     }
 
     void RequestDash(Vector2 direction)
@@ -474,6 +480,7 @@ public class PlayerStateController : MonoBehaviour
         externalVelocity = Vector2.zero;
         externalVelocityTimer = 0f;
         coyoteTimer = 0f;
+        health?.RemoveInvincibility(DashSourceId); // 대시 강제 종료 시 무적 해제
         inputBuffer.ClearAll();
 
         if (logStateChanges)
