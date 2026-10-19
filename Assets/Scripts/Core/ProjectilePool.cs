@@ -20,6 +20,12 @@ public class ProjectilePool : MonoBehaviour
     readonly Dictionary<int, Queue<ProjectileData>> pools = new();
     readonly Dictionary<int, GameObject> prefabMap = new();
 
+    // 투사체 GameObject 인스턴스 ID -> 원본 프리팹 인스턴스 ID (Return 시 소유 풀 판별용)
+    readonly Dictionary<int, int> projectileToPrefab = new();
+
+    // 프리팹 인스턴스 ID -> 풀 밖(활성) 투사체 수
+    readonly Dictionary<int, int> activeCounts = new();
+
     // 싱글톤 접근용
     public static ProjectilePool Instance { get; private set; }
 
@@ -77,7 +83,7 @@ public class ProjectilePool : MonoBehaviour
     {
         GameObject targetPrefab = prefab;
 
-        // 프리팹 지정 없으면 첫 번째 등록된 것 사용
+        // 폴백 명시: 프리팹 미지정(null) 시 첫 번째 등록 프리팹의 풀을 기본으로 사용한다.
         if (targetPrefab == null)
         {
             foreach (var p in prefabMap.Values)
@@ -130,32 +136,51 @@ public class ProjectilePool : MonoBehaviour
 
         // 활성화 상태로 반환 (Initialize는 호출부에서)
         projectile.gameObject.SetActive(true);
+
+        // 소유 프리팹 추적: Return()이 정확한 풀로 되돌리도록 함
+        projectileToPrefab[projectile.gameObject.GetInstanceID()] = id;
+        activeCounts[id] = GetTotalActiveCount(id) + 1;
         return projectile;
     }
 
-    /// <summary>풀로 반환</summary>
+    /// <summary>풀로 반환 (투사체가 발급된 프리팹의 풀로 되돌림)</summary>
     public void Return(ProjectileData projectile)
     {
         if (projectile == null) return;
 
-        int id = projectile.gameObject.GetInstanceID();
-        // 원래 프리팹 ID 찾기 (태그나 컴포넌트로 구분)
-        // 여기선 간단히 첫 번째 풀에 반환
-        foreach (var pool in pools.Values)
+        int projId = projectile.gameObject.GetInstanceID();
+
+        // Get() 발급 시 기록한 원본 프리팹으로 소유 풀을 판별한다.
+        if (!projectileToPrefab.TryGetValue(projId, out int prefabId) ||
+            !pools.TryGetValue(prefabId, out var pool))
         {
-            // 타입 체크로 구분 가능하지만 간단히 모두 시도
-            pool.Enqueue(projectile);
-            break;
+            // 소유 풀을 알 수 없는 투사체는 잘못된 풀에 섞이지 않도록 파괴한다.
+            Debug.LogWarning($"[ProjectilePool] Untracked projectile '{projectile.name}' returned. Destroying instead of pooling.");
+            projectileToPrefab.Remove(projId);
+            Destroy(projectile.gameObject);
+            return;
         }
 
+        projectileToPrefab.Remove(projId);
+        activeCounts[prefabId] = Mathf.Max(0, GetTotalActiveCount(prefabId) - 1);
+
+        pool.Enqueue(projectile);
         projectile.Deinitialize();
     }
 
-    /// <summary>특정 프리팹의 활성 개수</summary>
+    /// <summary>특정 프리팹의 활성(풀 밖) 투사체 수</summary>
     int GetTotalActiveCount(int prefabId)
     {
-        // 대략적: 전체 풀 크기 - 대기 중인 개수
-        return 0; // 정확한 추적 필요시 별도 카운터 유지
+        return activeCounts.TryGetValue(prefabId, out int count) ? count : 0;
+    }
+
+    /// <summary>모든 풀의 활성 투사체 총합</summary>
+    public int GetTotalActiveCount()
+    {
+        int total = 0;
+        foreach (var count in activeCounts.Values)
+            total += count;
+        return total;
     }
 
     ProjectileData CreateProjectile(GameObject prefab)
@@ -183,6 +208,8 @@ public class ProjectilePool : MonoBehaviour
         }
         pools.Clear();
         prefabMap.Clear();
+        projectileToPrefab.Clear();
+        activeCounts.Clear();
     }
 
     void OnDestroy()
