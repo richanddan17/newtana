@@ -256,6 +256,13 @@ public class Health : MonoBehaviour, IDamageable
     {
         float now = Time.time;
         invincibilitySources.RemoveAll(s => s.EndTime <= now);
+
+        // 무적 종료 시 Hurt 상태를 실제 조건으로 복구 — Hurt에 머무르던 버그 방지 (animation-state-system [7] 무적 시간 연동)
+        if (invincibilitySources.Count == 0 && stateController != null &&
+            stateController.CurrentMoveState == PlayerState.Hurt)
+        {
+            stateController.ExitHurtState();
+        }
     }
 
     /// <summary>부활 시 무적 부여</summary>

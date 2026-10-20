@@ -83,9 +83,20 @@ public class PlayerStateController : MonoBehaviour
     public bool IsJumpHeld => inputBuffer?.IsJumpHeld ?? false;
 
     // === 공개 API (조준/버퍼/코요테) ===
-    /// <summary>스냅된 조준 방향 (정면/위/공중아래, 대각선 없음)</summary>
+    /// <summary>스냅된 조준 방향 (정면/위45/위90/아래45/아래90)</summary>
     public Vector2 AimInput { get; private set; }
-    /// <summary>0=정면, 1=위, 2=공중아래</summary>
+    // 조준 방향 인덱스 (애니메이터 AimDir 파라미터와 동일한 값, 계획서 [6] 표 기준)
+    public const int AimDirFront = 0;   // 정면 (±22.5°)
+    public const int AimDirUp45 = 1;    // 위 45°
+    public const int AimDirUp90 = 2;    // 위 90°
+    public const int AimDirDown45 = 3;  // 아래 45° (공중만)
+    public const int AimDirDown90 = 4;  // 아래 90° (공중만)
+
+    // 스냅 벡터 → 인덱스 판별 임계값 (정면 y=0, 대각 y=±0.707, 수직 y=±1)
+    const float AimSideThreshold = 0.5f;
+    const float AimVerticalThreshold = 0.95f;
+
+    /// <summary>조준 방향 인덱스 (0~4: 정면/위45/위90/아래45/아래90)</summary>
     public int AimDirectionIndex { get; private set; }
     public bool HasJumpBuffer => inputBuffer?.HasJumpBuffer ?? false;
     public bool ConsumeJumpBuffer() => inputBuffer != null && inputBuffer.ConsumeJumpBuffer();
@@ -149,11 +160,18 @@ public class PlayerStateController : MonoBehaviour
         // 외부 속도 적용
         ApplyExternalVelocity();
 
-        // 조준 방향 스냅 (정면/위/공중아래)
+        // 조준 방향 5구간 스냅 (정면 ±22.5° / 위45 / 위90 / 아래45 / 아래90)
         if (inputHandler != null)
         {
-            AimInput = PlayerInputHandler.SnapTo3Directions(inputHandler.AimInput, IsGrounded);
-            AimDirectionIndex = AimInput.y > 0.5f ? 1 : (AimInput.y < -0.5f ? 2 : 0);
+            AimInput = PlayerInputHandler.SnapTo5Directions(inputHandler.AimInput, IsGrounded);
+
+            // 스냅된 벡터 → 인덱스 (임계값으로 45°/90° 구분)
+            if (AimInput.y > AimSideThreshold)
+                AimDirectionIndex = AimInput.y >= AimVerticalThreshold ? AimDirUp90 : AimDirUp45;
+            else if (AimInput.y < -AimSideThreshold)
+                AimDirectionIndex = AimInput.y <= -AimVerticalThreshold ? AimDirDown90 : AimDirDown45;
+            else
+                AimDirectionIndex = AimDirFront;
         }
 
         // 1회성 프레임 플래그 정리 (Input System 콜백은 Update 전에 발화하므로 소비 후 정리)

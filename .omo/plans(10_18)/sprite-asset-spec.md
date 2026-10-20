@@ -82,22 +82,24 @@ PPU를 바꾸면 [4]의 좌표를 다시 계산한다. (현재는 PPU 100 확정
 
 Muzzle의 localPosition은 **Body 기준**이다. (v4의 "Arm pivot 기준" → "Body 기준")
 
-아래 값은 보정 전 시작값이다. manifest.json이 없으므로 다음 절차로 확정한다.
+아래 값은 aim 시트 픽셀에서 실측한 1차 값이다. (셀 64×32 안의 실제 셀 rect, pivot=셀 중앙,
+조준 벡터 방향으로 불투명 픽셀 중 내적 최대점 = 총구 끝). 아래 방향은 발끝 픽셀과 겹칠 수 있으므로
+플레이 중 총구 위치를 확인해 미세 보정한다.
 
-보정 절차:
-
-1. Scene에서 플레이어를 정면(오른쪽)으로 서게 하고 AimDir 0 상태 스프라이트를 표시한다.
-2. Scene View에서 총구 끝 픽셀 좌표를 Body 원점(피봇) 기준으로 확인한다.
-3. localPosition = (px / 100, -py / 100) (PPU 100, 픽셀 y는 아래 방향이므로 부호 반전)
-4. 5방향 각각 반복한 뒤 [4] 표를 갱신한다. 코드의 muzzleOffsets 배열에 입력한다.
-
-| AimDir | 방향 | localPosition (보정 후 기입) |
+| AimDir | 방향 | localPosition (실측 1차) |
 |---|---|---|
-| 0 | front | TBD |
-| 1 | up45 | TBD |
-| 2 | up90 | TBD |
-| 3 | down45 | TBD |
-| 4 | down90 | TBD |
+| 0 | front | (0.080, 0.040) |
+| 1 | up45 | (0.060, 0.080) |
+| 2 | up90 | (-0.015, 0.100) |
+| 3 | down45 | (0.005, -0.100) |
+| 4 | down90 | (-0.005, -0.110) |
+
+보정 절차 (플레이 확인용):
+
+1. 플레이 중 5방향으로 각각 발사해 총알이 총구 끝에서 나가는지 확인한다.
+2. 어긋나면 Scene View에서 총구 끝 픽셀을 Body 원점(피봇) 기준으로 읽는다.
+3. localPosition = (px / 100, py / 100) (PPU 100, Unity 셀 좌표는 위가 +y)
+4. 표를 갱신하고 PlayerAnimation의 aimMuzzleOffsets 배열에 반영한다.
 
 - 방향마다 위치가 다르므로 AimDir이 바뀔 때 함께 갱신한다. (animation-state-system [5])
 - 좌우 반전은 루트 scale.x이므로 좌향 시 자동으로 뒤집힌다. 별도 처리 없음.
