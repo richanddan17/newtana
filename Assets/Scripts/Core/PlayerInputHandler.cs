@@ -136,53 +136,68 @@ public class PlayerInputHandler : MonoBehaviour
         inputActionsAsset?.FindActionMap("Player")?.Disable();
     }
 
-    /// <summary>조준 입력 3방향 스냅 (정면/위/공중아래) - 계획서 확정: 대각선 없음</summary>
+    /// <summary>조준 입력 5방향 스냅 (정면/위45/위90/아래45/아래90) - 정면 ±22.5°, 대각 구간 45° 간격</summary>
     /// <param name="raw">원시 조준 입력</param>
-    /// <param name="isGrounded">지상인지 (공중에서만 아래 허용)</param>
-    /// <returns>스냅된 방향 벡터 (정면=좌/우, 위=up, 공중아래=down)</returns>
-    public static Vector2 SnapTo3Directions(Vector2 raw, bool isGrounded)
+    /// <param name="isGrounded">지상인지 (아래45/90은 지상에서 정면 계열로 스냅)</param>
+    /// <returns>스냅된 방향 벡터 (좌우 부호는 raw.x 기준, 좌우 반전은 루트 scale.x가 담당)</returns>
+    public static Vector2 SnapTo5Directions(Vector2 raw, bool isGrounded)
     {
         if (raw.sqrMagnitude < 0.01f) return Forward(raw);
 
         float angle = Mathf.Atan2(raw.y, raw.x) * Mathf.Rad2Deg;
         if (angle < 0) angle += 360f;
 
-        // 공중에서만 아래 허용
-        bool allowDown = !isGrounded;
+        // 대각 스냅 벡터 (√2/2) - 좌우 부호는 raw.x 기준 (Forward와 동일한 패턴)
+        Vector2 up45 = new Vector2(1f, 1f).normalized;    // 우측 기준 위45
+        Vector2 down45 = new Vector2(1f, -1f).normalized; // 우측 기준 아래45
+        if (raw.x < 0f) { up45.x = -up45.x; down45.x = -down45.x; }
 
-        // 정면: -22.5~22.5, 157.5~202.5 (좌우)
+        // 정면: ±22.5 (좌측 대칭 157.5~202.5)
         if (angle >= 337.5f || angle < 22.5f) return Forward(raw);
         if (angle >= 157.5f && angle < 202.5f) return Forward(raw);
-        // 위: 67.5~112.5
-        if (angle >= 67.5f && angle < 112.5f) return Vector2.up;
-        // 아래(공중만): 247.5~292.5
-        if (allowDown && angle >= 247.5f && angle < 292.5f) return Vector2.down;
+        // 위45: 22.5~67.5 (좌측 대칭 112.5~157.5)
+        if (angle < 67.5f) return up45;
+        if (angle >= 112.5f && angle < 157.5f) return up45;
+        // 위90: 67.5~112.5
+        if (angle < 112.5f) return Vector2.up;
 
-        // 나머지(대각선 영역)는 정면으로 스냅
-        return Forward(raw);
+        // 아래 구간(202.5~337.5): 아래는 공중에서만 허용, 지상이면 정면 계열로 스냅
+        if (isGrounded) return Forward(raw);
+        // 아래45: 202.5~247.5 (우측 대칭 292.5~337.5)
+        if (angle < 247.5f) return down45;
+        if (angle >= 292.5f) return down45;
+        // 아래90: 247.5~292.5
+        return Vector2.down;
     }
 
     static Vector2 Forward(Vector2 raw) => raw.x < 0f ? Vector2.left : Vector2.right;
 
-    /// <summary>스냅 인덱스를 월드 방향 벡터로 변환 (0=정면(오른쪽), 1=위, 2=아래)</summary>
+    /// <summary>스냅 인덱스를 월드 방향 벡터로 변환 (0=정면, 1=위45, 2=위90, 3=아래45, 4=아래90)</summary>
     public static Vector3 AimIndexToVector(int index)
     {
+        const float kDiagonal = 0.7071068f; // √2/2
         return index switch
         {
-            1 => Vector3.up,
-            2 => Vector3.down,
-            _ => Vector3.right,
+            PlayerStateController.AimDirUp45 => new Vector3(kDiagonal, kDiagonal, 0f),    // 위45
+            PlayerStateController.AimDirUp90 => Vector3.up,                               // 위90
+            PlayerStateController.AimDirDown45 => new Vector3(kDiagonal, -kDiagonal, 0f), // 아래45
+            PlayerStateController.AimDirDown90 => Vector3.down,                           // 아래90
+            _ => Vector3.right,                                                           // 정면
         };
     }
 
-    /// <summary>스냅 인덱스를 월드 방향 벡터로 변환 (하위 호환 오버로드)</summary>
+    /// <summary>스냅 인덱스를 월드 방향 벡터로 변환 (하위 호환 오버로드, facingRight > 0 = 오른쪽)</summary>
     public static Vector2 AimIndexToVector(int aimIndex, int facingRight)
     {
+        const float kDiagonal = 0.7071068f; // √2/2
+        float facing = facingRight > 0 ? 1f : -1f;
         return aimIndex switch
         {
-            1 => Vector2.up,                                    // 위
-            2 => Vector2.down,                                  // 아래 (공중만)
-            _ => facingRight > 0 ? Vector2.right : Vector2.left // 정면
+            PlayerStateController.AimDirUp45 => new Vector2(kDiagonal * facing, kDiagonal),    // 위45
+            PlayerStateController.AimDirUp90 => Vector2.up,                                   // 위90
+            PlayerStateController.AimDirDown45 => new Vector2(kDiagonal * facing, -kDiagonal), // 아래45
+            PlayerStateController.AimDirDown90 => Vector2.down,                               // 아래90
+            _ => facingRight > 0 ? Vector2.right : Vector2.left                               // 정면
         };
     }
 

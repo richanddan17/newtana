@@ -3,81 +3,75 @@ using System;
 using System.Collections.Generic;
 
 /// <summary>
-/// 플레이어 애니메이션 상태 시스템.
-/// 계획서 animation-state-system.md [1]~[9] 반영.
-/// - Animator 파라미터만 설정 (로직과 분리)
-/// - 사격 오버레이 (통짜 스프라이트: 합본 클립 / 상체분리: 레이어)
-/// - 조준 방향 연동 (AimDir)
-/// - Muzzle 위치 동기화
-/// - Hurt/Death 트리거
-/// - 방향 전환 (Collider/Muzzle 포함)
+/// 플레이어 애니메이션 상태 시스템 (스크립트 스프라이트 교체 + 프레임 타이머).
+/// 계획서 animation-state-system.md [1]~[8] 반영.
+/// - (이동 상태, AimDir) 2차원 조회로 시트 선택, 값이 바뀔 때만 교체
+/// - Animator 미사용 (RequireComponent/필드/파라미터 세팅 전부 제거)
+/// - 프레임 진행/루프/1회 재생·MuzzleFX 연출은 PlayerAnimation.Playback.cs (partial) 담당
+/// - Muzzle 위치 동기화 / 방향 전환 (scale.x 읽기만)
 /// </summary>
 [DisallowMultipleComponent]
-[RequireComponent(typeof(Animator))]
-public class PlayerAnimation : MonoBehaviour
+public partial class PlayerAnimation : MonoBehaviour
 {
+    const int AimDirCount = PlayerStateController.AimDirDown90 + 1; // 5 (0~4)
+
+    /// <summary>방향별 프레임 시트. frames 순서 = Unity 셀 순서 (y 위→아래, x 좌→우)</summary>
+    [Serializable]
+    public struct DirectionSheet
+    {
+        public Sprite[] frames;
+    }
+
     [Header("References")]
     [SerializeField] PlayerStateController stateController;
     [SerializeField] PlayerMovement movement;
-    [SerializeField] Animator animator;
     [SerializeField] SpriteRenderer spriteRenderer;
+    [SerializeField] WeaponController weapon; // MuzzleFX 트리거용 (OnFire 구독)
 
-    [Header("Animator Parameters (이름 일치 필요)")]
-    [SerializeField] string speedParam = "Speed";           // float: 수평 속도 절댓값
-    [SerializeField] string velocityYParam = "VelocityY";   // float: 수직 속도
-    [SerializeField] string groundedParam = "IsGrounded";   // bool
-    [SerializeField] string crouchParam = "IsCrouching";    // bool: 앉기
-    [SerializeField] string shootingParam = "IsShooting";   // bool: 사격 오버레이
-    [SerializeField] string aimDirParam = "AimDir";         // int: 0=정면, 1=위, 2=아래(공중만)
-    [SerializeField] string deadParam = "IsDead";           // bool
-    // 대시/재장전/피격트리거: 에셋에 없음 → 비활성
-    // [SerializeField] string dashingParam = "IsDashing";
-    // [SerializeField] string hurtTrigger = "Hurt";
-    // [SerializeField] string reloadingParam = "IsReloading";
+    [Header("Sprite Sheets (방향별 5장: 정면/위45/위90/아래45/아래90)")]
+    [SerializeField] DirectionSheet[] aimSprites = new DirectionSheet[AimDirCount]; // Idle 대기 (aim 시트)
+    [SerializeField] DirectionSheet[] runSprites = new DirectionSheet[AimDirCount];
+    [SerializeField] DirectionSheet[] jumpSprites = new DirectionSheet[AimDirCount];
+    [SerializeField] DirectionSheet[] fallSprites = new DirectionSheet[AimDirCount];
+    [SerializeField] DirectionSheet[] shootSprites = new DirectionSheet[AimDirCount];
+    [SerializeField] DirectionSheet[] hurtSprites = new DirectionSheet[AimDirCount];
 
-    [Header("Sprite Structure")]
-    [SerializeField] bool upperBodySeparated = false; // true: 상체/하체 분리(Animator Layer), false: 통짜(합본 클립)
+    [Header("Sprite Sheets (단일 방향무관 · 프레임 배열)")]
+    [SerializeField] Sprite[] deathFrames;   // 방향 무시, 6프레임
+    [SerializeField] Sprite[] wakeFrames;    // 부활 연출, 5프레임
+    [SerializeField] Sprite[] dormantFrames; // 시작 전/사후 대기, 1프레임 (Death 완료 후 ResolveSprite가 선택)
+    [SerializeField] Sprite[] dashFrames;    // Dash, 13프레임 (상태 미사용 → 필드만, 미연결)
 
-    [Header("Aim Direction (3방향: 정면/위/공중아래)")]
+    [Header("Aim Direction (5방향: 정면/위45/위90/아래45/아래90)")]
     [SerializeField] bool useAimDirection = true;
-    [Tooltip("정면(→), 위(↑), 아래(↓) 순서 - 대각선 없음")]
-    [SerializeField] string[] aimDirectionNames = { "Forward", "Up", "Down" };
 
     [System.Serializable]
     public struct MuzzleOffsetSet
     {
-        public PlayerState moveState;
-        public int aimDir; // 0=정면, 1=위, 2=아래
+        public int aimDir; // 0=정면, 1=위45, 2=위90, 3=아래45, 4=아래90
         public Vector2 offset;
     }
 
-    [Header("Muzzle Sync (자세별 x 조준방향별 오프셋)")]
+    [Header("Muzzle Sync (조준 방향별 총구 오프셋)")]
     [SerializeField] Transform muzzleTransform; // 총구 위치
-    [SerializeField] MuzzleOffsetSet[] muzzleOffsets = new MuzzleOffsetSet[]
+    // sprite-asset-spec [4] 5방향 표. 값은 보정 전 시작값 (TBD — 씬에서 총구 끝 픽셀 기준 재보정 후 갱신)
+    // 필드명 개명(muzzleOffsets→aimMuzzleOffsets): moveState 포함 레거시 직렬화 데이터를 강제 리셋
+    [SerializeField] MuzzleOffsetSet[] aimMuzzleOffsets = new MuzzleOffsetSet[]
     {
-        // Idle/Run 정면
-        new MuzzleOffsetSet { moveState = PlayerState.Idle, aimDir = 0, offset = new Vector2(0.5f, 0.1f) },
-        new MuzzleOffsetSet { moveState = PlayerState.Run, aimDir = 0, offset = new Vector2(0.5f, 0.1f) },
-        // Idle/Run 위
-        new MuzzleOffsetSet { moveState = PlayerState.Idle, aimDir = 1, offset = new Vector2(0.1f, 0.6f) },
-        new MuzzleOffsetSet { moveState = PlayerState.Run, aimDir = 1, offset = new Vector2(0.1f, 0.6f) },
-        // 공중 정면/위/아래
-        new MuzzleOffsetSet { moveState = PlayerState.Jump, aimDir = 0, offset = new Vector2(0.5f, 0.1f) },
-        new MuzzleOffsetSet { moveState = PlayerState.Fall, aimDir = 0, offset = new Vector2(0.5f, 0.1f) },
-        new MuzzleOffsetSet { moveState = PlayerState.Jump, aimDir = 1, offset = new Vector2(0.1f, 0.6f) },
-        new MuzzleOffsetSet { moveState = PlayerState.Fall, aimDir = 1, offset = new Vector2(0.1f, 0.6f) },
-        new MuzzleOffsetSet { moveState = PlayerState.Jump, aimDir = 2, offset = new Vector2(0.5f, -0.3f) },
-        new MuzzleOffsetSet { moveState = PlayerState.Fall, aimDir = 2, offset = new Vector2(0.5f, -0.3f) },
-        // Crouch 정면만
-        new MuzzleOffsetSet { moveState = PlayerState.Crouch, aimDir = 0, offset = new Vector2(0.4f, 0f) },
+    // aim 시트(64×32, 셀 20×24 등, pivot=셀 중앙)에서 픽셀 극단점(조준 벡터 내적 최대)으로 실측한 값
+    // 아래 방향(3,4)은 발끝 픽셀과 겹칠 수 있어 플레이 중 총구 확인 후 미세 보정 필요
+    new MuzzleOffsetSet { aimDir = 0, offset = new Vector2(0.080f, 0.040f) },   // 정면
+    new MuzzleOffsetSet { aimDir = 1, offset = new Vector2(0.060f, 0.080f) },   // 위45
+    new MuzzleOffsetSet { aimDir = 2, offset = new Vector2(-0.015f, 0.100f) },  // 위90
+    new MuzzleOffsetSet { aimDir = 3, offset = new Vector2(0.005f, -0.100f) },  // 아래45 (플레이 확인)
+    new MuzzleOffsetSet { aimDir = 4, offset = new Vector2(-0.005f, -0.110f) }, // 아래90 (플레이 확인)
     };
 
     [Header("Direction Flip")]
     [SerializeField] bool flipByScale = true; // true: Transform.scale.x 반전, false: SpriteRenderer.flipX
     [SerializeField] bool flipMuzzleWithScale = true;
 
-    [Header("Events (외부 연결용)")]
-    [SerializeField] int eventsHeaderDummy; // Header용 더미 필드
+    // 이벤트 (외부 연결용)
     public event Action<int> OnAimDirectionChanged; // aimDir index
     public event Action<bool> OnShootingChanged;    // shooting active
     public event Action OnHurtAnimationStart;
@@ -85,16 +79,18 @@ public class PlayerAnimation : MonoBehaviour
 
     // 상태 캐시
     int currentAimDirIndex = 0;
-    bool wasShooting = false;
-    bool wasGrounded = true;
-    float lastVelocityY = 0f;
+
+    /// <summary>부활 연출 중 여부 (선택 순서 2순위). RespawnSystem이 재생 시작 시 설정하고,
+    /// Playback이 wake 5프레임 완료 시 자동 해제 (플랜 [7])</summary>
+    public bool IsWakePlaying { get; set; }
 
     void Awake()
     {
-        if (animator == null) animator = GetComponent<Animator>();
         if (spriteRenderer == null) spriteRenderer = GetComponent<SpriteRenderer>();
         if (stateController == null) stateController = GetComponent<PlayerStateController>();
         if (movement == null) movement = GetComponent<PlayerMovement>();
+        if (weapon == null) weapon = GetComponent<WeaponController>();
+        FindMuzzleFxRenderer(); // 없으면 null 유지 → MuzzleFX 처리 전부 스킵 (자동 생성 안 함)
 
         // StateController 이벤트 구독
         if (stateController != null)
@@ -103,11 +99,8 @@ public class PlayerAnimation : MonoBehaviour
             PlayerStateEvents.OnOverlayChanged += OnOverlayChanged;
         }
 
-        // Movement 이벤트 구독
-        if (movement != null)
-        {
-            // GroundCheck 이벤트는 Movement를 통해 간접 확인
-        }
+        // 발사 시 MuzzleFX 3프레임 연출 시작 (플랜 [8] MuzzleFX = OnFire 동시)
+        if (weapon != null) weapon.OnFire += OnWeaponFired;
     }
 
     void OnDestroy()
@@ -117,42 +110,58 @@ public class PlayerAnimation : MonoBehaviour
             PlayerStateEvents.OnMoveStateChanged -= OnMoveStateChanged;
             PlayerStateEvents.OnOverlayChanged -= OnOverlayChanged;
         }
+        if (weapon != null) weapon.OnFire -= OnWeaponFired;
     }
 
     void LateUpdate()
     {
-        if (animator == null) return;
-
-        UpdateAnimatorParameters();
+        // 조준 방향을 먼저 갱신: 스프라이트와 Muzzle localPosition이 같은 프레임에 같은 방향으로 교체 (플랜 [5])
         UpdateAimDirection();
+        UpdateSprite();
         UpdateMuzzlePosition();
         UpdateDirectionFlip();
+        UpdateMuzzleFx();
     }
 
-    void UpdateAnimatorParameters()
+    /// <summary>시트 선택 순서 (animation-state-system.md [3]+[7]): death(+완료 시 dormant) → wake → hurt → shoot → 이동 상태×AimDir.
+    /// 반환값은 프레임 배열(셀 순서)이며 프레임 진행은 Playback 측 타이머 담당.
+    /// Death/Dormant/Wake 중에는 사격 오버레이(4순위)가 우선하지 않음 — 아래 death/wake 분기에서 차단</summary>
+    Sprite[] ResolveSprite()
     {
-        // Speed (수평 속도)
-        if (!string.IsNullOrEmpty(speedParam))
-            animator.SetFloat(speedParam, movement?.HorizontalSpeed ?? 0f, 0.1f, Time.deltaTime);
+        if (stateController == null) return null;
 
-        // VelocityY
-        if (!string.IsNullOrEmpty(velocityYParam))
-            animator.SetFloat(velocityYParam, movement?.VerticalSpeed ?? 0f);
+        PlayerState moveState = stateController.CurrentMoveState;
 
-        // IsGrounded
-        if (!string.IsNullOrEmpty(groundedParam))
-            animator.SetBool(groundedParam, movement?.IsGrounded ?? true);
+        // 1. 사망 (방향 무시, 루트 반전으로 처리). 6프레임 완료 후 Dormant(idle_dormant) 유지 — 자동 전환 없음 (플랜 [7])
+        if (moveState == PlayerState.Death) return deathDone ? dormantFrames : deathFrames;
 
-        // IsCrouching
-        if (!string.IsNullOrEmpty(crouchParam))
+        // 2. 부활 연출
+        if (IsWakePlaying) return wakeFrames;
+
+        // 3. Hurt (AimDir 사용)
+        if (moveState == PlayerState.Hurt) return PickDirectionSheet(hurtSprites);
+
+        // 4. 사격 오버레이 (이동 중이어도 우선)
+        if (stateController.CurrentOverlayState == PlayerState.Shooting)
+            return PickDirectionSheet(shootSprites);
+
+        // 5. 이동 상태 시트 (Idle→aim, Run→run, Jump→jump, Fall→fall)
+        switch (moveState)
         {
-            bool isCrouching = stateController?.CurrentMoveState == PlayerState.Crouch;
-            animator.SetBool(crouchParam, isCrouching);
+            case PlayerState.Idle: return PickDirectionSheet(aimSprites);
+            case PlayerState.Run: return PickDirectionSheet(runSprites);
+            case PlayerState.Jump: return PickDirectionSheet(jumpSprites);
+            case PlayerState.Fall: return PickDirectionSheet(fallSprites);
+            default: return null; // Crouch: 애니메이션 경로 제거됨, Dash: 미연결 — 시트 없음 → 조용히 스킵
         }
+    }
 
-        // IsDead
-        if (!string.IsNullOrEmpty(deadParam))
-            animator.SetBool(deadParam, stateController?.CurrentMoveState == PlayerState.Death);
+    /// <summary>방향별 시트의 프레임 배열 조회. 배열 미등록/인덱스 범위 밖/슬롯 null은 조용히 스킵 (에러 없음)</summary>
+    Sprite[] PickDirectionSheet(DirectionSheet[] sheet)
+    {
+        int index = useAimDirection ? currentAimDirIndex : PlayerStateController.AimDirFront;
+        if (sheet == null || index < 0 || index >= sheet.Length) return null;
+        return sheet[index].frames;
     }
 
     void UpdateAimDirection()
@@ -160,14 +169,9 @@ public class PlayerAnimation : MonoBehaviour
         if (!useAimDirection || stateController == null) return;
 
         int newAimDir = stateController.AimDirectionIndex;
-
         if (newAimDir != currentAimDirIndex)
         {
             currentAimDirIndex = newAimDir;
-            
-            if (!string.IsNullOrEmpty(aimDirParam))
-                animator.SetInteger(aimDirParam, currentAimDirIndex);
-
             OnAimDirectionChanged?.Invoke(currentAimDirIndex);
         }
     }
@@ -182,50 +186,28 @@ public class PlayerAnimation : MonoBehaviour
     {
         if (muzzleTransform == null) return;
 
-        // 현재 이동 상태 결정 (Crouch/Idle/Run/Jump/Fall)
-        PlayerState currentMoveState = GetCurrentMoveStateForMuzzle();
-        Vector2 offset = GetMuzzleOffset(currentMoveState, currentAimDirIndex);
+        // 조준 방향 기준 오프셋 (이동 상태별 표는 삭제 — 방향별만 유지, 플랜 [10] 216)
+        Vector2 offset = GetMuzzleOffset(currentAimDirIndex);
         int facing = transform.localScale.x > 0 ? 1 : -1;
-        
+
         Vector3 localPos = new Vector3(offset.x * facing, offset.y, 0f);
         muzzleTransform.localPosition = localPos;
     }
 
-    PlayerState GetCurrentMoveStateForMuzzle()
+    Vector2 GetMuzzleOffset(int aimDir)
     {
-        if (stateController == null) return PlayerState.Idle;
-        
-        // Crouch 상태면 Crouch
-        // 애니메이터 파라미터로 IsCrouching 확인 가능하면 좋지만, 여기선 상태 시스템 기반으로
-        var moveState = stateController.CurrentMoveState;
-        if (moveState == PlayerState.Crouch) return PlayerState.Crouch;
-        
-        // 공중 상태면 Jump/Fall 구분
-        if (moveState == PlayerState.Jump || moveState == PlayerState.Fall)
-            return moveState;
-        
-        // 지상: Idle/Run
-        return moveState;
-    }
+        // 배열에서 조준 방향 매칭 항목 찾기
+        if (aimMuzzleOffsets != null)
+        {
+            foreach (var set in aimMuzzleOffsets)
+            {
+                if (set.aimDir == aimDir)
+                    return set.offset;
+            }
+        }
 
-    Vector2 GetMuzzleOffset(PlayerState moveState, int aimDir)
-    {
-        // 배열에서 매칭되는 것 찾기 (이동상태 + 조준방향)
-        foreach (var set in muzzleOffsets)
-        {
-            if (set.moveState == moveState && set.aimDir == aimDir)
-                return set.offset;
-        }
-        
-        // 폴백: 같은 이동상태의 정면 오프셋
-        foreach (var set in muzzleOffsets)
-        {
-            if (set.moveState == moveState && set.aimDir == 0)
-                return set.offset;
-        }
-        
-        // 최종 폴백
-        return new Vector2(0.5f, 0.1f);
+        // 최종 폴백 (정면 실측값)
+        return new Vector2(0.080f, 0.040f);
     }
 
     void UpdateDirectionFlip()
@@ -264,70 +246,42 @@ public class PlayerAnimation : MonoBehaviour
 
     void OnMoveStateChanged(PlayerState from, PlayerState to)
     {
-        switch (to)
-        {
-            case PlayerState.Death:
-                if (!string.IsNullOrEmpty(deadParam))
-                    animator.SetBool(deadParam, true);
-                OnDeathAnimationStart?.Invoke();
-                break;
-
-            case PlayerState.Idle:
-            case PlayerState.Run:
-            case PlayerState.Jump:
-            case PlayerState.Fall:
-            case PlayerState.Crouch:
-                // Death/Hurt에서 복귀 시 IsDead 리셋
-                if (from == PlayerState.Death || from == PlayerState.Hurt)
-                {
-                    if (!string.IsNullOrEmpty(deadParam))
-                        animator.SetBool(deadParam, false);
-                }
-                break;
-        }
+        // 시트 선택은 ResolveSprite가 상태값으로 판별. 여기서는 외부 구독자 알림만 발화 (플랜 [10] 215)
+        if (to == PlayerState.Death)
+            OnDeathAnimationStart?.Invoke();
+        else if (to == PlayerState.Hurt)
+            OnHurtAnimationStart?.Invoke();
     }
 
     void OnOverlayChanged(PlayerState overlay, bool active)
     {
-        switch (overlay)
-        {
-            case PlayerState.Shooting:
-                if (!string.IsNullOrEmpty(shootingParam))
-                    animator.SetBool(shootingParam, active);
-                wasShooting = active;
-                OnShootingChanged?.Invoke(active);
-                break;
-            // Reloading: 비활성 (에셋에 클립 없음)
-        }
+        // Reloading 연출 없음 (에셋에 클립 없음)
+        if (overlay == PlayerState.Shooting)
+            OnShootingChanged?.Invoke(active);
     }
 
     #endregion
 
     #region Public API
 
-    /// <summary>피격 플래시 트리거 (Hurt 클립 없음 → 플래시만)</summary>
+    /// <summary>피격 플래시 트리거 (OnHurtAnimationStart 구독자에게 전달)</summary>
     public void TriggerHurtFlash()
     {
-        OnHurtAnimationStart?.Invoke(); // DamageFlash 컴포넌트가 구독해서 처리
+        OnHurtAnimationStart?.Invoke();
     }
 
-    /// <summary>사망 애니메이션 시작</summary>
+    /// <summary>사망 애니메이션 시작 (death 시트 선택은 ResolveSprite가 상태로 처리)</summary>
     public void TriggerDeath()
     {
-        if (!string.IsNullOrEmpty(deadParam))
-            animator.SetBool(deadParam, true);
         OnDeathAnimationStart?.Invoke();
     }
 
-    /// <summary>부활 시 애니메이션 리셋</summary>
+    /// <summary>부활 시 애니메이션 리셋 (사격/피격 잔여 상태 정리 — 플랜 [7])</summary>
     public void ResetAnimation()
     {
-        if (!string.IsNullOrEmpty(deadParam))
-            animator.SetBool(deadParam, false);
-        if (!string.IsNullOrEmpty(shootingParam))
-            animator.SetBool(shootingParam, false);
-        if (!string.IsNullOrEmpty(crouchParam))
-            animator.SetBool(crouchParam, false);
+        IsWakePlaying = false;
+        deathDone = false; // 다음 사망에서 death 6프레임이 다시 재생되도록
+        StopMuzzleFx();    // 사격 연출 잔여 프레임 제거
     }
 
     /// <summary>현재 조준 방향 인덱스 반환 (무기 시스템에서 사용)</summary>
@@ -336,11 +290,22 @@ public class PlayerAnimation : MonoBehaviour
     /// <summary>현재 조준 방향 벡터 반환 (발사 방향용)</summary>
     public Vector2 GetCurrentAimDirectionVector()
     {
+        // 벡터는 우측 기준(+x)이고 좌우 반전은 루트 scale.x가 담당
+        float facing = transform.localScale.x > 0f ? 1f : -1f;
+        const float kDiagonal = 0.7071068f; // √2/2
+
         switch (currentAimDirIndex)
         {
-            case 1: return Vector2.up;                          // 위
-            case 2: return Vector2.down;                        // 아래 (공중만)
-            default: return transform.localScale.x > 0 ? Vector2.right : Vector2.left; // 정면
+            case PlayerStateController.AimDirUp45:
+                return new Vector2(kDiagonal * facing, kDiagonal);   // 위45 (±0.707, 0.707)
+            case PlayerStateController.AimDirUp90:
+                return Vector2.up;                                   // 위90 (0, 1)
+            case PlayerStateController.AimDirDown45:
+                return new Vector2(kDiagonal * facing, -kDiagonal);  // 아래45 (±0.707, -0.707)
+            case PlayerStateController.AimDirDown90:
+                return Vector2.down;                                 // 아래90 (0, -1)
+            default:
+                return new Vector2(facing, 0f);                      // 정면 (±1, 0)
         }
     }
 
@@ -349,6 +314,17 @@ public class PlayerAnimation : MonoBehaviour
     {
         return muzzleTransform != null ? muzzleTransform.position : transform.position;
     }
+
+#if UNITY_EDITOR
+    /// <summary>컴포넌트 컨텍스트메뉴에서 폴더 기반 시트 자동 등록.
+    /// 런타임 어셈블리는 에디터 어셈블리를 참조할 수 없으므로 메뉴 호출로 연결
+    /// (문자열은 PlayerAnimationSheetLoader.MenuPath와 일치해야 함)</summary>
+    [ContextMenu("Fill Sheets From Folder")]
+    void FillSheetsFromFolder()
+    {
+        UnityEditor.EditorApplication.ExecuteMenuItem("Tools/PlayerAnimation/Fill Sheets From Folder");
+    }
+#endif
 
     #endregion
 
@@ -359,10 +335,10 @@ public class PlayerAnimation : MonoBehaviour
             Gizmos.color = Color.yellow;
             Gizmos.DrawWireSphere(muzzleTransform.position, 0.05f);
             
-            // 방향별 오프셋 표시 (muzzleOffsets 배열에서 고유한 오프셋만)
+            // 방향별 오프셋 표시 (aimMuzzleOffsets 배열에서 고유한 오프셋만)
             Gizmos.color = Color.green;
             var uniqueOffsets = new HashSet<Vector2>();
-            foreach (var set in muzzleOffsets)
+            foreach (var set in aimMuzzleOffsets)
             {
                 if (uniqueOffsets.Add(set.offset))
                 {
