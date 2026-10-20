@@ -197,6 +197,8 @@ public class Checkpoint : MonoBehaviour
             Gizmos.DrawWireSphere(spawnPoint.position, 0.3f);
         }
 
+#if UNITY_EDITOR
         UnityEditor.Handles.Label(transform.position + Vector3.up * 1.5f, $"CP: {checkpointName}");
+#endif
     }
 }

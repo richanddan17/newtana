@@ -1201,7 +1201,7 @@ public class EnemyAI : MonoBehaviour
 
     protected virtual void OnDied()
     {
-        ChangeState(AIState.Dead);
+        EnterDead();
     }
 
     #endregion
@@ -1276,6 +1276,44 @@ public class EnemyAI : MonoBehaviour
     {
         if (currentState == AIState.Dead) return;
         ChangeState(AIState.Stagger);
+    }
+
+    /// <summary>사망 진입 (EnemyHealth에서 호출) - 이동 정지, 헤어박스 비활성화</summary>
+    public void EnterDead()
+    {
+        if (currentState == AIState.Dead) return;
+        ChangeState(AIState.Dead); // OnStateEnter에서 이동 0 + 헤어박스 비활성화
+        if (rb != null) rb.linearVelocity = Vector2.zero;
+    }
+
+    /// <summary>체크포인트 리셋 - 체력/상태/타이머를 초기화 (Room에서 호출)</summary>
+    public void ResetState()
+    {
+        // 체력 복구 + 사망 시 비활성화된 오브젝트 재활성화
+        health?.ResetHealth();
+
+        if (hurtbox != null) hurtbox.SetActive(true);
+
+        // AIData를 원천으로 파라미터/중력/보스페이즈 복원
+        if (aiData != null)
+            ApplyAIData(aiData);
+
+        playerTransform = null;
+        lastKnownPlayerPos = Vector2.zero;
+        lostTargetTimer = 0f;
+        aimTimer = 0f;
+        shootCooldownTimer = 0f;
+        burstShotsRemaining = 0;
+        chargeCooldownTimer = 0f;
+        isCharging = false;
+        currentPhase = 0;
+        currentPatternIndex = -1;
+        patternCooldownTimer = 0f;
+
+        if (rb != null) rb.linearVelocity = Vector2.zero;
+        movement?.Stop();
+
+        ChangeState(aiData != null && aiData.startPatrolling ? AIState.Patrol : AIState.Idle);
     }
 
     /// <summary>AI 데이터 적용 (스크립터블 오브젝트에서)</summary>
@@ -1363,7 +1401,9 @@ public class EnemyAI : MonoBehaviour
             Gizmos.DrawRay(groundCheckBack.position, Vector2.down * edgeCheckDistance);
         }
 
+#if UNITY_EDITOR
         // 상태 표시
         UnityEditor.Handles.Label(transform.position + Vector3.up * 2f, $"AI: {currentState}");
+#endif
     }
 }

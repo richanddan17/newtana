@@ -191,7 +191,7 @@ public class Room : MonoBehaviour
             if (ai != null)
             {
                 // AI 상태 리셋 (순찰/대기로)
-                // ai.ResetState(); // EnemyAI에 메서드 추가 필요
+                ai.ResetState();
             }
             
             enemyObj.SetActive(true);
@@ -228,7 +228,9 @@ public class Room : MonoBehaviour
             Gizmos.DrawWireCube(Bounds.center, Bounds.size);
         }
 
+#if UNITY_EDITOR
         // Room ID 표시
         UnityEditor.Handles.Label(transform.position + Vector3.up * 2f, $"Room: {roomId}");
+#endif
     }
 }

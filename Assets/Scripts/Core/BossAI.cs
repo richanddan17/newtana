@@ -194,6 +194,7 @@ public class BossAI : EnemyAI
     {
         base.OnDrawGizmosSelected();
 
+#if UNITY_EDITOR
         // 페이즈 전환 체력 표시
         if (phaseHealthThresholds != null)
         {
@@ -213,5 +214,6 @@ public class BossAI : EnemyAI
                 $"Shield: {currentShield:F0}/{maxShield:F0}"
             );
         }
+#endif
     }
 }

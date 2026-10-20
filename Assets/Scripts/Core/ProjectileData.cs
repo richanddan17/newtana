@@ -19,6 +19,7 @@ public class ProjectileData : MonoBehaviour
     [SerializeField] HitType hitType = HitType.Bullet;
     [SerializeField] int penetrationMax = 0;
     [SerializeField] GameObject owner;
+    [SerializeField] private LayerMask groundLayerMask = (1 << 0) | (1 << 3); // 지형 판정용 (0=Default, 3=Ground)
 
     // 런타임 상태
     Rigidbody2D rb;
@@ -151,14 +152,16 @@ public class ProjectileData : MonoBehaviour
 
     bool IsGroundLayer(int layer)
     {
-        // Ground 레이어는 프로젝트별로 다름. 기본: Default(0) + Ground(3) 등
+        // Ground 레이어는 serialized LayerMask로 결정 (기본: Default(0) + Ground(3))
         // 계획서: 이동용 Ground와 카메라용 Room Boundary 분리
-        return layer == 0 || layer == 3; // Default, Ground (프로젝트 설정 맞게 수정)
+        return (groundLayerMask.value & (1 << layer)) != 0;
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        // Continuous 모드에서 Raycast로 선처리했으므로 여기는 보조/안전망
+        // 보조/안전망 경로 유지: 지상 판정은 groundLayerMask, 타겟 판정은 TryHitTarget의
+        // hitTargets 중복 제거를 거치므로 Raycast가 이미 처리한 타격이 여기로 다시 유입돼도
+        // 데미지는 항상 1회만 적용된다. (중복 제거를 선택 — 안전망이 생략해도 피격이 누락되지 않음)
         if (!isInitialized) return;
         if (other.gameObject == owner) return;
 

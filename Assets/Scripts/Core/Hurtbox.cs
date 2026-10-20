@@ -52,6 +52,9 @@ public class Hurtbox : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        // Projectile damage is handled by ProjectileData raycast (single hit path). Hurtbox trigger reserved for melee/future.
+        if (other.GetComponent<ProjectileData>() != null) return;
+
         if (!isActive) return;
         if (damageable == null || damageable.IsDead) return;
 

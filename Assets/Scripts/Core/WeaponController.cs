@@ -297,13 +297,18 @@ public class WeaponController : MonoBehaviour
 
     void SpawnProjectile(Vector3 position, Vector2 direction)
     {
-        if (projectilePool == null || currentWeaponData.ProjectilePrefab == null)
+        if (projectilePool == null)
         {
-            Debug.LogWarning("[WeaponController] ProjectilePool or Prefab not set!");
+            Debug.LogWarning("[WeaponController] ProjectilePool not set!");
             return;
         }
 
-        var projectile = projectilePool.Get();
+        // 무기 전용 프리팹 풀에서 꺼내기. 프리팹 미지정 시 Get(null)의 기본 풀 폴백 사용.
+        GameObject prefab = currentWeaponData != null ? currentWeaponData.ProjectilePrefab : null;
+        if (prefab == null)
+            Debug.LogWarning("[WeaponController] ProjectilePrefab not set on weapon — falling back to default pool.");
+
+        var projectile = projectilePool.Get(prefab);
         if (projectile == null) return;
 
         // 런타임 데이터 구성
