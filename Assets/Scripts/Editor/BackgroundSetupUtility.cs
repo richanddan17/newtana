@@ -33,11 +33,21 @@ public static class BackgroundSetupUtility
     [MenuItem(MenuPath)]
     static void SetupFromMenu()
     {
+        // 태그·레이어·정렬 레이어를 먼저 보장 (BG_Far/BG_Main/FG + Player 태그/레이어)
+        ProjectTagsLayersSetup.EnsureAllQuiet();
+
+        // 선택된 오브젝트가 Room이면 그걸 사용, 아니면 씬의 Room을 찾고, 없으면 생성한다.
         var selected = Selection.activeGameObject;
-        if (selected == null || selected.GetComponent<Room>() == null)
+        Room room = selected != null ? selected.GetComponent<Room>() : null;
+        if (room == null)
+            room = Object.FindAnyObjectByType<Room>(FindObjectsInactive.Include);
+        if (room == null)
         {
-            Debug.LogWarning("[BackgroundSetupUtility] 선택 오브젝트에 Room 컴포넌트가 없음");
-            return;
+            var roomGo = new GameObject("Room");
+            Undo.RegisterCreatedObjectUndo(roomGo, UndoName);
+            roomGo.transform.position = Vector3.zero;
+            room = Undo.AddComponent<Room>(roomGo);
+            Debug.Log("[BackgroundSetupUtility] 씬에 Room이 없어 'Room' 오브젝트를 새로 만들었습니다.");
         }
 
         EnsureSortingLayers();
@@ -45,7 +55,7 @@ public static class BackgroundSetupUtility
         int created = 0, reused = 0;
 
         // Background 빈 GO (Room 자식). localPosition=0 — ParallaxLayer이 초기 위치를 방 배경 기준점으로 캐시
-        var background = selected.transform.Find(BackgroundName);
+        var background = room.transform.Find(BackgroundName);
         if (background == null)
         {
             var go = new GameObject(BackgroundName);
@@ -122,7 +132,7 @@ public static class BackgroundSetupUtility
         for (int i = 0; i < layers.arraySize; i++)
             existingNames.Add(layers.GetArrayElementAtIndex(i).FindPropertyRelative("name").stringValue);
 
-        // 삽입 후 name/uniqueId/locked 속성만 존재
+        // 삽입 후 name/uniqueID/locked 속성만 존재
         (string name, int id)[] toAdd = { (BgFarLayer, 10000), (BgMainLayer, 10001), (FgLayer, 10002) };
         foreach (var (layerName, id) in toAdd)
         {
@@ -131,8 +141,10 @@ public static class BackgroundSetupUtility
             layers.InsertArrayElementAtIndex(layers.arraySize);
             var entry = layers.GetArrayElementAtIndex(layers.arraySize - 1);
             entry.FindPropertyRelative("name").stringValue = layerName;
-            entry.FindPropertyRelative("uniqueId").intValue = id;
-            entry.FindPropertyRelative("locked").boolValue = false;
+            var idProp = entry.FindPropertyRelative("uniqueID") ?? entry.FindPropertyRelative("uniqueId");
+            if (idProp != null) idProp.intValue = id;
+            var lockedProp = entry.FindPropertyRelative("locked");
+            if (lockedProp != null) lockedProp.boolValue = false;
         }
 
         so.ApplyModifiedProperties();

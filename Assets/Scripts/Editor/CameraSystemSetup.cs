@@ -20,6 +20,8 @@ public static class CameraSystemSetup
     [MenuItem(MenuPath, false, 100)]
     public static void Setup()
     {
+        ProjectTagsLayersSetup.EnsureAllQuiet();
+
         Camera cam = FindOrCreateCamera();
         CinemachineBrain brain = EnsureBrain(cam);
 
