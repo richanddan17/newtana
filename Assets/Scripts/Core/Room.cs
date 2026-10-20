@@ -2,6 +2,16 @@ using UnityEngine;
 using System.Collections.Generic;
 
 /// <summary>
+/// 카메라 경계 모드 (Room별 선택, 기본 Soft — room-camera-system.md v5 [2][3]).
+/// </summary>
+public enum CameraBoundaryMode
+{
+    Soft,   // Room 바깥 빈 공간 일부 허용 (Bounds 팽창 후 confine)
+    Hard,   // Room Bounds 정확히 제한
+    Off     // 경계 없음 (Confiner2D 비활성)
+}
+
+/// <summary>
 /// Room 정의 - 카메라 경계와 적/오브젝트 상태를 묶는 단위.
 /// 계획서 room-camera-system.md [1], [5] 반영.
 /// - Room 영역은 Collider/Bounds로 정의 (좌표 하드코딩 금지)
@@ -17,6 +27,8 @@ public class Room : MonoBehaviour
     [Header("Bounds (카메라 경계)")]
     [SerializeField] Collider2D boundsCollider; // BoxCollider2D 권장, Trigger=true
     [SerializeField] bool autoCalculateBounds = true;
+    [Tooltip("Soft=Room 바깥 여유 공간 허용, Hard=Room Bounds 정확히 제한, Off=경계 없음")]
+    [SerializeField] CameraBoundaryMode cameraBoundaryMode = CameraBoundaryMode.Soft;
 
     [Header("Contents")]
     [SerializeField] List<GameObject> roomEnemies = new(); // 이 Room에 속한 적들
@@ -42,6 +54,7 @@ public class Room : MonoBehaviour
     public string RoomId => roomId;
     public string RoomName => roomName;
     public Bounds Bounds => boundsCollider ? boundsCollider.bounds : new Bounds(transform.position, Vector3.zero);
+    public CameraBoundaryMode BoundaryMode => cameraBoundaryMode;
     public Vector2 Center => Bounds.center;
     public Vector2 Size => Bounds.size;
     public bool IsPlayerInside => isPlayerInside;

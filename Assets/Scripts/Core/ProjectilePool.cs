@@ -154,6 +154,10 @@ public class ProjectilePool : MonoBehaviour
         if (!projectileToPrefab.TryGetValue(projId, out int prefabId) ||
             !pools.TryGetValue(prefabId, out var pool))
         {
+            // 이미 반환되어 비활성화된 투사체는 중복 반환으로 간주하고 무시한다.
+            if (!projectile.gameObject.activeSelf)
+                return;
+
             // 소유 풀을 알 수 없는 투사체는 잘못된 풀에 섞이지 않도록 파괴한다.
             Debug.LogWarning($"[ProjectilePool] Untracked projectile '{projectile.name}' returned. Destroying instead of pooling.");
             projectileToPrefab.Remove(projId);

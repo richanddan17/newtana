@@ -17,7 +17,7 @@ public class RespawnSystem : MonoBehaviour
     [SerializeField] PlayerMovement playerMovement;
     [SerializeField] WeaponController playerWeapon;
     [SerializeField] PlayerAnimation playerAnimation; // 애니메이션 잔여 상태 정리 + wake 연출용
-    [SerializeField] RoomCamera roomCamera;
+    [SerializeField] CameraDirector roomCamera;
     [SerializeField] RoomManager roomManager;
 
     [Header("Respawn Settings")]
@@ -75,7 +75,7 @@ public class RespawnSystem : MonoBehaviour
         if (playerMovement == null) playerMovement = FindAnyObjectByType<PlayerMovement>();
         if (playerWeapon == null) playerWeapon = FindAnyObjectByType<WeaponController>();
         if (playerAnimation == null) playerAnimation = FindAnyObjectByType<PlayerAnimation>();
-        if (roomCamera == null) roomCamera = FindAnyObjectByType<RoomCamera>();
+        if (roomCamera == null) roomCamera = FindAnyObjectByType<CameraDirector>();
         if (roomManager == null) roomManager = FindAnyObjectByType<RoomManager>();
 
         // Health 사망 이벤트 구독
@@ -383,14 +383,14 @@ public class RespawnSystem : MonoBehaviour
 
     void UpdateCameraAndRoom(Vector3 respawnPosition, Room targetRoom)
     {
-        // Room 갱신을 먼저 해야 RoomCamera가 새 경계로 클램프한다.
-        // 반대 순서면 이전 Room 경계로 클램프되어 카메라가 엉뚱한 위치에 남는다.
+        // Room 갱신을 먼저 해야 CameraDirector가 새 경계로 confine한다.
+        // 반대 순서면 이전 Room 경계로 confine되어 카메라가 엉뚱한 위치에 남는다.
         if (roomManager != null && targetRoom != null)
         {
             roomManager.ForceSetCurrentRoom(targetRoom);
         }
 
-        // RoomCamera 즉시 이동 (컷 전환)
+        // CameraDirector 즉시 이동 (컷 전환)
         if (roomCamera != null)
         {
             roomCamera.OnPlayerRespawn(respawnPosition);

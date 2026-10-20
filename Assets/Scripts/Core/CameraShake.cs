@@ -1,11 +1,7 @@
 using UnityEngine;
 using System;
 using System.Collections.Generic;
-
-// Force recompile to clear stale cache
-#if UNITY_CINEMACHINE
 using Cinemachine;
-#endif
 
 /// <summary>
 /// 카메라 흔들림 시스템.
@@ -20,7 +16,7 @@ public class CameraShake : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] Transform cameraTransform; // 흔들릴 카메라 (보통 Main Camera)
-    [SerializeField] bool useCinemachine = false; // Cinemachine ImpulseSource 사용 시
+    [SerializeField] bool useCinemachine = true; // Cinemachine ImpulseSource 사용 시
 
     [Header("Default Settings")]
     [SerializeField] float defaultDuration = 0.2f;
@@ -50,12 +46,7 @@ public class CameraShake : MonoBehaviour
     Quaternion originalRotation;
     float trauma = 0f;
 
-    // Cinemachine
-#if UNITY_CINEMACHINE
     CinemachineImpulseSource impulseSource;
-#else
-    object impulseSource; // dummy when Cinemachine not installed
-#endif
 
     public static CameraShake Instance { get; private set; }
 
@@ -72,15 +63,7 @@ public class CameraShake : MonoBehaviour
             cameraTransform = Camera.main?.transform;
 
         if (useCinemachine)
-        {
-#if UNITY_CINEMACHINE
-            impulseSource = GetComponent<CinemachineImpulseSource>();
-            if (impulseSource == null)
-                impulseSource = gameObject.AddComponent<CinemachineImpulseSource>();
-#else
-            // Cinemachine not installed
-#endif
-        }
+            EnsureImpulseSource();
 
         if (cameraTransform != null)
         {
@@ -89,14 +72,75 @@ public class CameraShake : MonoBehaviour
         }
     }
 
+    void Start()
+    {
+        if (useCinemachine && FindAnyObjectByType<CinemachineImpulseListener>() == null)
+            Debug.LogWarning("[CameraShake] CinemachineImpulseListener가 씬에 없습니다. 'newtana/카메라 시스템 셋업' 메뉴로 vcam에 리스너를 추가하세요.", this);
+    }
+
+    CinemachineImpulseSource EnsureImpulseSource()
+    {
+        if (impulseSource == null)
+        {
+            impulseSource = GetComponent<CinemachineImpulseSource>();
+            if (impulseSource == null)
+            {
+                impulseSource = gameObject.AddComponent<CinemachineImpulseSource>();
+                ConfigureImpulseDefaults();
+            }
+            else if (impulseSource.m_ImpulseDefinition.m_ImpulseType == CinemachineImpulseDefinition.ImpulseTypes.Legacy
+                     && impulseSource.m_ImpulseDefinition.m_RawSignal == null)
+            {
+                // Legacy + 빈 신호는 이벤트 생성이 실패해 무음이 되므로 방어 수정
+                ConfigureImpulseDefaults();
+            }
+        }
+        return impulseSource;
+    }
+
+    void ConfigureImpulseDefaults()
+    {
+        // 플레이 모드 AddComponent는 Reset()을 호출하지 않아 채널/형상 기본값이 0이라 임펄스가 아예 발생하지 않는다
+        impulseSource.m_ImpulseDefinition.m_ImpulseChannel = 1;
+        impulseSource.m_ImpulseDefinition.m_ImpulseShape = CinemachineImpulseDefinition.ImpulseShapes.Bump;
+        impulseSource.m_ImpulseDefinition.m_ImpulseType = CinemachineImpulseDefinition.ImpulseTypes.Uniform;
+        impulseSource.m_ImpulseDefinition.m_ImpulseDuration = 0.2f;
+    }
+
     void OnDestroy()
     {
         if (Instance == this) Instance = null;
     }
 
+    /// <summary>진행 중인 모든 흔들림을 즉시 종료한다 (부활/장면 전환 초기화용 — room-camera-system.md [6][8])</summary>
+    public static void StopAll()
+    {
+        if (Instance == null) return;
+        Instance.StopAllInternal();
+    }
+
+    void StopAllInternal()
+    {
+        impulses.Clear();
+        trauma = 0f;
+        if (useCinemachine)
+        {
+            CinemachineImpulseManager.Instance.Clear();
+            return;
+        }
+        if (cameraTransform != null)
+        {
+            cameraTransform.localPosition = originalPosition;
+            cameraTransform.localRotation = originalRotation;
+        }
+    }
+
     void LateUpdate()
     {
         if (cameraTransform == null) return;
+
+        // Cinemachine 경로는 리스너(vcam)가 처리 — 카메라 트랜스폼 직접 조작 시 Brain과 경합하므로 금지
+        if (useCinemachine) return;
 
         if (useTrauma)
         {
@@ -140,6 +184,16 @@ public class CameraShake : MonoBehaviour
 
     void AddImpulse(Vector2 direction, float amplitude, float duration, float frequency, float decay)
     {
+        if (useCinemachine)
+        {
+            var source = EnsureImpulseSource();
+            if (source == null) return;
+            // frequency/decay는 Cinemachine의 Bump 곡선 + envelope가 대신하므로 인자로 넘기지 않는다
+            source.m_ImpulseDefinition.m_ImpulseDuration = Mathf.Max(0.05f, duration);
+            source.GenerateImpulse(direction * amplitude);
+            return;
+        }
+
         impulses.Add(new ShakeImpulse
         {
             Direction = direction,
@@ -150,14 +204,6 @@ public class CameraShake : MonoBehaviour
             StartTime = Time.unscaledTime,
             IsActive = true
         });
-
-        // Cinemachine Impulse 동시 발생
-#if UNITY_CINEMACHINE
-        if (useCinemachine && impulseSource != null)
-        {
-            impulseSource.GenerateImpulse(direction * amplitude);
-        }
-#endif
     }
 
     void UpdateImpulseShake()
@@ -201,6 +247,13 @@ public class CameraShake : MonoBehaviour
     public static void AddTrauma(float amount)
     {
         if (Instance == null) return;
+        if (Instance.useCinemachine)
+        {
+            // Cinemachine 경로에서는 트라우마를 동일 강도의 임펄스로 변환해 보낸다
+            Vector2 dir = UnityEngine.Random.insideUnitCircle.normalized;
+            Instance.AddImpulse(dir, amount * Instance.defaultAmplitude, Instance.defaultDuration, Instance.defaultFrequency, Instance.defaultDecay);
+            return;
+        }
         Instance.trauma = Mathf.Min(Instance.maxTrauma, Instance.trauma + amount);
     }
 

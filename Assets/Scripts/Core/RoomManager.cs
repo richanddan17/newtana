@@ -42,8 +42,8 @@ public class RoomManager : MonoBehaviour
 
     void Start()
     {
-        // Awake가 모두 끝난 뒤 초기 Room을 확정해 구독자(RoomCamera, HUD)에 알린다.
-        // Awake에서 하면 RoomCamera가 아직 OnRoomChanged를 구독하지 않은 상태가 될 수 있다.
+        // Awake가 모두 끝난 뒤 초기 Room을 확정해 구독자(CameraDirector, HUD)에 알린다.
+        // Awake에서 하면 CameraDirector가 아직 OnRoomChanged를 구독하지 않은 상태가 될 수 있다.
         DetermineInitialRoom();
     }
 

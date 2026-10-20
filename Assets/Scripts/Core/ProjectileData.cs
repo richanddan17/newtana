@@ -80,6 +80,20 @@ public class ProjectileData : MonoBehaviour
         gameObject.SetActive(false);
     }
 
+    /// <summary>
+    /// 수명 종료(명중/지형/사거리/트리거) 시 풀로 반환한다.
+    /// Deinitialize()는 상태 정리만 하고, 실제 풀 반환은 이 경로가 담당한다.
+    /// isInitialized 가드로 중복 반환을 방지한다 (이미 반환된 투사체는 무시).
+    /// </summary>
+    void ReturnToPool()
+    {
+        if (!isInitialized) return; // 이미 반환됨/미초기화 → 중복 반환 방지
+        if (ProjectilePool.Instance != null)
+            ProjectilePool.Instance.Return(this);
+        else
+            Deinitialize(); // 풀 부재 시 안전망: 최소한 비활성화
+    }
+
     void FixedUpdate()
     {
         if (!isInitialized) return;
@@ -100,7 +114,7 @@ public class ProjectileData : MonoBehaviour
                 if (IsGroundLayer(hit.collider.gameObject.layer))
                 {
                     OnHitWall?.Invoke(hit.point);
-                    Deinitialize();
+                    ReturnToPool();
                     return;
                 }
 
@@ -112,7 +126,7 @@ public class ProjectileData : MonoBehaviour
                     {
                         if (penetrationMax <= 0 || hitTargets.Count >= penetrationMax)
                         {
-                            Deinitialize();
+                            ReturnToPool();
                             return;
                         }
                     }
@@ -128,7 +142,7 @@ public class ProjectileData : MonoBehaviour
         if (traveledDistance >= maxRange)
         {
             OnExpired?.Invoke();
-            Deinitialize();
+            ReturnToPool();
         }
     }
 
@@ -168,7 +182,7 @@ public class ProjectileData : MonoBehaviour
         if (IsGroundLayer(other.gameObject.layer))
         {
             OnHitWall?.Invoke(transform.position);
-            Deinitialize();
+            ReturnToPool();
         }
         else
         {

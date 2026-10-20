@@ -2,7 +2,7 @@
     "name": "RunGun.Core",
     "references": [
         "Unity.InputSystem",
-        "Unity.Cinemachine",
+        "Cinemachine",
         "Unity.TextMeshPro"
     ],
     "includePlatforms": [],

@@ -185,12 +185,15 @@ public class PlayerStateController : MonoBehaviour
 
     void HandleCrouchInput()
     {
+        if (inputBuffer != null && inputBuffer.IsBlocked) return; // 입력 차단(대화/컷신) 중 Old Input 폴백 우회 차단
         if (!IsGrounded) return; // 공중에서는 앉기 불가
         if (currentMoveState == PlayerState.Hurt || currentMoveState == PlayerState.Death) return;
 
         bool crouchHeld = inputBuffer != null && inputBuffer.IsCrouchHeld;
 
         // Old Input System 폴백 (Crouch 액션이 없는 경우)
+        // 레거시 Input Manager 비활성화 시 Input 클래스가 런타임 예외를 던지므로 가드
+#if ENABLE_LEGACY_INPUT_MANAGER
         if (!crouchHeld)
         {
             if (holdToCrouch)
@@ -198,6 +201,7 @@ public class PlayerStateController : MonoBehaviour
             else
                 crouchHeld = Input.GetKeyDown(crouchKey);
         }
+#endif
 
         bool wantsCrouch = crouchHeld && InputDirection.sqrMagnitude < 0.01f; // 이동 중이면 앉기 안 함
 
