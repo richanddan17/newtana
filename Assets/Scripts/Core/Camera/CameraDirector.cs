@@ -19,11 +19,11 @@ public class CameraDirector : MonoBehaviour
     [SerializeField] PlayerAnimation playerAnimation;
 
     [Header("Look Ahead (조준 선행)")]
-    [SerializeField] bool enableLookAhead = true;
+    [SerializeField] bool enableLookAhead = false;
     [Tooltip("조준 방향으로 최대 이 거리만큼 카메라가 선행 (월드 단위)")]
-    [SerializeField] float lookAheadDistance = 3f;
-    [Tooltip("선행 오프셋 반영 계수 (클수록 빠름)")]
-    [SerializeField] float lookAheadSmoothing = 5f;
+    [SerializeField] float lookAheadDistance = 2.5f;
+    [Tooltip("선행이 목표에 수렴하는 시간 상수 (초)")]
+    [SerializeField] float lookAheadSmoothing = 0.18f;
 
     [Header("Dialogue")]
     [Tooltip("대화 클로즈업 배율 — dialogue ortho = follow ortho / 값 (영상 기준 약 3.5배)")]
@@ -51,6 +51,7 @@ public class CameraDirector : MonoBehaviour
     Transform lookAheadProxy;
     Transform dialogueProxy;
     Transform playerTransform;
+    AimLeadExtension aimLead;
     Vector2 lookAheadOffset;
     Room currentRoom;
     bool inDialogue;
@@ -98,7 +99,9 @@ public class CameraDirector : MonoBehaviour
     void Update()
     {
         if (playerTransform == null) CachePlayer();
-        UpdateLookAheadProxy();
+        if (playerTransform != null && followVcam != null && followVcam.Follow != playerTransform)
+            followVcam.Follow = playerTransform;
+        UpdateAimLead();
         UpdateDialogueProxy();
     }
 
@@ -151,8 +154,11 @@ public class CameraDirector : MonoBehaviour
                 followVcam.AddCinemachineComponent<CinemachineFramingTransposer>();
             EnsureConfiner();
             EnsureImpulseListener(followVcam);
-            // 추적 대상 계약: Look Ahead proxy가 Follow — proxy가 플레이어+조준 오프셋을 대리한다
-            followVcam.Follow = lookAheadProxy;
+            EnsureAimLead();
+            if (playerTransform != null)
+                followVcam.Follow = playerTransform;
+            else
+                followVcam.Follow = null;
         }
         if (dialogueVcam != null)
         {
@@ -225,19 +231,40 @@ public class CameraDirector : MonoBehaviour
         playerTransform = playerGo.transform;
         if (playerAnimation == null)
             playerAnimation = playerGo.GetComponent<PlayerAnimation>();
+        if (followVcam != null && followVcam.Follow != playerTransform)
+            followVcam.Follow = playerTransform;
+        EnsureAimLead();
     }
 
-    void UpdateLookAheadProxy()
+    void EnsureAimLead()
     {
-        if (lookAheadProxy == null || playerTransform == null) return;
+        if (followVcam == null) return;
+        if (aimLead == null)
+            aimLead = followVcam.GetComponent<AimLeadExtension>();
+        if (aimLead == null)
+            aimLead = followVcam.gameObject.AddComponent<AimLeadExtension>();
+        if (aimLead == null) return;
+        aimLead.m_Target = playerTransform;
+        aimLead.m_LeadDistance = lookAheadDistance;
+        aimLead.m_LeadSmoothing = lookAheadSmoothing;
+        aimLead.m_SafeScreenFraction = 0.8f;
+    }
 
-        Vector2 target = playerTransform.position;
+    void UpdateAimLead()
+    {
+        if (aimLead == null) return;
+        if (playerTransform != null && aimLead.m_Target != playerTransform)
+            aimLead.m_Target = playerTransform;
+        if (aimLead.m_Target == null) return;
+
         if (enableLookAhead && playerAnimation != null)
-            target += playerAnimation.GetCurrentAimDirectionVector() * lookAheadDistance;
-
-        Vector2 smoothed = Vector2.Lerp((Vector2)lookAheadProxy.position, target, lookAheadSmoothing * Time.deltaTime);
-        lookAheadProxy.position = new Vector3(smoothed.x, smoothed.y, 0f);
-        lookAheadOffset = smoothed - (Vector2)playerTransform.position;
+        {
+            aimLead.m_AimDirection = playerAnimation.GetCurrentAimDirectionVector();
+        }
+        else
+        {
+            aimLead.m_AimDirection = Vector2.zero;
+        }
     }
 
     void UpdateDialogueProxy()
@@ -330,10 +357,21 @@ public class CameraDirector : MonoBehaviour
     public void ForceCameraPosition(Vector3 position)
     {
         EnsureProxies();
-        lookAheadProxy.position = new Vector3(position.x, position.y, 0f);
+        EnsureVcamComponents();
+        if (lookAheadProxy != null)
+        {
+            lookAheadProxy.position = new Vector3(position.x, position.y, 0f);
+        }
         lookAheadOffset = Vector2.zero;
-        if (followVcam != null) followVcam.PreviousStateIsValid = false;
+        if (followVcam != null)
+        {
+            followVcam.PreviousStateIsValid = false;
+            var framing = followVcam.GetCinemachineComponent<CinemachineFramingTransposer>();
+            float dist = framing != null ? framing.m_CameraDistance : 10f;
+            followVcam.ForceCameraPosition(position + Vector3.back * dist, Quaternion.identity);
+        }
         if (dialogueVcam != null) dialogueVcam.PreviousStateIsValid = false;
+        if (aimLead != null) aimLead.ResetLead();
     }
 
     /// <summary>현재 Room의 카메라 경계 (Room 미확정이면 빈 Bounds).</summary>

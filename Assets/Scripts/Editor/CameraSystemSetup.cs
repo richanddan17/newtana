@@ -100,14 +100,22 @@ public static class CameraSystemSetup
 
         Undo.RecordObject(framing, "Follow vcam 추적값");
         // 계획서 [3] 목표값: 가로 감쇠 0.5~0.8 / 세로 0.8~1.0, 데드존 가로 10%·세로 5%, Soft존 80%
+        // Soft zone = 하드 리밋 (m_UnlimitedSoftZone=false 필수), Follow는 플레이어 직접 추적
         framing.m_XDamping = 0.6f;
         framing.m_YDamping = 0.9f;
         framing.m_DeadZoneWidth = 0.1f;
         framing.m_DeadZoneHeight = 0.05f;
         framing.m_SoftZoneWidth = 0.8f;
         framing.m_SoftZoneHeight = 0.8f;
-        framing.m_LookaheadTime = 0f; // 조준 선행은 CameraDirector 프록시가 담당 — 이중 계산 방지
+        framing.m_TrackedObjectOffset = Vector3.zero;
+        framing.m_BiasX = 0f;
+        framing.m_BiasY = 0f;
+        framing.m_LookaheadTime = 0f; // 조준 선행은 AimLeadExtension이 담당 — 이중 계산 방지
         framing.m_CameraDistance = 10f;
+        var framingSO = new SerializedObject(framing);
+        var unlimitedProp = framingSO.FindProperty("m_UnlimitedSoftZone");
+        if (unlimitedProp != null) unlimitedProp.boolValue = false;
+        framingSO.ApplyModifiedProperties();
 
         var confiner = vcam.GetComponent<CinemachineConfiner2D>();
         if (confiner == null)
@@ -116,6 +124,7 @@ public static class CameraSystemSetup
         confiner.m_Damping = ReadFloat(director, "boundaryDamping", 0.5f);
 
         EnsureImpulseListener(vcam);
+        EnsureAimLeadExtension(vcam);
         ApplyLens(vcam, cam, 1f);
         vcam.Priority = ReadInt(director, "followPriority", 10);
     }
@@ -138,6 +147,17 @@ public static class CameraSystemSetup
         // 채널 1 = CameraShake ImpulseSource 채널 (Reset 기본값과 동일, 재실행 시에도 유지)
         listener.m_ChannelMask = 1;
         listener.m_Gain = 1f;
+    }
+
+    static void EnsureAimLeadExtension(CinemachineVirtualCamera vcam)
+    {
+        var ext = vcam.GetComponent<AimLeadExtension>();
+        if (ext == null)
+            ext = Undo.AddComponent<AimLeadExtension>(vcam.gameObject);
+        Undo.RecordObject(ext, "AimLeadExtension 설정");
+        ext.m_LeadDistance = 2.5f;
+        ext.m_LeadSmoothing = 0.18f;
+        ext.m_SafeScreenFraction = 0.8f;
     }
 
     static void ApplyLens(CinemachineVirtualCamera vcam, Camera cam, float zoomDivisor)
