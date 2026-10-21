@@ -215,11 +215,15 @@ public static class CameraSystemSetup
     const string GroundCheckPointName = "GroundCheckPoint";
     const string MuzzleName = "Muzzle";
     const string MuzzleFxName = "MuzzleFX";
+    const string CastPointName = "CastPoint";
+    const string BodyName = "Body";
+    const string CastFxName = "CastFX";
+    const string AuraFxName = "AuraFX";
     const string HurtboxName = "Hurtbox";
     const int PlayerLayerIndex = 6;            // Team.Player.LayerIndex() (Phase4 가이드 Layer 표)
     const int GroundLayerMaskValue = 1 << 3;   // Ground 레이어 (GroundCheck/PlayerMovement 기본값과 동일)
     const string InputActionsPath = "Assets/InputSystem_Actions.inputactions";
-    const string AimFrontSpritePath = "Assets/sprite/Player/body/aim/body_aim_front.png";
+    const string AnimationSetPath = "Assets/PlayerAnimationSet.asset"; // Tools/PlayerAnimation/Import Sheets From Manifest 가 생성
 
     /// <summary>
     /// 플레이어 오브젝트 보장 (idempotent): 태그 "Player" 또는 PlayerStateController로 기존 플레이어를 찾아
@@ -274,20 +278,27 @@ public static class CameraSystemSetup
         var anim = EnsureComponent<PlayerAnimation>(playerGo);
         var weapon = EnsureComponent<WeaponController>(playerGo);
         var health = EnsureComponent<Health>(playerGo);
-        var spriteRenderer = EnsureComponent<SpriteRenderer>(playerGo);
 
         // 입력 애셋 / 투사체 풀 (에셋·씬 오브젝트는 스크립트가 만들지 않음 — 있으면 연결만)
         var inputActionsAsset = AssetDatabase.LoadAssetAtPath<InputActionAsset>(InputActionsPath);
         var projectilePool = UnityEngine.Object.FindAnyObjectByType<ProjectilePool>(FindObjectsInactive.Include);
+        var animationSet = AssetDatabase.LoadAssetAtPath<PlayerAnimationSet>(AnimationSetPath);
 
         // --- 자식 구조 ---
         var animSo = new SerializedObject(anim);
 
-        // Muzzle: 미연결이면 생성 (PlayerAnimation이 aimMuzzleOffsets 표로 localPosition을 주기적으로 갱신)
+        // v5: 몸통은 Body 자식의 SpriteRenderer 가 담당한다. 기존 루트 렌더러가 있으면 자식으로 이전.
+        SpriteRenderer bodyRenderer = EnsureBodyRenderer(playerGo);
+        SpriteRenderer castFxRenderer = EnsureRendererChild(playerGo.transform, CastFxName, 5);
+        SpriteRenderer auraFxRenderer = EnsureRendererChild(playerGo.transform, AuraFxName, -1);
+
+        // Muzzle: 미연결이면 생성 (PlayerAnimation이 muzzleOffset 으로 localPosition을 주기적으로 갱신)
         var muzzleProp = animSo.FindProperty("muzzleTransform");
         Transform muzzle = muzzleProp != null ? muzzleProp.objectReferenceValue as Transform : null;
         if (muzzle == null)
             muzzle = GetOrCreateChild(playerGo.transform, MuzzleName, new Vector3(0.08f, 0.04f, 0f)); // 정면 조준 총구 실측값(스펙 [4])
+
+        GetOrCreateChild(muzzle, CastPointName, Vector3.zero);
 
         // MuzzleFX: Playback이 이름으로 탐색하는 SpriteRenderer — 없으면 연출만 생략되므로 미리 생성
         var fxProp = animSo.FindProperty("muzzleFxRenderer");
@@ -377,11 +388,22 @@ public static class CameraSystemSetup
 
         SetRefIfNull(animSo, "stateController", stateController);
         SetRefIfNull(animSo, "movement", movement);
-        SetRefIfNull(animSo, "spriteRenderer", spriteRenderer);
+        SetRefIfNull(animSo, "spriteRenderer", bodyRenderer);
+        SetRefIfNull(animSo, "castFxRenderer", castFxRenderer);
+        SetRefIfNull(animSo, "auraFxRenderer", auraFxRenderer);
+        SetRefIfNull(animSo, "animationSet", animationSet);
         SetRefIfNull(animSo, "weapon", weapon);
         SetRefIfNull(animSo, "muzzleTransform", muzzle);
         SetRefIfNull(animSo, "muzzleFxRenderer", muzzleFxRenderer);
         animSo.ApplyModifiedProperties();
+
+        var castFx = EnsureComponent<PlayerCastFx>(playerGo);
+        var castFxSo = new SerializedObject(castFx);
+        SetRefIfNull(castFxSo, "animationSet", animationSet);
+        SetRefIfNull(castFxSo, "castFxRenderer", castFxRenderer);
+        SetRefIfNull(castFxSo, "auraFxRenderer", auraFxRenderer);
+        SetRefIfNull(castFxSo, "castPoint", muzzle.Find(CastPointName));
+        castFxSo.ApplyModifiedProperties();
 
         var weaponSo = new SerializedObject(weapon);
         SetRefIfNull(weaponSo, "playerAnimation", anim);
@@ -391,7 +413,7 @@ public static class CameraSystemSetup
 
         var healthSo = new SerializedObject(health);
         SetRefIfNull(healthSo, "teamComponent", team);
-        SetRefIfNull(healthSo, "spriteRenderer", spriteRenderer);
+        SetRefIfNull(healthSo, "spriteRenderer", bodyRenderer);
         SetRefIfNull(healthSo, "movement", movement);
         SetRefIfNull(healthSo, "stateController", stateController);
         healthSo.ApplyModifiedProperties();
@@ -411,25 +433,16 @@ public static class CameraSystemSetup
         SetMaskIfEmpty(gcMaskSo, "groundLayerMask", GroundLayerMaskValue); // 기본 1<<3 — 이미 채워져 있으면 유지
         gcMaskSo.ApplyModifiedProperties();
 
-        // 애니메이션 시트: 비어 있을 때만 기존 로더 유틸 호출 (메뉴와 동일한 경로)
-        if (!HasAnyAimSheet(anim))
+        // v5: 모든 프레임은 PlayerAnimationSet 에셋이 담는다 (구 시트 로더는 v5에서 제거됨).
+        if (animationSet == null)
         {
-            PlayerAnimationSheetLoader.Fill(anim);
-            if (!HasAnyAimSheet(anim))
-                Debug.LogWarning("[플레이어 셋업] 플레이어 애니메이션 시트가 비어 있습니다 — " +
-                    "'Tools/PlayerAnimation/Fill Sheets From Folder' 메뉴를 실행하세요. " +
-                    "그래도 비면 Assets/sprite/Player/body/*.png의 Sprite Mode(Multiple) 슬라이스를 확인하세요.");
+            Debug.LogWarning("[플레이어 셋업] PlayerAnimationSet 에셋이 없습니다 — " +
+                "'Tools/PlayerAnimation/Import Sheets From Manifest' 메뉴를 먼저 실행하세요.");
         }
-
-        // 씬 뷰에서 플레이어가 보이도록 대표 스프라이트 1장 (없을 때만)
-        if (spriteRenderer.sprite == null)
+        else if (bodyRenderer.sprite == null && animationSet.idle != null && animationSet.idle.frames != null && animationSet.idle.frames.Length > 0)
         {
-            var initialSprite = LoadFirstSprite(AimFrontSpritePath);
-            if (initialSprite != null)
-            {
-                Undo.RecordObject(spriteRenderer, MenuPath);
-                spriteRenderer.sprite = initialSprite;
-            }
+            Undo.RecordObject(bodyRenderer, MenuPath);
+            bodyRenderer.sprite = animationSet.idle.frames[0];
         }
 
         // --- 수동 작업 경고 (에셋/추가 씬 오브젝트는 셋업 스크립트가 생성하지 않음) ---
@@ -507,26 +520,37 @@ public static class CameraSystemSetup
             prop.intValue = mask;
     }
 
-    static bool HasAnyAimSheet(PlayerAnimation anim)
+    /// <summary>v5: 몸통 렌더러는 Body 자식에 둔다. 기존 루트 렌더러가 있으면 스프라이트를 옮기고 컴포넌트를 제거한다.</summary>
+    static SpriteRenderer EnsureBodyRenderer(GameObject playerGo)
     {
-        var so = new SerializedObject(anim);
-        var aim = so.FindProperty("aimSprites");
-        if (aim == null || !aim.isArray || aim.arraySize == 0) return false;
-        var frames = aim.GetArrayElementAtIndex(0).FindPropertyRelative("frames");
-        return frames != null && frames.isArray && frames.arraySize > 0;
+        var bodyTransform = GetOrCreateChild(playerGo.transform, BodyName, Vector3.zero);
+        var bodyRenderer = bodyTransform.GetComponent<SpriteRenderer>();
+        if (bodyRenderer == null) bodyRenderer = Undo.AddComponent<SpriteRenderer>(bodyTransform.gameObject);
+        if (bodyRenderer.sortingOrder != 0)
+        {
+            Undo.RecordObject(bodyRenderer, MenuPath);
+            bodyRenderer.sortingOrder = 0;
+        }
+
+        var rootRenderer = playerGo.GetComponent<SpriteRenderer>();
+        if (rootRenderer != null)
+        {
+            if (bodyRenderer.sprite == null && rootRenderer.sprite != null) bodyRenderer.sprite = rootRenderer.sprite;
+            Undo.DestroyObjectImmediate(rootRenderer);
+        }
+        return bodyRenderer;
     }
 
-    static Sprite LoadFirstSprite(string path)
+    static SpriteRenderer EnsureRendererChild(Transform parent, string childName, int sortingOrder)
     {
-        var sprites = AssetDatabase.LoadAllAssetsAtPath(path)
-            .OfType<Sprite>()
-            .OrderBy(s => s.name)
-            .ToArray();
-        if (sprites.Length == 0)
+        var child = GetOrCreateChild(parent, childName, Vector3.zero);
+        var renderer = child.GetComponent<SpriteRenderer>();
+        if (renderer == null) renderer = Undo.AddComponent<SpriteRenderer>(child.gameObject);
+        if (renderer.sortingOrder != sortingOrder)
         {
-            Debug.LogWarning($"[플레이어 셋업] 스프라이트 없음 (경로/임포트 모드 확인): {path}");
-            return null;
+            Undo.RecordObject(renderer, MenuPath);
+            renderer.sortingOrder = sortingOrder;
         }
-        return sprites[0];
+        return renderer;
     }
 }

@@ -1,0 +1,2289 @@
+fileFormatVersion: 2
+guid: ef765032da9609d4892d75b5c8c08ca8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4734296201317527714
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_0
+  - first:
+      213: -1835943608512626988
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_1
+  - first:
+      213: -5028243176517561394
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_2
+  - first:
+      213: -2980550473122139602
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_3
+  - first:
+      213: 1091513846361657189
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_4
+  - first:
+      213: 8622138734619213390
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_5
+  - first:
+      213: 3623613654391250407
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_6
+  - first:
+      213: 7477021494123237317
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_7
+  - first:
+      213: 7101277091015079410
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_8
+  - first:
+      213: 2848336910351797103
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_9
+  - first:
+      213: -8572258049442062767
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_10
+  - first:
+      213: -5549339239893991673
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_11
+  - first:
+      213: -2585889895773330181
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_12
+  - first:
+      213: 4497391473286934792
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_13
+  - first:
+      213: -7678083088878873805
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_14
+  - first:
+      213: -1239837346299883871
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_15
+  - first:
+      213: -2473218242544702336
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_16
+  - first:
+      213: 4217200461432349806
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_17
+  - first:
+      213: -2594640563432224728
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_18
+  - first:
+      213: 2296057583031850594
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_19
+  - first:
+      213: -1004794922351111265
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_20
+  - first:
+      213: -3175371165634050151
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_21
+  - first:
+      213: 8107954856886468721
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_22
+  - first:
+      213: -1982569418085678845
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_23
+  - first:
+      213: -3814978839684035614
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_24
+  - first:
+      213: -4925555963179718023
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_25
+  - first:
+      213: 4871479379626362008
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_26
+  - first:
+      213: -639179902999909161
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_27
+  - first:
+      213: 8085452050115380511
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_28
+  - first:
+      213: -4566854295126546090
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_29
+  - first:
+      213: -317745680960705527
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_30
+  - first:
+      213: -3833788216995887708
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_31
+  - first:
+      213: -7352754116422559962
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_32
+  - first:
+      213: 7496159910018194372
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_33
+  - first:
+      213: 3520315816853031245
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_34
+  - first:
+      213: -2992762929043836584
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_35
+  - first:
+      213: 8160183122295806650
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_36
+  - first:
+      213: 5836630802699459225
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_37
+  - first:
+      213: 6038763813456065254
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_38
+  - first:
+      213: -2590730351808741056
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_39
+  - first:
+      213: 7960798468695664924
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_40
+  - first:
+      213: 2189137328162755465
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_41
+  - first:
+      213: 6198679972673831352
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_42
+  - first:
+      213: 1884962676325125330
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_43
+  - first:
+      213: -5270421918496602086
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_44
+  - first:
+      213: -1255778782375651632
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_45
+  - first:
+      213: 1120050286946796042
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_46
+  - first:
+      213: -7398177840849884024
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_47
+  - first:
+      213: -2342944563159393055
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_48
+  - first:
+      213: 1329479367819418316
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_49
+  - first:
+      213: 7237738149941212394
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_50
+  - first:
+      213: 8603347254632537815
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_51
+  - first:
+      213: 217900765803438495
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_52
+  - first:
+      213: 2505136696165841590
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_53
+  - first:
+      213: 2426184912353486256
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_54
+  - first:
+      213: 899283793532433090
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_55
+  - first:
+      213: 864737408385100146
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_56
+  - first:
+      213: 3762153929062461839
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_57
+  - first:
+      213: -3180462387905118731
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_58
+  - first:
+      213: -1621798921843592710
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_59
+  - first:
+      213: 11388740973178579
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_60
+  - first:
+      213: 2173728350545662982
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_61
+  - first:
+      213: 7799036328252412615
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_62
+  - first:
+      213: 6269425632760561528
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_63
+  - first:
+      213: 1218572261220331778
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_64
+  - first:
+      213: -1900093878916004280
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_65
+  - first:
+      213: -3565472417010683916
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_66
+  - first:
+      213: 2486270451025822910
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_67
+  - first:
+      213: 3043087702897078007
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_68
+  - first:
+      213: 7452973757882641693
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_69
+  - first:
+      213: 5511924282137570452
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_70
+  - first:
+      213: -4326499848870265441
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_71
+  - first:
+      213: 2137984699136762689
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_72
+  - first:
+      213: -2398697061374050834
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_73
+  - first:
+      213: -3833080737179659947
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_74
+  - first:
+      213: 2639690455532492488
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_75
+  - first:
+      213: -4983838258126691085
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_76
+  - first:
+      213: -6854796365325374420
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_77
+  - first:
+      213: 2310022177374911430
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_78
+  - first:
+      213: 716153245281761422
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_79
+  - first:
+      213: 6024230019938755334
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_80
+  - first:
+      213: -4062492803096808975
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_81
+  - first:
+      213: 7927521869600207088
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_82
+  - first:
+      213: 5030853997387966500
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_83
+  - first:
+      213: -8156251201873132617
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_84
+  - first:
+      213: -4246954445915071644
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_85
+  - first:
+      213: 836408241855140125
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_86
+  - first:
+      213: -8927485342468802854
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_87
+  - first:
+      213: 8124518894761013346
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_88
+  - first:
+      213: 1070108172117349137
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_89
+  - first:
+      213: 977213507858381928
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_90
+  - first:
+      213: -13545928228950351
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_91
+  - first:
+      213: -6401600848740654220
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_92
+  - first:
+      213: -5363928837695694227
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_93
+  - first:
+      213: 5394466836291813703
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_94
+  - first:
+      213: -8789977393560447127
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_95
+  - first:
+      213: 266511533900771255
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_96
+  - first:
+      213: -5066735236688841350
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_97
+  - first:
+      213: 171931313130593661
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_98
+  - first:
+      213: 6016624465986378586
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_99
+  - first:
+      213: -8162590711879421455
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_100
+  - first:
+      213: 6963597828292078301
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_101
+  - first:
+      213: 7986134066808737158
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_102
+  - first:
+      213: -2400434309386776570
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_103
+  - first:
+      213: 8844022645810363741
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_104
+  - first:
+      213: -9171559140116027810
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_105
+  - first:
+      213: 6169682706150824858
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_106
+  - first:
+      213: 826424383540042869
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_107
+  - first:
+      213: 2436802148530522221
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_108
+  - first:
+      213: 9016579841919720051
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_109
+  - first:
+      213: -4478055200084010872
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_110
+  - first:
+      213: -2429506744628418048
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_111
+  - first:
+      213: -4942173239344063484
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_112
+  - first:
+      213: -2266897965359727691
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_113
+  - first:
+      213: -7405738068645046747
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_114
+  - first:
+      213: 650736997692053734
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_115
+  - first:
+      213: -2904577468915249636
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_116
+  - first:
+      213: -2453488048280954145
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_117
+  - first:
+      213: 1026510886251406353
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_118
+  - first:
+      213: 3193544995560773930
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_119
+  - first:
+      213: -6843846288644552233
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_120
+  - first:
+      213: -3791804755725878662
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_121
+  - first:
+      213: 8192909198521756518
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_122
+  - first:
+      213: 3577601313192016831
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_123
+  - first:
+      213: 5382130877695764808
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_124
+  - first:
+      213: 9091608979093622468
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_125
+  - first:
+      213: -8312801770473166146
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_126
+  - first:
+      213: -3010370200060973661
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_127
+  - first:
+      213: -2280037468680096827
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_128
+  - first:
+      213: 6298231171623351898
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_129
+  - first:
+      213: -3409628350705127750
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_130
+  - first:
+      213: 1121640698873378527
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_131
+  - first:
+      213: -1470706644927875100
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_132
+  - first:
+      213: 8854228606757702649
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_133
+  - first:
+      213: -2450111612187169253
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_134
+  - first:
+      213: -8464715822736872431
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_135
+  - first:
+      213: 7785646675996537647
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_136
+  - first:
+      213: 7944931531926410575
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_137
+  - first:
+      213: -6473157644743597511
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_138
+  - first:
+      213: -4428004208557166048
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_139
+  - first:
+      213: 6717197419098642883
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_140
+  - first:
+      213: -7447993426445083386
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_141
+  - first:
+      213: -1512045276257249227
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_142
+  - first:
+      213: 5382249825908671288
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_143
+  - first:
+      213: 3991023847892580435
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_144
+  - first:
+      213: -4500344043070541319
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_145
+  - first:
+      213: 7374654666881852027
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_146
+  - first:
+      213: -594506816140321982
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_147
+  - first:
+      213: 5521104278497580688
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_148
+  - first:
+      213: -8311704825432580597
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_149
+  - first:
+      213: -285707631247832124
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_150
+  - first:
+      213: 8480171151500351359
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_151
+  - first:
+      213: -5225311102956449767
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_152
+  - first:
+      213: 3443027275908861812
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_153
+  - first:
+      213: -5007416643986914302
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_154
+  - first:
+      213: 314966533221966449
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_155
+  - first:
+      213: 6999698605439416724
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_156
+  - first:
+      213: -5249443374112005653
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_157
+  - first:
+      213: -2202721631033343675
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_158
+  - first:
+      213: -2240264423973242588
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_159
+  - first:
+      213: 8513717106042683049
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_160
+  - first:
+      213: -8507518386022264540
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_161
+  - first:
+      213: 7259388589456362938
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_162
+  - first:
+      213: 2820598733308785852
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_163
+  - first:
+      213: 7699516802084576657
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_164
+  - first:
+      213: 1103212552518819683
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_165
+  - first:
+      213: -1979054913859228435
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_166
+  - first:
+      213: 8823357405288354814
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_167
+  - first:
+      213: 1936365673152103007
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_168
+  - first:
+      213: 5656375536709456908
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_169
+  - first:
+      213: 8927986562375773595
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_170
+  - first:
+      213: -9067587621079340596
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_171
+  - first:
+      213: -6428398527462079175
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_172
+  - first:
+      213: -2631253477269044818
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_173
+  - first:
+      213: 1571117981308467474
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_174
+  - first:
+      213: -1763316095674787211
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_175
+  - first:
+      213: 1972484244605222712
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_176
+  - first:
+      213: -2551492947069593230
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_177
+  - first:
+      213: -6206813011862765819
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_178
+  - first:
+      213: -1817122854857487198
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_179
+  - first:
+      213: 9739463130615319
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_180
+  - first:
+      213: 4300102154195339892
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_181
+  - first:
+      213: -7484404086524728473
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_182
+  - first:
+      213: 199246048382374490
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_183
+  - first:
+      213: -4137075049850179576
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_184
+  - first:
+      213: 6433365227923660502
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_185
+  - first:
+      213: 4011379642026136582
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_186
+  - first:
+      213: 327037404866470348
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_187
+  - first:
+      213: 1890868381352939876
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_188
+  - first:
+      213: 3281319844868960036
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_189
+  - first:
+      213: -3334737163325878857
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_190
+  - first:
+      213: -1713841639037187287
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_191
+  - first:
+      213: 7467118514017345941
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_192
+  - first:
+      213: -7251234950797165202
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_193
+  - first:
+      213: -6940576517824876278
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_194
+  - first:
+      213: -849568900053384347
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_195
+  - first:
+      213: -3057253531547078760
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_196
+  - first:
+      213: -2271230066550496386
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_197
+  - first:
+      213: -8327655079447883806
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_198
+  - first:
+      213: 4968710857452627026
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_199
+  - first:
+      213: 6953631047097237156
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_200
+  - first:
+      213: 1399161366253654677
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_201
+  - first:
+      213: 1011425137606682686
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_202
+  - first:
+      213: 8005359277859898609
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_203
+  - first:
+      213: 8608547853172248465
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_204
+  - first:
+      213: -7877385140484714474
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_205
+  - first:
+      213: 903486869172966457
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_206
+  - first:
+      213: 7105822697604319070
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_207
+  - first:
+      213: 2260955295987854547
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_208
+  - first:
+      213: 8055798284608919773
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_209
+  - first:
+      213: -6588036488758393867
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_210
+  - first:
+      213: -7620704133434434015
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_211
+  - first:
+      213: 8313689927220543083
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_212
+  - first:
+      213: -6098159739270229534
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_213
+  - first:
+      213: -533556024342882335
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_214
+  - first:
+      213: 3754809941147003458
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_215
+  - first:
+      213: -322003020741788995
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_216
+  - first:
+      213: 4196679631254755463
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_217
+  - first:
+      213: 4315978600991962485
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_218
+  - first:
+      213: 3169498184546726730
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_219
+  - first:
+      213: 6134229001131359386
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_220
+  - first:
+      213: 977255589076748270
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_221
+  - first:
+      213: -1016423002209557128
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_222
+  - first:
+      213: -902699266635517268
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_223
+  - first:
+      213: 1375701307966756799
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_224
+  - first:
+      213: 3698833552134470560
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_225
+  - first:
+      213: 381791703950513230
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_226
+  - first:
+      213: 1901776994732625176
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_227
+  - first:
+      213: 6051206865935958366
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_228
+  - first:
+      213: -3430799210265994488
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_229
+  - first:
+      213: -8148306480743915032
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_230
+  - first:
+      213: 2338987367415573801
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_231
+  - first:
+      213: -154280903260772216
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_232
+  - first:
+      213: 4589838453748489981
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_233
+  - first:
+      213: 7143512267706381059
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_234
+  - first:
+      213: -778285615741391791
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_235
+  - first:
+      213: 2065728786645360937
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_236
+  - first:
+      213: -532205606522018435
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_237
+  - first:
+      213: 4936288243519072786
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_238
+  - first:
+      213: -937013284834453529
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_239
+  - first:
+      213: -129992956541828821
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_240
+  - first:
+      213: -6723324987426514152
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_241
+  - first:
+      213: 3174662668460017434
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_242
+  - first:
+      213: -5654735808425479481
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_243
+  - first:
+      213: -4766316113592195630
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_244
+  - first:
+      213: 7042499962497112658
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_245
+  - first:
+      213: 6162042700145402066
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_246
+  - first:
+      213: 96341648269230788
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_247
+  - first:
+      213: 1629472472640755077
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_248
+  - first:
+      213: 7890183644446882892
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_249
+  - first:
+      213: -5586141452997235628
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_250
+  - first:
+      213: 7336938673703193953
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_251
+  - first:
+      213: -3364294350980648685
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_252
+  - first:
+      213: -7058018885906429358
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_253
+  - first:
+      213: 2042470621618289214
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_254
+  - first:
+      213: -2143554040399475575
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_255
+  - first:
+      213: 6901300187376546668
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_256
+  - first:
+      213: -391729461971907436
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_257
+  - first:
+      213: -7998882736246522999
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_258
+  - first:
+      213: -6441565891953276545
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_259
+  - first:
+      213: 3314357925822950874
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_260
+  - first:
+      213: 4631022087685137447
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_261
+  - first:
+      213: -7815745990883440868
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_262
+  - first:
+      213: 1792081960965638575
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_263
+  - first:
+      213: -7141129531442349375
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_264
+  - first:
+      213: 6905147354053151311
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_265
+  - first:
+      213: 979661802057538676
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_266
+  - first:
+      213: 7038589995130552462
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_267
+  - first:
+      213: -7907688795642185743
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_268
+  - first:
+      213: -1333488957845351527
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_269
+  - first:
+      213: -100409233610812713
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_270
+  - first:
+      213: 260880781674311227
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_271
+  - first:
+      213: -6530585933343915596
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_272
+  - first:
+      213: -5339834682575916826
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_273
+  - first:
+      213: -5339439449636275611
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_274
+  - first:
+      213: -1989679030405768997
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_275
+  - first:
+      213: 7948851713967293234
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_276
+  - first:
+      213: -3639740464232235871
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_277
+  - first:
+      213: 8534356133746304215
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_278
+  - first:
+      213: -2162992554052830590
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_279
+  - first:
+      213: 6435836800470152987
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_280
+  - first:
+      213: -669265751778702470
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_281
+  - first:
+      213: 2848103666582418747
+    second: 06_aura-ezgif.com-gif-to-sprite-converter_282
+  - first:
+      213: 8101814991177344531
+    second: aura_0
+  - first:
+      213: -1037195541978810413
+    second: aura_1
+  - first:
+      213: -9040564401775751873
+    second: aura_2
+  - first:
+      213: -1681072077914481920
+    second: aura_3
+  - first:
+      213: -8127105073801839751
+    second: aura_4
+  - first:
+      213: 6069782089028118929
+    second: aura_5
+  - first:
+      213: 8798885075952924328
+    second: aura_6
+  - first:
+      213: 4792810272839003946
+    second: aura_7
+  - first:
+      213: 445154734937308262
+    second: aura_8
+  - first:
+      213: -5840672529687161576
+    second: aura_9
+  - first:
+      213: 1098420454631771879
+    second: aura_10
+  - first:
+      213: -845395430368941494
+    second: aura_11
+  - first:
+      213: 7765130619148931848
+    second: aura_12
+  - first:
+      213: -885007757907946253
+    second: aura_13
+  - first:
+      213: -3331701929160865949
+    second: aura_14
+  - first:
+      213: 3108639409792512529
+    second: aura_15
+  - first:
+      213: 1373505743870680447
+    second: aura_16
+  - first:
+      213: -4946066509701594445
+    second: aura_17
+  - first:
+      213: -2957399622602061292
+    second: aura_18
+  - first:
+      213: -1773008353980557669
+    second: aura_19
+  - first:
+      213: -6651395743081385267
+    second: aura_20
+  - first:
+      213: 7493596236104583112
+    second: aura_21
+  - first:
+      213: -2542289543622311856
+    second: aura_22
+  - first:
+      213: -547045596235353782
+    second: aura_23
+  - first:
+      213: -2004718892235124925
+    second: aura_24
+  - first:
+      213: -8383096675310536374
+    second: aura_25
+  - first:
+      213: -2953341366051749105
+    second: aura_26
+  - first:
+      213: 4130761545488282910
+    second: aura_27
+  - first:
+      213: -8152291130934457811
+    second: aura_28
+  - first:
+      213: 7213769706187710790
+    second: aura_29
+  - first:
+      213: -5167169368037046950
+    second: aura_30
+  - first:
+      213: 499642703691946360
+    second: aura_31
+  - first:
+      213: -7636545903275525260
+    second: aura_32
+  - first:
+      213: -6197936802899441747
+    second: aura_33
+  - first:
+      213: -9127563620283303648
+    second: aura_34
+  - first:
+      213: 2220958624992779663
+    second: aura_35
+  - first:
+      213: 9048649872502428255
+    second: aura_36
+  - first:
+      213: -5969904584972757262
+    second: aura_37
+  - first:
+      213: -2745905669016959621
+    second: aura_38
+  - first:
+      213: -2565198909889460201
+    second: aura_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: aura_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2884
+        width: 352
+        height: 412
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3166f092fcd6f6070800000000000000
+      internalID: 8101814991177344531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aura_1
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 2884
+        width: 352
+        height: 412
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d7fbbd56242b91f0800000000000000
+      internalID: -1037195541978810413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aura_2
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 2884
+        width: 352
+        height: 412
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3d4d175396798280800000000000000
+      internalID: -9040564401775751873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aura_3
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 2884
+        width: 352
+        height: 412
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00b54121ad1aba8e0800000000000000
+      internalID: -1681072077914481920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aura_4
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 2884
+        width: 352
+        height: 412
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97b34cf9ef8b63f80800000000000000
+      internalID: -8127105073801839751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aura_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2472
+        width: 352
+        height: 412
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 199ac80a6a23c3450800000000000000
+      internalID: 6069782089028118929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aura_6
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 2472
+        width: 352
+        height: 412
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a6f8abab5beb1a70800000000000000
+      internalID: 8798885075952924328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aura_7
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 2472
+        width: 352
+        height: 412
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2f696cbc8b738240800000000000000
+      internalID: 4792810272839003946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aura_8
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 2472
+        width: 352
+        height: 412
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66c75067fd18d2600800000000000000
+      internalID: 445154734937308262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aura_9
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 2472
+        width: 352
+        height: 412
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8155d9a8743c1fea0800000000000000
+      internalID: -5840672529687161576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aura_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2060
+        width: 352
+        height: 412
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ee8954759f5e3f00800000000000000
+      internalID: 1098420454631771879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aura_11
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 2060
+        width: 352
+        height: 412
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4aee1ec55d8444f0800000000000000
+      internalID: -845395430368941494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aura_12
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 2060
+        width: 352
+        height: 412
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80391ec182943cb60800000000000000
+      internalID: 7765130619148931848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aura_13
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 2060
+        width: 352
+        height: 412
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f49e661222d7b3f0800000000000000
+      internalID: -885007757907946253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aura_14
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 2060
+        width: 352
+        height: 412
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36702ee5fba63c1d0800000000000000
+      internalID: -3331701929160865949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aura_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1648
+        width: 352
+        height: 412
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 112767ba21b142b20800000000000000
+      internalID: 3108639409792512529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aura_16
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 1648
+        width: 352
+        height: 412
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7dde58623caf0310800000000000000
+      internalID: 1373505743870680447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aura_17
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1648
+        width: 352
+        height: 412
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b2c7cdf6ba0c5bb0800000000000000
+      internalID: -4946066509701594445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aura_18
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 1648
+        width: 352
+        height: 412
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41a0ee356b435f6d0800000000000000
+      internalID: -2957399622602061292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aura_19
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 1648
+        width: 352
+        height: 412
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b96503dbb420567e0800000000000000
+      internalID: -1773008353980557669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aura_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1236
+        width: 352
+        height: 412
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc2b611ffce71b3a0800000000000000
+      internalID: -6651395743081385267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aura_21
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 1236
+        width: 352
+        height: 412
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c7c73fe21a9ef760800000000000000
+      internalID: 7493596236104583112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aura_22
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1236
+        width: 352
+        height: 412
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 050c3343129f7bcd0800000000000000
+      internalID: -2542289543622311856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aura_23
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 1236
+        width: 352
+        height: 412
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a413378bde08868f0800000000000000
+      internalID: -547045596235353782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aura_24
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 1236
+        width: 352
+        height: 412
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34f8fc9f9cecd24e0800000000000000
+      internalID: -2004718892235124925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aura_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 824
+        width: 352
+        height: 412
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a497b564df149ab80800000000000000
+      internalID: -8383096675310536374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aura_26
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 824
+        width: 352
+        height: 412
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f03c400dcaf9307d0800000000000000
+      internalID: -2953341366051749105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aura_27
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 824
+        width: 352
+        height: 412
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e153caa6db9635930800000000000000
+      internalID: 4130761545488282910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aura_28
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 824
+        width: 352
+        height: 412
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2a851bb86e3dde80800000000000000
+      internalID: -8152291130934457811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aura_29
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 824
+        width: 352
+        height: 412
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 641eaccd3557c1460800000000000000
+      internalID: 7213769706187710790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aura_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 412
+        width: 352
+        height: 412
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a554fdb26d68a48b0800000000000000
+      internalID: -5167169368037046950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aura_31
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 412
+        width: 352
+        height: 412
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8799c2c44661fe600800000000000000
+      internalID: 499642703691946360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aura_32
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 412
+        width: 352
+        height: 412
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47b3c4c06f9850690800000000000000
+      internalID: -7636545903275525260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aura_33
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 412
+        width: 352
+        height: 412
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da7cbdad0518cf9a0800000000000000
+      internalID: -6197936802899441747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aura_34
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 412
+        width: 352
+        height: 412
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0293c3c4f31645180800000000000000
+      internalID: -9127563620283303648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aura_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 352
+        height: 412
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8dd88f2a1e62de10800000000000000
+      internalID: 2220958624992779663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aura_36
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 352
+        height: 412
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5214630e13439d70800000000000000
+      internalID: 9048649872502428255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aura_37
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 0
+        width: 352
+        height: 412
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f619bde863a62da0800000000000000
+      internalID: -5969904584972757262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aura_38
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 0
+        width: 352
+        height: 412
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b75438ba75594e9d0800000000000000
+      internalID: -2745905669016959621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aura_39
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 0
+        width: 352
+        height: 412
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 718c1d5be25966cd0800000000000000
+      internalID: -2565198909889460201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      06_aura-ezgif.com-gif-to-sprite-converter_0: -4734296201317527714
+      06_aura-ezgif.com-gif-to-sprite-converter_1: -1835943608512626988
+      06_aura-ezgif.com-gif-to-sprite-converter_10: -8572258049442062767
+      06_aura-ezgif.com-gif-to-sprite-converter_100: -8162590711879421455
+      06_aura-ezgif.com-gif-to-sprite-converter_101: 6963597828292078301
+      06_aura-ezgif.com-gif-to-sprite-converter_102: 7986134066808737158
+      06_aura-ezgif.com-gif-to-sprite-converter_103: -2400434309386776570
+      06_aura-ezgif.com-gif-to-sprite-converter_104: 8844022645810363741
+      06_aura-ezgif.com-gif-to-sprite-converter_105: -9171559140116027810
+      06_aura-ezgif.com-gif-to-sprite-converter_106: 6169682706150824858
+      06_aura-ezgif.com-gif-to-sprite-converter_107: 826424383540042869
+      06_aura-ezgif.com-gif-to-sprite-converter_108: 2436802148530522221
+      06_aura-ezgif.com-gif-to-sprite-converter_109: 9016579841919720051
+      06_aura-ezgif.com-gif-to-sprite-converter_11: -5549339239893991673
+      06_aura-ezgif.com-gif-to-sprite-converter_110: -4478055200084010872
+      06_aura-ezgif.com-gif-to-sprite-converter_111: -2429506744628418048
+      06_aura-ezgif.com-gif-to-sprite-converter_112: -4942173239344063484
+      06_aura-ezgif.com-gif-to-sprite-converter_113: -2266897965359727691
+      06_aura-ezgif.com-gif-to-sprite-converter_114: -7405738068645046747
+      06_aura-ezgif.com-gif-to-sprite-converter_115: 650736997692053734
+      06_aura-ezgif.com-gif-to-sprite-converter_116: -2904577468915249636
+      06_aura-ezgif.com-gif-to-sprite-converter_117: -2453488048280954145
+      06_aura-ezgif.com-gif-to-sprite-converter_118: 1026510886251406353
+      06_aura-ezgif.com-gif-to-sprite-converter_119: 3193544995560773930
+      06_aura-ezgif.com-gif-to-sprite-converter_12: -2585889895773330181
+      06_aura-ezgif.com-gif-to-sprite-converter_120: -6843846288644552233
+      06_aura-ezgif.com-gif-to-sprite-converter_121: -3791804755725878662
+      06_aura-ezgif.com-gif-to-sprite-converter_122: 8192909198521756518
+      06_aura-ezgif.com-gif-to-sprite-converter_123: 3577601313192016831
+      06_aura-ezgif.com-gif-to-sprite-converter_124: 5382130877695764808
+      06_aura-ezgif.com-gif-to-sprite-converter_125: 9091608979093622468
+      06_aura-ezgif.com-gif-to-sprite-converter_126: -8312801770473166146
+      06_aura-ezgif.com-gif-to-sprite-converter_127: -3010370200060973661
+      06_aura-ezgif.com-gif-to-sprite-converter_128: -2280037468680096827
+      06_aura-ezgif.com-gif-to-sprite-converter_129: 6298231171623351898
+      06_aura-ezgif.com-gif-to-sprite-converter_13: 4497391473286934792
+      06_aura-ezgif.com-gif-to-sprite-converter_130: -3409628350705127750
+      06_aura-ezgif.com-gif-to-sprite-converter_131: 1121640698873378527
+      06_aura-ezgif.com-gif-to-sprite-converter_132: -1470706644927875100
+      06_aura-ezgif.com-gif-to-sprite-converter_133: 8854228606757702649
+      06_aura-ezgif.com-gif-to-sprite-converter_134: -2450111612187169253
+      06_aura-ezgif.com-gif-to-sprite-converter_135: -8464715822736872431
+      06_aura-ezgif.com-gif-to-sprite-converter_136: 7785646675996537647
+      06_aura-ezgif.com-gif-to-sprite-converter_137: 7944931531926410575
+      06_aura-ezgif.com-gif-to-sprite-converter_138: -6473157644743597511
+      06_aura-ezgif.com-gif-to-sprite-converter_139: -4428004208557166048
+      06_aura-ezgif.com-gif-to-sprite-converter_14: -7678083088878873805
+      06_aura-ezgif.com-gif-to-sprite-converter_140: 6717197419098642883
+      06_aura-ezgif.com-gif-to-sprite-converter_141: -7447993426445083386
+      06_aura-ezgif.com-gif-to-sprite-converter_142: -1512045276257249227
+      06_aura-ezgif.com-gif-to-sprite-converter_143: 5382249825908671288
+      06_aura-ezgif.com-gif-to-sprite-converter_144: 3991023847892580435
+      06_aura-ezgif.com-gif-to-sprite-converter_145: -4500344043070541319
+      06_aura-ezgif.com-gif-to-sprite-converter_146: 7374654666881852027
+      06_aura-ezgif.com-gif-to-sprite-converter_147: -594506816140321982
+      06_aura-ezgif.com-gif-to-sprite-converter_148: 5521104278497580688
+      06_aura-ezgif.com-gif-to-sprite-converter_149: -8311704825432580597
+      06_aura-ezgif.com-gif-to-sprite-converter_15: -1239837346299883871
+      06_aura-ezgif.com-gif-to-sprite-converter_150: -285707631247832124
+      06_aura-ezgif.com-gif-to-sprite-converter_151: 8480171151500351359
+      06_aura-ezgif.com-gif-to-sprite-converter_152: -5225311102956449767
+      06_aura-ezgif.com-gif-to-sprite-converter_153: 3443027275908861812
+      06_aura-ezgif.com-gif-to-sprite-converter_154: -5007416643986914302
+      06_aura-ezgif.com-gif-to-sprite-converter_155: 314966533221966449
+      06_aura-ezgif.com-gif-to-sprite-converter_156: 6999698605439416724
+      06_aura-ezgif.com-gif-to-sprite-converter_157: -5249443374112005653
+      06_aura-ezgif.com-gif-to-sprite-converter_158: -2202721631033343675
+      06_aura-ezgif.com-gif-to-sprite-converter_159: -2240264423973242588
+      06_aura-ezgif.com-gif-to-sprite-converter_16: -2473218242544702336
+      06_aura-ezgif.com-gif-to-sprite-converter_160: 8513717106042683049
+      06_aura-ezgif.com-gif-to-sprite-converter_161: -8507518386022264540
+      06_aura-ezgif.com-gif-to-sprite-converter_162: 7259388589456362938
+      06_aura-ezgif.com-gif-to-sprite-converter_163: 2820598733308785852
+      06_aura-ezgif.com-gif-to-sprite-converter_164: 7699516802084576657
+      06_aura-ezgif.com-gif-to-sprite-converter_165: 1103212552518819683
+      06_aura-ezgif.com-gif-to-sprite-converter_166: -1979054913859228435
+      06_aura-ezgif.com-gif-to-sprite-converter_167: 8823357405288354814
+      06_aura-ezgif.com-gif-to-sprite-converter_168: 1936365673152103007
+      06_aura-ezgif.com-gif-to-sprite-converter_169: 5656375536709456908
+      06_aura-ezgif.com-gif-to-sprite-converter_17: 4217200461432349806
+      06_aura-ezgif.com-gif-to-sprite-converter_170: 8927986562375773595
+      06_aura-ezgif.com-gif-to-sprite-converter_171: -9067587621079340596
+      06_aura-ezgif.com-gif-to-sprite-converter_172: -6428398527462079175
+      06_aura-ezgif.com-gif-to-sprite-converter_173: -2631253477269044818
+      06_aura-ezgif.com-gif-to-sprite-converter_174: 1571117981308467474
+      06_aura-ezgif.com-gif-to-sprite-converter_175: -1763316095674787211
+      06_aura-ezgif.com-gif-to-sprite-converter_176: 1972484244605222712
+      06_aura-ezgif.com-gif-to-sprite-converter_177: -2551492947069593230
+      06_aura-ezgif.com-gif-to-sprite-converter_178: -6206813011862765819
+      06_aura-ezgif.com-gif-to-sprite-converter_179: -1817122854857487198
+      06_aura-ezgif.com-gif-to-sprite-converter_18: -2594640563432224728
+      06_aura-ezgif.com-gif-to-sprite-converter_180: 9739463130615319
+      06_aura-ezgif.com-gif-to-sprite-converter_181: 4300102154195339892
+      06_aura-ezgif.com-gif-to-sprite-converter_182: -7484404086524728473
+      06_aura-ezgif.com-gif-to-sprite-converter_183: 199246048382374490
+      06_aura-ezgif.com-gif-to-sprite-converter_184: -4137075049850179576
+      06_aura-ezgif.com-gif-to-sprite-converter_185: 6433365227923660502
+      06_aura-ezgif.com-gif-to-sprite-converter_186: 4011379642026136582
+      06_aura-ezgif.com-gif-to-sprite-converter_187: 327037404866470348
+      06_aura-ezgif.com-gif-to-sprite-converter_188: 1890868381352939876
+      06_aura-ezgif.com-gif-to-sprite-converter_189: 3281319844868960036
+      06_aura-ezgif.com-gif-to-sprite-converter_19: 2296057583031850594
+      06_aura-ezgif.com-gif-to-sprite-converter_190: -3334737163325878857
+      06_aura-ezgif.com-gif-to-sprite-converter_191: -1713841639037187287
+      06_aura-ezgif.com-gif-to-sprite-converter_192: 7467118514017345941
+      06_aura-ezgif.com-gif-to-sprite-converter_193: -7251234950797165202
+      06_aura-ezgif.com-gif-to-sprite-converter_194: -6940576517824876278
+      06_aura-ezgif.com-gif-to-sprite-converter_195: -849568900053384347
+      06_aura-ezgif.com-gif-to-sprite-converter_196: -3057253531547078760
+      06_aura-ezgif.com-gif-to-sprite-converter_197: -2271230066550496386
+      06_aura-ezgif.com-gif-to-sprite-converter_198: -8327655079447883806
+      06_aura-ezgif.com-gif-to-sprite-converter_199: 4968710857452627026
+      06_aura-ezgif.com-gif-to-sprite-converter_2: -5028243176517561394
+      06_aura-ezgif.com-gif-to-sprite-converter_20: -1004794922351111265
+      06_aura-ezgif.com-gif-to-sprite-converter_200: 6953631047097237156
+      06_aura-ezgif.com-gif-to-sprite-converter_201: 1399161366253654677
+      06_aura-ezgif.com-gif-to-sprite-converter_202: 1011425137606682686
+      06_aura-ezgif.com-gif-to-sprite-converter_203: 8005359277859898609
+      06_aura-ezgif.com-gif-to-sprite-converter_204: 8608547853172248465
+      06_aura-ezgif.com-gif-to-sprite-converter_205: -7877385140484714474
+      06_aura-ezgif.com-gif-to-sprite-converter_206: 903486869172966457
+      06_aura-ezgif.com-gif-to-sprite-converter_207: 7105822697604319070
+      06_aura-ezgif.com-gif-to-sprite-converter_208: 2260955295987854547
+      06_aura-ezgif.com-gif-to-sprite-converter_209: 8055798284608919773
+      06_aura-ezgif.com-gif-to-sprite-converter_21: -3175371165634050151
+      06_aura-ezgif.com-gif-to-sprite-converter_210: -6588036488758393867
+      06_aura-ezgif.com-gif-to-sprite-converter_211: -7620704133434434015
+      06_aura-ezgif.com-gif-to-sprite-converter_212: 8313689927220543083
+      06_aura-ezgif.com-gif-to-sprite-converter_213: -6098159739270229534
+      06_aura-ezgif.com-gif-to-sprite-converter_214: -533556024342882335
+      06_aura-ezgif.com-gif-to-sprite-converter_215: 3754809941147003458
+      06_aura-ezgif.com-gif-to-sprite-converter_216: -322003020741788995
+      06_aura-ezgif.com-gif-to-sprite-converter_217: 4196679631254755463
+      06_aura-ezgif.com-gif-to-sprite-converter_218: 4315978600991962485
+      06_aura-ezgif.com-gif-to-sprite-converter_219: 3169498184546726730
+      06_aura-ezgif.com-gif-to-sprite-converter_22: 8107954856886468721
+      06_aura-ezgif.com-gif-to-sprite-converter_220: 6134229001131359386
+      06_aura-ezgif.com-gif-to-sprite-converter_221: 977255589076748270
+      06_aura-ezgif.com-gif-to-sprite-converter_222: -1016423002209557128
+      06_aura-ezgif.com-gif-to-sprite-converter_223: -902699266635517268
+      06_aura-ezgif.com-gif-to-sprite-converter_224: 1375701307966756799
+      06_aura-ezgif.com-gif-to-sprite-converter_225: 3698833552134470560
+      06_aura-ezgif.com-gif-to-sprite-converter_226: 381791703950513230
+      06_aura-ezgif.com-gif-to-sprite-converter_227: 1901776994732625176
+      06_aura-ezgif.com-gif-to-sprite-converter_228: 6051206865935958366
+      06_aura-ezgif.com-gif-to-sprite-converter_229: -3430799210265994488
+      06_aura-ezgif.com-gif-to-sprite-converter_23: -1982569418085678845
+      06_aura-ezgif.com-gif-to-sprite-converter_230: -8148306480743915032
+      06_aura-ezgif.com-gif-to-sprite-converter_231: 2338987367415573801
+      06_aura-ezgif.com-gif-to-sprite-converter_232: -154280903260772216
+      06_aura-ezgif.com-gif-to-sprite-converter_233: 4589838453748489981
+      06_aura-ezgif.com-gif-to-sprite-converter_234: 7143512267706381059
+      06_aura-ezgif.com-gif-to-sprite-converter_235: -778285615741391791
+      06_aura-ezgif.com-gif-to-sprite-converter_236: 2065728786645360937
+      06_aura-ezgif.com-gif-to-sprite-converter_237: -532205606522018435
+      06_aura-ezgif.com-gif-to-sprite-converter_238: 4936288243519072786
+      06_aura-ezgif.com-gif-to-sprite-converter_239: -937013284834453529
+      06_aura-ezgif.com-gif-to-sprite-converter_24: -3814978839684035614
+      06_aura-ezgif.com-gif-to-sprite-converter_240: -129992956541828821
+      06_aura-ezgif.com-gif-to-sprite-converter_241: -6723324987426514152
+      06_aura-ezgif.com-gif-to-sprite-converter_242: 3174662668460017434
+      06_aura-ezgif.com-gif-to-sprite-converter_243: -5654735808425479481
+      06_aura-ezgif.com-gif-to-sprite-converter_244: -4766316113592195630
+      06_aura-ezgif.com-gif-to-sprite-converter_245: 7042499962497112658
+      06_aura-ezgif.com-gif-to-sprite-converter_246: 6162042700145402066
+      06_aura-ezgif.com-gif-to-sprite-converter_247: 96341648269230788
+      06_aura-ezgif.com-gif-to-sprite-converter_248: 1629472472640755077
+      06_aura-ezgif.com-gif-to-sprite-converter_249: 7890183644446882892
+      06_aura-ezgif.com-gif-to-sprite-converter_25: -4925555963179718023
+      06_aura-ezgif.com-gif-to-sprite-converter_250: -5586141452997235628
+      06_aura-ezgif.com-gif-to-sprite-converter_251: 7336938673703193953
+      06_aura-ezgif.com-gif-to-sprite-converter_252: -3364294350980648685
+      06_aura-ezgif.com-gif-to-sprite-converter_253: -7058018885906429358
+      06_aura-ezgif.com-gif-to-sprite-converter_254: 2042470621618289214
+      06_aura-ezgif.com-gif-to-sprite-converter_255: -2143554040399475575
+      06_aura-ezgif.com-gif-to-sprite-converter_256: 6901300187376546668
+      06_aura-ezgif.com-gif-to-sprite-converter_257: -391729461971907436
+      06_aura-ezgif.com-gif-to-sprite-converter_258: -7998882736246522999
+      06_aura-ezgif.com-gif-to-sprite-converter_259: -6441565891953276545
+      06_aura-ezgif.com-gif-to-sprite-converter_26: 4871479379626362008
+      06_aura-ezgif.com-gif-to-sprite-converter_260: 3314357925822950874
+      06_aura-ezgif.com-gif-to-sprite-converter_261: 4631022087685137447
+      06_aura-ezgif.com-gif-to-sprite-converter_262: -7815745990883440868
+      06_aura-ezgif.com-gif-to-sprite-converter_263: 1792081960965638575
+      06_aura-ezgif.com-gif-to-sprite-converter_264: -7141129531442349375
+      06_aura-ezgif.com-gif-to-sprite-converter_265: 6905147354053151311
+      06_aura-ezgif.com-gif-to-sprite-converter_266: 979661802057538676
+      06_aura-ezgif.com-gif-to-sprite-converter_267: 7038589995130552462
+      06_aura-ezgif.com-gif-to-sprite-converter_268: -7907688795642185743
+      06_aura-ezgif.com-gif-to-sprite-converter_269: -1333488957845351527
+      06_aura-ezgif.com-gif-to-sprite-converter_27: -639179902999909161
+      06_aura-ezgif.com-gif-to-sprite-converter_270: -100409233610812713
+      06_aura-ezgif.com-gif-to-sprite-converter_271: 260880781674311227
+      06_aura-ezgif.com-gif-to-sprite-converter_272: -6530585933343915596
+      06_aura-ezgif.com-gif-to-sprite-converter_273: -5339834682575916826
+      06_aura-ezgif.com-gif-to-sprite-converter_274: -5339439449636275611
+      06_aura-ezgif.com-gif-to-sprite-converter_275: -1989679030405768997
+      06_aura-ezgif.com-gif-to-sprite-converter_276: 7948851713967293234
+      06_aura-ezgif.com-gif-to-sprite-converter_277: -3639740464232235871
+      06_aura-ezgif.com-gif-to-sprite-converter_278: 8534356133746304215
+      06_aura-ezgif.com-gif-to-sprite-converter_279: -2162992554052830590
+      06_aura-ezgif.com-gif-to-sprite-converter_28: 8085452050115380511
+      06_aura-ezgif.com-gif-to-sprite-converter_280: 6435836800470152987
+      06_aura-ezgif.com-gif-to-sprite-converter_281: -669265751778702470
+      06_aura-ezgif.com-gif-to-sprite-converter_282: 2848103666582418747
+      06_aura-ezgif.com-gif-to-sprite-converter_29: -4566854295126546090
+      06_aura-ezgif.com-gif-to-sprite-converter_3: -2980550473122139602
+      06_aura-ezgif.com-gif-to-sprite-converter_30: -317745680960705527
+      06_aura-ezgif.com-gif-to-sprite-converter_31: -3833788216995887708
+      06_aura-ezgif.com-gif-to-sprite-converter_32: -7352754116422559962
+      06_aura-ezgif.com-gif-to-sprite-converter_33: 7496159910018194372
+      06_aura-ezgif.com-gif-to-sprite-converter_34: 3520315816853031245
+      06_aura-ezgif.com-gif-to-sprite-converter_35: -2992762929043836584
+      06_aura-ezgif.com-gif-to-sprite-converter_36: 8160183122295806650
+      06_aura-ezgif.com-gif-to-sprite-converter_37: 5836630802699459225
+      06_aura-ezgif.com-gif-to-sprite-converter_38: 6038763813456065254
+      06_aura-ezgif.com-gif-to-sprite-converter_39: -2590730351808741056
+      06_aura-ezgif.com-gif-to-sprite-converter_4: 1091513846361657189
+      06_aura-ezgif.com-gif-to-sprite-converter_40: 7960798468695664924
+      06_aura-ezgif.com-gif-to-sprite-converter_41: 2189137328162755465
+      06_aura-ezgif.com-gif-to-sprite-converter_42: 6198679972673831352
+      06_aura-ezgif.com-gif-to-sprite-converter_43: 1884962676325125330
+      06_aura-ezgif.com-gif-to-sprite-converter_44: -5270421918496602086
+      06_aura-ezgif.com-gif-to-sprite-converter_45: -1255778782375651632
+      06_aura-ezgif.com-gif-to-sprite-converter_46: 1120050286946796042
+      06_aura-ezgif.com-gif-to-sprite-converter_47: -7398177840849884024
+      06_aura-ezgif.com-gif-to-sprite-converter_48: -2342944563159393055
+      06_aura-ezgif.com-gif-to-sprite-converter_49: 1329479367819418316
+      06_aura-ezgif.com-gif-to-sprite-converter_5: 8622138734619213390
+      06_aura-ezgif.com-gif-to-sprite-converter_50: 7237738149941212394
+      06_aura-ezgif.com-gif-to-sprite-converter_51: 8603347254632537815
+      06_aura-ezgif.com-gif-to-sprite-converter_52: 217900765803438495
+      06_aura-ezgif.com-gif-to-sprite-converter_53: 2505136696165841590
+      06_aura-ezgif.com-gif-to-sprite-converter_54: 2426184912353486256
+      06_aura-ezgif.com-gif-to-sprite-converter_55: 899283793532433090
+      06_aura-ezgif.com-gif-to-sprite-converter_56: 864737408385100146
+      06_aura-ezgif.com-gif-to-sprite-converter_57: 3762153929062461839
+      06_aura-ezgif.com-gif-to-sprite-converter_58: -3180462387905118731
+      06_aura-ezgif.com-gif-to-sprite-converter_59: -1621798921843592710
+      06_aura-ezgif.com-gif-to-sprite-converter_6: 3623613654391250407
+      06_aura-ezgif.com-gif-to-sprite-converter_60: 11388740973178579
+      06_aura-ezgif.com-gif-to-sprite-converter_61: 2173728350545662982
+      06_aura-ezgif.com-gif-to-sprite-converter_62: 7799036328252412615
+      06_aura-ezgif.com-gif-to-sprite-converter_63: 6269425632760561528
+      06_aura-ezgif.com-gif-to-sprite-converter_64: 1218572261220331778
+      06_aura-ezgif.com-gif-to-sprite-converter_65: -1900093878916004280
+      06_aura-ezgif.com-gif-to-sprite-converter_66: -3565472417010683916
+      06_aura-ezgif.com-gif-to-sprite-converter_67: 2486270451025822910
+      06_aura-ezgif.com-gif-to-sprite-converter_68: 3043087702897078007
+      06_aura-ezgif.com-gif-to-sprite-converter_69: 7452973757882641693
+      06_aura-ezgif.com-gif-to-sprite-converter_7: 7477021494123237317
+      06_aura-ezgif.com-gif-to-sprite-converter_70: 5511924282137570452
+      06_aura-ezgif.com-gif-to-sprite-converter_71: -4326499848870265441
+      06_aura-ezgif.com-gif-to-sprite-converter_72: 2137984699136762689
+      06_aura-ezgif.com-gif-to-sprite-converter_73: -2398697061374050834
+      06_aura-ezgif.com-gif-to-sprite-converter_74: -3833080737179659947
+      06_aura-ezgif.com-gif-to-sprite-converter_75: 2639690455532492488
+      06_aura-ezgif.com-gif-to-sprite-converter_76: -4983838258126691085
+      06_aura-ezgif.com-gif-to-sprite-converter_77: -6854796365325374420
+      06_aura-ezgif.com-gif-to-sprite-converter_78: 2310022177374911430
+      06_aura-ezgif.com-gif-to-sprite-converter_79: 716153245281761422
+      06_aura-ezgif.com-gif-to-sprite-converter_8: 7101277091015079410
+      06_aura-ezgif.com-gif-to-sprite-converter_80: 6024230019938755334
+      06_aura-ezgif.com-gif-to-sprite-converter_81: -4062492803096808975
+      06_aura-ezgif.com-gif-to-sprite-converter_82: 7927521869600207088
+      06_aura-ezgif.com-gif-to-sprite-converter_83: 5030853997387966500
+      06_aura-ezgif.com-gif-to-sprite-converter_84: -8156251201873132617
+      06_aura-ezgif.com-gif-to-sprite-converter_85: -4246954445915071644
+      06_aura-ezgif.com-gif-to-sprite-converter_86: 836408241855140125
+      06_aura-ezgif.com-gif-to-sprite-converter_87: -8927485342468802854
+      06_aura-ezgif.com-gif-to-sprite-converter_88: 8124518894761013346
+      06_aura-ezgif.com-gif-to-sprite-converter_89: 1070108172117349137
+      06_aura-ezgif.com-gif-to-sprite-converter_9: 2848336910351797103
+      06_aura-ezgif.com-gif-to-sprite-converter_90: 977213507858381928
+      06_aura-ezgif.com-gif-to-sprite-converter_91: -13545928228950351
+      06_aura-ezgif.com-gif-to-sprite-converter_92: -6401600848740654220
+      06_aura-ezgif.com-gif-to-sprite-converter_93: -5363928837695694227
+      06_aura-ezgif.com-gif-to-sprite-converter_94: 5394466836291813703
+      06_aura-ezgif.com-gif-to-sprite-converter_95: -8789977393560447127
+      06_aura-ezgif.com-gif-to-sprite-converter_96: 266511533900771255
+      06_aura-ezgif.com-gif-to-sprite-converter_97: -5066735236688841350
+      06_aura-ezgif.com-gif-to-sprite-converter_98: 171931313130593661
+      06_aura-ezgif.com-gif-to-sprite-converter_99: 6016624465986378586
+      aura_0: 8101814991177344531
+      aura_1: -1037195541978810413
+      aura_10: 1098420454631771879
+      aura_11: -845395430368941494
+      aura_12: 7765130619148931848
+      aura_13: -885007757907946253
+      aura_14: -3331701929160865949
+      aura_15: 3108639409792512529
+      aura_16: 1373505743870680447
+      aura_17: -4946066509701594445
+      aura_18: -2957399622602061292
+      aura_19: -1773008353980557669
+      aura_2: -9040564401775751873
+      aura_20: -6651395743081385267
+      aura_21: 7493596236104583112
+      aura_22: -2542289543622311856
+      aura_23: -547045596235353782
+      aura_24: -2004718892235124925
+      aura_25: -8383096675310536374
+      aura_26: -2953341366051749105
+      aura_27: 4130761545488282910
+      aura_28: -8152291130934457811
+      aura_29: 7213769706187710790
+      aura_3: -1681072077914481920
+      aura_30: -5167169368037046950
+      aura_31: 499642703691946360
+      aura_32: -7636545903275525260
+      aura_33: -6197936802899441747
+      aura_34: -9127563620283303648
+      aura_35: 2220958624992779663
+      aura_36: 9048649872502428255
+      aura_37: -5969904584972757262
+      aura_38: -2745905669016959621
+      aura_39: -2565198909889460201
+      aura_4: -8127105073801839751
+      aura_5: 6069782089028118929
+      aura_6: 8798885075952924328
+      aura_7: 4792810272839003946
+      aura_8: 445154734937308262
+      aura_9: -5840672529687161576
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

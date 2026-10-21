@@ -1,0 +1,387 @@
+fileFormatVersion: 2
+guid: 5c9dd2d26bc05ee4095e7a81ef0d3d0d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2125022753365040134
+    second: 14_jump_attack-ezgif.com-gif-to-sprite-converter_0
+  - first:
+      213: -7345898774237154080
+    second: 14_jump_attack-ezgif.com-gif-to-sprite-converter_1
+  - first:
+      213: -4391488050398081220
+    second: 14_jump_attack-ezgif.com-gif-to-sprite-converter_2
+  - first:
+      213: 428883436809267923
+    second: 14_jump_attack-ezgif.com-gif-to-sprite-converter_3
+  - first:
+      213: -6512183352637990060
+    second: 14_jump_attack-ezgif.com-gif-to-sprite-converter_4
+  - first:
+      213: 2221415879984727327
+    second: 14_jump_attack-ezgif.com-gif-to-sprite-converter_5
+  - first:
+      213: -1863969067785850921
+    second: 14_jump_attack-ezgif.com-gif-to-sprite-converter_6
+  - first:
+      213: -6373042207802123255
+    second: 14_jump_attack-ezgif.com-gif-to-sprite-converter_7
+  - first:
+      213: -2738191734374946300
+    second: 14_jump_attack-ezgif.com-gif-to-sprite-converter_8
+  - first:
+      213: -1771056877392275372
+    second: jumpAttack_0
+  - first:
+      213: 725633647391531824
+    second: jumpAttack_1
+  - first:
+      213: 7981855719297367933
+    second: jumpAttack_2
+  - first:
+      213: 7216033843832570701
+    second: jumpAttack_3
+  - first:
+      213: 6970314446890518314
+    second: jumpAttack_4
+  - first:
+      213: -3737909223380969824
+    second: jumpAttack_5
+  - first:
+      213: 5786085535947876374
+    second: jumpAttack_6
+  - first:
+      213: 8146261736474248195
+    second: jumpAttack_7
+  - first:
+      213: 5671140979434210624
+    second: jumpAttack_8
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: jumpAttack_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 304
+        width: 436
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 458550a4721fb67e0800000000000000
+      internalID: -1771056877392275372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpAttack_1
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 304
+        width: 436
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 033e7dd25f7f11a00800000000000000
+      internalID: 725633647391531824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpAttack_2
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 304
+        width: 436
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7fb32dac7f35ce60800000000000000
+      internalID: 7981855719297367933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpAttack_3
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 304
+        width: 436
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4346dc7c80842460800000000000000
+      internalID: 7216033843832570701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpAttack_4
+      rect:
+        serializedVersion: 2
+        x: 1744
+        y: 304
+        width: 436
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a27cea32f088bb060800000000000000
+      internalID: 6970314446890518314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpAttack_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 436
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a698b99d57402cc0800000000000000
+      internalID: -3737909223380969824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpAttack_6
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 0
+        width: 436
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 618e232932e4c4050800000000000000
+      internalID: 5786085535947876374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpAttack_7
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 0
+        width: 436
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30487e973e55d0170800000000000000
+      internalID: 8146261736474248195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpAttack_8
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 0
+        width: 436
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 045465e7ca0f3be40800000000000000
+      internalID: 5671140979434210624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      14_jump_attack-ezgif.com-gif-to-sprite-converter_0: -2125022753365040134
+      14_jump_attack-ezgif.com-gif-to-sprite-converter_1: -7345898774237154080
+      14_jump_attack-ezgif.com-gif-to-sprite-converter_2: -4391488050398081220
+      14_jump_attack-ezgif.com-gif-to-sprite-converter_3: 428883436809267923
+      14_jump_attack-ezgif.com-gif-to-sprite-converter_4: -6512183352637990060
+      14_jump_attack-ezgif.com-gif-to-sprite-converter_5: 2221415879984727327
+      14_jump_attack-ezgif.com-gif-to-sprite-converter_6: -1863969067785850921
+      14_jump_attack-ezgif.com-gif-to-sprite-converter_7: -6373042207802123255
+      14_jump_attack-ezgif.com-gif-to-sprite-converter_8: -2738191734374946300
+      jumpAttack_0: -1771056877392275372
+      jumpAttack_1: 725633647391531824
+      jumpAttack_2: 7981855719297367933
+      jumpAttack_3: 7216033843832570701
+      jumpAttack_4: 6970314446890518314
+      jumpAttack_5: -3737909223380969824
+      jumpAttack_6: 5786085535947876374
+      jumpAttack_7: 8146261736474248195
+      jumpAttack_8: 5671140979434210624
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

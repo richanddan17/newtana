@@ -1,0 +1,567 @@
+fileFormatVersion: 2
+guid: 757bc5a1c574c7d46b004e336b2cb19d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6061237319066020212
+    second: 03_fall-ezgif.com-gif-to-sprite-converter_0
+  - first:
+      213: 3548445462110630595
+    second: 03_fall-ezgif.com-gif-to-sprite-converter_1
+  - first:
+      213: 1201739940247441390
+    second: 03_fall-ezgif.com-gif-to-sprite-converter_2
+  - first:
+      213: -552252226161750831
+    second: 03_fall-ezgif.com-gif-to-sprite-converter_3
+  - first:
+      213: -993698514022655905
+    second: 03_fall-ezgif.com-gif-to-sprite-converter_4
+  - first:
+      213: 4110214904642264077
+    second: 03_fall-ezgif.com-gif-to-sprite-converter_5
+  - first:
+      213: -7017332992286677056
+    second: 03_fall-ezgif.com-gif-to-sprite-converter_6
+  - first:
+      213: -6390344764723440533
+    second: 03_fall-ezgif.com-gif-to-sprite-converter_7
+  - first:
+      213: 6748762001409677183
+    second: 03_fall-ezgif.com-gif-to-sprite-converter_8
+  - first:
+      213: 6830785130283137088
+    second: 03_fall-ezgif.com-gif-to-sprite-converter_9
+  - first:
+      213: -3016725881292322782
+    second: 03_fall-ezgif.com-gif-to-sprite-converter_10
+  - first:
+      213: 6342130362056172219
+    second: 03_fall-ezgif.com-gif-to-sprite-converter_11
+  - first:
+      213: 4427804361452731
+    second: 03_fall-ezgif.com-gif-to-sprite-converter_12
+  - first:
+      213: -3863015874005479116
+    second: 03_fall-ezgif.com-gif-to-sprite-converter_13
+  - first:
+      213: 1803056277686864386
+    second: 03_fall-ezgif.com-gif-to-sprite-converter_14
+  - first:
+      213: -6732294965104032732
+    second: fall_0
+  - first:
+      213: -8269792095265539674
+    second: fall_1
+  - first:
+      213: -2808048858112833009
+    second: fall_2
+  - first:
+      213: -4388410108566013805
+    second: fall_3
+  - first:
+      213: -200338194739338904
+    second: fall_4
+  - first:
+      213: 1348780117957853513
+    second: fall_5
+  - first:
+      213: -3632294220398948365
+    second: fall_6
+  - first:
+      213: -968373944925592245
+    second: fall_7
+  - first:
+      213: -1952902426460888621
+    second: fall_8
+  - first:
+      213: -9003090159160173239
+    second: fall_9
+  - first:
+      213: -3218078915642315641
+    second: fall_10
+  - first:
+      213: -4064371025351989137
+    second: fall_11
+  - first:
+      213: -7156436297887861110
+    second: fall_12
+  - first:
+      213: 4844648736106810819
+    second: fall_13
+  - first:
+      213: -1685355291850464672
+    second: fall_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: fall_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 608
+        width: 280
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 424c2d106651292a0800000000000000
+      internalID: -6732294965104032732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fall_1
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 608
+        width: 280
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a93d5397ebcb3d80800000000000000
+      internalID: -8269792095265539674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fall_2
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 608
+        width: 280
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0a4e34f07ec709d0800000000000000
+      internalID: -2808048858112833009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fall_3
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 608
+        width: 280
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 398703ec14c3913c0800000000000000
+      internalID: -4388410108566013805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fall_4
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 608
+        width: 280
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8616e9b2971483df0800000000000000
+      internalID: -200338194739338904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fall_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 304
+        width: 280
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 941ccf20f54d7b210800000000000000
+      internalID: 1348780117957853513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fall_6
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 304
+        width: 280
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ff8a69b6af779dc0800000000000000
+      internalID: -3632294220398948365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fall_7
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 304
+        width: 280
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4567fa1705af82f0800000000000000
+      internalID: -968373944925592245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fall_8
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 304
+        width: 280
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d1eccd0795e5e4e0800000000000000
+      internalID: -1952902426460888621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fall_9
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 304
+        width: 280
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94d517e53399e0380800000000000000
+      internalID: -9003090159160173239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fall_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 280
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78c27fdb6461753d0800000000000000
+      internalID: -3218078915642315641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fall_11
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 0
+        width: 280
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f68218e16147897c0800000000000000
+      internalID: -4064371025351989137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fall_12
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 0
+        width: 280
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a86beae7a1b3fac90800000000000000
+      internalID: -7156436297887861110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fall_13
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 0
+        width: 280
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cd01318b56ab3340800000000000000
+      internalID: 4844648736106810819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fall_14
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 0
+        width: 280
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 062adec9a4a6c98e0800000000000000
+      internalID: -1685355291850464672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      03_fall-ezgif.com-gif-to-sprite-converter_0: -6061237319066020212
+      03_fall-ezgif.com-gif-to-sprite-converter_1: 3548445462110630595
+      03_fall-ezgif.com-gif-to-sprite-converter_10: -3016725881292322782
+      03_fall-ezgif.com-gif-to-sprite-converter_11: 6342130362056172219
+      03_fall-ezgif.com-gif-to-sprite-converter_12: 4427804361452731
+      03_fall-ezgif.com-gif-to-sprite-converter_13: -3863015874005479116
+      03_fall-ezgif.com-gif-to-sprite-converter_14: 1803056277686864386
+      03_fall-ezgif.com-gif-to-sprite-converter_2: 1201739940247441390
+      03_fall-ezgif.com-gif-to-sprite-converter_3: -552252226161750831
+      03_fall-ezgif.com-gif-to-sprite-converter_4: -993698514022655905
+      03_fall-ezgif.com-gif-to-sprite-converter_5: 4110214904642264077
+      03_fall-ezgif.com-gif-to-sprite-converter_6: -7017332992286677056
+      03_fall-ezgif.com-gif-to-sprite-converter_7: -6390344764723440533
+      03_fall-ezgif.com-gif-to-sprite-converter_8: 6748762001409677183
+      03_fall-ezgif.com-gif-to-sprite-converter_9: 6830785130283137088
+      fall_0: -6732294965104032732
+      fall_1: -8269792095265539674
+      fall_10: -3218078915642315641
+      fall_11: -4064371025351989137
+      fall_12: -7156436297887861110
+      fall_13: 4844648736106810819
+      fall_14: -1685355291850464672
+      fall_2: -2808048858112833009
+      fall_3: -4388410108566013805
+      fall_4: -200338194739338904
+      fall_5: 1348780117957853513
+      fall_6: -3632294220398948365
+      fall_7: -968373944925592245
+      fall_8: -1952902426460888621
+      fall_9: -9003090159160173239
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

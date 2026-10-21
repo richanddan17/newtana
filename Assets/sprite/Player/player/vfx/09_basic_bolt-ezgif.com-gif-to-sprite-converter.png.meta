@@ -1,0 +1,1433 @@
+fileFormatVersion: 2
+guid: 3e0e39ed6c62dd64d8abe4e89ca35f3d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6299289030957023489
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_0
+  - first:
+      213: -823757325413492880
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_1
+  - first:
+      213: 3992730895450412311
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_2
+  - first:
+      213: 724471979715541063
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_3
+  - first:
+      213: 6801150232991987249
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_4
+  - first:
+      213: -5923922676697167131
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_5
+  - first:
+      213: 6322294484388066935
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_6
+  - first:
+      213: 2260009317056967505
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_7
+  - first:
+      213: 4200807585075016791
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_8
+  - first:
+      213: 8584481336796447006
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_9
+  - first:
+      213: 8857549827710880798
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_10
+  - first:
+      213: -5006268054677331141
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_11
+  - first:
+      213: 4283087140029061970
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_12
+  - first:
+      213: -6608426332194923064
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_13
+  - first:
+      213: -5034566707700051118
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_14
+  - first:
+      213: 7371202386522676587
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_15
+  - first:
+      213: 3222539095197891702
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_16
+  - first:
+      213: 254376640172099542
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_17
+  - first:
+      213: -1442928376656519453
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_18
+  - first:
+      213: -7180067329003496237
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_19
+  - first:
+      213: -8526060089218008673
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_20
+  - first:
+      213: -3950549414969118183
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_21
+  - first:
+      213: -445090175956154010
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_22
+  - first:
+      213: 4547586727245450301
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_23
+  - first:
+      213: -482188535901383840
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_24
+  - first:
+      213: 7689170076964486701
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_25
+  - first:
+      213: 3324415390782531671
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_26
+  - first:
+      213: -3067596524285146744
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_27
+  - first:
+      213: 2042948603583264077
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_28
+  - first:
+      213: 1211003679744467051
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_29
+  - first:
+      213: -7897054331652653224
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_30
+  - first:
+      213: -466266586232908547
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_31
+  - first:
+      213: 2536130260970348159
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_32
+  - first:
+      213: -3288173812847657027
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_33
+  - first:
+      213: -429588002849432933
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_34
+  - first:
+      213: -5034796774999822332
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_35
+  - first:
+      213: -4991638185570094134
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_36
+  - first:
+      213: -4825339850397555896
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_37
+  - first:
+      213: 7928932199079599831
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_38
+  - first:
+      213: 6704993037555481132
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_39
+  - first:
+      213: 5056130056926979546
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_40
+  - first:
+      213: 8171112211765505393
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_41
+  - first:
+      213: -2856242291110873746
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_42
+  - first:
+      213: -5115914120842150769
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_43
+  - first:
+      213: -2622155765539770584
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_44
+  - first:
+      213: 4581355298103136045
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_45
+  - first:
+      213: 1950566511074034276
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_46
+  - first:
+      213: -8824536587774090225
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_47
+  - first:
+      213: -2871546884362504134
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_48
+  - first:
+      213: -6848980365542282853
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_49
+  - first:
+      213: -5953680108877761367
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_50
+  - first:
+      213: -7282712682881168184
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_51
+  - first:
+      213: 1832886683498010159
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_52
+  - first:
+      213: 8382403770367795616
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_53
+  - first:
+      213: -46366851156184462
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_54
+  - first:
+      213: 2708765171910582132
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_55
+  - first:
+      213: -8970780373478165672
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_56
+  - first:
+      213: -1753411478928941322
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_57
+  - first:
+      213: 2842990938973520540
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_58
+  - first:
+      213: -1003746435021625816
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_59
+  - first:
+      213: -4232988867740336193
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_60
+  - first:
+      213: 2172048702011995941
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_61
+  - first:
+      213: -7551546866139364123
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_62
+  - first:
+      213: 8936758992029167244
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_63
+  - first:
+      213: 859600859650284615
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_64
+  - first:
+      213: 4233738335237019411
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_65
+  - first:
+      213: -6603072083136178015
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_66
+  - first:
+      213: 6343060102668617647
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_67
+  - first:
+      213: 5353473910605482720
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_68
+  - first:
+      213: 8517580613479463649
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_69
+  - first:
+      213: 4624270840844795453
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_70
+  - first:
+      213: -2454518271617571317
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_71
+  - first:
+      213: 1798350305785569030
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_72
+  - first:
+      213: 6966440844376543641
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_73
+  - first:
+      213: -8208501710438020855
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_74
+  - first:
+      213: -8642920439941270429
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_75
+  - first:
+      213: 466499671230886947
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_76
+  - first:
+      213: 4806846430511994808
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_77
+  - first:
+      213: -3645135983487038774
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_78
+  - first:
+      213: -9130936903000278029
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_79
+  - first:
+      213: 710634455663144453
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_80
+  - first:
+      213: 2919026767358634333
+    second: 09_basic_bolt-ezgif.com-gif-to-sprite-converter_81
+  - first:
+      213: 8467335801953022150
+    second: basicBolt_0
+  - first:
+      213: 2998218190690669769
+    second: basicBolt_1
+  - first:
+      213: 8639618624271677167
+    second: basicBolt_2
+  - first:
+      213: 6811313720248602712
+    second: basicBolt_3
+  - first:
+      213: 515275596263088550
+    second: basicBolt_4
+  - first:
+      213: -8963710378209326590
+    second: basicBolt_5
+  - first:
+      213: -4408886103877036376
+    second: basicBolt_6
+  - first:
+      213: -5935164965570419738
+    second: basicBolt_7
+  - first:
+      213: 5989010404177198212
+    second: basicBolt_8
+  - first:
+      213: -3486144588130956706
+    second: basicBolt_9
+  - first:
+      213: -5168890785293138929
+    second: basicBolt_10
+  - first:
+      213: 1659727492966760212
+    second: basicBolt_11
+  - first:
+      213: -3666471814642877519
+    second: basicBolt_12
+  - first:
+      213: -475072596259200723
+    second: basicBolt_13
+  - first:
+      213: -4451801522278902253
+    second: basicBolt_14
+  - first:
+      213: -2907894341210559485
+    second: basicBolt_15
+  - first:
+      213: -8017531327597696753
+    second: basicBolt_16
+  - first:
+      213: -3462179411394034147
+    second: basicBolt_17
+  - first:
+      213: -8971788559006467301
+    second: basicBolt_18
+  - first:
+      213: 7612984933920622779
+    second: basicBolt_19
+  - first:
+      213: -3787202787862939467
+    second: basicBolt_20
+  - first:
+      213: 5712962060255927052
+    second: basicBolt_21
+  - first:
+      213: -4583965664737879005
+    second: basicBolt_22
+  - first:
+      213: -8470659270337530407
+    second: basicBolt_23
+  - first:
+      213: -5635229148092793031
+    second: basicBolt_24
+  - first:
+      213: 9035172385501343022
+    second: basicBolt_25
+  - first:
+      213: -7587288192525830584
+    second: basicBolt_26
+  - first:
+      213: 3629212905547540844
+    second: basicBolt_27
+  - first:
+      213: -5258375258276782424
+    second: basicBolt_28
+  - first:
+      213: -5425170502946605242
+    second: basicBolt_29
+  - first:
+      213: 191191085678948285
+    second: basicBolt_30
+  - first:
+      213: -9057330998909468433
+    second: basicBolt_31
+  - first:
+      213: 5207295869030304854
+    second: basicBolt_32
+  - first:
+      213: 7853032367591970447
+    second: basicBolt_33
+  - first:
+      213: -6683748074437211149
+    second: basicBolt_34
+  - first:
+      213: -5343296150366533250
+    second: basicBolt_35
+  - first:
+      213: -4817282684889942666
+    second: basicBolt_36
+  - first:
+      213: 1004063790982206757
+    second: basicBolt_37
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: basicBolt_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 532
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c07b5dcc05028570800000000000000
+      internalID: 8467335801953022150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basicBolt_1
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 532
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c45b372f8fcb9920800000000000000
+      internalID: 2998218190690669769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basicBolt_2
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 532
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe6ff863d5716e770800000000000000
+      internalID: 8639618624271677167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basicBolt_3
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 532
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 850992d9db5a68e50800000000000000
+      internalID: 6811313720248602712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basicBolt_4
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 532
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a160bcbc60a62700800000000000000
+      internalID: 515275596263088550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basicBolt_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 456
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20ac95d17e08a9380800000000000000
+      internalID: -8963710378209326590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basicBolt_6
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 456
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a6d043a27d70d2c0800000000000000
+      internalID: -4408886103877036376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basicBolt_7
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 456
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e3e4dfd8ee02ada0800000000000000
+      internalID: -5935164965570419738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basicBolt_8
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 456
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48cb9114b3d3d1350800000000000000
+      internalID: 5989010404177198212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basicBolt_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 380
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5acdcca7f9be9fc0800000000000000
+      internalID: -3486144588130956706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basicBolt_10
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 380
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0400db77396448b0800000000000000
+      internalID: -5168890785293138929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basicBolt_11
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 380
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41fbb3a7c59880710800000000000000
+      internalID: 1659727492966760212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basicBolt_12
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 380
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bbba357f431e1dc0800000000000000
+      internalID: -3666471814642877519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basicBolt_13
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 380
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d21a271adf33869f0800000000000000
+      internalID: -475072596259200723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basicBolt_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 304
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 316d5062a160832c0800000000000000
+      internalID: -4451801522278902253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basicBolt_15
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 304
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30ca6cbd08515a7d0800000000000000
+      internalID: -2907894341210559485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basicBolt_16
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 304
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0929fa7cb10cb090800000000000000
+      internalID: -8017531327597696753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basicBolt_17
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 304
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1600333b2ed3ffc0800000000000000
+      internalID: -3462179411394034147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basicBolt_18
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 304
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1b718417ddcd7380800000000000000
+      internalID: -8971788559006467301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basicBolt_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 228
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb84dba4671c6a960800000000000000
+      internalID: 7612984933920622779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basicBolt_20
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 228
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b87f014127217bc0800000000000000
+      internalID: -3787202787862939467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basicBolt_21
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 228
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0b96d8a9b4884f40800000000000000
+      internalID: 5712962060255927052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basicBolt_22
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 228
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32c16bac38b7260c0800000000000000
+      internalID: -4583965664737879005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basicBolt_23
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 228
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d5792ae54c227a80800000000000000
+      internalID: -8470659270337530407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basicBolt_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 152
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93f700052f4abc1b0800000000000000
+      internalID: -5635229148092793031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basicBolt_25
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 152
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2de93a0a61636d70800000000000000
+      internalID: 9035172385501343022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basicBolt_26
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 152
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8467bfb869984b690800000000000000
+      internalID: -7587288192525830584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basicBolt_27
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 152
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c69ac61c8ed8d5230800000000000000
+      internalID: 3629212905547540844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basicBolt_28
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 152
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ae95ba009f7607b0800000000000000
+      internalID: -5258375258276782424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basicBolt_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 76
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 647b0fddb2ce5b4b0800000000000000
+      internalID: -5425170502946605242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basicBolt_30
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 76
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbf6d1a874f37a200800000000000000
+      internalID: 191191085678948285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basicBolt_31
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 76
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe00edcb175ed4280800000000000000
+      internalID: -9057330998909468433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basicBolt_32
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 76
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65c09e1e008044840800000000000000
+      internalID: 5207295869030304854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basicBolt_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f86d6f7c4539bfc60800000000000000
+      internalID: 7853032367591970447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basicBolt_34
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 0
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fb08fec98e8e33a0800000000000000
+      internalID: -6683748074437211149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basicBolt_35
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 0
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e79c0b3167cc8d5b0800000000000000
+      internalID: -5343296150366533250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basicBolt_36
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 0
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 675be70dbe2952db0800000000000000
+      internalID: -4817282684889942666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basicBolt_37
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 0
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5259359b2b62fed00800000000000000
+      internalID: 1004063790982206757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_0: 6299289030957023489
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_1: -823757325413492880
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_10: 8857549827710880798
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_11: -5006268054677331141
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_12: 4283087140029061970
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_13: -6608426332194923064
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_14: -5034566707700051118
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_15: 7371202386522676587
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_16: 3222539095197891702
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_17: 254376640172099542
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_18: -1442928376656519453
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_19: -7180067329003496237
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_2: 3992730895450412311
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_20: -8526060089218008673
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_21: -3950549414969118183
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_22: -445090175956154010
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_23: 4547586727245450301
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_24: -482188535901383840
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_25: 7689170076964486701
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_26: 3324415390782531671
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_27: -3067596524285146744
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_28: 2042948603583264077
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_29: 1211003679744467051
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_3: 724471979715541063
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_30: -7897054331652653224
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_31: -466266586232908547
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_32: 2536130260970348159
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_33: -3288173812847657027
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_34: -429588002849432933
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_35: -5034796774999822332
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_36: -4991638185570094134
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_37: -4825339850397555896
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_38: 7928932199079599831
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_39: 6704993037555481132
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_4: 6801150232991987249
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_40: 5056130056926979546
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_41: 8171112211765505393
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_42: -2856242291110873746
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_43: -5115914120842150769
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_44: -2622155765539770584
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_45: 4581355298103136045
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_46: 1950566511074034276
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_47: -8824536587774090225
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_48: -2871546884362504134
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_49: -6848980365542282853
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_5: -5923922676697167131
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_50: -5953680108877761367
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_51: -7282712682881168184
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_52: 1832886683498010159
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_53: 8382403770367795616
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_54: -46366851156184462
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_55: 2708765171910582132
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_56: -8970780373478165672
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_57: -1753411478928941322
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_58: 2842990938973520540
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_59: -1003746435021625816
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_6: 6322294484388066935
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_60: -4232988867740336193
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_61: 2172048702011995941
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_62: -7551546866139364123
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_63: 8936758992029167244
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_64: 859600859650284615
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_65: 4233738335237019411
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_66: -6603072083136178015
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_67: 6343060102668617647
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_68: 5353473910605482720
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_69: 8517580613479463649
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_7: 2260009317056967505
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_70: 4624270840844795453
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_71: -2454518271617571317
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_72: 1798350305785569030
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_73: 6966440844376543641
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_74: -8208501710438020855
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_75: -8642920439941270429
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_76: 466499671230886947
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_77: 4806846430511994808
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_78: -3645135983487038774
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_79: -9130936903000278029
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_8: 4200807585075016791
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_80: 710634455663144453
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_81: 2919026767358634333
+      09_basic_bolt-ezgif.com-gif-to-sprite-converter_9: 8584481336796447006
+      basicBolt_0: 8467335801953022150
+      basicBolt_1: 2998218190690669769
+      basicBolt_10: -5168890785293138929
+      basicBolt_11: 1659727492966760212
+      basicBolt_12: -3666471814642877519
+      basicBolt_13: -475072596259200723
+      basicBolt_14: -4451801522278902253
+      basicBolt_15: -2907894341210559485
+      basicBolt_16: -8017531327597696753
+      basicBolt_17: -3462179411394034147
+      basicBolt_18: -8971788559006467301
+      basicBolt_19: 7612984933920622779
+      basicBolt_2: 8639618624271677167
+      basicBolt_20: -3787202787862939467
+      basicBolt_21: 5712962060255927052
+      basicBolt_22: -4583965664737879005
+      basicBolt_23: -8470659270337530407
+      basicBolt_24: -5635229148092793031
+      basicBolt_25: 9035172385501343022
+      basicBolt_26: -7587288192525830584
+      basicBolt_27: 3629212905547540844
+      basicBolt_28: -5258375258276782424
+      basicBolt_29: -5425170502946605242
+      basicBolt_3: 6811313720248602712
+      basicBolt_30: 191191085678948285
+      basicBolt_31: -9057330998909468433
+      basicBolt_32: 5207295869030304854
+      basicBolt_33: 7853032367591970447
+      basicBolt_34: -6683748074437211149
+      basicBolt_35: -5343296150366533250
+      basicBolt_36: -4817282684889942666
+      basicBolt_37: 1004063790982206757
+      basicBolt_4: 515275596263088550
+      basicBolt_5: -8963710378209326590
+      basicBolt_6: -4408886103877036376
+      basicBolt_7: -5935164965570419738
+      basicBolt_8: 5989010404177198212
+      basicBolt_9: -3486144588130956706
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

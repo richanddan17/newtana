@@ -1,0 +1,1429 @@
+fileFormatVersion: 2
+guid: 391110f66901a8644900580e8a4bb9a9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5138747173832364117
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_0
+  - first:
+      213: -1705314062518889408
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_1
+  - first:
+      213: -6841890953682498842
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_2
+  - first:
+      213: 8009039632727330347
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_3
+  - first:
+      213: -6243363210601259580
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_4
+  - first:
+      213: -2561164579539548067
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_5
+  - first:
+      213: -6378742963500491087
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_6
+  - first:
+      213: -44204094546822829
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_7
+  - first:
+      213: -4430911283946302572
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_8
+  - first:
+      213: 4020615173055681579
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_9
+  - first:
+      213: 8012366257797706177
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_10
+  - first:
+      213: -5830819151226323810
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_11
+  - first:
+      213: 6285428616014124245
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_12
+  - first:
+      213: -655229786102127728
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_13
+  - first:
+      213: 8599950582357771725
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_14
+  - first:
+      213: 7800548201032133307
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_15
+  - first:
+      213: 2119801002503724056
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_16
+  - first:
+      213: 5375944394764672912
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_17
+  - first:
+      213: 5868452001949916858
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_18
+  - first:
+      213: -1037803608924023328
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_19
+  - first:
+      213: 956358459857474785
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_20
+  - first:
+      213: 3676496690881171964
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_21
+  - first:
+      213: -5421644455664634688
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_22
+  - first:
+      213: 7707117138889680593
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_23
+  - first:
+      213: -2083353282059560907
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_24
+  - first:
+      213: -2230854962426475015
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_25
+  - first:
+      213: -2189632624040066920
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_26
+  - first:
+      213: -2056883739609698049
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_27
+  - first:
+      213: -6914073132899469633
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_28
+  - first:
+      213: -2608057560703873813
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_29
+  - first:
+      213: -1821903647103135160
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_30
+  - first:
+      213: 1287521358742284740
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_31
+  - first:
+      213: 4590038553916882310
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_32
+  - first:
+      213: -2864997084678034762
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_33
+  - first:
+      213: 7927042548837179572
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_34
+  - first:
+      213: -2055313145578566783
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_35
+  - first:
+      213: 6481822894768796621
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_36
+  - first:
+      213: -6781917301921183170
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_37
+  - first:
+      213: -6359087730851088590
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_38
+  - first:
+      213: -7599265041268885044
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_39
+  - first:
+      213: 1701333282728030791
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_40
+  - first:
+      213: 3228236640763646402
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_41
+  - first:
+      213: -1842949797402161772
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_42
+  - first:
+      213: 1837752126674848763
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_43
+  - first:
+      213: 2794685952394430355
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_44
+  - first:
+      213: -2968825814651242454
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_45
+  - first:
+      213: 5891435253991976964
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_46
+  - first:
+      213: 2356345220195202614
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_47
+  - first:
+      213: -94924244717409759
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_48
+  - first:
+      213: -6810003716199181741
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_49
+  - first:
+      213: -5567708996012083733
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_50
+  - first:
+      213: 1951715300786619036
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_51
+  - first:
+      213: 2409839125807520452
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_52
+  - first:
+      213: 1232004100497361568
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_53
+  - first:
+      213: 3024155036843481613
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_54
+  - first:
+      213: -6247983740946242293
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_55
+  - first:
+      213: 4044902598494393133
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_56
+  - first:
+      213: -4201270021939578849
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_57
+  - first:
+      213: 3764898139198559714
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_58
+  - first:
+      213: 6699197216083703616
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_59
+  - first:
+      213: 5363228931157088884
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_60
+  - first:
+      213: -6107742175803050793
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_61
+  - first:
+      213: 6263597054679218920
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_62
+  - first:
+      213: -6919399581187331806
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_63
+  - first:
+      213: -1902683830294386075
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_64
+  - first:
+      213: -4812781232359107265
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_65
+  - first:
+      213: 7584367607814017262
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_66
+  - first:
+      213: 2666833987788837717
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_67
+  - first:
+      213: 1473296583745536282
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_68
+  - first:
+      213: 2403467871099962556
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_69
+  - first:
+      213: -8003713222674520288
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_70
+  - first:
+      213: -624432782967152965
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_71
+  - first:
+      213: -2632602550439290719
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_72
+  - first:
+      213: -3405904705515513879
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_73
+  - first:
+      213: -7155435083910016661
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_74
+  - first:
+      213: -8274744028534496570
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_75
+  - first:
+      213: 4031371903524410910
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_76
+  - first:
+      213: -6551094873999196113
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_77
+  - first:
+      213: -7675088018916569399
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_78
+  - first:
+      213: -5901508432793243079
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_79
+  - first:
+      213: -3624450919184083293
+    second: 18_energy_arrow-ezgif.com-gif-to-sprite-converter_80
+  - first:
+      213: 2749745247986094128
+    second: energyArrow_0
+  - first:
+      213: 2142603096654890834
+    second: energyArrow_1
+  - first:
+      213: -5917743132400199392
+    second: energyArrow_2
+  - first:
+      213: 2002190122200929862
+    second: energyArrow_3
+  - first:
+      213: 8988124399383004088
+    second: energyArrow_4
+  - first:
+      213: -8823544555207360517
+    second: energyArrow_5
+  - first:
+      213: 525093691202393189
+    second: energyArrow_6
+  - first:
+      213: -7087912711373313377
+    second: energyArrow_7
+  - first:
+      213: -5682999623869142578
+    second: energyArrow_8
+  - first:
+      213: 5557962197199445914
+    second: energyArrow_9
+  - first:
+      213: 3022130176357421888
+    second: energyArrow_10
+  - first:
+      213: 2871087644318467320
+    second: energyArrow_11
+  - first:
+      213: 1386956766195907079
+    second: energyArrow_12
+  - first:
+      213: -77513011451186190
+    second: energyArrow_13
+  - first:
+      213: 2381765366562438395
+    second: energyArrow_14
+  - first:
+      213: -3471037152556465303
+    second: energyArrow_15
+  - first:
+      213: -4030161297592305003
+    second: energyArrow_16
+  - first:
+      213: 3169086635091682400
+    second: energyArrow_17
+  - first:
+      213: -2391175688448646795
+    second: energyArrow_18
+  - first:
+      213: 6032343864111382977
+    second: energyArrow_19
+  - first:
+      213: -7524018918291371602
+    second: energyArrow_20
+  - first:
+      213: -7987827665799570851
+    second: energyArrow_21
+  - first:
+      213: -8386048012137311659
+    second: energyArrow_22
+  - first:
+      213: 2568059574642698906
+    second: energyArrow_23
+  - first:
+      213: -8237230589610403140
+    second: energyArrow_24
+  - first:
+      213: -5256019365617384342
+    second: energyArrow_25
+  - first:
+      213: -7376453289773581215
+    second: energyArrow_26
+  - first:
+      213: 8149802996379525147
+    second: energyArrow_27
+  - first:
+      213: -4687758176016272200
+    second: energyArrow_28
+  - first:
+      213: -1035567284226291993
+    second: energyArrow_29
+  - first:
+      213: 2312250851409362636
+    second: energyArrow_30
+  - first:
+      213: -771400659218392494
+    second: energyArrow_31
+  - first:
+      213: -6648238222424513809
+    second: energyArrow_32
+  - first:
+      213: 3449615202067391152
+    second: energyArrow_33
+  - first:
+      213: -3745715353959876448
+    second: energyArrow_34
+  - first:
+      213: 2044937109969165620
+    second: energyArrow_35
+  - first:
+      213: 1544826063509382641
+    second: energyArrow_36
+  - first:
+      213: -2006601052193452976
+    second: energyArrow_37
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: energyArrow_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 532
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0309709fbbe092620800000000000000
+      internalID: 2749745247986094128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyArrow_1
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 532
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25744c61a2e0cbd10800000000000000
+      internalID: 2142603096654890834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyArrow_2
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 532
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 029574189f3ffdda0800000000000000
+      internalID: -5917743132400199392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyArrow_3
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 532
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 646159ede4539cb10800000000000000
+      internalID: 2002190122200929862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyArrow_4
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 532
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b3ce36258b3cbc70800000000000000
+      internalID: 8988124399383004088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyArrow_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 456
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bff7807e9f87c8580800000000000000
+      internalID: -8823544555207360517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyArrow_6
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 456
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 564dae91ee1894700800000000000000
+      internalID: 525093691202393189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyArrow_7
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 456
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9a2e9f31fca2ad90800000000000000
+      internalID: -7087912711373313377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyArrow_8
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 456
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec9e990b3fde121b0800000000000000
+      internalID: -5682999623869142578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyArrow_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 380
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9f5f17cb29d12d40800000000000000
+      internalID: 5557962197199445914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyArrow_10
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 380
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 043d5ca2263c0f920800000000000000
+      internalID: 3022130176357421888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyArrow_11
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 380
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f48d96300728d720800000000000000
+      internalID: 2871087644318467320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyArrow_12
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 380
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70a7ee794d57f3310800000000000000
+      internalID: 1386956766195907079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyArrow_13
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 380
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f33bf6a35e9ceef0800000000000000
+      internalID: -77513011451186190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyArrow_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 304
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfc38445bfabd0120800000000000000
+      internalID: 2381765366562438395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyArrow_15
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 304
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96340bf991664dfc0800000000000000
+      internalID: -3471037152556465303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyArrow_16
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 304
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59abb7d07adf118c0800000000000000
+      internalID: -4030161297592305003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyArrow_17
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 304
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 064e31b018bdafb20800000000000000
+      internalID: 3169086635091682400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyArrow_18
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 304
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 571e77e5166d0ded0800000000000000
+      internalID: -2391175688448646795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyArrow_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 228
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c1cd5f98c037b350800000000000000
+      internalID: 6032343864111382977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyArrow_20
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 228
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea98ce368a0559790800000000000000
+      internalID: -7524018918291371602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyArrow_21
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 228
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5a9afc2f09852190800000000000000
+      internalID: -7987827665799570851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyArrow_22
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 228
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5525f2f93c5ce9b80800000000000000
+      internalID: -8386048012137311659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyArrow_23
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 228
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9a6e94b39493a320800000000000000
+      internalID: 2568059574642698906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyArrow_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 152
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cba5a45eb6a7fad80800000000000000
+      internalID: -8237230589610403140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyArrow_25
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 152
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a644dcb0c3ede07b0800000000000000
+      internalID: -5256019365617384342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyArrow_26
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 152
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16cb8c8a0d291a990800000000000000
+      internalID: -7376453289773581215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyArrow_27
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 152
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b10ad9c45aae91170800000000000000
+      internalID: 8149802996379525147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyArrow_28
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 152
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b4fd9596ccb1feb0800000000000000
+      internalID: -4687758176016272200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyArrow_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 76
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e60daaaa0de0a1f0800000000000000
+      internalID: -1035567284226291993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyArrow_30
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 76
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cce79d506e3c61020800000000000000
+      internalID: 2312250851409362636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyArrow_31
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 76
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25a19cfff2f6b45f0800000000000000
+      internalID: -771400659218392494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyArrow_32
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 76
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe266328f86bcb3a0800000000000000
+      internalID: -6648238222424513809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyArrow_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b2a30bdfbe7fdf20800000000000000
+      internalID: 3449615202067391152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyArrow_34
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 0
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a8be713bbb840cc0800000000000000
+      internalID: -3745715353959876448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyArrow_35
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 0
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43dd9bb8773116c10800000000000000
+      internalID: 2044937109969165620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyArrow_36
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 0
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f5ed33be13507510800000000000000
+      internalID: 1544826063509382641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energyArrow_37
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 0
+        width: 700
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05c851679fe1724e0800000000000000
+      internalID: -2006601052193452976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_0: 5138747173832364117
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_1: -1705314062518889408
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_10: 8012366257797706177
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_11: -5830819151226323810
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_12: 6285428616014124245
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_13: -655229786102127728
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_14: 8599950582357771725
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_15: 7800548201032133307
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_16: 2119801002503724056
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_17: 5375944394764672912
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_18: 5868452001949916858
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_19: -1037803608924023328
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_2: -6841890953682498842
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_20: 956358459857474785
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_21: 3676496690881171964
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_22: -5421644455664634688
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_23: 7707117138889680593
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_24: -2083353282059560907
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_25: -2230854962426475015
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_26: -2189632624040066920
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_27: -2056883739609698049
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_28: -6914073132899469633
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_29: -2608057560703873813
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_3: 8009039632727330347
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_30: -1821903647103135160
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_31: 1287521358742284740
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_32: 4590038553916882310
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_33: -2864997084678034762
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_34: 7927042548837179572
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_35: -2055313145578566783
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_36: 6481822894768796621
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_37: -6781917301921183170
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_38: -6359087730851088590
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_39: -7599265041268885044
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_4: -6243363210601259580
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_40: 1701333282728030791
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_41: 3228236640763646402
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_42: -1842949797402161772
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_43: 1837752126674848763
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_44: 2794685952394430355
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_45: -2968825814651242454
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_46: 5891435253991976964
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_47: 2356345220195202614
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_48: -94924244717409759
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_49: -6810003716199181741
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_5: -2561164579539548067
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_50: -5567708996012083733
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_51: 1951715300786619036
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_52: 2409839125807520452
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_53: 1232004100497361568
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_54: 3024155036843481613
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_55: -6247983740946242293
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_56: 4044902598494393133
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_57: -4201270021939578849
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_58: 3764898139198559714
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_59: 6699197216083703616
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_6: -6378742963500491087
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_60: 5363228931157088884
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_61: -6107742175803050793
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_62: 6263597054679218920
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_63: -6919399581187331806
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_64: -1902683830294386075
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_65: -4812781232359107265
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_66: 7584367607814017262
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_67: 2666833987788837717
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_68: 1473296583745536282
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_69: 2403467871099962556
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_7: -44204094546822829
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_70: -8003713222674520288
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_71: -624432782967152965
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_72: -2632602550439290719
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_73: -3405904705515513879
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_74: -7155435083910016661
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_75: -8274744028534496570
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_76: 4031371903524410910
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_77: -6551094873999196113
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_78: -7675088018916569399
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_79: -5901508432793243079
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_8: -4430911283946302572
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_80: -3624450919184083293
+      18_energy_arrow-ezgif.com-gif-to-sprite-converter_9: 4020615173055681579
+      energyArrow_0: 2749745247986094128
+      energyArrow_1: 2142603096654890834
+      energyArrow_10: 3022130176357421888
+      energyArrow_11: 2871087644318467320
+      energyArrow_12: 1386956766195907079
+      energyArrow_13: -77513011451186190
+      energyArrow_14: 2381765366562438395
+      energyArrow_15: -3471037152556465303
+      energyArrow_16: -4030161297592305003
+      energyArrow_17: 3169086635091682400
+      energyArrow_18: -2391175688448646795
+      energyArrow_19: 6032343864111382977
+      energyArrow_2: -5917743132400199392
+      energyArrow_20: -7524018918291371602
+      energyArrow_21: -7987827665799570851
+      energyArrow_22: -8386048012137311659
+      energyArrow_23: 2568059574642698906
+      energyArrow_24: -8237230589610403140
+      energyArrow_25: -5256019365617384342
+      energyArrow_26: -7376453289773581215
+      energyArrow_27: 8149802996379525147
+      energyArrow_28: -4687758176016272200
+      energyArrow_29: -1035567284226291993
+      energyArrow_3: 2002190122200929862
+      energyArrow_30: 2312250851409362636
+      energyArrow_31: -771400659218392494
+      energyArrow_32: -6648238222424513809
+      energyArrow_33: 3449615202067391152
+      energyArrow_34: -3745715353959876448
+      energyArrow_35: 2044937109969165620
+      energyArrow_36: 1544826063509382641
+      energyArrow_37: -2006601052193452976
+      energyArrow_4: 8988124399383004088
+      energyArrow_5: -8823544555207360517
+      energyArrow_6: 525093691202393189
+      energyArrow_7: -7087912711373313377
+      energyArrow_8: -5682999623869142578
+      energyArrow_9: 5557962197199445914
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

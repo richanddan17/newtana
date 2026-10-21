@@ -1,0 +1,357 @@
+fileFormatVersion: 2
+guid: 04a921dca6b9ba74db3c8954a47e7f31
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5340724204427941652
+    second: 21_hurt_knockback-ezgif.com-gif-to-sprite-converter_0
+  - first:
+      213: -7480143676635744950
+    second: 21_hurt_knockback-ezgif.com-gif-to-sprite-converter_1
+  - first:
+      213: 5339466619506719450
+    second: 21_hurt_knockback-ezgif.com-gif-to-sprite-converter_2
+  - first:
+      213: -4386228793060748939
+    second: 21_hurt_knockback-ezgif.com-gif-to-sprite-converter_3
+  - first:
+      213: 4806981228544184525
+    second: 21_hurt_knockback-ezgif.com-gif-to-sprite-converter_4
+  - first:
+      213: -8795087323199324854
+    second: 21_hurt_knockback-ezgif.com-gif-to-sprite-converter_5
+  - first:
+      213: 258333985483092291
+    second: 21_hurt_knockback-ezgif.com-gif-to-sprite-converter_6
+  - first:
+      213: -2991295013673142863
+    second: 21_hurt_knockback-ezgif.com-gif-to-sprite-converter_7
+  - first:
+      213: -3250793401131343861
+    second: hurtKnockback_0
+  - first:
+      213: -8917970511856902785
+    second: hurtKnockback_1
+  - first:
+      213: 5506141119147718132
+    second: hurtKnockback_2
+  - first:
+      213: 2194889748251694698
+    second: hurtKnockback_3
+  - first:
+      213: -837584033720143904
+    second: hurtKnockback_4
+  - first:
+      213: -1421962665738107730
+    second: hurtKnockback_5
+  - first:
+      213: -6119599866850780663
+    second: hurtKnockback_6
+  - first:
+      213: -1785055892618855565
+    second: hurtKnockback_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: hurtKnockback_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 304
+        width: 496
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b00e16700acd2e2d0800000000000000
+      internalID: -3250793401131343861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hurtKnockback_1
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 304
+        width: 496
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7d5c53a1110d3480800000000000000
+      internalID: -8917970511856902785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hurtKnockback_2
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 304
+        width: 496
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f5b8f1dc2eb96c40800000000000000
+      internalID: 5506141119147718132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hurtKnockback_3
+      rect:
+        serializedVersion: 2
+        x: 1488
+        y: 304
+        width: 496
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6650b5d890d57e10800000000000000
+      internalID: 2194889748251694698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hurtKnockback_4
+      rect:
+        serializedVersion: 2
+        x: 1984
+        y: 304
+        width: 496
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ef629052cd4064f0800000000000000
+      internalID: -837584033720143904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hurtKnockback_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 496
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea400d84d7c244ce0800000000000000
+      internalID: -1421962665738107730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hurtKnockback_6
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 0
+        width: 496
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90ad4d81850d21ba0800000000000000
+      internalID: -6119599866850780663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hurtKnockback_7
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 0
+        width: 496
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37b3c309f153a37e0800000000000000
+      internalID: -1785055892618855565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      21_hurt_knockback-ezgif.com-gif-to-sprite-converter_0: 5340724204427941652
+      21_hurt_knockback-ezgif.com-gif-to-sprite-converter_1: -7480143676635744950
+      21_hurt_knockback-ezgif.com-gif-to-sprite-converter_2: 5339466619506719450
+      21_hurt_knockback-ezgif.com-gif-to-sprite-converter_3: -4386228793060748939
+      21_hurt_knockback-ezgif.com-gif-to-sprite-converter_4: 4806981228544184525
+      21_hurt_knockback-ezgif.com-gif-to-sprite-converter_5: -8795087323199324854
+      21_hurt_knockback-ezgif.com-gif-to-sprite-converter_6: 258333985483092291
+      21_hurt_knockback-ezgif.com-gif-to-sprite-converter_7: -2991295013673142863
+      hurtKnockback_0: -3250793401131343861
+      hurtKnockback_1: -8917970511856902785
+      hurtKnockback_2: 5506141119147718132
+      hurtKnockback_3: 2194889748251694698
+      hurtKnockback_4: -837584033720143904
+      hurtKnockback_5: -1421962665738107730
+      hurtKnockback_6: -6119599866850780663
+      hurtKnockback_7: -1785055892618855565
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

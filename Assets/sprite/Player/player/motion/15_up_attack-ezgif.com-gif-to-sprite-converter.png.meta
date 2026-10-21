@@ -1,0 +1,327 @@
+fileFormatVersion: 2
+guid: f24591d1c181d064aa853291fac75a90
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8419213755370393934
+    second: 15_up_attack-ezgif.com-gif-to-sprite-converter_0
+  - first:
+      213: -3252267254570896486
+    second: 15_up_attack-ezgif.com-gif-to-sprite-converter_1
+  - first:
+      213: 2932018984478611915
+    second: 15_up_attack-ezgif.com-gif-to-sprite-converter_2
+  - first:
+      213: -7374493106714673238
+    second: 15_up_attack-ezgif.com-gif-to-sprite-converter_3
+  - first:
+      213: -9031252771579681783
+    second: 15_up_attack-ezgif.com-gif-to-sprite-converter_4
+  - first:
+      213: 6109125902673166691
+    second: 15_up_attack-ezgif.com-gif-to-sprite-converter_5
+  - first:
+      213: -5609582835903408389
+    second: 15_up_attack-ezgif.com-gif-to-sprite-converter_6
+  - first:
+      213: -1358681987960787491
+    second: upAttack_0
+  - first:
+      213: 8137171907813194690
+    second: upAttack_1
+  - first:
+      213: 5694297568971658172
+    second: upAttack_2
+  - first:
+      213: 9098066788212208812
+    second: upAttack_3
+  - first:
+      213: 7181742965253605687
+    second: upAttack_4
+  - first:
+      213: -7266872631466793127
+    second: upAttack_5
+  - first:
+      213: -8896122865567968311
+    second: upAttack_6
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: upAttack_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 304
+        width: 292
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddd20e83eedf42de0800000000000000
+      internalID: -1358681987960787491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upAttack_1
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 304
+        width: 292
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cb3e71dcba0de070800000000000000
+      internalID: 8137171907813194690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upAttack_2
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 304
+        width: 292
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb31de32875360f40800000000000000
+      internalID: 5694297568971658172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upAttack_3
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 304
+        width: 292
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca4fa2e4a83d24e70800000000000000
+      internalID: 9098066788212208812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upAttack_4
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 304
+        width: 292
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7390a182d2daaa360800000000000000
+      internalID: 7181742965253605687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upAttack_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 292
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 957e96dd7d1e62b90800000000000000
+      internalID: -7266872631466793127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upAttack_6
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 0
+        width: 292
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c3579f236f9a8480800000000000000
+      internalID: -8896122865567968311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      15_up_attack-ezgif.com-gif-to-sprite-converter_0: 8419213755370393934
+      15_up_attack-ezgif.com-gif-to-sprite-converter_1: -3252267254570896486
+      15_up_attack-ezgif.com-gif-to-sprite-converter_2: 2932018984478611915
+      15_up_attack-ezgif.com-gif-to-sprite-converter_3: -7374493106714673238
+      15_up_attack-ezgif.com-gif-to-sprite-converter_4: -9031252771579681783
+      15_up_attack-ezgif.com-gif-to-sprite-converter_5: 6109125902673166691
+      15_up_attack-ezgif.com-gif-to-sprite-converter_6: -5609582835903408389
+      upAttack_0: -1358681987960787491
+      upAttack_1: 8137171907813194690
+      upAttack_2: 5694297568971658172
+      upAttack_3: 9098066788212208812
+      upAttack_4: 7181742965253605687
+      upAttack_5: -7266872631466793127
+      upAttack_6: -8896122865567968311
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

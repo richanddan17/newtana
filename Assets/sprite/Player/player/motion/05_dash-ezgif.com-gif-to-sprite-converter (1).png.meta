@@ -1,0 +1,267 @@
+fileFormatVersion: 2
+guid: 4a59ef6dc8ae2ba4b83e1546751a9424
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4817717841804885893
+    second: 05_dash-ezgif.com-gif-to-sprite-converter (1)_0
+  - first:
+      213: -3291332470684981551
+    second: 05_dash-ezgif.com-gif-to-sprite-converter (1)_1
+  - first:
+      213: -4179108996881983082
+    second: 05_dash-ezgif.com-gif-to-sprite-converter (1)_2
+  - first:
+      213: 7300172901086413278
+    second: 05_dash-ezgif.com-gif-to-sprite-converter (1)_3
+  - first:
+      213: 8820304120751944936
+    second: 05_dash-ezgif.com-gif-to-sprite-converter (1)_4
+  - first:
+      213: 7110878671101974141
+    second: dash_0
+  - first:
+      213: 7643240275301989466
+    second: dash_1
+  - first:
+      213: -8809873816130030523
+    second: dash_2
+  - first:
+      213: -4770175892979620097
+    second: dash_3
+  - first:
+      213: -1190105860681885623
+    second: dash_4
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: dash_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 256
+        height: 280
+      alignment: 9
+      pivot: {x: 0.5, y: 0.54286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d765fefe97aeea260800000000000000
+      internalID: 7110878671101974141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 256
+        height: 280
+      alignment: 9
+      pivot: {x: 0.5, y: 0.54286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5c7556e88e321a60800000000000000
+      internalID: 7643240275301989466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_2
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 256
+        height: 280
+      alignment: 9
+      pivot: {x: 0.5, y: 0.54286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 544fd81e07a0db580800000000000000
+      internalID: -8809873816130030523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_3
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 256
+        height: 280
+      alignment: 9
+      pivot: {x: 0.5, y: 0.54286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff661de7c4eeccdb0800000000000000
+      internalID: -4770175892979620097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash_4
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 256
+        height: 280
+      alignment: 9
+      pivot: {x: 0.5, y: 0.54286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94812f07605eb7fe0800000000000000
+      internalID: -1190105860681885623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      05_dash-ezgif.com-gif-to-sprite-converter (1)_0: -4817717841804885893
+      05_dash-ezgif.com-gif-to-sprite-converter (1)_1: -3291332470684981551
+      05_dash-ezgif.com-gif-to-sprite-converter (1)_2: -4179108996881983082
+      05_dash-ezgif.com-gif-to-sprite-converter (1)_3: 7300172901086413278
+      05_dash-ezgif.com-gif-to-sprite-converter (1)_4: 8820304120751944936
+      dash_0: 7110878671101974141
+      dash_1: 7643240275301989466
+      dash_2: -8809873816130030523
+      dash_3: -4770175892979620097
+      dash_4: -1190105860681885623
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

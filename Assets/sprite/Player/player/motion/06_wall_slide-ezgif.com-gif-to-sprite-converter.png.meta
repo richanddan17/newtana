@@ -1,0 +1,1109 @@
+fileFormatVersion: 2
+guid: 07510ed98d4cc2c43a1dd77c566f4e4b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6975242590172364035
+    second: 06_wall_slide-ezgif.com-gif-to-sprite-converter_0
+  - first:
+      213: 7202268681348521264
+    second: 06_wall_slide-ezgif.com-gif-to-sprite-converter_1
+  - first:
+      213: 3335143255174186480
+    second: 06_wall_slide-ezgif.com-gif-to-sprite-converter_2
+  - first:
+      213: -3274747661432216199
+    second: 06_wall_slide-ezgif.com-gif-to-sprite-converter_3
+  - first:
+      213: 4278244732855396205
+    second: 06_wall_slide-ezgif.com-gif-to-sprite-converter_4
+  - first:
+      213: 5338208759624449277
+    second: 06_wall_slide-ezgif.com-gif-to-sprite-converter_5
+  - first:
+      213: -5776027065375709198
+    second: 06_wall_slide-ezgif.com-gif-to-sprite-converter_6
+  - first:
+      213: -1593078190456677261
+    second: 06_wall_slide-ezgif.com-gif-to-sprite-converter_7
+  - first:
+      213: -3797877594126371453
+    second: 06_wall_slide-ezgif.com-gif-to-sprite-converter_8
+  - first:
+      213: -1196842778167668129
+    second: 06_wall_slide-ezgif.com-gif-to-sprite-converter_9
+  - first:
+      213: -6963488404767681707
+    second: 06_wall_slide-ezgif.com-gif-to-sprite-converter_10
+  - first:
+      213: 295045565586585228
+    second: 06_wall_slide-ezgif.com-gif-to-sprite-converter_11
+  - first:
+      213: -3814433815060658780
+    second: 06_wall_slide-ezgif.com-gif-to-sprite-converter_12
+  - first:
+      213: -6338202449940874826
+    second: 06_wall_slide-ezgif.com-gif-to-sprite-converter_13
+  - first:
+      213: 5026751255717609009
+    second: 06_wall_slide-ezgif.com-gif-to-sprite-converter_14
+  - first:
+      213: -9133413204360389126
+    second: 06_wall_slide-ezgif.com-gif-to-sprite-converter_15
+  - first:
+      213: -2269734109409272198
+    second: 06_wall_slide-ezgif.com-gif-to-sprite-converter_16
+  - first:
+      213: -6978303155894083692
+    second: 06_wall_slide-ezgif.com-gif-to-sprite-converter_17
+  - first:
+      213: 2490306539488242525
+    second: 06_wall_slide-ezgif.com-gif-to-sprite-converter_18
+  - first:
+      213: 6961123429102547926
+    second: 06_wall_slide-ezgif.com-gif-to-sprite-converter_19
+  - first:
+      213: 5433444339089075747
+    second: 06_wall_slide-ezgif.com-gif-to-sprite-converter_20
+  - first:
+      213: -478581929847045415
+    second: 06_wall_slide-ezgif.com-gif-to-sprite-converter_21
+  - first:
+      213: -7559677680512453344
+    second: 06_wall_slide-ezgif.com-gif-to-sprite-converter_22
+  - first:
+      213: 6139693755133958690
+    second: 06_wall_slide-ezgif.com-gif-to-sprite-converter_23
+  - first:
+      213: 1859380917338013468
+    second: 06_wall_slide-ezgif.com-gif-to-sprite-converter_24
+  - first:
+      213: -3552254408984804248
+    second: 06_wall_slide-ezgif.com-gif-to-sprite-converter_25
+  - first:
+      213: 8700779553204633908
+    second: 06_wall_slide-ezgif.com-gif-to-sprite-converter_26
+  - first:
+      213: 6104191129346315642
+    second: 06_wall_slide-ezgif.com-gif-to-sprite-converter_27
+  - first:
+      213: 8731689344710245628
+    second: 06_wall_slide-ezgif.com-gif-to-sprite-converter_28
+  - first:
+      213: 1514969586018499069
+    second: 06_wall_slide-ezgif.com-gif-to-sprite-converter_29
+  - first:
+      213: 2856479796819012282
+    second: 06_wall_slide-ezgif.com-gif-to-sprite-converter_30
+  - first:
+      213: -6107281924428150369
+    second: 06_wall_slide-ezgif.com-gif-to-sprite-converter_31
+  - first:
+      213: -4242415736900491665
+    second: 06_wall_slide-ezgif.com-gif-to-sprite-converter_32
+  - first:
+      213: 8934727107375870326
+    second: 06_wall_slide-ezgif.com-gif-to-sprite-converter_33
+  - first:
+      213: -6159605687618229506
+    second: 06_wall_slide-ezgif.com-gif-to-sprite-converter_34
+  - first:
+      213: -3673917538507486852
+    second: 06_wall_slide-ezgif.com-gif-to-sprite-converter_35
+  - first:
+      213: -5876590245174673981
+    second: 06_wall_slide-ezgif.com-gif-to-sprite-converter_36
+  - first:
+      213: 2338367745691604178
+    second: 06_wall_slide-ezgif.com-gif-to-sprite-converter_37
+  - first:
+      213: -5392520987900857559
+    second: 06_wall_slide-ezgif.com-gif-to-sprite-converter_38
+  - first:
+      213: 868786231942730295
+    second: 06_wall_slide-ezgif.com-gif-to-sprite-converter_39
+  - first:
+      213: -4704799438075165548
+    second: wallSlide_0
+  - first:
+      213: -411512513866179519
+    second: wallSlide_1
+  - first:
+      213: -7950207358845611729
+    second: wallSlide_2
+  - first:
+      213: -4743923002244498832
+    second: wallSlide_3
+  - first:
+      213: -724497930678649923
+    second: wallSlide_4
+  - first:
+      213: 5608698430493373257
+    second: wallSlide_5
+  - first:
+      213: -4709028092683868789
+    second: wallSlide_6
+  - first:
+      213: -7775089255522507813
+    second: wallSlide_7
+  - first:
+      213: -7788133394440322172
+    second: wallSlide_8
+  - first:
+      213: -1919995076563750511
+    second: wallSlide_9
+  - first:
+      213: -5947054449291748247
+    second: wallSlide_10
+  - first:
+      213: 5908900431544608344
+    second: wallSlide_11
+  - first:
+      213: -8289003204155224518
+    second: wallSlide_12
+  - first:
+      213: -8353838223860681946
+    second: wallSlide_13
+  - first:
+      213: -3685376842587827879
+    second: wallSlide_14
+  - first:
+      213: 4057907709524534512
+    second: wallSlide_15
+  - first:
+      213: 6797034529723275528
+    second: wallSlide_16
+  - first:
+      213: -3493748427744325251
+    second: wallSlide_17
+  - first:
+      213: 7815242191339955227
+    second: wallSlide_18
+  - first:
+      213: -3982164701880847964
+    second: wallSlide_19
+  - first:
+      213: -2324974456886500333
+    second: wallSlide_20
+  - first:
+      213: -7270849449293092574
+    second: wallSlide_21
+  - first:
+      213: -4394605961663980689
+    second: wallSlide_22
+  - first:
+      213: -4503075865861733656
+    second: wallSlide_23
+  - first:
+      213: -8526490364811775885
+    second: wallSlide_24
+  - first:
+      213: 7098634908544036304
+    second: wallSlide_25
+  - first:
+      213: 4118133513728238146
+    second: wallSlide_26
+  - first:
+      213: 7194580549271551211
+    second: wallSlide_27
+  - first:
+      213: 4148030353360229381
+    second: wallSlide_28
+  - first:
+      213: -3369071721361954655
+    second: wallSlide_29
+  - first:
+      213: -2240466956552946026
+    second: wallSlide_30
+  - first:
+      213: 2498628634415600228
+    second: wallSlide_31
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: wallSlide_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2184
+        width: 220
+        height: 364
+      alignment: 9
+      pivot: {x: 0.5, y: 0.41758}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 494821296d135beb0800000000000000
+      internalID: -4704799438075165548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wallSlide_1
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 2184
+        width: 220
+        height: 364
+      alignment: 9
+      pivot: {x: 0.5, y: 0.41758}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14cd0668c830a4af0800000000000000
+      internalID: -411512513866179519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wallSlide_2
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 2184
+        width: 220
+        height: 364
+      alignment: 9
+      pivot: {x: 0.5, y: 0.41758}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f219f4577803ba190800000000000000
+      internalID: -7950207358845611729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wallSlide_3
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 2184
+        width: 220
+        height: 364
+      alignment: 9
+      pivot: {x: 0.5, y: 0.41758}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07a7961f9233a2eb0800000000000000
+      internalID: -4743923002244498832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wallSlide_4
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 2184
+        width: 220
+        height: 364
+      alignment: 9
+      pivot: {x: 0.5, y: 0.41758}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbbb46978f012f5f0800000000000000
+      internalID: -724497930678649923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wallSlide_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1820
+        width: 220
+        height: 364
+      alignment: 9
+      pivot: {x: 0.5, y: 0.41758}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94339d1a18916dd40800000000000000
+      internalID: 5608698430493373257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wallSlide_6
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 1820
+        width: 220
+        height: 364
+      alignment: 9
+      pivot: {x: 0.5, y: 0.41758}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b852e3236eb26aeb0800000000000000
+      internalID: -4709028092683868789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wallSlide_7
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 1820
+        width: 220
+        height: 364
+      alignment: 9
+      pivot: {x: 0.5, y: 0.41758}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd3ef9b2485591490800000000000000
+      internalID: -7775089255522507813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wallSlide_8
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1820
+        width: 220
+        height: 364
+      alignment: 9
+      pivot: {x: 0.5, y: 0.41758}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4830709e0fdfae390800000000000000
+      internalID: -7788133394440322172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wallSlide_9
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 1820
+        width: 220
+        height: 364
+      alignment: 9
+      pivot: {x: 0.5, y: 0.41758}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1913be286aeca55e0800000000000000
+      internalID: -1919995076563750511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wallSlide_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1456
+        width: 220
+        height: 364
+      alignment: 9
+      pivot: {x: 0.5, y: 0.41758}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96c1f0abc71d77da0800000000000000
+      internalID: -5947054449291748247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wallSlide_11
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 1456
+        width: 220
+        height: 364
+      alignment: 9
+      pivot: {x: 0.5, y: 0.41758}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8566e53c2a1a00250800000000000000
+      internalID: 5908900431544608344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wallSlide_12
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 1456
+        width: 220
+        height: 364
+      alignment: 9
+      pivot: {x: 0.5, y: 0.41758}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3ec04ab08b87fc80800000000000000
+      internalID: -8289003204155224518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wallSlide_13
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1456
+        width: 220
+        height: 364
+      alignment: 9
+      pivot: {x: 0.5, y: 0.41758}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62334bb5564311c80800000000000000
+      internalID: -8353838223860681946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wallSlide_14
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 1456
+        width: 220
+        height: 364
+      alignment: 9
+      pivot: {x: 0.5, y: 0.41758}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9511a12a949eadcc0800000000000000
+      internalID: -3685376842587827879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wallSlide_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1092
+        width: 220
+        height: 364
+      alignment: 9
+      pivot: {x: 0.5, y: 0.41758}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f46785ef85905830800000000000000
+      internalID: 4057907709524534512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wallSlide_16
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 1092
+        width: 220
+        height: 364
+      alignment: 9
+      pivot: {x: 0.5, y: 0.41758}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 809583e74eae35e50800000000000000
+      internalID: 6797034529723275528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wallSlide_17
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 1092
+        width: 220
+        height: 364
+      alignment: 9
+      pivot: {x: 0.5, y: 0.41758}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7158bdc056b38fc0800000000000000
+      internalID: -3493748427744325251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wallSlide_18
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1092
+        width: 220
+        height: 364
+      alignment: 9
+      pivot: {x: 0.5, y: 0.41758}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b14a678bd51557c60800000000000000
+      internalID: 7815242191339955227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wallSlide_19
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 1092
+        width: 220
+        height: 364
+      alignment: 9
+      pivot: {x: 0.5, y: 0.41758}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a1fa435d428cb8c0800000000000000
+      internalID: -3982164701880847964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wallSlide_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 728
+        width: 220
+        height: 364
+      alignment: 9
+      pivot: {x: 0.5, y: 0.41758}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3146c69bc080cbfd0800000000000000
+      internalID: -2324974456886500333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wallSlide_21
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 728
+        width: 220
+        height: 364
+      alignment: 9
+      pivot: {x: 0.5, y: 0.41758}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2296a8fc2f0c81b90800000000000000
+      internalID: -7270849449293092574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wallSlide_22
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 728
+        width: 220
+        height: 364
+      alignment: 9
+      pivot: {x: 0.5, y: 0.41758}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6b543759293303c0800000000000000
+      internalID: -4394605961663980689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wallSlide_23
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 728
+        width: 220
+        height: 364
+      alignment: 9
+      pivot: {x: 0.5, y: 0.41758}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e24daabb5cd181c0800000000000000
+      internalID: -4503075865861733656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wallSlide_24
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 728
+        width: 220
+        height: 364
+      alignment: 9
+      pivot: {x: 0.5, y: 0.41758}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3707a904032dba980800000000000000
+      internalID: -8526490364811775885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wallSlide_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 364
+        width: 220
+        height: 364
+      alignment: 9
+      pivot: {x: 0.5, y: 0.41758}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dd64f1d6da638260800000000000000
+      internalID: 7098634908544036304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wallSlide_26
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 364
+        width: 220
+        height: 364
+      alignment: 9
+      pivot: {x: 0.5, y: 0.41758}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2422767ac9c862930800000000000000
+      internalID: 4118133513728238146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wallSlide_27
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 364
+        width: 220
+        height: 364
+      alignment: 9
+      pivot: {x: 0.5, y: 0.41758}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: becf34b14e848d360800000000000000
+      internalID: 7194580549271551211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wallSlide_28
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 364
+        width: 220
+        height: 364
+      alignment: 9
+      pivot: {x: 0.5, y: 0.41758}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 504139111a3c09930800000000000000
+      internalID: 4148030353360229381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wallSlide_29
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 364
+        width: 220
+        height: 364
+      alignment: 9
+      pivot: {x: 0.5, y: 0.41758}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a828699e17ae31d0800000000000000
+      internalID: -3369071721361954655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wallSlide_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 220
+        height: 364
+      alignment: 9
+      pivot: {x: 0.5, y: 0.41758}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69e39ab6c2348e0e0800000000000000
+      internalID: -2240466956552946026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wallSlide_31
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 0
+        width: 220
+        height: 364
+      alignment: 9
+      pivot: {x: 0.5, y: 0.41758}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46216f33189eca220800000000000000
+      internalID: 2498628634415600228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      06_wall_slide-ezgif.com-gif-to-sprite-converter_0: 6975242590172364035
+      06_wall_slide-ezgif.com-gif-to-sprite-converter_1: 7202268681348521264
+      06_wall_slide-ezgif.com-gif-to-sprite-converter_10: -6963488404767681707
+      06_wall_slide-ezgif.com-gif-to-sprite-converter_11: 295045565586585228
+      06_wall_slide-ezgif.com-gif-to-sprite-converter_12: -3814433815060658780
+      06_wall_slide-ezgif.com-gif-to-sprite-converter_13: -6338202449940874826
+      06_wall_slide-ezgif.com-gif-to-sprite-converter_14: 5026751255717609009
+      06_wall_slide-ezgif.com-gif-to-sprite-converter_15: -9133413204360389126
+      06_wall_slide-ezgif.com-gif-to-sprite-converter_16: -2269734109409272198
+      06_wall_slide-ezgif.com-gif-to-sprite-converter_17: -6978303155894083692
+      06_wall_slide-ezgif.com-gif-to-sprite-converter_18: 2490306539488242525
+      06_wall_slide-ezgif.com-gif-to-sprite-converter_19: 6961123429102547926
+      06_wall_slide-ezgif.com-gif-to-sprite-converter_2: 3335143255174186480
+      06_wall_slide-ezgif.com-gif-to-sprite-converter_20: 5433444339089075747
+      06_wall_slide-ezgif.com-gif-to-sprite-converter_21: -478581929847045415
+      06_wall_slide-ezgif.com-gif-to-sprite-converter_22: -7559677680512453344
+      06_wall_slide-ezgif.com-gif-to-sprite-converter_23: 6139693755133958690
+      06_wall_slide-ezgif.com-gif-to-sprite-converter_24: 1859380917338013468
+      06_wall_slide-ezgif.com-gif-to-sprite-converter_25: -3552254408984804248
+      06_wall_slide-ezgif.com-gif-to-sprite-converter_26: 8700779553204633908
+      06_wall_slide-ezgif.com-gif-to-sprite-converter_27: 6104191129346315642
+      06_wall_slide-ezgif.com-gif-to-sprite-converter_28: 8731689344710245628
+      06_wall_slide-ezgif.com-gif-to-sprite-converter_29: 1514969586018499069
+      06_wall_slide-ezgif.com-gif-to-sprite-converter_3: -3274747661432216199
+      06_wall_slide-ezgif.com-gif-to-sprite-converter_30: 2856479796819012282
+      06_wall_slide-ezgif.com-gif-to-sprite-converter_31: -6107281924428150369
+      06_wall_slide-ezgif.com-gif-to-sprite-converter_32: -4242415736900491665
+      06_wall_slide-ezgif.com-gif-to-sprite-converter_33: 8934727107375870326
+      06_wall_slide-ezgif.com-gif-to-sprite-converter_34: -6159605687618229506
+      06_wall_slide-ezgif.com-gif-to-sprite-converter_35: -3673917538507486852
+      06_wall_slide-ezgif.com-gif-to-sprite-converter_36: -5876590245174673981
+      06_wall_slide-ezgif.com-gif-to-sprite-converter_37: 2338367745691604178
+      06_wall_slide-ezgif.com-gif-to-sprite-converter_38: -5392520987900857559
+      06_wall_slide-ezgif.com-gif-to-sprite-converter_39: 868786231942730295
+      06_wall_slide-ezgif.com-gif-to-sprite-converter_4: 4278244732855396205
+      06_wall_slide-ezgif.com-gif-to-sprite-converter_5: 5338208759624449277
+      06_wall_slide-ezgif.com-gif-to-sprite-converter_6: -5776027065375709198
+      06_wall_slide-ezgif.com-gif-to-sprite-converter_7: -1593078190456677261
+      06_wall_slide-ezgif.com-gif-to-sprite-converter_8: -3797877594126371453
+      06_wall_slide-ezgif.com-gif-to-sprite-converter_9: -1196842778167668129
+      wallSlide_0: -4704799438075165548
+      wallSlide_1: -411512513866179519
+      wallSlide_10: -5947054449291748247
+      wallSlide_11: 5908900431544608344
+      wallSlide_12: -8289003204155224518
+      wallSlide_13: -8353838223860681946
+      wallSlide_14: -3685376842587827879
+      wallSlide_15: 4057907709524534512
+      wallSlide_16: 6797034529723275528
+      wallSlide_17: -3493748427744325251
+      wallSlide_18: 7815242191339955227
+      wallSlide_19: -3982164701880847964
+      wallSlide_2: -7950207358845611729
+      wallSlide_20: -2324974456886500333
+      wallSlide_21: -7270849449293092574
+      wallSlide_22: -4394605961663980689
+      wallSlide_23: -4503075865861733656
+      wallSlide_24: -8526490364811775885
+      wallSlide_25: 7098634908544036304
+      wallSlide_26: 4118133513728238146
+      wallSlide_27: 7194580549271551211
+      wallSlide_28: 4148030353360229381
+      wallSlide_29: -3369071721361954655
+      wallSlide_3: -4743923002244498832
+      wallSlide_30: -2240466956552946026
+      wallSlide_31: 2498628634415600228
+      wallSlide_4: -724497930678649923
+      wallSlide_5: 5608698430493373257
+      wallSlide_6: -4709028092683868789
+      wallSlide_7: -7775089255522507813
+      wallSlide_8: -7788133394440322172
+      wallSlide_9: -1919995076563750511
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

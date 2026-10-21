@@ -1,0 +1,687 @@
+fileFormatVersion: 2
+guid: ec91a211b9a7590418dc4065d2fa4f30
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8978395318070433231
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_0
+  - first:
+      213: -7167712278568257452
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_1
+  - first:
+      213: -2655239611925206324
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_2
+  - first:
+      213: -7981032010293367313
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_3
+  - first:
+      213: -3222817426278778766
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_4
+  - first:
+      213: -237154412302110124
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_5
+  - first:
+      213: -1479941832169488969
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_6
+  - first:
+      213: 6374204691664171815
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_7
+  - first:
+      213: -2006006949097543968
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_8
+  - first:
+      213: 4158347951708325545
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_9
+  - first:
+      213: 4065983513966342690
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_10
+  - first:
+      213: -7038924108129057208
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_11
+  - first:
+      213: -1347174873202586113
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_12
+  - first:
+      213: 8756633573407103851
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_13
+  - first:
+      213: -6561229347727096934
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_14
+  - first:
+      213: 9080919195390191129
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_15
+  - first:
+      213: -6868829810974626763
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_16
+  - first:
+      213: 564876340253916980
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_17
+  - first:
+      213: -1944408504593278695
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_18
+  - first:
+      213: 5584960195619558893
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_19
+  - first:
+      213: 1829461518630016093
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_20
+  - first:
+      213: 4340132050600417231
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_21
+  - first:
+      213: 9038950517559021873
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_22
+  - first:
+      213: 3157114190132577830
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_23
+  - first:
+      213: 3893995900932347529
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_24
+  - first:
+      213: -3825899485223317423
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_25
+  - first:
+      213: 2576012054044607524
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_26
+  - first:
+      213: 8404516642736162241
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_27
+  - first:
+      213: -8815453707568864149
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_28
+  - first:
+      213: -8980959319160000231
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_29
+  - first:
+      213: 496341132179198471
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_30
+  - first:
+      213: -1806339472413552689
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_31
+  - first:
+      213: -3868960686044573084
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_32
+  - first:
+      213: 5097198356978498598
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_33
+  - first:
+      213: -4039199667433911697
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_34
+  - first:
+      213: 4575811294445716466
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_35
+  - first:
+      213: -3158726146235789874
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_36
+  - first:
+      213: 6687776751415117472
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_37
+  - first:
+      213: -4722872734781648905
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_38
+  - first:
+      213: 6114975230170228525
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_39
+  - first:
+      213: 8579450967878853644
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_40
+  - first:
+      213: 8002979435390552836
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_41
+  - first:
+      213: -555602157345187916
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_42
+  - first:
+      213: 6613756388848215201
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_43
+  - first:
+      213: 2111762994023243519
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_44
+  - first:
+      213: -3451565597681837557
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_45
+  - first:
+      213: -2707612232952557645
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_46
+  - first:
+      213: 3486772308380629489
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_47
+  - first:
+      213: -3643276783252691176
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_48
+  - first:
+      213: 2174722066260376809
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_49
+  - first:
+      213: -3305484658128123651
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_50
+  - first:
+      213: 1808124346740839032
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_51
+  - first:
+      213: -938334696570064794
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_52
+  - first:
+      213: -5238143863428403544
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_53
+  - first:
+      213: 3170221477033014352
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_54
+  - first:
+      213: 8063433551306841312
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_55
+  - first:
+      213: -5268342630054544915
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_56
+  - first:
+      213: -2300182790886673313
+    second: 19_arrow_impact-ezgif.com-gif-to-sprite-converter_57
+  - first:
+      213: 3597507284053831919
+    second: arrowImpact_0
+  - first:
+      213: 6414099001357866369
+    second: arrowImpact_1
+  - first:
+      213: 1149810398288514753
+    second: arrowImpact_2
+  - first:
+      213: -5604647122354308965
+    second: arrowImpact_3
+  - first:
+      213: 6966220841572192428
+    second: arrowImpact_4
+  - first:
+      213: -6453893304099455493
+    second: arrowImpact_5
+  - first:
+      213: 145073582955712537
+    second: arrowImpact_6
+  - first:
+      213: -2004273089869302033
+    second: arrowImpact_7
+  - first:
+      213: 1680887499970057817
+    second: arrowImpact_8
+  - first:
+      213: 8814676594122657728
+    second: arrowImpact_9
+  - first:
+      213: 5148152743560089867
+    second: arrowImpact_10
+  - first:
+      213: -7076772516974601800
+    second: arrowImpact_11
+  - first:
+      213: -4082676056294861520
+    second: arrowImpact_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: arrowImpact_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 660
+        width: 208
+        height: 220
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe0b8ee70d9ece130800000000000000
+      internalID: 3597507284053831919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowImpact_1
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 660
+        width: 208
+        height: 220
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1859f12fe05730950800000000000000
+      internalID: 6414099001357866369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowImpact_2
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 660
+        width: 208
+        height: 220
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ce890d1772f4ff00800000000000000
+      internalID: 1149810398288514753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowImpact_3
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 660
+        width: 208
+        height: 220
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b98f7ac032b4832b0800000000000000
+      internalID: -5604647122354308965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowImpact_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 440
+        width: 208
+        height: 220
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca055d062fcfca060800000000000000
+      internalID: 6966220841572192428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowImpact_5
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 440
+        width: 208
+        height: 220
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfd31eeeb3a2f66a0800000000000000
+      internalID: -6453893304099455493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowImpact_6
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 440
+        width: 208
+        height: 220
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9105e52b7a7630200800000000000000
+      internalID: 145073582955712537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowImpact_7
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 440
+        width: 208
+        height: 220
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe6377d6e346f24e0800000000000000
+      internalID: -2004273089869302033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowImpact_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 220
+        width: 208
+        height: 220
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9561c178646b35710800000000000000
+      internalID: 1680887499970057817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowImpact_9
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 220
+        width: 208
+        height: 220
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cf81a209a5045a70800000000000000
+      internalID: 8814676594122657728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowImpact_10
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 220
+        width: 208
+        height: 220
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b011a59e4a9e17740800000000000000
+      internalID: 5148152743560089867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowImpact_11
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 220
+        width: 208
+        height: 220
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b95b71e3e04acd90800000000000000
+      internalID: -7076772516974601800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowImpact_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 208
+        height: 220
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0355d8bf1cb6757c0800000000000000
+      internalID: -4082676056294861520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_0: -8978395318070433231
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_1: -7167712278568257452
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_10: 4065983513966342690
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_11: -7038924108129057208
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_12: -1347174873202586113
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_13: 8756633573407103851
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_14: -6561229347727096934
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_15: 9080919195390191129
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_16: -6868829810974626763
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_17: 564876340253916980
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_18: -1944408504593278695
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_19: 5584960195619558893
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_2: -2655239611925206324
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_20: 1829461518630016093
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_21: 4340132050600417231
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_22: 9038950517559021873
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_23: 3157114190132577830
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_24: 3893995900932347529
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_25: -3825899485223317423
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_26: 2576012054044607524
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_27: 8404516642736162241
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_28: -8815453707568864149
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_29: -8980959319160000231
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_3: -7981032010293367313
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_30: 496341132179198471
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_31: -1806339472413552689
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_32: -3868960686044573084
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_33: 5097198356978498598
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_34: -4039199667433911697
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_35: 4575811294445716466
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_36: -3158726146235789874
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_37: 6687776751415117472
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_38: -4722872734781648905
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_39: 6114975230170228525
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_4: -3222817426278778766
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_40: 8579450967878853644
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_41: 8002979435390552836
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_42: -555602157345187916
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_43: 6613756388848215201
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_44: 2111762994023243519
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_45: -3451565597681837557
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_46: -2707612232952557645
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_47: 3486772308380629489
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_48: -3643276783252691176
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_49: 2174722066260376809
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_5: -237154412302110124
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_50: -3305484658128123651
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_51: 1808124346740839032
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_52: -938334696570064794
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_53: -5238143863428403544
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_54: 3170221477033014352
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_55: 8063433551306841312
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_56: -5268342630054544915
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_57: -2300182790886673313
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_6: -1479941832169488969
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_7: 6374204691664171815
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_8: -2006006949097543968
+      19_arrow_impact-ezgif.com-gif-to-sprite-converter_9: 4158347951708325545
+      arrowImpact_0: 3597507284053831919
+      arrowImpact_1: 6414099001357866369
+      arrowImpact_10: 5148152743560089867
+      arrowImpact_11: -7076772516974601800
+      arrowImpact_12: -4082676056294861520
+      arrowImpact_2: 1149810398288514753
+      arrowImpact_3: -5604647122354308965
+      arrowImpact_4: 6966220841572192428
+      arrowImpact_5: -6453893304099455493
+      arrowImpact_6: 145073582955712537
+      arrowImpact_7: -2004273089869302033
+      arrowImpact_8: 1680887499970057817
+      arrowImpact_9: 8814676594122657728
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,535 @@
+fileFormatVersion: 2
+guid: 697a006d358f3474e9e470e6d9aff7a1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 12295926225727041
+    second: 08_basic_muzzle-ezgif.com-gif-to-sprite-converter_0
+  - first:
+      213: -5590786712183509010
+    second: 08_basic_muzzle-ezgif.com-gif-to-sprite-converter_1
+  - first:
+      213: -8641338767116352098
+    second: 08_basic_muzzle-ezgif.com-gif-to-sprite-converter_2
+  - first:
+      213: -2935801318785647597
+    second: 08_basic_muzzle-ezgif.com-gif-to-sprite-converter_3
+  - first:
+      213: -6445527088625098311
+    second: 08_basic_muzzle-ezgif.com-gif-to-sprite-converter_4
+  - first:
+      213: 16703925591442490
+    second: 08_basic_muzzle-ezgif.com-gif-to-sprite-converter_5
+  - first:
+      213: -3639821986366016608
+    second: 08_basic_muzzle-ezgif.com-gif-to-sprite-converter_6
+  - first:
+      213: -7401137730713842646
+    second: 08_basic_muzzle-ezgif.com-gif-to-sprite-converter_7
+  - first:
+      213: 5119599430691780065
+    second: 08_basic_muzzle-ezgif.com-gif-to-sprite-converter_8
+  - first:
+      213: 1268639737036153604
+    second: 08_basic_muzzle-ezgif.com-gif-to-sprite-converter_9
+  - first:
+      213: -6617456449605775999
+    second: 08_basic_muzzle-ezgif.com-gif-to-sprite-converter_10
+  - first:
+      213: -5191691062746770811
+    second: 08_basic_muzzle-ezgif.com-gif-to-sprite-converter_11
+  - first:
+      213: -2010131737081516055
+    second: 08_basic_muzzle-ezgif.com-gif-to-sprite-converter_12
+  - first:
+      213: -6792198049234493002
+    second: 08_basic_muzzle-ezgif.com-gif-to-sprite-converter_13
+  - first:
+      213: 6107146753557883941
+    second: 08_basic_muzzle-ezgif.com-gif-to-sprite-converter_14
+  - first:
+      213: -9078916837850581818
+    second: 08_basic_muzzle-ezgif.com-gif-to-sprite-converter_15
+  - first:
+      213: -1233089605809898975
+    second: 08_basic_muzzle-ezgif.com-gif-to-sprite-converter_16
+  - first:
+      213: 8410233356897180195
+    second: 08_basic_muzzle-ezgif.com-gif-to-sprite-converter_17
+  - first:
+      213: 4281729368755791163
+    second: 08_basic_muzzle-ezgif.com-gif-to-sprite-converter_18
+  - first:
+      213: 4618346814831318750
+    second: 08_basic_muzzle-ezgif.com-gif-to-sprite-converter_19
+  - first:
+      213: 7759622878234189439
+    second: basicMuzzle_0
+  - first:
+      213: -2574107280342043783
+    second: basicMuzzle_1
+  - first:
+      213: -9176107086763622979
+    second: basicMuzzle_2
+  - first:
+      213: 2543262824383314399
+    second: basicMuzzle_3
+  - first:
+      213: 8460316898176547459
+    second: basicMuzzle_4
+  - first:
+      213: 3237696067150729139
+    second: basicMuzzle_5
+  - first:
+      213: -7338835922998322342
+    second: basicMuzzle_6
+  - first:
+      213: 4430665042967528344
+    second: basicMuzzle_7
+  - first:
+      213: -9003526162744384445
+    second: basicMuzzle_8
+  - first:
+      213: 1288365180853671459
+    second: basicMuzzle_9
+  - first:
+      213: 4892055020677431776
+    second: basicMuzzle_10
+  - first:
+      213: 1586690521284657773
+    second: basicMuzzle_11
+  - first:
+      213: 2361431268178465494
+    second: basicMuzzle_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: basicMuzzle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 516
+        width: 196
+        height: 172
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7e942045e7bfab60800000000000000
+      internalID: 7759622878234189439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basicMuzzle_1
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 516
+        width: 196
+        height: 172
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9733775111fe64cd0800000000000000
+      internalID: -2574107280342043783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basicMuzzle_2
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 516
+        width: 196
+        height: 172
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbd7280c83be7a080800000000000000
+      internalID: -9176107086763622979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basicMuzzle_3
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 516
+        width: 196
+        height: 172
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd9f2d1601c7b4320800000000000000
+      internalID: 2543262824383314399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basicMuzzle_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 344
+        width: 196
+        height: 172
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38a3c0be465196570800000000000000
+      internalID: 8460316898176547459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basicMuzzle_5
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 344
+        width: 196
+        height: 172
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bfc2354b6b9eec20800000000000000
+      internalID: 3237696067150729139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basicMuzzle_6
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 344
+        width: 196
+        height: 172
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5b1fc06c97372a90800000000000000
+      internalID: -7338835922998322342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basicMuzzle_7
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 344
+        width: 196
+        height: 172
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89302d4c162ec7d30800000000000000
+      internalID: 4430665042967528344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basicMuzzle_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 172
+        width: 196
+        height: 172
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3446faf58ac0d0380800000000000000
+      internalID: -9003526162744384445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basicMuzzle_9
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 172
+        width: 196
+        height: 172
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 326d3c15e4131e110800000000000000
+      internalID: 1288365180853671459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basicMuzzle_10
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 172
+        width: 196
+        height: 172
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e105214f1214e340800000000000000
+      internalID: 4892055020677431776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basicMuzzle_11
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 172
+        width: 196
+        height: 172
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d62c6a95f9e050610800000000000000
+      internalID: 1586690521284657773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basicMuzzle_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 196
+        height: 172
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d2174d1a3d75c020800000000000000
+      internalID: 2361431268178465494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      08_basic_muzzle-ezgif.com-gif-to-sprite-converter_0: 12295926225727041
+      08_basic_muzzle-ezgif.com-gif-to-sprite-converter_1: -5590786712183509010
+      08_basic_muzzle-ezgif.com-gif-to-sprite-converter_10: -6617456449605775999
+      08_basic_muzzle-ezgif.com-gif-to-sprite-converter_11: -5191691062746770811
+      08_basic_muzzle-ezgif.com-gif-to-sprite-converter_12: -2010131737081516055
+      08_basic_muzzle-ezgif.com-gif-to-sprite-converter_13: -6792198049234493002
+      08_basic_muzzle-ezgif.com-gif-to-sprite-converter_14: 6107146753557883941
+      08_basic_muzzle-ezgif.com-gif-to-sprite-converter_15: -9078916837850581818
+      08_basic_muzzle-ezgif.com-gif-to-sprite-converter_16: -1233089605809898975
+      08_basic_muzzle-ezgif.com-gif-to-sprite-converter_17: 8410233356897180195
+      08_basic_muzzle-ezgif.com-gif-to-sprite-converter_18: 4281729368755791163
+      08_basic_muzzle-ezgif.com-gif-to-sprite-converter_19: 4618346814831318750
+      08_basic_muzzle-ezgif.com-gif-to-sprite-converter_2: -8641338767116352098
+      08_basic_muzzle-ezgif.com-gif-to-sprite-converter_3: -2935801318785647597
+      08_basic_muzzle-ezgif.com-gif-to-sprite-converter_4: -6445527088625098311
+      08_basic_muzzle-ezgif.com-gif-to-sprite-converter_5: 16703925591442490
+      08_basic_muzzle-ezgif.com-gif-to-sprite-converter_6: -3639821986366016608
+      08_basic_muzzle-ezgif.com-gif-to-sprite-converter_7: -7401137730713842646
+      08_basic_muzzle-ezgif.com-gif-to-sprite-converter_8: 5119599430691780065
+      08_basic_muzzle-ezgif.com-gif-to-sprite-converter_9: 1268639737036153604
+      basicMuzzle_0: 7759622878234189439
+      basicMuzzle_1: -2574107280342043783
+      basicMuzzle_10: 4892055020677431776
+      basicMuzzle_11: 1586690521284657773
+      basicMuzzle_12: 2361431268178465494
+      basicMuzzle_2: -9176107086763622979
+      basicMuzzle_3: 2543262824383314399
+      basicMuzzle_4: 8460316898176547459
+      basicMuzzle_5: 3237696067150729139
+      basicMuzzle_6: -7338835922998322342
+      basicMuzzle_7: 4430665042967528344
+      basicMuzzle_8: -9003526162744384445
+      basicMuzzle_9: 1288365180853671459
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

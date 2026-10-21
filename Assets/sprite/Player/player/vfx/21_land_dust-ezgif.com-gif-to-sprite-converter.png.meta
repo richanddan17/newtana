@@ -1,0 +1,1325 @@
+fileFormatVersion: 2
+guid: e40589eb11e7a174198d363d06200eb5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1777574172326267093
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_0
+  - first:
+      213: -4442941632756803984
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_1
+  - first:
+      213: -4204631130201620996
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_2
+  - first:
+      213: 8387458667920159172
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_3
+  - first:
+      213: 4460022481038909951
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_4
+  - first:
+      213: 4028939880036332835
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_5
+  - first:
+      213: 6661732072328605406
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_6
+  - first:
+      213: 6282159906866187186
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_7
+  - first:
+      213: 3578099870640194047
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_8
+  - first:
+      213: 9114505149351622381
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_9
+  - first:
+      213: 7605898452218114955
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_10
+  - first:
+      213: -4812388770955036878
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_11
+  - first:
+      213: -1388643672615305336
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_12
+  - first:
+      213: -8434196410157843974
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_13
+  - first:
+      213: -8960492595056285892
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_14
+  - first:
+      213: 7563076197135827170
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_15
+  - first:
+      213: -7790029409509027890
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_16
+  - first:
+      213: -7035015077209550358
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_17
+  - first:
+      213: -6402177788852797166
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_18
+  - first:
+      213: -8400764380662088996
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_19
+  - first:
+      213: 1745949819215969304
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_20
+  - first:
+      213: -4866705851069957031
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_21
+  - first:
+      213: 7481580864507170753
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_22
+  - first:
+      213: -6795091376007486405
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_23
+  - first:
+      213: 3445404806333782535
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_24
+  - first:
+      213: 2636959618181668036
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_25
+  - first:
+      213: -9036841848944304442
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_26
+  - first:
+      213: -4873073067417448340
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_27
+  - first:
+      213: -5950920008722062737
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_28
+  - first:
+      213: 2468752206361914412
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_29
+  - first:
+      213: -8700494777353647060
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_30
+  - first:
+      213: -4592059676492361409
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_31
+  - first:
+      213: -8906675750294860904
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_32
+  - first:
+      213: 873213324746049211
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_33
+  - first:
+      213: -7233852865408723427
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_34
+  - first:
+      213: -5771390080401048435
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_35
+  - first:
+      213: -7929197169562289660
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_36
+  - first:
+      213: -9079354755485452471
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_37
+  - first:
+      213: 7151927445753132936
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_38
+  - first:
+      213: 8526755919157098156
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_39
+  - first:
+      213: -806428459712506469
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_40
+  - first:
+      213: 781851737610162324
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_41
+  - first:
+      213: 3720532531823561173
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_42
+  - first:
+      213: -4489570902546459789
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_43
+  - first:
+      213: -5246678550174540677
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_44
+  - first:
+      213: -9099978303040630216
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_45
+  - first:
+      213: -6367417508791310675
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_46
+  - first:
+      213: -3204675288056291809
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_47
+  - first:
+      213: -2239520631002235356
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_48
+  - first:
+      213: 2565718194959467665
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_49
+  - first:
+      213: 1113247171221653720
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_50
+  - first:
+      213: 2106746686857078374
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_51
+  - first:
+      213: 2557907104023522656
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_52
+  - first:
+      213: 9011248074022909330
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_53
+  - first:
+      213: 4670339408530487380
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_54
+  - first:
+      213: 5028242574592416730
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_55
+  - first:
+      213: -8133306991591999154
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_56
+  - first:
+      213: -7578577249821236053
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_57
+  - first:
+      213: 5358821716016761280
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_58
+  - first:
+      213: 957772031257111052
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_59
+  - first:
+      213: 8530764270576526700
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_60
+  - first:
+      213: 2937358731428875521
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_61
+  - first:
+      213: -7578386084538331515
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_62
+  - first:
+      213: -1593657472369836077
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_63
+  - first:
+      213: -1850028430490551150
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_64
+  - first:
+      213: 5753271900981779530
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_65
+  - first:
+      213: 2387647514499918743
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_66
+  - first:
+      213: -768469034758746362
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_67
+  - first:
+      213: -1237443010500376924
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_68
+  - first:
+      213: 5822753881569265347
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_69
+  - first:
+      213: -8210827038708175375
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_70
+  - first:
+      213: 788523045164129895
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_71
+  - first:
+      213: 5131630252325858079
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_72
+  - first:
+      213: 2606261080466251494
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_73
+  - first:
+      213: -4503197091283101792
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_74
+  - first:
+      213: -3307605831804633540
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_75
+  - first:
+      213: 4530253211798285438
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_76
+  - first:
+      213: 1571618284185767633
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_77
+  - first:
+      213: -5324445927914944681
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_78
+  - first:
+      213: -5847925180087300321
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_79
+  - first:
+      213: -3917619291119793553
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_80
+  - first:
+      213: -2147623706566824700
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_81
+  - first:
+      213: -8565978046749731718
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_82
+  - first:
+      213: 8092312257316374220
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_83
+  - first:
+      213: -1793244929733138670
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_84
+  - first:
+      213: -640110435904198211
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_85
+  - first:
+      213: -5831012521400234705
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_86
+  - first:
+      213: -3163896782772938048
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_87
+  - first:
+      213: -357430486780218172
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_88
+  - first:
+      213: -3700029500293710426
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_89
+  - first:
+      213: 3026595433854626739
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_90
+  - first:
+      213: 6684704044989577352
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_91
+  - first:
+      213: 3695218837862088231
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_92
+  - first:
+      213: 3773853721777784461
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_93
+  - first:
+      213: -7968480495155348498
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_94
+  - first:
+      213: -4713956128504069657
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_95
+  - first:
+      213: 4614194348477449518
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_96
+  - first:
+      213: 5626131986583565560
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_97
+  - first:
+      213: -8690175785640806390
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_98
+  - first:
+      213: 204169122875538890
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_99
+  - first:
+      213: -6795765772022084726
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_100
+  - first:
+      213: 8190962814293611748
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_101
+  - first:
+      213: -2972959121294235056
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_102
+  - first:
+      213: -1513013026132627167
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_103
+  - first:
+      213: -453165285097283196
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_104
+  - first:
+      213: -8898737307143865152
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_105
+  - first:
+      213: -2455704545675460875
+    second: 21_land_dust-ezgif.com-gif-to-sprite-converter_106
+  - first:
+      213: 1754122681003594432
+    second: landDust_0
+  - first:
+      213: 5846693534318898969
+    second: landDust_1
+  - first:
+      213: 340795245986723455
+    second: landDust_2
+  - first:
+      213: 8750305966781368168
+    second: landDust_3
+  - first:
+      213: -8431516500067592573
+    second: landDust_4
+  - first:
+      213: -6529903257208366913
+    second: landDust_5
+  - first:
+      213: 715656080982031529
+    second: landDust_6
+  - first:
+      213: 4657859253404007276
+    second: landDust_7
+  - first:
+      213: -873948913367854137
+    second: landDust_8
+  - first:
+      213: -2949906541004939978
+    second: landDust_9
+  - first:
+      213: 74171804716659663
+    second: landDust_10
+  - first:
+      213: -4066972118895570074
+    second: landDust_11
+  - first:
+      213: -7117282427283875436
+    second: landDust_12
+  - first:
+      213: -8967603008411101172
+    second: landDust_13
+  - first:
+      213: 5972316293262208136
+    second: landDust_14
+  - first:
+      213: -2638961145785942200
+    second: landDust_15
+  - first:
+      213: 1043158170200658277
+    second: landDust_16
+  - first:
+      213: 2376408741486891318
+    second: landDust_17
+  - first:
+      213: -4603300985005631075
+    second: landDust_18
+  - first:
+      213: 6979636325288886408
+    second: landDust_19
+  - first:
+      213: -7414149566543975318
+    second: landDust_20
+  - first:
+      213: -7449520193726180129
+    second: landDust_21
+  - first:
+      213: -8657825304287293573
+    second: landDust_22
+  - first:
+      213: 6711788080216680675
+    second: landDust_23
+  - first:
+      213: -1944257213724931470
+    second: landDust_24
+  - first:
+      213: 3745207393895535818
+    second: landDust_25
+  - first:
+      213: 8472997482642431502
+    second: landDust_26
+  - first:
+      213: 3755417419481101396
+    second: landDust_27
+  - first:
+      213: 7576268947781860935
+    second: landDust_28
+  - first:
+      213: -2525279678933219738
+    second: landDust_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: landDust_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 448
+        width: 254
+        height: 112
+      alignment: 9
+      pivot: {x: 0.5, y: 0.07143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c2dcadd845e75810800000000000000
+      internalID: 1754122681003594432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: landDust_1
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 448
+        width: 254
+        height: 112
+      alignment: 9
+      pivot: {x: 0.5, y: 0.07143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91fa6a7dac0a32150800000000000000
+      internalID: 5846693534318898969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: landDust_2
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 448
+        width: 254
+        height: 112
+      alignment: 9
+      pivot: {x: 0.5, y: 0.07143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f763e2a787fbab400800000000000000
+      internalID: 340795245986723455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: landDust_3
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 448
+        width: 254
+        height: 112
+      alignment: 9
+      pivot: {x: 0.5, y: 0.07143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8670cf96ae45f6970800000000000000
+      internalID: 8750305966781368168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: landDust_4
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 448
+        width: 254
+        height: 112
+      alignment: 9
+      pivot: {x: 0.5, y: 0.07143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38650af4a6c3dfa80800000000000000
+      internalID: -8431516500067592573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: landDust_5
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 448
+        width: 254
+        height: 112
+      alignment: 9
+      pivot: {x: 0.5, y: 0.07143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb8dd60a59f1165a0800000000000000
+      internalID: -6529903257208366913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: landDust_6
+      rect:
+        serializedVersion: 2
+        x: 1524
+        y: 448
+        width: 254
+        height: 112
+      alignment: 9
+      pivot: {x: 0.5, y: 0.07143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ac3848f9658ee900800000000000000
+      internalID: 715656080982031529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: landDust_7
+      rect:
+        serializedVersion: 2
+        x: 1778
+        y: 448
+        width: 254
+        height: 112
+      alignment: 9
+      pivot: {x: 0.5, y: 0.07143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6b79e4005a04a040800000000000000
+      internalID: 4657859253404007276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: landDust_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 336
+        width: 254
+        height: 112
+      alignment: 9
+      pivot: {x: 0.5, y: 0.07143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c3dedaf71c1fd3f0800000000000000
+      internalID: -873948913367854137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: landDust_9
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 336
+        width: 254
+        height: 112
+      alignment: 9
+      pivot: {x: 0.5, y: 0.07143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63d9cc651a3df07d0800000000000000
+      internalID: -2949906541004939978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: landDust_10
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 336
+        width: 254
+        height: 112
+      alignment: 9
+      pivot: {x: 0.5, y: 0.07143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc37c780dd2870100800000000000000
+      internalID: 74171804716659663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: landDust_11
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 336
+        width: 254
+        height: 112
+      alignment: 9
+      pivot: {x: 0.5, y: 0.07143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 663dfc5d7663f87c0800000000000000
+      internalID: -4066972118895570074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: landDust_12
+      rect:
+        serializedVersion: 2
+        x: 1524
+        y: 336
+        width: 254
+        height: 112
+      alignment: 9
+      pivot: {x: 0.5, y: 0.07143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4995d9367555a3d90800000000000000
+      internalID: -7117282427283875436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: landDust_13
+      rect:
+        serializedVersion: 2
+        x: 1778
+        y: 336
+        width: 254
+        height: 112
+      alignment: 9
+      pivot: {x: 0.5, y: 0.07143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c089ee4839cac8380800000000000000
+      internalID: -8967603008411101172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: landDust_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 254
+        height: 112
+      alignment: 9
+      pivot: {x: 0.5, y: 0.07143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88ceb2aa60ee1e250800000000000000
+      internalID: 5972316293262208136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: landDust_15
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 224
+        width: 254
+        height: 112
+      alignment: 9
+      pivot: {x: 0.5, y: 0.07143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84ffe59d1d6806bd0800000000000000
+      internalID: -2638961145785942200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: landDust_16
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 224
+        width: 254
+        height: 112
+      alignment: 9
+      pivot: {x: 0.5, y: 0.07143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5615b5334da0a7e00800000000000000
+      internalID: 1043158170200658277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: landDust_17
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 224
+        width: 254
+        height: 112
+      alignment: 9
+      pivot: {x: 0.5, y: 0.07143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 631957dd823baf020800000000000000
+      internalID: 2376408741486891318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: landDust_18
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 224
+        width: 254
+        height: 112
+      alignment: 9
+      pivot: {x: 0.5, y: 0.07143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d99988ab42acd10c0800000000000000
+      internalID: -4603300985005631075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: landDust_19
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 224
+        width: 254
+        height: 112
+      alignment: 9
+      pivot: {x: 0.5, y: 0.07143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 880c1461246acd060800000000000000
+      internalID: 6979636325288886408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: landDust_20
+      rect:
+        serializedVersion: 2
+        x: 1524
+        y: 224
+        width: 254
+        height: 112
+      alignment: 9
+      pivot: {x: 0.5, y: 0.07143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6ca7864046ab1990800000000000000
+      internalID: -7414149566543975318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: landDust_21
+      rect:
+        serializedVersion: 2
+        x: 1778
+        y: 224
+        width: 254
+        height: 112
+      alignment: 9
+      pivot: {x: 0.5, y: 0.07143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd41ad16adcfd9890800000000000000
+      internalID: -7449520193726180129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: landDust_22
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 112
+        width: 254
+        height: 112
+      alignment: 9
+      pivot: {x: 0.5, y: 0.07143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7f4192c1c939d780800000000000000
+      internalID: -8657825304287293573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: landDust_23
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 112
+        width: 254
+        height: 112
+      alignment: 9
+      pivot: {x: 0.5, y: 0.07143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e82409c2bf052d50800000000000000
+      internalID: 6711788080216680675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: landDust_24
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 112
+        width: 254
+        height: 112
+      alignment: 9
+      pivot: {x: 0.5, y: 0.07143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27a4fef7d5c9405e0800000000000000
+      internalID: -1944257213724931470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: landDust_25
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 112
+        width: 254
+        height: 112
+      alignment: 9
+      pivot: {x: 0.5, y: 0.07143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac45f432846a9f330800000000000000
+      internalID: 3745207393895535818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: landDust_26
+      rect:
+        serializedVersion: 2
+        x: 1524
+        y: 112
+        width: 254
+        height: 112
+      alignment: 9
+      pivot: {x: 0.5, y: 0.07143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0e5eaf8152269570800000000000000
+      internalID: 8472997482642431502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: landDust_27
+      rect:
+        serializedVersion: 2
+        x: 1778
+        y: 112
+        width: 254
+        height: 112
+      alignment: 9
+      pivot: {x: 0.5, y: 0.07143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4543c77fe3ced1430800000000000000
+      internalID: 3755417419481101396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: landDust_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 254
+        height: 112
+      alignment: 9
+      pivot: {x: 0.5, y: 0.07143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74e3c5b9770542960800000000000000
+      internalID: 7576268947781860935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: landDust_29
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 0
+        width: 254
+        height: 112
+      alignment: 9
+      pivot: {x: 0.5, y: 0.07143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6664ca2f28764fcd0800000000000000
+      internalID: -2525279678933219738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      21_land_dust-ezgif.com-gif-to-sprite-converter_0: 1777574172326267093
+      21_land_dust-ezgif.com-gif-to-sprite-converter_1: -4442941632756803984
+      21_land_dust-ezgif.com-gif-to-sprite-converter_10: 7605898452218114955
+      21_land_dust-ezgif.com-gif-to-sprite-converter_100: -6795765772022084726
+      21_land_dust-ezgif.com-gif-to-sprite-converter_101: 8190962814293611748
+      21_land_dust-ezgif.com-gif-to-sprite-converter_102: -2972959121294235056
+      21_land_dust-ezgif.com-gif-to-sprite-converter_103: -1513013026132627167
+      21_land_dust-ezgif.com-gif-to-sprite-converter_104: -453165285097283196
+      21_land_dust-ezgif.com-gif-to-sprite-converter_105: -8898737307143865152
+      21_land_dust-ezgif.com-gif-to-sprite-converter_106: -2455704545675460875
+      21_land_dust-ezgif.com-gif-to-sprite-converter_11: -4812388770955036878
+      21_land_dust-ezgif.com-gif-to-sprite-converter_12: -1388643672615305336
+      21_land_dust-ezgif.com-gif-to-sprite-converter_13: -8434196410157843974
+      21_land_dust-ezgif.com-gif-to-sprite-converter_14: -8960492595056285892
+      21_land_dust-ezgif.com-gif-to-sprite-converter_15: 7563076197135827170
+      21_land_dust-ezgif.com-gif-to-sprite-converter_16: -7790029409509027890
+      21_land_dust-ezgif.com-gif-to-sprite-converter_17: -7035015077209550358
+      21_land_dust-ezgif.com-gif-to-sprite-converter_18: -6402177788852797166
+      21_land_dust-ezgif.com-gif-to-sprite-converter_19: -8400764380662088996
+      21_land_dust-ezgif.com-gif-to-sprite-converter_2: -4204631130201620996
+      21_land_dust-ezgif.com-gif-to-sprite-converter_20: 1745949819215969304
+      21_land_dust-ezgif.com-gif-to-sprite-converter_21: -4866705851069957031
+      21_land_dust-ezgif.com-gif-to-sprite-converter_22: 7481580864507170753
+      21_land_dust-ezgif.com-gif-to-sprite-converter_23: -6795091376007486405
+      21_land_dust-ezgif.com-gif-to-sprite-converter_24: 3445404806333782535
+      21_land_dust-ezgif.com-gif-to-sprite-converter_25: 2636959618181668036
+      21_land_dust-ezgif.com-gif-to-sprite-converter_26: -9036841848944304442
+      21_land_dust-ezgif.com-gif-to-sprite-converter_27: -4873073067417448340
+      21_land_dust-ezgif.com-gif-to-sprite-converter_28: -5950920008722062737
+      21_land_dust-ezgif.com-gif-to-sprite-converter_29: 2468752206361914412
+      21_land_dust-ezgif.com-gif-to-sprite-converter_3: 8387458667920159172
+      21_land_dust-ezgif.com-gif-to-sprite-converter_30: -8700494777353647060
+      21_land_dust-ezgif.com-gif-to-sprite-converter_31: -4592059676492361409
+      21_land_dust-ezgif.com-gif-to-sprite-converter_32: -8906675750294860904
+      21_land_dust-ezgif.com-gif-to-sprite-converter_33: 873213324746049211
+      21_land_dust-ezgif.com-gif-to-sprite-converter_34: -7233852865408723427
+      21_land_dust-ezgif.com-gif-to-sprite-converter_35: -5771390080401048435
+      21_land_dust-ezgif.com-gif-to-sprite-converter_36: -7929197169562289660
+      21_land_dust-ezgif.com-gif-to-sprite-converter_37: -9079354755485452471
+      21_land_dust-ezgif.com-gif-to-sprite-converter_38: 7151927445753132936
+      21_land_dust-ezgif.com-gif-to-sprite-converter_39: 8526755919157098156
+      21_land_dust-ezgif.com-gif-to-sprite-converter_4: 4460022481038909951
+      21_land_dust-ezgif.com-gif-to-sprite-converter_40: -806428459712506469
+      21_land_dust-ezgif.com-gif-to-sprite-converter_41: 781851737610162324
+      21_land_dust-ezgif.com-gif-to-sprite-converter_42: 3720532531823561173
+      21_land_dust-ezgif.com-gif-to-sprite-converter_43: -4489570902546459789
+      21_land_dust-ezgif.com-gif-to-sprite-converter_44: -5246678550174540677
+      21_land_dust-ezgif.com-gif-to-sprite-converter_45: -9099978303040630216
+      21_land_dust-ezgif.com-gif-to-sprite-converter_46: -6367417508791310675
+      21_land_dust-ezgif.com-gif-to-sprite-converter_47: -3204675288056291809
+      21_land_dust-ezgif.com-gif-to-sprite-converter_48: -2239520631002235356
+      21_land_dust-ezgif.com-gif-to-sprite-converter_49: 2565718194959467665
+      21_land_dust-ezgif.com-gif-to-sprite-converter_5: 4028939880036332835
+      21_land_dust-ezgif.com-gif-to-sprite-converter_50: 1113247171221653720
+      21_land_dust-ezgif.com-gif-to-sprite-converter_51: 2106746686857078374
+      21_land_dust-ezgif.com-gif-to-sprite-converter_52: 2557907104023522656
+      21_land_dust-ezgif.com-gif-to-sprite-converter_53: 9011248074022909330
+      21_land_dust-ezgif.com-gif-to-sprite-converter_54: 4670339408530487380
+      21_land_dust-ezgif.com-gif-to-sprite-converter_55: 5028242574592416730
+      21_land_dust-ezgif.com-gif-to-sprite-converter_56: -8133306991591999154
+      21_land_dust-ezgif.com-gif-to-sprite-converter_57: -7578577249821236053
+      21_land_dust-ezgif.com-gif-to-sprite-converter_58: 5358821716016761280
+      21_land_dust-ezgif.com-gif-to-sprite-converter_59: 957772031257111052
+      21_land_dust-ezgif.com-gif-to-sprite-converter_6: 6661732072328605406
+      21_land_dust-ezgif.com-gif-to-sprite-converter_60: 8530764270576526700
+      21_land_dust-ezgif.com-gif-to-sprite-converter_61: 2937358731428875521
+      21_land_dust-ezgif.com-gif-to-sprite-converter_62: -7578386084538331515
+      21_land_dust-ezgif.com-gif-to-sprite-converter_63: -1593657472369836077
+      21_land_dust-ezgif.com-gif-to-sprite-converter_64: -1850028430490551150
+      21_land_dust-ezgif.com-gif-to-sprite-converter_65: 5753271900981779530
+      21_land_dust-ezgif.com-gif-to-sprite-converter_66: 2387647514499918743
+      21_land_dust-ezgif.com-gif-to-sprite-converter_67: -768469034758746362
+      21_land_dust-ezgif.com-gif-to-sprite-converter_68: -1237443010500376924
+      21_land_dust-ezgif.com-gif-to-sprite-converter_69: 5822753881569265347
+      21_land_dust-ezgif.com-gif-to-sprite-converter_7: 6282159906866187186
+      21_land_dust-ezgif.com-gif-to-sprite-converter_70: -8210827038708175375
+      21_land_dust-ezgif.com-gif-to-sprite-converter_71: 788523045164129895
+      21_land_dust-ezgif.com-gif-to-sprite-converter_72: 5131630252325858079
+      21_land_dust-ezgif.com-gif-to-sprite-converter_73: 2606261080466251494
+      21_land_dust-ezgif.com-gif-to-sprite-converter_74: -4503197091283101792
+      21_land_dust-ezgif.com-gif-to-sprite-converter_75: -3307605831804633540
+      21_land_dust-ezgif.com-gif-to-sprite-converter_76: 4530253211798285438
+      21_land_dust-ezgif.com-gif-to-sprite-converter_77: 1571618284185767633
+      21_land_dust-ezgif.com-gif-to-sprite-converter_78: -5324445927914944681
+      21_land_dust-ezgif.com-gif-to-sprite-converter_79: -5847925180087300321
+      21_land_dust-ezgif.com-gif-to-sprite-converter_8: 3578099870640194047
+      21_land_dust-ezgif.com-gif-to-sprite-converter_80: -3917619291119793553
+      21_land_dust-ezgif.com-gif-to-sprite-converter_81: -2147623706566824700
+      21_land_dust-ezgif.com-gif-to-sprite-converter_82: -8565978046749731718
+      21_land_dust-ezgif.com-gif-to-sprite-converter_83: 8092312257316374220
+      21_land_dust-ezgif.com-gif-to-sprite-converter_84: -1793244929733138670
+      21_land_dust-ezgif.com-gif-to-sprite-converter_85: -640110435904198211
+      21_land_dust-ezgif.com-gif-to-sprite-converter_86: -5831012521400234705
+      21_land_dust-ezgif.com-gif-to-sprite-converter_87: -3163896782772938048
+      21_land_dust-ezgif.com-gif-to-sprite-converter_88: -357430486780218172
+      21_land_dust-ezgif.com-gif-to-sprite-converter_89: -3700029500293710426
+      21_land_dust-ezgif.com-gif-to-sprite-converter_9: 9114505149351622381
+      21_land_dust-ezgif.com-gif-to-sprite-converter_90: 3026595433854626739
+      21_land_dust-ezgif.com-gif-to-sprite-converter_91: 6684704044989577352
+      21_land_dust-ezgif.com-gif-to-sprite-converter_92: 3695218837862088231
+      21_land_dust-ezgif.com-gif-to-sprite-converter_93: 3773853721777784461
+      21_land_dust-ezgif.com-gif-to-sprite-converter_94: -7968480495155348498
+      21_land_dust-ezgif.com-gif-to-sprite-converter_95: -4713956128504069657
+      21_land_dust-ezgif.com-gif-to-sprite-converter_96: 4614194348477449518
+      21_land_dust-ezgif.com-gif-to-sprite-converter_97: 5626131986583565560
+      21_land_dust-ezgif.com-gif-to-sprite-converter_98: -8690175785640806390
+      21_land_dust-ezgif.com-gif-to-sprite-converter_99: 204169122875538890
+      landDust_0: 1754122681003594432
+      landDust_1: 5846693534318898969
+      landDust_10: 74171804716659663
+      landDust_11: -4066972118895570074
+      landDust_12: -7117282427283875436
+      landDust_13: -8967603008411101172
+      landDust_14: 5972316293262208136
+      landDust_15: -2638961145785942200
+      landDust_16: 1043158170200658277
+      landDust_17: 2376408741486891318
+      landDust_18: -4603300985005631075
+      landDust_19: 6979636325288886408
+      landDust_2: 340795245986723455
+      landDust_20: -7414149566543975318
+      landDust_21: -7449520193726180129
+      landDust_22: -8657825304287293573
+      landDust_23: 6711788080216680675
+      landDust_24: -1944257213724931470
+      landDust_25: 3745207393895535818
+      landDust_26: 8472997482642431502
+      landDust_27: 3755417419481101396
+      landDust_28: 7576268947781860935
+      landDust_29: -2525279678933219738
+      landDust_3: 8750305966781368168
+      landDust_4: -8431516500067592573
+      landDust_5: -6529903257208366913
+      landDust_6: 715656080982031529
+      landDust_7: 4657859253404007276
+      landDust_8: -873948913367854137
+      landDust_9: -2949906541004939978
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

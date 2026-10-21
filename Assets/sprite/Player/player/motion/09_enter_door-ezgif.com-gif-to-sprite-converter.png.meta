@@ -1,0 +1,567 @@
+fileFormatVersion: 2
+guid: b3bdbf8eac3e2784d9650ced36fee019
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 775110052575939676
+    second: 09_enter_door-ezgif.com-gif-to-sprite-converter_0
+  - first:
+      213: -3306288602862062753
+    second: 09_enter_door-ezgif.com-gif-to-sprite-converter_1
+  - first:
+      213: 6080675009324516643
+    second: 09_enter_door-ezgif.com-gif-to-sprite-converter_2
+  - first:
+      213: 9000730117339082920
+    second: 09_enter_door-ezgif.com-gif-to-sprite-converter_3
+  - first:
+      213: 1194692489098661024
+    second: 09_enter_door-ezgif.com-gif-to-sprite-converter_4
+  - first:
+      213: -7943828222586740408
+    second: 09_enter_door-ezgif.com-gif-to-sprite-converter_5
+  - first:
+      213: -9052537560771710337
+    second: 09_enter_door-ezgif.com-gif-to-sprite-converter_6
+  - first:
+      213: 80391840842763852
+    second: 09_enter_door-ezgif.com-gif-to-sprite-converter_7
+  - first:
+      213: -7981162581822598978
+    second: 09_enter_door-ezgif.com-gif-to-sprite-converter_8
+  - first:
+      213: -6342863558995254357
+    second: 09_enter_door-ezgif.com-gif-to-sprite-converter_9
+  - first:
+      213: -6481371104438659124
+    second: 09_enter_door-ezgif.com-gif-to-sprite-converter_10
+  - first:
+      213: 7483954398499002674
+    second: 09_enter_door-ezgif.com-gif-to-sprite-converter_11
+  - first:
+      213: 1679561888961620460
+    second: 09_enter_door-ezgif.com-gif-to-sprite-converter_12
+  - first:
+      213: 6057853613501961784
+    second: 09_enter_door-ezgif.com-gif-to-sprite-converter_13
+  - first:
+      213: -8602373363441314301
+    second: 09_enter_door-ezgif.com-gif-to-sprite-converter_14
+  - first:
+      213: -4665333257052458377
+    second: enterDoor_0
+  - first:
+      213: -5518322617617631225
+    second: enterDoor_1
+  - first:
+      213: 6639465252529200745
+    second: enterDoor_2
+  - first:
+      213: 6483172763737703484
+    second: enterDoor_3
+  - first:
+      213: -9197428356542737202
+    second: enterDoor_4
+  - first:
+      213: -5866973018387106298
+    second: enterDoor_5
+  - first:
+      213: 4966580250859274040
+    second: enterDoor_6
+  - first:
+      213: 3310252719443723069
+    second: enterDoor_7
+  - first:
+      213: 2538104003426842629
+    second: enterDoor_8
+  - first:
+      213: 8963018784149414207
+    second: enterDoor_9
+  - first:
+      213: -949136482223120160
+    second: enterDoor_10
+  - first:
+      213: 5772242914718903221
+    second: enterDoor_11
+  - first:
+      213: 1744782322120781433
+    second: enterDoor_12
+  - first:
+      213: -4342968729844188188
+    second: enterDoor_13
+  - first:
+      213: -9004367122796905909
+    second: enterDoor_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: enterDoor_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 608
+        width: 268
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7727296ee18614fb0800000000000000
+      internalID: -4665333257052458377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enterDoor_1
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 608
+        width: 268
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 708b5ec01dafa63b0800000000000000
+      internalID: -5518322617617631225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enterDoor_2
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 608
+        width: 268
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96e5d83487e142c50800000000000000
+      internalID: 6639465252529200745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enterDoor_3
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 608
+        width: 268
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c34c210874bd8f950800000000000000
+      internalID: 6483172763737703484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enterDoor_4
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 608
+        width: 268
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec45a29c3ab2c5080800000000000000
+      internalID: -9197428356542737202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enterDoor_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 304
+        width: 268
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6063c34df13549ea0800000000000000
+      internalID: -5866973018387106298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enterDoor_6
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 304
+        width: 268
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83fffe09c66dce440800000000000000
+      internalID: 4966580250859274040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enterDoor_7
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 304
+        width: 268
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d33c6335f4160fd20800000000000000
+      internalID: 3310252719443723069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enterDoor_8
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 304
+        width: 268
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 508f047c428293320800000000000000
+      internalID: 2538104003426842629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enterDoor_9
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 304
+        width: 268
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f312168981a036c70800000000000000
+      internalID: 8963018784149414207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enterDoor_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 268
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e02abde56df3d2f0800000000000000
+      internalID: -949136482223120160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enterDoor_11
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 0
+        width: 268
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bbe51929502b1050800000000000000
+      internalID: 5772242914718903221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enterDoor_12
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 0
+        width: 268
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97ee3681746b63810800000000000000
+      internalID: 1744782322120781433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enterDoor_13
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 0
+        width: 268
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ebf10343fcaab3c0800000000000000
+      internalID: -4342968729844188188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enterDoor_14
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 0
+        width: 268
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4afb7a1fcf0a0380800000000000000
+      internalID: -9004367122796905909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      09_enter_door-ezgif.com-gif-to-sprite-converter_0: 775110052575939676
+      09_enter_door-ezgif.com-gif-to-sprite-converter_1: -3306288602862062753
+      09_enter_door-ezgif.com-gif-to-sprite-converter_10: -6481371104438659124
+      09_enter_door-ezgif.com-gif-to-sprite-converter_11: 7483954398499002674
+      09_enter_door-ezgif.com-gif-to-sprite-converter_12: 1679561888961620460
+      09_enter_door-ezgif.com-gif-to-sprite-converter_13: 6057853613501961784
+      09_enter_door-ezgif.com-gif-to-sprite-converter_14: -8602373363441314301
+      09_enter_door-ezgif.com-gif-to-sprite-converter_2: 6080675009324516643
+      09_enter_door-ezgif.com-gif-to-sprite-converter_3: 9000730117339082920
+      09_enter_door-ezgif.com-gif-to-sprite-converter_4: 1194692489098661024
+      09_enter_door-ezgif.com-gif-to-sprite-converter_5: -7943828222586740408
+      09_enter_door-ezgif.com-gif-to-sprite-converter_6: -9052537560771710337
+      09_enter_door-ezgif.com-gif-to-sprite-converter_7: 80391840842763852
+      09_enter_door-ezgif.com-gif-to-sprite-converter_8: -7981162581822598978
+      09_enter_door-ezgif.com-gif-to-sprite-converter_9: -6342863558995254357
+      enterDoor_0: -4665333257052458377
+      enterDoor_1: -5518322617617631225
+      enterDoor_10: -949136482223120160
+      enterDoor_11: 5772242914718903221
+      enterDoor_12: 1744782322120781433
+      enterDoor_13: -4342968729844188188
+      enterDoor_14: -9004367122796905909
+      enterDoor_2: 6639465252529200745
+      enterDoor_3: 6483172763737703484
+      enterDoor_4: -9197428356542737202
+      enterDoor_5: -5866973018387106298
+      enterDoor_6: 4966580250859274040
+      enterDoor_7: 3310252719443723069
+      enterDoor_8: 2538104003426842629
+      enterDoor_9: 8963018784149414207
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

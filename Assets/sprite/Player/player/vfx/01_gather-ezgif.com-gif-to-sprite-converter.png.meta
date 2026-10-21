@@ -1,0 +1,1043 @@
+fileFormatVersion: 2
+guid: 2db922e31fe3e48448d02ac323795c96
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7400166389226734812
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_0
+  - first:
+      213: 7131184620024519324
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_1
+  - first:
+      213: -6625293918894482631
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_2
+  - first:
+      213: 5529596667602113294
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_3
+  - first:
+      213: -8369891784094001089
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_4
+  - first:
+      213: 6214849342380928726
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_5
+  - first:
+      213: 2143615083999428710
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_6
+  - first:
+      213: 5996605897334237428
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_7
+  - first:
+      213: 3462389804248489808
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_8
+  - first:
+      213: -699459806894009790
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_9
+  - first:
+      213: -7147122519337274502
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_10
+  - first:
+      213: 1002153089532298011
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_11
+  - first:
+      213: -2121583264916685926
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_12
+  - first:
+      213: 470049603701840857
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_13
+  - first:
+      213: -6186858007715652308
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_14
+  - first:
+      213: -668320558381331371
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_15
+  - first:
+      213: -45457982905156037
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_16
+  - first:
+      213: -2372473393267470142
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_17
+  - first:
+      213: 8889694991436674142
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_18
+  - first:
+      213: 9196648618386187036
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_19
+  - first:
+      213: 7579098166102911358
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_20
+  - first:
+      213: -8892814876139275618
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_21
+  - first:
+      213: 6225617535855257527
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_22
+  - first:
+      213: 4254268045607096105
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_23
+  - first:
+      213: -8680703748794109910
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_24
+  - first:
+      213: -817003290895013321
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_25
+  - first:
+      213: 1502560960237929142
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_26
+  - first:
+      213: -4541433630052355684
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_27
+  - first:
+      213: 3983743643039932608
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_28
+  - first:
+      213: -3327852268204825934
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_29
+  - first:
+      213: 956384017396401836
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_30
+  - first:
+      213: -8167055960702167679
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_31
+  - first:
+      213: -3113529167690391290
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_32
+  - first:
+      213: -6012609878992942722
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_33
+  - first:
+      213: 4992188377943623424
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_34
+  - first:
+      213: -2580024568846216043
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_35
+  - first:
+      213: -6072414956776437750
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_36
+  - first:
+      213: -8229911024738738386
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_37
+  - first:
+      213: -8264002775834989480
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_38
+  - first:
+      213: 2111518705579940225
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_39
+  - first:
+      213: -8189275330240280708
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_40
+  - first:
+      213: 4892740544333971754
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_41
+  - first:
+      213: 4508354878970269775
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_42
+  - first:
+      213: 982609373724212533
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_43
+  - first:
+      213: 8805643228172798066
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_44
+  - first:
+      213: 7176596965059847619
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_45
+  - first:
+      213: -3982367576978460679
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_46
+  - first:
+      213: -6131056955169645461
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_47
+  - first:
+      213: 6446501727941073813
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_48
+  - first:
+      213: 3904151209129897219
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_49
+  - first:
+      213: 103476259557919225
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_50
+  - first:
+      213: 6303311363198843047
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_51
+  - first:
+      213: 72651308585900092
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_52
+  - first:
+      213: -3699934450652483889
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_53
+  - first:
+      213: -2420074411145015178
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_54
+  - first:
+      213: -4648266176923718299
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_55
+  - first:
+      213: -7514796827056950609
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_56
+  - first:
+      213: -7664428935928057959
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_57
+  - first:
+      213: 2716332859675795264
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_58
+  - first:
+      213: 7430044926721659015
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_59
+  - first:
+      213: -7528850162861222894
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_60
+  - first:
+      213: 8348150249534367102
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_61
+  - first:
+      213: -5559747721084750366
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_62
+  - first:
+      213: 2413054168447353545
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_63
+  - first:
+      213: -3359097223182549170
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_64
+  - first:
+      213: -1371444022712001697
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_65
+  - first:
+      213: -4445508801940591568
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_66
+  - first:
+      213: -2775392358161868388
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_67
+  - first:
+      213: 8548770615208430732
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_68
+  - first:
+      213: -2975774008812902264
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_69
+  - first:
+      213: -6130805654189108305
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_70
+  - first:
+      213: 2232172812963025593
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_71
+  - first:
+      213: 6616171859010571639
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_72
+  - first:
+      213: 2400499392963823573
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_73
+  - first:
+      213: -3975442450096423762
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_74
+  - first:
+      213: 5507066684215499535
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_75
+  - first:
+      213: 2327028369270146753
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_76
+  - first:
+      213: -2368358541766508398
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_77
+  - first:
+      213: -7364367721115472823
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_78
+  - first:
+      213: -4018515847162928966
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_79
+  - first:
+      213: -5346385885647631828
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_80
+  - first:
+      213: -7162182033228153244
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_81
+  - first:
+      213: -3711860737780702752
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_82
+  - first:
+      213: -4592361608579961124
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_83
+  - first:
+      213: -2313805711720084082
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_84
+  - first:
+      213: -551217252652833942
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_85
+  - first:
+      213: 552076559039681806
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_86
+  - first:
+      213: 8719102385475998665
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_87
+  - first:
+      213: -5865386747048063264
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_88
+  - first:
+      213: -5912962504524804180
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_89
+  - first:
+      213: -3710465604170498839
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_90
+  - first:
+      213: -2402499121008609295
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_91
+  - first:
+      213: 5525155843335305962
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_92
+  - first:
+      213: 8683615212068405031
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_93
+  - first:
+      213: -8348778138793087008
+    second: 01_gather-ezgif.com-gif-to-sprite-converter_94
+  - first:
+      213: 7306513593154261215
+    second: gather_0
+  - first:
+      213: 8406854335740360009
+    second: gather_1
+  - first:
+      213: 1593190136100102475
+    second: gather_2
+  - first:
+      213: 4692642693193862563
+    second: gather_3
+  - first:
+      213: 2928491988428267855
+    second: gather_4
+  - first:
+      213: 4122032013736513027
+    second: gather_5
+  - first:
+      213: -6665648819363063663
+    second: gather_6
+  - first:
+      213: -4845445412173768058
+    second: gather_7
+  - first:
+      213: -737383046035059207
+    second: gather_8
+  - first:
+      213: -4938565328082668710
+    second: gather_9
+  - first:
+      213: 5565638278840949777
+    second: gather_10
+  - first:
+      213: 8491055451254089975
+    second: gather_11
+  - first:
+      213: -349668364197815475
+    second: gather_12
+  - first:
+      213: -6238905262438770435
+    second: gather_13
+  - first:
+      213: -7590429411347337014
+    second: gather_14
+  - first:
+      213: -4720825591929404360
+    second: gather_15
+  - first:
+      213: 1135505607082847894
+    second: gather_16
+  - first:
+      213: 7179216552677195767
+    second: gather_17
+  - first:
+      213: -754413637488635945
+    second: gather_18
+  - first:
+      213: -4439127463682347916
+    second: gather_19
+  - first:
+      213: 3728100642565883143
+    second: gather_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: gather_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1744
+        width: 508
+        height: 436
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd0d582c663f56560800000000000000
+      internalID: 7306513593154261215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gather_1
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 1744
+        width: 508
+        height: 436
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 945b1481a752ba470800000000000000
+      internalID: 8406854335740360009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gather_2
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 1744
+        width: 508
+        height: 436
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4127e9dcf52c1610800000000000000
+      internalID: 1593190136100102475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gather_3
+      rect:
+        serializedVersion: 2
+        x: 1524
+        y: 1744
+        width: 508
+        height: 436
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ad07a1baad9f1140800000000000000
+      internalID: 4692642693193862563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gather_4
+      rect:
+        serializedVersion: 2
+        x: 2032
+        y: 1744
+        width: 508
+        height: 436
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4128d992f714a820800000000000000
+      internalID: 2928491988428267855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gather_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1308
+        width: 508
+        height: 436
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30e8d8be646643930800000000000000
+      internalID: 4122032013736513027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gather_6
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 1308
+        width: 508
+        height: 436
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 198dc5407bbde73a0800000000000000
+      internalID: -6665648819363063663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gather_7
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 1308
+        width: 508
+        height: 436
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68a16d4e11581ccb0800000000000000
+      internalID: -4845445412173768058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gather_8
+      rect:
+        serializedVersion: 2
+        x: 1524
+        y: 1308
+        width: 508
+        height: 436
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fd4fa5c60a44c5f0800000000000000
+      internalID: -737383046035059207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gather_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 872
+        width: 508
+        height: 436
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a53729feff0b67bb0800000000000000
+      internalID: -4938565328082668710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gather_10
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 872
+        width: 508
+        height: 436
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11c91aec68e1d3d40800000000000000
+      internalID: 5565638278840949777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gather_11
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 872
+        width: 508
+        height: 436
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f8e42402f946d570800000000000000
+      internalID: 8491055451254089975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gather_12
+      rect:
+        serializedVersion: 2
+        x: 1524
+        y: 872
+        width: 508
+        height: 436
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4b1cc2b97ab52bf0800000000000000
+      internalID: -349668364197815475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gather_13
+      rect:
+        serializedVersion: 2
+        x: 2032
+        y: 872
+        width: 508
+        height: 436
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df8950d08b4fa69a0800000000000000
+      internalID: -6238905262438770435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gather_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 436
+        width: 508
+        height: 436
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac0f6fb8aa069a690800000000000000
+      internalID: -7590429411347337014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gather_15
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 436
+        width: 508
+        height: 436
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 834897ad2224c7eb0800000000000000
+      internalID: -4720825591929404360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gather_16
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 436
+        width: 508
+        height: 436
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69e23ae555022cf00800000000000000
+      internalID: 1135505607082847894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gather_17
+      rect:
+        serializedVersion: 2
+        x: 1524
+        y: 436
+        width: 508
+        height: 436
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ffbde3ea63b1a360800000000000000
+      internalID: 7179216552677195767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gather_18
+      rect:
+        serializedVersion: 2
+        x: 2032
+        y: 436
+        width: 508
+        height: 436
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7df87c33bc8c785f0800000000000000
+      internalID: -754413637488635945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gather_19
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 0
+        width: 508
+        height: 436
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47c688e571d0562c0800000000000000
+      internalID: -4439127463682347916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gather_20
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 0
+        width: 508
+        height: 436
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7058b0738cfdcb330800000000000000
+      internalID: 3728100642565883143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      01_gather-ezgif.com-gif-to-sprite-converter_0: -7400166389226734812
+      01_gather-ezgif.com-gif-to-sprite-converter_1: 7131184620024519324
+      01_gather-ezgif.com-gif-to-sprite-converter_10: -7147122519337274502
+      01_gather-ezgif.com-gif-to-sprite-converter_11: 1002153089532298011
+      01_gather-ezgif.com-gif-to-sprite-converter_12: -2121583264916685926
+      01_gather-ezgif.com-gif-to-sprite-converter_13: 470049603701840857
+      01_gather-ezgif.com-gif-to-sprite-converter_14: -6186858007715652308
+      01_gather-ezgif.com-gif-to-sprite-converter_15: -668320558381331371
+      01_gather-ezgif.com-gif-to-sprite-converter_16: -45457982905156037
+      01_gather-ezgif.com-gif-to-sprite-converter_17: -2372473393267470142
+      01_gather-ezgif.com-gif-to-sprite-converter_18: 8889694991436674142
+      01_gather-ezgif.com-gif-to-sprite-converter_19: 9196648618386187036
+      01_gather-ezgif.com-gif-to-sprite-converter_2: -6625293918894482631
+      01_gather-ezgif.com-gif-to-sprite-converter_20: 7579098166102911358
+      01_gather-ezgif.com-gif-to-sprite-converter_21: -8892814876139275618
+      01_gather-ezgif.com-gif-to-sprite-converter_22: 6225617535855257527
+      01_gather-ezgif.com-gif-to-sprite-converter_23: 4254268045607096105
+      01_gather-ezgif.com-gif-to-sprite-converter_24: -8680703748794109910
+      01_gather-ezgif.com-gif-to-sprite-converter_25: -817003290895013321
+      01_gather-ezgif.com-gif-to-sprite-converter_26: 1502560960237929142
+      01_gather-ezgif.com-gif-to-sprite-converter_27: -4541433630052355684
+      01_gather-ezgif.com-gif-to-sprite-converter_28: 3983743643039932608
+      01_gather-ezgif.com-gif-to-sprite-converter_29: -3327852268204825934
+      01_gather-ezgif.com-gif-to-sprite-converter_3: 5529596667602113294
+      01_gather-ezgif.com-gif-to-sprite-converter_30: 956384017396401836
+      01_gather-ezgif.com-gif-to-sprite-converter_31: -8167055960702167679
+      01_gather-ezgif.com-gif-to-sprite-converter_32: -3113529167690391290
+      01_gather-ezgif.com-gif-to-sprite-converter_33: -6012609878992942722
+      01_gather-ezgif.com-gif-to-sprite-converter_34: 4992188377943623424
+      01_gather-ezgif.com-gif-to-sprite-converter_35: -2580024568846216043
+      01_gather-ezgif.com-gif-to-sprite-converter_36: -6072414956776437750
+      01_gather-ezgif.com-gif-to-sprite-converter_37: -8229911024738738386
+      01_gather-ezgif.com-gif-to-sprite-converter_38: -8264002775834989480
+      01_gather-ezgif.com-gif-to-sprite-converter_39: 2111518705579940225
+      01_gather-ezgif.com-gif-to-sprite-converter_4: -8369891784094001089
+      01_gather-ezgif.com-gif-to-sprite-converter_40: -8189275330240280708
+      01_gather-ezgif.com-gif-to-sprite-converter_41: 4892740544333971754
+      01_gather-ezgif.com-gif-to-sprite-converter_42: 4508354878970269775
+      01_gather-ezgif.com-gif-to-sprite-converter_43: 982609373724212533
+      01_gather-ezgif.com-gif-to-sprite-converter_44: 8805643228172798066
+      01_gather-ezgif.com-gif-to-sprite-converter_45: 7176596965059847619
+      01_gather-ezgif.com-gif-to-sprite-converter_46: -3982367576978460679
+      01_gather-ezgif.com-gif-to-sprite-converter_47: -6131056955169645461
+      01_gather-ezgif.com-gif-to-sprite-converter_48: 6446501727941073813
+      01_gather-ezgif.com-gif-to-sprite-converter_49: 3904151209129897219
+      01_gather-ezgif.com-gif-to-sprite-converter_5: 6214849342380928726
+      01_gather-ezgif.com-gif-to-sprite-converter_50: 103476259557919225
+      01_gather-ezgif.com-gif-to-sprite-converter_51: 6303311363198843047
+      01_gather-ezgif.com-gif-to-sprite-converter_52: 72651308585900092
+      01_gather-ezgif.com-gif-to-sprite-converter_53: -3699934450652483889
+      01_gather-ezgif.com-gif-to-sprite-converter_54: -2420074411145015178
+      01_gather-ezgif.com-gif-to-sprite-converter_55: -4648266176923718299
+      01_gather-ezgif.com-gif-to-sprite-converter_56: -7514796827056950609
+      01_gather-ezgif.com-gif-to-sprite-converter_57: -7664428935928057959
+      01_gather-ezgif.com-gif-to-sprite-converter_58: 2716332859675795264
+      01_gather-ezgif.com-gif-to-sprite-converter_59: 7430044926721659015
+      01_gather-ezgif.com-gif-to-sprite-converter_6: 2143615083999428710
+      01_gather-ezgif.com-gif-to-sprite-converter_60: -7528850162861222894
+      01_gather-ezgif.com-gif-to-sprite-converter_61: 8348150249534367102
+      01_gather-ezgif.com-gif-to-sprite-converter_62: -5559747721084750366
+      01_gather-ezgif.com-gif-to-sprite-converter_63: 2413054168447353545
+      01_gather-ezgif.com-gif-to-sprite-converter_64: -3359097223182549170
+      01_gather-ezgif.com-gif-to-sprite-converter_65: -1371444022712001697
+      01_gather-ezgif.com-gif-to-sprite-converter_66: -4445508801940591568
+      01_gather-ezgif.com-gif-to-sprite-converter_67: -2775392358161868388
+      01_gather-ezgif.com-gif-to-sprite-converter_68: 8548770615208430732
+      01_gather-ezgif.com-gif-to-sprite-converter_69: -2975774008812902264
+      01_gather-ezgif.com-gif-to-sprite-converter_7: 5996605897334237428
+      01_gather-ezgif.com-gif-to-sprite-converter_70: -6130805654189108305
+      01_gather-ezgif.com-gif-to-sprite-converter_71: 2232172812963025593
+      01_gather-ezgif.com-gif-to-sprite-converter_72: 6616171859010571639
+      01_gather-ezgif.com-gif-to-sprite-converter_73: 2400499392963823573
+      01_gather-ezgif.com-gif-to-sprite-converter_74: -3975442450096423762
+      01_gather-ezgif.com-gif-to-sprite-converter_75: 5507066684215499535
+      01_gather-ezgif.com-gif-to-sprite-converter_76: 2327028369270146753
+      01_gather-ezgif.com-gif-to-sprite-converter_77: -2368358541766508398
+      01_gather-ezgif.com-gif-to-sprite-converter_78: -7364367721115472823
+      01_gather-ezgif.com-gif-to-sprite-converter_79: -4018515847162928966
+      01_gather-ezgif.com-gif-to-sprite-converter_8: 3462389804248489808
+      01_gather-ezgif.com-gif-to-sprite-converter_80: -5346385885647631828
+      01_gather-ezgif.com-gif-to-sprite-converter_81: -7162182033228153244
+      01_gather-ezgif.com-gif-to-sprite-converter_82: -3711860737780702752
+      01_gather-ezgif.com-gif-to-sprite-converter_83: -4592361608579961124
+      01_gather-ezgif.com-gif-to-sprite-converter_84: -2313805711720084082
+      01_gather-ezgif.com-gif-to-sprite-converter_85: -551217252652833942
+      01_gather-ezgif.com-gif-to-sprite-converter_86: 552076559039681806
+      01_gather-ezgif.com-gif-to-sprite-converter_87: 8719102385475998665
+      01_gather-ezgif.com-gif-to-sprite-converter_88: -5865386747048063264
+      01_gather-ezgif.com-gif-to-sprite-converter_89: -5912962504524804180
+      01_gather-ezgif.com-gif-to-sprite-converter_9: -699459806894009790
+      01_gather-ezgif.com-gif-to-sprite-converter_90: -3710465604170498839
+      01_gather-ezgif.com-gif-to-sprite-converter_91: -2402499121008609295
+      01_gather-ezgif.com-gif-to-sprite-converter_92: 5525155843335305962
+      01_gather-ezgif.com-gif-to-sprite-converter_93: 8683615212068405031
+      01_gather-ezgif.com-gif-to-sprite-converter_94: -8348778138793087008
+      gather_0: 7306513593154261215
+      gather_1: 8406854335740360009
+      gather_10: 5565638278840949777
+      gather_11: 8491055451254089975
+      gather_12: -349668364197815475
+      gather_13: -6238905262438770435
+      gather_14: -7590429411347337014
+      gather_15: -4720825591929404360
+      gather_16: 1135505607082847894
+      gather_17: 7179216552677195767
+      gather_18: -754413637488635945
+      gather_19: -4439127463682347916
+      gather_2: 1593190136100102475
+      gather_20: 3728100642565883143
+      gather_3: 4692642693193862563
+      gather_4: 2928491988428267855
+      gather_5: 4122032013736513027
+      gather_6: -6665648819363063663
+      gather_7: -4845445412173768058
+      gather_8: -737383046035059207
+      gather_9: -4938565328082668710
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

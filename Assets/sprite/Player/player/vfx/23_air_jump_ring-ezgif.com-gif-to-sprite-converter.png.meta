@@ -1,0 +1,795 @@
+fileFormatVersion: 2
+guid: 5f267a45e018d784ca1dc8d5e4a1cef3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8088479878759518192
+    second: 23_air_jump_ring-ezgif.com-gif-to-sprite-converter_0
+  - first:
+      213: 3485989166333687709
+    second: 23_air_jump_ring-ezgif.com-gif-to-sprite-converter_1
+  - first:
+      213: 4128758281400631850
+    second: 23_air_jump_ring-ezgif.com-gif-to-sprite-converter_2
+  - first:
+      213: 2946270286115992408
+    second: 23_air_jump_ring-ezgif.com-gif-to-sprite-converter_3
+  - first:
+      213: 2833933645068421891
+    second: 23_air_jump_ring-ezgif.com-gif-to-sprite-converter_4
+  - first:
+      213: 6517456055768725333
+    second: 23_air_jump_ring-ezgif.com-gif-to-sprite-converter_5
+  - first:
+      213: -4986604684556155236
+    second: 23_air_jump_ring-ezgif.com-gif-to-sprite-converter_6
+  - first:
+      213: 3015251568193639296
+    second: 23_air_jump_ring-ezgif.com-gif-to-sprite-converter_7
+  - first:
+      213: -1561685256656579301
+    second: 23_air_jump_ring-ezgif.com-gif-to-sprite-converter_8
+  - first:
+      213: 261160321625038844
+    second: 23_air_jump_ring-ezgif.com-gif-to-sprite-converter_9
+  - first:
+      213: 5538483149051855933
+    second: 23_air_jump_ring-ezgif.com-gif-to-sprite-converter_10
+  - first:
+      213: 2567013944986544050
+    second: 23_air_jump_ring-ezgif.com-gif-to-sprite-converter_11
+  - first:
+      213: 6138538875182806167
+    second: 23_air_jump_ring-ezgif.com-gif-to-sprite-converter_12
+  - first:
+      213: 6178558600411995507
+    second: 23_air_jump_ring-ezgif.com-gif-to-sprite-converter_13
+  - first:
+      213: 6992797957487906046
+    second: 23_air_jump_ring-ezgif.com-gif-to-sprite-converter_14
+  - first:
+      213: 6941780072957030797
+    second: 23_air_jump_ring-ezgif.com-gif-to-sprite-converter_15
+  - first:
+      213: 570763328082772880
+    second: 23_air_jump_ring-ezgif.com-gif-to-sprite-converter_16
+  - first:
+      213: -7757190840456286639
+    second: 23_air_jump_ring-ezgif.com-gif-to-sprite-converter_17
+  - first:
+      213: 6409343535391697582
+    second: 23_air_jump_ring-ezgif.com-gif-to-sprite-converter_18
+  - first:
+      213: -1243138502746091091
+    second: 23_air_jump_ring-ezgif.com-gif-to-sprite-converter_19
+  - first:
+      213: -4110370781711544687
+    second: 23_air_jump_ring-ezgif.com-gif-to-sprite-converter_20
+  - first:
+      213: 7224905438646500268
+    second: 23_air_jump_ring-ezgif.com-gif-to-sprite-converter_21
+  - first:
+      213: 990322274043734973
+    second: 23_air_jump_ring-ezgif.com-gif-to-sprite-converter_22
+  - first:
+      213: 6536799446428561606
+    second: 23_air_jump_ring-ezgif.com-gif-to-sprite-converter_23
+  - first:
+      213: -404569521986152188
+    second: 23_air_jump_ring-ezgif.com-gif-to-sprite-converter_24
+  - first:
+      213: -6904737142663712555
+    second: 23_air_jump_ring-ezgif.com-gif-to-sprite-converter_25
+  - first:
+      213: 2900378377043919710
+    second: 23_air_jump_ring-ezgif.com-gif-to-sprite-converter_26
+  - first:
+      213: 7300560613670051187
+    second: 23_air_jump_ring-ezgif.com-gif-to-sprite-converter_27
+  - first:
+      213: -4291249371029946738
+    second: 23_air_jump_ring-ezgif.com-gif-to-sprite-converter_28
+  - first:
+      213: -8258493894076513153
+    second: 23_air_jump_ring-ezgif.com-gif-to-sprite-converter_29
+  - first:
+      213: 8976955484022573627
+    second: 23_air_jump_ring-ezgif.com-gif-to-sprite-converter_30
+  - first:
+      213: -2789397459087718999
+    second: 23_air_jump_ring-ezgif.com-gif-to-sprite-converter_31
+  - first:
+      213: -393864569253527959
+    second: 23_air_jump_ring-ezgif.com-gif-to-sprite-converter_32
+  - first:
+      213: -3648834222566779955
+    second: 23_air_jump_ring-ezgif.com-gif-to-sprite-converter_33
+  - first:
+      213: -6442176744745365435
+    second: 23_air_jump_ring-ezgif.com-gif-to-sprite-converter_34
+  - first:
+      213: -8787457279569617827
+    second: 23_air_jump_ring-ezgif.com-gif-to-sprite-converter_35
+  - first:
+      213: 8045286425092986994
+    second: 23_air_jump_ring-ezgif.com-gif-to-sprite-converter_36
+  - first:
+      213: -5943333585837045389
+    second: 23_air_jump_ring-ezgif.com-gif-to-sprite-converter_37
+  - first:
+      213: -580446270021221591
+    second: 23_air_jump_ring-ezgif.com-gif-to-sprite-converter_38
+  - first:
+      213: -567534020409596554
+    second: 23_air_jump_ring-ezgif.com-gif-to-sprite-converter_39
+  - first:
+      213: -3383281307284785292
+    second: 23_air_jump_ring-ezgif.com-gif-to-sprite-converter_40
+  - first:
+      213: 2836405272412479748
+    second: 23_air_jump_ring-ezgif.com-gif-to-sprite-converter_41
+  - first:
+      213: 7010697920831391580
+    second: 23_air_jump_ring-ezgif.com-gif-to-sprite-converter_42
+  - first:
+      213: 2953786674467378615
+    second: 23_air_jump_ring-ezgif.com-gif-to-sprite-converter_43
+  - first:
+      213: -326481770308711451
+    second: 23_air_jump_ring-ezgif.com-gif-to-sprite-converter_44
+  - first:
+      213: 457969554530207720
+    second: 23_air_jump_ring-ezgif.com-gif-to-sprite-converter_45
+  - first:
+      213: -958024157081969169
+    second: airJumpRing_0
+  - first:
+      213: 604630848203977805
+    second: airJumpRing_1
+  - first:
+      213: 2928968321774753780
+    second: airJumpRing_2
+  - first:
+      213: -8262131989511885130
+    second: airJumpRing_3
+  - first:
+      213: -8284540202375957914
+    second: airJumpRing_4
+  - first:
+      213: 1963082333597182614
+    second: airJumpRing_5
+  - first:
+      213: 1145598750486733643
+    second: airJumpRing_6
+  - first:
+      213: -5825666358175354994
+    second: airJumpRing_7
+  - first:
+      213: 980596613432974378
+    second: airJumpRing_8
+  - first:
+      213: 9137028601656652701
+    second: airJumpRing_9
+  - first:
+      213: -1136475425243270701
+    second: airJumpRing_10
+  - first:
+      213: 3789136311756303023
+    second: airJumpRing_11
+  - first:
+      213: 3379298608918441029
+    second: airJumpRing_12
+  - first:
+      213: -4393116835099217004
+    second: airJumpRing_13
+  - first:
+      213: 1959298806730043955
+    second: airJumpRing_14
+  - first:
+      213: 3644432335617805633
+    second: airJumpRing_15
+  - first:
+      213: -8242383448340821719
+    second: airJumpRing_16
+  - first:
+      213: -6474331842800301468
+    second: airJumpRing_17
+  - first:
+      213: 2203799756038820937
+    second: airJumpRing_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: airJumpRing_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 592
+        width: 268
+        height: 148
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: airJumpRing_1
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 592
+        width: 268
+        height: 148
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: airJumpRing_2
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 592
+        width: 268
+        height: 148
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: airJumpRing_3
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 592
+        width: 268
+        height: 148
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: airJumpRing_4
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 592
+        width: 268
+        height: 148
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: airJumpRing_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 444
+        width: 268
+        height: 148
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: airJumpRing_6
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 444
+        width: 268
+        height: 148
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: airJumpRing_7
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 444
+        width: 268
+        height: 148
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: airJumpRing_8
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 444
+        width: 268
+        height: 148
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: airJumpRing_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 296
+        width: 268
+        height: 148
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: airJumpRing_10
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 296
+        width: 268
+        height: 148
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: airJumpRing_11
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 296
+        width: 268
+        height: 148
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: airJumpRing_12
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 296
+        width: 268
+        height: 148
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: airJumpRing_13
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 296
+        width: 268
+        height: 148
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: airJumpRing_14
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 148
+        width: 268
+        height: 148
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: airJumpRing_15
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 148
+        width: 268
+        height: 148
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: airJumpRing_16
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 148
+        width: 268
+        height: 148
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: airJumpRing_17
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 148
+        width: 268
+        height: 148
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: airJumpRing_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 268
+        height: 148
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      23_air_jump_ring-ezgif.com-gif-to-sprite-converter_0: -8088479878759518192
+      23_air_jump_ring-ezgif.com-gif-to-sprite-converter_1: 3485989166333687709
+      23_air_jump_ring-ezgif.com-gif-to-sprite-converter_10: 5538483149051855933
+      23_air_jump_ring-ezgif.com-gif-to-sprite-converter_11: 2567013944986544050
+      23_air_jump_ring-ezgif.com-gif-to-sprite-converter_12: 6138538875182806167
+      23_air_jump_ring-ezgif.com-gif-to-sprite-converter_13: 6178558600411995507
+      23_air_jump_ring-ezgif.com-gif-to-sprite-converter_14: 6992797957487906046
+      23_air_jump_ring-ezgif.com-gif-to-sprite-converter_15: 6941780072957030797
+      23_air_jump_ring-ezgif.com-gif-to-sprite-converter_16: 570763328082772880
+      23_air_jump_ring-ezgif.com-gif-to-sprite-converter_17: -7757190840456286639
+      23_air_jump_ring-ezgif.com-gif-to-sprite-converter_18: 6409343535391697582
+      23_air_jump_ring-ezgif.com-gif-to-sprite-converter_19: -1243138502746091091
+      23_air_jump_ring-ezgif.com-gif-to-sprite-converter_2: 4128758281400631850
+      23_air_jump_ring-ezgif.com-gif-to-sprite-converter_20: -4110370781711544687
+      23_air_jump_ring-ezgif.com-gif-to-sprite-converter_21: 7224905438646500268
+      23_air_jump_ring-ezgif.com-gif-to-sprite-converter_22: 990322274043734973
+      23_air_jump_ring-ezgif.com-gif-to-sprite-converter_23: 6536799446428561606
+      23_air_jump_ring-ezgif.com-gif-to-sprite-converter_24: -404569521986152188
+      23_air_jump_ring-ezgif.com-gif-to-sprite-converter_25: -6904737142663712555
+      23_air_jump_ring-ezgif.com-gif-to-sprite-converter_26: 2900378377043919710
+      23_air_jump_ring-ezgif.com-gif-to-sprite-converter_27: 7300560613670051187
+      23_air_jump_ring-ezgif.com-gif-to-sprite-converter_28: -4291249371029946738
+      23_air_jump_ring-ezgif.com-gif-to-sprite-converter_29: -8258493894076513153
+      23_air_jump_ring-ezgif.com-gif-to-sprite-converter_3: 2946270286115992408
+      23_air_jump_ring-ezgif.com-gif-to-sprite-converter_30: 8976955484022573627
+      23_air_jump_ring-ezgif.com-gif-to-sprite-converter_31: -2789397459087718999
+      23_air_jump_ring-ezgif.com-gif-to-sprite-converter_32: -393864569253527959
+      23_air_jump_ring-ezgif.com-gif-to-sprite-converter_33: -3648834222566779955
+      23_air_jump_ring-ezgif.com-gif-to-sprite-converter_34: -6442176744745365435
+      23_air_jump_ring-ezgif.com-gif-to-sprite-converter_35: -8787457279569617827
+      23_air_jump_ring-ezgif.com-gif-to-sprite-converter_36: 8045286425092986994
+      23_air_jump_ring-ezgif.com-gif-to-sprite-converter_37: -5943333585837045389
+      23_air_jump_ring-ezgif.com-gif-to-sprite-converter_38: -580446270021221591
+      23_air_jump_ring-ezgif.com-gif-to-sprite-converter_39: -567534020409596554
+      23_air_jump_ring-ezgif.com-gif-to-sprite-converter_4: 2833933645068421891
+      23_air_jump_ring-ezgif.com-gif-to-sprite-converter_40: -3383281307284785292
+      23_air_jump_ring-ezgif.com-gif-to-sprite-converter_41: 2836405272412479748
+      23_air_jump_ring-ezgif.com-gif-to-sprite-converter_42: 7010697920831391580
+      23_air_jump_ring-ezgif.com-gif-to-sprite-converter_43: 2953786674467378615
+      23_air_jump_ring-ezgif.com-gif-to-sprite-converter_44: -326481770308711451
+      23_air_jump_ring-ezgif.com-gif-to-sprite-converter_45: 457969554530207720
+      23_air_jump_ring-ezgif.com-gif-to-sprite-converter_5: 6517456055768725333
+      23_air_jump_ring-ezgif.com-gif-to-sprite-converter_6: -4986604684556155236
+      23_air_jump_ring-ezgif.com-gif-to-sprite-converter_7: 3015251568193639296
+      23_air_jump_ring-ezgif.com-gif-to-sprite-converter_8: -1561685256656579301
+      23_air_jump_ring-ezgif.com-gif-to-sprite-converter_9: 261160321625038844
+      airJumpRing_0: -958024157081969169
+      airJumpRing_1: 604630848203977805
+      airJumpRing_10: -1136475425243270701
+      airJumpRing_11: 3789136311756303023
+      airJumpRing_12: 3379298608918441029
+      airJumpRing_13: -4393116835099217004
+      airJumpRing_14: 1959298806730043955
+      airJumpRing_15: 3644432335617805633
+      airJumpRing_16: -8242383448340821719
+      airJumpRing_17: -6474331842800301468
+      airJumpRing_18: 2203799756038820937
+      airJumpRing_2: 2928968321774753780
+      airJumpRing_3: -8262131989511885130
+      airJumpRing_4: -8284540202375957914
+      airJumpRing_5: 1963082333597182614
+      airJumpRing_6: 1145598750486733643
+      airJumpRing_7: -5825666358175354994
+      airJumpRing_8: 980596613432974378
+      airJumpRing_9: 9137028601656652701
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

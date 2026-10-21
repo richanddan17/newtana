@@ -45,7 +45,9 @@ public static class RoomSystemSetup
             string corridorName = $"Corridor_{i + 1}";
             Transform corridor = FindOrCreateCorridor(parent, corridorName);
             Undo.RecordObject(corridor, MenuPath);
-            corridor.localPosition = new Vector3(RoomWidth + i * (RoomWidth + CorridorWidth), 0f, 0f);
+            // 통로는 방 사이 빈 구간을 정확히 채운다: 방1[-20,20]·방2[24,64]·방3[68,108] → 통로 중심 22, 66
+            corridor.localPosition = new Vector3(
+                RoomWidth * 0.5f + CorridorWidth * 0.5f + i * (RoomWidth + CorridorWidth), 0f, 0f);
             ConfigureCorridor(corridor, CorridorWidth, CorridorHeight);
         }
 

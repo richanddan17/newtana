@@ -1,0 +1,387 @@
+fileFormatVersion: 2
+guid: 77753f9a63ef6b9429ef8f19f895f5e0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8405604044253718880
+    second: 07_climb-ezgif.com-gif-to-sprite-converter_0
+  - first:
+      213: 8151907558186753578
+    second: 07_climb-ezgif.com-gif-to-sprite-converter_1
+  - first:
+      213: 1189925645853434910
+    second: 07_climb-ezgif.com-gif-to-sprite-converter_2
+  - first:
+      213: -497687533218316867
+    second: 07_climb-ezgif.com-gif-to-sprite-converter_3
+  - first:
+      213: 5550080121090110172
+    second: 07_climb-ezgif.com-gif-to-sprite-converter_4
+  - first:
+      213: -2322912871354391824
+    second: 07_climb-ezgif.com-gif-to-sprite-converter_5
+  - first:
+      213: 8784472410457659861
+    second: 07_climb-ezgif.com-gif-to-sprite-converter_6
+  - first:
+      213: 4578573587700761436
+    second: 07_climb-ezgif.com-gif-to-sprite-converter_7
+  - first:
+      213: -270677154049763950
+    second: 07_climb-ezgif.com-gif-to-sprite-converter_8
+  - first:
+      213: 1684304223175151964
+    second: climb_0
+  - first:
+      213: -7106077621363497131
+    second: climb_1
+  - first:
+      213: 8991690321404396714
+    second: climb_2
+  - first:
+      213: 3380753689235674462
+    second: climb_3
+  - first:
+      213: -6694415359266328066
+    second: climb_4
+  - first:
+      213: 4270178884741702851
+    second: climb_5
+  - first:
+      213: 2263112225276982469
+    second: climb_6
+  - first:
+      213: -9001244150638092858
+    second: climb_7
+  - first:
+      213: -5220683635822371349
+    second: climb_8
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: climb_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 304
+        width: 220
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c519b0464c9df5710800000000000000
+      internalID: 1684304223175151964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: climb_1
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 304
+        width: 220
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 557a6409d04226d90800000000000000
+      internalID: -7106077621363497131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: climb_2
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 304
+        width: 220
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa480a115b6e8cc70800000000000000
+      internalID: 8991690321404396714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: climb_3
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 304
+        width: 220
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e55dbff7199daee20800000000000000
+      internalID: 3380753689235674462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: climb_4
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 304
+        width: 220
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef1f20403b8a813a0800000000000000
+      internalID: -6694415359266328066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: climb_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 220
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c427604219b24b30800000000000000
+      internalID: 4270178884741702851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: climb_6
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 0
+        width: 220
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c47a721490386f10800000000000000
+      internalID: 2263112225276982469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: climb_7
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 0
+        width: 220
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cd57a8b228251380800000000000000
+      internalID: -9001244150638092858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: climb_8
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 0
+        width: 220
+        height: 304
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: beddc12c4e76c87b0800000000000000
+      internalID: -5220683635822371349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      07_climb-ezgif.com-gif-to-sprite-converter_0: -8405604044253718880
+      07_climb-ezgif.com-gif-to-sprite-converter_1: 8151907558186753578
+      07_climb-ezgif.com-gif-to-sprite-converter_2: 1189925645853434910
+      07_climb-ezgif.com-gif-to-sprite-converter_3: -497687533218316867
+      07_climb-ezgif.com-gif-to-sprite-converter_4: 5550080121090110172
+      07_climb-ezgif.com-gif-to-sprite-converter_5: -2322912871354391824
+      07_climb-ezgif.com-gif-to-sprite-converter_6: 8784472410457659861
+      07_climb-ezgif.com-gif-to-sprite-converter_7: 4578573587700761436
+      07_climb-ezgif.com-gif-to-sprite-converter_8: -270677154049763950
+      climb_0: 1684304223175151964
+      climb_1: -7106077621363497131
+      climb_2: 8991690321404396714
+      climb_3: 3380753689235674462
+      climb_4: -6694415359266328066
+      climb_5: 4270178884741702851
+      climb_6: 2263112225276982469
+      climb_7: -9001244150638092858
+      climb_8: -5220683635822371349
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,347 @@
+[
+ {
+  "file": "01_gather-ezgif.com-gif-to-sprite-converter.png",
+  "cell": [
+   508,
+   436
+  ],
+  "framesPerColor": 25,
+  "outFrames": 25,
+  "outCols": 5,
+  "outRows": 5,
+  "sourceFrames": [
+   100,
+   124
+  ]
+ },
+ {
+  "file": "02_charge_loop-ezgif.com-gif-to-sprite-converter.png",
+  "cell": [
+   328,
+   208
+  ],
+  "framesPerColor": 40,
+  "outFrames": 40,
+  "outCols": 5,
+  "outRows": 8,
+  "sourceFrames": [
+   160,
+   199
+  ]
+ },
+ {
+  "file": "03_release-ezgif.com-gif-to-sprite-converter.png",
+  "cell": [
+   412,
+   400
+  ],
+  "framesPerColor": 21,
+  "outFrames": 21,
+  "outCols": 5,
+  "outRows": 5,
+  "sourceFrames": [
+   84,
+   104
+  ]
+ },
+ {
+  "file": "04_big_loop-ezgif.com-gif-to-sprite-converter.png",
+  "cell": [
+   448,
+   328
+  ],
+  "framesPerColor": 40,
+  "outFrames": 40,
+  "outCols": 5,
+  "outRows": 8,
+  "sourceFrames": [
+   160,
+   199
+  ]
+ },
+ {
+  "file": "05_big_release-ezgif.com-gif-to-sprite-converter.png",
+  "cell": [
+   484,
+   484
+  ],
+  "framesPerColor": 21,
+  "outFrames": 21,
+  "outCols": 5,
+  "outRows": 5,
+  "sourceFrames": [
+   84,
+   104
+  ]
+ },
+ {
+  "file": "06_aura-ezgif.com-gif-to-sprite-converter.png",
+  "cell": [
+   352,
+   412
+  ],
+  "framesPerColor": 40,
+  "outFrames": 40,
+  "outCols": 5,
+  "outRows": 8,
+  "sourceFrames": [
+   160,
+   199
+  ]
+ },
+ {
+  "file": "07_power_burst-ezgif.com-gif-to-sprite-converter.png",
+  "cell": [
+   364,
+   760
+  ],
+  "framesPerColor": 25,
+  "outFrames": 25,
+  "outCols": 5,
+  "outRows": 5,
+  "sourceFrames": [
+   100,
+   124
+  ]
+ },
+ {
+  "file": "08_basic_muzzle-ezgif.com-gif-to-sprite-converter.png",
+  "cell": [
+   196,
+   172
+  ],
+  "framesPerColor": 17,
+  "outFrames": 17,
+  "outCols": 5,
+  "outRows": 4,
+  "sourceFrames": [
+   68,
+   84
+  ]
+ },
+ {
+  "file": "09_basic_bolt-ezgif.com-gif-to-sprite-converter.png",
+  "cell": [
+   700,
+   304
+  ],
+  "framesPerColor": 10,
+  "outFrames": 10,
+  "outCols": 5,
+  "outRows": 2,
+  "sourceFrames": [
+   40,
+   49
+  ]
+ },
+ {
+  "file": "10_basic_impact-ezgif.com-gif-to-sprite-converter.png",
+  "cell": [
+   364,
+   376
+  ],
+  "framesPerColor": 22,
+  "outFrames": 22,
+  "outCols": 5,
+  "outRows": 5,
+  "sourceFrames": [
+   88,
+   109
+  ]
+ },
+ {
+  "file": "11_rapid_muzzle-ezgif.com-gif-to-sprite-converter.png",
+  "cell": [
+   196,
+   444
+  ],
+  "framesPerColor": 5,
+  "outFrames": 5,
+  "outCols": 5,
+  "outRows": 1,
+  "sourceFrames": [
+   20,
+   24
+  ]
+ },
+ {
+  "file": "12_rapid_bolt-ezgif.com-gif-to-sprite-converter.png",
+  "cell": [
+   700,
+   304
+  ],
+  "framesPerColor": 10,
+  "outFrames": 10,
+  "outCols": 5,
+  "outRows": 2,
+  "sourceFrames": [
+   40,
+   49
+  ]
+ },
+ {
+  "file": "13_rapid_impact-ezgif.com-gif-to-sprite-converter.png",
+  "cell": [
+   196,
+   196
+  ],
+  "framesPerColor": 19,
+  "outFrames": 19,
+  "outCols": 5,
+  "outRows": 4,
+  "sourceFrames": [
+   76,
+   94
+  ]
+ },
+ {
+  "file": "14_big_muzzle-ezgif.com-gif-to-sprite-converter.png",
+  "cell": [
+   484,
+   436
+  ],
+  "framesPerColor": 21,
+  "outFrames": 21,
+  "outCols": 5,
+  "outRows": 5,
+  "sourceFrames": [
+   84,
+   104
+  ]
+ },
+ {
+  "file": "15_big_orb-ezgif.com-gif-to-sprite-converter.png",
+  "cell": [
+   700,
+   344
+  ],
+  "framesPerColor": 20,
+  "outFrames": 20,
+  "outCols": 5,
+  "outRows": 4,
+  "sourceFrames": [
+   80,
+   99
+  ]
+ },
+ {
+  "file": "16_big_impact-ezgif.com-gif-to-sprite-converter.png",
+  "cell": [
+   664,
+   640
+  ],
+  "framesPerColor": 24,
+  "outFrames": 24,
+  "outCols": 5,
+  "outRows": 5,
+  "sourceFrames": [
+   96,
+   119
+  ]
+ },
+ {
+  "file": "17_arrow_release-ezgif.com-gif-to-sprite-converter.png",
+  "cell": [
+   100,
+   372
+  ],
+  "framesPerColor": 5,
+  "outFrames": 5,
+  "outCols": 5,
+  "outRows": 1,
+  "sourceFrames": [
+   20,
+   24
+  ]
+ },
+ {
+  "file": "18_energy_arrow-ezgif.com-gif-to-sprite-converter.png",
+  "cell": [
+   700,
+   304
+  ],
+  "framesPerColor": 10,
+  "outFrames": 10,
+  "outCols": 5,
+  "outRows": 2,
+  "sourceFrames": [
+   40,
+   49
+  ]
+ },
+ {
+  "file": "19_arrow_impact-ezgif.com-gif-to-sprite-converter.png",
+  "cell": [
+   208,
+   220
+  ],
+  "framesPerColor": 17,
+  "outFrames": 17,
+  "outCols": 5,
+  "outRows": 4,
+  "sourceFrames": [
+   68,
+   84
+  ]
+ },
+ {
+  "file": "20_jump_dust-ezgif.com-gif-to-sprite-converter.png",
+  "cell": [
+   292,
+   148
+  ],
+  "framesPerColor": 21,
+  "outFrames": 21,
+  "outCols": 5,
+  "outRows": 5,
+  "sourceFrames": [
+   84,
+   104
+  ]
+ },
+ {
+  "file": "21_land_dust-ezgif.com-gif-to-sprite-converter.png",
+  "cell": [
+   508,
+   112
+  ],
+  "framesPerColor": 22,
+  "outFrames": 22,
+  "outCols": 5,
+  "outRows": 5,
+  "sourceFrames": [
+   88,
+   109
+  ]
+ },
+ {
+  "file": "22_dash_dust-ezgif.com-gif-to-sprite-converter.png",
+  "cell": [
+   280,
+   160
+  ],
+  "framesPerColor": 22,
+  "outFrames": 22,
+  "outCols": 5,
+  "outRows": 5,
+  "sourceFrames": [
+   88,
+   109
+  ]
+ },
+ {
+  "file": "23_air_jump_ring-ezgif.com-gif-to-sprite-converter.png",
+  "cell": [
+   268,
+   148
+  ],
+  "framesPerColor": 22,
+  "outFrames": 22,
+  "outCols": 5,
+  "outRows": 5,
+  "sourceFrames": [
+   88,
+   109
+  ]
+ }
+]

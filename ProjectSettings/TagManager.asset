@@ -2,18 +2,21 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 2
-  tags: []
+  serializedVersion: 3
+  tags:
+  - Player
+  - Enemy
+  - Neutral
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Player
+  - Enemy
+  - Neutral
   - 
   - 
   - 
@@ -41,3 +44,17 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: BG_Far
+    uniqueID: 10000
+    locked: 0
+  - name: BG_Main
+    uniqueID: 10001
+    locked: 0
+  - name: FG
+    uniqueID: 10002
+    locked: 0
+  - name: Player
+    uniqueID: 10003
+    locked: 0
+  m_RenderingLayers:
+  - Default

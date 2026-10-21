@@ -1,0 +1,713 @@
+fileFormatVersion: 2
+guid: c02b7df7348c3d84794a7ca0ce920ffc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4004454961462971011
+    second: 13_rapid_impact-ezgif.com-gif-to-sprite-converter_0
+  - first:
+      213: 3458776209277933070
+    second: 13_rapid_impact-ezgif.com-gif-to-sprite-converter_1
+  - first:
+      213: -7651798092457829666
+    second: 13_rapid_impact-ezgif.com-gif-to-sprite-converter_2
+  - first:
+      213: -745386962574832240
+    second: 13_rapid_impact-ezgif.com-gif-to-sprite-converter_3
+  - first:
+      213: 1108457675745371503
+    second: 13_rapid_impact-ezgif.com-gif-to-sprite-converter_4
+  - first:
+      213: 471796147231547952
+    second: 13_rapid_impact-ezgif.com-gif-to-sprite-converter_5
+  - first:
+      213: 4708355032778614680
+    second: 13_rapid_impact-ezgif.com-gif-to-sprite-converter_6
+  - first:
+      213: 3600508469354822107
+    second: 13_rapid_impact-ezgif.com-gif-to-sprite-converter_7
+  - first:
+      213: 6333861625679549956
+    second: 13_rapid_impact-ezgif.com-gif-to-sprite-converter_8
+  - first:
+      213: -4384454596835435886
+    second: 13_rapid_impact-ezgif.com-gif-to-sprite-converter_9
+  - first:
+      213: 848329143861215000
+    second: 13_rapid_impact-ezgif.com-gif-to-sprite-converter_10
+  - first:
+      213: 599232477269804526
+    second: 13_rapid_impact-ezgif.com-gif-to-sprite-converter_11
+  - first:
+      213: 808843492103009003
+    second: 13_rapid_impact-ezgif.com-gif-to-sprite-converter_12
+  - first:
+      213: -2907984571422755515
+    second: 13_rapid_impact-ezgif.com-gif-to-sprite-converter_13
+  - first:
+      213: 4454323942134418957
+    second: 13_rapid_impact-ezgif.com-gif-to-sprite-converter_14
+  - first:
+      213: -3531639251072075137
+    second: 13_rapid_impact-ezgif.com-gif-to-sprite-converter_15
+  - first:
+      213: 7415992582435039975
+    second: 13_rapid_impact-ezgif.com-gif-to-sprite-converter_16
+  - first:
+      213: -6144722507958881690
+    second: 13_rapid_impact-ezgif.com-gif-to-sprite-converter_17
+  - first:
+      213: 8801142969120218416
+    second: 13_rapid_impact-ezgif.com-gif-to-sprite-converter_18
+  - first:
+      213: -6915918214515899637
+    second: 13_rapid_impact-ezgif.com-gif-to-sprite-converter_19
+  - first:
+      213: 4592877121445614088
+    second: 13_rapid_impact-ezgif.com-gif-to-sprite-converter_20
+  - first:
+      213: 3988905853518394800
+    second: 13_rapid_impact-ezgif.com-gif-to-sprite-converter_21
+  - first:
+      213: -3301378148295010789
+    second: 13_rapid_impact-ezgif.com-gif-to-sprite-converter_22
+  - first:
+      213: 2554034007558081171
+    second: 13_rapid_impact-ezgif.com-gif-to-sprite-converter_23
+  - first:
+      213: 5088191144960994957
+    second: 13_rapid_impact-ezgif.com-gif-to-sprite-converter_24
+  - first:
+      213: -1350679088153353400
+    second: 13_rapid_impact-ezgif.com-gif-to-sprite-converter_25
+  - first:
+      213: 4136259849791251404
+    second: 13_rapid_impact-ezgif.com-gif-to-sprite-converter_26
+  - first:
+      213: -1863663444174906028
+    second: 13_rapid_impact-ezgif.com-gif-to-sprite-converter_27
+  - first:
+      213: -6435837940062086837
+    second: 13_rapid_impact-ezgif.com-gif-to-sprite-converter_28
+  - first:
+      213: -5277321458560921961
+    second: 13_rapid_impact-ezgif.com-gif-to-sprite-converter_29
+  - first:
+      213: 6239958252208637281
+    second: 13_rapid_impact-ezgif.com-gif-to-sprite-converter_30
+  - first:
+      213: 3354774245392378705
+    second: 13_rapid_impact-ezgif.com-gif-to-sprite-converter_31
+  - first:
+      213: 3862014790183336931
+    second: 13_rapid_impact-ezgif.com-gif-to-sprite-converter_32
+  - first:
+      213: 3724211436066493202
+    second: 13_rapid_impact-ezgif.com-gif-to-sprite-converter_33
+  - first:
+      213: -7373591961762165244
+    second: 13_rapid_impact-ezgif.com-gif-to-sprite-converter_34
+  - first:
+      213: -543450486108282214
+    second: 13_rapid_impact-ezgif.com-gif-to-sprite-converter_35
+  - first:
+      213: -190952145813277367
+    second: 13_rapid_impact-ezgif.com-gif-to-sprite-converter_36
+  - first:
+      213: -1933634932471133942
+    second: 13_rapid_impact-ezgif.com-gif-to-sprite-converter_37
+  - first:
+      213: -2575805351290528293
+    second: 13_rapid_impact-ezgif.com-gif-to-sprite-converter_38
+  - first:
+      213: 1733446897895708648
+    second: 13_rapid_impact-ezgif.com-gif-to-sprite-converter_39
+  - first:
+      213: 7272217071378893247
+    second: 13_rapid_impact-ezgif.com-gif-to-sprite-converter_40
+  - first:
+      213: 6362802161736710067
+    second: 13_rapid_impact-ezgif.com-gif-to-sprite-converter_41
+  - first:
+      213: 3171097267714508618
+    second: 13_rapid_impact-ezgif.com-gif-to-sprite-converter_42
+  - first:
+      213: -6042030391852788785
+    second: 13_rapid_impact-ezgif.com-gif-to-sprite-converter_43
+  - first:
+      213: -5704880341373705066
+    second: 13_rapid_impact-ezgif.com-gif-to-sprite-converter_44
+  - first:
+      213: 2989942641502211754
+    second: rapidImpact_0
+  - first:
+      213: -1454937896004324060
+    second: rapidImpact_1
+  - first:
+      213: 2717890067681191462
+    second: rapidImpact_2
+  - first:
+      213: 7370577445851924171
+    second: rapidImpact_3
+  - first:
+      213: 7024372243054153312
+    second: rapidImpact_4
+  - first:
+      213: 8766399656657956930
+    second: rapidImpact_5
+  - first:
+      213: -7031180994532986982
+    second: rapidImpact_6
+  - first:
+      213: -8526437467453769608
+    second: rapidImpact_7
+  - first:
+      213: -3696468320664408029
+    second: rapidImpact_8
+  - first:
+      213: 2265614033698362887
+    second: rapidImpact_9
+  - first:
+      213: -7367207819998604026
+    second: rapidImpact_10
+  - first:
+      213: 2025408606222953325
+    second: rapidImpact_11
+  - first:
+      213: -689841721104603691
+    second: rapidImpact_12
+  - first:
+      213: 1099879637824363053
+    second: rapidImpact_13
+  - first:
+      213: -6640179265909020953
+    second: rapidImpact_14
+  - first:
+      213: -8553939963468947065
+    second: rapidImpact_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: rapidImpact_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 588
+        width: 196
+        height: 196
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aae4885bdf86e7920800000000000000
+      internalID: 2989942641502211754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rapidImpact_1
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 588
+        width: 196
+        height: 196
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 425786231b50fcbe0800000000000000
+      internalID: -1454937896004324060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rapidImpact_2
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 588
+        width: 196
+        height: 196
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62623b6dd92e7b520800000000000000
+      internalID: 2717890067681191462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rapidImpact_3
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 588
+        width: 196
+        height: 196
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc68281d22d894660800000000000000
+      internalID: 7370577445851924171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rapidImpact_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 392
+        width: 196
+        height: 196
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06e4b5d96559b7160800000000000000
+      internalID: 7024372243054153312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rapidImpact_5
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 392
+        width: 196
+        height: 196
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24034369a0288a970800000000000000
+      internalID: 8766399656657956930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rapidImpact_6
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 392
+        width: 196
+        height: 196
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9f2265632a3c6e90800000000000000
+      internalID: -7031180994532986982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rapidImpact_7
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 392
+        width: 196
+        height: 196
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87836d06c420ca980800000000000000
+      internalID: -8526437467453769608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rapidImpact_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 196
+        width: 196
+        height: 196
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3203057a5a183bcc0800000000000000
+      internalID: -3696468320664408029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rapidImpact_9
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 196
+        width: 196
+        height: 196
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7061bbcb5f3117f10800000000000000
+      internalID: 2265614033698362887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rapidImpact_10
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 196
+        width: 196
+        height: 196
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 605d086558b62c990800000000000000
+      internalID: -7367207819998604026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rapidImpact_11
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 196
+        width: 196
+        height: 196
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6b20f27562bb1c10800000000000000
+      internalID: 2025408606222953325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rapidImpact_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 196
+        height: 196
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d5e05e0c903d66f0800000000000000
+      internalID: -689841721104603691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rapidImpact_13
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 0
+        width: 196
+        height: 196
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2ad43404be834f00800000000000000
+      internalID: 1099879637824363053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rapidImpact_14
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 0
+        width: 196
+        height: 196
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e6249a832859d3a0800000000000000
+      internalID: -6640179265909020953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rapidImpact_15
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 0
+        width: 196
+        height: 196
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7816a678cec4a4980800000000000000
+      internalID: -8553939963468947065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      13_rapid_impact-ezgif.com-gif-to-sprite-converter_0: 4004454961462971011
+      13_rapid_impact-ezgif.com-gif-to-sprite-converter_1: 3458776209277933070
+      13_rapid_impact-ezgif.com-gif-to-sprite-converter_10: 848329143861215000
+      13_rapid_impact-ezgif.com-gif-to-sprite-converter_11: 599232477269804526
+      13_rapid_impact-ezgif.com-gif-to-sprite-converter_12: 808843492103009003
+      13_rapid_impact-ezgif.com-gif-to-sprite-converter_13: -2907984571422755515
+      13_rapid_impact-ezgif.com-gif-to-sprite-converter_14: 4454323942134418957
+      13_rapid_impact-ezgif.com-gif-to-sprite-converter_15: -3531639251072075137
+      13_rapid_impact-ezgif.com-gif-to-sprite-converter_16: 7415992582435039975
+      13_rapid_impact-ezgif.com-gif-to-sprite-converter_17: -6144722507958881690
+      13_rapid_impact-ezgif.com-gif-to-sprite-converter_18: 8801142969120218416
+      13_rapid_impact-ezgif.com-gif-to-sprite-converter_19: -6915918214515899637
+      13_rapid_impact-ezgif.com-gif-to-sprite-converter_2: -7651798092457829666
+      13_rapid_impact-ezgif.com-gif-to-sprite-converter_20: 4592877121445614088
+      13_rapid_impact-ezgif.com-gif-to-sprite-converter_21: 3988905853518394800
+      13_rapid_impact-ezgif.com-gif-to-sprite-converter_22: -3301378148295010789
+      13_rapid_impact-ezgif.com-gif-to-sprite-converter_23: 2554034007558081171
+      13_rapid_impact-ezgif.com-gif-to-sprite-converter_24: 5088191144960994957
+      13_rapid_impact-ezgif.com-gif-to-sprite-converter_25: -1350679088153353400
+      13_rapid_impact-ezgif.com-gif-to-sprite-converter_26: 4136259849791251404
+      13_rapid_impact-ezgif.com-gif-to-sprite-converter_27: -1863663444174906028
+      13_rapid_impact-ezgif.com-gif-to-sprite-converter_28: -6435837940062086837
+      13_rapid_impact-ezgif.com-gif-to-sprite-converter_29: -5277321458560921961
+      13_rapid_impact-ezgif.com-gif-to-sprite-converter_3: -745386962574832240
+      13_rapid_impact-ezgif.com-gif-to-sprite-converter_30: 6239958252208637281
+      13_rapid_impact-ezgif.com-gif-to-sprite-converter_31: 3354774245392378705
+      13_rapid_impact-ezgif.com-gif-to-sprite-converter_32: 3862014790183336931
+      13_rapid_impact-ezgif.com-gif-to-sprite-converter_33: 3724211436066493202
+      13_rapid_impact-ezgif.com-gif-to-sprite-converter_34: -7373591961762165244
+      13_rapid_impact-ezgif.com-gif-to-sprite-converter_35: -543450486108282214
+      13_rapid_impact-ezgif.com-gif-to-sprite-converter_36: -190952145813277367
+      13_rapid_impact-ezgif.com-gif-to-sprite-converter_37: -1933634932471133942
+      13_rapid_impact-ezgif.com-gif-to-sprite-converter_38: -2575805351290528293
+      13_rapid_impact-ezgif.com-gif-to-sprite-converter_39: 1733446897895708648
+      13_rapid_impact-ezgif.com-gif-to-sprite-converter_4: 1108457675745371503
+      13_rapid_impact-ezgif.com-gif-to-sprite-converter_40: 7272217071378893247
+      13_rapid_impact-ezgif.com-gif-to-sprite-converter_41: 6362802161736710067
+      13_rapid_impact-ezgif.com-gif-to-sprite-converter_42: 3171097267714508618
+      13_rapid_impact-ezgif.com-gif-to-sprite-converter_43: -6042030391852788785
+      13_rapid_impact-ezgif.com-gif-to-sprite-converter_44: -5704880341373705066
+      13_rapid_impact-ezgif.com-gif-to-sprite-converter_5: 471796147231547952
+      13_rapid_impact-ezgif.com-gif-to-sprite-converter_6: 4708355032778614680
+      13_rapid_impact-ezgif.com-gif-to-sprite-converter_7: 3600508469354822107
+      13_rapid_impact-ezgif.com-gif-to-sprite-converter_8: 6333861625679549956
+      13_rapid_impact-ezgif.com-gif-to-sprite-converter_9: -4384454596835435886
+      rapidImpact_0: 2989942641502211754
+      rapidImpact_1: -1454937896004324060
+      rapidImpact_10: -7367207819998604026
+      rapidImpact_11: 2025408606222953325
+      rapidImpact_12: -689841721104603691
+      rapidImpact_13: 1099879637824363053
+      rapidImpact_14: -6640179265909020953
+      rapidImpact_15: -8553939963468947065
+      rapidImpact_2: 2717890067681191462
+      rapidImpact_3: 7370577445851924171
+      rapidImpact_4: 7024372243054153312
+      rapidImpact_5: 8766399656657956930
+      rapidImpact_6: -7031180994532986982
+      rapidImpact_7: -8526437467453769608
+      rapidImpact_8: -3696468320664408029
+      rapidImpact_9: 2265614033698362887
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

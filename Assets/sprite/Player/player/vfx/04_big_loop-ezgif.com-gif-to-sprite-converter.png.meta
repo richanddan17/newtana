@@ -1,0 +1,1557 @@
+fileFormatVersion: 2
+guid: d6428db57f85fad49b24a62b3e94ac5a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8176438552790798411
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_0
+  - first:
+      213: 6503537617978148993
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_1
+  - first:
+      213: -3065732903879596741
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_2
+  - first:
+      213: 8549983304672982767
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_3
+  - first:
+      213: -1426856825180770861
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_4
+  - first:
+      213: -2151056591293770252
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_5
+  - first:
+      213: -180374348984399371
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_6
+  - first:
+      213: -7280916215003479515
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_7
+  - first:
+      213: -3273096134358525573
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_8
+  - first:
+      213: 7534799998419787190
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_9
+  - first:
+      213: -8361762813070009345
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_10
+  - first:
+      213: -5504241324476431159
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_11
+  - first:
+      213: -8311154650418592233
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_12
+  - first:
+      213: 3949894035410020627
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_13
+  - first:
+      213: 6850335102642158760
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_14
+  - first:
+      213: 7568982874491515647
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_15
+  - first:
+      213: 9180996674383167466
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_16
+  - first:
+      213: -4641295827443526319
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_17
+  - first:
+      213: -828196955063687538
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_18
+  - first:
+      213: 8932435000555374668
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_19
+  - first:
+      213: -6135611638512530232
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_20
+  - first:
+      213: -7997139859708623675
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_21
+  - first:
+      213: 7366216058564959454
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_22
+  - first:
+      213: -6264339404112514466
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_23
+  - first:
+      213: 8803396982437861264
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_24
+  - first:
+      213: 6435626084343859212
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_25
+  - first:
+      213: -5359895371360179415
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_26
+  - first:
+      213: 7268147674966008647
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_27
+  - first:
+      213: -6866535606567572645
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_28
+  - first:
+      213: 7287709676780048686
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_29
+  - first:
+      213: -2092963145557893310
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_30
+  - first:
+      213: -825868947336982864
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_31
+  - first:
+      213: 8722632888140513936
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_32
+  - first:
+      213: -8996662936919556874
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_33
+  - first:
+      213: 1173585395802191715
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_34
+  - first:
+      213: -8730165771413441570
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_35
+  - first:
+      213: -794520342796753571
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_36
+  - first:
+      213: 6958804479733455790
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_37
+  - first:
+      213: -7159090227184772649
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_38
+  - first:
+      213: 3662831047247996349
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_39
+  - first:
+      213: -229236851142744485
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_40
+  - first:
+      213: 6704960978692153146
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_41
+  - first:
+      213: -7204186785897729408
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_42
+  - first:
+      213: 4006120598241463580
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_43
+  - first:
+      213: 1153858615136002270
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_44
+  - first:
+      213: -7140091486405537780
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_45
+  - first:
+      213: -160630476291857266
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_46
+  - first:
+      213: 7503565185576440216
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_47
+  - first:
+      213: 8689521372686598342
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_48
+  - first:
+      213: -5149021088058730339
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_49
+  - first:
+      213: -4738091099185606673
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_50
+  - first:
+      213: -865066998929970600
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_51
+  - first:
+      213: -893963129179290946
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_52
+  - first:
+      213: 7783191233766425659
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_53
+  - first:
+      213: -8232273497807379844
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_54
+  - first:
+      213: -8169317515520165195
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_55
+  - first:
+      213: -6788273339564339861
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_56
+  - first:
+      213: -938321022368879705
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_57
+  - first:
+      213: -3083686797311993686
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_58
+  - first:
+      213: 1038704738136473418
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_59
+  - first:
+      213: 3820619452710537969
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_60
+  - first:
+      213: -7014737795411128751
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_61
+  - first:
+      213: 5837888652231231842
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_62
+  - first:
+      213: -2742075167780232084
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_63
+  - first:
+      213: -9047670044791483515
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_64
+  - first:
+      213: -6729874949772234896
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_65
+  - first:
+      213: -479424621749284391
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_66
+  - first:
+      213: 1304081997588187100
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_67
+  - first:
+      213: 215905642864590894
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_68
+  - first:
+      213: 1712472734738748406
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_69
+  - first:
+      213: -948782478306226624
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_70
+  - first:
+      213: -1123534984222301212
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_71
+  - first:
+      213: 7910427826854313677
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_72
+  - first:
+      213: 7985858762710070816
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_73
+  - first:
+      213: 7830554280673473419
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_74
+  - first:
+      213: -3668429770529079420
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_75
+  - first:
+      213: 8501888412221164831
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_76
+  - first:
+      213: 6087111151054580825
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_77
+  - first:
+      213: 5554863232780611007
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_78
+  - first:
+      213: -4807990002674821565
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_79
+  - first:
+      213: 8848453704408739008
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_80
+  - first:
+      213: 2379762579925497872
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_81
+  - first:
+      213: 6472879604963961676
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_82
+  - first:
+      213: 4218635966931726989
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_83
+  - first:
+      213: -7707466575441290420
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_84
+  - first:
+      213: 4788439263613641558
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_85
+  - first:
+      213: 4105737659865172967
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_86
+  - first:
+      213: 8341644359934974097
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_87
+  - first:
+      213: 8402165610251133575
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_88
+  - first:
+      213: -6422972281884980368
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_89
+  - first:
+      213: -1199608667132659785
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_90
+  - first:
+      213: -6831969443662465088
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_91
+  - first:
+      213: -7551078598633659562
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_92
+  - first:
+      213: 1253312418517490505
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_93
+  - first:
+      213: 723434476414745592
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_94
+  - first:
+      213: -3218935201813026741
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_95
+  - first:
+      213: -2238904901730043183
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_96
+  - first:
+      213: -8629219174614027176
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_97
+  - first:
+      213: -5911877033409326603
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_98
+  - first:
+      213: -4342690949273717109
+    second: 04_big_loop-ezgif.com-gif-to-sprite-converter_99
+  - first:
+      213: 3001591642163438908
+    second: bigLoop_0
+  - first:
+      213: -7516046683657690688
+    second: bigLoop_1
+  - first:
+      213: 5341951728914245809
+    second: bigLoop_2
+  - first:
+      213: -213737052244112331
+    second: bigLoop_3
+  - first:
+      213: -6347207413714474920
+    second: bigLoop_4
+  - first:
+      213: -3159456912646621986
+    second: bigLoop_5
+  - first:
+      213: -6314120200240790046
+    second: bigLoop_6
+  - first:
+      213: 5586671353970238937
+    second: bigLoop_7
+  - first:
+      213: 7849538855042730009
+    second: bigLoop_8
+  - first:
+      213: -6327730254735353694
+    second: bigLoop_9
+  - first:
+      213: 3949581895304950536
+    second: bigLoop_10
+  - first:
+      213: -5149324653493980154
+    second: bigLoop_11
+  - first:
+      213: 8368865838673792571
+    second: bigLoop_12
+  - first:
+      213: -4642763144066527545
+    second: bigLoop_13
+  - first:
+      213: -4496778523148217216
+    second: bigLoop_14
+  - first:
+      213: -4605692701887733080
+    second: bigLoop_15
+  - first:
+      213: 537798636211412361
+    second: bigLoop_16
+  - first:
+      213: 6422184338380597596
+    second: bigLoop_17
+  - first:
+      213: -6606091559365863536
+    second: bigLoop_18
+  - first:
+      213: 6677769486344629263
+    second: bigLoop_19
+  - first:
+      213: -9200897590899592790
+    second: bigLoop_20
+  - first:
+      213: -2450015670216188885
+    second: bigLoop_21
+  - first:
+      213: -6580338991594728343
+    second: bigLoop_22
+  - first:
+      213: 6107136653691281709
+    second: bigLoop_23
+  - first:
+      213: 5373257531690858759
+    second: bigLoop_24
+  - first:
+      213: 2058685116439682922
+    second: bigLoop_25
+  - first:
+      213: -1992928260401620630
+    second: bigLoop_26
+  - first:
+      213: 5207150774013955490
+    second: bigLoop_27
+  - first:
+      213: -1697845677153172884
+    second: bigLoop_28
+  - first:
+      213: -3270934328421496282
+    second: bigLoop_29
+  - first:
+      213: -7620229891140854975
+    second: bigLoop_30
+  - first:
+      213: 1104826904708400791
+    second: bigLoop_31
+  - first:
+      213: -2726584009846025820
+    second: bigLoop_32
+  - first:
+      213: -3559136942421004214
+    second: bigLoop_33
+  - first:
+      213: -5551183359323836869
+    second: bigLoop_34
+  - first:
+      213: -6058177429619543493
+    second: bigLoop_35
+  - first:
+      213: -1634331779423004247
+    second: bigLoop_36
+  - first:
+      213: -5380726461952095293
+    second: bigLoop_37
+  - first:
+      213: 2347218129540434317
+    second: bigLoop_38
+  - first:
+      213: -9058869429283705380
+    second: bigLoop_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bigLoop_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2296
+        width: 448
+        height: 328
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c35eee702bbc7a920800000000000000
+      internalID: 3001591642163438908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigLoop_1
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 2296
+        width: 448
+        height: 328
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c1a459ec53a1b790800000000000000
+      internalID: -7516046683657690688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigLoop_2
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 2296
+        width: 448
+        height: 328
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b8a7396bcc622a40800000000000000
+      internalID: 5341951728914245809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigLoop_3
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 2296
+        width: 448
+        height: 328
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53c86ad8847a80df0800000000000000
+      internalID: -213737052244112331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigLoop_4
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 2296
+        width: 448
+        height: 328
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 858a2d57c703ae7a0800000000000000
+      internalID: -6347207413714474920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigLoop_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1968
+        width: 448
+        height: 328
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed4bb8e6daa5724d0800000000000000
+      internalID: -3159456912646621986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigLoop_6
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1968
+        width: 448
+        height: 328
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e5878ba12dbf58a0800000000000000
+      internalID: -6314120200240790046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigLoop_7
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1968
+        width: 448
+        height: 328
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d52f3a3ff7d78d40800000000000000
+      internalID: 5586671353970238937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigLoop_8
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 1968
+        width: 448
+        height: 328
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 918c271000a2fec60800000000000000
+      internalID: 7849538855042730009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigLoop_9
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1968
+        width: 448
+        height: 328
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a8d10cebd26f28a0800000000000000
+      internalID: -6327730254735353694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigLoop_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1640
+        width: 448
+        height: 328
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80337f8decbbfc630800000000000000
+      internalID: 3949581895304950536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigLoop_11
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1640
+        width: 448
+        height: 328
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 604745b828ce988b0800000000000000
+      internalID: -5149324653493980154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigLoop_12
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1640
+        width: 448
+        height: 328
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3e8d0fd32f242470800000000000000
+      internalID: 8368865838673792571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigLoop_13
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 1640
+        width: 448
+        height: 328
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ce83a5d487919fb0800000000000000
+      internalID: -4642763144066527545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigLoop_14
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1640
+        width: 448
+        height: 328
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 084152612cb3891c0800000000000000
+      internalID: -4496778523148217216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigLoop_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1312
+        width: 448
+        height: 328
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a26f5fb3ea4510c0800000000000000
+      internalID: -4605692701887733080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigLoop_16
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1312
+        width: 448
+        height: 328
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98d1210a205a67700800000000000000
+      internalID: 537798636211412361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigLoop_17
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1312
+        width: 448
+        height: 328
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c59a04b21ae202950800000000000000
+      internalID: 6422184338380597596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigLoop_18
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 1312
+        width: 448
+        height: 328
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0979a423ab27254a0800000000000000
+      internalID: -6606091559365863536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigLoop_19
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1312
+        width: 448
+        height: 328
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0ca38da7f33cac50800000000000000
+      internalID: 6677769486344629263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigLoop_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 984
+        width: 448
+        height: 328
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa1bea7b368df4080800000000000000
+      internalID: -9200897590899592790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigLoop_21
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 984
+        width: 448
+        height: 328
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2c9f9a8abbcffdd0800000000000000
+      internalID: -2450015670216188885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigLoop_22
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 984
+        width: 448
+        height: 328
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96418502d80fda4a0800000000000000
+      internalID: -6580338991594728343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigLoop_23
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 984
+        width: 448
+        height: 328
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d216906fd68e0c450800000000000000
+      internalID: 6107136653691281709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigLoop_24
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 984
+        width: 448
+        height: 328
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 709302f9145a19a40800000000000000
+      internalID: 5373257531690858759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigLoop_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 656
+        width: 448
+        height: 328
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6f55cdb43be19c10800000000000000
+      internalID: 2058685116439682922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigLoop_26
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 656
+        width: 448
+        height: 328
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a699cef5e42b754e0800000000000000
+      internalID: -1992928260401620630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigLoop_27
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 656
+        width: 448
+        height: 328
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ad80015a04834840800000000000000
+      internalID: 5207150774013955490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigLoop_28
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 656
+        width: 448
+        height: 328
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c624ad92a5a0078e0800000000000000
+      internalID: -1697845677153172884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigLoop_29
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 656
+        width: 448
+        height: 328
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62a4ec6fe8e4b92d0800000000000000
+      internalID: -3270934328421496282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigLoop_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 328
+        width: 448
+        height: 328
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14b5cb7a9418f3690800000000000000
+      internalID: -7620229891140854975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigLoop_31
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 328
+        width: 448
+        height: 328
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79640795732255f00800000000000000
+      internalID: 1104826904708400791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigLoop_32
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 328
+        width: 448
+        height: 328
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a11ed20a4a392ad0800000000000000
+      internalID: -2726584009846025820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigLoop_33
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 328
+        width: 448
+        height: 328
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a40b608dec76b9ec0800000000000000
+      internalID: -3559136942421004214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigLoop_34
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 328
+        width: 448
+        height: 328
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3e6178652c36f2b0800000000000000
+      internalID: -5551183359323836869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigLoop_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 448
+        height: 328
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b32fc31b9b70deba0800000000000000
+      internalID: -6058177429619543493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigLoop_36
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 448
+        height: 328
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a91c5ad7efa159e0800000000000000
+      internalID: -1634331779423004247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigLoop_37
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 448
+        height: 328
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cb0dc98ac1d355b0800000000000000
+      internalID: -5380726461952095293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigLoop_38
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 0
+        width: 448
+        height: 328
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d894d95e37ef29020800000000000000
+      internalID: 2347218129540434317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigLoop_39
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 0
+        width: 448
+        height: 328
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdd26e0004e684280800000000000000
+      internalID: -9058869429283705380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      04_big_loop-ezgif.com-gif-to-sprite-converter_0: -8176438552790798411
+      04_big_loop-ezgif.com-gif-to-sprite-converter_1: 6503537617978148993
+      04_big_loop-ezgif.com-gif-to-sprite-converter_10: -8361762813070009345
+      04_big_loop-ezgif.com-gif-to-sprite-converter_11: -5504241324476431159
+      04_big_loop-ezgif.com-gif-to-sprite-converter_12: -8311154650418592233
+      04_big_loop-ezgif.com-gif-to-sprite-converter_13: 3949894035410020627
+      04_big_loop-ezgif.com-gif-to-sprite-converter_14: 6850335102642158760
+      04_big_loop-ezgif.com-gif-to-sprite-converter_15: 7568982874491515647
+      04_big_loop-ezgif.com-gif-to-sprite-converter_16: 9180996674383167466
+      04_big_loop-ezgif.com-gif-to-sprite-converter_17: -4641295827443526319
+      04_big_loop-ezgif.com-gif-to-sprite-converter_18: -828196955063687538
+      04_big_loop-ezgif.com-gif-to-sprite-converter_19: 8932435000555374668
+      04_big_loop-ezgif.com-gif-to-sprite-converter_2: -3065732903879596741
+      04_big_loop-ezgif.com-gif-to-sprite-converter_20: -6135611638512530232
+      04_big_loop-ezgif.com-gif-to-sprite-converter_21: -7997139859708623675
+      04_big_loop-ezgif.com-gif-to-sprite-converter_22: 7366216058564959454
+      04_big_loop-ezgif.com-gif-to-sprite-converter_23: -6264339404112514466
+      04_big_loop-ezgif.com-gif-to-sprite-converter_24: 8803396982437861264
+      04_big_loop-ezgif.com-gif-to-sprite-converter_25: 6435626084343859212
+      04_big_loop-ezgif.com-gif-to-sprite-converter_26: -5359895371360179415
+      04_big_loop-ezgif.com-gif-to-sprite-converter_27: 7268147674966008647
+      04_big_loop-ezgif.com-gif-to-sprite-converter_28: -6866535606567572645
+      04_big_loop-ezgif.com-gif-to-sprite-converter_29: 7287709676780048686
+      04_big_loop-ezgif.com-gif-to-sprite-converter_3: 8549983304672982767
+      04_big_loop-ezgif.com-gif-to-sprite-converter_30: -2092963145557893310
+      04_big_loop-ezgif.com-gif-to-sprite-converter_31: -825868947336982864
+      04_big_loop-ezgif.com-gif-to-sprite-converter_32: 8722632888140513936
+      04_big_loop-ezgif.com-gif-to-sprite-converter_33: -8996662936919556874
+      04_big_loop-ezgif.com-gif-to-sprite-converter_34: 1173585395802191715
+      04_big_loop-ezgif.com-gif-to-sprite-converter_35: -8730165771413441570
+      04_big_loop-ezgif.com-gif-to-sprite-converter_36: -794520342796753571
+      04_big_loop-ezgif.com-gif-to-sprite-converter_37: 6958804479733455790
+      04_big_loop-ezgif.com-gif-to-sprite-converter_38: -7159090227184772649
+      04_big_loop-ezgif.com-gif-to-sprite-converter_39: 3662831047247996349
+      04_big_loop-ezgif.com-gif-to-sprite-converter_4: -1426856825180770861
+      04_big_loop-ezgif.com-gif-to-sprite-converter_40: -229236851142744485
+      04_big_loop-ezgif.com-gif-to-sprite-converter_41: 6704960978692153146
+      04_big_loop-ezgif.com-gif-to-sprite-converter_42: -7204186785897729408
+      04_big_loop-ezgif.com-gif-to-sprite-converter_43: 4006120598241463580
+      04_big_loop-ezgif.com-gif-to-sprite-converter_44: 1153858615136002270
+      04_big_loop-ezgif.com-gif-to-sprite-converter_45: -7140091486405537780
+      04_big_loop-ezgif.com-gif-to-sprite-converter_46: -160630476291857266
+      04_big_loop-ezgif.com-gif-to-sprite-converter_47: 7503565185576440216
+      04_big_loop-ezgif.com-gif-to-sprite-converter_48: 8689521372686598342
+      04_big_loop-ezgif.com-gif-to-sprite-converter_49: -5149021088058730339
+      04_big_loop-ezgif.com-gif-to-sprite-converter_5: -2151056591293770252
+      04_big_loop-ezgif.com-gif-to-sprite-converter_50: -4738091099185606673
+      04_big_loop-ezgif.com-gif-to-sprite-converter_51: -865066998929970600
+      04_big_loop-ezgif.com-gif-to-sprite-converter_52: -893963129179290946
+      04_big_loop-ezgif.com-gif-to-sprite-converter_53: 7783191233766425659
+      04_big_loop-ezgif.com-gif-to-sprite-converter_54: -8232273497807379844
+      04_big_loop-ezgif.com-gif-to-sprite-converter_55: -8169317515520165195
+      04_big_loop-ezgif.com-gif-to-sprite-converter_56: -6788273339564339861
+      04_big_loop-ezgif.com-gif-to-sprite-converter_57: -938321022368879705
+      04_big_loop-ezgif.com-gif-to-sprite-converter_58: -3083686797311993686
+      04_big_loop-ezgif.com-gif-to-sprite-converter_59: 1038704738136473418
+      04_big_loop-ezgif.com-gif-to-sprite-converter_6: -180374348984399371
+      04_big_loop-ezgif.com-gif-to-sprite-converter_60: 3820619452710537969
+      04_big_loop-ezgif.com-gif-to-sprite-converter_61: -7014737795411128751
+      04_big_loop-ezgif.com-gif-to-sprite-converter_62: 5837888652231231842
+      04_big_loop-ezgif.com-gif-to-sprite-converter_63: -2742075167780232084
+      04_big_loop-ezgif.com-gif-to-sprite-converter_64: -9047670044791483515
+      04_big_loop-ezgif.com-gif-to-sprite-converter_65: -6729874949772234896
+      04_big_loop-ezgif.com-gif-to-sprite-converter_66: -479424621749284391
+      04_big_loop-ezgif.com-gif-to-sprite-converter_67: 1304081997588187100
+      04_big_loop-ezgif.com-gif-to-sprite-converter_68: 215905642864590894
+      04_big_loop-ezgif.com-gif-to-sprite-converter_69: 1712472734738748406
+      04_big_loop-ezgif.com-gif-to-sprite-converter_7: -7280916215003479515
+      04_big_loop-ezgif.com-gif-to-sprite-converter_70: -948782478306226624
+      04_big_loop-ezgif.com-gif-to-sprite-converter_71: -1123534984222301212
+      04_big_loop-ezgif.com-gif-to-sprite-converter_72: 7910427826854313677
+      04_big_loop-ezgif.com-gif-to-sprite-converter_73: 7985858762710070816
+      04_big_loop-ezgif.com-gif-to-sprite-converter_74: 7830554280673473419
+      04_big_loop-ezgif.com-gif-to-sprite-converter_75: -3668429770529079420
+      04_big_loop-ezgif.com-gif-to-sprite-converter_76: 8501888412221164831
+      04_big_loop-ezgif.com-gif-to-sprite-converter_77: 6087111151054580825
+      04_big_loop-ezgif.com-gif-to-sprite-converter_78: 5554863232780611007
+      04_big_loop-ezgif.com-gif-to-sprite-converter_79: -4807990002674821565
+      04_big_loop-ezgif.com-gif-to-sprite-converter_8: -3273096134358525573
+      04_big_loop-ezgif.com-gif-to-sprite-converter_80: 8848453704408739008
+      04_big_loop-ezgif.com-gif-to-sprite-converter_81: 2379762579925497872
+      04_big_loop-ezgif.com-gif-to-sprite-converter_82: 6472879604963961676
+      04_big_loop-ezgif.com-gif-to-sprite-converter_83: 4218635966931726989
+      04_big_loop-ezgif.com-gif-to-sprite-converter_84: -7707466575441290420
+      04_big_loop-ezgif.com-gif-to-sprite-converter_85: 4788439263613641558
+      04_big_loop-ezgif.com-gif-to-sprite-converter_86: 4105737659865172967
+      04_big_loop-ezgif.com-gif-to-sprite-converter_87: 8341644359934974097
+      04_big_loop-ezgif.com-gif-to-sprite-converter_88: 8402165610251133575
+      04_big_loop-ezgif.com-gif-to-sprite-converter_89: -6422972281884980368
+      04_big_loop-ezgif.com-gif-to-sprite-converter_9: 7534799998419787190
+      04_big_loop-ezgif.com-gif-to-sprite-converter_90: -1199608667132659785
+      04_big_loop-ezgif.com-gif-to-sprite-converter_91: -6831969443662465088
+      04_big_loop-ezgif.com-gif-to-sprite-converter_92: -7551078598633659562
+      04_big_loop-ezgif.com-gif-to-sprite-converter_93: 1253312418517490505
+      04_big_loop-ezgif.com-gif-to-sprite-converter_94: 723434476414745592
+      04_big_loop-ezgif.com-gif-to-sprite-converter_95: -3218935201813026741
+      04_big_loop-ezgif.com-gif-to-sprite-converter_96: -2238904901730043183
+      04_big_loop-ezgif.com-gif-to-sprite-converter_97: -8629219174614027176
+      04_big_loop-ezgif.com-gif-to-sprite-converter_98: -5911877033409326603
+      04_big_loop-ezgif.com-gif-to-sprite-converter_99: -4342690949273717109
+      bigLoop_0: 3001591642163438908
+      bigLoop_1: -7516046683657690688
+      bigLoop_10: 3949581895304950536
+      bigLoop_11: -5149324653493980154
+      bigLoop_12: 8368865838673792571
+      bigLoop_13: -4642763144066527545
+      bigLoop_14: -4496778523148217216
+      bigLoop_15: -4605692701887733080
+      bigLoop_16: 537798636211412361
+      bigLoop_17: 6422184338380597596
+      bigLoop_18: -6606091559365863536
+      bigLoop_19: 6677769486344629263
+      bigLoop_2: 5341951728914245809
+      bigLoop_20: -9200897590899592790
+      bigLoop_21: -2450015670216188885
+      bigLoop_22: -6580338991594728343
+      bigLoop_23: 6107136653691281709
+      bigLoop_24: 5373257531690858759
+      bigLoop_25: 2058685116439682922
+      bigLoop_26: -1992928260401620630
+      bigLoop_27: 5207150774013955490
+      bigLoop_28: -1697845677153172884
+      bigLoop_29: -3270934328421496282
+      bigLoop_3: -213737052244112331
+      bigLoop_30: -7620229891140854975
+      bigLoop_31: 1104826904708400791
+      bigLoop_32: -2726584009846025820
+      bigLoop_33: -3559136942421004214
+      bigLoop_34: -5551183359323836869
+      bigLoop_35: -6058177429619543493
+      bigLoop_36: -1634331779423004247
+      bigLoop_37: -5380726461952095293
+      bigLoop_38: 2347218129540434317
+      bigLoop_39: -9058869429283705380
+      bigLoop_4: -6347207413714474920
+      bigLoop_5: -3159456912646621986
+      bigLoop_6: -6314120200240790046
+      bigLoop_7: 5586671353970238937
+      bigLoop_8: 7849538855042730009
+      bigLoop_9: -6327730254735353694
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
