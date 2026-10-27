@@ -18,6 +18,7 @@ public static class PlayerSheetGridDetector
     {
         public string id;
         public string file;
+        public string dir; // optional project-relative folder override (external combat sheets)
         public string pivotMode;
         public int texW, texH;
         public int cellW, cellH;
@@ -26,6 +27,9 @@ public static class PlayerSheetGridDetector
         public float[] pivot;
         public int[] contentUnion;
         public int[] cells; // {col,row,col,row,...} row-major
+        public int[] durationsMs; // optional per-frame durations; empty = frameInterval
+        public int loopStartFrame = -1; // -1/0 = first frame
+        public int loopEndFrame = -1; // -1 = last frame
     }
 
     [Serializable]
@@ -187,6 +191,8 @@ public static class PlayerSheetGridDetector
             sb.Append("    {\n");
             sb.Append("      \"id\": \"").Append(e.id).Append("\",\n");
             sb.Append("      \"file\": \"").Append(e.file).Append("\",\n");
+            if (!string.IsNullOrEmpty(e.dir))
+                sb.Append("      \"dir\": \"").Append(e.dir.Replace('\\', '/')).Append("\",\n");
             sb.Append("      \"pivotMode\": \"").Append(e.pivotMode).Append("\",\n");
             sb.Append("      \"texW\": ").Append(e.texW).Append(", \"texH\": ").Append(e.texH).Append(",\n");
             sb.Append("      \"cellW\": ").Append(e.cellW).Append(", \"cellH\": ").Append(e.cellH).Append(",\n");
@@ -195,6 +201,21 @@ public static class PlayerSheetGridDetector
             sb.Append("      \"pivot\": [").Append(e.pivot[0].ToString("0.#####")).Append(", ").Append(e.pivot[1].ToString("0.#####")).Append("],\n");
             sb.Append("      \"contentUnion\": [").Append(e.contentUnion[0]).Append(", ").Append(e.contentUnion[1]).Append(", ")
               .Append(e.contentUnion[2]).Append(", ").Append(e.contentUnion[3]).Append("],\n");
+            if (e.durationsMs != null && e.durationsMs.Length > 0)
+            {
+                sb.Append("      \"durationsMs\": [");
+                for (int k = 0; k < e.durationsMs.Length; k++)
+                {
+                    if (k > 0) sb.Append(", ");
+                    sb.Append(e.durationsMs[k]);
+                }
+                sb.Append("],\n");
+            }
+            if (e.loopEndFrame >= 0)
+            {
+                sb.Append("      \"loopStartFrame\": ").Append(Math.Max(0, e.loopStartFrame)).Append(",\n");
+                sb.Append("      \"loopEndFrame\": ").Append(e.loopEndFrame).Append(",\n");
+            }
             sb.Append("      \"cells\": [");
             for (int k = 0; k < e.cells.Length; k++)
             {

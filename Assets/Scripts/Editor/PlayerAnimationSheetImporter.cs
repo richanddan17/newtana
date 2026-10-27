@@ -64,6 +64,65 @@ public static class PlayerAnimationSheetImporter
                   (log.Count > 0 ? "\n" + string.Join("\n", log.ToArray()) : ""));
     }
 
+    /// <summary>
+    /// 현재 매니페스트에 이미 슬라이스된 스프라이트로 세트만 다시 빌드한다.
+    /// 저메모리 배치 환경에서 텍스처 재임포트 없이 세트/프리팹을 갱신할 때 사용한다.
+    /// </summary>
+    public static void RebuildSetFromManifest()
+    {
+        var manifest = LoadManifest();
+        if (manifest == null) return;
+
+        var set = LoadOrCreateSet();
+        BuildSet(set, manifest, new Dictionary<string, int>());
+        EditorUtility.SetDirty(set);
+        AssetDatabase.SaveAssets();
+        AssetDatabase.Refresh();
+
+        WirePlayer(set);
+        ApplyCombatToPlayerPrefab.Apply();
+
+        Debug.Log("[플레이어 시트 임포트] 세트 재빌드 완료 — 모션 " + manifest.motion.Length +
+                  "장, VFX " + manifest.vfx.Length + "장. 세트: " + SetAssetPath);
+    }
+
+    /// <summary>
+    /// 이미 올바르게 슬라이스된 시트는 건드리지 않고 누락된 시트만 임포트한다.
+    /// 저메모리 환경에서 대형 시트 재임포트로 인한 OOM을 피할 때 사용한다.
+    /// </summary>
+    public static void ImportMissingFromManifest()
+    {
+        var manifest = LoadManifest();
+        if (manifest == null) return;
+
+        var log = new List<string>();
+        var frameCounts = new Dictionary<string, int>();
+
+        foreach (var entry in manifest.motion)
+        {
+            frameCounts[entry.id] = ApplySheetIfMissing(MotionDir, entry, manifest.ppu, log);
+            EditorUtility.UnloadUnusedAssetsImmediate();
+        }
+        foreach (var entry in manifest.vfx)
+        {
+            frameCounts[entry.id] = ApplySheetIfMissing(VfxDir, entry, manifest.ppu, log);
+            EditorUtility.UnloadUnusedAssetsImmediate();
+        }
+
+        var set = LoadOrCreateSet();
+        BuildSet(set, manifest, frameCounts);
+        EditorUtility.SetDirty(set);
+        AssetDatabase.SaveAssets();
+        AssetDatabase.Refresh();
+
+        WirePlayer(set);
+        ApplyCombatToPlayerPrefab.Apply();
+
+        Debug.Log("[플레이어 시트 임포트] 누락 시트 임포트 완료 — 모션 " + manifest.motion.Length +
+                  "장, VFX " + manifest.vfx.Length + "장. 세트: " + SetAssetPath +
+                  (log.Count > 0 ? "\n" + string.Join("\n", log.ToArray()) : ""));
+    }
+
     public static void RegenerateManifest()
     {
         var manifest = PlayerSheetGridDetector.Detect(RootDir);
@@ -116,14 +175,24 @@ public static class PlayerAnimationSheetImporter
     }
 
     /// <summary>시트 하나를 Multiple 스프라이트로 슬라이스하고, 로드된 프레임 수를 반환한다.</summary>
-    static int ApplySheet(string dir, PlayerSheetGridDetector.SheetEntry entry, int ppu, List<string> log)
+    static int ApplySheet(string defaultDir, PlayerSheetGridDetector.SheetEntry entry, int ppu, List<string> log)
     {
+        string dir = ResolveEntryDir(defaultDir, entry);
         string assetPath = ResolveAssetPath(dir, entry.file);
         int cellCount = entry.cells == null ? 0 : entry.cells.Length / 2;
         if (cellCount == 0)
         {
             log.Add("스킵 (프레임 없음): " + assetPath);
             return 0;
+        }
+        if (!File.Exists(assetPath))
+        {
+            log.Add("스킵 (파일 없음): " + assetPath);
+            return 0;
+        }
+        if (AssetImporter.GetAtPath(assetPath) == null)
+        {
+            AssetDatabase.ImportAsset(assetPath, ImportAssetOptions.ForceUpdate);
         }
 
         var metas = new SpriteMetaData[cellCount];
@@ -174,6 +243,47 @@ public static class PlayerAnimationSheetImporter
 
         log.Add("슬라이스 실패: " + assetPath);
         return 0;
+    }
+
+    static int ApplySheetIfMissing(string defaultDir, PlayerSheetGridDetector.SheetEntry entry,
+                                   int ppu, List<string> log)
+    {
+        string dir = ResolveEntryDir(defaultDir, entry);
+        string assetPath = ResolveAssetPath(dir, entry.file);
+        int cellCount = entry.cells == null ? 0 : entry.cells.Length / 2;
+        if (cellCount == 0) return 0;
+        if (!File.Exists(assetPath))
+        {
+            log.Add("스킵 (파일 없음): " + assetPath);
+            return 0;
+        }
+        if (HasSlicedSpriteNames(assetPath, entry.id, cellCount)) return cellCount;
+        return ApplySheet(defaultDir, entry, ppu, log);
+    }
+
+    static bool HasSlicedSpriteNames(string assetPath, string sheetId, int expectedCount)
+    {
+        string metaPath = assetPath + ".meta";
+        if (!File.Exists(metaPath)) return false;
+
+        var names = new HashSet<string>();
+        foreach (var line in File.ReadLines(metaPath))
+        {
+            string trimmed = line.Trim();
+            if (trimmed.StartsWith("name: ")) names.Add(trimmed.Substring(6));
+        }
+
+        for (int i = 0; i < expectedCount; i++)
+        {
+            if (!names.Contains(sheetId + "_" + i)) return false;
+        }
+        return true;
+    }
+
+    static string ResolveEntryDir(string defaultDir, PlayerSheetGridDetector.SheetEntry entry)
+    {
+        if (entry == null || string.IsNullOrEmpty(entry.dir)) return defaultDir;
+        return entry.dir.Replace('\\', '/').TrimEnd('/');
     }
 
     static string ResolveAssetPath(string dir, string file)
@@ -230,11 +340,19 @@ public static class PlayerAnimationSheetImporter
         set.downAttack = Clip(set, "downAttack", manifest, frameCounts, 0.05f, false);
         set.heavyAttack = Clip(set, "heavyAttack", manifest, frameCounts, 0.06f, false);
         set.bow = Clip(set, "bow", manifest, frameCounts, 0.05f, false);
+        set.magicBasic = Clip(set, "magicBasic", manifest, frameCounts, 0.05f, false);
+        set.magicRapid = Clip(set, "magicRapid", manifest, frameCounts, 0.05f, false);
+        set.magicBig = Clip(set, "magicBig", manifest, frameCounts, 0.05f, false);
         set.arrowRelease = Clip(set, "arrowRelease", manifest, frameCounts, 0.03f, false);
         set.energyArrow = Clip(set, "energyArrow", manifest, frameCounts, 0.04f, true);
         set.arrowImpact = Clip(set, "arrowImpact", manifest, frameCounts, 0.04f, false);
-        set.swordHitFx = Clip(set, "release", manifest, frameCounts, 0.05f, false);
-        set.heavyHitFx = Clip(set, "bigRelease", manifest, frameCounts, 0.05f, false);
+        set.swordHitFx = Clip(set, "attack1Hit", manifest, frameCounts, 0.05f, false)
+                         ?? Clip(set, "release", manifest, frameCounts, 0.05f, false);
+        set.attack1HitFx = Clip(set, "attack1Hit", manifest, frameCounts, 0.05f, false);
+        set.attack2HitFx = Clip(set, "attack2Hit", manifest, frameCounts, 0.05f, false);
+        set.attack3HitFx = Clip(set, "attack3Hit", manifest, frameCounts, 0.05f, false);
+        set.heavyHitFx = Clip(set, "heavyHit", manifest, frameCounts, 0.05f, false)
+                        ?? Clip(set, "bigRelease", manifest, frameCounts, 0.05f, false);
 
         set.doubleJump = Clip(set, "doubleJump", manifest, frameCounts, 0.04f, false);
         set.wallSlide = Clip(set, "wallSlide", manifest, frameCounts, 0.05f, true);
@@ -282,7 +400,8 @@ public static class PlayerAnimationSheetImporter
                     ?? manifest.vfx.FirstOrDefault(e => e.id == sheetId);
         if (entry == null) return null;
 
-        string dir = manifest.motion.Any(e => e.id == sheetId) ? MotionDir : VfxDir;
+        bool isMotion = manifest.motion.Any(e => e.id == sheetId);
+        string dir = ResolveEntryDir(isMotion ? MotionDir : VfxDir, entry);
         string assetPath = ResolveAssetPath(dir, entry.file);
 
         var byName = AssetDatabase.LoadAllAssetsAtPath(assetPath).OfType<Sprite>()
@@ -307,8 +426,24 @@ public static class PlayerAnimationSheetImporter
             id = sheetId,
             frames = frames.ToArray(),
             frameInterval = interval,
-            loop = loop
+            loop = loop,
+            frameDurations = BuildFrameDurations(entry, frames.Count, interval),
+            loopStartFrame = Mathf.Max(0, entry.loopStartFrame),
+            loopEndFrame = entry.loopEndFrame > 0 ? entry.loopEndFrame : -1
         };
+    }
+
+    static float[] BuildFrameDurations(PlayerSheetGridDetector.SheetEntry entry, int frameCount, float fallback)
+    {
+        if (entry.durationsMs == null || entry.durationsMs.Length == 0) return new float[0];
+
+        var durations = new float[frameCount];
+        for (int i = 0; i < frameCount; i++)
+        {
+            int ms = i < entry.durationsMs.Length ? entry.durationsMs[i] : -1;
+            durations[i] = ms > 0 ? ms / 1000f : fallback;
+        }
+        return durations;
     }
 
     /// <summary>씬의 Player 에 Body/CastFX/AuraFX 계층을 만들고 세트를 배선한다.</summary>

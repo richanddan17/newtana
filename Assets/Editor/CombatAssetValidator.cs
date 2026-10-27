@@ -36,7 +36,8 @@ public static class CombatAssetValidator
             { "crouch", set.crouch }, { "dash", set.dash }, { "attack1", set.attack1 },
             { "attack2", set.attack2 }, { "attack3", set.attack3 }, { "jumpAttack", set.jumpAttack },
             { "upAttack", set.upAttack }, { "downAttack", set.downAttack }, { "heavyAttack", set.heavyAttack },
-            { "bow", set.bow }, { "doubleJump", set.doubleJump }, { "wallSlide", set.wallSlide },
+            { "bow", set.bow }, { "magicBasic", set.magicBasic }, { "magicRapid", set.magicRapid },
+            { "magicBig", set.magicBig }, { "doubleJump", set.doubleJump }, { "wallSlide", set.wallSlide },
             { "climb", set.climb }, { "enterDoor", set.enterDoor }, { "grapple", set.grapple },
             { "cast", set.cast }, { "hurt", set.hurt }, { "hurtKnockback", set.hurtKnockback },
             { "death", set.death }
@@ -51,14 +52,16 @@ public static class CombatAssetValidator
             { "castRelease", set.castRelease }, { "castBigLoop", set.castBigLoop },
             { "castBigRelease", set.castBigRelease }, { "castAura", set.castAura },
             { "jumpDust", set.jumpDust }, { "landDust", set.landDust },
-            { "dashDust", set.dashDust }, { "airJumpRing", set.airJumpRing }
+            { "dashDust", set.dashDust }, { "airJumpRing", set.airJumpRing },
+            { "attack1HitFx", set.attack1HitFx }, { "attack2HitFx", set.attack2HitFx },
+            { "attack3HitFx", set.attack3HitFx }, { "heavyHitFx", set.heavyHitFx }
         };
 
         int bodyFrames = ValidateGroup("body", body);
         int vfxFrames = ValidateGroup("vfx", vfx);
 
-        if (set.heavyAttack == null || set.heavyAttack.frames.Length != 27)
-            throw new InvalidOperationException("heavyAttack must have 27 frames");
+        if (set.heavyAttack == null || set.heavyAttack.frames.Length != 30)
+            throw new InvalidOperationException("heavyAttack must have 30 frames");
 
         var prefab = AssetDatabase.LoadAssetAtPath<GameObject>(PrefabPath);
         if (prefab == null) throw new InvalidOperationException("Missing " + PrefabPath);
@@ -97,7 +100,7 @@ public static class CombatAssetValidator
             throw new InvalidOperationException("Main scene Player has no CombatAnimationDemo");
 
         Debug.Log("[CombatValidator] body=" + body.Count + " clips/" + bodyFrames + " frames, " +
-                  "vfx=" + vfx.Count + " clips/" + vfxFrames + " frames, heavy=27, prefab/scene wired");
+                  "vfx=" + vfx.Count + " clips/" + vfxFrames + " frames, heavy=30, prefab/scene wired");
     }
 
     static int ValidateGroup(string label, Dictionary<string, PlayerAnimationClip> clips)
