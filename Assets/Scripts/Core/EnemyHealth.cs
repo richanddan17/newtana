@@ -170,14 +170,15 @@ public class EnemyHealth : MonoBehaviour, IDamageable
 
     void TriggerFeedback(DamageInfo info)
     {
+        bool hasPerAttackFeedback = info.HitType == HitType.Melee;
+
         // HitStop
         if (enableHitStop)
         {
             HitStop.Request(0.03f);
         }
 
-        // CameraShake
-        if (enableCameraShake && CameraShake.Instance != null)
+        if (enableCameraShake && !hasPerAttackFeedback && CameraShake.Instance != null)
         {
             CameraShake.OnEnemyHit();
         }
