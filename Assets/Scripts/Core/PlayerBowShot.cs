@@ -62,12 +62,16 @@ public static class PlayerBowShot
         Vector2[] offsets = source.frameOffsets != null && source.frameOffsets.Length == count
             ? new Vector2[count]
             : null;
+        float[] durations = source.frameDurations != null && source.frameDurations.Length == count
+            ? new float[count]
+            : null;
 
         for (int i = 0; i < count; i++)
         {
             int sourceIndex = count - 1 - i;
             frames[i] = source.frames[sourceIndex];
             if (offsets != null) offsets[i] = source.frameOffsets[sourceIndex];
+            if (durations != null) durations[i] = source.frameDurations[sourceIndex];
         }
 
         return new PlayerAnimationClip
@@ -76,7 +80,10 @@ public static class PlayerBowShot
             frames = frames,
             frameOffsets = offsets ?? source.frameOffsets,
             frameInterval = source.frameInterval,
+            frameDurations = durations ?? source.frameDurations,
             loop = false,
+            loopStartFrame = 0,
+            loopEndFrame = -1,
             footAnchored = source.footAnchored
         };
     }

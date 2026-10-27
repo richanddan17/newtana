@@ -12,6 +12,7 @@ public partial class PlayerAnimation
     int activeFrame;
     float activeTimer;
     int debugLoopStartFrame;
+    int debugLoopEndFrame = -1;
     int lastDebugFrame = -1;
 
     public event Action<int> OnDebugClipFrame;
@@ -43,16 +44,23 @@ public partial class PlayerAnimation
     {
         if (clip.frames.Length <= 1) return;
 
-        float interval = clip.frameInterval / PlaybackSpeed;
-        if (interval <= 0f) return;
-
         activeTimer += Time.deltaTime;
         bool finished = false;
-        while (activeTimer >= interval)
+        while (true)
         {
+            float interval = GetFrameInterval(clip, activeFrame) / PlaybackSpeed;
+            if (interval <= 0f)
+            {
+                activeTimer = 0f;
+                break;
+            }
+            if (activeTimer < interval) break;
+
             activeTimer -= interval;
             int previousFrame = activeFrame;
-            if (activeFrame + 1 < clip.frames.Length)
+            int lastFrame = clip.loop ? GetLoopEndFrame(clip) : clip.frames.Length - 1;
+
+            if (activeFrame < lastFrame)
             {
                 activeFrame++;
             }
@@ -86,7 +94,26 @@ public partial class PlayerAnimation
             return debugLoopStartFrame;
         }
 
-        return 0;
+        return clip.GetLoopStart(clip.frames.Length);
+    }
+
+    int GetLoopEndFrame(PlayerAnimationClip clip)
+    {
+        int lastFrame = clip.frames.Length - 1;
+        if (ReferenceEquals(clip, debugClipOverride) &&
+            debugLoopEndFrame > GetLoopStartFrame(clip) &&
+            debugLoopEndFrame <= lastFrame)
+        {
+            return debugLoopEndFrame;
+        }
+
+        int end = clip.GetLoopEnd(clip.frames.Length);
+        return Mathf.Max(GetLoopStartFrame(clip), end);
+    }
+
+    static float GetFrameInterval(PlayerAnimationClip clip, int frame)
+    {
+        return clip != null ? clip.GetFrameDuration(frame) : 0f;
     }
 
     void NotifyDebugFrame()
@@ -128,20 +155,19 @@ public partial class PlayerAnimation
     {
         if (!muzzleFxPlaying || muzzleFxRenderer == null || !HasFrames(muzzleFxClip)) return;
 
-        float interval = muzzleFxClip.frameInterval;
-        if (interval > 0f)
+        muzzleFxTimer += Time.deltaTime;
+        while (muzzleFxFrame < muzzleFxClip.frames.Length)
         {
-            muzzleFxTimer += Time.deltaTime;
-            while (muzzleFxTimer >= interval)
+            float interval = muzzleFxClip.GetFrameDuration(muzzleFxFrame);
+            if (interval <= 0f || muzzleFxTimer < interval) break;
+
+            muzzleFxTimer -= interval;
+            muzzleFxFrame++;
+            if (muzzleFxFrame >= muzzleFxClip.frames.Length)
             {
-                muzzleFxTimer -= interval;
-                muzzleFxFrame++;
-                if (muzzleFxFrame >= muzzleFxClip.frames.Length)
-                {
-                    muzzleFxPlaying = false;
-                    muzzleFxRenderer.sprite = null;
-                    return;
-                }
+                muzzleFxPlaying = false;
+                muzzleFxRenderer.sprite = null;
+                return;
             }
         }
 

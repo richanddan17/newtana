@@ -199,6 +199,7 @@ public partial class PlayerAnimation : MonoBehaviour
         hurtClipOverride = null;
         debugClipOverride = null;
         debugLoopStartFrame = 0;
+        debugLoopEndFrame = -1;
         lastDebugFrame = -1;
         activeClip = null;
         activeFrame = 0;
@@ -210,20 +211,29 @@ public partial class PlayerAnimation : MonoBehaviour
 
     public SpriteRenderer BodyRenderer => spriteRenderer;
 
+    /// <summary>현재 재생 중인 디버그/전투 클립. OnDebugClipFrame 구독자가 프레임 이벤트를 해석할 때 사용한다.</summary>
+    public PlayerAnimationClip CurrentDebugClip => debugClipOverride;
+
     public float CurrentFrameInterval =>
-        activeClip != null && activeClip.frameInterval > 0f
-            ? activeClip.frameInterval / PlaybackSpeed
+        activeClip != null
+            ? activeClip.GetFrameDuration(activeFrame) / PlaybackSpeed
             : 0.05f / PlaybackSpeed;
 
     public void PlayDebugClip(PlayerAnimationClip clip)
     {
-        PlayDebugClip(clip, 0);
+        PlayDebugClip(clip, 0, -1);
     }
 
     public void PlayDebugClip(PlayerAnimationClip clip, int loopStartFrame)
     {
+        PlayDebugClip(clip, loopStartFrame, -1);
+    }
+
+    public void PlayDebugClip(PlayerAnimationClip clip, int loopStartFrame, int loopEndFrame)
+    {
         debugClipOverride = clip;
         debugLoopStartFrame = Mathf.Max(0, loopStartFrame);
+        debugLoopEndFrame = loopEndFrame;
         lastDebugFrame = -1;
         activeClip = null;
         activeFrame = 0;
@@ -234,6 +244,7 @@ public partial class PlayerAnimation : MonoBehaviour
     {
         debugClipOverride = null;
         debugLoopStartFrame = 0;
+        debugLoopEndFrame = -1;
         lastDebugFrame = -1;
         activeClip = null;
         activeFrame = 0;
