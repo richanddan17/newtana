@@ -1,0 +1,1460 @@
+fileFormatVersion: 2
+guid: 88a9af28cc97a2e4b970465443707b8d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8095803458519050836
+    second: magic_rapid_sheet_0
+  - first:
+      213: -1941205651380580125
+    second: magic_rapid_sheet_1
+  - first:
+      213: -245714275083274489
+    second: magic_rapid_sheet_2
+  - first:
+      213: -4176294159292433109
+    second: magic_rapid_sheet_3
+  - first:
+      213: -3582395751229299711
+    second: magic_rapid_sheet_4
+  - first:
+      213: 6825258380883713391
+    second: magic_rapid_sheet_5
+  - first:
+      213: -7553600117745964692
+    second: magic_rapid_sheet_6
+  - first:
+      213: -4673104320108328945
+    second: magic_rapid_sheet_7
+  - first:
+      213: -7547248623591644610
+    second: magic_rapid_sheet_8
+  - first:
+      213: 304465540684301066
+    second: magic_rapid_sheet_9
+  - first:
+      213: -3013121634396103327
+    second: magic_rapid_sheet_10
+  - first:
+      213: -3180905561580010890
+    second: magic_rapid_sheet_11
+  - first:
+      213: -2463267140902595126
+    second: magic_rapid_sheet_12
+  - first:
+      213: 2115374266593803348
+    second: magic_rapid_sheet_13
+  - first:
+      213: -6997655346321685847
+    second: magic_rapid_sheet_14
+  - first:
+      213: 7777843633401749260
+    second: magic_rapid_sheet_15
+  - first:
+      213: 6036470556141574452
+    second: magic_rapid_sheet_16
+  - first:
+      213: 4963452914303375832
+    second: magic_rapid_sheet_17
+  - first:
+      213: 2308496043837180652
+    second: magic_rapid_sheet_18
+  - first:
+      213: -738710545543711503
+    second: magic_rapid_sheet_19
+  - first:
+      213: 1392940673236117817
+    second: magic_rapid_sheet_20
+  - first:
+      213: -6247938744463016766
+    second: magic_rapid_sheet_21
+  - first:
+      213: 4649684693765352747
+    second: magic_rapid_sheet_22
+  - first:
+      213: -4745890823922812228
+    second: magic_rapid_sheet_23
+  - first:
+      213: -9027167445953303897
+    second: magic_rapid_sheet_24
+  - first:
+      213: 5805085304769853798
+    second: magic_rapid_sheet_25
+  - first:
+      213: -4181367412367318147
+    second: magic_rapid_sheet_26
+  - first:
+      213: -5130633251842532273
+    second: magic_rapid_sheet_27
+  - first:
+      213: 7522707519722639833
+    second: magic_rapid_sheet_28
+  - first:
+      213: 7081351588210326309
+    second: magic_rapid_sheet_29
+  - first:
+      213: -19452319584947422
+    second: magic_rapid_sheet_30
+  - first:
+      213: 4671778532750902741
+    second: magic_rapid_sheet_31
+  - first:
+      213: 7232594521246097510
+    second: magic_rapid_sheet_32
+  - first:
+      213: 1590453580836214138
+    second: magic_rapid_sheet_33
+  - first:
+      213: 1368569472126246571
+    second: magic_rapid_sheet_34
+  - first:
+      213: -6866506339331447628
+    second: magic_rapid_sheet_35
+  - first:
+      213: 5185338306826667829
+    second: magic_rapid_sheet_36
+  - first:
+      213: 5274596142657613729
+    second: magic_rapid_sheet_37
+  - first:
+      213: 1938181329631307928
+    second: magic_rapid_sheet_38
+  - first:
+      213: -8879602674197078605
+    second: magic_rapid_sheet_39
+  - first:
+      213: -4004632554246044896
+    second: magic_rapid_sheet_40
+  - first:
+      213: -8965140176618948200
+    second: magic_rapid_sheet_41
+  - first:
+      213: 5406693824705630415
+    second: magic_rapid_sheet_42
+  - first:
+      213: -2582162629330992709
+    second: magic_rapid_sheet_43
+  - first:
+      213: 1112349200429252234
+    second: magic_rapid_sheet_44
+  - first:
+      213: 1749684006199076684
+    second: magic_rapid_sheet_45
+  - first:
+      213: -2434314986893625349
+    second: magic_rapid_sheet_46
+  - first:
+      213: -4829835110080662743
+    second: magic_rapid_sheet_47
+  - first:
+      213: -861444512051325182
+    second: magic_rapid_sheet_48
+  - first:
+      213: -258745689389511313
+    second: magic_rapid_sheet_49
+  - first:
+      213: 114897049430348310
+    second: magic_rapid_sheet_50
+  - first:
+      213: 5983709024373783854
+    second: magic_rapid_sheet_51
+  - first:
+      213: 3733481529924205224
+    second: magic_rapid_sheet_52
+  - first:
+      213: -3676080258628149786
+    second: magic_rapid_sheet_53
+  - first:
+      213: 4303255214486054658
+    second: magic_rapid_sheet_54
+  - first:
+      213: -2185192847471860426
+    second: magic_rapid_sheet_55
+  - first:
+      213: 6856132490121756180
+    second: magic_rapid_sheet_56
+  - first:
+      213: -5654974901284000748
+    second: magic_rapid_sheet_57
+  - first:
+      213: 5894467882113690727
+    second: magic_rapid_sheet_58
+  - first:
+      213: 1370242906083789779
+    second: magic_rapid_sheet_59
+  - first:
+      213: -6558735660137603829
+    second: magic_rapid_sheet_60
+  - first:
+      213: 5219232597533084143
+    second: magic_rapid_sheet_61
+  - first:
+      213: -5692163981508832500
+    second: magic_rapid_sheet_62
+  - first:
+      213: 1286453858315245574
+    second: magic_rapid_sheet_63
+  - first:
+      213: 7419396621108750793
+    second: magic_rapid_sheet_64
+  - first:
+      213: 5413757364456675799
+    second: magic_rapid_sheet_65
+  - first:
+      213: -3695724698678817624
+    second: magic_rapid_sheet_66
+  - first:
+      213: -805090728983252887
+    second: magic_rapid_sheet_67
+  - first:
+      213: -5126716572506992867
+    second: magic_rapid_sheet_68
+  - first:
+      213: -7597713340857614197
+    second: magic_rapid_sheet_69
+  - first:
+      213: 5391198014323482460
+    second: magic_rapid_sheet_70
+  - first:
+      213: -5630292290853913319
+    second: magic_rapid_sheet_71
+  - first:
+      213: 6253096718993602367
+    second: magic_rapid_sheet_72
+  - first:
+      213: -4674372497608980949
+    second: magic_rapid_sheet_73
+  - first:
+      213: 6405429247802118796
+    second: magic_rapid_sheet_74
+  - first:
+      213: 8578294072424324336
+    second: magic_rapid_sheet_75
+  - first:
+      213: -3269509817021925719
+    second: magic_rapid_sheet_76
+  - first:
+      213: 3230551513831967318
+    second: magic_rapid_sheet_77
+  - first:
+      213: 7855490622082082220
+    second: magic_rapid_sheet_78
+  - first:
+      213: -3099419506420956656
+    second: magic_rapid_sheet_79
+  - first:
+      213: 6379857269311671305
+    second: magic_rapid_sheet_80
+  - first:
+      213: 7461027633687282734
+    second: magic_rapid_sheet_81
+  - first:
+      213: -1113190671794350394
+    second: magic_rapid_sheet_82
+  - first:
+      213: -6320602291892974956
+    second: magic_rapid_sheet_83
+  - first:
+      213: 5923638347085885943
+    second: magic_rapid_sheet_84
+  - first:
+      213: 7093632386764553182
+    second: magic_rapid_sheet_85
+  - first:
+      213: -3129282341225991044
+    second: magic_rapid_sheet_86
+  - first:
+      213: -4068705552836219253
+    second: magic_rapid_sheet_87
+  - first:
+      213: 8062447007178665017
+    second: magic_rapid_sheet_88
+  - first:
+      213: -9187012758197722264
+    second: magic_rapid_sheet_89
+  - first:
+      213: 4359283944733195254
+    second: magic_rapid_sheet_90
+  - first:
+      213: -2286145752597241069
+    second: magic_rapid_sheet_91
+  - first:
+      213: 8754624783660182140
+    second: magicRapid_0
+  - first:
+      213: -5168118284698649203
+    second: magicRapid_1
+  - first:
+      213: 3769915840780788552
+    second: magicRapid_2
+  - first:
+      213: 792254142871118309
+    second: magicRapid_3
+  - first:
+      213: -1934609681954976096
+    second: magicRapid_4
+  - first:
+      213: 2106654653522468152
+    second: magicRapid_5
+  - first:
+      213: 4573698009607291920
+    second: magicRapid_6
+  - first:
+      213: 8803322200225553207
+    second: magicRapid_7
+  - first:
+      213: 156854129661852455
+    second: magicRapid_8
+  - first:
+      213: 2236174492544227974
+    second: magicRapid_9
+  - first:
+      213: -5827863876478060521
+    second: magicRapid_10
+  - first:
+      213: -2362828284315167969
+    second: magicRapid_11
+  - first:
+      213: 6590811073086113760
+    second: magicRapid_12
+  - first:
+      213: -1212284220856118357
+    second: magicRapid_13
+  - first:
+      213: -3164385628399325002
+    second: magicRapid_14
+  - first:
+      213: -528415806639666340
+    second: magicRapid_15
+  - first:
+      213: 8921159208531743595
+    second: magicRapid_16
+  - first:
+      213: -8227259354639590133
+    second: magicRapid_17
+  - first:
+      213: -5875787864042228900
+    second: magicRapid_18
+  - first:
+      213: 1527714471076094237
+    second: magicRapid_19
+  - first:
+      213: -8538385351622339475
+    second: magicRapid_20
+  - first:
+      213: 7877103846651655591
+    second: magicRapid_21
+  - first:
+      213: 2896228223356894728
+    second: magicRapid_22
+  - first:
+      213: -8139554733031073562
+    second: magicRapid_23
+  - first:
+      213: 192308925437502001
+    second: magicRapid_24
+  - first:
+      213: 4266015787319094499
+    second: magicRapid_25
+  - first:
+      213: -4129604032948565703
+    second: magicRapid_26
+  - first:
+      213: 7070107925500820789
+    second: magicRapid_27
+  - first:
+      213: -8395765154091944624
+    second: magicRapid_28
+  - first:
+      213: 7069589792842525021
+    second: magicRapid_29
+  - first:
+      213: -9055371438115961707
+    second: magicRapid_30
+  - first:
+      213: -903446165361057794
+    second: magicRapid_31
+  - first:
+      213: 4564786305132474258
+    second: magicRapid_32
+  - first:
+      213: 8795418728701583279
+    second: magicRapid_33
+  - first:
+      213: -1504926182300322178
+    second: magicRapid_34
+  - first:
+      213: 2195635769524867215
+    second: magicRapid_35
+  - first:
+      213: 8090310474312811717
+    second: magicRapid_36
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: magicRapid_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2688
+        width: 1152
+        height: 672
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7a65e35bdcae7970800000000000000
+      internalID: 8754624783660182140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicRapid_1
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 2688
+        width: 1152
+        height: 672
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8df55b4dc72748b0800000000000000
+      internalID: -5168118284698649203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicRapid_2
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 2688
+        width: 1152
+        height: 672
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8436bdabb7e615430800000000000000
+      internalID: 3769915840780788552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicRapid_3
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 2688
+        width: 1152
+        height: 672
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e12aa502f6aefa00800000000000000
+      internalID: 792254142871118309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicRapid_4
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 2688
+        width: 1152
+        height: 672
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0aeca088eb2e625e0800000000000000
+      internalID: -1934609681954976096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicRapid_5
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 2688
+        width: 1152
+        height: 672
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83d51afee375c3d10800000000000000
+      internalID: 2106654653522468152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicRapid_6
+      rect:
+        serializedVersion: 2
+        x: 6912
+        y: 2688
+        width: 1152
+        height: 672
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 014cd847b1a097f30800000000000000
+      internalID: 4573698009607291920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicRapid_7
+      rect:
+        serializedVersion: 2
+        x: 8064
+        y: 2688
+        width: 1152
+        height: 672
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73b11cb26eeab2a70800000000000000
+      internalID: 8803322200225553207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicRapid_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2016
+        width: 1152
+        height: 672
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72b3c08fff14d2200800000000000000
+      internalID: 156854129661852455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicRapid_9
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 2016
+        width: 1152
+        height: 672
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68a53eb6adc780f10800000000000000
+      internalID: 2236174492544227974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicRapid_10
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 2016
+        width: 1152
+        height: 672
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 718b1338ea44f1fa0800000000000000
+      internalID: -5827863876478060521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicRapid_11
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 2016
+        width: 1152
+        height: 672
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f131628b13c853fd0800000000000000
+      internalID: -2362828284315167969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicRapid_12
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 2016
+        width: 1152
+        height: 672
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e7420950c3477b50800000000000000
+      internalID: 6590811073086113760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicRapid_13
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 2016
+        width: 1152
+        height: 672
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba35f019ce91d2fe0800000000000000
+      internalID: -1212284220856118357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicRapid_14
+      rect:
+        serializedVersion: 2
+        x: 6912
+        y: 2016
+        width: 1152
+        height: 672
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b038ee5908d514d0800000000000000
+      internalID: -3164385628399325002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicRapid_15
+      rect:
+        serializedVersion: 2
+        x: 8064
+        y: 2016
+        width: 1152
+        height: 672
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5b8a8f9f90baa8f0800000000000000
+      internalID: -528415806639666340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicRapid_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1344
+        width: 1152
+        height: 672
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b635d39a8035ecb70800000000000000
+      internalID: 8921159208531743595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicRapid_17
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1344
+        width: 1152
+        height: 672
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0d92b3f437e2dd80800000000000000
+      internalID: -8227259354639590133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicRapid_18
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 1344
+        width: 1152
+        height: 672
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c533634a112057ea0800000000000000
+      internalID: -5875787864042228900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicRapid_19
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 1344
+        width: 1152
+        height: 672
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d11e6be9738833510800000000000000
+      internalID: 1527714471076094237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicRapid_20
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 1344
+        width: 1152
+        height: 672
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d64d621d2cf818980800000000000000
+      internalID: -8538385351622339475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicRapid_21
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 1344
+        width: 1152
+        height: 672
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a5f88eb638115d60800000000000000
+      internalID: 7877103846651655591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicRapid_22
+      rect:
+        serializedVersion: 2
+        x: 6912
+        y: 1344
+        width: 1152
+        height: 672
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80ef5a96938713820800000000000000
+      internalID: 2896228223356894728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicRapid_23
+      rect:
+        serializedVersion: 2
+        x: 8064
+        y: 1344
+        width: 1152
+        height: 672
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e855d3781e7a0f80800000000000000
+      internalID: -8139554733031073562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicRapid_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 672
+        width: 1152
+        height: 672
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 132e6d3e2f73ba200800000000000000
+      internalID: 192308925437502001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicRapid_25
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 672
+        width: 1152
+        height: 672
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ecec5991cee33b30800000000000000
+      internalID: 4266015787319094499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicRapid_26
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 672
+        width: 1152
+        height: 672
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9398419f203b0b6c0800000000000000
+      internalID: -4129604032948565703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicRapid_27
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 672
+        width: 1152
+        height: 672
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53d762ff2b11e1260800000000000000
+      internalID: 7070107925500820789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicRapid_28
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 672
+        width: 1152
+        height: 672
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0553fb433104c7b80800000000000000
+      internalID: -8395765154091944624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicRapid_29
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 672
+        width: 1152
+        height: 672
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d592b16d57a3c1260800000000000000
+      internalID: 7069589792842525021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicRapid_30
+      rect:
+        serializedVersion: 2
+        x: 6912
+        y: 672
+        width: 1152
+        height: 672
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59441e987abd45280800000000000000
+      internalID: -9055371438115961707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicRapid_31
+      rect:
+        serializedVersion: 2
+        x: 8064
+        y: 672
+        width: 1152
+        height: 672
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eff17ffcf705673f0800000000000000
+      internalID: -903446165361057794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicRapid_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1152
+        height: 672
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29f2df095f0695f30800000000000000
+      internalID: 4564786305132474258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicRapid_33
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 0
+        width: 1152
+        height: 672
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: faf531fcbba9f0a70800000000000000
+      internalID: 8795418728701583279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicRapid_34
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 0
+        width: 1152
+        height: 672
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e76fdc25c9d6d1be0800000000000000
+      internalID: -1504926182300322178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicRapid_35
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 0
+        width: 1152
+        height: 672
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f80dba27917787e10800000000000000
+      internalID: 2195635769524867215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicRapid_36
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 0
+        width: 1152
+        height: 672
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c48908138e864070800000000000000
+      internalID: 8090310474312811717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      magicRapid_0: 8754624783660182140
+      magicRapid_1: -5168118284698649203
+      magicRapid_10: -5827863876478060521
+      magicRapid_11: -2362828284315167969
+      magicRapid_12: 6590811073086113760
+      magicRapid_13: -1212284220856118357
+      magicRapid_14: -3164385628399325002
+      magicRapid_15: -528415806639666340
+      magicRapid_16: 8921159208531743595
+      magicRapid_17: -8227259354639590133
+      magicRapid_18: -5875787864042228900
+      magicRapid_19: 1527714471076094237
+      magicRapid_2: 3769915840780788552
+      magicRapid_20: -8538385351622339475
+      magicRapid_21: 7877103846651655591
+      magicRapid_22: 2896228223356894728
+      magicRapid_23: -8139554733031073562
+      magicRapid_24: 192308925437502001
+      magicRapid_25: 4266015787319094499
+      magicRapid_26: -4129604032948565703
+      magicRapid_27: 7070107925500820789
+      magicRapid_28: -8395765154091944624
+      magicRapid_29: 7069589792842525021
+      magicRapid_3: 792254142871118309
+      magicRapid_30: -9055371438115961707
+      magicRapid_31: -903446165361057794
+      magicRapid_32: 4564786305132474258
+      magicRapid_33: 8795418728701583279
+      magicRapid_34: -1504926182300322178
+      magicRapid_35: 2195635769524867215
+      magicRapid_36: 8090310474312811717
+      magicRapid_4: -1934609681954976096
+      magicRapid_5: 2106654653522468152
+      magicRapid_6: 4573698009607291920
+      magicRapid_7: 8803322200225553207
+      magicRapid_8: 156854129661852455
+      magicRapid_9: 2236174492544227974
+      magic_rapid_sheet_0: 8095803458519050836
+      magic_rapid_sheet_1: -1941205651380580125
+      magic_rapid_sheet_10: -3013121634396103327
+      magic_rapid_sheet_11: -3180905561580010890
+      magic_rapid_sheet_12: -2463267140902595126
+      magic_rapid_sheet_13: 2115374266593803348
+      magic_rapid_sheet_14: -6997655346321685847
+      magic_rapid_sheet_15: 7777843633401749260
+      magic_rapid_sheet_16: 6036470556141574452
+      magic_rapid_sheet_17: 4963452914303375832
+      magic_rapid_sheet_18: 2308496043837180652
+      magic_rapid_sheet_19: -738710545543711503
+      magic_rapid_sheet_2: -245714275083274489
+      magic_rapid_sheet_20: 1392940673236117817
+      magic_rapid_sheet_21: -6247938744463016766
+      magic_rapid_sheet_22: 4649684693765352747
+      magic_rapid_sheet_23: -4745890823922812228
+      magic_rapid_sheet_24: -9027167445953303897
+      magic_rapid_sheet_25: 5805085304769853798
+      magic_rapid_sheet_26: -4181367412367318147
+      magic_rapid_sheet_27: -5130633251842532273
+      magic_rapid_sheet_28: 7522707519722639833
+      magic_rapid_sheet_29: 7081351588210326309
+      magic_rapid_sheet_3: -4176294159292433109
+      magic_rapid_sheet_30: -19452319584947422
+      magic_rapid_sheet_31: 4671778532750902741
+      magic_rapid_sheet_32: 7232594521246097510
+      magic_rapid_sheet_33: 1590453580836214138
+      magic_rapid_sheet_34: 1368569472126246571
+      magic_rapid_sheet_35: -6866506339331447628
+      magic_rapid_sheet_36: 5185338306826667829
+      magic_rapid_sheet_37: 5274596142657613729
+      magic_rapid_sheet_38: 1938181329631307928
+      magic_rapid_sheet_39: -8879602674197078605
+      magic_rapid_sheet_4: -3582395751229299711
+      magic_rapid_sheet_40: -4004632554246044896
+      magic_rapid_sheet_41: -8965140176618948200
+      magic_rapid_sheet_42: 5406693824705630415
+      magic_rapid_sheet_43: -2582162629330992709
+      magic_rapid_sheet_44: 1112349200429252234
+      magic_rapid_sheet_45: 1749684006199076684
+      magic_rapid_sheet_46: -2434314986893625349
+      magic_rapid_sheet_47: -4829835110080662743
+      magic_rapid_sheet_48: -861444512051325182
+      magic_rapid_sheet_49: -258745689389511313
+      magic_rapid_sheet_5: 6825258380883713391
+      magic_rapid_sheet_50: 114897049430348310
+      magic_rapid_sheet_51: 5983709024373783854
+      magic_rapid_sheet_52: 3733481529924205224
+      magic_rapid_sheet_53: -3676080258628149786
+      magic_rapid_sheet_54: 4303255214486054658
+      magic_rapid_sheet_55: -2185192847471860426
+      magic_rapid_sheet_56: 6856132490121756180
+      magic_rapid_sheet_57: -5654974901284000748
+      magic_rapid_sheet_58: 5894467882113690727
+      magic_rapid_sheet_59: 1370242906083789779
+      magic_rapid_sheet_6: -7553600117745964692
+      magic_rapid_sheet_60: -6558735660137603829
+      magic_rapid_sheet_61: 5219232597533084143
+      magic_rapid_sheet_62: -5692163981508832500
+      magic_rapid_sheet_63: 1286453858315245574
+      magic_rapid_sheet_64: 7419396621108750793
+      magic_rapid_sheet_65: 5413757364456675799
+      magic_rapid_sheet_66: -3695724698678817624
+      magic_rapid_sheet_67: -805090728983252887
+      magic_rapid_sheet_68: -5126716572506992867
+      magic_rapid_sheet_69: -7597713340857614197
+      magic_rapid_sheet_7: -4673104320108328945
+      magic_rapid_sheet_70: 5391198014323482460
+      magic_rapid_sheet_71: -5630292290853913319
+      magic_rapid_sheet_72: 6253096718993602367
+      magic_rapid_sheet_73: -4674372497608980949
+      magic_rapid_sheet_74: 6405429247802118796
+      magic_rapid_sheet_75: 8578294072424324336
+      magic_rapid_sheet_76: -3269509817021925719
+      magic_rapid_sheet_77: 3230551513831967318
+      magic_rapid_sheet_78: 7855490622082082220
+      magic_rapid_sheet_79: -3099419506420956656
+      magic_rapid_sheet_8: -7547248623591644610
+      magic_rapid_sheet_80: 6379857269311671305
+      magic_rapid_sheet_81: 7461027633687282734
+      magic_rapid_sheet_82: -1113190671794350394
+      magic_rapid_sheet_83: -6320602291892974956
+      magic_rapid_sheet_84: 5923638347085885943
+      magic_rapid_sheet_85: 7093632386764553182
+      magic_rapid_sheet_86: -3129282341225991044
+      magic_rapid_sheet_87: -4068705552836219253
+      magic_rapid_sheet_88: 8062447007178665017
+      magic_rapid_sheet_89: -9187012758197722264
+      magic_rapid_sheet_9: 304465540684301066
+      magic_rapid_sheet_90: 4359283944733195254
+      magic_rapid_sheet_91: -2286145752597241069
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

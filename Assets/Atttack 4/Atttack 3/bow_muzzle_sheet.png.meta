@@ -1,0 +1,868 @@
+fileFormatVersion: 2
+guid: 2614499bd76eddf4a87df9f42f8c746b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4991069176460235883
+    second: bow_muzzle_sheet_0
+  - first:
+      213: 7128274041384578891
+    second: bow_muzzle_sheet_1
+  - first:
+      213: -8077557668145153940
+    second: bow_muzzle_sheet_2
+  - first:
+      213: 8976070380115177899
+    second: bow_muzzle_sheet_3
+  - first:
+      213: -4013675655958521675
+    second: bow_muzzle_sheet_4
+  - first:
+      213: 1982861354272025516
+    second: bow_muzzle_sheet_5
+  - first:
+      213: 1814389481693776691
+    second: bow_muzzle_sheet_6
+  - first:
+      213: -7252232563103708230
+    second: bow_muzzle_sheet_7
+  - first:
+      213: -9031953854778736054
+    second: bow_muzzle_sheet_8
+  - first:
+      213: 9072950868995638085
+    second: bow_muzzle_sheet_9
+  - first:
+      213: 756353629879611265
+    second: bow_muzzle_sheet_10
+  - first:
+      213: -812700275142175591
+    second: bow_muzzle_sheet_11
+  - first:
+      213: -871420470101198800
+    second: bow_muzzle_sheet_12
+  - first:
+      213: 1500482772378636042
+    second: bow_muzzle_sheet_13
+  - first:
+      213: -4840973026011385879
+    second: bow_muzzle_sheet_14
+  - first:
+      213: -9014731642521794315
+    second: bow_muzzle_sheet_15
+  - first:
+      213: -1016310850187670718
+    second: bow_muzzle_sheet_16
+  - first:
+      213: 9121742278402956524
+    second: bow_muzzle_sheet_17
+  - first:
+      213: 8126522241333876395
+    second: bow_muzzle_sheet_18
+  - first:
+      213: -7427049822890018810
+    second: bow_muzzle_sheet_19
+  - first:
+      213: -8228816169918918212
+    second: bow_muzzle_sheet_20
+  - first:
+      213: 4802575623355956058
+    second: bow_muzzle_sheet_21
+  - first:
+      213: -3892329844428259634
+    second: bow_muzzle_sheet_22
+  - first:
+      213: 6266874282549653854
+    second: bow_muzzle_sheet_23
+  - first:
+      213: 4386287000490179379
+    second: bow_muzzle_sheet_24
+  - first:
+      213: -1675883408157399786
+    second: bow_muzzle_sheet_25
+  - first:
+      213: 4068945148760710100
+    second: bow_muzzle_sheet_26
+  - first:
+      213: -5016147867826642874
+    second: bow_muzzle_sheet_27
+  - first:
+      213: 8538497132369898718
+    second: bow_muzzle_sheet_28
+  - first:
+      213: 8625179426708928836
+    second: bow_muzzle_sheet_29
+  - first:
+      213: 7298306145812554227
+    second: bow_muzzle_sheet_30
+  - first:
+      213: -834868941512331596
+    second: bow_muzzle_sheet_31
+  - first:
+      213: -6268351896875316165
+    second: bow_muzzle_sheet_32
+  - first:
+      213: 4583129374876672966
+    second: bow_muzzle_sheet_33
+  - first:
+      213: 2744689306216718466
+    second: bow_muzzle_sheet_34
+  - first:
+      213: -415446080585258355
+    second: bow_0
+  - first:
+      213: 8952162787185664858
+    second: bow_1
+  - first:
+      213: -434252183827366392
+    second: bow_2
+  - first:
+      213: 1131549020000966294
+    second: bow_3
+  - first:
+      213: -7999427661029459236
+    second: bow_4
+  - first:
+      213: -4041009300170039426
+    second: bow_5
+  - first:
+      213: -6373757434741629751
+    second: bow_6
+  - first:
+      213: 3769289473720460669
+    second: bow_7
+  - first:
+      213: 623387142360464666
+    second: bow_8
+  - first:
+      213: -3940083669894357640
+    second: bow_9
+  - first:
+      213: 8848821535025445876
+    second: bow_10
+  - first:
+      213: 7757520165533166751
+    second: bow_11
+  - first:
+      213: 4619003895786628133
+    second: bow_12
+  - first:
+      213: 1813359342989644053
+    second: bow_13
+  - first:
+      213: -217681147366300873
+    second: bow_14
+  - first:
+      213: -6686162943759586224
+    second: bow_15
+  - first:
+      213: 3980276083670883080
+    second: bow_16
+  - first:
+      213: 6183964435261468511
+    second: bow_17
+  - first:
+      213: 7692540682494424692
+    second: bow_18
+  - first:
+      213: -971091317754176851
+    second: bow_19
+  - first:
+      213: 8445291121646238005
+    second: bow_20
+  - first:
+      213: 236669526521490015
+    second: bow_21
+  - first:
+      213: -8977828154381454533
+    second: bow_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bow_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1216
+        width: 376
+        height: 304
+      alignment: 9
+      pivot: {x: 0.43617, y: 0.02632}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8a2367adf90c3af0800000000000000
+      internalID: -415446080585258355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow_1
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 1216
+        width: 376
+        height: 304
+      alignment: 9
+      pivot: {x: 0.43617, y: 0.02632}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a532ca5df987c3c70800000000000000
+      internalID: 8952162787185664858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow_2
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 1216
+        width: 376
+        height: 304
+      alignment: 9
+      pivot: {x: 0.43617, y: 0.02632}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80e380880f939f9f0800000000000000
+      internalID: -434252183827366392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow_3
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 1216
+        width: 376
+        height: 304
+      alignment: 9
+      pivot: {x: 0.43617, y: 0.02632}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6965917a6d114bf00800000000000000
+      internalID: 1131549020000966294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow_4
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 1216
+        width: 376
+        height: 304
+      alignment: 9
+      pivot: {x: 0.43617, y: 0.02632}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdab7e1dce25cf090800000000000000
+      internalID: -7999427661029459236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 912
+        width: 376
+        height: 304
+      alignment: 9
+      pivot: {x: 0.43617, y: 0.02632}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7f9051a3737be7c0800000000000000
+      internalID: -4041009300170039426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow_6
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 912
+        width: 376
+        height: 304
+      alignment: 9
+      pivot: {x: 0.43617, y: 0.02632}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cc58b9f16ddb87a0800000000000000
+      internalID: -6373757434741629751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow_7
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 912
+        width: 376
+        height: 304
+      alignment: 9
+      pivot: {x: 0.43617, y: 0.02632}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d752ab84ec43f4430800000000000000
+      internalID: 3769289473720460669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow_8
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 912
+        width: 376
+        height: 304
+      alignment: 9
+      pivot: {x: 0.43617, y: 0.02632}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1df0f99d47b6a800800000000000000
+      internalID: 623387142360464666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow_9
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 912
+        width: 376
+        height: 304
+      alignment: 9
+      pivot: {x: 0.43617, y: 0.02632}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87d11a617c20259c0800000000000000
+      internalID: -3940083669894357640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 608
+        width: 376
+        height: 304
+      alignment: 9
+      pivot: {x: 0.43617, y: 0.02632}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fbb4049d445dca70800000000000000
+      internalID: 8848821535025445876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow_11
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 608
+        width: 376
+        height: 304
+      alignment: 9
+      pivot: {x: 0.43617, y: 0.02632}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9ca88c4d7f38ab60800000000000000
+      internalID: 7757520165533166751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow_12
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 608
+        width: 376
+        height: 304
+      alignment: 9
+      pivot: {x: 0.43617, y: 0.02632}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 524e188129ff91040800000000000000
+      internalID: 4619003895786628133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow_13
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 608
+        width: 376
+        height: 304
+      alignment: 9
+      pivot: {x: 0.43617, y: 0.02632}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 511980107b85a2910800000000000000
+      internalID: 1813359342989644053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow_14
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 608
+        width: 376
+        height: 304
+      alignment: 9
+      pivot: {x: 0.43617, y: 0.02632}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 733aee85624aafcf0800000000000000
+      internalID: -217681147366300873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 304
+        width: 376
+        height: 304
+      alignment: 9
+      pivot: {x: 0.43617, y: 0.02632}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05c64da3a3af533a0800000000000000
+      internalID: -6686162943759586224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow_16
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 304
+        width: 376
+        height: 304
+      alignment: 9
+      pivot: {x: 0.43617, y: 0.02632}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80b9f2b7208cc3730800000000000000
+      internalID: 3980276083670883080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow_17
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 304
+        width: 376
+        height: 304
+      alignment: 9
+      pivot: {x: 0.43617, y: 0.02632}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5fa86bc3ead1d550800000000000000
+      internalID: 6183964435261468511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow_18
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 304
+        width: 376
+        height: 304
+      alignment: 9
+      pivot: {x: 0.43617, y: 0.02632}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47632507ef461ca60800000000000000
+      internalID: 7692540682494424692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow_19
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 304
+        width: 376
+        height: 304
+      alignment: 9
+      pivot: {x: 0.43617, y: 0.02632}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daadbc0779df582f0800000000000000
+      internalID: -971091317754176851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 376
+        height: 304
+      alignment: 9
+      pivot: {x: 0.43617, y: 0.02632}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 539fb72b783b33570800000000000000
+      internalID: 8445291121646238005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow_21
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 0
+        width: 376
+        height: 304
+      alignment: 9
+      pivot: {x: 0.43617, y: 0.02632}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5a29713ea1d84300800000000000000
+      internalID: 236669526521490015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow_22
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 0
+        width: 376
+        height: 304
+      alignment: 9
+      pivot: {x: 0.43617, y: 0.02632}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b33b7933cd8586380800000000000000
+      internalID: -8977828154381454533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      bow_0: -415446080585258355
+      bow_1: 8952162787185664858
+      bow_10: 8848821535025445876
+      bow_11: 7757520165533166751
+      bow_12: 4619003895786628133
+      bow_13: 1813359342989644053
+      bow_14: -217681147366300873
+      bow_15: -6686162943759586224
+      bow_16: 3980276083670883080
+      bow_17: 6183964435261468511
+      bow_18: 7692540682494424692
+      bow_19: -971091317754176851
+      bow_2: -434252183827366392
+      bow_20: 8445291121646238005
+      bow_21: 236669526521490015
+      bow_22: -8977828154381454533
+      bow_3: 1131549020000966294
+      bow_4: -7999427661029459236
+      bow_5: -4041009300170039426
+      bow_6: -6373757434741629751
+      bow_7: 3769289473720460669
+      bow_8: 623387142360464666
+      bow_9: -3940083669894357640
+      bow_muzzle_sheet_0: -4991069176460235883
+      bow_muzzle_sheet_1: 7128274041384578891
+      bow_muzzle_sheet_10: 756353629879611265
+      bow_muzzle_sheet_11: -812700275142175591
+      bow_muzzle_sheet_12: -871420470101198800
+      bow_muzzle_sheet_13: 1500482772378636042
+      bow_muzzle_sheet_14: -4840973026011385879
+      bow_muzzle_sheet_15: -9014731642521794315
+      bow_muzzle_sheet_16: -1016310850187670718
+      bow_muzzle_sheet_17: 9121742278402956524
+      bow_muzzle_sheet_18: 8126522241333876395
+      bow_muzzle_sheet_19: -7427049822890018810
+      bow_muzzle_sheet_2: -8077557668145153940
+      bow_muzzle_sheet_20: -8228816169918918212
+      bow_muzzle_sheet_21: 4802575623355956058
+      bow_muzzle_sheet_22: -3892329844428259634
+      bow_muzzle_sheet_23: 6266874282549653854
+      bow_muzzle_sheet_24: 4386287000490179379
+      bow_muzzle_sheet_25: -1675883408157399786
+      bow_muzzle_sheet_26: 4068945148760710100
+      bow_muzzle_sheet_27: -5016147867826642874
+      bow_muzzle_sheet_28: 8538497132369898718
+      bow_muzzle_sheet_29: 8625179426708928836
+      bow_muzzle_sheet_3: 8976070380115177899
+      bow_muzzle_sheet_30: 7298306145812554227
+      bow_muzzle_sheet_31: -834868941512331596
+      bow_muzzle_sheet_32: -6268351896875316165
+      bow_muzzle_sheet_33: 4583129374876672966
+      bow_muzzle_sheet_34: 2744689306216718466
+      bow_muzzle_sheet_4: -4013675655958521675
+      bow_muzzle_sheet_5: 1982861354272025516
+      bow_muzzle_sheet_6: 1814389481693776691
+      bow_muzzle_sheet_7: -7252232563103708230
+      bow_muzzle_sheet_8: -9031953854778736054
+      bow_muzzle_sheet_9: 9072950868995638085
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

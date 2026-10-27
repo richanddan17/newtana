@@ -19,6 +19,38 @@ public class PlayerAnimationClip
 
     public bool footAnchored;
     public Vector2[] frameOffsets = new Vector2[0];
+
+    [Tooltip("프레임별 재생 시간(초). 비어 있거나 짧으면 frameInterval을 사용한다.")]
+    public float[] frameDurations = new float[0];
+
+    [Tooltip("루프 시작 프레임(포함). loop=true일 때만 사용.")]
+    public int loopStartFrame;
+
+    [Tooltip("루프 끝 프레임(포함). -1이면 마지막 프레임.")]
+    public int loopEndFrame = -1;
+
+    public float GetFrameDuration(int frame)
+    {
+        if (frameDurations != null && frame >= 0 && frame < frameDurations.Length)
+        {
+            float duration = frameDurations[frame];
+            if (duration > 0f) return duration;
+        }
+        return frameInterval;
+    }
+
+    public int GetLoopStart(int frameCount)
+    {
+        if (frameCount <= 1) return 0;
+        return Mathf.Clamp(loopStartFrame, 0, frameCount - 1);
+    }
+
+    public int GetLoopEnd(int frameCount)
+    {
+        if (frameCount <= 1) return Mathf.Max(0, frameCount - 1);
+        int end = loopEndFrame <= 0 ? frameCount - 1 : loopEndFrame;
+        return Mathf.Clamp(end, 0, frameCount - 1);
+    }
 }
 
 /// <summary>
@@ -47,6 +79,11 @@ public class PlayerAnimationSet : ScriptableObject
     public PlayerAnimationClip heavyAttack;
     public PlayerAnimationClip bow;
 
+    [Header("Body — Magic Attack")]
+    public PlayerAnimationClip magicBasic;
+    public PlayerAnimationClip magicRapid;
+    public PlayerAnimationClip magicBig;
+
     [Header("Bow FX (활)")]
     public PlayerAnimationClip arrowRelease;
     public PlayerAnimationClip energyArrow;
@@ -60,6 +97,9 @@ public class PlayerAnimationSet : ScriptableObject
 
     [Header("Sword Hit FX (검 적중)")]
     public PlayerAnimationClip swordHitFx;
+    public PlayerAnimationClip attack1HitFx;
+    public PlayerAnimationClip attack2HitFx;
+    public PlayerAnimationClip attack3HitFx;
     public PlayerAnimationClip heavyHitFx;
 
     [Header("Body — 특수/피격 계열")]

@@ -1,0 +1,438 @@
+fileFormatVersion: 2
+guid: 19f2e327a41d78c4e9e93d8b3351e291
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6707631517191407042
+    second: hit_attack3_1x_0
+  - first:
+      213: -6163425692126385369
+    second: hit_attack3_1x_1
+  - first:
+      213: -6680785109144979278
+    second: hit_attack3_1x_2
+  - first:
+      213: 6006869329800992778
+    second: hit_attack3_1x_3
+  - first:
+      213: -4480584811592434518
+    second: hit_attack3_1x_4
+  - first:
+      213: 252402666932728756
+    second: hit_attack3_1x_5
+  - first:
+      213: -6287464819464617884
+    second: hit_attack3_1x_6
+  - first:
+      213: -7878903743095066847
+    second: hit_attack3_1x_7
+  - first:
+      213: 3936580475910361351
+    second: hit_attack3_1x_8
+  - first:
+      213: -1194892964176950080
+    second: hit_attack3_1x_9
+  - first:
+      213: 9141838367729939997
+    second: hit_attack3_1x_10
+  - first:
+      213: -8147421497596746145
+    second: hit_attack3_1x_11
+  - first:
+      213: 6935090710421878809
+    second: hit_attack3_1x_12
+  - first:
+      213: -591676931633785600
+    second: hit_attack3_1x_13
+  - first:
+      213: 4088325588172494068
+    second: hit_attack3_1x_14
+  - first:
+      213: 7313606925428576865
+    second: hit_attack3_1x_15
+  - first:
+      213: 1911356043868765559
+    second: hit_attack3_1x_16
+  - first:
+      213: 4259544688646702346
+    second: hit_attack3_1x_17
+  - first:
+      213: -6417035350008549792
+    second: hit_attack3_1x_18
+  - first:
+      213: -3909599805264291327
+    second: hit_attack3_1x_19
+  - first:
+      213: -6870345211495864198
+    second: hit_attack3_1x_20
+  - first:
+      213: 1177809457417188516
+    second: hit_attack3_1x_21
+  - first:
+      213: 8460170767323903793
+    second: hit_attack3_1x_22
+  - first:
+      213: 3612490598099071670
+    second: hit_attack3_1x_23
+  - first:
+      213: 5455426969535132630
+    second: hit_attack3_1x_24
+  - first:
+      213: -3002472091707111897
+    second: hit_attack3_1x_25
+  - first:
+      213: 6112692002896872194
+    second: hit_attack3_1x_26
+  - first:
+      213: -8747684876831423965
+    second: hit_attack3_1x_27
+  - first:
+      213: -2878698630201740753
+    second: hit_attack3_1x_28
+  - first:
+      213: -6852744231996646005
+    second: hit_attack3_1x_29
+  - first:
+      213: -1915248437946522737
+    second: hit_attack3_1x_30
+  - first:
+      213: -3948466557241911216
+    second: hit_attack3_1x_31
+  - first:
+      213: 5911465586898928910
+    second: hit_attack3_1x_32
+  - first:
+      213: -7319077964292266103
+    second: hit_attack3_1x_33
+  - first:
+      213: 8593989558755440561
+    second: hit_attack3_1x_34
+  - first:
+      213: -3379041862279551271
+    second: hit_attack3_1x_35
+  - first:
+      213: -1720024462681011491
+    second: hit_attack3_1x_36
+  - first:
+      213: 4428956261885045790
+    second: hit_attack3_1x_37
+  - first:
+      213: 257068091470225274
+    second: attack3Hit_0
+  - first:
+      213: 9165265126899004633
+    second: attack3Hit_1
+  - first:
+      213: -2980546930052147226
+    second: attack3Hit_2
+  - first:
+      213: -4410529671795075336
+    second: attack3Hit_3
+  - first:
+      213: 4460759899518086925
+    second: attack3Hit_4
+  - first:
+      213: -2646865786618510633
+    second: attack3Hit_5
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 300
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: attack3Hit_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 156
+        height: 156
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7f9b23311a419300800000000000000
+      internalID: 257068091470225274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack3Hit_1
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 0
+        width: 156
+        height: 156
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d43711c210913f70800000000000000
+      internalID: 9165265126899004633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack3Hit_2
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 0
+        width: 156
+        height: 156
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e75cd5db58f2a6d0800000000000000
+      internalID: -2980546930052147226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack3Hit_3
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 0
+        width: 156
+        height: 156
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f69559a1a6aac2c0800000000000000
+      internalID: -4410529671795075336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack3Hit_4
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 0
+        width: 156
+        height: 156
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0f25179e7dc7ed30800000000000000
+      internalID: 4460759899518086925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack3Hit_5
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 0
+        width: 156
+        height: 156
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d2087c3791744bd0800000000000000
+      internalID: -2646865786618510633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      attack3Hit_0: 257068091470225274
+      attack3Hit_1: 9165265126899004633
+      attack3Hit_2: -2980546930052147226
+      attack3Hit_3: -4410529671795075336
+      attack3Hit_4: 4460759899518086925
+      attack3Hit_5: -2646865786618510633
+      hit_attack3_1x_0: -6707631517191407042
+      hit_attack3_1x_1: -6163425692126385369
+      hit_attack3_1x_10: 9141838367729939997
+      hit_attack3_1x_11: -8147421497596746145
+      hit_attack3_1x_12: 6935090710421878809
+      hit_attack3_1x_13: -591676931633785600
+      hit_attack3_1x_14: 4088325588172494068
+      hit_attack3_1x_15: 7313606925428576865
+      hit_attack3_1x_16: 1911356043868765559
+      hit_attack3_1x_17: 4259544688646702346
+      hit_attack3_1x_18: -6417035350008549792
+      hit_attack3_1x_19: -3909599805264291327
+      hit_attack3_1x_2: -6680785109144979278
+      hit_attack3_1x_20: -6870345211495864198
+      hit_attack3_1x_21: 1177809457417188516
+      hit_attack3_1x_22: 8460170767323903793
+      hit_attack3_1x_23: 3612490598099071670
+      hit_attack3_1x_24: 5455426969535132630
+      hit_attack3_1x_25: -3002472091707111897
+      hit_attack3_1x_26: 6112692002896872194
+      hit_attack3_1x_27: -8747684876831423965
+      hit_attack3_1x_28: -2878698630201740753
+      hit_attack3_1x_29: -6852744231996646005
+      hit_attack3_1x_3: 6006869329800992778
+      hit_attack3_1x_30: -1915248437946522737
+      hit_attack3_1x_31: -3948466557241911216
+      hit_attack3_1x_32: 5911465586898928910
+      hit_attack3_1x_33: -7319077964292266103
+      hit_attack3_1x_34: 8593989558755440561
+      hit_attack3_1x_35: -3379041862279551271
+      hit_attack3_1x_36: -1720024462681011491
+      hit_attack3_1x_37: 4428956261885045790
+      hit_attack3_1x_4: -4480584811592434518
+      hit_attack3_1x_5: 252402666932728756
+      hit_attack3_1x_6: -6287464819464617884
+      hit_attack3_1x_7: -7878903743095066847
+      hit_attack3_1x_8: 3936580475910361351
+      hit_attack3_1x_9: -1194892964176950080
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

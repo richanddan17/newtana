@@ -1,0 +1,402 @@
+fileFormatVersion: 2
+guid: ccbde65c4406ff443a88c5f157d7b80a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1805468220328863578
+    second: attack1_gifextract_0
+  - first:
+      213: 5270366005520423510
+    second: attack1_gifextract_1
+  - first:
+      213: -2171259313253399164
+    second: attack1_gifextract_2
+  - first:
+      213: 2920552170081847873
+    second: attack1_gifextract_3
+  - first:
+      213: -468665395895746869
+    second: attack1_gifextract_4
+  - first:
+      213: 5869666375905867432
+    second: attack1_gifextract_5
+  - first:
+      213: 1532285539109635997
+    second: attack1_gifextract_6
+  - first:
+      213: 7756823727505843923
+    second: attack1_gifextract_7
+  - first:
+      213: -1444750386632556719
+    second: attack1_gifextract_8
+  - first:
+      213: -1356062395055826097
+    second: attack1_gifextract_9
+  - first:
+      213: -3232468622775874019
+    second: attack1_gifextract_10
+  - first:
+      213: -3514776611089640858
+    second: attack1_gifextract_11
+  - first:
+      213: -5382113086661836384
+    second: attack1_gifextract_12
+  - first:
+      213: -5469651535657180973
+    second: attack1_gifextract_13
+  - first:
+      213: 5618372474698605932
+    second: attack1_gifextract_14
+  - first:
+      213: -2265712890062633304
+    second: attack1_gifextract_15
+  - first:
+      213: 2598868237486306103
+    second: attack1_0
+  - first:
+      213: -4914715563372401958
+    second: attack1_1
+  - first:
+      213: 2659852609378229497
+    second: attack1_2
+  - first:
+      213: -742131402468218244
+    second: attack1_3
+  - first:
+      213: 4622947799296944477
+    second: attack1_4
+  - first:
+      213: -5698581097663248921
+    second: attack1_5
+  - first:
+      213: -774457592843739951
+    second: attack1_6
+  - first:
+      213: 6747177639697281107
+    second: attack1_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: attack1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 828
+        width: 1584
+        height: 828
+      alignment: 9
+      pivot: {x: 0.27273, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 733ba6184e8011420800000000000000
+      internalID: 2598868237486306103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack1_1
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 828
+        width: 1584
+        height: 828
+      alignment: 9
+      pivot: {x: 0.27273, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adaaa110c3c6bcbb0800000000000000
+      internalID: -4914715563372401958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack1_2
+      rect:
+        serializedVersion: 2
+        x: 3168
+        y: 828
+        width: 1584
+        height: 828
+      alignment: 9
+      pivot: {x: 0.27273, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fc92e01bd1b9e420800000000000000
+      internalID: 2659852609378229497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack1_3
+      rect:
+        serializedVersion: 2
+        x: 4752
+        y: 828
+        width: 1584
+        height: 828
+      alignment: 9
+      pivot: {x: 0.27273, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7a2833eb6b63b5f0800000000000000
+      internalID: -742131402468218244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack1_4
+      rect:
+        serializedVersion: 2
+        x: 6336
+        y: 828
+        width: 1584
+        height: 828
+      alignment: 9
+      pivot: {x: 0.27273, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d59a440b782082040800000000000000
+      internalID: 4622947799296944477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack1_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1584
+        height: 828
+      alignment: 9
+      pivot: {x: 0.27273, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e5c60e1fa29ae0b0800000000000000
+      internalID: -5698581097663248921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack1_6
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 0
+        width: 1584
+        height: 828
+      alignment: 9
+      pivot: {x: 0.27273, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dcd1fc2ce29045f0800000000000000
+      internalID: -774457592843739951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack1_7
+      rect:
+        serializedVersion: 2
+        x: 3168
+        y: 0
+        width: 1584
+        height: 828
+      alignment: 9
+      pivot: {x: 0.27273, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3507d92b05ac2ad50800000000000000
+      internalID: 6747177639697281107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      attack1_0: 2598868237486306103
+      attack1_1: -4914715563372401958
+      attack1_2: 2659852609378229497
+      attack1_3: -742131402468218244
+      attack1_4: 4622947799296944477
+      attack1_5: -5698581097663248921
+      attack1_6: -774457592843739951
+      attack1_7: 6747177639697281107
+      attack1_gifextract_0: -1805468220328863578
+      attack1_gifextract_1: 5270366005520423510
+      attack1_gifextract_10: -3232468622775874019
+      attack1_gifextract_11: -3514776611089640858
+      attack1_gifextract_12: -5382113086661836384
+      attack1_gifextract_13: -5469651535657180973
+      attack1_gifextract_14: 5618372474698605932
+      attack1_gifextract_15: -2265712890062633304
+      attack1_gifextract_2: -2171259313253399164
+      attack1_gifextract_3: 2920552170081847873
+      attack1_gifextract_4: -468665395895746869
+      attack1_gifextract_5: 5869666375905867432
+      attack1_gifextract_6: 1532285539109635997
+      attack1_gifextract_7: 7756823727505843923
+      attack1_gifextract_8: -1444750386632556719
+      attack1_gifextract_9: -1356062395055826097
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
