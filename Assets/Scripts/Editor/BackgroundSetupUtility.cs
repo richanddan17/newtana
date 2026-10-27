@@ -12,8 +12,6 @@ using UnityEngine;
 /// </summary>
 public static class BackgroundSetupUtility
 {
-    public const string MenuPath = "newtana/배경 패럴랙스 배치";
-
     const string BackgroundName = "Background";
     const string TagManagerPath = "ProjectSettings/TagManager.asset";
     const string BgFarLayer = "BG_Far";
@@ -30,23 +28,19 @@ public static class BackgroundSetupUtility
         ("BG_Main",      "Assets/sprite/background/subway/subway_BG.png", BgMainLayer, 0, 0.70f, 0.50f),
     };
 
-    [MenuItem(MenuPath)]
-    static void SetupFromMenu()
+    public static void Setup()
     {
         // 태그·레이어·정렬 레이어를 먼저 보장 (BG_Far/BG_Main/FG + Player 태그/레이어)
         ProjectTagsLayersSetup.EnsureAllQuiet();
 
-        // 선택된 오브젝트가 Room이면 그걸 사용, 아니면 씬의 Room을 찾고, 없으면 생성한다.
-        var selected = Selection.activeGameObject;
-        Room room = selected != null ? selected.GetComponent<Room>() : null;
-        if (room == null)
-            room = Object.FindAnyObjectByType<Room>(FindObjectsInactive.Include);
-        if (room == null)
+        var rooms = Object.FindObjectsByType<Room>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+        if (rooms.Length == 0)
         {
             var roomGo = new GameObject("Room");
             Undo.RegisterCreatedObjectUndo(roomGo, UndoName);
             roomGo.transform.position = Vector3.zero;
-            room = Undo.AddComponent<Room>(roomGo);
+            roomGo.AddComponent<Room>();
+            rooms = new[] { roomGo.GetComponent<Room>() };
             Debug.Log("[BackgroundSetupUtility] 씬에 Room이 없어 'Room' 오브젝트를 새로 만들었습니다.");
         }
 
@@ -54,59 +48,61 @@ public static class BackgroundSetupUtility
 
         int created = 0, reused = 0;
 
-        // Background 빈 GO (Room 자식). localPosition=0 — ParallaxLayer이 초기 위치를 방 배경 기준점으로 캐시
-        var background = room.transform.Find(BackgroundName);
-        if (background == null)
+        foreach (Room room in rooms)
         {
-            var go = new GameObject(BackgroundName);
-            Undo.RegisterCreatedObjectUndo(go, UndoName);
-            Undo.SetTransformParent(go.transform, selected.transform, UndoName);
-            go.transform.localPosition = Vector3.zero;
-            background = go.transform;
-            created++;
-        }
-        else
-        {
-            reused++;
-        }
-
-        foreach (var (name, path, layer, order, px, py) in Layers)
-        {
-            var child = background.Find(name);
-            if (child == null)
+            var background = room.transform.Find(BackgroundName);
+            if (background == null)
             {
-                var go = new GameObject(name);
+                var go = new GameObject(BackgroundName);
                 Undo.RegisterCreatedObjectUndo(go, UndoName);
-                Undo.SetTransformParent(go.transform, background, UndoName);
+                Undo.SetTransformParent(go.transform, room.transform, UndoName);
                 go.transform.localPosition = Vector3.zero;
-                child = go.transform;
+                background = go.transform;
                 created++;
             }
             else
             {
-                // 재사용 시 Transform 수동 조작값 유지 (플랜 [5] — 실제 수치는 씬에서 조작)
                 reused++;
             }
 
-            var renderer = child.GetComponent<SpriteRenderer>();
-            if (renderer == null)
-                renderer = Undo.AddComponent<SpriteRenderer>(child.gameObject);
-            renderer.sprite = LoadFirstSprite(path);
-            renderer.sortingLayerName = layer;
-            renderer.sortingOrder = order;
+            foreach (var (name, path, layer, order, px, py) in Layers)
+            {
+                var child = background.Find(name);
+                if (child == null)
+                {
+                    var go = new GameObject(name);
+                    Undo.RegisterCreatedObjectUndo(go, UndoName);
+                    Undo.SetTransformParent(go.transform, background, UndoName);
+                    go.transform.localPosition = Vector3.zero;
+                    child = go.transform;
+                    created++;
+                }
+                else
+                {
+                    // 재사용 시 Transform 수동 조작값 유지 (플랜 [5] — 실제 수치는 씬에서 조작)
+                    reused++;
+                }
 
-            var parallax = child.GetComponent<ParallaxLayer>();
-            if (parallax == null)
-                parallax = Undo.AddComponent<ParallaxLayer>(child.gameObject);
+                var renderer = child.GetComponent<SpriteRenderer>();
+                if (renderer == null)
+                    renderer = Undo.AddComponent<SpriteRenderer>(child.gameObject);
+                renderer.sprite = LoadFirstSprite(path);
+                renderer.sortingLayerName = layer;
+                renderer.sortingOrder = order;
 
-            var so = new SerializedObject(parallax);
-            so.FindProperty("parallaxX").floatValue = px;
-            so.FindProperty("parallaxY").floatValue = py;
-            so.FindProperty("anchor").objectReferenceValue = background;
-            so.ApplyModifiedPropertiesWithoutUndo();
+                var parallax = child.GetComponent<ParallaxLayer>();
+                if (parallax == null)
+                    parallax = Undo.AddComponent<ParallaxLayer>(child.gameObject);
+
+                var so = new SerializedObject(parallax);
+                so.FindProperty("parallaxX").floatValue = px;
+                so.FindProperty("parallaxY").floatValue = py;
+                so.FindProperty("anchor").objectReferenceValue = background;
+                so.ApplyModifiedPropertiesWithoutUndo();
+            }
         }
 
-        Debug.Log($"[BackgroundSetupUtility] 배경 배치 완료: {selected.name} — 생성 {created}개 / 재사용 {reused}개");
+        Debug.Log($"[BackgroundSetupUtility] 배경 배치 완료: Room {rooms.Length}개 — 생성 {created}개 / 재사용 {reused}개");
     }
 
     /// <summary>TagManager.asset에 BG_Far/BG_Main/FG가 없으면 추가 (uniqueId 10000~10002).

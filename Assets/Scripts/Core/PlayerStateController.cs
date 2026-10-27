@@ -45,6 +45,9 @@ public class PlayerStateController : MonoBehaviour
     [Header("State Debug")]
     [SerializeField] bool logStateChanges = false;
 
+    [Header("Movement Lock")]
+    [SerializeField] bool movementLocked = false;
+
     // 현재 상태
     PlayerState currentMoveState = PlayerState.Idle;
     PlayerState currentOverlayState = PlayerState.Idle; // Idle = 오버레이 없음
@@ -74,10 +77,15 @@ public class PlayerStateController : MonoBehaviour
     public Vector2 Velocity => rb ? rb.linearVelocity : Vector2.zero;
     public Vector2 InputDirection => inputBuffer?.MoveInput ?? Vector2.zero;
     public bool IsDashing => isDashing;
-    public bool CanMove => GetPermissions(currentMoveState).CanMove;
-    public bool CanJump => GetPermissions(currentMoveState).CanJump;
+    public bool MovementLocked
+    {
+        get => movementLocked;
+        set => movementLocked = value;
+    }
+    public bool CanMove => !movementLocked && GetPermissions(currentMoveState).CanMove;
+    public bool CanJump => !movementLocked && GetPermissions(currentMoveState).CanJump;
     public bool CanShoot => GetPermissions(currentMoveState).CanShoot && CanActivateCurrentOverlay();
-    public bool CanDash => enableDash && GetPermissions(currentMoveState).CanDash && dashCooldownTimer <= 0f;
+    public bool CanDash => !movementLocked && enableDash && GetPermissions(currentMoveState).CanDash && dashCooldownTimer <= 0f;
     public bool CanBeHit => GetPermissions(currentMoveState).CanBeHit;
     public bool IsCrouching => currentMoveState == PlayerState.Crouch;
     public float CoyoteTime => coyoteTime;
@@ -401,25 +409,31 @@ public class PlayerStateController : MonoBehaviour
 
         if (dashTimer > 0f)
         {
-            // 대시 중
             isDashing = true;
-            if (dashTimer <= 0f)
-            {
-                EndDash();
-            }
+            return;
         }
-        else
-        {
-            isDashing = false;
 
-            // 대시 입력 체크
-            if (inputBuffer.ConsumeDashPressed() && CanDash)
-            {
-                // 대시 방향: 이동 입력 우선, 없으면 바라보는 방향
-                Vector2 dashDir = InputDirection.sqrMagnitude > 0.01f ? InputDirection.normalized : transform.right;
-                RequestDash(dashDir);
-            }
+        if (isDashing) EndDash();
+
+        if (inputBuffer.ConsumeDashPressed() && CanDash)
+        {
+            TryDash();
         }
+    }
+
+    public bool TryDash()
+    {
+        if (!enableDash || !CanDash) return false;
+
+        float facing = Mathf.Sign(transform.localScale.x);
+        if (facing == 0f) facing = 1f;
+
+        Vector2 dashDir = InputDirection.sqrMagnitude > 0.01f
+            ? InputDirection.normalized
+            : new Vector2(facing, 0f);
+
+        RequestDash(dashDir);
+        return true;
     }
 
     void StartDash()
@@ -502,6 +516,7 @@ public class PlayerStateController : MonoBehaviour
         externalVelocity = Vector2.zero;
         externalVelocityTimer = 0f;
         coyoteTimer = 0f;
+        movementLocked = false;
         health?.RemoveInvincibility(DashSourceId); // 대시 강제 종료 시 무적 해제
         inputBuffer.ClearAll();
 

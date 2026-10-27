@@ -5,7 +5,7 @@ using Cinemachine;
 
 public static class RoomSystemSetup
 {
-    const string MenuPath = "newtana/룸 배치";
+    const string UndoLabel = "room layout";
     const float RoomWidth = 40f;
     const float RoomHeight = 20f;
     const float CorridorWidth = 4f;
@@ -13,7 +13,6 @@ public static class RoomSystemSetup
     const int RoomCount = 3;
     const int CorridorCount = 2;
 
-    [MenuItem(MenuPath, false, 101)]
     public static void Setup()
     {
         ProjectTagsLayersSetup.EnsureAllQuiet();
@@ -22,7 +21,7 @@ public static class RoomSystemSetup
         if (roomManager == null)
         {
             var rmGo = new GameObject("RoomManager");
-            Undo.RegisterCreatedObjectUndo(rmGo, MenuPath);
+            Undo.RegisterCreatedObjectUndo(rmGo, UndoLabel);
             roomManager = Undo.AddComponent<RoomManager>(rmGo);
         }
 
@@ -34,7 +33,7 @@ public static class RoomSystemSetup
             string roomName = $"Room_{i + 1}";
             Room room = FindOrCreateRoom(parent, roomName);
             room.name = roomName;
-            Undo.RecordObject(room.transform, MenuPath);
+            Undo.RecordObject(room.transform, UndoLabel);
             room.transform.localPosition = new Vector3(i * (RoomWidth + CorridorWidth), 0f, 0f);
             ConfigureRoom(room, RoomWidth, RoomHeight, i == 0);
             rooms.Add(room);
@@ -44,7 +43,7 @@ public static class RoomSystemSetup
         {
             string corridorName = $"Corridor_{i + 1}";
             Transform corridor = FindOrCreateCorridor(parent, corridorName);
-            Undo.RecordObject(corridor, MenuPath);
+            Undo.RecordObject(corridor, UndoLabel);
             // 통로는 방 사이 빈 구간을 정확히 채운다: 방1[-20,20]·방2[24,64]·방3[68,108] → 통로 중심 22, 66
             corridor.localPosition = new Vector3(
                 RoomWidth * 0.5f + CorridorWidth * 0.5f + i * (RoomWidth + CorridorWidth), 0f, 0f);
@@ -66,7 +65,7 @@ public static class RoomSystemSetup
         }
 
         var go = new GameObject(name);
-        Undo.RegisterCreatedObjectUndo(go, MenuPath);
+        Undo.RegisterCreatedObjectUndo(go, UndoLabel);
         go.transform.SetParent(parent, false);
         var roomComp = Undo.AddComponent<Room>(go);
         return roomComp;
@@ -78,7 +77,7 @@ public static class RoomSystemSetup
         if (existing != null) return existing.transform;
 
         var go = new GameObject(name);
-        Undo.RegisterCreatedObjectUndo(go, MenuPath);
+        Undo.RegisterCreatedObjectUndo(go, UndoLabel);
         go.transform.SetParent(parent, false);
         return go.transform;
     }
@@ -88,7 +87,7 @@ public static class RoomSystemSetup
         var boundsCollider = room.GetComponent<BoxCollider2D>();
         if (boundsCollider == null)
             boundsCollider = Undo.AddComponent<BoxCollider2D>(room.gameObject);
-        Undo.RecordObject(boundsCollider, MenuPath);
+        Undo.RecordObject(boundsCollider, UndoLabel);
         boundsCollider.isTrigger = true;
         boundsCollider.size = new Vector2(width, height);
         boundsCollider.offset = Vector2.zero;
@@ -113,7 +112,7 @@ public static class RoomSystemSetup
         var col = corridor.GetComponent<BoxCollider2D>();
         if (col == null)
             col = Undo.AddComponent<BoxCollider2D>(corridor.gameObject);
-        Undo.RecordObject(col, MenuPath);
+        Undo.RecordObject(col, UndoLabel);
         col.isTrigger = true;
         col.size = new Vector2(width, height);
         col.offset = Vector2.zero;
@@ -125,7 +124,7 @@ public static class RoomSystemSetup
         if (bg == null)
         {
             var bgGo = new GameObject("Background");
-            Undo.RegisterCreatedObjectUndo(bgGo, MenuPath);
+            Undo.RegisterCreatedObjectUndo(bgGo, UndoLabel);
             bgGo.transform.SetParent(room.transform, false);
             bg = bgGo.transform;
         }
@@ -133,14 +132,14 @@ public static class RoomSystemSetup
         var sr = bg.GetComponent<SpriteRenderer>();
         if (sr == null)
             sr = Undo.AddComponent<SpriteRenderer>(bg.gameObject);
-        Undo.RecordObject(sr, MenuPath);
+        Undo.RecordObject(sr, UndoLabel);
         sr.sortingLayerName = "BG_Main";
         sr.sortingOrder = -10;
 
         var parallax = bg.GetComponent<ParallaxLayer>();
         if (parallax == null)
             parallax = Undo.AddComponent<ParallaxLayer>(bg.gameObject);
-        Undo.RecordObject(parallax, MenuPath);
+        Undo.RecordObject(parallax, UndoLabel);
         var pso = new SerializedObject(parallax);
         var px = pso.FindProperty("parallaxX");
         if (px != null) px.floatValue = 0.5f;
@@ -148,7 +147,7 @@ public static class RoomSystemSetup
         if (py != null) py.floatValue = 0.3f;
         pso.ApplyModifiedProperties();
 
-        Undo.RecordObject(bg, MenuPath);
+        Undo.RecordObject(bg, UndoLabel);
         bg.localScale = new Vector3(width / 10f, height / 10f, 1f);
     }
 

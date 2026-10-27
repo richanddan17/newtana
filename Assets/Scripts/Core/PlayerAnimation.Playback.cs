@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 /// <summary>
@@ -10,6 +11,10 @@ public partial class PlayerAnimation
     PlayerAnimationClip activeClip;
     int activeFrame;
     float activeTimer;
+    int debugLoopStartFrame;
+    int lastDebugFrame = -1;
+
+    public event Action<int> OnDebugClipFrame;
 
     void UpdateSprite()
     {
@@ -23,6 +28,7 @@ public partial class PlayerAnimation
             activeClip = clip;
             activeFrame = 0;
             activeTimer = 0f;
+            NotifyDebugFrame();
         }
         else
         {
@@ -37,27 +43,59 @@ public partial class PlayerAnimation
     {
         if (clip.frames.Length <= 1) return;
 
-        float interval = clip.frameInterval;
+        float interval = clip.frameInterval / PlaybackSpeed;
         if (interval <= 0f) return;
 
         activeTimer += Time.deltaTime;
+        bool finished = false;
         while (activeTimer >= interval)
         {
             activeTimer -= interval;
+            int previousFrame = activeFrame;
             if (activeFrame + 1 < clip.frames.Length)
             {
                 activeFrame++;
             }
             else if (clip.loop)
             {
-                activeFrame = 0;
+                activeFrame = GetLoopStartFrame(clip);
             }
             else
             {
                 activeTimer = 0f;
+                finished = true;
                 break;
             }
+
+            if (activeFrame != previousFrame) NotifyDebugFrame();
         }
+
+        if (finished && ReferenceEquals(clip, debugClipOverride))
+        {
+            ClearDebugClip();
+            OnDebugClipFinished?.Invoke(clip);
+        }
+    }
+
+    int GetLoopStartFrame(PlayerAnimationClip clip)
+    {
+        if (ReferenceEquals(clip, debugClipOverride) &&
+            debugLoopStartFrame > 0 &&
+            debugLoopStartFrame < clip.frames.Length)
+        {
+            return debugLoopStartFrame;
+        }
+
+        return 0;
+    }
+
+    void NotifyDebugFrame()
+    {
+        if (!ReferenceEquals(activeClip, debugClipOverride)) return;
+        if (lastDebugFrame == activeFrame) return;
+
+        lastDebugFrame = activeFrame;
+        OnDebugClipFrame?.Invoke(activeFrame);
     }
 
     #region MuzzleFX

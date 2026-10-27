@@ -13,7 +13,6 @@ using UnityEngine;
 /// </summary>
 public static class ProjectTagsLayersSetup
 {
-    public const string MenuPath = "newtana/태그·레이어 셋업";
     const string TagManagerPath = "ProjectSettings/TagManager.asset";
 
     // 태그 (내장 태그 외 사용자 태그)
@@ -37,7 +36,6 @@ public static class ProjectTagsLayersSetup
         ("Player", 10003),
     };
 
-    [MenuItem(MenuPath, false, 99)]
     public static void Setup()
     {
         int tags = EnsureTags();

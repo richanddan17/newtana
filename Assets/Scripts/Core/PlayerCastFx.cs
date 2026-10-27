@@ -15,6 +15,8 @@ public class PlayerCastFx : MonoBehaviour
     [SerializeField] SpriteRenderer castFxRenderer; // CastFX
     [SerializeField] SpriteRenderer auraFxRenderer; // AuraFX
     [SerializeField] Transform castPoint;          // 이펙트가 붙을 기준 위치
+    [SerializeField] Vector2 castFxOffset = new Vector2(0.35f, -0.45f);
+    [SerializeField] float castFxScale = 0.5f;
 
     PlayerAnimationClip playingClip;
     int playingFrame;
@@ -38,6 +40,11 @@ public class PlayerCastFx : MonoBehaviour
         if (castFxRenderer == null) castFxRenderer = FindRenderer("CastFX");
         if (auraFxRenderer == null) auraFxRenderer = FindRenderer("AuraFX");
         if (castPoint == null) castPoint = transform.Find("CastPoint");
+
+        if (castFxRenderer != null)
+        {
+            castFxRenderer.transform.localScale = Vector3.one * Mathf.Max(0.01f, castFxScale);
+        }
     }
 
     SpriteRenderer FindRenderer(string childName)
@@ -76,7 +83,11 @@ public class PlayerCastFx : MonoBehaviour
     {
         auraActive = false;
         auraClip = null;
-        if (auraFxRenderer != null) auraFxRenderer.sprite = null;
+        if (auraFxRenderer != null)
+        {
+            auraFxRenderer.sprite = null;
+            auraFxRenderer.enabled = false;
+        }
     }
 
     /// <summary>캐스트 연출 전체 정지 (사망/부활 시 호출).</summary>
@@ -84,7 +95,11 @@ public class PlayerCastFx : MonoBehaviour
     {
         playingActive = false;
         playingClip = null;
-        if (castFxRenderer != null) castFxRenderer.sprite = null;
+        if (castFxRenderer != null)
+        {
+            castFxRenderer.sprite = null;
+            castFxRenderer.enabled = false;
+        }
         HideAura();
     }
 
@@ -97,7 +112,12 @@ public class PlayerCastFx : MonoBehaviour
         playingFrame = 0;
         playingTimer = 0f;
         playingActive = true;
-        if (castFxRenderer != null) castFxRenderer.sprite = clip.frames[0];
+        if (castFxRenderer != null)
+        {
+            castFxRenderer.sprite = clip.frames[0];
+            castFxRenderer.enabled = true;
+        }
+        UpdateEffectPosition();
     }
 
     void PlayLoop(PlayerAnimationClip clip)
@@ -107,7 +127,20 @@ public class PlayerCastFx : MonoBehaviour
         playingFrame = 0;
         playingTimer = 0f;
         playingActive = true;
-        if (castFxRenderer != null) castFxRenderer.sprite = clip.frames[0];
+        if (castFxRenderer != null)
+        {
+            castFxRenderer.sprite = clip.frames[0];
+            castFxRenderer.enabled = true;
+        }
+        UpdateEffectPosition();
+    }
+
+    void UpdateEffectPosition()
+    {
+        if (castFxRenderer == null || castPoint == null) return;
+        float facing = transform.lossyScale.x < 0f ? -1f : 1f;
+        Vector3 offset = new Vector3(castFxOffset.x * facing, castFxOffset.y, 0f);
+        castFxRenderer.transform.position = castPoint.position + offset;
     }
 
     void PlayAura(PlayerAnimationClip clip)
@@ -117,7 +150,11 @@ public class PlayerCastFx : MonoBehaviour
         auraFrame = 0;
         auraTimer = 0f;
         auraActive = true;
-        if (auraFxRenderer != null) auraFxRenderer.sprite = clip.frames[0];
+        if (auraFxRenderer != null)
+        {
+            auraFxRenderer.sprite = clip.frames[0];
+            auraFxRenderer.enabled = true;
+        }
     }
 
     void UpdatePlaying()
@@ -125,7 +162,9 @@ public class PlayerCastFx : MonoBehaviour
         if (!playingActive || !HasFrames(playingClip)) return;
         if (castFxRenderer == null) return;
 
-        float interval = playingClip.frameInterval;
+        UpdateEffectPosition();
+
+        float interval = playingClip.frameInterval / PlayerBowShot.VfxSpeed;
         if (interval > 0f)
         {
             playingTimer += Time.deltaTime;
@@ -156,7 +195,7 @@ public class PlayerCastFx : MonoBehaviour
         if (!auraActive || !HasFrames(auraClip)) return;
         if (auraFxRenderer == null) return;
 
-        float interval = auraClip.frameInterval;
+        float interval = auraClip.frameInterval / PlayerBowShot.VfxSpeed;
         if (interval > 0f)
         {
             auraTimer += Time.deltaTime;

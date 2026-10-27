@@ -1,0 +1,321 @@
+fileFormatVersion: 2
+guid: 1e35c23e071b74a4990bd4133a8bdb35
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7152445051741434569
+    second: 20_jump_dust_0
+  - first:
+      213: -6955500660296720236
+    second: 20_jump_dust_1
+  - first:
+      213: -729215320843259943
+    second: 20_jump_dust_2
+  - first:
+      213: 1589874831140782948
+    second: 20_jump_dust_3
+  - first:
+      213: -7903250459379449857
+    second: 20_jump_dust_4
+  - first:
+      213: 5932808310717616517
+    second: 20_jump_dust_5
+  - first:
+      213: 178665785623686557
+    second: 20_jump_dust_6
+  - first:
+      213: 4332462895243069028
+    second: 20_jump_dust_7
+  - first:
+      213: -5369254384177288579
+    second: 20_jump_dust_8
+  - first:
+      213: -7277993794643522752
+    second: 20_jump_dust_9
+  - first:
+      213: -4363964989447365252
+    second: 20_jump_dust_10
+  - first:
+      213: 7486838387841928530
+    second: 20_jump_dust_11
+  - first:
+      213: -1031962613188717929
+    second: jumpDust_0
+  - first:
+      213: -8262777967050279082
+    second: jumpDust_1
+  - first:
+      213: -8646426782327232959
+    second: jumpDust_2
+  - first:
+      213: 8472490675528212809
+    second: jumpDust_3
+  - first:
+      213: -5012751832038542498
+    second: jumpDust_4
+  - first:
+      213: 7049174892498773388
+    second: jumpDust_5
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 300
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: jumpDust_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 73
+        height: 37
+      alignment: 9
+      pivot: {x: 0.49315, y: 0.08108}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 792176b887bbda1f0800000000000000
+      internalID: -1031962613188717929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpDust_1
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 0
+        width: 73
+        height: 37
+      alignment: 9
+      pivot: {x: 0.49315, y: 0.08108}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6573b009737b45d80800000000000000
+      internalID: -8262777967050279082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpDust_2
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 0
+        width: 73
+        height: 37
+      alignment: 9
+      pivot: {x: 0.49315, y: 0.08108}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14626f6f6a8b10880800000000000000
+      internalID: -8646426782327232959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpDust_3
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 0
+        width: 73
+        height: 37
+      alignment: 9
+      pivot: {x: 0.49315, y: 0.08108}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9412ba55165549570800000000000000
+      internalID: 8472490675528212809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpDust_4
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 0
+        width: 73
+        height: 37
+      alignment: 9
+      pivot: {x: 0.49315, y: 0.08108}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e53772874c02f6ab0800000000000000
+      internalID: -5012751832038542498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpDust_5
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 0
+        width: 73
+        height: 37
+      alignment: 9
+      pivot: {x: 0.49315, y: 0.08108}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c85edf27733b3d160800000000000000
+      internalID: 7049174892498773388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      20_jump_dust_0: 7152445051741434569
+      20_jump_dust_1: -6955500660296720236
+      20_jump_dust_10: -4363964989447365252
+      20_jump_dust_11: 7486838387841928530
+      20_jump_dust_2: -729215320843259943
+      20_jump_dust_3: 1589874831140782948
+      20_jump_dust_4: -7903250459379449857
+      20_jump_dust_5: 5932808310717616517
+      20_jump_dust_6: 178665785623686557
+      20_jump_dust_7: 4332462895243069028
+      20_jump_dust_8: -5369254384177288579
+      20_jump_dust_9: -7277993794643522752
+      jumpDust_0: -1031962613188717929
+      jumpDust_1: -8262777967050279082
+      jumpDust_2: -8646426782327232959
+      jumpDust_3: 8472490675528212809
+      jumpDust_4: -5012751832038542498
+      jumpDust_5: 7049174892498773388
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

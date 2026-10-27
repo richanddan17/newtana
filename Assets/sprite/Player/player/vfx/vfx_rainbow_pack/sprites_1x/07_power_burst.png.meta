@@ -1,0 +1,637 @@
+fileFormatVersion: 2
+guid: 2baf73bae01151940aef0470f8543aa3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 748355621214539877
+    second: 07_power_burst_0
+  - first:
+      213: -8043641690389123865
+    second: 07_power_burst_1
+  - first:
+      213: 870752887402948814
+    second: 07_power_burst_2
+  - first:
+      213: 1707356013412311658
+    second: 07_power_burst_3
+  - first:
+      213: -6853336541379782783
+    second: 07_power_burst_4
+  - first:
+      213: -8669576766960317595
+    second: 07_power_burst_5
+  - first:
+      213: -3772382457348441519
+    second: 07_power_burst_6
+  - first:
+      213: 6885164157045847569
+    second: 07_power_burst_7
+  - first:
+      213: 4082693993063302609
+    second: 07_power_burst_8
+  - first:
+      213: -3789760036613225279
+    second: 07_power_burst_9
+  - first:
+      213: -2709180163013158056
+    second: 07_power_burst_10
+  - first:
+      213: -5893007578775618988
+    second: 07_power_burst_11
+  - first:
+      213: -5021820547306013652
+    second: 07_power_burst_12
+  - first:
+      213: -6831241765915003567
+    second: 07_power_burst_13
+  - first:
+      213: -5735733901263442889
+    second: 07_power_burst_14
+  - first:
+      213: -9098062059838873996
+    second: 07_power_burst_15
+  - first:
+      213: -4448002463739877543
+    second: 07_power_burst_16
+  - first:
+      213: -997375136888091513
+    second: 07_power_burst_17
+  - first:
+      213: 8189214291554053348
+    second: 07_power_burst_18
+  - first:
+      213: 1283637558818385042
+    second: 07_power_burst_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 07_power_burst_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 13
+        width: 59
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 560d828f871b26a00800000000000000
+      internalID: 748355621214539877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 07_power_burst_1
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 16
+        width: 71
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ec65d7ef7e3f5090800000000000000
+      internalID: -8043641690389123865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 07_power_burst_2
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 19
+        width: 156
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec86ccc3329851c00800000000000000
+      internalID: 870752887402948814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 07_power_burst_3
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 28
+        width: 89
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a62619c8f3fb1b710800000000000000
+      internalID: 1707356013412311658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 07_power_burst_4
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 61
+        width: 62
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1879ad4e9be04e0a0800000000000000
+      internalID: -6853336541379782783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 07_power_burst_5
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 49
+        width: 205
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56bc9542dd97fa780800000000000000
+      internalID: -8669576766960317595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 07_power_burst_6
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 28
+        width: 244
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15ab4d8542ec5abc0800000000000000
+      internalID: -3772382457348441519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 07_power_burst_7
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 19
+        width: 83
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11638f852540d8f50800000000000000
+      internalID: 6885164157045847569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 07_power_burst_8
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 28
+        width: 77
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d5c82f3e84a8a830800000000000000
+      internalID: 4082693993063302609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 07_power_burst_9
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 22
+        width: 71
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c482b16351186bc0800000000000000
+      internalID: -3789760036613225279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 07_power_burst_10
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 25
+        width: 71
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85bd01fdefe076ad0800000000000000
+      internalID: -2709180163013158056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 07_power_burst_11
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 10
+        width: 47
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45af46064d4d73ea0800000000000000
+      internalID: -5893007578775618988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 07_power_burst_12
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 7
+        width: 65
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2c3118a1d8ee4ab0800000000000000
+      internalID: -5021820547306013652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 07_power_burst_13
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 4
+        width: 83
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 155f2dfaecd8231a0800000000000000
+      internalID: -6831241765915003567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 07_power_burst_14
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 10
+        width: 41
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73ce601f7649660b0800000000000000
+      internalID: -5735733901263442889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 07_power_burst_15
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 10
+        width: 59
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47e58da92c03db180800000000000000
+      internalID: -9098062059838873996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 07_power_burst_16
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 1
+        width: 77
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 957e8b463558542c0800000000000000
+      internalID: -4448002463739877543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 07_power_burst_17
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 4
+        width: 71
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78c8af9e89c9822f0800000000000000
+      internalID: -997375136888091513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 07_power_burst_18
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 1
+        width: 89
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4eca1a5820fe5a170800000000000000
+      internalID: 8189214291554053348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 07_power_burst_19
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 1
+        width: 65
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29c28b90f8560d110800000000000000
+      internalID: 1283637558818385042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      07_power_burst_0: 748355621214539877
+      07_power_burst_1: -8043641690389123865
+      07_power_burst_10: -2709180163013158056
+      07_power_burst_11: -5893007578775618988
+      07_power_burst_12: -5021820547306013652
+      07_power_burst_13: -6831241765915003567
+      07_power_burst_14: -5735733901263442889
+      07_power_burst_15: -9098062059838873996
+      07_power_burst_16: -4448002463739877543
+      07_power_burst_17: -997375136888091513
+      07_power_burst_18: 8189214291554053348
+      07_power_burst_19: 1283637558818385042
+      07_power_burst_2: 870752887402948814
+      07_power_burst_3: 1707356013412311658
+      07_power_burst_4: -6853336541379782783
+      07_power_burst_5: -8669576766960317595
+      07_power_burst_6: -3772382457348441519
+      07_power_burst_7: 6885164157045847569
+      07_power_burst_8: 4082693993063302609
+      07_power_burst_9: -3789760036613225279
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

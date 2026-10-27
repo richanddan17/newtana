@@ -16,12 +16,15 @@ public class PlayerAnimationClip
 
     [Tooltip("true=루프, false=1회 재생 후 마지막 프레임 유지")]
     public bool loop;
+
+    public bool footAnchored;
+    public Vector2[] frameOffsets = new Vector2[0];
 }
 
 /// <summary>
 /// 플레이어 애니메이션 세트 — 모든 시트/프레임/타이밍을 담은 ScriptableObject.
 /// 런타임( PlayerAnimation )은 이 에셋 하나만 참조한다.
-/// 에셋 생성/갱신: Tools/PlayerAnimation/Import Sheets From Manifest (에디터)
+/// 에셋 생성/갱신: Newtana Custom Tool > Import Sheets From Manifest (에디터)
 /// </summary>
 [CreateAssetMenu(fileName = "PlayerAnimationSet", menuName = "RunGun/Player Animation Set")]
 public class PlayerAnimationSet : ScriptableObject
@@ -43,6 +46,21 @@ public class PlayerAnimationSet : ScriptableObject
     public PlayerAnimationClip downAttack;
     public PlayerAnimationClip heavyAttack;
     public PlayerAnimationClip bow;
+
+    [Header("Bow FX (활)")]
+    public PlayerAnimationClip arrowRelease;
+    public PlayerAnimationClip energyArrow;
+    public PlayerAnimationClip arrowImpact;
+
+    [Header("Attack FX (검기)")]
+    public PlayerAnimationClip attack1Fx;
+    public PlayerAnimationClip attack2Fx;
+    public PlayerAnimationClip attack3Fx;
+    public PlayerAnimationClip heavyFx;
+
+    [Header("Sword Hit FX (검 적중)")]
+    public PlayerAnimationClip swordHitFx;
+    public PlayerAnimationClip heavyHitFx;
 
     [Header("Body — 특수/피격 계열")]
     public PlayerAnimationClip doubleJump;
@@ -76,6 +94,11 @@ public class PlayerAnimationSet : ScriptableObject
     public PlayerAnimationClip castBigLoop;
     public PlayerAnimationClip castBigRelease;
     public PlayerAnimationClip castAura;
+
+    [Header("Cast Projectile FX")]
+    public PlayerAnimationClip basicBolt;
+    public PlayerAnimationClip rapidBolt;
+    public PlayerAnimationClip bigOrb;
 
     [Header("Dust FX (착지/점프/대시)")]
     public PlayerAnimationClip jumpDust;

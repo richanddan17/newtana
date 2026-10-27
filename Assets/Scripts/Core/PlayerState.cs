@@ -53,16 +53,16 @@ public static class PlayerStateRules
     {
         // Idle
         new StatePermissions(PlayerState.Idle,
-            canMove: true, canJump: true, canShoot: true, canDash: false, canBeHit: true),
+            canMove: true, canJump: true, canShoot: true, canDash: true, canBeHit: true),
         // Run
         new StatePermissions(PlayerState.Run,
-            canMove: true, canJump: true, canShoot: true, canDash: false, canBeHit: true),
+            canMove: true, canJump: true, canShoot: true, canDash: true, canBeHit: true),
         // Jump
         new StatePermissions(PlayerState.Jump,
             canMove: true, canJump: false, canShoot: true, canDash: false, canBeHit: true),
         // Fall
         new StatePermissions(PlayerState.Fall,
-            canMove: true, canJump: false, canShoot: true, canDash: false, canBeHit: true),
+            canMove: true, canJump: true, canShoot: true, canDash: false, canBeHit: true),
         // Crouch (앉기: 이동 불가, 사격만 정면 가능)
         new StatePermissions(PlayerState.Crouch,
             canMove: false, canJump: true, canShoot: true, canDash: false, canBeHit: true),
@@ -106,8 +106,14 @@ public static class PlayerStateRules
 
         int fromIdx = Array.IndexOf(PriorityOrder, from);
         int toIdx = Array.IndexOf(PriorityOrder, to);
-        return toIdx <= fromIdx; // 같거나 높은 우선순위로만 전환 허용
+        if (toIdx <= fromIdx) return true;
+
+        return IsLocomotionState(from) && IsLocomotionState(to);
     }
+
+    static bool IsLocomotionState(PlayerState state) =>
+        state == PlayerState.Idle || state == PlayerState.Run ||
+        state == PlayerState.Jump || state == PlayerState.Fall;
 
     public static bool IsOverlay(PlayerState state) => Array.Exists(OverlayStates, s => s == state);
 

@@ -1,0 +1,242 @@
+{
+ "applies_to": "rapid only (basic and big have no camera shake)",
+ "what_moves": "camera / whole scene (ground, wall). Sprite sheets and UI are not affected.",
+ "units": "dots; 1 dot = 12px in the sprite sheets (3px in the demo GIF). x+ = right, y+ = down. Value is how far the scene is displaced from its resting position.",
+ "amplitude_dots": {
+  "x": 1,
+  "y": 1,
+  "max_distance_px_at_12ppu": 17
+ },
+ "pattern": "4-step cycle: A(-1,0) -> rest(0,0) -> B(-1,+1) -> rest(0,0); each step is one demo frame",
+ "start": "first rapid muzzle frame (demo gif frame 33)",
+ "end": "last A step at demo gif frame 56, then rest (0,0)",
+ "total_shake_ms": 1200,
+ "source": "measured from IMG_1741.gif by aligning the static ground line and wall line per frame",
+ "steps": [
+  {
+   "gif_frame": 33,
+   "start_ms": 0,
+   "duration_ms": 40,
+   "offset_dots": [
+    -1,
+    0
+   ]
+  },
+  {
+   "gif_frame": 34,
+   "start_ms": 40,
+   "duration_ms": 60,
+   "offset_dots": [
+    -1,
+    1
+   ]
+  },
+  {
+   "gif_frame": 35,
+   "start_ms": 100,
+   "duration_ms": 40,
+   "offset_dots": [
+    0,
+    0
+   ]
+  },
+  {
+   "gif_frame": 36,
+   "start_ms": 140,
+   "duration_ms": 60,
+   "offset_dots": [
+    -1,
+    0
+   ]
+  },
+  {
+   "gif_frame": 37,
+   "start_ms": 200,
+   "duration_ms": 40,
+   "offset_dots": [
+    0,
+    0
+   ]
+  },
+  {
+   "gif_frame": 38,
+   "start_ms": 240,
+   "duration_ms": 60,
+   "offset_dots": [
+    -1,
+    1
+   ]
+  },
+  {
+   "gif_frame": 39,
+   "start_ms": 300,
+   "duration_ms": 40,
+   "offset_dots": [
+    0,
+    0
+   ]
+  },
+  {
+   "gif_frame": 40,
+   "start_ms": 340,
+   "duration_ms": 60,
+   "offset_dots": [
+    -1,
+    0
+   ]
+  },
+  {
+   "gif_frame": 41,
+   "start_ms": 400,
+   "duration_ms": 40,
+   "offset_dots": [
+    0,
+    0
+   ]
+  },
+  {
+   "gif_frame": 42,
+   "start_ms": 440,
+   "duration_ms": 60,
+   "offset_dots": [
+    -1,
+    1
+   ]
+  },
+  {
+   "gif_frame": 43,
+   "start_ms": 500,
+   "duration_ms": 40,
+   "offset_dots": [
+    0,
+    0
+   ]
+  },
+  {
+   "gif_frame": 44,
+   "start_ms": 540,
+   "duration_ms": 60,
+   "offset_dots": [
+    -1,
+    0
+   ]
+  },
+  {
+   "gif_frame": 45,
+   "start_ms": 600,
+   "duration_ms": 40,
+   "offset_dots": [
+    0,
+    0
+   ]
+  },
+  {
+   "gif_frame": 46,
+   "start_ms": 640,
+   "duration_ms": 60,
+   "offset_dots": [
+    -1,
+    1
+   ]
+  },
+  {
+   "gif_frame": 47,
+   "start_ms": 700,
+   "duration_ms": 40,
+   "offset_dots": [
+    0,
+    0
+   ]
+  },
+  {
+   "gif_frame": 48,
+   "start_ms": 740,
+   "duration_ms": 60,
+   "offset_dots": [
+    -1,
+    0
+   ]
+  },
+  {
+   "gif_frame": 49,
+   "start_ms": 800,
+   "duration_ms": 40,
+   "offset_dots": [
+    0,
+    0
+   ]
+  },
+  {
+   "gif_frame": 50,
+   "start_ms": 840,
+   "duration_ms": 60,
+   "offset_dots": [
+    -1,
+    1
+   ]
+  },
+  {
+   "gif_frame": 51,
+   "start_ms": 900,
+   "duration_ms": 40,
+   "offset_dots": [
+    0,
+    0
+   ]
+  },
+  {
+   "gif_frame": 52,
+   "start_ms": 940,
+   "duration_ms": 60,
+   "offset_dots": [
+    -1,
+    0
+   ]
+  },
+  {
+   "gif_frame": 53,
+   "start_ms": 1000,
+   "duration_ms": 40,
+   "offset_dots": [
+    0,
+    0
+   ]
+  },
+  {
+   "gif_frame": 54,
+   "start_ms": 1040,
+   "duration_ms": 60,
+   "offset_dots": [
+    -1,
+    1
+   ]
+  },
+  {
+   "gif_frame": 55,
+   "start_ms": 1100,
+   "duration_ms": 40,
+   "offset_dots": [
+    0,
+    0
+   ]
+  },
+  {
+   "gif_frame": 56,
+   "start_ms": 1140,
+   "duration_ms": 60,
+   "offset_dots": [
+    -1,
+    0
+   ]
+  },
+  {
+   "gif_frame": 57,
+   "start_ms": 1200,
+   "duration_ms": 40,
+   "offset_dots": [
+    0,
+    0
+   ]
+  }
+ ]
+}

@@ -1,0 +1,146 @@
+{
+ "basic_bolt": {
+  "file": "sprites_1x/09_basic_bolt.png",
+  "frameW": 48,
+  "frameH": 15,
+  "framesPerVariant": 4,
+  "variants": 1,
+  "type": "loop",
+  "pivot": [
+   30.0,
+   7.5
+  ],
+  "cols": 4,
+  "rows": 1,
+  "playMs": null,
+  "loopMs": 200,
+  "sourceFrames": [
+   16,
+   17,
+   18,
+   19
+  ],
+  "use": "기본 공격 탄 (날아가는 동안 루프)",
+  "pivotKind": "body_center"
+ },
+ "rapid_bolt": {
+  "file": "sprites_1x/12_rapid_bolt.png",
+  "frameW": 42,
+  "frameH": 15,
+  "framesPerVariant": 4,
+  "variants": 1,
+  "type": "loop",
+  "pivot": [
+   28.5,
+   7.5
+  ],
+  "cols": 4,
+  "rows": 1,
+  "playMs": null,
+  "loopMs": 200,
+  "sourceFrames": [
+   16,
+   17,
+   18,
+   19
+  ],
+  "use": "연사 탄 (루프)",
+  "pivotKind": "body_center"
+ },
+ "big_orb": {
+  "file": "sprites_1x/15_big_orb.png",
+  "frameW": 82,
+  "frameH": 39,
+  "framesPerVariant": 6,
+  "variants": 1,
+  "type": "loop",
+  "pivot": [
+   61.5,
+   21.7
+  ],
+  "cols": 6,
+  "rows": 1,
+  "playMs": null,
+  "loopMs": 300,
+  "sourceFrames": [
+   18,
+   19,
+   20,
+   21,
+   22,
+   23
+  ],
+  "use": "강공격/차지샷 큰 구체 (루프)",
+  "pivotKind": "body_center"
+ },
+ "energy_arrow": {
+  "file": "sprites_1x/18_energy_arrow.png",
+  "frameW": 66,
+  "frameH": 15,
+  "framesPerVariant": 3,
+  "variants": 1,
+  "type": "loop",
+  "pivot": [
+   54.0,
+   7.5
+  ],
+  "cols": 3,
+  "rows": 1,
+  "playMs": null,
+  "loopMs": 150,
+  "sourceFrames": [
+   15,
+   16,
+   17
+  ],
+  "use": "차지 화살 (루프)",
+  "pivotKind": "body_center"
+ },
+ "arrow_release": {
+  "file": "sprites_1x/17_arrow_release.png",
+  "frameW": 21,
+  "frameH": 27,
+  "framesPerVariant": 3,
+  "variants": 1,
+  "type": "oneshot",
+  "pivot": [
+   7.5,
+   13.5
+  ],
+  "cols": 3,
+  "rows": 1,
+  "playMs": 150,
+  "loopMs": null,
+  "sourceFrames": [
+   0,
+   1,
+   2
+  ],
+  "use": "화살 발사 순간 (1회, 활 앞)",
+  "pivotKind": "effect_center"
+ },
+ "arrow_impact": {
+  "file": "sprites_1x/19_arrow_impact.png",
+  "frameW": 48,
+  "frameH": 51,
+  "framesPerVariant": 4,
+  "variants": 1,
+  "type": "oneshot",
+  "pivot": [
+   34.5,
+   22.5
+  ],
+  "cols": 4,
+  "rows": 1,
+  "playMs": 200,
+  "loopMs": null,
+  "sourceFrames": [
+   7,
+   8,
+   9,
+   10
+  ],
+  "use": "화살 적중 (1회)",
+  "pivotKind": "effect_center"
+ }
+}

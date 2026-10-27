@@ -69,6 +69,12 @@ public class PlayerMovement : MonoBehaviour
     [Header("Dash/Knockback (외부 속도 연동)")]
     [SerializeField] bool overrideExternalVelocity = true;
 
+    [Header("Heavy Lunge")]
+    bool enableHeavyLunge = true;
+    float lungeTimer;
+    Vector2 lungeVelocity;
+    public bool IsLunging => lungeTimer > 0f;
+
     [Header("Slope Handling")]
     [SerializeField] bool handleSlopes = true;
     [SerializeField] float maxSlopeAngle = 45f;
@@ -117,6 +123,11 @@ public class PlayerMovement : MonoBehaviour
         PlayerStateEvents.OnMoveStateChanged -= OnMoveStateChanged;
     }
 
+    void OnDisable()
+    {
+        CancelLunge();
+    }
+
     void Update()
     {
         // 방향 전환 (StateController가 관리하지만 여기에서도 동기화)
@@ -126,6 +137,21 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         if (stateController == null) return;
+
+        if (IsLunging)
+        {
+            lungeTimer = Mathf.Max(0f, lungeTimer - Time.fixedDeltaTime);
+            rb.linearVelocity = new Vector2(lungeVelocity.x, rb.linearVelocity.y);
+            ApplyGravity();
+            return;
+        }
+
+        if (stateController.MovementLocked)
+        {
+            rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
+            ApplyGravity();
+            return;
+        }
 
         // 상태별 이동 허용 확인
         bool canMove = stateController.CanMove;
@@ -280,8 +306,7 @@ public class PlayerMovement : MonoBehaviour
 
     void HandleJump()
     {
-        // StateController의 WasJumpPressedThisFrame + 단일 출처 Coyote 확인
-        bool jumpInput = stateController.WasJumpPressedThisFrame;
+        bool jumpInput = stateController.HasJumpBuffer;
         bool canJump = IsGrounded || stateController.CanUseCoyoteTime;
 
         if (jumpInput && canJump && stateController.CanJump)
@@ -298,7 +323,7 @@ public class PlayerMovement : MonoBehaviour
 
     void ExecuteJump()
     {
-        // StateController에 점프 실행 통지 (coyote/buffer 소비)
+        stateController.ConsumeJumpBuffer();
         stateController.NotifyJumpExecuted();
 
         // 점프 힘 계산 (최대 높이 기반 보정)
@@ -434,36 +459,40 @@ public class PlayerMovement : MonoBehaviour
 
     void UpdateFacingDirection()
     {
-        // 이동 방향과 조준 방향 분리 (계획서 [8])
-        // 조준 입력이 있으면 조준 방향 우선, 없으면 이동 방향
-        Vector2 aimInput = stateController != null ? GetAimDirection() : Vector2.zero;
-        Vector2 moveInput = MoveInput;
+        if (IsLunging) return;
 
-        float targetScaleX = 0f;
-        if (aimInput.x != 0f)
-        {
-            targetScaleX = aimInput.x > 0f ? 1f : -1f;
-        }
-        else if (moveInput.x != 0f)
-        {
-            targetScaleX = moveInput.x > 0f ? 1f : -1f;
-        }
+        float moveX = MoveInput.x;
+        if (Mathf.Abs(moveX) <= 0.01f) return;
 
-        if (targetScaleX != 0f && Mathf.Abs(transform.localScale.x - targetScaleX) > 0.01f)
-        {
-            transform.localScale = new Vector3(targetScaleX, transform.localScale.y, transform.localScale.z);
-        }
-    }
+        float targetSign = moveX > 0f ? 1f : -1f;
 
-    Vector2 GetAimDirection()
-    {
-        // A1이 제공하는 단일 출처 사용
-        return stateController != null ? stateController.AimInput : Vector2.zero;
+        // Preserve the authored scale magnitude - the prefab is scaled up to match the world scale.
+        if (Mathf.Sign(transform.localScale.x) != targetSign)
+        {
+            Vector3 scale = transform.localScale;
+            scale.x = Mathf.Abs(scale.x) * targetSign;
+            transform.localScale = scale;
+        }
     }
 
     #endregion
 
     #region External Velocity (Dash/Knockback)
+
+    public void ApplyLunge(Vector2 direction, float distance, float duration)
+    {
+        if (!enableHeavyLunge || distance <= 0f || duration <= 0f) return;
+
+        Vector2 dir = direction.sqrMagnitude > 0.0001f ? direction.normalized : Vector2.right;
+        lungeVelocity = dir * (distance / duration);
+        lungeTimer = duration;
+    }
+
+    public void CancelLunge()
+    {
+        lungeTimer = 0f;
+        lungeVelocity = Vector2.zero;
+    }
 
     /// <summary>외부에서 넉백 등 속도 직접 설정 (StateController 경유 권장)</summary>
     public void SetVelocity(Vector2 velocity, bool overrideX = true, bool overrideY = false)

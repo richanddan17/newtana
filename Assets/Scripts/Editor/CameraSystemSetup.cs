@@ -5,19 +5,18 @@ using UnityEngine.InputSystem;
 using Cinemachine;
 
 /// <summary>
-/// 원클릭 셋업 (메뉴: newtana/카메라 시스템 셋업).
+/// 원클릭 셋업 (Newtana Custom Tool).
 /// CinemachineBrain + Follow/Dialogue vcam + CameraDirector를 배치·와이어링하고,
 /// 플레이어 오브젝트(태그/피직스/게임플레이 컴포넌트/교차 참조)를 보장한다.
 /// 모든 단계가 idempotent — 재실행해도 기존 오브젝트를 재사용한다.
 /// </summary>
 public static class CameraSystemSetup
 {
-    const string MenuPath = "newtana/카메라 시스템 셋업";
+    const string UndoLabel = "카메라 시스템 셋업";
     const string DirectorObjectName = "CameraDirector";
     const string FollowVcamName = "CM Follow Camera";
     const string DialogueVcamName = "CM Dialogue Camera";
 
-    [MenuItem(MenuPath, false, 100)]
     public static void Setup()
     {
         ProjectTagsLayersSetup.EnsureAllQuiet();
@@ -31,7 +30,7 @@ public static class CameraSystemSetup
         if (director == null)
         {
             var directorGo = new GameObject(DirectorObjectName);
-            Undo.RegisterCreatedObjectUndo(directorGo, MenuPath);
+            Undo.RegisterCreatedObjectUndo(directorGo, UndoLabel);
             director = Undo.AddComponent<CameraDirector>(directorGo);
         }
 
@@ -66,7 +65,7 @@ public static class CameraSystemSetup
         var brain = cam.GetComponent<CinemachineBrain>();
         if (brain == null)
             brain = Undo.AddComponent<CinemachineBrain>(cam.gameObject);
-        Undo.RecordObject(brain, MenuPath);
+        Undo.RecordObject(brain, UndoLabel);
         // 방 전환/대화 복귀의 기본 블렌드 (계획서 v5 [7]: 부드러운 복귀 옵션)
         brain.m_DefaultBlend = new CinemachineBlendDefinition(CinemachineBlendDefinition.Style.EaseInOut, 0.5f);
         return brain;
@@ -223,7 +222,7 @@ public static class CameraSystemSetup
     const int PlayerLayerIndex = 6;            // Team.Player.LayerIndex() (Phase4 가이드 Layer 표)
     const int GroundLayerMaskValue = 1 << 3;   // Ground 레이어 (GroundCheck/PlayerMovement 기본값과 동일)
     const string InputActionsPath = "Assets/InputSystem_Actions.inputactions";
-    const string AnimationSetPath = "Assets/PlayerAnimationSet.asset"; // Tools/PlayerAnimation/Import Sheets From Manifest 가 생성
+    const string AnimationSetPath = "Assets/PlayerAnimationSet.asset"; // Newtana Custom Tool > Import Sheets From Manifest 가 생성
 
     /// <summary>
     /// 플레이어 오브젝트 보장 (idempotent): 태그 "Player" 또는 PlayerStateController로 기존 플레이어를 찾아
@@ -237,7 +236,7 @@ public static class CameraSystemSetup
         if (playerGo == null)
         {
             playerGo = new GameObject("Player");
-            Undo.RegisterCreatedObjectUndo(playerGo, MenuPath);
+            Undo.RegisterCreatedObjectUndo(playerGo, UndoLabel);
             playerGo.transform.position = Vector3.zero; // 2D 원점 — 카메라 Follow 대상
             created = true;
         }
@@ -245,13 +244,13 @@ public static class CameraSystemSetup
         // 태그 계약: CameraDirector.CachePlayer 등이 FindGameObjectWithTag("Player")로 캐시
         if (!playerGo.CompareTag(PlayerTagName))
         {
-            Undo.RecordObject(playerGo, MenuPath);
+            Undo.RecordObject(playerGo, UndoLabel);
             playerGo.tag = PlayerTagName;
         }
         // 팀 레이어: TeamComponent.OnValidate와 같은 값 (LayerMask/충돌 판정 계약)
         if (playerGo.layer != PlayerLayerIndex)
         {
-            Undo.RecordObject(playerGo, MenuPath);
+            Undo.RecordObject(playerGo, UndoLabel);
             playerGo.layer = PlayerLayerIndex;
         }
 
@@ -354,7 +353,7 @@ public static class CameraSystemSetup
             Transform hurtboxT = GetOrCreateChild(playerGo.transform, HurtboxName, Vector3.zero);
             if (hurtboxT.gameObject.layer != PlayerLayerIndex)
             {
-                Undo.RecordObject(hurtboxT.gameObject, MenuPath);
+                Undo.RecordObject(hurtboxT.gameObject, UndoLabel);
                 hurtboxT.gameObject.layer = PlayerLayerIndex; // Hurtbox.Awake가 런타임에 맞추는 레이어를 미리 동기화
             }
             var hurtboxCollider = hurtboxT.GetComponent<CircleCollider2D>();
@@ -437,11 +436,11 @@ public static class CameraSystemSetup
         if (animationSet == null)
         {
             Debug.LogWarning("[플레이어 셋업] PlayerAnimationSet 에셋이 없습니다 — " +
-                "'Tools/PlayerAnimation/Import Sheets From Manifest' 메뉴를 먼저 실행하세요.");
+                            "'Newtana Custom Tool > Import Sheets From Manifest'를 먼저 실행하세요.");
         }
         else if (bodyRenderer.sprite == null && animationSet.idle != null && animationSet.idle.frames != null && animationSet.idle.frames.Length > 0)
         {
-            Undo.RecordObject(bodyRenderer, MenuPath);
+            Undo.RecordObject(bodyRenderer, UndoLabel);
             bodyRenderer.sprite = animationSet.idle.frames[0];
         }
 
@@ -498,7 +497,7 @@ public static class CameraSystemSetup
 
     static void ConfigureRigidbody(Rigidbody2D rb)
     {
-        Undo.RecordObject(rb, MenuPath);
+        Undo.RecordObject(rb, UndoLabel);
         rb.bodyType = RigidbodyType2D.Dynamic;
         rb.interpolation = RigidbodyInterpolation2D.Interpolate;
         rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
@@ -528,7 +527,7 @@ public static class CameraSystemSetup
         if (bodyRenderer == null) bodyRenderer = Undo.AddComponent<SpriteRenderer>(bodyTransform.gameObject);
         if (bodyRenderer.sortingOrder != 0)
         {
-            Undo.RecordObject(bodyRenderer, MenuPath);
+            Undo.RecordObject(bodyRenderer, UndoLabel);
             bodyRenderer.sortingOrder = 0;
         }
 
@@ -548,7 +547,7 @@ public static class CameraSystemSetup
         if (renderer == null) renderer = Undo.AddComponent<SpriteRenderer>(child.gameObject);
         if (renderer.sortingOrder != sortingOrder)
         {
-            Undo.RecordObject(renderer, MenuPath);
+            Undo.RecordObject(renderer, UndoLabel);
             renderer.sortingOrder = sortingOrder;
         }
         return renderer;

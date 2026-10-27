@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using UnityEditor;
 using UnityEngine;
 
@@ -21,6 +22,7 @@ public static class PlayerSheetGridDetector
         public int texW, texH;
         public int cellW, cellH;
         public int cols, rows;
+        public int ppu; // 0 = use manifest.ppu (motion sheets are 4x; 1x VFX override to 300)
         public float[] pivot;
         public int[] contentUnion;
         public int[] cells; // {col,row,col,row,...} row-major
@@ -60,19 +62,28 @@ public static class PlayerSheetGridDetector
     {
         if (!Directory.Exists(dir)) return new SheetEntry[0];
 
-        var files = Directory.GetFiles(dir, "*.png");
+        var files = Directory.GetFiles(dir, "*.png", SearchOption.AllDirectories);
         Array.Sort(files, StringComparer.Ordinal);
 
-        var result = new List<SheetEntry>();
+        var byId = new Dictionary<string, SheetEntry>();
         foreach (var f in files)
         {
-            var entry = DetectSheet(f, defaultPivotMode);
-            if (entry != null) result.Add(entry);
+            var entry = DetectSheet(f, dir, defaultPivotMode);
+            if (entry == null) continue;
+
+            // Old and new replacement sheets can share an id (17_heavy_attack vs
+            // 23_heavy_attack). Prefer the higher numeric file prefix.
+            SheetEntry existing;
+            if (!byId.TryGetValue(entry.id, out existing) ||
+                FilePrefix(entry.file) > FilePrefix(existing.file))
+            {
+                byId[entry.id] = entry;
+            }
         }
-        return result.ToArray();
+        return byId.Values.OrderBy(e => e.file, StringComparer.Ordinal).ToArray();
     }
 
-    static SheetEntry DetectSheet(string path, string defaultPivotMode)
+    static SheetEntry DetectSheet(string path, string dir, string defaultPivotMode)
     {
         byte[] pngBytes = File.ReadAllBytes(path);
         var tex = new Texture2D(2, 2, TextureFormat.RGBA32, false);
@@ -138,7 +149,7 @@ public static class PlayerSheetGridDetector
         return new SheetEntry
         {
             id = id,
-            file = Path.GetFileName(path),
+            file = path.Substring(dir.Length).TrimStart(Path.DirectorySeparatorChar, Path.AltDirectorySeparatorChar).Replace('\\', '/'),
             pivotMode = pivotMode,
             texW = w,
             texH = h,
@@ -180,6 +191,7 @@ public static class PlayerSheetGridDetector
             sb.Append("      \"texW\": ").Append(e.texW).Append(", \"texH\": ").Append(e.texH).Append(",\n");
             sb.Append("      \"cellW\": ").Append(e.cellW).Append(", \"cellH\": ").Append(e.cellH).Append(",\n");
             sb.Append("      \"cols\": ").Append(e.cols).Append(", \"rows\": ").Append(e.rows).Append(",\n");
+            if (e.ppu > 0) sb.Append("      \"ppu\": ").Append(e.ppu).Append(",\n");
             sb.Append("      \"pivot\": [").Append(e.pivot[0].ToString("0.#####")).Append(", ").Append(e.pivot[1].ToString("0.#####")).Append("],\n");
             sb.Append("      \"contentUnion\": [").Append(e.contentUnion[0]).Append(", ").Append(e.contentUnion[1]).Append(", ")
               .Append(e.contentUnion[2]).Append(", ").Append(e.contentUnion[3]).Append("],\n");
@@ -194,6 +206,15 @@ public static class PlayerSheetGridDetector
         }
         sb.Append("\n");
         return sb.ToString();
+    }
+
+    static int FilePrefix(string file)
+    {
+        file = Path.GetFileName(file);
+        int us = file.IndexOf('_');
+        int prefix;
+        if (us > 0 && int.TryParse(file.Substring(0, us), out prefix)) return prefix;
+        return -1;
     }
 
     static string ToId(string fileBase)

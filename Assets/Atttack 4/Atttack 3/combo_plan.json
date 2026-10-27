@@ -1,0 +1,932 @@
+{
+ "name": "attack_combo_demo",
+ "version": 2,
+ "summary": "attack1(dash) -> attack2 -> attack3(mid-combo teleport behind enemy) -> heavy, vs training dummy. Total 4570ms.",
+ "units": {
+  "dot_px_source": 12,
+  "dot_px_demo_gif": 6,
+  "coords": "dots; +x right, +y down; foot = floor contact point; y of floor = demo row 80",
+  "time": "ms"
+ },
+ "world": {
+  "demo_size_dots": [
+   250,
+   90
+  ],
+  "demo_size_px": [
+   1500,
+   540
+  ],
+  "floor_row": 80,
+  "bg": [
+   40,
+   44,
+   56
+  ],
+  "floor_line_rgb": [
+   84,
+   90,
+   112
+  ]
+ },
+ "assets": {
+  "attack_sheets": {
+   "files": [
+    "attack1_gifextract.png",
+    "attack2_gifextract.png",
+    "attack3_gifextract.png",
+    "heavy_gifextract.png"
+   ],
+   "cell": "1584x828 (132x69 dots, 12px/dot), foot at bottom edge",
+   "cols": 5,
+   "frames": {
+    "attack1": 8,
+    "attack2": 5,
+    "attack3": 10,
+    "heavy": 30
+   },
+   "foot_x_dots_in_cell": {
+    "attack1": 36.0,
+    "attack2": 34.5,
+    "attack3": 35.5,
+    "heavy": 35.5,
+    "note": "center of leg pixels of frame 0; flipped foot = 132 - foot"
+   },
+   "frame_ms": {
+    "attack1": [
+     50,
+     50,
+     50,
+     50,
+     50,
+     50,
+     50,
+     100
+    ],
+    "attack2": [
+     50,
+     50,
+     50,
+     50,
+     100
+    ],
+    "attack3": [
+     50,
+     50,
+     50,
+     50,
+     50,
+     50,
+     50,
+     50,
+     100,
+     100
+    ],
+    "heavy": [
+     100,
+     100,
+     100,
+     50,
+     50,
+     50,
+     50,
+     50,
+     50,
+     50,
+     50,
+     50,
+     50,
+     50,
+     50,
+     50,
+     50,
+     50,
+     50,
+     50,
+     50,
+     50,
+     50,
+     50,
+     100,
+     100,
+     100,
+     100,
+     100,
+     100
+    ]
+   }
+  },
+  "attack1_dash": {
+   "file": "05_dash-ezgif.com-gif-to-sprite-converter_1.png (5프레임 1280x280). plan v1이 적은 76afc5a6-image.png 와 같은 파일인지 미확인",
+   "frames": 5,
+   "px_per_dot": 12,
+   "cell_dots": [
+    20,
+    19
+   ],
+   "cell_pad_px": 8,
+   "foot_x_dots_in_cell": 12.0,
+   "foot_note": "eye position matched to attack1 frame 3 (eye is +4.0 dots ahead of foot); bottom row = floor",
+   "frame_ms": 30,
+   "used_instead_of": "attack1 frames 0-2",
+   "measured": {
+    "sheet_px": [
+     1280,
+     280
+    ],
+    "cell_px": [
+     256,
+     280
+    ],
+    "cell_pad_px": 8,
+    "cell_dots_measured": [
+     20,
+     22
+    ],
+    "cell_dots_plan_v1": [
+     20,
+     19
+    ],
+    "mismatch": "가로 20dot은 일치, 세로가 22dot(실측) vs 19dot(plan). 바닥(맨 아래 행)은 두 값 모두 셀 하단이라 배치에는 영향 없음. 어느 파일이 맞는지 확인 필요",
+    "eye_center_x_dots_in_cell": 16.0,
+    "foot_anchor_check": "눈 중심 16.0 = 발 앵커 12.0 + 4.0 이라 plan의 foot 12.0 / 눈 +4 규칙과 일치(실측 확인됨)",
+    "leg_center_x_dots_in_cell": 6.0,
+    "leg_note": "대시 자세는 다리가 뒤로 늘어져 있어서 다리 중심(6.0)을 발 앵커로 쓰면 안 됨",
+    "frames_identical_anchor": true
+   },
+   "demo_scale": "12px/dot 원본을 절반으로 줄여 6px/dot 데모에 맞춤",
+   "frame_play": "5프레임 x 30ms = 150ms. 4번 프레임 이후 공격 1타 3번 프레임까지 이어짐"
+  },
+  "hit_effects": {
+   "zip": "sword_hit.zip",
+   "gifs": {
+    "attack1": "hit_attack1.gif",
+    "attack2": "hit_attack2.gif",
+    "attack3": "hit_attack3.gif",
+    "heavy": "hit_heavy.gif"
+   },
+   "frames": 6,
+   "frame_ms": 50,
+   "pivot": "cell center",
+   "px_per_dot": 8,
+   "background_key_rgb": [
+    40,
+    44,
+    56
+   ],
+   "flip_with_attacker": true,
+   "place": "center on enemy x at the hit moment, 16 dots above floor; not paused by hitstop"
+  },
+  "attack1_dash_vfx": {
+   "status": "plan v1에 없음. 데모에서 임의 배치한 것. 채택 여부 확정 필요",
+   "file": "IMG_1823.PNG (2304x480, 6프레임)",
+   "frame_px": [
+    384,
+    480
+   ],
+   "px_per_dot": 12,
+   "frame_dots": [
+    32,
+    40
+   ],
+   "frames": 6,
+   "frame_ms_in_demo": 40,
+   "play_ms_in_demo": 240,
+   "demo_scale": "절반으로 줄여 6px/dot",
+   "placement_in_demo": {
+    "x": "VFX 셀 중심이 출발 발 x(60)보다 2.5dot 오른쪽",
+    "y": "VFX 무게중심이 바닥 위 약 11.5dot (캐릭터 몸통 높이)",
+    "floor_clip": "바닥선 아래로 내려가는 부분은 잘라냄",
+    "layer": "캐릭터 뒤"
+   },
+   "note": "VFX는 대쉬 출발 지점에 고정. 캐릭터를 따라가지 않음. 1프레임당 2개 GIF 프레임(40ms) 사용으로 대쉬 종료 후 공격 시작 직후까지 보임"
+  }
+ },
+ "enemy_dummy": {
+  "sprite": "16x31 dots wooden dummy from reference demo",
+  "start_x": 150,
+  "pivot": "bottom center on floor",
+  "hit_reaction": {
+   "flash": {
+    "color": "white",
+    "ms": 100
+   },
+   "jitter_during_hitstop_dots": 1,
+   "jitter_step_ms": 20,
+   "knockback": "ease-out cubic, starts when hitstop ends, accumulative (no return)"
+  }
+ },
+ "player": {
+  "start_foot_x": 60,
+  "stop_foot_x": 140,
+  "idle_pose": "attack1 frame 0 (before combo) / attack1 frame 7 (between hits)",
+  "start_facing": "right"
+ },
+ "global_rules": {
+  "hitstop": "on hit frame, hold that body frame for (frame_ms + hitstop_ms). Everything on the attacker side freezes; enemy jitter/flash/effects run in real time.",
+  "ease_out_cubic": "1-(1-u)^3",
+  "camera_shake": "offset whole screen, alternating sign each 20ms, amplitude decays linearly to 0 over duration; min 1 dot",
+  "hitstop_restore": "데모 속도를 올릴 때도 히트스톱(60/60/80/120ms)과 판정 프레임 시간은 줄이지 않는다. 일반 프레임만 배율 적용",
+  "camera_shake_detail": {
+   "applies_to": {
+    "attack3": {
+     "amp_dots": 1,
+     "ms": 260
+    },
+    "heavy": {
+     "amp_dots": 2,
+     "ms": 420
+    }
+   },
+   "start": "판정 프레임 시작 시각(히트스톱 시작과 동시), 실시간(히트스톱의 영향 없음)",
+   "step_ms": 20,
+   "sign": "20ms마다 부호 교대",
+   "decay": "진폭 선형 감소, 최소 1dot",
+   "axis": "plan에 없음. 제안: attack3는 가로(컷 방향 5deg), heavy는 세로(컷 방향 -85deg). 확정 필요",
+   "edge_fill": "밀려서 비는 가장자리는 가장자리 픽셀을 복제",
+   "dot_px_demo": 6,
+   "status": "plan에는 있으나 v1 데모 GIF에는 미반영 (바닥선 위치 변화 없음으로 확인)"
+  },
+  "player_recoil": {
+   "status": "plan에 없음. 현재 결정: 없음",
+   "option": "필요하면 heavy와 big 마법에만 뒤로 1~2dot, 100ms ease-out"
+  },
+  "demo_speed": {
+   "plan_v1_total_ms": 4570,
+   "current_demo_factor": 0.6,
+   "rule": "일반 프레임에만 배율, GIF 최소 간격 20ms, 시작 대기 150ms, 마지막 정지 350ms",
+   "status": "배율 값은 확정 아님. 현재 데모는 3.16초. 히트스톱 복원 시 길이가 약간 늘어남"
+  },
+  "demo_canvas": {
+   "size_px": [
+    1500,
+    540
+   ],
+   "px_per_dot": 6,
+   "bg": [
+    40,
+    44,
+    56
+   ],
+   "floor_row": 80,
+   "sample_ms": 20,
+   "merge": "연속 동일 프레임은 합침",
+   "dummy": "16x31dot (96x186px), 기준 데모 0번 프레임에서 추출. 맞으면 흰색 100ms, 위아래 1dot 20ms 교대, 히트스톱 끝나면 ease-out 밀림(누적, 복귀 없음)"
+  }
+ },
+ "steps": [
+  {
+   "id": "idle",
+   "t": [
+    0,
+    300
+   ],
+   "pose": {
+    "set": "attack1",
+    "frame": 0
+   },
+   "foot_x": 60,
+   "flip": false
+  },
+  {
+   "id": "attack1_dash",
+   "t": [
+    300,
+    450
+   ],
+   "frames": [
+    {
+     "set": "attack1_dash",
+     "idx": 0,
+     "ms": 30
+    },
+    {
+     "set": "attack1_dash",
+     "idx": 1,
+     "ms": 30
+    },
+    {
+     "set": "attack1_dash",
+     "idx": 2,
+     "ms": 30
+    },
+    {
+     "set": "attack1_dash",
+     "idx": 3,
+     "ms": 30
+    },
+    {
+     "set": "attack1_dash",
+     "idx": 4,
+     "ms": 30
+    }
+   ],
+   "move": {
+    "from_x": 60,
+    "to_x": 140,
+    "ease": "ease_out_cubic",
+    "over_ms": 150
+   },
+   "flip": false,
+   "note": "dash distance 80 dots; start 90 dots from enemy, stop 10 dots in front"
+  },
+  {
+   "id": "attack1",
+   "t": [
+    450,
+    860
+   ],
+   "frames": [
+    {
+     "set": "attack1",
+     "idx": 3,
+     "ms": 50,
+     "extra_hitstop_ms": 60
+    },
+    {
+     "set": "attack1",
+     "idx": 4,
+     "ms": 50
+    },
+    {
+     "set": "attack1",
+     "idx": 5,
+     "ms": 50
+    },
+    {
+     "set": "attack1",
+     "idx": 6,
+     "ms": 50
+    },
+    {
+     "set": "attack1",
+     "idx": 7,
+     "ms": 100
+    },
+    {
+     "set": "attack1",
+     "idx": 7,
+     "ms": 50,
+     "note": "extra recovery hold before attack2"
+    }
+   ],
+   "foot_x": 140,
+   "flip": false,
+   "hit": {
+    "frame_idx": 3,
+    "at_ms": 450,
+    "hitstop_ms": 60,
+    "effect": "attack1",
+    "knockback_dots": 6,
+    "knockback_ms": 100,
+    "shake": null
+   }
+  },
+  {
+   "id": "attack2",
+   "t": [
+    860,
+    1320
+   ],
+   "frames": [
+    {
+     "set": "attack2",
+     "idx": 0,
+     "ms": 50
+    },
+    {
+     "set": "attack2",
+     "idx": 1,
+     "ms": 50,
+     "extra_hitstop_ms": 60
+    },
+    {
+     "set": "attack2",
+     "idx": 2,
+     "ms": 50
+    },
+    {
+     "set": "attack2",
+     "idx": 3,
+     "ms": 50
+    },
+    {
+     "set": "attack2",
+     "idx": 4,
+     "ms": 100
+    },
+    {
+     "set": "attack1",
+     "idx": 7,
+     "ms": 100,
+     "note": "idle hold before attack3"
+    }
+   ],
+   "foot_x": 140,
+   "flip": false,
+   "hit": {
+    "frame_idx": 1,
+    "at_ms": 910,
+    "hitstop_ms": 60,
+    "effect": "attack2",
+    "knockback_dots": 4,
+    "knockback_ms": 100,
+    "shake": null
+   }
+  },
+  {
+   "id": "attack3",
+   "t": [
+    1320,
+    2000
+   ],
+   "frames": [
+    {
+     "set": "attack3",
+     "idx": 0,
+     "ms": 50
+    },
+    {
+     "set": "attack3",
+     "idx": 1,
+     "ms": 50
+    },
+    {
+     "set": "attack3",
+     "idx": 2,
+     "ms": 50
+    },
+    {
+     "set": "attack3",
+     "idx": 3,
+     "ms": 50
+    },
+    {
+     "set": "attack3",
+     "idx": 4,
+     "ms": 50
+    },
+    {
+     "set": "attack3",
+     "idx": 5,
+     "ms": 50,
+     "extra_hitstop_ms": 80
+    },
+    {
+     "set": "attack3",
+     "idx": 6,
+     "ms": 50
+    },
+    {
+     "set": "attack3",
+     "idx": 7,
+     "ms": 50
+    },
+    {
+     "set": "attack3",
+     "idx": 8,
+     "ms": 100
+    },
+    {
+     "set": "attack3",
+     "idx": 9,
+     "ms": 100
+    }
+   ],
+   "teleport": {
+    "at_frame_idx": 4,
+    "at_ms": 1520,
+    "instant": true,
+    "to_foot_x": 180,
+    "to_flip": true,
+    "rule": "enemy_x_after_attack2 (160) + 20",
+    "note": "frames 0-3 play in front facing right; frame 4 onward behind the enemy facing left. NO frames removed, durations unchanged."
+   },
+   "hit": {
+    "frame_idx": 5,
+    "at_ms": 1570,
+    "hitstop_ms": 80,
+    "effect": "attack3",
+    "effect_flip": true,
+    "knockback_dots": -6,
+    "knockback_ms": 100,
+    "shake": {
+     "amp_dots": 1,
+     "ms": 260
+    }
+   }
+  },
+  {
+   "id": "heavy",
+   "t": [
+    2000,
+    4070
+   ],
+   "foot_x": 180,
+   "flip": true,
+   "note": "no position change, continues from attack3 spot",
+   "frames": [
+    {
+     "set": "heavy",
+     "idx": 0,
+     "ms": 100
+    },
+    {
+     "set": "heavy",
+     "idx": 1,
+     "ms": 100
+    },
+    {
+     "set": "heavy",
+     "idx": 2,
+     "ms": 100
+    }
+   ],
+   "hold_loop": {
+    "frames": [
+     3,
+     20
+    ],
+    "ms_per_frame": 50,
+    "demo_plays_once_ms": 900,
+    "in_game": "loop while button held; on release finish current frame then go to 21"
+   },
+   "release_frames": [
+    {
+     "idx": 21,
+     "ms": 50
+    },
+    {
+     "idx": 22,
+     "ms": 50,
+     "extra_hitstop_ms": 120
+    },
+    {
+     "idx": 23,
+     "ms": 50
+    },
+    {
+     "idx": 24,
+     "ms": 100
+    },
+    {
+     "idx": 25,
+     "ms": 100
+    },
+    {
+     "idx": 26,
+     "ms": 100
+    },
+    {
+     "idx": 27,
+     "ms": 100
+    },
+    {
+     "idx": 28,
+     "ms": 100
+    },
+    {
+     "idx": 29,
+     "ms": 100
+    }
+   ],
+   "hit": {
+    "frame_idx": 22,
+    "at_ms": 3250,
+    "hitstop_ms": 120,
+    "effect": "heavy",
+    "effect_flip": true,
+    "knockback_dots": -32,
+    "knockback_ms": 140,
+    "shake": {
+     "amp_dots": 2,
+     "ms": 420
+    }
+   }
+  },
+  {
+   "id": "end_hold",
+   "t": [
+    4070,
+    4570
+   ],
+   "pose": {
+    "set": "heavy",
+    "frame": 29
+   },
+   "foot_x": 180,
+   "flip": true
+  }
+ ],
+ "enemy_x_after_each_hit": {
+  "start": 150,
+  "attack1": 156,
+  "attack2": 160,
+  "attack3": 154,
+  "heavy": 122
+ },
+ "totals": {
+  "demo_ms": 4570,
+  "gif_frame_grid_ms": 20,
+  "note": "GIF is sampled every 20ms and identical consecutive frames are merged"
+ },
+ "open_items": [
+  {
+   "id": 1,
+   "area": "sword",
+   "item": "3타·강공격 카메라 흔들림 GIF 반영",
+   "status": "결정됨(추가). 축은 제안 확정 필요"
+  },
+  {
+   "id": 2,
+   "area": "sword",
+   "item": "히트스톱을 plan 값으로 복원(속도 조정 때 같이 줄었음)",
+   "status": "결정됨"
+  },
+  {
+   "id": 3,
+   "area": "sword",
+   "item": "플레이어 반동",
+   "status": "plan 없음. 현재 결정: 넣지 않음. heavy·big에만 옵션"
+  },
+  {
+   "id": 4,
+   "area": "sword",
+   "item": "3타 순간이동 잔상/이펙트",
+   "status": "미정(없음)"
+  },
+  {
+   "id": 5,
+   "area": "sword",
+   "item": "흰색으로 번쩍이는 더미에 타격 이펙트가 가려짐",
+   "status": "미정"
+  },
+  {
+   "id": 6,
+   "area": "sword",
+   "item": "sword_hit 이펙트 4종은 json 메모상 placeholder draft",
+   "status": "최종 이펙트 교체 필요"
+  },
+  {
+   "id": 7,
+   "area": "dash",
+   "item": "대쉬 시트 세로 22dot(실측) vs 19dot(plan), 같은 파일인지 확인",
+   "status": "확인 필요"
+  },
+  {
+   "id": 8,
+   "area": "dash",
+   "item": "대쉬 시트를 공격 시트와 같이 보관",
+   "status": "필요"
+  },
+  {
+   "id": 9,
+   "area": "dash",
+   "item": "대쉬 VFX(IMG_1823.PNG) 채택·배치 확정",
+   "status": "plan 없음, 임의 배치"
+  },
+  {
+   "id": 10,
+   "area": "demo",
+   "item": "데모 속도 배율(현재 0.6) 확정",
+   "status": "확정 필요"
+  },
+  {
+   "id": 11,
+   "area": "magic/bow",
+   "item": "탄환 속도·궤적·모양, 피격 이펙트",
+   "status": "plan 없음, 임시값"
+  },
+  {
+   "id": 12,
+   "area": "magic/bow",
+   "item": "마법·활 더미 반응 수치(밀림 등)",
+   "status": "plan 없음, 임시값"
+  },
+  {
+   "id": 13,
+   "area": "magic/bow",
+   "item": "basic·rapid 발사 프레임, 활 발사 프레임 ±1프레임",
+   "status": "추정값"
+  },
+  {
+   "id": 14,
+   "area": "magic",
+   "item": "홀드 루프(rapid 8~11, big 16~23)와 해제 규칙",
+   "status": "데모는 1회 재생, 게임 구현 필요"
+  },
+  {
+   "id": 15,
+   "area": "game",
+   "item": "판정 범위, 데미지, 콤보 입력 허용 시간/캔슬, 쿨다운, 마나",
+   "status": "plan에 전혀 없음"
+  },
+  {
+   "id": 16,
+   "area": "demo",
+   "item": "BASIC > RAPID > BIG SHOT 단계 표시",
+   "status": "미구현"
+  },
+  {
+   "id": 17,
+   "area": "units",
+   "item": "rapid_camera_shake.json은 원본이 3px/dot GIF 기준, 데모는 6px/dot",
+   "status": "1dot=6px로 환산해서 사용"
+  }
+ ],
+ "changelog": [
+  "v2: 대쉬 시트 실측값/VFX/카메라 흔들림/히트스톱 복원/마법·활 데모 사양/미결 항목 정리. v1의 steps·hit 수치는 변경 없음."
+ ],
+ "magic_demo": {
+  "file": "magic_demo.gif",
+  "stages": [
+   "basic",
+   "rapid",
+   "big"
+  ],
+  "order_note": "basic -> rapid -> big 순서로 한 GIF에 이어 붙임. 단계마다 시작 300ms 대기, 끝 400ms 정지, 더미는 단계 시작 때 x=150으로 초기화",
+  "player": {
+   "foot_x": 60,
+   "flip": false
+  },
+  "sheet": {
+   "cell_px": [
+    1152,
+    672
+   ],
+   "cols": 8,
+   "px_per_dot": 12,
+   "foot_at": "셀 하단",
+   "demo_scale": 0.5
+  },
+  "foot_x_px_in_cell_measured": {
+   "basic": 606,
+   "rapid": 576,
+   "big": 576,
+   "dots": {
+    "basic": 50.5,
+    "rapid": 48.0,
+    "big": 48.0
+   },
+   "note": "0번 프레임 다리 중심"
+  },
+  "frames": {
+   "basic": 19,
+   "rapid": 37,
+   "big": 44
+  },
+  "firepoint_cell_px": {
+   "basic": [
+    786,
+    534
+   ],
+   "rapid": [
+    822,
+    534
+   ],
+   "big": [
+    810,
+    534
+   ]
+  },
+  "firepoint_from_foot_dots": {
+   "basic": [
+    15.0,
+    11.5
+   ],
+   "rapid": [
+    20.5,
+    11.5
+   ],
+   "big": [
+    19.5,
+    11.5
+   ],
+   "note": "x는 발 기준 오른쪽, y는 바닥 위"
+  },
+  "fire_frames": {
+   "basic": [
+    11
+   ],
+   "rapid": [
+    7,
+    9,
+    13,
+    17,
+    21,
+    25,
+    29,
+    32
+   ],
+   "big": [
+    35
+   ],
+   "basis": "big은 json release_frame. basic과 rapid는 노란 십자 머즐 프레임을 이미지로 찾아 추정(±1프레임 가능)"
+  },
+  "hold_loop": {
+   "rapid": {
+    "loop": [
+     8,
+     11
+    ],
+    "release": 32
+   },
+   "big": {
+    "loop": [
+     16,
+     23
+    ],
+    "release": 35,
+    "note": "24~31은 거의 동일한 2번째 바퀴"
+   },
+   "demo": "한 번만 재생, 게임에서는 버튼 유지 동안 반복"
+  },
+  "camera_shake": {
+   "rapid": "rapid_camera_shake.json 그대로(첫 머즐 프레임=rapid 6번, 단계 시작 후 400ms부터 1200ms)",
+   "basic": null,
+   "big": null,
+   "dot_px_demo": 6,
+   "target": "화면 전체(바닥, 캐릭터, 더미 모두 같이 이동)"
+  },
+  "projectile_placeholder": {
+   "status": "plan에 없음. 데모용 임시값, 확정 아님",
+   "speed_dots_per_s": {
+    "basic": 300,
+    "rapid": 520,
+    "big": 260
+   },
+   "shape": "단색 막대/사각형(basic 분홍, rapid 노랑+초록 꼬리, big 하늘색)",
+   "hit_effect": "없음(더미 흰 번쩍임만)"
+  },
+  "enemy_reaction_placeholder": {
+   "status": "plan에 없음. 데모용 임시값",
+   "knockback_dots": {
+    "basic": 4,
+    "rapid_each": 1,
+    "big": 12
+   },
+   "flash_ms": 100,
+   "jitter_ms": 100,
+   "jitter_dots": 1,
+   "ease_ms": 100,
+   "hitstop": "없음(원거리는 공격자 정지 없음)"
+  },
+  "labels": "레퍼런스 GIF의 BASIC > RAPID > BIG SHOT 표시는 미구현"
+ },
+ "bow_demo": {
+  "file": "bow_demo.gif",
+  "sheet": {
+   "cell_px": [
+    376,
+    304
+   ],
+   "cols": 5,
+   "rows": 5,
+   "frames": 23,
+   "px_per_dot": 12,
+   "dot_grid_origin_px": [
+    8,
+    8
+   ],
+   "demo_scale": 0.5
+  },
+  "foot_x_px_in_cell_measured": 164,
+  "foot_bottom_px_in_cell": 296,
+  "durations_ms": "bow_muzzle_sheet.json 그대로(루프 1320ms)",
+  "fire": {
+   "frames": [
+    8,
+    14,
+    20
+   ],
+   "at_ms": [
+    560,
+    860,
+    1160
+   ],
+   "anchor_cell_px": [
+    260,
+    164
+   ],
+   "uncertainty": "원본 GIF를 눈으로 읽은 값, ±1프레임 가능",
+   "body_arrow_gone_from_frame": [
+    9,
+    15,
+    21
+   ]
+  },
+  "projectile_placeholder": {
+   "status": "plan에 '속도/궤적 미측정'. 데모용 임시값",
+   "speed_dots_per_s": 640,
+   "shape": "노란 막대 6dot + 밝은 촉"
+  },
+  "enemy_reaction_placeholder": {
+   "knockback_dots_each": 3,
+   "flash_ms": 100,
+   "jitter_ms": 100,
+   "hitstop": "없음"
+  },
+  "camera_shake": null,
+  "player_recoil": null
+ }
+}

@@ -1,0 +1,411 @@
+fileFormatVersion: 2
+guid: c6406b2cbb79a3943a4a533879636923
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 916173223097150954
+    second: 21_land_dust_0
+  - first:
+      213: -6913913800034801473
+    second: 21_land_dust_1
+  - first:
+      213: 1244926555175151833
+    second: 21_land_dust_2
+  - first:
+      213: -7359952312593351220
+    second: 21_land_dust_3
+  - first:
+      213: 3688213370011983309
+    second: 21_land_dust_4
+  - first:
+      213: 7149308992255006809
+    second: 21_land_dust_5
+  - first:
+      213: -5339734919716498629
+    second: 21_land_dust_6
+  - first:
+      213: 8563584321266921367
+    second: 21_land_dust_7
+  - first:
+      213: -3135195405854089593
+    second: 21_land_dust_8
+  - first:
+      213: -5961327874350189086
+    second: 21_land_dust_9
+  - first:
+      213: -8570885745860848417
+    second: 21_land_dust_10
+  - first:
+      213: 8630645374479781130
+    second: 21_land_dust_11
+  - first:
+      213: 4582141561469668730
+    second: 21_land_dust_12
+  - first:
+      213: -883594382933921144
+    second: 21_land_dust_13
+  - first:
+      213: 1759631539917721968
+    second: 21_land_dust_14
+  - first:
+      213: 3150608036722758641
+    second: 21_land_dust_15
+  - first:
+      213: -5059587948292282919
+    second: 21_land_dust_16
+  - first:
+      213: 5972711936420507004
+    second: 21_land_dust_17
+  - first:
+      213: 5171882855023539965
+    second: 21_land_dust_18
+  - first:
+      213: -3513930357911122369
+    second: 21_land_dust_19
+  - first:
+      213: -5845014486537244683
+    second: 21_land_dust_20
+  - first:
+      213: -7010676955541817610
+    second: 21_land_dust_21
+  - first:
+      213: 2334676735366367188
+    second: 21_land_dust_22
+  - first:
+      213: -2654389229195701759
+    second: 21_land_dust_23
+  - first:
+      213: -2721564031554438580
+    second: 21_land_dust_24
+  - first:
+      213: -1741273217244954230
+    second: 21_land_dust_25
+  - first:
+      213: -686586922354764554
+    second: 21_land_dust_26
+  - first:
+      213: 8868222182209051193
+    second: 21_land_dust_27
+  - first:
+      213: 1754122681003594432
+    second: landDust_0
+  - first:
+      213: 5846693534318898969
+    second: landDust_1
+  - first:
+      213: 340795245986723455
+    second: landDust_2
+  - first:
+      213: 8750305966781368168
+    second: landDust_3
+  - first:
+      213: -8431516500067592573
+    second: landDust_4
+  - first:
+      213: -6529903257208366913
+    second: landDust_5
+  - first:
+      213: 715656080982031529
+    second: landDust_6
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 300
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: landDust_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 127
+        height: 28
+      alignment: 9
+      pivot: {x: 0.49606, y: 0.10714}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c2dcadd845e75810800000000000000
+      internalID: 1754122681003594432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: landDust_1
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 0
+        width: 127
+        height: 28
+      alignment: 9
+      pivot: {x: 0.49606, y: 0.10714}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91fa6a7dac0a32150800000000000000
+      internalID: 5846693534318898969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: landDust_2
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 0
+        width: 127
+        height: 28
+      alignment: 9
+      pivot: {x: 0.49606, y: 0.10714}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f763e2a787fbab400800000000000000
+      internalID: 340795245986723455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: landDust_3
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 0
+        width: 127
+        height: 28
+      alignment: 9
+      pivot: {x: 0.49606, y: 0.10714}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8670cf96ae45f6970800000000000000
+      internalID: 8750305966781368168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: landDust_4
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 0
+        width: 127
+        height: 28
+      alignment: 9
+      pivot: {x: 0.49606, y: 0.10714}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38650af4a6c3dfa80800000000000000
+      internalID: -8431516500067592573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: landDust_5
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 0
+        width: 127
+        height: 28
+      alignment: 9
+      pivot: {x: 0.49606, y: 0.10714}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb8dd60a59f1165a0800000000000000
+      internalID: -6529903257208366913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: landDust_6
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 0
+        width: 127
+        height: 28
+      alignment: 9
+      pivot: {x: 0.49606, y: 0.10714}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ac3848f9658ee900800000000000000
+      internalID: 715656080982031529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      21_land_dust_0: 916173223097150954
+      21_land_dust_1: -6913913800034801473
+      21_land_dust_10: -8570885745860848417
+      21_land_dust_11: 8630645374479781130
+      21_land_dust_12: 4582141561469668730
+      21_land_dust_13: -883594382933921144
+      21_land_dust_14: 1759631539917721968
+      21_land_dust_15: 3150608036722758641
+      21_land_dust_16: -5059587948292282919
+      21_land_dust_17: 5972711936420507004
+      21_land_dust_18: 5171882855023539965
+      21_land_dust_19: -3513930357911122369
+      21_land_dust_2: 1244926555175151833
+      21_land_dust_20: -5845014486537244683
+      21_land_dust_21: -7010676955541817610
+      21_land_dust_22: 2334676735366367188
+      21_land_dust_23: -2654389229195701759
+      21_land_dust_24: -2721564031554438580
+      21_land_dust_25: -1741273217244954230
+      21_land_dust_26: -686586922354764554
+      21_land_dust_27: 8868222182209051193
+      21_land_dust_3: -7359952312593351220
+      21_land_dust_4: 3688213370011983309
+      21_land_dust_5: 7149308992255006809
+      21_land_dust_6: -5339734919716498629
+      21_land_dust_7: 8563584321266921367
+      21_land_dust_8: -3135195405854089593
+      21_land_dust_9: -5961327874350189086
+      landDust_0: 1754122681003594432
+      landDust_1: 5846693534318898969
+      landDust_2: 340795245986723455
+      landDust_3: 8750305966781368168
+      landDust_4: -8431516500067592573
+      landDust_5: -6529903257208366913
+      landDust_6: 715656080982031529
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

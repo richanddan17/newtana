@@ -1,0 +1,324 @@
+{
+ "fps": 20,
+ "frameMs": 50,
+ "previewScale": 3,
+ "note": "스프라이트는 원본 시트(4배 확대)를 1배로 되돌린 도트 원본. 엔진에서 정수배(3x 권장)+Nearest로 확대.",
+ "effects": {
+  "gather": {
+   "use": "차지 시작: 점들이 중심으로 모임",
+   "frameW": 127,
+   "frameH": 109,
+   "type": "oneshot",
+   "variants": 1,
+   "framesPerVariant": 10,
+   "file": "sprites_1x/01_gather.png",
+   "cols": 10,
+   "rows": 1,
+   "pivot": [
+    63.5,
+    54.5
+   ],
+   "pivotKind": "cell_center",
+   "loopMs": null,
+   "playMs": 500
+  },
+  "charge_loop": {
+   "use": "차지 중 계속 반복(홀드)",
+   "frameW": 82,
+   "frameH": 52,
+   "type": "loop",
+   "variants": 1,
+   "framesPerVariant": 8,
+   "file": "sprites_1x/02_charge_loop.png",
+   "cols": 8,
+   "rows": 1,
+   "pivot": [
+    41.0,
+    26.0
+   ],
+   "pivotKind": "cell_center",
+   "loopMs": 400,
+   "playMs": null
+  },
+  "release": {
+   "use": "차지 해제 순간 1회",
+   "frameW": 103,
+   "frameH": 100,
+   "type": "oneshot",
+   "variants": 1,
+   "framesPerVariant": 6,
+   "file": "sprites_1x/03_release.png",
+   "cols": 6,
+   "rows": 1,
+   "pivot": [
+    51.5,
+    50.0
+   ],
+   "pivotKind": "cell_center",
+   "loopMs": null,
+   "playMs": 300
+  },
+  "big_loop": {
+   "use": "풀차지 상태 반복",
+   "frameW": 112,
+   "frameH": 82,
+   "type": "loop",
+   "variants": 1,
+   "framesPerVariant": 8,
+   "file": "sprites_1x/04_big_loop.png",
+   "cols": 8,
+   "rows": 1,
+   "pivot": [
+    56.0,
+    41.0
+   ],
+   "pivotKind": "cell_center",
+   "loopMs": 400,
+   "playMs": null
+  },
+  "big_release": {
+   "use": "풀차지 발사 순간 1회",
+   "frameW": 121,
+   "frameH": 121,
+   "type": "oneshot",
+   "variants": 1,
+   "framesPerVariant": 6,
+   "file": "sprites_1x/05_big_release.png",
+   "cols": 6,
+   "rows": 1,
+   "pivot": [
+    60.5,
+    60.5
+   ],
+   "pivotKind": "cell_center",
+   "loopMs": null,
+   "playMs": 300
+  },
+  "aura": {
+   "use": "캐릭터 몸 주변 버프/오라 반복",
+   "frameW": 88,
+   "frameH": 103,
+   "type": "loop",
+   "variants": 1,
+   "framesPerVariant": 16,
+   "file": "sprites_1x/06_aura.png",
+   "cols": 16,
+   "rows": 1,
+   "pivot": [
+    44.0,
+    51.5
+   ],
+   "pivotKind": "cell_center",
+   "loopMs": 800,
+   "playMs": null
+  },
+  "power_burst": {
+   "use": "필살기/파워 발동(아래 링 + 위로 솟는 빛)",
+   "frameW": 91,
+   "frameH": 190,
+   "type": "oneshot",
+   "variants": 1,
+   "framesPerVariant": 10,
+   "file": "sprites_1x/07_power_burst.png",
+   "cols": 10,
+   "rows": 1,
+   "pivot": [
+    45.5,
+    95.0
+   ],
+   "pivotKind": "cell_center",
+   "loopMs": null,
+   "playMs": 500
+  },
+  "basic_muzzle": {
+   "use": "기본 공격 발사 순간(총구 위치)",
+   "frameW": 49,
+   "frameH": 43,
+   "type": "oneshot",
+   "variants": 3,
+   "framesPerVariant": 4,
+   "variantNote": "발사할 때마다 variant를 0→1→2 순환하면 무지개색이 바뀜",
+   "file": "sprites_1x/08_basic_muzzle.png",
+   "cols": 4,
+   "rows": 3,
+   "pivot": [
+    13.5,
+    21.0
+   ],
+   "pivotKind": "muzzle_glow_center",
+   "loopMs": null,
+   "playMs": 200
+  },
+  "basic_impact": {
+   "use": "기본 공격 적중",
+   "frameW": 91,
+   "frameH": 94,
+   "type": "oneshot",
+   "variants": 1,
+   "framesPerVariant": 7,
+   "file": "sprites_1x/10_basic_impact.png",
+   "cols": 7,
+   "rows": 1,
+   "pivot": [
+    45.5,
+    47.0
+   ],
+   "pivotKind": "cell_center",
+   "loopMs": null,
+   "playMs": 350
+  },
+  "rapid_muzzle": {
+   "use": "연사 발사 순간(총구)",
+   "frameW": 49,
+   "frameH": 37,
+   "type": "oneshot",
+   "variants": 4,
+   "framesPerVariant": 3,
+   "variantNote": "발사할 때마다 variant 순환",
+   "file": "sprites_1x/11_rapid_muzzle.png",
+   "cols": 3,
+   "rows": 4,
+   "pivot": [
+    10.5,
+    18.0
+   ],
+   "pivotKind": "muzzle_glow_center",
+   "loopMs": null,
+   "playMs": 150
+  },
+  "rapid_impact": {
+   "use": "연사 적중(작음)",
+   "frameW": 49,
+   "frameH": 49,
+   "type": "oneshot",
+   "variants": 1,
+   "framesPerVariant": 5,
+   "file": "sprites_1x/13_rapid_impact.png",
+   "cols": 5,
+   "rows": 1,
+   "pivot": [
+    24.5,
+    24.5
+   ],
+   "pivotKind": "cell_center",
+   "loopMs": null,
+   "playMs": 250
+  },
+  "big_muzzle": {
+   "use": "강공격 발사 순간(총구)",
+   "frameW": 121,
+   "frameH": 109,
+   "type": "oneshot",
+   "variants": 1,
+   "framesPerVariant": 6,
+   "file": "sprites_1x/14_big_muzzle.png",
+   "cols": 6,
+   "rows": 1,
+   "pivot": [
+    34.5,
+    54.0
+   ],
+   "pivotKind": "muzzle_glow_center",
+   "loopMs": null,
+   "playMs": 300
+  },
+  "big_impact": {
+   "use": "강공격 적중(큼)",
+   "frameW": 166,
+   "frameH": 160,
+   "type": "oneshot",
+   "variants": 1,
+   "framesPerVariant": 8,
+   "file": "sprites_1x/16_big_impact.png",
+   "cols": 8,
+   "rows": 1,
+   "pivot": [
+    83.0,
+    80.0
+   ],
+   "pivotKind": "cell_center",
+   "loopMs": null,
+   "playMs": 400
+  },
+  "jump_dust": {
+   "use": "점프 시작 먼지(발밑)",
+   "frameW": 73,
+   "frameH": 37,
+   "type": "oneshot",
+   "variants": 1,
+   "framesPerVariant": 6,
+   "file": "sprites_1x/20_jump_dust.png",
+   "cols": 6,
+   "rows": 1,
+   "pivot": [
+    36.0,
+    34.0
+   ],
+   "pivotKind": "feet_ground",
+   "loopMs": null,
+   "playMs": 300
+  },
+  "land_dust": {
+   "use": "착지 먼지(발밑)",
+   "frameW": 127,
+   "frameH": 28,
+   "type": "oneshot",
+   "variants": 1,
+   "framesPerVariant": 7,
+   "file": "sprites_1x/21_land_dust.png",
+   "cols": 7,
+   "rows": 1,
+   "pivot": [
+    63.0,
+    25.0
+   ],
+   "pivotKind": "feet_ground",
+   "loopMs": null,
+   "playMs": 350
+  },
+  "dash_dust": {
+   "use": "대시 먼지(발밑, 뒤쪽)",
+   "frameW": 70,
+   "frameH": 40,
+   "type": "oneshot",
+   "variants": 1,
+   "framesPerVariant": 7,
+   "file": "sprites_1x/22_dash_dust.png",
+   "cols": 7,
+   "rows": 1,
+   "pivot": [
+    34.5,
+    37.0
+   ],
+   "pivotKind": "feet_ground",
+   "loopMs": null,
+   "playMs": 350
+  },
+  "air_jump_ring": {
+   "use": "공중 점프 링(발밑)",
+   "frameW": 67,
+   "frameH": 37,
+   "type": "oneshot",
+   "variants": 1,
+   "framesPerVariant": 7,
+   "file": "sprites_1x/23_air_jump_ring.png",
+   "cols": 7,
+   "rows": 1,
+   "pivot": [
+    33.0,
+    18.0
+   ],
+   "pivotKind": "ring_center",
+   "loopMs": null,
+   "playMs": 350
+  }
+ },
+ "notIncluded": [
+  "basic_bolt",
+  "rapid_bolt",
+  "big_orb",
+  "arrow_release",
+  "energy_arrow",
+  "arrow_impact"
+ ]
+}

@@ -1,0 +1,419 @@
+fileFormatVersion: 2
+guid: 0dbffac28cae59845996b6073c9f44d0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4347861665862605278
+    second: 10_basic_impact_0
+  - first:
+      213: -858022262566027350
+    second: 10_basic_impact_1
+  - first:
+      213: 6129033610022313163
+    second: 10_basic_impact_2
+  - first:
+      213: 2301772323889351144
+    second: 10_basic_impact_3
+  - first:
+      213: 3572085137807469936
+    second: 10_basic_impact_4
+  - first:
+      213: -455975414697307190
+    second: 10_basic_impact_5
+  - first:
+      213: -7343673741830457352
+    second: 10_basic_impact_6
+  - first:
+      213: -1659804667844049468
+    second: 10_basic_impact_7
+  - first:
+      213: -4072916006417396279
+    second: 10_basic_impact_8
+  - first:
+      213: 4697752775244248001
+    second: 10_basic_impact_9
+  - first:
+      213: -5286753525209138970
+    second: 10_basic_impact_10
+  - first:
+      213: -7642883415669409726
+    second: 10_basic_impact_11
+  - first:
+      213: -1556970582730644440
+    second: 10_basic_impact_12
+  - first:
+      213: -9181906363797976598
+    second: 10_basic_impact_13
+  - first:
+      213: -3039845336792616065
+    second: 10_basic_impact_14
+  - first:
+      213: -5291756435077623144
+    second: 10_basic_impact_15
+  - first:
+      213: 8007810362249395667
+    second: 10_basic_impact_16
+  - first:
+      213: -5233330209427900907
+    second: 10_basic_impact_17
+  - first:
+      213: -5505641644326698878
+    second: 10_basic_impact_18
+  - first:
+      213: -4401317427857617617
+    second: 10_basic_impact_19
+  - first:
+      213: -4070724398790585660
+    second: 10_basic_impact_20
+  - first:
+      213: -6993814042011755345
+    second: 10_basic_impact_21
+  - first:
+      213: 1606097795080239131
+    second: 10_basic_impact_22
+  - first:
+      213: 6384539049897854951
+    second: 10_basic_impact_23
+  - first:
+      213: -3870261026861041442
+    second: 10_basic_impact_24
+  - first:
+      213: -5568254971830084543
+    second: 10_basic_impact_25
+  - first:
+      213: 1119935523286775946
+    second: 10_basic_impact_26
+  - first:
+      213: -6713943741518622700
+    second: 10_basic_impact_27
+  - first:
+      213: 7108786685549688352
+    second: 10_basic_impact_28
+  - first:
+      213: 1644197557214521572
+    second: 10_basic_impact_29
+  - first:
+      213: -4266459342093830677
+    second: basicImpact_0
+  - first:
+      213: 3587920552443336827
+    second: basicImpact_1
+  - first:
+      213: 3432735742454991124
+    second: basicImpact_2
+  - first:
+      213: 8235975802266957879
+    second: basicImpact_3
+  - first:
+      213: 1125645666286082607
+    second: basicImpact_4
+  - first:
+      213: 7791858841566715192
+    second: basicImpact_5
+  - first:
+      213: -328836908081285670
+    second: basicImpact_6
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 300
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: basicImpact_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 91
+        height: 94
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be5b9d145dd7ac4c0800000000000000
+      internalID: -4266459342093830677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basicImpact_1
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 0
+        width: 91
+        height: 94
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7855ba9bbadac130800000000000000
+      internalID: 3587920552443336827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basicImpact_2
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 0
+        width: 91
+        height: 94
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41901d868f683af20800000000000000
+      internalID: 3432735742454991124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basicImpact_3
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 0
+        width: 91
+        height: 94
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 738b5d82b501c4270800000000000000
+      internalID: 8235975802266957879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basicImpact_4
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 0
+        width: 91
+        height: 94
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2a90f105c81f9f00800000000000000
+      internalID: 1125645666286082607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basicImpact_5
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 0
+        width: 91
+        height: 94
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83d1297555e322c60800000000000000
+      internalID: 7791858841566715192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basicImpact_6
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 0
+        width: 91
+        height: 94
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad5f6c8039cbf6bf0800000000000000
+      internalID: -328836908081285670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      10_basic_impact_0: -4347861665862605278
+      10_basic_impact_1: -858022262566027350
+      10_basic_impact_10: -5286753525209138970
+      10_basic_impact_11: -7642883415669409726
+      10_basic_impact_12: -1556970582730644440
+      10_basic_impact_13: -9181906363797976598
+      10_basic_impact_14: -3039845336792616065
+      10_basic_impact_15: -5291756435077623144
+      10_basic_impact_16: 8007810362249395667
+      10_basic_impact_17: -5233330209427900907
+      10_basic_impact_18: -5505641644326698878
+      10_basic_impact_19: -4401317427857617617
+      10_basic_impact_2: 6129033610022313163
+      10_basic_impact_20: -4070724398790585660
+      10_basic_impact_21: -6993814042011755345
+      10_basic_impact_22: 1606097795080239131
+      10_basic_impact_23: 6384539049897854951
+      10_basic_impact_24: -3870261026861041442
+      10_basic_impact_25: -5568254971830084543
+      10_basic_impact_26: 1119935523286775946
+      10_basic_impact_27: -6713943741518622700
+      10_basic_impact_28: 7108786685549688352
+      10_basic_impact_29: 1644197557214521572
+      10_basic_impact_3: 2301772323889351144
+      10_basic_impact_4: 3572085137807469936
+      10_basic_impact_5: -455975414697307190
+      10_basic_impact_6: -7343673741830457352
+      10_basic_impact_7: -1659804667844049468
+      10_basic_impact_8: -4072916006417396279
+      10_basic_impact_9: 4697752775244248001
+      basicImpact_0: -4266459342093830677
+      basicImpact_1: 3587920552443336827
+      basicImpact_2: 3432735742454991124
+      basicImpact_3: 8235975802266957879
+      basicImpact_4: 1125645666286082607
+      basicImpact_5: 7791858841566715192
+      basicImpact_6: -328836908081285670
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

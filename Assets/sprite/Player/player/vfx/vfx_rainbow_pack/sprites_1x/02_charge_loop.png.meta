@@ -1,0 +1,373 @@
+fileFormatVersion: 2
+guid: 87fc0f6ee23649d449dad06ee2e275a2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6349538442291826608
+    second: 02_charge_loop_0
+  - first:
+      213: 2299339853951507085
+    second: 02_charge_loop_1
+  - first:
+      213: 1583816585151543186
+    second: 02_charge_loop_2
+  - first:
+      213: -2490887101882947985
+    second: 02_charge_loop_3
+  - first:
+      213: 6159764940127494267
+    second: 02_charge_loop_4
+  - first:
+      213: -3323796103192478741
+    second: 02_charge_loop_5
+  - first:
+      213: 1084288370326361557
+    second: 02_charge_loop_6
+  - first:
+      213: 7894564889860082169
+    second: 02_charge_loop_7
+  - first:
+      213: 4279010495722032247
+    second: 02_charge_loop_8
+  - first:
+      213: 5244846786455877673
+    second: 02_charge_loop_9
+  - first:
+      213: -4182829793988817394
+    second: 02_charge_loop_10
+  - first:
+      213: 3427048231283004458
+    second: 02_charge_loop_11
+  - first:
+      213: 8288693756898052218
+    second: chargeLoop_0
+  - first:
+      213: -879549247758559031
+    second: chargeLoop_1
+  - first:
+      213: -2094625540241541149
+    second: chargeLoop_2
+  - first:
+      213: -1879960525734770149
+    second: chargeLoop_3
+  - first:
+      213: -8161977327536719157
+    second: chargeLoop_4
+  - first:
+      213: 6866081908074721143
+    second: chargeLoop_5
+  - first:
+      213: 3914036023390530264
+    second: chargeLoop_6
+  - first:
+      213: 309038935184748622
+    second: chargeLoop_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 300
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: chargeLoop_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 82
+        height: 52
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7808e77e0b570370800000000000000
+      internalID: 8288693756898052218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chargeLoop_1
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 0
+        width: 82
+        height: 52
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c893e48e963bc3f0800000000000000
+      internalID: -879549247758559031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chargeLoop_2
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 0
+        width: 82
+        height: 52
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e731704b256ee2e0800000000000000
+      internalID: -2094625540241541149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chargeLoop_3
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 0
+        width: 82
+        height: 52
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1a82dfbcd909e5e0800000000000000
+      internalID: -1879960525734770149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chargeLoop_4
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 0
+        width: 82
+        height: 52
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcab1675dd4dabe80800000000000000
+      internalID: -8161977327536719157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chargeLoop_5
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 0
+        width: 82
+        height: 52
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77fa7890e19394f50800000000000000
+      internalID: 6866081908074721143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chargeLoop_6
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 0
+        width: 82
+        height: 52
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8da664c9603715630800000000000000
+      internalID: 3914036023390530264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chargeLoop_7
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 0
+        width: 82
+        height: 52
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e40b371364de94400800000000000000
+      internalID: 309038935184748622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      02_charge_loop_0: -6349538442291826608
+      02_charge_loop_1: 2299339853951507085
+      02_charge_loop_10: -4182829793988817394
+      02_charge_loop_11: 3427048231283004458
+      02_charge_loop_2: 1583816585151543186
+      02_charge_loop_3: -2490887101882947985
+      02_charge_loop_4: 6159764940127494267
+      02_charge_loop_5: -3323796103192478741
+      02_charge_loop_6: 1084288370326361557
+      02_charge_loop_7: 7894564889860082169
+      02_charge_loop_8: 4279010495722032247
+      02_charge_loop_9: 5244846786455877673
+      chargeLoop_0: 8288693756898052218
+      chargeLoop_1: -879549247758559031
+      chargeLoop_2: -2094625540241541149
+      chargeLoop_3: -1879960525734770149
+      chargeLoop_4: -8161977327536719157
+      chargeLoop_5: 6866081908074721143
+      chargeLoop_6: 3914036023390530264
+      chargeLoop_7: 309038935184748622
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

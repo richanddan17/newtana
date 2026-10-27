@@ -27,8 +27,11 @@ public partial class PlayerAnimation : MonoBehaviour
 
     [Header("Options")]
     [SerializeField] bool useAimDirectionForFlip = true;
+    [Tooltip("전체 애니메이션 재생 속도. 1 = 원본, 작을수록 느려진다.")]
+    [SerializeField, Range(0.2f, 2f)] float playbackSpeed = 0.55f;
 
     public event Action<int> OnAimDirectionChanged;
+    public event Action<PlayerAnimationClip> OnDebugClipFinished;
     public event Action<bool> OnShootingChanged;
     public event Action OnHurtAnimationStart;
     public event Action OnDeathAnimationStart;
@@ -36,10 +39,16 @@ public partial class PlayerAnimation : MonoBehaviour
     /// <summary>부활 연출 중 여부. RespawnSystem이 설정하고, wake 클립이 끝나면 자동 해제.</summary>
     public bool IsWakePlaying { get; set; }
 
+    /// <summary>공격/차지 중 좌우 방향 고정. PlayerMovement 가 이 값을 보고 flip 을 멈춘다.</summary>
+    public bool FreezeFacing { get; set; }
+
+    public float PlaybackSpeed => Mathf.Max(0.01f, playbackSpeed);
+
     public PlayerAnimationSet AnimationSet => animationSet;
 
     int currentAimDirIndex = PlayerStateController.AimDirFront;
     PlayerAnimationClip hurtClipOverride;
+    PlayerAnimationClip debugClipOverride;
 
     void Awake()
     {
@@ -80,7 +89,11 @@ public partial class PlayerAnimation : MonoBehaviour
     /// <summary>현재 상태에서 표시할 클립을 결정한다. 우선순위: Death → Wake → Hurt → Dash/Shooting 오버레이 → 이동 상태.</summary>
     PlayerAnimationClip ResolveClip()
     {
-        if (animationSet == null || stateController == null) return null;
+        if (animationSet == null) return null;
+
+        if (HasFrames(debugClipOverride)) return debugClipOverride;
+
+        if (stateController == null) return null;
 
         PlayerState moveState = stateController.CurrentMoveState;
         PlayerState overlay = stateController.CurrentOverlayState;
@@ -182,7 +195,11 @@ public partial class PlayerAnimation : MonoBehaviour
     public void ResetAnimation()
     {
         IsWakePlaying = false;
+        FreezeFacing = false;
         hurtClipOverride = null;
+        debugClipOverride = null;
+        debugLoopStartFrame = 0;
+        lastDebugFrame = -1;
         activeClip = null;
         activeFrame = 0;
         activeTimer = 0f;
@@ -190,6 +207,38 @@ public partial class PlayerAnimation : MonoBehaviour
     }
 
     public int GetCurrentAimDirectionIndex() => currentAimDirIndex;
+
+    public SpriteRenderer BodyRenderer => spriteRenderer;
+
+    public float CurrentFrameInterval =>
+        activeClip != null && activeClip.frameInterval > 0f
+            ? activeClip.frameInterval / PlaybackSpeed
+            : 0.05f / PlaybackSpeed;
+
+    public void PlayDebugClip(PlayerAnimationClip clip)
+    {
+        PlayDebugClip(clip, 0);
+    }
+
+    public void PlayDebugClip(PlayerAnimationClip clip, int loopStartFrame)
+    {
+        debugClipOverride = clip;
+        debugLoopStartFrame = Mathf.Max(0, loopStartFrame);
+        lastDebugFrame = -1;
+        activeClip = null;
+        activeFrame = 0;
+        activeTimer = 0f;
+    }
+
+    public void ClearDebugClip()
+    {
+        debugClipOverride = null;
+        debugLoopStartFrame = 0;
+        lastDebugFrame = -1;
+        activeClip = null;
+        activeFrame = 0;
+        activeTimer = 0f;
+    }
 
     /// <summary>현재 조준 방향 벡터 (우측 기준). 좌우 반전은 루트 scale.x 가 담당.</summary>
     public Vector2 GetCurrentAimDirectionVector()

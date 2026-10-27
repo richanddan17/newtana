@@ -1,0 +1,167 @@
+# 전투 계획 v2.0v
+
+- 기준 계획: `omo/combat_plan_v2_0.txt`
+- 우선순위: **2026-10-26 구두 지시 > v2.0**
+- 목표: 오늘 지시한 VFX/입력/강공격 문제를 먼저 고치고, v2.0의 강공격/패링/muzzle 정합성은 그 다음에 맞춘다.
+- 관련 코드: `CombatAnimationDemo`, `PlayerMovement`, `PlayerStateController`, `PlayerState`, `PlayerInputBuffer`, `PlayerBowShot`, `PlayerMeleeVfx`, `PlayerCastFx`.
+
+## 0. 결정과 가정
+
+1. **Q 대시는 유지한다.**
+   - `"dash 실수로 heavyattack vfx하나 잘못넣은거임"`은 대시 자체 삭제가 아니라, 대시 쪽에 잘못 연결된 `heavy_0`(강공격 0번 VFX)를 강공격 전용으로 되돌리는 것으로 해석한다.
+   - `heavy_0`는 `PlayHeavyRelease()`에서만 사용한다. 대시에는 melee VFX를 붙이지 않는다.
+2. **강공격 release = `heavy_0`부터 재생 + 전방 돌진.**
+   - 현재 코드는 이미 `heavyFx`를 0번부터 재생한다. 빠진 것은 돌진이다.
+   - 돌진 거리 기본값: v2.0의 +20도트 × 0.01 × root scale 8 = **1.6 world units**.
+   - 돌진 시간 기본값: **0.18s** (v2.0 22~24f, 3 × 0.06s). Inspector에서 조정 가능하게 둔다.
+   - 돌진 방향: release 시점의 `transform.localScale.x` 부호. `FreezeFacing`은 heavy 시작부터 release 종료까지 유지.
+3. **VFX 좌표는 우선 Y만 올린다.**
+   - `PlayerMeleeVfx`의 frameOffsets/root scale 좌표 버그는 `01_VFX_OFFSETS_AND_COORDINATES.md`의 별도 과제다.
+   - 이번에는 사용자가 요청한 공격 VFX 높이만 올리고, X/스케일 재정규화는 P1로 남긴다.
+4. **up/down 선딜 제거는 “슬래시 구간만 재생”으로 한다.**
+   - 몸 프레임은 기존 계획대로 3~6을 쓰고, 재생 시작을 3으로 당긴다.
+   - VFX는 트림된 클립의 0번(=원본 3번)부터 4프레임 재생.
+
+## 1. P0 — 오늘 즉시 적용
+
+### 1.1 Up/Down attack 선딜 제거
+
+- `PlaySwordUpAttack`: `PlayClip(clip, ...)` → `PlayRange(clip, 3, 6, false, "upAttack")`.
+- `PlaySwordDownAttack`: `PlayClip(clip, ...)` → `PlayRange(clip, 3, 6, false, "downAttack")`.
+- 두 곳 모두 `meleeFirstFrame = 0`, `meleeLastFrame = 3`으로 변경.
+  - 트림된 클립은 원본 3~6만 있으므로 VFX 인덱스도 0부터 시작해야 한다.
+- `Playback`이 첫 프레임 0에서 `OnDebugClipFrame(0)`을 발생시키는지 확인. 현재 `lastDebugFrame = -1` 초기화로 보장됨.
+- 완료 기준: W/S + LMB 입력 즉시 슬래시가 보이고, 0.27s windup이 사라진다. up/down 회전/`attack1Fx`는 유지된다.
+
+### 1.2 공격 VFX 높이 상향
+
+- `PlaySwordCombo` 기본 offset:
+  - attack1: `(1.2, 1.0)`
+  - attack2: `(1.4, 1.0)`
+  - attack3: `(1.6, 1.0)`
+- `PlaySwordUpAttack`: `(0.35, 2.6)`
+- down attack: 기존 `0` 유지 (요청 범위 밖)
+- heavy: 기존 `(1.5, 0.05)` 유지, 단 `heavy_0`는 release 전용 역할 확정.
+- 완료 기준: slash 중심이 발밑이 아니라 몸통/머리 높이에 온다. X 위치는 기존 감각 유지.
+
+### 1.3 활 release 2 → 1 → 0
+
+- `PlayerBowShot.Fire()`에서 `set.arrowRelease`를 그대로 넘기지 않고, 프레임을 역순으로 복사한 클립을 `SpawnOneShot`에 전달.
+- 새 헬퍼: `ReverseFrames(PlayerAnimationClip source)`.
+  - `frames`, `frameOffsets`, `frameInterval`, `loop`, `id`, `footAnchored`를 보존.
+  - 3프레임 release만 대상. energy arrow/impact는 건드리지 않는다.
+- 완료 기준: 발사할 때마다 release VFX가 2 → 1 → 0 순서로 보인다.
+
+### 1.4 마법 muzzle/firepoint Y 하향
+
+- `CombatAnimationDemo`에 `[SerializeField] float castMuzzleYOffset = 0.35f;` 추가.
+- `FireCast()`에서:
+  - `Vector3 origin = playerAnimation.GetMuzzleWorldPosition();`
+  - `origin.y -= castMuzzleYOffset;`
+  - `PlayerCastShot.Fire(..., origin, ...)`
+- 실제 `Muzzle` Transform은 건드리지 않는다. 활은 기존 위치 유지.
+- firepoint가 origin에서 파생되므로 muzzle과 bolt가 함께 내려간다.
+- 완료 기준: 마법 muzzle/bolt가 허리 높이에서 나오고, 활 발사 위치는 그대로다.
+
+### 1.5 Rapid 중 이동 잠금
+
+- `PlayerStateController`에 `movementLocked` + `MovementLocked` 프로퍼티 추가.
+- `CanMove`, `CanJump`, `CanDash` 앞에 `!movementLocked` 조건 추가.
+- `PlayerMovement.FixedUpdate()`에서 `stateController.MovementLocked`이면:
+  - horizontal velocity를 즉시 0으로
+  - gravity는 적용
+  - jump/move/dash 처리로 진입하지 않음
+- `CombatAnimationDemo`:
+  - `castRapidFiring = true` 되는 순간 `stateController.MovementLocked = true`
+  - `ReleaseCast()`, `ResetCast()`, `OnDisable()`에서 false
+- `MoveInput`은 유지해 `UpdateFacingDirection()`의 A/D facing은 계속 동작하게 한다.
+- 완료 기준: rapid 연사 중 걷기/점프/대시 불가, A/D 방향 전환 가능, release 후 즉시 이동 복구.
+
+### 1.6 점프 입력 수정
+
+- `PlayerMovement.HandleJump()`:
+  - `WasJumpPressedThisFrame` → `stateController.HasJumpBuffer`
+  - `ExecuteJump()`에서 `stateController.ConsumeJumpBuffer()` 호출 후 `NotifyJumpExecuted()`
+- `PlayerState.Fall`: `canJump: false` → `true` (coyote jump 허용).
+- Jump 상태는 `canJump: false` 유지 → 공중 2단 점프 방지.
+- 완료 기준: Space가 프레임 타이밍과 무관하게 안정적으로 먹는다. 낙하 직후 coyote jump가 된다. 공중 연타로 2단 점프되지 않는다.
+
+### 1.7 강공격 release 돌진
+
+- `PlayerMovement`에 전용 lunge 추가:
+  - `[SerializeField] bool enableHeavyLunge = true;`
+  - `float lungeTimer; Vector2 lungeVelocity;`
+  - `public bool IsLunging => lungeTimer > 0f;`
+  - `public void ApplyLunge(Vector2 direction, float distance, float duration)`
+  - `FixedUpdate()` 맨 앞에서 lunge 중이면 horizontal velocity를 lungeVelocity로 고정, gravity 적용, return.
+- `PlayerStateController.ApplyKnockback`은 사용하지 않는다.
+  - 이유: externalVelocity가 Dash 상태를 유발해 `dashDuration`(0.2s)과 무적이 끼어든다. 강공격 돌진에 i-frame을 주지 않기 위해 별도 lunge로 분리.
+- `CombatAnimationDemo`:
+  - `[SerializeField] PlayerMovement playerMovement;`
+  - `[SerializeField] float heavyLungeDistance = 1.6f;`
+  - `[SerializeField] float heavyLungeDuration = 0.18f;`
+  - `Awake()`에서 없으면 `GetComponent<PlayerMovement>()`.
+  - `PlayHeavyRelease()`에서 `long facing = transform.localScale.x < 0 ? -1 : 1;` 후 `playerMovement.ApplyLunge(new Vector2(facing, 0f), heavyLungeDistance, heavyLungeDuration);`
+  - `meleeFx = set.heavyFx`, `meleeFirstFrame = 0`, `meleeLastFrame = 5` 유지 → `heavy_0`부터 재생.
+- `OnDisable()`에서 lunge 취소 API 호출.
+- 완료 기준: 홀드 후 release 순간 `heavy_0`가 나오고 몸이 공격 방향으로 약 1.6 units 돌진한다. 대시 무적/쿨다운에 영향 없음.
+
+### 1.8 강공격 VFX 타이밍 정합 (P0 후반)
+
+- 현재 `PlayerMeleeVfx.PlaySequence()`는 모든 VFX에 `PlayerBowShot.VfxSpeed (1.8)`를 나눠 적용한다.
+- heavy body는 0.06s/frame × playback 0.55라 heavy VFX가 지나치게 빨리 끝난다.
+- `PlaySequence`에 `bool applyVfxSpeed = true` 파라미터를 추가하고, heavy일 때 false로 호출해 body와 1:1로 맞춘다.
+- attack1/2/3/up/down은 기존처럼 1.8배속 유지.
+- 완료 기준: heavy_0~5가 release 21~26f와 대략 같은 속도로 보인다.
+
+### 1.9 검 공격 적중 판정 + release/bigRelease VFX
+
+- VFX 역할을 다음처럼 분리한다.
+  - `attack1Fx`/`attack2Fx`/`attack3Fx`/`heavyFx` = 검/강공격의 슬래시 연출.
+  - `swordHitFx`(`release`) = 검 공격 1·2·3·up·down·jump 적중 VFX.
+  - `heavyHitFx`(`bigRelease`) = 강공격 적중 VFX.
+  - `impactBasic`/`impactRapid`/`impactBig` = 마법 적중 VFX. `arrowImpact` = 활 적중 VFX.
+  - `arrowRelease` = 활 발사 VFX. 적중 VFX가 아니다.
+- `PlayerAnimationSet`에 `swordHitFx`, `heavyHitFx`를 추가하고 importer에서 각각 `release`, `bigRelease`를 매핑한다.
+- `PlayerMeleeVfx`에 `BeginSwing()`과 `PlayHit()`을 추가한다.
+  - `PlayHit`은 현재 슬래시 VFX 위치에서 `Hurtbox`를 탐색한다.
+  - 적대 팀이 아니거나 이미 죽은 대상은 제외한다.
+  - swing마다 같은 `Hurtbox`에는 1회만 impact를 스폰한다.
+  - `PlayerBowShot.SpawnImpact`를 재사용해 접점에 impact를 표시한다.
+  - 데미지/넉백은 호출하지 않는다. `Hurtbox`의 기존 투사체 피격 경로도 바꾸지 않는다.
+- `CombatAnimationDemo`에서 공격별 hit VFX를 연결한다.
+  - attack1/2/3: `swordHitFx`, 첫 적중 프레임 3/1/5.
+  - up/down: `swordHitFx`, 트림 클립 첫 프레임.
+  - jump: `swordHitFx`, 첫 적중 프레임 2, 공중 LMB 입력 시 `jumpAttack` 재생.
+  - heavy: `heavyHitFx`, release 첫 프레임.
+- 완료 기준: 적 Hurtbox에 닿은 검 공격만 `release`/`bigRelease`가 접점에 1회 표시된다. 빗나가면 impact가 표시되지 않는다. 마법/활 impact는 기존과 동일하다.
+
+## 2. P1 — v2.0 정합성
+
+1. `heavy_gather` 8f loop를 `power_burst`와 함께 loop 진입 시 재생, release 시 제거.
+2. 강공격 스프라이트 내부 이동(+1/+1.5/+2.5도트)과 외부 +6/+8/+6도트의 합이 4-7 표와 맞는지 검증.
+3. `PlayerMeleeVfx` frameOffsets를 root scale로 정규화하는 좌표 버그 수정 (`01_VFX_OFFSETS_AND_COORDINATES.md`).
+4. muzzleBasic 4f / muzzleRapid 3f 변형 선택 재생.
+5. 패링은 3-7 후보 상태 유지, 구현 보류.
+
+## 3. 검증
+
+- Unity Roslyn 컴파일:
+  - `csc.dll` + `Library/Bee/artifacts/1900b0aE.dag/RunGun.Core.rsp`
+  - exit 0 / 0 errors 확인.
+- 플레이 체크:
+  1. W+LMB / S+LMB 즉시 슬래시, 선딜 없음.
+  2. attack1/2/3 VFX가 몸통 높이.
+  3. 활 release 2→1→0.
+  4. 마법 muzzle/bolt Y 하향, 활은 그대로.
+  5. rapid 중 이동/점프/대시 잠금, A/D facing 유지.
+  6. Space 안정 점프 + coyote, 2단 점프 없음.
+  7. heavy release에서 heavy_0 + 전방 돌진, 대시 무적 없음.
+  8. 검 공격이 적 Hurtbox에 맞을 때만 release/bigRelease가 접점에 1회 표시되고, 빗나가면 표시되지 않음.
+  9. 마법 impactBasic/impactRapid/impactBig와 활 arrowImpact가 기존과 동일하게 표시됨.
+
+## 4. 남은 결정
+
+- 강공격 돌진을 0.18s로 할지, body playback(0.55)에 맞춰 0.327s로 할지.
+- Q 대시를 나중에 삭제할지 (현재 계획은 유지).
+- 공격 VFX X 위치를 v2.0 중심 좌표(2.64 등)로 재정규화할지.

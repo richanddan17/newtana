@@ -1,0 +1,277 @@
+fileFormatVersion: 2
+guid: f903c754199dcf64a8561bc4080b1af4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3507834770857493130
+    second: 19_arrow_impact_0
+  - first:
+      213: 3399332388083185671
+    second: 19_arrow_impact_1
+  - first:
+      213: -7783972868281994713
+    second: 19_arrow_impact_2
+  - first:
+      213: -4950670804348010510
+    second: 19_arrow_impact_3
+  - first:
+      213: 4693649645611728483
+    second: 19_arrow_impact_4
+  - first:
+      213: -3286764431407964014
+    second: 19_arrow_impact_5
+  - first:
+      213: -8128981350887938807
+    second: 19_arrow_impact_6
+  - first:
+      213: -2941383658446311498
+    second: 19_arrow_impact_7
+  - first:
+      213: 6180069211584264023
+    second: 19_arrow_impact_8
+  - first:
+      213: 8666542585081187474
+    second: 19_arrow_impact_9
+  - first:
+      213: 493529810666729308
+    second: 19_arrow_impact_10
+  - first:
+      213: -1564083837512773430
+    second: 19_arrow_impact_11
+  - first:
+      213: 7709552232725149516
+    second: 19_arrow_impact_12
+  - first:
+      213: 7388010027185177987
+    second: 19_arrow_impact_13
+  - first:
+      213: 3597507284053831919
+    second: arrowImpact_0
+  - first:
+      213: 6414099001357866369
+    second: arrowImpact_1
+  - first:
+      213: 1149810398288514753
+    second: arrowImpact_2
+  - first:
+      213: -5604647122354308965
+    second: arrowImpact_3
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 300
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: arrowImpact_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 48
+        height: 51
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe0b8ee70d9ece130800000000000000
+      internalID: 3597507284053831919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowImpact_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 48
+        height: 51
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1859f12fe05730950800000000000000
+      internalID: 6414099001357866369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowImpact_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 48
+        height: 51
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ce890d1772f4ff00800000000000000
+      internalID: 1149810398288514753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowImpact_3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 48
+        height: 51
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b98f7ac032b4832b0800000000000000
+      internalID: -5604647122354308965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      19_arrow_impact_0: -3507834770857493130
+      19_arrow_impact_1: 3399332388083185671
+      19_arrow_impact_10: 493529810666729308
+      19_arrow_impact_11: -1564083837512773430
+      19_arrow_impact_12: 7709552232725149516
+      19_arrow_impact_13: 7388010027185177987
+      19_arrow_impact_2: -7783972868281994713
+      19_arrow_impact_3: -4950670804348010510
+      19_arrow_impact_4: 4693649645611728483
+      19_arrow_impact_5: -3286764431407964014
+      19_arrow_impact_6: -8128981350887938807
+      19_arrow_impact_7: -2941383658446311498
+      19_arrow_impact_8: 6180069211584264023
+      19_arrow_impact_9: 8666542585081187474
+      arrowImpact_0: 3597507284053831919
+      arrowImpact_1: 6414099001357866369
+      arrowImpact_2: 1149810398288514753
+      arrowImpact_3: -5604647122354308965
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

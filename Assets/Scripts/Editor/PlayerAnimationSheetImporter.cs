@@ -8,7 +8,7 @@ using UnityEngine;
 
 /// <summary>
 /// 플레이어 시트 임포트 도구 (v5 player_1).
-///   Tools/PlayerAnimation/Import Sheets From Manifest
+///   Newtana Custom Tool > Import Sheets From Manifest
 ///   1) 매니페스트(player_animation_manifest.json) 기준으로 각 시트를 Multiple 스프라이트로 슬라이스한다.
 ///      - 셀 rect = 내용 있는 셀만 row-major, 좌표는 텍스처 좌하단 원점
 ///      - pivot = 시트별 계산값 (motion=발 기준, vfx=내용 중심/지면 접촉)
@@ -23,7 +23,7 @@ public static class PlayerAnimationSheetImporter
     const string MotionDir = RootDir + "/motion";
     const string VfxDir = RootDir + "/vfx";
     const string SetAssetPath = "Assets/PlayerAnimationSet.asset";
-    const string MainScenePath = "Assets/Scenes/SampleScene.unity";
+    const string MainScenePath = "Assets/Scenes/mainscene.unity";
 
     const string BodyName = "Body";
     const string CastFxName = "CastFX";
@@ -32,7 +32,6 @@ public static class PlayerAnimationSheetImporter
     const string MuzzleFxName = "MuzzleFX";
     const string CastPointName = "CastPoint";
 
-    [MenuItem("Tools/PlayerAnimation/Import Sheets From Manifest", false, 10)]
     public static void ImportFromManifest()
     {
         var manifest = LoadManifest();
@@ -65,7 +64,6 @@ public static class PlayerAnimationSheetImporter
                   (log.Count > 0 ? "\n" + string.Join("\n", log.ToArray()) : ""));
     }
 
-    [MenuItem("Tools/PlayerAnimation/Regenerate Manifest From Sheets", false, 20)]
     public static void RegenerateManifest()
     {
         var manifest = PlayerSheetGridDetector.Detect(RootDir);
@@ -104,7 +102,7 @@ public static class PlayerAnimationSheetImporter
         if (asset == null)
         {
             Debug.LogError("[플레이어 시트 임포트] 매니페스트 없음: " + ManifestAssetPath +
-                           "\n'Tools/PlayerAnimation/Regenerate Manifest From Sheets' 를 먼저 실행하세요.");
+                           "\n'Newtana Custom Tool > Regenerate Manifest From Sheets' 를 먼저 실행하세요.");
             return null;
         }
 
@@ -120,7 +118,7 @@ public static class PlayerAnimationSheetImporter
     /// <summary>시트 하나를 Multiple 스프라이트로 슬라이스하고, 로드된 프레임 수를 반환한다.</summary>
     static int ApplySheet(string dir, PlayerSheetGridDetector.SheetEntry entry, int ppu, List<string> log)
     {
-        string assetPath = dir + "/" + entry.file;
+        string assetPath = ResolveAssetPath(dir, entry.file);
         int cellCount = entry.cells == null ? 0 : entry.cells.Length / 2;
         if (cellCount == 0)
         {
@@ -160,7 +158,7 @@ public static class PlayerAnimationSheetImporter
 
             importer.textureType = TextureImporterType.Sprite;
             importer.spriteImportMode = SpriteImportMode.Multiple;
-            importer.spritePixelsPerUnit = ppu;
+            importer.spritePixelsPerUnit = entry.ppu > 0 ? entry.ppu : ppu;
             importer.filterMode = FilterMode.Bilinear;
             importer.textureCompression = TextureImporterCompression.Uncompressed;
             importer.mipmapEnabled = false;
@@ -176,6 +174,16 @@ public static class PlayerAnimationSheetImporter
 
         log.Add("슬라이스 실패: " + assetPath);
         return 0;
+    }
+
+    static string ResolveAssetPath(string dir, string file)
+    {
+        string direct = Path.Combine(dir, file);
+        if (File.Exists(direct)) return direct.Replace('\\', '/');
+
+        string fileName = Path.GetFileName(file);
+        string[] matches = Directory.GetFiles(dir, fileName, SearchOption.AllDirectories);
+        return matches.Length > 0 ? matches[0].Replace('\\', '/') : direct.Replace('\\', '/');
     }
 
     static bool HasSlicedSprites(string assetPath, string sheetId, int expectedCount)
@@ -222,6 +230,11 @@ public static class PlayerAnimationSheetImporter
         set.downAttack = Clip(set, "downAttack", manifest, frameCounts, 0.05f, false);
         set.heavyAttack = Clip(set, "heavyAttack", manifest, frameCounts, 0.06f, false);
         set.bow = Clip(set, "bow", manifest, frameCounts, 0.05f, false);
+        set.arrowRelease = Clip(set, "arrowRelease", manifest, frameCounts, 0.03f, false);
+        set.energyArrow = Clip(set, "energyArrow", manifest, frameCounts, 0.04f, true);
+        set.arrowImpact = Clip(set, "arrowImpact", manifest, frameCounts, 0.04f, false);
+        set.swordHitFx = Clip(set, "release", manifest, frameCounts, 0.05f, false);
+        set.heavyHitFx = Clip(set, "bigRelease", manifest, frameCounts, 0.05f, false);
 
         set.doubleJump = Clip(set, "doubleJump", manifest, frameCounts, 0.04f, false);
         set.wallSlide = Clip(set, "wallSlide", manifest, frameCounts, 0.05f, true);
@@ -248,6 +261,9 @@ public static class PlayerAnimationSheetImporter
         set.castBigLoop = Clip(set, "bigLoop", manifest, frameCounts, 0.05f, true);
         set.castBigRelease = Clip(set, "bigRelease", manifest, frameCounts, 0.05f, false);
         set.castAura = Clip(set, "aura", manifest, frameCounts, 0.05f, true);
+        set.basicBolt = Clip(set, "basicBolt", manifest, frameCounts, 0.04f, true);
+        set.rapidBolt = Clip(set, "rapidBolt", manifest, frameCounts, 0.04f, true);
+        set.bigOrb = Clip(set, "bigOrb", manifest, frameCounts, 0.04f, true);
 
         set.jumpDust = Clip(set, "jumpDust", manifest, frameCounts, 0.04f, false);
         set.landDust = Clip(set, "landDust", manifest, frameCounts, 0.04f, false);
@@ -267,7 +283,7 @@ public static class PlayerAnimationSheetImporter
         if (entry == null) return null;
 
         string dir = manifest.motion.Any(e => e.id == sheetId) ? MotionDir : VfxDir;
-        string assetPath = dir + "/" + entry.file;
+        string assetPath = ResolveAssetPath(dir, entry.file);
 
         var byName = AssetDatabase.LoadAllAssetsAtPath(assetPath).OfType<Sprite>()
             .GroupBy(s => s.name).ToDictionary(g => g.Key, g => g.First());
@@ -302,7 +318,7 @@ public static class PlayerAnimationSheetImporter
         if (player == null)
         {
             Debug.LogWarning("[플레이어 시트 임포트] 씬에 Player 가 없습니다. " +
-                             "'newtana/카메라 시스템 셋업' 을 먼저 실행하세요.");
+                             "'Newtana Custom Tool > Camera System' 을 먼저 실행하세요.");
             return;
         }
 

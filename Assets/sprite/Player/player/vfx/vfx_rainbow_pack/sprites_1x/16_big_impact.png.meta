@@ -1,0 +1,529 @@
+fileFormatVersion: 2
+guid: 2c3a69664e09e564f9d471b658e154e0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8345859820407929467
+    second: 16_big_impact_0
+  - first:
+      213: -6351723032250939912
+    second: 16_big_impact_1
+  - first:
+      213: -5359687409971348673
+    second: 16_big_impact_2
+  - first:
+      213: -5691638334909704463
+    second: 16_big_impact_3
+  - first:
+      213: -807045352084872998
+    second: 16_big_impact_4
+  - first:
+      213: 7709532118671495351
+    second: 16_big_impact_5
+  - first:
+      213: 4816575802964888701
+    second: 16_big_impact_6
+  - first:
+      213: -3971151392764843420
+    second: 16_big_impact_7
+  - first:
+      213: 4002723066148172642
+    second: 16_big_impact_8
+  - first:
+      213: -8321397949724073671
+    second: 16_big_impact_9
+  - first:
+      213: -8496228941000411207
+    second: 16_big_impact_10
+  - first:
+      213: 4555692255667887151
+    second: 16_big_impact_11
+  - first:
+      213: -4347552994469394674
+    second: 16_big_impact_12
+  - first:
+      213: -3768659765966150755
+    second: 16_big_impact_13
+  - first:
+      213: -1580397597272401202
+    second: 16_big_impact_14
+  - first:
+      213: -3309715282549130444
+    second: 16_big_impact_15
+  - first:
+      213: 7018349019722217005
+    second: 16_big_impact_16
+  - first:
+      213: -36128324094927671
+    second: 16_big_impact_17
+  - first:
+      213: 798573835652420705
+    second: 16_big_impact_18
+  - first:
+      213: 2418034054932629700
+    second: 16_big_impact_19
+  - first:
+      213: -1114355051259050240
+    second: 16_big_impact_20
+  - first:
+      213: -7939070728550748761
+    second: 16_big_impact_21
+  - first:
+      213: -6184765010214889855
+    second: 16_big_impact_22
+  - first:
+      213: -1633114309509515140
+    second: 16_big_impact_23
+  - first:
+      213: 1431191365357006278
+    second: 16_big_impact_24
+  - first:
+      213: 8629410456823702733
+    second: 16_big_impact_25
+  - first:
+      213: -94292285139283972
+    second: 16_big_impact_26
+  - first:
+      213: -3006884019957213887
+    second: 16_big_impact_27
+  - first:
+      213: 1650657701401043454
+    second: 16_big_impact_28
+  - first:
+      213: -4079776706785935801
+    second: 16_big_impact_29
+  - first:
+      213: -359708914548868021
+    second: 16_big_impact_30
+  - first:
+      213: -395162365994029253
+    second: 16_big_impact_31
+  - first:
+      213: -6934458867187237375
+    second: 16_big_impact_32
+  - first:
+      213: -5089310180069339294
+    second: 16_big_impact_33
+  - first:
+      213: 2607304943950236040
+    second: 16_big_impact_34
+  - first:
+      213: 5782104767462695549
+    second: 16_big_impact_35
+  - first:
+      213: -834146904609451821
+    second: 16_big_impact_36
+  - first:
+      213: 186548395607771927
+    second: 16_big_impact_37
+  - first:
+      213: 6068173235976726563
+    second: 16_big_impact_38
+  - first:
+      213: -5786514039907242187
+    second: 16_big_impact_39
+  - first:
+      213: -9034279524005308740
+    second: 16_big_impact_40
+  - first:
+      213: -3728075689117203587
+    second: 16_big_impact_41
+  - first:
+      213: 5229321607522016692
+    second: 16_big_impact_42
+  - first:
+      213: -2165840153550760675
+    second: 16_big_impact_43
+  - first:
+      213: 7644433252360783085
+    second: 16_big_impact_44
+  - first:
+      213: 7141796340442646018
+    second: 16_big_impact_45
+  - first:
+      213: 3495529923084969133
+    second: 16_big_impact_46
+  - first:
+      213: -5248174510424498101
+    second: 16_big_impact_47
+  - first:
+      213: -684608575370092359
+    second: 16_big_impact_48
+  - first:
+      213: -3034746248883917723
+    second: 16_big_impact_49
+  - first:
+      213: 6678528457368644568
+    second: 16_big_impact_50
+  - first:
+      213: 9177303809319551607
+    second: bigImpact_0
+  - first:
+      213: -2751390073666401949
+    second: bigImpact_1
+  - first:
+      213: -2372591864374360379
+    second: bigImpact_2
+  - first:
+      213: -8527725357873807436
+    second: bigImpact_3
+  - first:
+      213: 8296767534651787756
+    second: bigImpact_4
+  - first:
+      213: -7613122692405663062
+    second: bigImpact_5
+  - first:
+      213: -1136726975728418289
+    second: bigImpact_6
+  - first:
+      213: -6845119292425694710
+    second: bigImpact_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 300
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bigImpact_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 166
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 772c45ee0355c5f70800000000000000
+      internalID: 9177303809319551607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigImpact_1
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 0
+        width: 166
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36904943e4911d9d0800000000000000
+      internalID: -2751390073666401949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigImpact_2
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 0
+        width: 166
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c60cf6154cd21fd0800000000000000
+      internalID: -2372591864374360379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigImpact_3
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 0
+        width: 166
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bf37d508fe67a980800000000000000
+      internalID: -8527725357873807436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigImpact_4
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 0
+        width: 166
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce9c9e65d1a042370800000000000000
+      internalID: 8296767534651787756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigImpact_5
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 0
+        width: 166
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaae1bf4f31c85690800000000000000
+      internalID: -7613122692405663062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigImpact_6
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 0
+        width: 166
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f028a1596d88930f0800000000000000
+      internalID: -1136726975728418289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigImpact_7
+      rect:
+        serializedVersion: 2
+        x: 1162
+        y: 0
+        width: 166
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a021bc145404101a0800000000000000
+      internalID: -6845119292425694710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      16_big_impact_0: 8345859820407929467
+      16_big_impact_1: -6351723032250939912
+      16_big_impact_10: -8496228941000411207
+      16_big_impact_11: 4555692255667887151
+      16_big_impact_12: -4347552994469394674
+      16_big_impact_13: -3768659765966150755
+      16_big_impact_14: -1580397597272401202
+      16_big_impact_15: -3309715282549130444
+      16_big_impact_16: 7018349019722217005
+      16_big_impact_17: -36128324094927671
+      16_big_impact_18: 798573835652420705
+      16_big_impact_19: 2418034054932629700
+      16_big_impact_2: -5359687409971348673
+      16_big_impact_20: -1114355051259050240
+      16_big_impact_21: -7939070728550748761
+      16_big_impact_22: -6184765010214889855
+      16_big_impact_23: -1633114309509515140
+      16_big_impact_24: 1431191365357006278
+      16_big_impact_25: 8629410456823702733
+      16_big_impact_26: -94292285139283972
+      16_big_impact_27: -3006884019957213887
+      16_big_impact_28: 1650657701401043454
+      16_big_impact_29: -4079776706785935801
+      16_big_impact_3: -5691638334909704463
+      16_big_impact_30: -359708914548868021
+      16_big_impact_31: -395162365994029253
+      16_big_impact_32: -6934458867187237375
+      16_big_impact_33: -5089310180069339294
+      16_big_impact_34: 2607304943950236040
+      16_big_impact_35: 5782104767462695549
+      16_big_impact_36: -834146904609451821
+      16_big_impact_37: 186548395607771927
+      16_big_impact_38: 6068173235976726563
+      16_big_impact_39: -5786514039907242187
+      16_big_impact_4: -807045352084872998
+      16_big_impact_40: -9034279524005308740
+      16_big_impact_41: -3728075689117203587
+      16_big_impact_42: 5229321607522016692
+      16_big_impact_43: -2165840153550760675
+      16_big_impact_44: 7644433252360783085
+      16_big_impact_45: 7141796340442646018
+      16_big_impact_46: 3495529923084969133
+      16_big_impact_47: -5248174510424498101
+      16_big_impact_48: -684608575370092359
+      16_big_impact_49: -3034746248883917723
+      16_big_impact_5: 7709532118671495351
+      16_big_impact_50: 6678528457368644568
+      16_big_impact_6: 4816575802964888701
+      16_big_impact_7: -3971151392764843420
+      16_big_impact_8: 4002723066148172642
+      16_big_impact_9: -8321397949724073671
+      bigImpact_0: 9177303809319551607
+      bigImpact_1: -2751390073666401949
+      bigImpact_2: -2372591864374360379
+      bigImpact_3: -8527725357873807436
+      bigImpact_4: 8296767534651787756
+      bigImpact_5: -7613122692405663062
+      bigImpact_6: -1136726975728418289
+      bigImpact_7: -6845119292425694710
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -123,12 +123,10 @@ public class PlayerInputBuffer
 
     public bool ConsumeDashPressed()
     {
-        if (dashBufferTimer > 0f)
-        {
-            dashBufferTimer = 0f;
-            return true;
-        }
-        return false;
+        bool pressed = dashBufferTimer > 0f || dashPressedThisFrame;
+        dashBufferTimer = 0f;
+        dashPressedThisFrame = false;
+        return pressed;
     }
 
     // === 사격 ===

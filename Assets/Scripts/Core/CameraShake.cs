@@ -75,7 +75,7 @@ public class CameraShake : MonoBehaviour
     void Start()
     {
         if (useCinemachine && FindAnyObjectByType<CinemachineImpulseListener>() == null)
-            Debug.LogWarning("[CameraShake] CinemachineImpulseListener가 씬에 없습니다. 'newtana/카메라 시스템 셋업' 메뉴로 vcam에 리스너를 추가하세요.", this);
+            Debug.LogWarning("[CameraShake] CinemachineImpulseListener가 씬에 없습니다. 'Newtana Custom Tool > Camera System'으로 vcam에 리스너를 추가하세요.", this);
     }
 
     CinemachineImpulseSource EnsureImpulseSource()
