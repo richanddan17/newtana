@@ -55,12 +55,34 @@ public static class ApplyCombatToPlayerPrefab
                 so.ApplyModifiedProperties();
                 EditorUtility.SetDirty(anim);
 
+                var movement = root.GetComponent<PlayerMovement>();
+                if (movement != null)
+                {
+                    var movementSo = new SerializedObject(movement);
+                    SetRef(movementSo, "playerAnimation", anim);
+                    movementSo.ApplyModifiedProperties();
+                    EditorUtility.SetDirty(movement);
+                }
+
                 var demo = root.GetComponent<CombatAnimationDemo>();
                 if (demo == null) demo = root.AddComponent<CombatAnimationDemo>();
                 var demoSo = new SerializedObject(demo);
                 SetRef(demoSo, "playerAnimation", anim);
+                SetRef(demoSo, "inputHandler", root.GetComponent<PlayerInputHandler>());
+                SetRef(demoSo, "stateController", root.GetComponent<PlayerStateController>());
+                SetRef(demoSo, "playerMovement", movement);
                 demoSo.ApplyModifiedProperties();
                 EditorUtility.SetDirty(demo);
+
+                var combat = root.GetComponent<PlayerCombatController>();
+                if (combat == null) combat = root.AddComponent<PlayerCombatController>();
+                var combatSo = new SerializedObject(combat);
+                SetRef(combatSo, "playerAnimation", anim);
+                SetRef(combatSo, "playerMovement", movement);
+                SetRef(combatSo, "teamComponent", root.GetComponent<TeamComponent>());
+                SetRef(combatSo, "rb", root.GetComponent<Rigidbody2D>());
+                combatSo.ApplyModifiedProperties();
+                EditorUtility.SetDirty(combat);
             }
             else
             {

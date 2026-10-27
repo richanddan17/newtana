@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] PlayerStateController stateController;
     [SerializeField] GroundCheck groundCheck;
     [SerializeField] Rigidbody2D rb;
+    [SerializeField] PlayerAnimation playerAnimation;
 
     [Header("Move Settings")]
     [SerializeField] float maxMoveSpeed = 6f;
@@ -104,6 +105,7 @@ public class PlayerMovement : MonoBehaviour
         if (rb == null) rb = GetComponent<Rigidbody2D>();
         if (stateController == null) stateController = GetComponent<PlayerStateController>();
         if (groundCheck == null) groundCheck = GetComponent<GroundCheck>();
+        if (playerAnimation == null) playerAnimation = GetComponent<PlayerAnimation>();
 
         // Rigidbody2D 설정 확인
         rb.interpolation = RigidbodyInterpolation2D.Interpolate;
@@ -457,9 +459,18 @@ public class PlayerMovement : MonoBehaviour
 
     #region Facing Direction
 
+    public void FaceDirection(int sign)
+    {
+        if (sign == 0) return;
+        Vector3 scale = transform.localScale;
+        scale.x = Mathf.Abs(scale.x) * (sign < 0 ? -1f : 1f);
+        transform.localScale = scale;
+    }
+
     void UpdateFacingDirection()
     {
         if (IsLunging) return;
+        if (playerAnimation != null && playerAnimation.FreezeFacing) return;
 
         float moveX = MoveInput.x;
         if (Mathf.Abs(moveX) <= 0.01f) return;
@@ -469,9 +480,7 @@ public class PlayerMovement : MonoBehaviour
         // Preserve the authored scale magnitude - the prefab is scaled up to match the world scale.
         if (Mathf.Sign(transform.localScale.x) != targetSign)
         {
-            Vector3 scale = transform.localScale;
-            scale.x = Mathf.Abs(scale.x) * targetSign;
-            transform.localScale = scale;
+            FaceDirection(targetSign > 0f ? 1 : -1);
         }
     }
 

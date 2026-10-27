@@ -69,10 +69,10 @@ public class CombatAnimationDemo : MonoBehaviour
     float meleeHitRadius = 1.1f;
     bool meleeHitDone;
 
-    const int BowLoopStartFrame = 11;
-    const int BowLoopEndFrame = 16;
-    const int BowFirstFireFrame = 9;
-    const int BowRepeatFireFrame = 15;
+    const int BowLoopStartFrame = 5;
+    const int BowLoopEndFrame = 10;
+    const int BowFirstFireFrame = 8;
+    const int BowRepeatFireFrame = 8;
 
     void Awake()
     {
@@ -358,9 +358,10 @@ public class CombatAnimationDemo : MonoBehaviour
     void StartBow(PlayerAnimationSet set)
     {
         PlayerAnimationClip bow = set.bow;
-        if (bow == null || bow.frames == null || bow.frames.Length < 11)
+        int drawFrameCount = BowLoopEndFrame + 1;
+        if (bow == null || bow.frames == null || bow.frames.Length < drawFrameCount)
         {
-            Debug.LogWarning("[CombatDemo] bow clip needs at least 11 frames");
+            Debug.LogWarning("[CombatDemo] bow clip needs at least " + drawFrameCount + " frames");
             return;
         }
 
@@ -368,14 +369,15 @@ public class CombatAnimationDemo : MonoBehaviour
         bowActive = true;
         bowLooping = false;
         attackLocked = true;
-        Sprite[] frames = new Sprite[11];
-        Array.Copy(bow.frames, 0, frames, 0, 11);
+        Sprite[] frames = new Sprite[drawFrameCount];
+        Array.Copy(bow.frames, 0, frames, 0, drawFrameCount);
 
         PlayerAnimationClip playback = new PlayerAnimationClip
         {
             id = "bowCombat",
             frames = frames,
             frameInterval = bow.frameInterval,
+            frameDurations = SliceDurations(bow, 0, drawFrameCount),
             loop = false
         };
 
@@ -422,15 +424,18 @@ public class CombatAnimationDemo : MonoBehaviour
             FireCast(castPendingShot);
         }
 
-        if (meleeFx == null || frame != meleeFirstFrame) return;
+        if (frame != meleeFirstFrame) return;
 
-        meleeVfx.PlaySequence(
-            meleeFx,
-            meleeLastFrame - meleeFirstFrame + 1,
-            0.05f,
-            playerAnimation != null ? playerAnimation.BodyRenderer : null,
-            meleeApplyVfxSpeed,
-            meleeSortingOffset);
+        if (meleeFx != null)
+        {
+            meleeVfx.PlaySequence(
+                meleeFx,
+                meleeLastFrame - meleeFirstFrame + 1,
+                0.05f,
+                playerAnimation != null ? playerAnimation.BodyRenderer : null,
+                meleeApplyVfxSpeed,
+                meleeSortingOffset);
+        }
 
         if (!meleeHitDone && meleeHitFx != null)
         {
@@ -656,7 +661,8 @@ public class CombatAnimationDemo : MonoBehaviour
         meleeFirstFrame = comboStep == 0 ? 3 : comboStep == 1 ? 1 : 5;
         meleeLastFrame = meleeFirstFrame + 3;
         meleeApplyVfxSpeed = true;
-        meleeHitFx = set.swordHitFx != null ? set.swordHitFx : set.castRelease;
+        meleeHitFx = comboStep == 0 ? set.attack1HitFx : comboStep == 1 ? set.attack2HitFx : set.attack3HitFx;
+        if (meleeHitFx == null) meleeHitFx = set.swordHitFx != null ? set.swordHitFx : set.castRelease;
         meleeHitRadius = 1.1f;
         meleeHitDone = false;
         if (meleeVfx != null) meleeVfx.BeginSwing();
@@ -689,7 +695,7 @@ public class CombatAnimationDemo : MonoBehaviour
         meleeFirstFrame = 0;
         meleeLastFrame = 3;
         meleeApplyVfxSpeed = true;
-        meleeHitFx = set.swordHitFx != null ? set.swordHitFx : set.castRelease;
+        meleeHitFx = set.attack1HitFx != null ? set.attack1HitFx : set.swordHitFx != null ? set.swordHitFx : set.castRelease;
         meleeHitRadius = 1.1f;
         meleeHitDone = false;
         if (meleeVfx != null)
@@ -722,7 +728,7 @@ public class CombatAnimationDemo : MonoBehaviour
         meleeFirstFrame = 0;
         meleeLastFrame = 3;
         meleeApplyVfxSpeed = true;
-        meleeHitFx = set.swordHitFx != null ? set.swordHitFx : set.castRelease;
+        meleeHitFx = set.attack1HitFx != null ? set.attack1HitFx : set.swordHitFx != null ? set.swordHitFx : set.castRelease;
         meleeHitRadius = 1.1f;
         meleeHitDone = false;
         if (meleeVfx != null)
@@ -754,7 +760,7 @@ public class CombatAnimationDemo : MonoBehaviour
         meleeFirstFrame = 2;
         meleeLastFrame = 5;
         meleeApplyVfxSpeed = true;
-        meleeHitFx = set.swordHitFx != null ? set.swordHitFx : set.castRelease;
+        meleeHitFx = set.attack1HitFx != null ? set.attack1HitFx : set.swordHitFx != null ? set.swordHitFx : set.castRelease;
         meleeHitRadius = 1.2f;
         meleeHitDone = false;
         if (meleeVfx != null)
@@ -774,7 +780,7 @@ public class CombatAnimationDemo : MonoBehaviour
         if (set == null) return;
 
         PlayerAnimationClip heavy = set.heavyAttack;
-        if (heavy == null || heavy.frames == null || heavy.frames.Length < 4)
+        if (heavy == null || heavy.frames == null || heavy.frames.Length < 21)
         {
             Debug.LogWarning("[CombatDemo] heavyAttack has too few frames");
             return;
@@ -784,14 +790,15 @@ public class CombatAnimationDemo : MonoBehaviour
         heavyCharging = true;
         heavyLooping = false;
         heavyWindupTimer = 0f;
-        heavyWindupDuration = Mathf.Max(0.01f, 4f * heavy.frameInterval /
-            (playerAnimation != null ? playerAnimation.PlaybackSpeed : 1f));
+        float windupSeconds = RangeDuration(heavy, 0, 2) /
+            (playerAnimation != null ? playerAnimation.PlaybackSpeed : 1f);
+        heavyWindupDuration = Mathf.Max(0.01f, windupSeconds);
         pendingLightAttack = false;
         attackLocked = true;
         attackQueued = false;
         chainTimer = 0f;
         if (playerAnimation != null) playerAnimation.FreezeFacing = true;
-        PlayRange(heavy, 0, 3, false, "heavyWindup");
+        PlayRange(heavy, 0, 2, false, "heavyWindup");
     }
 
     void PlayHeavyLoop()
@@ -806,8 +813,12 @@ public class CombatAnimationDemo : MonoBehaviour
             return;
         }
 
+        int loopStart = heavy.loopStartFrame > 0 ? heavy.loopStartFrame : 3;
+        int loopEnd = heavy.loopEndFrame > 0 ? heavy.loopEndFrame : 20;
+        if (loopEnd >= heavy.frames.Length) loopEnd = heavy.frames.Length - 1;
+
         ClearMeleeFx();
-        PlayRange(heavy, 4, 20, true, "heavyLoop");
+        PlayRange(heavy, loopStart, loopEnd, true, "heavyLoop");
     }
 
     void PlayHeavyRelease()
@@ -816,7 +827,7 @@ public class CombatAnimationDemo : MonoBehaviour
         if (set == null) return;
 
         PlayerAnimationClip heavy = set.heavyAttack;
-        if (heavy == null || heavy.frames == null || heavy.frames.Length < 27)
+        if (heavy == null || heavy.frames == null || heavy.frames.Length < 30)
         {
             Debug.LogWarning("[CombatDemo] heavyAttack has too few frames for release");
             UnlockAttack();
@@ -842,7 +853,7 @@ public class CombatAnimationDemo : MonoBehaviour
             float facing = transform.localScale.x < 0f ? -1f : 1f;
             playerMovement.ApplyLunge(new Vector2(facing, 0f), heavyLungeDistance, heavyLungeDuration);
         }
-        PlayRange(heavy, 21, 26, false, "heavyRelease");
+        PlayRange(heavy, 21, 29, false, "heavyRelease");
     }
 
     void ClearMeleeFx()
@@ -904,7 +915,10 @@ public class CombatAnimationDemo : MonoBehaviour
             id = label,
             frames = clip.frames,
             frameInterval = clip.frameInterval,
-            loop = loop
+            frameDurations = SliceDurations(clip, 0, clip.frames.Length),
+            loop = loop,
+            loopStartFrame = clip.loopStartFrame,
+            loopEndFrame = clip.loopEndFrame
         };
 
         playerAnimation.PlayDebugClip(playback);
@@ -930,12 +944,37 @@ public class CombatAnimationDemo : MonoBehaviour
             id = label,
             frames = frames,
             frameInterval = source.frameInterval,
-            loop = loop
+            frameDurations = SliceDurations(source, start, count),
+            loop = loop,
+            loopStartFrame = 0,
+            loopEndFrame = loop ? count - 1 : -1
         };
 
         playerAnimation.PlayDebugClip(playback);
         Debug.Log("[CombatDemo] " + label + " frames=" + start + ".." + end +
                   " count=" + count + " loop=" + loop);
+    }
+
+    static float[] SliceDurations(PlayerAnimationClip clip, int start, int count)
+    {
+        if (clip == null || clip.frameDurations == null || clip.frameDurations.Length == 0)
+            return new float[0];
+
+        var durations = new float[count];
+        for (int i = 0; i < count; i++)
+        {
+            durations[i] = clip.GetFrameDuration(start + i);
+        }
+        return durations;
+    }
+
+    static float RangeDuration(PlayerAnimationClip clip, int start, int end)
+    {
+        if (clip == null) return 0f;
+
+        float total = 0f;
+        for (int i = start; i <= end; i++) total += clip.GetFrameDuration(i);
+        return total;
     }
 
     void OnGUI()
@@ -951,6 +990,6 @@ public class CombatAnimationDemo : MonoBehaviour
         GUI.Box(new Rect(10f, 10f, 760f, 96f), string.Empty);
         GUI.Label(new Rect(20f, 16f, 740f, 84f),
             "Weapon: " + weaponMode + "   [1][2][3]/Scroll   [E] MagicMode: " + castMode + " (" + castState + ")   [Q] Dash   [RMB] Grapple\n" +
-            "Sword: LMB combo/Hold heavy / W+LMB Up / S+LMB Down / Air+LMB Jump   Bow: Hold 0-4->5-10 fire 9 / repeat   Cast: hold>=0.5s gather, Rapid repeat, Charge big");
+            "Sword: LMB combo/Hold heavy / W+LMB Up / S+LMB Down / Air+LMB Jump   Bow: Hold 0-4->5-10 fire 8 / repeat   Cast: hold>=0.5s gather, Rapid repeat, Charge big");
     }
 }

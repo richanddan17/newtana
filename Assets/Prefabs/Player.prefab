@@ -326,6 +326,7 @@ GameObject:
   - component: {fileID: 5036624994648043039}
   - component: {fileID: 4188825565696395441}
   - component: {fileID: 8014870323519900496}
+  - component: {fileID: 1145104338415782764}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -474,6 +475,7 @@ MonoBehaviour:
   dashInvincibility: 1
   dashInvincibilityDuration: 0.15
   logStateChanges: 0
+  movementLocked: 0
 --- !u!114 &2143529207730901175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -489,6 +491,7 @@ MonoBehaviour:
   stateController: {fileID: 6005195746657453559}
   groundCheck: {fileID: 6031252296458529295}
   rb: {fileID: 7604012744405033926}
+  playerAnimation: {fileID: 5054202080553327821}
   maxMoveSpeed: 6
   acceleration: 50
   deceleration: 60
@@ -554,6 +557,7 @@ MonoBehaviour:
   muzzleFxRenderer: {fileID: 3625653224464976719}
   muzzleOffset: {x: 0.08, y: 0.04}
   useAimDirectionForFlip: 1
+  playbackSpeed: 0.55
 --- !u!114 &8462336289497188404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -619,6 +623,8 @@ MonoBehaviour:
   castFxRenderer: {fileID: 2600041506632277120}
   auraFxRenderer: {fileID: 2114444943587383230}
   castPoint: {fileID: 4069375291635527124}
+  castFxOffset: {x: 0.35, y: -0.45}
+  castFxScale: 0.5
 --- !u!114 &4188825565696395441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -645,7 +651,67 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: RunGun.Core::CombatAnimationDemo
   playerAnimation: {fileID: 5054202080553327821}
+  inputHandler: {fileID: 377699455505074389}
+  stateController: {fileID: 6005195746657453559}
+  playerMovement: {fileID: 2143529207730901175}
   enableDemo: 1
+  heavyHoldThreshold: 0.22
+  comboResetWindow: 0.55
+  castHoldThreshold: 0.5
+  rapidShotInterval: 0.2
+  comboChainDelay: 0.03
+  heavyLungeDistance: 1.6
+  heavyLungeDuration: 0.18
+  castMuzzleYOffset: 0.35
+  weaponScrollCooldown: 0.15
+--- !u!114 &1145104338415782764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5076373237089169396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dde2c760b768a1247978019d6f193750, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: RunGun.Core::PlayerCombatController
+  playerAnimation: {fileID: 5054202080553327821}
+  playerMovement: {fileID: 2143529207730901175}
+  teamComponent: {fileID: 4188825565696395441}
+  rb: {fileID: 7604012744405033926}
+  enableAttack1Dash: 1
+  attack1DashRange: 7.2
+  attack1DashStopDistance: 0.8
+  attack1DashDuration: 0.15
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 128
+  enableAttack3Teleport: 1
+  attack3TeleportRange: 7.2
+  attack3TeleportBehindOffset: 1.6
+  attack3TeleportFrame: 4
+  attack1Damage: 12
+  attack2Damage: 16
+  attack3Damage: 24
+  heavyDamage: 40
+  attack1Radius: 1.1
+  attack2Radius: 1.1
+  attack3Radius: 1.1
+  heavyRadius: 1.6
+  attack1HitStop: 0.06
+  attack2HitStop: 0.06
+  attack3HitStop: 0.08
+  heavyHitStop: 0.12
+  attack1Knockback: 6
+  attack2Knockback: 4
+  attack3Knockback: 6
+  heavyKnockback: 32
+  attack3ShakeAmplitude: 0.08
+  attack3ShakeDuration: 0.26
+  heavyShakeAmplitude: 0.16
+  heavyShakeDuration: 0.42
+  enableCameraShake: 1
 --- !u!1 &5484917965615205049
 GameObject:
   m_ObjectHideFlags: 0
