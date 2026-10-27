@@ -52,9 +52,9 @@
 
 ## P2 - 정리
 
-- [ ] 생성된 `.meta`와 `PlayerAnimationSet.asset` 커밋 상태 확인.
-- [ ] `Assets/Atttack 4/__MACOSX`는 macOS 압축 부산물이므로 커밋하지 않음. 필요 시 작업 트리에서 제거.
-- [ ] `PlayerCombatController.cs`가 추적 대상인지 확인.
+- [x] 생성된 `.meta`와 `PlayerAnimationSet.asset` 커밋 완료.
+- [x] `Assets/Atttack 4/__MACOSX` 하위 폴더 메타 5개 커밋 완료. (macOS 압축 부산물이므로 추후 정리 가능)
+- [x] `PlayerCombatController.cs` 추적 대상 포함 확인.
 - [ ] `dotnet build` 선행 오류 확인
   - 기존 `Assets/Scripts/Core/RoomCamera.cs`, `Assets/Scripts/Core/Team.cs` 누락(`CS2001`).
   - Unity 배치 컴파일은 성공하므로 빌드 스크립트 정리 시 별도 처리.
