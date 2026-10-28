@@ -1,0 +1,3861 @@
+fileFormatVersion: 2
+guid: 58249cf08c8f40b4da0d5d9f357ff95d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -954821737630187667
+    second: magic_big_sheet_0
+  - first:
+      213: 2739407488379434341
+    second: magic_big_sheet_1
+  - first:
+      213: -2393087276215297568
+    second: magic_big_sheet_2
+  - first:
+      213: -1616858590683864872
+    second: magic_big_sheet_3
+  - first:
+      213: 7272286109188992279
+    second: magic_big_sheet_4
+  - first:
+      213: -6401492011752127674
+    second: magic_big_sheet_5
+  - first:
+      213: 3983828334875472142
+    second: magic_big_sheet_6
+  - first:
+      213: -8225787221203015566
+    second: magic_big_sheet_7
+  - first:
+      213: -8382723687903705628
+    second: magic_big_sheet_8
+  - first:
+      213: -4543032326043004072
+    second: magic_big_sheet_9
+  - first:
+      213: -121011601644851873
+    second: magic_big_sheet_10
+  - first:
+      213: -7889864126648289290
+    second: magic_big_sheet_11
+  - first:
+      213: -3988172199091427949
+    second: magic_big_sheet_12
+  - first:
+      213: 8136075733499022345
+    second: magic_big_sheet_13
+  - first:
+      213: 123839605225153953
+    second: magic_big_sheet_14
+  - first:
+      213: -1139093061063545398
+    second: magic_big_sheet_15
+  - first:
+      213: -1465702310746212742
+    second: magic_big_sheet_16
+  - first:
+      213: 1568038389832422539
+    second: magic_big_sheet_17
+  - first:
+      213: -4950883697127246959
+    second: magic_big_sheet_18
+  - first:
+      213: -1657890445875449092
+    second: magic_big_sheet_19
+  - first:
+      213: 2217225236725269947
+    second: magic_big_sheet_20
+  - first:
+      213: 2929516362245325815
+    second: magic_big_sheet_21
+  - first:
+      213: 3058043365144940811
+    second: magic_big_sheet_22
+  - first:
+      213: 1546289657486119389
+    second: magic_big_sheet_23
+  - first:
+      213: -4407594688191203104
+    second: magic_big_sheet_24
+  - first:
+      213: 5637723298699822593
+    second: magic_big_sheet_25
+  - first:
+      213: -3282017239017790381
+    second: magic_big_sheet_26
+  - first:
+      213: -6220609727261727024
+    second: magic_big_sheet_27
+  - first:
+      213: 1358338348825978139
+    second: magic_big_sheet_28
+  - first:
+      213: -9017164190062256764
+    second: magic_big_sheet_29
+  - first:
+      213: 3942125563983517120
+    second: magic_big_sheet_30
+  - first:
+      213: -1387316615448880954
+    second: magic_big_sheet_31
+  - first:
+      213: -2028518841394357772
+    second: magic_big_sheet_32
+  - first:
+      213: -1183856138768009812
+    second: magic_big_sheet_33
+  - first:
+      213: -4826163677099638608
+    second: magic_big_sheet_34
+  - first:
+      213: -8088081772326381768
+    second: magic_big_sheet_35
+  - first:
+      213: 6625746876244240374
+    second: magic_big_sheet_36
+  - first:
+      213: -3909179501983459979
+    second: magic_big_sheet_37
+  - first:
+      213: -4527139157043165491
+    second: magic_big_sheet_38
+  - first:
+      213: 1721846239157670391
+    second: magic_big_sheet_39
+  - first:
+      213: 5809702884776575736
+    second: magic_big_sheet_40
+  - first:
+      213: 21811747502101443
+    second: magic_big_sheet_41
+  - first:
+      213: 6738056256306261778
+    second: magic_big_sheet_42
+  - first:
+      213: -2590718124566848797
+    second: magic_big_sheet_43
+  - first:
+      213: -7720682077186369579
+    second: magic_big_sheet_44
+  - first:
+      213: 6879494240181678505
+    second: magic_big_sheet_45
+  - first:
+      213: -8609603462339858591
+    second: magic_big_sheet_46
+  - first:
+      213: 9080739041798200020
+    second: magic_big_sheet_47
+  - first:
+      213: -5817426113625354842
+    second: magic_big_sheet_48
+  - first:
+      213: -6402047095018491163
+    second: magic_big_sheet_49
+  - first:
+      213: 7334398291544595301
+    second: magic_big_sheet_50
+  - first:
+      213: -8451465612152409431
+    second: magic_big_sheet_51
+  - first:
+      213: 9096940042225802902
+    second: magic_big_sheet_52
+  - first:
+      213: -5603951484428585396
+    second: magic_big_sheet_53
+  - first:
+      213: 5802509673400884760
+    second: magic_big_sheet_54
+  - first:
+      213: 7977303299766133445
+    second: magic_big_sheet_55
+  - first:
+      213: 4932294248230169027
+    second: magic_big_sheet_56
+  - first:
+      213: -5895631705433349034
+    second: magic_big_sheet_57
+  - first:
+      213: 8696351845370186500
+    second: magic_big_sheet_58
+  - first:
+      213: 3183583837598833928
+    second: magic_big_sheet_59
+  - first:
+      213: -7092183971550057381
+    second: magic_big_sheet_60
+  - first:
+      213: -2303218128762873955
+    second: magic_big_sheet_61
+  - first:
+      213: -6915808302625929088
+    second: magic_big_sheet_62
+  - first:
+      213: -4361047784406126511
+    second: magic_big_sheet_63
+  - first:
+      213: 7242081887036644578
+    second: magic_big_sheet_64
+  - first:
+      213: 5230626337078100747
+    second: magic_big_sheet_65
+  - first:
+      213: 4891070512733487276
+    second: magic_big_sheet_66
+  - first:
+      213: 6162322912106231711
+    second: magic_big_sheet_67
+  - first:
+      213: 9186456484151053552
+    second: magic_big_sheet_68
+  - first:
+      213: 3230963872176936231
+    second: magic_big_sheet_69
+  - first:
+      213: -778940787858517078
+    second: magic_big_sheet_70
+  - first:
+      213: -5743904926515513269
+    second: magic_big_sheet_71
+  - first:
+      213: 2889780665197556554
+    second: magic_big_sheet_72
+  - first:
+      213: -7872485150509345515
+    second: magic_big_sheet_73
+  - first:
+      213: 3284227479838748515
+    second: magic_big_sheet_74
+  - first:
+      213: -167136248684704700
+    second: magic_big_sheet_75
+  - first:
+      213: 6679775945276855426
+    second: magic_big_sheet_76
+  - first:
+      213: 6087754558206265748
+    second: magic_big_sheet_77
+  - first:
+      213: 8763054056776862969
+    second: magic_big_sheet_78
+  - first:
+      213: -7450658906844336414
+    second: magic_big_sheet_79
+  - first:
+      213: -5045960924981915174
+    second: magic_big_sheet_80
+  - first:
+      213: -4410023523185298060
+    second: magic_big_sheet_81
+  - first:
+      213: 3249355424184185517
+    second: magic_big_sheet_82
+  - first:
+      213: -5767382516525099756
+    second: magic_big_sheet_83
+  - first:
+      213: -8879308970878676080
+    second: magic_big_sheet_84
+  - first:
+      213: -4627166896867550604
+    second: magic_big_sheet_85
+  - first:
+      213: -162396248279331678
+    second: magic_big_sheet_86
+  - first:
+      213: -5768560178747354907
+    second: magic_big_sheet_87
+  - first:
+      213: -4374364414147838718
+    second: magic_big_sheet_88
+  - first:
+      213: -5063204074688262315
+    second: magic_big_sheet_89
+  - first:
+      213: 5350187986831629010
+    second: magic_big_sheet_90
+  - first:
+      213: 2017842351048156932
+    second: magic_big_sheet_91
+  - first:
+      213: 6463617942303435367
+    second: magic_big_sheet_92
+  - first:
+      213: 1431159373720309453
+    second: magic_big_sheet_93
+  - first:
+      213: -5451354228504959190
+    second: magic_big_sheet_94
+  - first:
+      213: -8483538148950275296
+    second: magic_big_sheet_95
+  - first:
+      213: -6635543108085124285
+    second: magic_big_sheet_96
+  - first:
+      213: -2055739335090251023
+    second: magic_big_sheet_97
+  - first:
+      213: 2963169530249760993
+    second: magic_big_sheet_98
+  - first:
+      213: 806688043928196892
+    second: magic_big_sheet_99
+  - first:
+      213: 4349773106292000851
+    second: magic_big_sheet_100
+  - first:
+      213: 6541618298083334052
+    second: magic_big_sheet_101
+  - first:
+      213: 948201543295279490
+    second: magic_big_sheet_102
+  - first:
+      213: -1268739552928819182
+    second: magic_big_sheet_103
+  - first:
+      213: 7504112457124168449
+    second: magic_big_sheet_104
+  - first:
+      213: -7615032942600897379
+    second: magic_big_sheet_105
+  - first:
+      213: 5502254364373538309
+    second: magic_big_sheet_106
+  - first:
+      213: 4628258627140398558
+    second: magic_big_sheet_107
+  - first:
+      213: -6868287699286844179
+    second: magic_big_sheet_108
+  - first:
+      213: -3797434033393568887
+    second: magic_big_sheet_109
+  - first:
+      213: 5890944053386509479
+    second: magic_big_sheet_110
+  - first:
+      213: 911256766723511859
+    second: magic_big_sheet_111
+  - first:
+      213: -8612992383011418919
+    second: magic_big_sheet_112
+  - first:
+      213: 2061823837229938892
+    second: magic_big_sheet_113
+  - first:
+      213: -1360178764528070698
+    second: magic_big_sheet_114
+  - first:
+      213: -4560633899510796016
+    second: magic_big_sheet_115
+  - first:
+      213: -6536913495214338014
+    second: magic_big_sheet_116
+  - first:
+      213: -1719992984055739325
+    second: magic_big_sheet_117
+  - first:
+      213: -6177060152165029479
+    second: magic_big_sheet_118
+  - first:
+      213: -6307953638765539418
+    second: magic_big_sheet_119
+  - first:
+      213: -3986760309844299828
+    second: magic_big_sheet_120
+  - first:
+      213: -2472304634249796411
+    second: magic_big_sheet_121
+  - first:
+      213: -2079166373072638829
+    second: magic_big_sheet_122
+  - first:
+      213: -7716259893041015423
+    second: magic_big_sheet_123
+  - first:
+      213: -4676819022605432649
+    second: magic_big_sheet_124
+  - first:
+      213: -6862246059370387515
+    second: magic_big_sheet_125
+  - first:
+      213: 6655580062618061071
+    second: magic_big_sheet_126
+  - first:
+      213: 3043934409201222872
+    second: magic_big_sheet_127
+  - first:
+      213: 9115301783057569128
+    second: magic_big_sheet_128
+  - first:
+      213: -8670814352833269365
+    second: magic_big_sheet_129
+  - first:
+      213: -7261764745322115616
+    second: magic_big_sheet_130
+  - first:
+      213: -8896628155654292278
+    second: magic_big_sheet_131
+  - first:
+      213: -8832332688135763903
+    second: magic_big_sheet_132
+  - first:
+      213: 7530309080251406748
+    second: magic_big_sheet_133
+  - first:
+      213: -4602602829835605054
+    second: magic_big_sheet_134
+  - first:
+      213: 3593833811264048250
+    second: magic_big_sheet_135
+  - first:
+      213: -8122682744389045368
+    second: magic_big_sheet_136
+  - first:
+      213: -2898556235283305840
+    second: magic_big_sheet_137
+  - first:
+      213: 4318295060244157310
+    second: magic_big_sheet_138
+  - first:
+      213: -7346338599686488610
+    second: magic_big_sheet_139
+  - first:
+      213: -9065773827008013010
+    second: magic_big_sheet_140
+  - first:
+      213: -3127485642647029158
+    second: magic_big_sheet_141
+  - first:
+      213: 6877454672222236340
+    second: magic_big_sheet_142
+  - first:
+      213: -1126530960920724872
+    second: magic_big_sheet_143
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: magic_big_sheet_0
+      rect:
+        serializedVersion: 2
+        x: 8597
+        y: 3951
+        width: 14
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6f3bb040bacfb2f0800000000000000
+      internalID: -954821737630187667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_1
+      rect:
+        serializedVersion: 2
+        x: 7445
+        y: 3867
+        width: 14
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 565b6efb894540620800000000000000
+      internalID: 2739407488379434341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_2
+      rect:
+        serializedVersion: 2
+        x: 8597
+        y: 3903
+        width: 14
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e91ea82dcb0aced0800000000000000
+      internalID: -2393087276215297568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_3
+      rect:
+        serializedVersion: 2
+        x: 8729
+        y: 3855
+        width: 14
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d0ef32ada3cf89e0800000000000000
+      internalID: -1616858590683864872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_4
+      rect:
+        serializedVersion: 2
+        x: 6293
+        y: 3783
+        width: 14
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71da733afa95ce460800000000000000
+      internalID: 7272286109188992279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_5
+      rect:
+        serializedVersion: 2
+        x: 7445
+        y: 3807
+        width: 14
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 643830f8ee45927a0800000000000000
+      internalID: -6401492011752127674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_6
+      rect:
+        serializedVersion: 2
+        x: 8525
+        y: 3819
+        width: 14
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e01736a63c6694730800000000000000
+      internalID: 3983828334875472142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_7
+      rect:
+        serializedVersion: 2
+        x: 8549
+        y: 3807
+        width: 14
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2782f3aba1228dd80800000000000000
+      internalID: -8225787221203015566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_8
+      rect:
+        serializedVersion: 2
+        x: 7373
+        y: 3747
+        width: 14
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e54f3c28359aab80800000000000000
+      internalID: -8382723687903705628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_9
+      rect:
+        serializedVersion: 2
+        x: 7577
+        y: 3783
+        width: 14
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85317136b28e3f0c0800000000000000
+      internalID: -4543032326043004072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_10
+      rect:
+        serializedVersion: 2
+        x: 6293
+        y: 3711
+        width: 14
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5de146e694125ef0800000000000000
+      internalID: -121011601644851873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_11
+      rect:
+        serializedVersion: 2
+        x: 7373
+        y: 3699
+        width: 14
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f7f70d0162918290800000000000000
+      internalID: -7889864126648289290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_12
+      rect:
+        serializedVersion: 2
+        x: 7397
+        y: 3735
+        width: 14
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3952112e38a27a8c0800000000000000
+      internalID: -3988172199091427949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_13
+      rect:
+        serializedVersion: 2
+        x: 5141
+        y: 3687
+        width: 14
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90c82e8d5c529e070800000000000000
+      internalID: 8136075733499022345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_14
+      rect:
+        serializedVersion: 2
+        x: 6221
+        y: 3627
+        width: 14
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a5e19ef677f7b100800000000000000
+      internalID: 123839605225153953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_15
+      rect:
+        serializedVersion: 2
+        x: 6245
+        y: 3651
+        width: 14
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acde13965e02130f0800000000000000
+      internalID: -1139093061063545398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_16
+      rect:
+        serializedVersion: 2
+        x: 6377
+        y: 3687
+        width: 14
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a76b0859387c8abe0800000000000000
+      internalID: -1465702310746212742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_17
+      rect:
+        serializedVersion: 2
+        x: 6425
+        y: 3687
+        width: 14
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8413249b9ac2c510800000000000000
+      internalID: 1568038389832422539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_18
+      rect:
+        serializedVersion: 2
+        x: 7457
+        y: 3675
+        width: 14
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1933574228dea4bb0800000000000000
+      internalID: -4950883697127246959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_19
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 3351
+        width: 206
+        height: 298
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf274116c6dfdf8e0800000000000000
+      internalID: -1657890445875449092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_20
+      rect:
+        serializedVersion: 2
+        x: 1613
+        y: 3359
+        width: 230
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb58a0efa9a25ce10800000000000000
+      internalID: 2217225236725269947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_21
+      rect:
+        serializedVersion: 2
+        x: 2741
+        y: 3359
+        width: 278
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f3c3573c9bb7a820800000000000000
+      internalID: 2929516362245325815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_22
+      rect:
+        serializedVersion: 2
+        x: 3881
+        y: 3359
+        width: 302
+        height: 294
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0154370d3a507a20800000000000000
+      internalID: 3058043365144940811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_23
+      rect:
+        serializedVersion: 2
+        x: 5021
+        y: 3359
+        width: 326
+        height: 294
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd1125a3046857510800000000000000
+      internalID: 1546289657486119389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_24
+      rect:
+        serializedVersion: 2
+        x: 6161
+        y: 3359
+        width: 350
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e8f678cbf315d2c0800000000000000
+      internalID: -4407594688191203104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_25
+      rect:
+        serializedVersion: 2
+        x: 7337
+        y: 3359
+        width: 302
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10642f068773d3e40800000000000000
+      internalID: 5637723298699822593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_26
+      rect:
+        serializedVersion: 2
+        x: 8501
+        y: 3359
+        width: 278
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 354e2a1c5bee372d0800000000000000
+      internalID: -3282017239017790381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_27
+      rect:
+        serializedVersion: 2
+        x: 8693
+        y: 3627
+        width: 14
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d6a9384964fba9a0800000000000000
+      internalID: -6220609727261727024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_28
+      rect:
+        serializedVersion: 2
+        x: 1781
+        y: 3087
+        width: 14
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b15209e0889c9d210800000000000000
+      internalID: 1358338348825978139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_29
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 3027
+        width: 14
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48d57f1b1f89cd280800000000000000
+      internalID: -9017164190062256764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_30
+      rect:
+        serializedVersion: 2
+        x: 2981
+        y: 3027
+        width: 14
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c5593d605e35b630800000000000000
+      internalID: 3942125563983517120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_31
+      rect:
+        serializedVersion: 2
+        x: 1829
+        y: 2967
+        width: 14
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c81c2973e24fbce0800000000000000
+      internalID: -1387316615448880954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_32
+      rect:
+        serializedVersion: 2
+        x: 2909
+        y: 3003
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f9908e7cd049d3e0800000000000000
+      internalID: -2028518841394357772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_33
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 2687
+        width: 254
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca531973d19129fe0800000000000000
+      internalID: -1183856138768009812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_34
+      rect:
+        serializedVersion: 2
+        x: 1613
+        y: 2687
+        width: 230
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b0459ea4b5060db0800000000000000
+      internalID: -4826163677099638608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_35
+      rect:
+        serializedVersion: 2
+        x: 2771
+        y: 2687
+        width: 206
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8379c260b7c51cf80800000000000000
+      internalID: -8088081772326381768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_36
+      rect:
+        serializedVersion: 2
+        x: 3923
+        y: 2687
+        width: 224
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f72132eda163fb50800000000000000
+      internalID: 6625746876244240374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_37
+      rect:
+        serializedVersion: 2
+        x: 4121
+        y: 2951
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 575990564fdcfb9c0800000000000000
+      internalID: -3909179501983459979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_38
+      rect:
+        serializedVersion: 2
+        x: 5075
+        y: 2687
+        width: 224
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc64ea72cee5c21c0800000000000000
+      internalID: -4527139157043165491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_39
+      rect:
+        serializedVersion: 2
+        x: 6227
+        y: 2687
+        width: 272
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f1d5d2280a35e710800000000000000
+      internalID: 1721846239157670391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_40
+      rect:
+        serializedVersion: 2
+        x: 7379
+        y: 2687
+        width: 296
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f28ba91ef530a050800000000000000
+      internalID: 5809702884776575736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_41
+      rect:
+        serializedVersion: 2
+        x: 8507
+        y: 2687
+        width: 320
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c31bc53bad7d4000800000000000000
+      internalID: 21811747502101443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_42
+      rect:
+        serializedVersion: 2
+        x: 5297
+        y: 2891
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21fabb12772628d50800000000000000
+      internalID: 6738056256306261778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_43
+      rect:
+        serializedVersion: 2
+        x: 5369
+        y: 2879
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ead608879beb0cd0800000000000000
+      internalID: -2590718124566848797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_44
+      rect:
+        serializedVersion: 2
+        x: 4289
+        y: 2783
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d7d4958e80aad490800000000000000
+      internalID: -7720682077186369579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_45
+      rect:
+        serializedVersion: 2
+        x: 5369
+        y: 2783
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a1ff54ff8fd87f50800000000000000
+      internalID: 6879494240181678505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_46
+      rect:
+        serializedVersion: 2
+        x: 5357
+        y: 2699
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16f6242444b848880800000000000000
+      internalID: -8609603462339858591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_47
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 2309
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4da1764fb04450e70800000000000000
+      internalID: 9080739041798200020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_48
+      rect:
+        serializedVersion: 2
+        x: 2783
+        y: 2309
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ad874e85c9544fa0800000000000000
+      internalID: -5817426113625354842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_49
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 2015
+        width: 362
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e2f91a261c5727a0800000000000000
+      internalID: -6402047095018491163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_50
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 2117
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56b5fb8036409c560800000000000000
+      internalID: 7334398291544595301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_51
+      rect:
+        serializedVersion: 2
+        x: 1595
+        y: 2015
+        width: 386
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a2f934bdcc56ba80800000000000000
+      internalID: -8451465612152409431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_52
+      rect:
+        serializedVersion: 2
+        x: 2747
+        y: 2015
+        width: 374
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69e55ef45c2de3e70800000000000000
+      internalID: 9096940042225802902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_53
+      rect:
+        serializedVersion: 2
+        x: 3899
+        y: 2015
+        width: 374
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c467c10e0d3ca32b0800000000000000
+      internalID: -5603951484428585396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_54
+      rect:
+        serializedVersion: 2
+        x: 5051
+        y: 2015
+        width: 362
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81ed3d01ec7a68050800000000000000
+      internalID: 5802509673400884760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_55
+      rect:
+        serializedVersion: 2
+        x: 6191
+        y: 2015
+        width: 374
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c2ac18e51315be60800000000000000
+      internalID: 7977303299766133445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_56
+      rect:
+        serializedVersion: 2
+        x: 7343
+        y: 2015
+        width: 386
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c926718c77037440800000000000000
+      internalID: 4932294248230169027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_57
+      rect:
+        serializedVersion: 2
+        x: 8507
+        y: 2015
+        width: 362
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6546d1743328e2ea0800000000000000
+      internalID: -5895631705433349034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_58
+      rect:
+        serializedVersion: 2
+        x: 8927
+        y: 2141
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40b4a199de5afa870800000000000000
+      internalID: 8696351845370186500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_59
+      rect:
+        serializedVersion: 2
+        x: 3863
+        y: 2093
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80dd0c802ac5e2c20800000000000000
+      internalID: 3183583837598833928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_60
+      rect:
+        serializedVersion: 2
+        x: 5027
+        y: 2105
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5c2a0ef040839d90800000000000000
+      internalID: -7092183971550057381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_61
+      rect:
+        serializedVersion: 2
+        x: 5459
+        y: 2069
+        width: 38
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9759da90535900e0800000000000000
+      internalID: -2303218128762873955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_62
+      rect:
+        serializedVersion: 2
+        x: 6575
+        y: 2057
+        width: 38
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 088c8438dfc1600a0800000000000000
+      internalID: -6915808302625929088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_63
+      rect:
+        serializedVersion: 2
+        x: 4079
+        y: 1673
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 150f7f955227a73c0800000000000000
+      internalID: -4361047784406126511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_64
+      rect:
+        serializedVersion: 2
+        x: 5243
+        y: 1685
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ec1c172b1b018460800000000000000
+      internalID: 7242081887036644578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_65
+      rect:
+        serializedVersion: 2
+        x: 7439
+        y: 1673
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b03c756c0fae69840800000000000000
+      internalID: 5230626337078100747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_66
+      rect:
+        serializedVersion: 2
+        x: 2927
+        y: 1661
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca00ed2a7b290e340800000000000000
+      internalID: 4891070512733487276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_67
+      rect:
+        serializedVersion: 2
+        x: 5123
+        y: 1649
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f97b7570a08f48550800000000000000
+      internalID: 6162322912106231711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_68
+      rect:
+        serializedVersion: 2
+        x: 6275
+        y: 1661
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fc486a1089dc7f70800000000000000
+      internalID: 9186456484151053552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_69
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 1625
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7251a3bf580b6dc20800000000000000
+      internalID: 3230963872176936231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_70
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 1637
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa351aefa75a035f0800000000000000
+      internalID: -778940787858517078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_71
+      rect:
+        serializedVersion: 2
+        x: 1787
+        y: 1637
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b483d6fd6ec8940b0800000000000000
+      internalID: -5743904926515513269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_72
+      rect:
+        serializedVersion: 2
+        x: 2819
+        y: 1637
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4374eb44309a1820800000000000000
+      internalID: 2889780665197556554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_73
+      rect:
+        serializedVersion: 2
+        x: 3899
+        y: 1343
+        width: 374
+        height: 296
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5155a5047705fb290800000000000000
+      internalID: -7872485150509345515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_74
+      rect:
+        serializedVersion: 2
+        x: 8699
+        y: 1625
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36f6d590e7be39d20800000000000000
+      internalID: 3284227479838748515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_75
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 1343
+        width: 362
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44c8e04a7763eadf0800000000000000
+      internalID: -167136248684704700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_76
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 1445
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2841d6dc4d453bc50800000000000000
+      internalID: 6679775945276855426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_77
+      rect:
+        serializedVersion: 2
+        x: 1595
+        y: 1343
+        width: 386
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49946a1348c0c7450800000000000000
+      internalID: 6087754558206265748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_78
+      rect:
+        serializedVersion: 2
+        x: 2747
+        y: 1343
+        width: 374
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fc0bb96c3f9c9970800000000000000
+      internalID: 8763054056776862969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_79
+      rect:
+        serializedVersion: 2
+        x: 5051
+        y: 1343
+        width: 362
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ee61f21331f99890800000000000000
+      internalID: -7450658906844336414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_80
+      rect:
+        serializedVersion: 2
+        x: 6203
+        y: 1343
+        width: 362
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad193fbf54529f9b0800000000000000
+      internalID: -5045960924981915174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_81
+      rect:
+        serializedVersion: 2
+        x: 7355
+        y: 1343
+        width: 374
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4757c6198f27cc2c0800000000000000
+      internalID: -4410023523185298060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_82
+      rect:
+        serializedVersion: 2
+        x: 8507
+        y: 1343
+        width: 362
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da2bc7fda87081d20800000000000000
+      internalID: 3249355424184185517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_83
+      rect:
+        serializedVersion: 2
+        x: 8927
+        y: 1469
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41519ba782426ffa0800000000000000
+      internalID: -5767382516525099756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_84
+      rect:
+        serializedVersion: 2
+        x: 5459
+        y: 1397
+        width: 38
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09356db198b56c480800000000000000
+      internalID: -8879308970878676080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_85
+      rect:
+        serializedVersion: 2
+        x: 6575
+        y: 1385
+        width: 38
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47a53cb193009cfb0800000000000000
+      internalID: -4627166896867550604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_86
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 965
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ac447cf87d0fbdf0800000000000000
+      internalID: -162396248279331678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_87
+      rect:
+        serializedVersion: 2
+        x: 2783
+        y: 965
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e0dc40a415f1ffa0800000000000000
+      internalID: -5768560178747354907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_88
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 671
+        width: 374
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20dbb90edb22b43c0800000000000000
+      internalID: -4374364414147838718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_89
+      rect:
+        serializedVersion: 2
+        x: 1583
+        y: 671
+        width: 398
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55f45e658b2ebb9b0800000000000000
+      internalID: -5063204074688262315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_90
+      rect:
+        serializedVersion: 2
+        x: 2735
+        y: 671
+        width: 386
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2da59a4a0afaf3a40800000000000000
+      internalID: 5350187986831629010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_91
+      rect:
+        serializedVersion: 2
+        x: 3911
+        y: 695
+        width: 468
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 407e6f26de0d00c10800000000000000
+      internalID: 2017842351048156932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_92
+      rect:
+        serializedVersion: 2
+        x: 5087
+        y: 671
+        width: 266
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76a66d6d54263b950800000000000000
+      internalID: 6463617942303435367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_93
+      rect:
+        serializedVersion: 2
+        x: 6239
+        y: 671
+        width: 278
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcec1972edf7cd310800000000000000
+      internalID: 1431159373720309453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_94
+      rect:
+        serializedVersion: 2
+        x: 7391
+        y: 671
+        width: 278
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2763213636e854b0800000000000000
+      internalID: -5451354228504959190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_95
+      rect:
+        serializedVersion: 2
+        x: 8543
+        y: 671
+        width: 278
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02b0851500b644a80800000000000000
+      internalID: -8483538148950275296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_96
+      rect:
+        serializedVersion: 2
+        x: 8801
+        y: 875
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3437bc623b0d9e3a0800000000000000
+      internalID: -6635543108085124285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_97
+      rect:
+        serializedVersion: 2
+        x: 8861
+        y: 935
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fad52d67fb8873e0800000000000000
+      internalID: -2055739335090251023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_98
+      rect:
+        serializedVersion: 2
+        x: 6701
+        y: 707
+        width: 126
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e05ccbfcfa4f1920800000000000000
+      internalID: 2963169530249760993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_99
+      rect:
+        serializedVersion: 2
+        x: 6809
+        y: 899
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1715ee708ee13b00800000000000000
+      internalID: 806688043928196892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_100
+      rect:
+        serializedVersion: 2
+        x: 5359
+        y: 731
+        width: 230
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3580516189f7d5c30800000000000000
+      internalID: 4349773106292000851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_101
+      rect:
+        serializedVersion: 2
+        x: 7993
+        y: 851
+        width: 10
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a7d371ee2f78ca50800000000000000
+      internalID: 6541618298083334052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_102
+      rect:
+        serializedVersion: 2
+        x: 8897
+        y: 875
+        width: 38
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 281a793a740b82d00800000000000000
+      internalID: 948201543295279490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_103
+      rect:
+        serializedVersion: 2
+        x: 6581
+        y: 815
+        width: 50
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21890334918846ee0800000000000000
+      internalID: -1268739552928819182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_104
+      rect:
+        serializedVersion: 2
+        x: 7849
+        y: 839
+        width: 14
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10348717586f32860800000000000000
+      internalID: 7504112457124168449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_105
+      rect:
+        serializedVersion: 2
+        x: 9081
+        y: 851
+        width: 26
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9c306782e7f15690800000000000000
+      internalID: -7615032942600897379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_106
+      rect:
+        serializedVersion: 2
+        x: 7813
+        y: 815
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 506d354313feb5c40800000000000000
+      internalID: 5502254364373538309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_107
+      rect:
+        serializedVersion: 2
+        x: 8837
+        y: 827
+        width: 38
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edd275723b0ea3040800000000000000
+      internalID: 4628258627140398558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_108
+      rect:
+        serializedVersion: 2
+        x: 9045
+        y: 827
+        width: 26
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dec92dc2ab0fea0a0800000000000000
+      internalID: -6868287699286844179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_109
+      rect:
+        serializedVersion: 2
+        x: 6593
+        y: 755
+        width: 38
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 983f895cdddcc4bc0800000000000000
+      internalID: -3797434033393568887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_110
+      rect:
+        serializedVersion: 2
+        x: 7825
+        y: 791
+        width: 38
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ac7dcda766d0c150800000000000000
+      internalID: 5890944053386509479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_111
+      rect:
+        serializedVersion: 2
+        x: 8909
+        y: 803
+        width: 38
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 336d9b7833f65ac00800000000000000
+      internalID: 911256766723511859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_112
+      rect:
+        serializedVersion: 2
+        x: 9069
+        y: 791
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dc857daf01887880800000000000000
+      internalID: -8612992383011418919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_113
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 773
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc8f58f1bd11d9c10800000000000000
+      internalID: 2061823837229938892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_114
+      rect:
+        serializedVersion: 2
+        x: 8837
+        y: 779
+        width: 38
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6df4645ce9caf1de0800000000000000
+      internalID: -1360178764528070698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_115
+      rect:
+        serializedVersion: 2
+        x: 7825
+        y: 743
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 011fd05b1af55b0c0800000000000000
+      internalID: -4560633899510796016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_116
+      rect:
+        serializedVersion: 2
+        x: 7993
+        y: 743
+        width: 10
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 220da466fc73845a0800000000000000
+      internalID: -6536913495214338014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_117
+      rect:
+        serializedVersion: 2
+        x: 8801
+        y: 683
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34c81317e7b5128e0800000000000000
+      internalID: -1719992984055739325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_118
+      rect:
+        serializedVersion: 2
+        x: 8897
+        y: 731
+        width: 38
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 999abf1e48ca64aa0800000000000000
+      internalID: -6177060152165029479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_119
+      rect:
+        serializedVersion: 2
+        x: 9057
+        y: 743
+        width: 26
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6af4fb52695a578a0800000000000000
+      internalID: -6307953638765539418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_120
+      rect:
+        serializedVersion: 2
+        x: 6809
+        y: 695
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccfaa17fe9e2ca8c0800000000000000
+      internalID: -3986760309844299828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_121
+      rect:
+        serializedVersion: 2
+        x: 8861
+        y: 671
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c42df2b80c90bdd0800000000000000
+      internalID: -2472304634249796411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_122
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 299
+        width: 38
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39c611813315523e0800000000000000
+      internalID: -2079166373072638829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_123
+      rect:
+        serializedVersion: 2
+        x: 2209
+        y: 323
+        width: 38
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18552b082865ae490800000000000000
+      internalID: -7716259893041015423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_124
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 0
+        width: 218
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b840d6b0e9981fb0800000000000000
+      internalID: -4676819022605432649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_125
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 251
+        width: 38
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c767e5119764c0a0800000000000000
+      internalID: -6862246059370387515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_126
+      rect:
+        serializedVersion: 2
+        x: 1619
+        y: 0
+        width: 218
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f09858eddce5d5c50800000000000000
+      internalID: 6655580062618061071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_127
+      rect:
+        serializedVersion: 2
+        x: 2161
+        y: 239
+        width: 38
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d4070cb73a3e3a20800000000000000
+      internalID: 3043934409201222872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_128
+      rect:
+        serializedVersion: 2
+        x: 2257
+        y: 227
+        width: 38
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86591af3dae008e70800000000000000
+      internalID: 9115301783057569128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_129
+      rect:
+        serializedVersion: 2
+        x: 2771
+        y: 0
+        width: 194
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b81b30a39441ba780800000000000000
+      internalID: -8670814352833269365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_130
+      rect:
+        serializedVersion: 2
+        x: 3923
+        y: 0
+        width: 206
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0edce984077093b90800000000000000
+      internalID: -7261764745322115616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_131
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 227
+        width: 26
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: accbc7b24d3d88480800000000000000
+      internalID: -8896628155654292278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_132
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 215
+        width: 38
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 148c89147304d6580800000000000000
+      internalID: -8832332688135763903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_133
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 167
+        width: 26
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9998411638018860800000000000000
+      internalID: 7530309080251406748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_134
+      rect:
+        serializedVersion: 2
+        x: 2185
+        y: 167
+        width: 38
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cbe075ac154020c0800000000000000
+      internalID: -4602602829835605054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_135
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 131
+        width: 38
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7c8e267fccdfd130800000000000000
+      internalID: 3593833811264048250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_136
+      rect:
+        serializedVersion: 2
+        x: 2281
+        y: 131
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 883fe7d641f664f80800000000000000
+      internalID: -8122682744389045368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_137
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 95
+        width: 26
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09ae172167246c7d0800000000000000
+      internalID: -2898556235283305840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_138
+      rect:
+        serializedVersion: 2
+        x: 2185
+        y: 95
+        width: 38
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e735d2d5a7aadeb30800000000000000
+      internalID: 4318295060244157310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_139
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 35
+        width: 26
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edd32f557ff8c0a90800000000000000
+      internalID: -7346338599686488610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_140
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 35
+        width: 38
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2d5723acb6ef2280800000000000000
+      internalID: -9065773827008013010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_141
+      rect:
+        serializedVersion: 2
+        x: 2161
+        y: 11
+        width: 38
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5ab3edc060f894d0800000000000000
+      internalID: -3127485642647029158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_142
+      rect:
+        serializedVersion: 2
+        x: 2257
+        y: 23
+        width: 38
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4be28a80690a17f50800000000000000
+      internalID: 6877454672222236340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_big_sheet_143
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 0
+        width: 38
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87a37d54f02cd50f0800000000000000
+      internalID: -1126530960920724872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      magic_big_sheet_0: -954821737630187667
+      magic_big_sheet_1: 2739407488379434341
+      magic_big_sheet_10: -121011601644851873
+      magic_big_sheet_100: 4349773106292000851
+      magic_big_sheet_101: 6541618298083334052
+      magic_big_sheet_102: 948201543295279490
+      magic_big_sheet_103: -1268739552928819182
+      magic_big_sheet_104: 7504112457124168449
+      magic_big_sheet_105: -7615032942600897379
+      magic_big_sheet_106: 5502254364373538309
+      magic_big_sheet_107: 4628258627140398558
+      magic_big_sheet_108: -6868287699286844179
+      magic_big_sheet_109: -3797434033393568887
+      magic_big_sheet_11: -7889864126648289290
+      magic_big_sheet_110: 5890944053386509479
+      magic_big_sheet_111: 911256766723511859
+      magic_big_sheet_112: -8612992383011418919
+      magic_big_sheet_113: 2061823837229938892
+      magic_big_sheet_114: -1360178764528070698
+      magic_big_sheet_115: -4560633899510796016
+      magic_big_sheet_116: -6536913495214338014
+      magic_big_sheet_117: -1719992984055739325
+      magic_big_sheet_118: -6177060152165029479
+      magic_big_sheet_119: -6307953638765539418
+      magic_big_sheet_12: -3988172199091427949
+      magic_big_sheet_120: -3986760309844299828
+      magic_big_sheet_121: -2472304634249796411
+      magic_big_sheet_122: -2079166373072638829
+      magic_big_sheet_123: -7716259893041015423
+      magic_big_sheet_124: -4676819022605432649
+      magic_big_sheet_125: -6862246059370387515
+      magic_big_sheet_126: 6655580062618061071
+      magic_big_sheet_127: 3043934409201222872
+      magic_big_sheet_128: 9115301783057569128
+      magic_big_sheet_129: -8670814352833269365
+      magic_big_sheet_13: 8136075733499022345
+      magic_big_sheet_130: -7261764745322115616
+      magic_big_sheet_131: -8896628155654292278
+      magic_big_sheet_132: -8832332688135763903
+      magic_big_sheet_133: 7530309080251406748
+      magic_big_sheet_134: -4602602829835605054
+      magic_big_sheet_135: 3593833811264048250
+      magic_big_sheet_136: -8122682744389045368
+      magic_big_sheet_137: -2898556235283305840
+      magic_big_sheet_138: 4318295060244157310
+      magic_big_sheet_139: -7346338599686488610
+      magic_big_sheet_14: 123839605225153953
+      magic_big_sheet_140: -9065773827008013010
+      magic_big_sheet_141: -3127485642647029158
+      magic_big_sheet_142: 6877454672222236340
+      magic_big_sheet_143: -1126530960920724872
+      magic_big_sheet_15: -1139093061063545398
+      magic_big_sheet_16: -1465702310746212742
+      magic_big_sheet_17: 1568038389832422539
+      magic_big_sheet_18: -4950883697127246959
+      magic_big_sheet_19: -1657890445875449092
+      magic_big_sheet_2: -2393087276215297568
+      magic_big_sheet_20: 2217225236725269947
+      magic_big_sheet_21: 2929516362245325815
+      magic_big_sheet_22: 3058043365144940811
+      magic_big_sheet_23: 1546289657486119389
+      magic_big_sheet_24: -4407594688191203104
+      magic_big_sheet_25: 5637723298699822593
+      magic_big_sheet_26: -3282017239017790381
+      magic_big_sheet_27: -6220609727261727024
+      magic_big_sheet_28: 1358338348825978139
+      magic_big_sheet_29: -9017164190062256764
+      magic_big_sheet_3: -1616858590683864872
+      magic_big_sheet_30: 3942125563983517120
+      magic_big_sheet_31: -1387316615448880954
+      magic_big_sheet_32: -2028518841394357772
+      magic_big_sheet_33: -1183856138768009812
+      magic_big_sheet_34: -4826163677099638608
+      magic_big_sheet_35: -8088081772326381768
+      magic_big_sheet_36: 6625746876244240374
+      magic_big_sheet_37: -3909179501983459979
+      magic_big_sheet_38: -4527139157043165491
+      magic_big_sheet_39: 1721846239157670391
+      magic_big_sheet_4: 7272286109188992279
+      magic_big_sheet_40: 5809702884776575736
+      magic_big_sheet_41: 21811747502101443
+      magic_big_sheet_42: 6738056256306261778
+      magic_big_sheet_43: -2590718124566848797
+      magic_big_sheet_44: -7720682077186369579
+      magic_big_sheet_45: 6879494240181678505
+      magic_big_sheet_46: -8609603462339858591
+      magic_big_sheet_47: 9080739041798200020
+      magic_big_sheet_48: -5817426113625354842
+      magic_big_sheet_49: -6402047095018491163
+      magic_big_sheet_5: -6401492011752127674
+      magic_big_sheet_50: 7334398291544595301
+      magic_big_sheet_51: -8451465612152409431
+      magic_big_sheet_52: 9096940042225802902
+      magic_big_sheet_53: -5603951484428585396
+      magic_big_sheet_54: 5802509673400884760
+      magic_big_sheet_55: 7977303299766133445
+      magic_big_sheet_56: 4932294248230169027
+      magic_big_sheet_57: -5895631705433349034
+      magic_big_sheet_58: 8696351845370186500
+      magic_big_sheet_59: 3183583837598833928
+      magic_big_sheet_6: 3983828334875472142
+      magic_big_sheet_60: -7092183971550057381
+      magic_big_sheet_61: -2303218128762873955
+      magic_big_sheet_62: -6915808302625929088
+      magic_big_sheet_63: -4361047784406126511
+      magic_big_sheet_64: 7242081887036644578
+      magic_big_sheet_65: 5230626337078100747
+      magic_big_sheet_66: 4891070512733487276
+      magic_big_sheet_67: 6162322912106231711
+      magic_big_sheet_68: 9186456484151053552
+      magic_big_sheet_69: 3230963872176936231
+      magic_big_sheet_7: -8225787221203015566
+      magic_big_sheet_70: -778940787858517078
+      magic_big_sheet_71: -5743904926515513269
+      magic_big_sheet_72: 2889780665197556554
+      magic_big_sheet_73: -7872485150509345515
+      magic_big_sheet_74: 3284227479838748515
+      magic_big_sheet_75: -167136248684704700
+      magic_big_sheet_76: 6679775945276855426
+      magic_big_sheet_77: 6087754558206265748
+      magic_big_sheet_78: 8763054056776862969
+      magic_big_sheet_79: -7450658906844336414
+      magic_big_sheet_8: -8382723687903705628
+      magic_big_sheet_80: -5045960924981915174
+      magic_big_sheet_81: -4410023523185298060
+      magic_big_sheet_82: 3249355424184185517
+      magic_big_sheet_83: -5767382516525099756
+      magic_big_sheet_84: -8879308970878676080
+      magic_big_sheet_85: -4627166896867550604
+      magic_big_sheet_86: -162396248279331678
+      magic_big_sheet_87: -5768560178747354907
+      magic_big_sheet_88: -4374364414147838718
+      magic_big_sheet_89: -5063204074688262315
+      magic_big_sheet_9: -4543032326043004072
+      magic_big_sheet_90: 5350187986831629010
+      magic_big_sheet_91: 2017842351048156932
+      magic_big_sheet_92: 6463617942303435367
+      magic_big_sheet_93: 1431159373720309453
+      magic_big_sheet_94: -5451354228504959190
+      magic_big_sheet_95: -8483538148950275296
+      magic_big_sheet_96: -6635543108085124285
+      magic_big_sheet_97: -2055739335090251023
+      magic_big_sheet_98: 2963169530249760993
+      magic_big_sheet_99: 806688043928196892
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

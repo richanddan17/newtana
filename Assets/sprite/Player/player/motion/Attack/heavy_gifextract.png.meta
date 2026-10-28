@@ -1,0 +1,1209 @@
+fileFormatVersion: 2
+guid: 3aa92f8c215618a4bbca57ac56bf688b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7396856243390162036
+    second: heavy_gifextract_0
+  - first:
+      213: -447799638422705016
+    second: heavy_gifextract_1
+  - first:
+      213: -787878841925815245
+    second: heavy_gifextract_2
+  - first:
+      213: 7027175623951018820
+    second: heavy_gifextract_3
+  - first:
+      213: -2976771990360928424
+    second: heavy_gifextract_4
+  - first:
+      213: -3077756694152274589
+    second: heavy_gifextract_5
+  - first:
+      213: 8816542301451329542
+    second: heavy_gifextract_6
+  - first:
+      213: -6687255213791757567
+    second: heavy_gifextract_7
+  - first:
+      213: 7402689535505619205
+    second: heavy_gifextract_8
+  - first:
+      213: 4503369707774108450
+    second: heavy_gifextract_9
+  - first:
+      213: -6648343124247245218
+    second: heavy_gifextract_10
+  - first:
+      213: 539670792047578533
+    second: heavy_gifextract_11
+  - first:
+      213: -1441872022134220659
+    second: heavy_gifextract_12
+  - first:
+      213: 5323365713188659029
+    second: heavy_gifextract_13
+  - first:
+      213: -5478472188634496756
+    second: heavy_gifextract_14
+  - first:
+      213: -8242946508276988562
+    second: heavy_gifextract_15
+  - first:
+      213: -755206287460239189
+    second: heavy_gifextract_16
+  - first:
+      213: -1763479896947157643
+    second: heavy_gifextract_17
+  - first:
+      213: -3310166007364083015
+    second: heavy_gifextract_18
+  - first:
+      213: -6917446780072765241
+    second: heavy_gifextract_19
+  - first:
+      213: 1529844127450183707
+    second: heavy_gifextract_20
+  - first:
+      213: -8581034797843812571
+    second: heavy_gifextract_21
+  - first:
+      213: 2524031851547076883
+    second: heavy_gifextract_22
+  - first:
+      213: 1566068103941338496
+    second: heavy_gifextract_23
+  - first:
+      213: -8379259316181318884
+    second: heavy_gifextract_24
+  - first:
+      213: -7779958384526178534
+    second: heavy_gifextract_25
+  - first:
+      213: -1657134001511712557
+    second: heavy_gifextract_26
+  - first:
+      213: -3523668667870041532
+    second: heavy_gifextract_27
+  - first:
+      213: 5213994381816158679
+    second: heavy_gifextract_28
+  - first:
+      213: 8987579564758043466
+    second: heavy_gifextract_29
+  - first:
+      213: -4683157208229149515
+    second: heavy_gifextract_30
+  - first:
+      213: -6110507430039334176
+    second: heavy_gifextract_31
+  - first:
+      213: -7931738905607382872
+    second: heavy_gifextract_32
+  - first:
+      213: 9008921847669327900
+    second: heavy_gifextract_33
+  - first:
+      213: -7369949063429513901
+    second: heavy_gifextract_34
+  - first:
+      213: -3579434820443108024
+    second: heavy_gifextract_35
+  - first:
+      213: 6456624830208699516
+    second: heavy_gifextract_36
+  - first:
+      213: -3071448202023655637
+    second: heavy_gifextract_37
+  - first:
+      213: 9208818085519079392
+    second: heavy_gifextract_38
+  - first:
+      213: -4783890852769196762
+    second: heavy_gifextract_39
+  - first:
+      213: -2648861418646654041
+    second: heavy_gifextract_40
+  - first:
+      213: 3987978474890050207
+    second: heavy_gifextract_41
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: heavy_gifextract_0
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 4139
+        width: 218
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 474a6e92099e6a660800000000000000
+      internalID: 7396856243390162036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_gifextract_1
+      rect:
+        serializedVersion: 2
+        x: 1859
+        y: 4139
+        width: 206
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88c2445f99819c9f0800000000000000
+      internalID: -447799638422705016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_gifextract_2
+      rect:
+        serializedVersion: 2
+        x: 3407
+        y: 4139
+        width: 230
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33437fc1e54e015f0800000000000000
+      internalID: -787878841925815245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_gifextract_3
+      rect:
+        serializedVersion: 2
+        x: 4931
+        y: 4139
+        width: 326
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44b62e79ffa858160800000000000000
+      internalID: 7027175623951018820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_gifextract_4
+      rect:
+        serializedVersion: 2
+        x: 6515
+        y: 4139
+        width: 326
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85f443975a160b6d0800000000000000
+      internalID: -2976771990360928424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_gifextract_5
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 3311
+        width: 326
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36d19f3e79c9945d0800000000000000
+      internalID: -3077756694152274589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_gifextract_6
+      rect:
+        serializedVersion: 2
+        x: 1763
+        y: 3311
+        width: 326
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6002639d286aa5a70800000000000000
+      internalID: 8816542301451329542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_gifextract_7
+      rect:
+        serializedVersion: 2
+        x: 3347
+        y: 3311
+        width: 326
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10b309b40d81233a0800000000000000
+      internalID: -6687255213791757567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_gifextract_8
+      rect:
+        serializedVersion: 2
+        x: 4931
+        y: 3311
+        width: 326
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 509505259e2abb660800000000000000
+      internalID: 7402689535505619205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_gifextract_9
+      rect:
+        serializedVersion: 2
+        x: 6515
+        y: 3311
+        width: 326
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 223612ca3ee2f7e30800000000000000
+      internalID: 4503369707774108450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_gifextract_10
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 2483
+        width: 326
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5e055627275cb3a0800000000000000
+      internalID: -6648343124247245218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_gifextract_11
+      rect:
+        serializedVersion: 2
+        x: 1763
+        y: 2483
+        width: 326
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ad46afd9bb4d7700800000000000000
+      internalID: 539670792047578533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_gifextract_12
+      rect:
+        serializedVersion: 2
+        x: 3347
+        y: 2483
+        width: 326
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d889d1509017dfbe0800000000000000
+      internalID: -1441872022134220659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_gifextract_13
+      rect:
+        serializedVersion: 2
+        x: 4931
+        y: 2483
+        width: 326
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55f9a1869e460e940800000000000000
+      internalID: 5323365713188659029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_gifextract_14
+      rect:
+        serializedVersion: 2
+        x: 6515
+        y: 2483
+        width: 326
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c018594129e88f3b0800000000000000
+      internalID: -5478472188634496756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_gifextract_15
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 1655
+        width: 326
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e658a9fd2db2b9d80800000000000000
+      internalID: -8242946508276988562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_gifextract_16
+      rect:
+        serializedVersion: 2
+        x: 1763
+        y: 1655
+        width: 326
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba87acff1e7f485f0800000000000000
+      internalID: -755206287460239189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_gifextract_17
+      rect:
+        serializedVersion: 2
+        x: 3347
+        y: 1655
+        width: 326
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5751ce5806cd687e0800000000000000
+      internalID: -1763479896947157643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_gifextract_18
+      rect:
+        serializedVersion: 2
+        x: 4931
+        y: 1655
+        width: 326
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b2ad77ed8def02d0800000000000000
+      internalID: -3310166007364083015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_gifextract_19
+      rect:
+        serializedVersion: 2
+        x: 6515
+        y: 1655
+        width: 326
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c8d711cdca4000a0800000000000000
+      internalID: -6917446780072765241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_gifextract_20
+      rect:
+        serializedVersion: 2
+        x: 3383
+        y: 827
+        width: 1070
+        height: 758
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b18b262e0291b3510800000000000000
+      internalID: 1529844127450183707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_gifextract_21
+      rect:
+        serializedVersion: 2
+        x: 5231
+        y: 827
+        width: 830
+        height: 770
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52fe04dc05a0ae880800000000000000
+      internalID: -8581034797843812571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_gifextract_22
+      rect:
+        serializedVersion: 2
+        x: 7127
+        y: 1583
+        width: 74
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3192c399899270320800000000000000
+      internalID: 2524031851547076883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_gifextract_23
+      rect:
+        serializedVersion: 2
+        x: 7211
+        y: 827
+        width: 446
+        height: 758
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0853e75a4aacbb510800000000000000
+      internalID: 1566068103941338496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_gifextract_24
+      rect:
+        serializedVersion: 2
+        x: 4475
+        y: 1163
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1341221c04e6bb80800000000000000
+      internalID: -8379259316181318884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_gifextract_25
+      rect:
+        serializedVersion: 2
+        x: 5087
+        y: 911
+        width: 194
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a17cefab119080490800000000000000
+      internalID: -7779958384526178534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_gifextract_26
+      rect:
+        serializedVersion: 2
+        x: 6635
+        y: 899
+        width: 230
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d83caec76da009e0800000000000000
+      internalID: -1657134001511712557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_gifextract_27
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 827
+        width: 326
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44aae69040a691fc0800000000000000
+      internalID: -3523668667870041532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_gifextract_28
+      rect:
+        serializedVersion: 2
+        x: 1619
+        y: 827
+        width: 506
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d9d80de344db5840800000000000000
+      internalID: 5213994381816158679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_gifextract_29
+      rect:
+        serializedVersion: 2
+        x: 4451
+        y: 1079
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4b86f3fefb4abc70800000000000000
+      internalID: 8987579564758043466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_gifextract_30
+      rect:
+        serializedVersion: 2
+        x: 5915
+        y: 875
+        width: 170
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b40130e455120fb0800000000000000
+      internalID: -4683157208229149515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_gifextract_31
+      rect:
+        serializedVersion: 2
+        x: 6143
+        y: 1091
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e2de130edd133ba0800000000000000
+      internalID: -6110507430039334176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_gifextract_32
+      rect:
+        serializedVersion: 2
+        x: 7499
+        y: 875
+        width: 170
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a850205d7dcce190800000000000000
+      internalID: -7931738905607382872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_gifextract_33
+      rect:
+        serializedVersion: 2
+        x: 7727
+        y: 1091
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c18069b60be160d70800000000000000
+      internalID: 9008921847669327900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_gifextract_34
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 0
+        width: 338
+        height: 685
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35d9f8ddf5ea8b990800000000000000
+      internalID: -7369949063429513901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_gifextract_35
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 683
+        width: 62
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84d03d6defa435ec0800000000000000
+      internalID: -3579434820443108024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_gifextract_36
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 11
+        width: 266
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7c6e8c031a8a9950800000000000000
+      internalID: 6456624830208699516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_gifextract_37
+      rect:
+        serializedVersion: 2
+        x: 1895
+        y: 0
+        width: 230
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b272e5c22260065d0800000000000000
+      internalID: -3071448202023655637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_gifextract_38
+      rect:
+        serializedVersion: 2
+        x: 2723
+        y: 47
+        width: 182
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e7be84224b4ccf70800000000000000
+      internalID: 9208818085519079392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_gifextract_39
+      rect:
+        serializedVersion: 2
+        x: 3479
+        y: 0
+        width: 218
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62593749d943c9db0800000000000000
+      internalID: -4783890852769196762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_gifextract_40
+      rect:
+        serializedVersion: 2
+        x: 5063
+        y: 0
+        width: 206
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a33452f29a5d3bd0800000000000000
+      internalID: -2648861418646654041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy_gifextract_41
+      rect:
+        serializedVersion: 2
+        x: 6647
+        y: 0
+        width: 206
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9ab9bf2b45285730800000000000000
+      internalID: 3987978474890050207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      heavy_gifextract_0: 7396856243390162036
+      heavy_gifextract_1: -447799638422705016
+      heavy_gifextract_10: -6648343124247245218
+      heavy_gifextract_11: 539670792047578533
+      heavy_gifextract_12: -1441872022134220659
+      heavy_gifextract_13: 5323365713188659029
+      heavy_gifextract_14: -5478472188634496756
+      heavy_gifextract_15: -8242946508276988562
+      heavy_gifextract_16: -755206287460239189
+      heavy_gifextract_17: -1763479896947157643
+      heavy_gifextract_18: -3310166007364083015
+      heavy_gifextract_19: -6917446780072765241
+      heavy_gifextract_2: -787878841925815245
+      heavy_gifextract_20: 1529844127450183707
+      heavy_gifextract_21: -8581034797843812571
+      heavy_gifextract_22: 2524031851547076883
+      heavy_gifextract_23: 1566068103941338496
+      heavy_gifextract_24: -8379259316181318884
+      heavy_gifextract_25: -7779958384526178534
+      heavy_gifextract_26: -1657134001511712557
+      heavy_gifextract_27: -3523668667870041532
+      heavy_gifextract_28: 5213994381816158679
+      heavy_gifextract_29: 8987579564758043466
+      heavy_gifextract_3: 7027175623951018820
+      heavy_gifextract_30: -4683157208229149515
+      heavy_gifextract_31: -6110507430039334176
+      heavy_gifextract_32: -7931738905607382872
+      heavy_gifextract_33: 9008921847669327900
+      heavy_gifextract_34: -7369949063429513901
+      heavy_gifextract_35: -3579434820443108024
+      heavy_gifextract_36: 6456624830208699516
+      heavy_gifextract_37: -3071448202023655637
+      heavy_gifextract_38: 9208818085519079392
+      heavy_gifextract_39: -4783890852769196762
+      heavy_gifextract_4: -2976771990360928424
+      heavy_gifextract_40: -2648861418646654041
+      heavy_gifextract_41: 3987978474890050207
+      heavy_gifextract_5: -3077756694152274589
+      heavy_gifextract_6: 8816542301451329542
+      heavy_gifextract_7: -6687255213791757567
+      heavy_gifextract_8: 7402689535505619205
+      heavy_gifextract_9: 4503369707774108450
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

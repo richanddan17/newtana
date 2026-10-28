@@ -978,19 +978,8 @@ MonoBehaviour:
     loopStartFrame: 0
     loopEndFrame: -1
   cast:
-    id: cast
-    frames:
-    - {fileID: -6029805042903605803, guid: b658d6b2d60445e46a2258ab0692ac43, type: 3}
-    - {fileID: -5325683282119061778, guid: b658d6b2d60445e46a2258ab0692ac43, type: 3}
-    - {fileID: 1981105227613265711, guid: b658d6b2d60445e46a2258ab0692ac43, type: 3}
-    - {fileID: 8483538072606743812, guid: b658d6b2d60445e46a2258ab0692ac43, type: 3}
-    - {fileID: -3832379935942992501, guid: b658d6b2d60445e46a2258ab0692ac43, type: 3}
-    - {fileID: -6567985083658097310, guid: b658d6b2d60445e46a2258ab0692ac43, type: 3}
-    - {fileID: 2991193777241371074, guid: b658d6b2d60445e46a2258ab0692ac43, type: 3}
-    - {fileID: 5497914291645280583, guid: b658d6b2d60445e46a2258ab0692ac43, type: 3}
-    - {fileID: 8119401434108543135, guid: b658d6b2d60445e46a2258ab0692ac43, type: 3}
-    - {fileID: -4319366872346073408, guid: b658d6b2d60445e46a2258ab0692ac43, type: 3}
-    - {fileID: 9022927570575271496, guid: b658d6b2d60445e46a2258ab0692ac43, type: 3}
+    id: 
+    frames: []
     frameInterval: 0.05
     loop: 0
     footAnchored: 0

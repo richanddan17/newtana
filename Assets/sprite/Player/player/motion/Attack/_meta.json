@@ -1,0 +1,149 @@
+{
+ "attack1": {
+  "frames": 8,
+  "cell_px": [
+   1584,
+   828
+  ],
+  "cols": 5,
+  "ppu": 1200,
+  "px_per_dot": 12,
+  "durations_ms": [
+   50,
+   50,
+   50,
+   50,
+   50,
+   50,
+   50,
+   100
+  ],
+  "floor_row_px_from_cell_top": 828,
+  "gif_crop_origin_xy": [
+   24,
+   75
+  ],
+  "gif_frames": [
+   16,
+   23
+  ],
+  "note": "all frames share one GIF crop, so the Foot x stays the same inside a set; GIF foot (dots) attack1 44.54/attack2 42.04/attack3 43.22 -> cell px (dot*3-24)*4; unverified for heavy"
+ },
+ "attack2": {
+  "frames": 5,
+  "cell_px": [
+   1584,
+   828
+  ],
+  "cols": 5,
+  "ppu": 1200,
+  "px_per_dot": 12,
+  "durations_ms": [
+   50,
+   50,
+   50,
+   50,
+   100
+  ],
+  "floor_row_px_from_cell_top": 828,
+  "gif_crop_origin_xy": [
+   24,
+   75
+  ],
+  "gif_frames": [
+   24,
+   28
+  ],
+  "note": "all frames share one GIF crop, so the Foot x stays the same inside a set; GIF foot (dots) attack1 44.54/attack2 42.04/attack3 43.22 -> cell px (dot*3-24)*4; unverified for heavy"
+ },
+ "attack3": {
+  "frames": 10,
+  "cell_px": [
+   1584,
+   828
+  ],
+  "cols": 5,
+  "ppu": 1200,
+  "px_per_dot": 12,
+  "durations_ms": [
+   50,
+   50,
+   50,
+   50,
+   50,
+   50,
+   50,
+   50,
+   100,
+   100
+  ],
+  "floor_row_px_from_cell_top": 828,
+  "gif_crop_origin_xy": [
+   24,
+   75
+  ],
+  "gif_frames": [
+   29,
+   38
+  ],
+  "note": "all frames share one GIF crop, so the Foot x stays the same inside a set; GIF foot (dots) attack1 44.54/attack2 42.04/attack3 43.22 -> cell px (dot*3-24)*4; unverified for heavy"
+ },
+ "heavy": {
+  "frames": 30,
+  "cell_px": [
+   1584,
+   828
+  ],
+  "cols": 5,
+  "ppu": 1200,
+  "px_per_dot": 12,
+  "durations_ms": [
+   100,
+   100,
+   100,
+   50,
+   50,
+   50,
+   50,
+   50,
+   50,
+   50,
+   50,
+   50,
+   50,
+   50,
+   50,
+   50,
+   50,
+   50,
+   50,
+   50,
+   50,
+   50,
+   50,
+   50,
+   100,
+   100,
+   100,
+   100,
+   100,
+   100
+  ],
+  "floor_row_px_from_cell_top": 828,
+  "gif_crop_origin_xy": [
+   24,
+   75
+  ],
+  "gif_frames": [
+   44,
+   73
+  ],
+  "note": "all frames share one GIF crop, so the Foot x stays the same inside a set; GIF foot (dots) attack1 44.54/attack2 42.04/attack3 43.22 -> cell px (dot*3-24)*4; unverified for heavy",
+  "hold_loop": {
+   "loop_start": 3,
+   "loop_end": 20,
+   "release_frame": 21,
+   "note": "인트로 0~2 재생 후 홀드 동안 3~20 반복, 손 떼면 현재 프레임 종료 후 21로 이동"
+  }
+ }
+}

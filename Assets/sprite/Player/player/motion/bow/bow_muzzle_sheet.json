@@ -1,0 +1,163 @@
+{
+ "cell_px": [
+  376,
+  304
+ ],
+ "cols": 5,
+ "rows": 5,
+ "frames": 23,
+ "px_per_dot": 12,
+ "dot_grid_origin_px": [
+  8,
+  8
+ ],
+ "durations_ms": [
+  100,
+  100,
+  100,
+  60,
+  60,
+  50,
+  50,
+  40,
+  60,
+  40,
+  60,
+  50,
+  50,
+  40,
+  60,
+  40,
+  60,
+  50,
+  50,
+  40,
+  60,
+  40,
+  60
+ ],
+ "muzzle": {
+  "source": "17_arrow_release.png (3 frames, 7x9 dots @3px -> x4)",
+  "origin_cell_px": [
+   248,
+   116
+  ],
+  "core_dot_on_arrow_tip": [
+   260,
+   164
+  ],
+  "frames": {
+   "8": "orb",
+   "9": "ring",
+   "10": "sparks",
+   "14": "orb",
+   "15": "ring",
+   "16": "sparks",
+   "20": "orb",
+   "21": "ring",
+   "22": "sparks"
+  }
+ },
+ "cycle": {
+  "frames": [
+   5,
+   6,
+   7,
+   8,
+   9,
+   10
+  ],
+  "repeat_at": [
+   11,
+   17
+  ],
+  "ms": 300,
+  "roles": [
+   "draw start",
+   "draw short",
+   "draw long",
+   "full draw + muzzle orb",
+   "release + muzzle ring",
+   "re-nock + muzzle sparks"
+  ]
+ },
+ "note": "F22 added (copy of F10 body) so the 3rd cycle can show its sparks frame; original sheet had 22 frames.",
+ "frame_start_ms": [
+  0,
+  100,
+  200,
+  300,
+  360,
+  420,
+  470,
+  520,
+  560,
+  620,
+  660,
+  720,
+  770,
+  820,
+  860,
+  920,
+  960,
+  1020,
+  1070,
+  1120,
+  1160,
+  1220,
+  1260
+ ],
+ "loop_total_ms": 1320,
+ "arrow_fire": {
+  "rule": "풀드로우 프레임(사이클 4번째) 시작 시 발사. 탄환은 anchor에서 생성, 몸통 프레임에는 F+1부터 화살 없음",
+  "cycle_ms": 300,
+  "shots": [
+   {
+    "shot": 1,
+    "fire_frame": 8,
+    "fire_at_ms": 560,
+    "anchor_cell_px": [
+     260,
+     164
+    ],
+    "frames": {
+     "orb": 8,
+     "ring": 9,
+     "sparks": 10
+    },
+    "body_arrow_gone_from_frame": 9
+   },
+   {
+    "shot": 2,
+    "fire_frame": 14,
+    "fire_at_ms": 860,
+    "anchor_cell_px": [
+     260,
+     164
+    ],
+    "frames": {
+     "orb": 14,
+     "ring": 15,
+     "sparks": 16
+    },
+    "body_arrow_gone_from_frame": 15
+   },
+   {
+    "shot": 3,
+    "fire_frame": 20,
+    "fire_at_ms": 1160,
+    "anchor_cell_px": [
+     260,
+     164
+    ],
+    "frames": {
+     "orb": 20,
+     "ring": 21,
+     "sparks": 22
+    },
+    "body_arrow_gone_from_frame": 21
+   }
+  ],
+  "note": "발사 프레임은 원본 GIF를 보고 읽은 값(±1프레임 오차 가능). 탄환 속도/궤적은 미측정"
+ }
+}

@@ -1,0 +1,1027 @@
+fileFormatVersion: 2
+guid: c93b4a2446bedec4e95722dd08baa69c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4991069176460235883
+    second: bow_muzzle_sheet_0
+  - first:
+      213: 7128274041384578891
+    second: bow_muzzle_sheet_1
+  - first:
+      213: -8077557668145153940
+    second: bow_muzzle_sheet_2
+  - first:
+      213: 8976070380115177899
+    second: bow_muzzle_sheet_3
+  - first:
+      213: -4013675655958521675
+    second: bow_muzzle_sheet_4
+  - first:
+      213: 1982861354272025516
+    second: bow_muzzle_sheet_5
+  - first:
+      213: 1814389481693776691
+    second: bow_muzzle_sheet_6
+  - first:
+      213: -7252232563103708230
+    second: bow_muzzle_sheet_7
+  - first:
+      213: -9031953854778736054
+    second: bow_muzzle_sheet_8
+  - first:
+      213: 9072950868995638085
+    second: bow_muzzle_sheet_9
+  - first:
+      213: 756353629879611265
+    second: bow_muzzle_sheet_10
+  - first:
+      213: -812700275142175591
+    second: bow_muzzle_sheet_11
+  - first:
+      213: -871420470101198800
+    second: bow_muzzle_sheet_12
+  - first:
+      213: 1500482772378636042
+    second: bow_muzzle_sheet_13
+  - first:
+      213: -4840973026011385879
+    second: bow_muzzle_sheet_14
+  - first:
+      213: -9014731642521794315
+    second: bow_muzzle_sheet_15
+  - first:
+      213: -1016310850187670718
+    second: bow_muzzle_sheet_16
+  - first:
+      213: 9121742278402956524
+    second: bow_muzzle_sheet_17
+  - first:
+      213: 8126522241333876395
+    second: bow_muzzle_sheet_18
+  - first:
+      213: -7427049822890018810
+    second: bow_muzzle_sheet_19
+  - first:
+      213: -8228816169918918212
+    second: bow_muzzle_sheet_20
+  - first:
+      213: 4802575623355956058
+    second: bow_muzzle_sheet_21
+  - first:
+      213: -3892329844428259634
+    second: bow_muzzle_sheet_22
+  - first:
+      213: 6266874282549653854
+    second: bow_muzzle_sheet_23
+  - first:
+      213: 4386287000490179379
+    second: bow_muzzle_sheet_24
+  - first:
+      213: -1675883408157399786
+    second: bow_muzzle_sheet_25
+  - first:
+      213: 4068945148760710100
+    second: bow_muzzle_sheet_26
+  - first:
+      213: -5016147867826642874
+    second: bow_muzzle_sheet_27
+  - first:
+      213: 8538497132369898718
+    second: bow_muzzle_sheet_28
+  - first:
+      213: 8625179426708928836
+    second: bow_muzzle_sheet_29
+  - first:
+      213: 7298306145812554227
+    second: bow_muzzle_sheet_30
+  - first:
+      213: -834868941512331596
+    second: bow_muzzle_sheet_31
+  - first:
+      213: -6268351896875316165
+    second: bow_muzzle_sheet_32
+  - first:
+      213: 4583129374876672966
+    second: bow_muzzle_sheet_33
+  - first:
+      213: 2744689306216718466
+    second: bow_muzzle_sheet_34
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bow_muzzle_sheet_0
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 1223
+        width: 206
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59bafaf17092cbab0800000000000000
+      internalID: -4991069176460235883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow_muzzle_sheet_1
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 1223
+        width: 218
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4fad523977bce260800000000000000
+      internalID: 7128274041384578891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow_muzzle_sheet_2
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 1487
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c68b979f810c6ef80800000000000000
+      internalID: -8077557668145153940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow_muzzle_sheet_3
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 1223
+        width: 230
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba1bba51478619c70800000000000000
+      internalID: 8976070380115177899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow_muzzle_sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 1415
+        width: 38
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b895fa914f8c48c0800000000000000
+      internalID: -4013675655958521675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow_muzzle_sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 1223
+        width: 266
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cabeb3465e9848b10800000000000000
+      internalID: 1982861354272025516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow_muzzle_sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1547
+        y: 1223
+        width: 242
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33b009cde910e2910800000000000000
+      internalID: 1814389481693776691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow_muzzle_sheet_7
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 1343
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abbcea768e4ea5b90800000000000000
+      internalID: -7252232563103708230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow_muzzle_sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 1343
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a42813a82dd08a280800000000000000
+      internalID: -9031953854778736054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow_muzzle_sheet_9
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 1247
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5438e0baeb899ed70800000000000000
+      internalID: 9072950868995638085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow_muzzle_sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 1247
+        width: 62
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18f2d897e9b1f7a00800000000000000
+      internalID: 756353629879611265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow_muzzle_sheet_11
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 919
+        width: 242
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 994d947d765b8b4f0800000000000000
+      internalID: -812700275142175591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow_muzzle_sheet_12
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 919
+        width: 230
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0383d9d03b718e3f0800000000000000
+      internalID: -871420470101198800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow_muzzle_sheet_13
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 919
+        width: 254
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0fc83fa129c2d410800000000000000
+      internalID: 1500482772378636042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow_muzzle_sheet_14
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 919
+        width: 290
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9efe7517ea861dcb0800000000000000
+      internalID: -4840973026011385879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow_muzzle_sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1511
+        y: 919
+        width: 302
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f8c30e455d35e280800000000000000
+      internalID: -9014731642521794315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow_muzzle_sheet_16
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 615
+        width: 242
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24b40399aa655e1f0800000000000000
+      internalID: -1016310850187670718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow_muzzle_sheet_17
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 771
+        width: 38
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cecdedce540f69e70800000000000000
+      internalID: 9121742278402956524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow_muzzle_sheet_18
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 615
+        width: 242
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba6540e1ce437c070800000000000000
+      internalID: 8126522241333876395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow_muzzle_sheet_19
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 615
+        width: 230
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60833894981dde890800000000000000
+      internalID: -7427049822890018810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow_muzzle_sheet_20
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 615
+        width: 254
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb11ef5aa4f5dcd80800000000000000
+      internalID: -8228816169918918212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow_muzzle_sheet_21
+      rect:
+        serializedVersion: 2
+        x: 1523
+        y: 615
+        width: 290
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5bf415951d26a240800000000000000
+      internalID: 4802575623355956058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow_muzzle_sheet_22
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 687
+        width: 38
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eceb33201aaabf9c0800000000000000
+      internalID: -3892329844428259634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow_muzzle_sheet_23
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 311
+        width: 302
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e513767e4f868f650800000000000000
+      internalID: 6266874282549653854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow_muzzle_sheet_24
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 311
+        width: 242
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33b712399c83fdc30800000000000000
+      internalID: 4386287000490179379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow_muzzle_sheet_25
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 467
+        width: 38
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 615aec36be01eb8e0800000000000000
+      internalID: -1675883408157399786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow_muzzle_sheet_26
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 311
+        width: 242
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4db5e6afd0cc77830800000000000000
+      internalID: 4068945148760710100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow_muzzle_sheet_27
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 311
+        width: 230
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6402c554710136ab0800000000000000
+      internalID: -5016147867826642874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow_muzzle_sheet_28
+      rect:
+        serializedVersion: 2
+        x: 1535
+        y: 311
+        width: 254
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edc699a27e5de7670800000000000000
+      internalID: 8538497132369898718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow_muzzle_sheet_29
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 383
+        width: 38
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4493efc8dfac2b770800000000000000
+      internalID: 8625179426708928836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow_muzzle_sheet_30
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 7
+        width: 290
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f1253385cac84560800000000000000
+      internalID: 7298306145812554227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow_muzzle_sheet_31
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 7
+        width: 302
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bea62bfe13f964f0800000000000000
+      internalID: -834868941512331596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow_muzzle_sheet_32
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 7
+        width: 242
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3cc99339275209a0800000000000000
+      internalID: -6268351896875316165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow_muzzle_sheet_33
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 163
+        width: 38
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c3ae2d42eb8a9f30800000000000000
+      internalID: 4583129374876672966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow_muzzle_sheet_34
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 79
+        width: 38
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2806cdbc168171620800000000000000
+      internalID: 2744689306216718466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      bow_muzzle_sheet_0: -4991069176460235883
+      bow_muzzle_sheet_1: 7128274041384578891
+      bow_muzzle_sheet_10: 756353629879611265
+      bow_muzzle_sheet_11: -812700275142175591
+      bow_muzzle_sheet_12: -871420470101198800
+      bow_muzzle_sheet_13: 1500482772378636042
+      bow_muzzle_sheet_14: -4840973026011385879
+      bow_muzzle_sheet_15: -9014731642521794315
+      bow_muzzle_sheet_16: -1016310850187670718
+      bow_muzzle_sheet_17: 9121742278402956524
+      bow_muzzle_sheet_18: 8126522241333876395
+      bow_muzzle_sheet_19: -7427049822890018810
+      bow_muzzle_sheet_2: -8077557668145153940
+      bow_muzzle_sheet_20: -8228816169918918212
+      bow_muzzle_sheet_21: 4802575623355956058
+      bow_muzzle_sheet_22: -3892329844428259634
+      bow_muzzle_sheet_23: 6266874282549653854
+      bow_muzzle_sheet_24: 4386287000490179379
+      bow_muzzle_sheet_25: -1675883408157399786
+      bow_muzzle_sheet_26: 4068945148760710100
+      bow_muzzle_sheet_27: -5016147867826642874
+      bow_muzzle_sheet_28: 8538497132369898718
+      bow_muzzle_sheet_29: 8625179426708928836
+      bow_muzzle_sheet_3: 8976070380115177899
+      bow_muzzle_sheet_30: 7298306145812554227
+      bow_muzzle_sheet_31: -834868941512331596
+      bow_muzzle_sheet_32: -6268351896875316165
+      bow_muzzle_sheet_33: 4583129374876672966
+      bow_muzzle_sheet_34: 2744689306216718466
+      bow_muzzle_sheet_4: -4013675655958521675
+      bow_muzzle_sheet_5: 1982861354272025516
+      bow_muzzle_sheet_6: 1814389481693776691
+      bow_muzzle_sheet_7: -7252232563103708230
+      bow_muzzle_sheet_8: -9031953854778736054
+      bow_muzzle_sheet_9: 9072950868995638085
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,2509 @@
+fileFormatVersion: 2
+guid: a99085077a7a0a242b15aa8cd4043004
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8095803458519050836
+    second: magic_rapid_sheet_0
+  - first:
+      213: -1941205651380580125
+    second: magic_rapid_sheet_1
+  - first:
+      213: -245714275083274489
+    second: magic_rapid_sheet_2
+  - first:
+      213: -4176294159292433109
+    second: magic_rapid_sheet_3
+  - first:
+      213: -3582395751229299711
+    second: magic_rapid_sheet_4
+  - first:
+      213: 6825258380883713391
+    second: magic_rapid_sheet_5
+  - first:
+      213: -7553600117745964692
+    second: magic_rapid_sheet_6
+  - first:
+      213: -4673104320108328945
+    second: magic_rapid_sheet_7
+  - first:
+      213: -7547248623591644610
+    second: magic_rapid_sheet_8
+  - first:
+      213: 304465540684301066
+    second: magic_rapid_sheet_9
+  - first:
+      213: -3013121634396103327
+    second: magic_rapid_sheet_10
+  - first:
+      213: -3180905561580010890
+    second: magic_rapid_sheet_11
+  - first:
+      213: -2463267140902595126
+    second: magic_rapid_sheet_12
+  - first:
+      213: 2115374266593803348
+    second: magic_rapid_sheet_13
+  - first:
+      213: -6997655346321685847
+    second: magic_rapid_sheet_14
+  - first:
+      213: 7777843633401749260
+    second: magic_rapid_sheet_15
+  - first:
+      213: 6036470556141574452
+    second: magic_rapid_sheet_16
+  - first:
+      213: 4963452914303375832
+    second: magic_rapid_sheet_17
+  - first:
+      213: 2308496043837180652
+    second: magic_rapid_sheet_18
+  - first:
+      213: -738710545543711503
+    second: magic_rapid_sheet_19
+  - first:
+      213: 1392940673236117817
+    second: magic_rapid_sheet_20
+  - first:
+      213: -6247938744463016766
+    second: magic_rapid_sheet_21
+  - first:
+      213: 4649684693765352747
+    second: magic_rapid_sheet_22
+  - first:
+      213: -4745890823922812228
+    second: magic_rapid_sheet_23
+  - first:
+      213: -9027167445953303897
+    second: magic_rapid_sheet_24
+  - first:
+      213: 5805085304769853798
+    second: magic_rapid_sheet_25
+  - first:
+      213: -4181367412367318147
+    second: magic_rapid_sheet_26
+  - first:
+      213: -5130633251842532273
+    second: magic_rapid_sheet_27
+  - first:
+      213: 7522707519722639833
+    second: magic_rapid_sheet_28
+  - first:
+      213: 7081351588210326309
+    second: magic_rapid_sheet_29
+  - first:
+      213: -19452319584947422
+    second: magic_rapid_sheet_30
+  - first:
+      213: 4671778532750902741
+    second: magic_rapid_sheet_31
+  - first:
+      213: 7232594521246097510
+    second: magic_rapid_sheet_32
+  - first:
+      213: 1590453580836214138
+    second: magic_rapid_sheet_33
+  - first:
+      213: 1368569472126246571
+    second: magic_rapid_sheet_34
+  - first:
+      213: -6866506339331447628
+    second: magic_rapid_sheet_35
+  - first:
+      213: 5185338306826667829
+    second: magic_rapid_sheet_36
+  - first:
+      213: 5274596142657613729
+    second: magic_rapid_sheet_37
+  - first:
+      213: 1938181329631307928
+    second: magic_rapid_sheet_38
+  - first:
+      213: -8879602674197078605
+    second: magic_rapid_sheet_39
+  - first:
+      213: -4004632554246044896
+    second: magic_rapid_sheet_40
+  - first:
+      213: -8965140176618948200
+    second: magic_rapid_sheet_41
+  - first:
+      213: 5406693824705630415
+    second: magic_rapid_sheet_42
+  - first:
+      213: -2582162629330992709
+    second: magic_rapid_sheet_43
+  - first:
+      213: 1112349200429252234
+    second: magic_rapid_sheet_44
+  - first:
+      213: 1749684006199076684
+    second: magic_rapid_sheet_45
+  - first:
+      213: -2434314986893625349
+    second: magic_rapid_sheet_46
+  - first:
+      213: -4829835110080662743
+    second: magic_rapid_sheet_47
+  - first:
+      213: -861444512051325182
+    second: magic_rapid_sheet_48
+  - first:
+      213: -258745689389511313
+    second: magic_rapid_sheet_49
+  - first:
+      213: 114897049430348310
+    second: magic_rapid_sheet_50
+  - first:
+      213: 5983709024373783854
+    second: magic_rapid_sheet_51
+  - first:
+      213: 3733481529924205224
+    second: magic_rapid_sheet_52
+  - first:
+      213: -3676080258628149786
+    second: magic_rapid_sheet_53
+  - first:
+      213: 4303255214486054658
+    second: magic_rapid_sheet_54
+  - first:
+      213: -2185192847471860426
+    second: magic_rapid_sheet_55
+  - first:
+      213: 6856132490121756180
+    second: magic_rapid_sheet_56
+  - first:
+      213: -5654974901284000748
+    second: magic_rapid_sheet_57
+  - first:
+      213: 5894467882113690727
+    second: magic_rapid_sheet_58
+  - first:
+      213: 1370242906083789779
+    second: magic_rapid_sheet_59
+  - first:
+      213: -6558735660137603829
+    second: magic_rapid_sheet_60
+  - first:
+      213: 5219232597533084143
+    second: magic_rapid_sheet_61
+  - first:
+      213: -5692163981508832500
+    second: magic_rapid_sheet_62
+  - first:
+      213: 1286453858315245574
+    second: magic_rapid_sheet_63
+  - first:
+      213: 7419396621108750793
+    second: magic_rapid_sheet_64
+  - first:
+      213: 5413757364456675799
+    second: magic_rapid_sheet_65
+  - first:
+      213: -3695724698678817624
+    second: magic_rapid_sheet_66
+  - first:
+      213: -805090728983252887
+    second: magic_rapid_sheet_67
+  - first:
+      213: -5126716572506992867
+    second: magic_rapid_sheet_68
+  - first:
+      213: -7597713340857614197
+    second: magic_rapid_sheet_69
+  - first:
+      213: 5391198014323482460
+    second: magic_rapid_sheet_70
+  - first:
+      213: -5630292290853913319
+    second: magic_rapid_sheet_71
+  - first:
+      213: 6253096718993602367
+    second: magic_rapid_sheet_72
+  - first:
+      213: -4674372497608980949
+    second: magic_rapid_sheet_73
+  - first:
+      213: 6405429247802118796
+    second: magic_rapid_sheet_74
+  - first:
+      213: 8578294072424324336
+    second: magic_rapid_sheet_75
+  - first:
+      213: -3269509817021925719
+    second: magic_rapid_sheet_76
+  - first:
+      213: 3230551513831967318
+    second: magic_rapid_sheet_77
+  - first:
+      213: 7855490622082082220
+    second: magic_rapid_sheet_78
+  - first:
+      213: -3099419506420956656
+    second: magic_rapid_sheet_79
+  - first:
+      213: 6379857269311671305
+    second: magic_rapid_sheet_80
+  - first:
+      213: 7461027633687282734
+    second: magic_rapid_sheet_81
+  - first:
+      213: -1113190671794350394
+    second: magic_rapid_sheet_82
+  - first:
+      213: -6320602291892974956
+    second: magic_rapid_sheet_83
+  - first:
+      213: 5923638347085885943
+    second: magic_rapid_sheet_84
+  - first:
+      213: 7093632386764553182
+    second: magic_rapid_sheet_85
+  - first:
+      213: -3129282341225991044
+    second: magic_rapid_sheet_86
+  - first:
+      213: -4068705552836219253
+    second: magic_rapid_sheet_87
+  - first:
+      213: 8062447007178665017
+    second: magic_rapid_sheet_88
+  - first:
+      213: -9187012758197722264
+    second: magic_rapid_sheet_89
+  - first:
+      213: 4359283944733195254
+    second: magic_rapid_sheet_90
+  - first:
+      213: -2286145752597241069
+    second: magic_rapid_sheet_91
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: magic_rapid_sheet_0
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 2687
+        width: 206
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45a28642a521a5070800000000000000
+      internalID: 8095803458519050836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_1
+      rect:
+        serializedVersion: 2
+        x: 1619
+        y: 2687
+        width: 224
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e0da79beb37f05e0800000000000000
+      internalID: -1941205651380580125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1829
+        y: 2915
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7073b6d2b2c079cf0800000000000000
+      internalID: -245714275083274489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1937
+        y: 2903
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2df5ddc692da06c0800000000000000
+      internalID: -4176294159292433109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_4
+      rect:
+        serializedVersion: 2
+        x: 2747
+        y: 2687
+        width: 272
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 104eb1b6b06c84ec0800000000000000
+      internalID: -3582395751229299711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_5
+      rect:
+        serializedVersion: 2
+        x: 3887
+        y: 2687
+        width: 332
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6dd4dce55038be50800000000000000
+      internalID: 6825258380883713391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_6
+      rect:
+        serializedVersion: 2
+        x: 5039
+        y: 2687
+        width: 326
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c69276ea6b83c2790800000000000000
+      internalID: -7553600117745964692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_7
+      rect:
+        serializedVersion: 2
+        x: 6191
+        y: 2687
+        width: 338
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f088999416cc52fb0800000000000000
+      internalID: -4673104320108328945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_8
+      rect:
+        serializedVersion: 2
+        x: 7367
+        y: 2711
+        width: 341
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e32a3472d59c24790800000000000000
+      internalID: -7547248623591644610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_9
+      rect:
+        serializedVersion: 2
+        x: 8531
+        y: 2687
+        width: 278
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a03c5decbcda93400800000000000000
+      internalID: 304465540684301066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_10
+      rect:
+        serializedVersion: 2
+        x: 3041
+        y: 2843
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16d96c476dd3f26d0800000000000000
+      internalID: -3013121634396103327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_11
+      rect:
+        serializedVersion: 2
+        x: 8817
+        y: 2751
+        width: 110
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67285f1be372bd3d0800000000000000
+      internalID: -3180905561580010890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1949
+        y: 2771
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac5db971697b0ddd0800000000000000
+      internalID: -2463267140902595126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1937
+        y: 2687
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45c735f00b15b5d10800000000000000
+      internalID: 2115374266593803348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_14
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 2015
+        width: 372
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a202e5a98553ee90800000000000000
+      internalID: -6997655346321685847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1631
+        y: 2015
+        width: 278
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0fd177639370fb60800000000000000
+      internalID: 7777843633401749260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_16
+      rect:
+        serializedVersion: 2
+        x: 1917
+        y: 2079
+        width: 110
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4395cebfcf9d5c350800000000000000
+      internalID: 6036470556141574452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_17
+      rect:
+        serializedVersion: 2
+        x: 2771
+        y: 2015
+        width: 254
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d91e68c02ab1e440800000000000000
+      internalID: 4963452914303375832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_18
+      rect:
+        serializedVersion: 2
+        x: 3129
+        y: 2187
+        width: 50
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cea4f42cbec690020800000000000000
+      internalID: 2308496043837180652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_19
+      rect:
+        serializedVersion: 2
+        x: 3935
+        y: 2015
+        width: 278
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f438053ca29fb5f0800000000000000
+      internalID: -738710545543711503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_20
+      rect:
+        serializedVersion: 2
+        x: 5075
+        y: 2015
+        width: 372
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 939ae658928b45310800000000000000
+      internalID: 1392940673236117817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_21
+      rect:
+        serializedVersion: 2
+        x: 6239
+        y: 2015
+        width: 278
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ccb1ed90dcda49a0800000000000000
+      internalID: -6247938744463016766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_22
+      rect:
+        serializedVersion: 2
+        x: 6525
+        y: 2079
+        width: 110
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2d6479089ff68040800000000000000
+      internalID: 4649684693765352747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_23
+      rect:
+        serializedVersion: 2
+        x: 7379
+        y: 2015
+        width: 254
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cba7b41c075332eb0800000000000000
+      internalID: -4745890823922812228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_24
+      rect:
+        serializedVersion: 2
+        x: 7737
+        y: 2187
+        width: 50
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7aaabff290f09b280800000000000000
+      internalID: -9027167445953303897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_25
+      rect:
+        serializedVersion: 2
+        x: 8543
+        y: 2015
+        width: 278
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 669b5a9f35ecf8050800000000000000
+      internalID: 5805085304769853798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_26
+      rect:
+        serializedVersion: 2
+        x: 3057
+        y: 2139
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d73a3760e7cc8f5c0800000000000000
+      internalID: -4181367412367318147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_27
+      rect:
+        serializedVersion: 2
+        x: 3117
+        y: 2151
+        width: 38
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4c5e1f9d345cc8b0800000000000000
+      internalID: -5130633251842532273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_28
+      rect:
+        serializedVersion: 2
+        x: 7665
+        y: 2139
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d15a36d1a6066860800000000000000
+      internalID: 7522707519722639833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_29
+      rect:
+        serializedVersion: 2
+        x: 7725
+        y: 2151
+        width: 38
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52bbce830c3064260800000000000000
+      internalID: 7081351588210326309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_30
+      rect:
+        serializedVersion: 2
+        x: 3153
+        y: 2127
+        width: 38
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 223f419e734eabff0800000000000000
+      internalID: -19452319584947422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_31
+      rect:
+        serializedVersion: 2
+        x: 7761
+        y: 2127
+        width: 38
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d5c9e9c2dd75d040800000000000000
+      internalID: 4671778532750902741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_32
+      rect:
+        serializedVersion: 2
+        x: 3117
+        y: 2103
+        width: 38
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6606f4ba5665f5460800000000000000
+      internalID: 7232594521246097510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_33
+      rect:
+        serializedVersion: 2
+        x: 7725
+        y: 2103
+        width: 38
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a759d7dea1d621610800000000000000
+      internalID: 1590453580836214138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_34
+      rect:
+        serializedVersion: 2
+        x: 3129
+        y: 2079
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bae57841fa22ef210800000000000000
+      internalID: 1368569472126246571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_35
+      rect:
+        serializedVersion: 2
+        x: 7737
+        y: 2079
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b46e2c5dd445b0a0800000000000000
+      internalID: -6866506339331447628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_36
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 1343
+        width: 372
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53701aa87b506f740800000000000000
+      internalID: 5185338306826667829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_37
+      rect:
+        serializedVersion: 2
+        x: 1631
+        y: 1343
+        width: 278
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1afa0c8ee31233940800000000000000
+      internalID: 5274596142657613729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_38
+      rect:
+        serializedVersion: 2
+        x: 1917
+        y: 1407
+        width: 110
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 898e7fe76adc5ea10800000000000000
+      internalID: 1938181329631307928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_39
+      rect:
+        serializedVersion: 2
+        x: 2771
+        y: 1343
+        width: 254
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bddfd9f96055c480800000000000000
+      internalID: -8879602674197078605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_40
+      rect:
+        serializedVersion: 2
+        x: 3129
+        y: 1515
+        width: 50
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 023033cc8efac68c0800000000000000
+      internalID: -4004632554246044896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_41
+      rect:
+        serializedVersion: 2
+        x: 3935
+        y: 1343
+        width: 278
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8997b0b328c659380800000000000000
+      internalID: -8965140176618948200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_42
+      rect:
+        serializedVersion: 2
+        x: 5075
+        y: 1343
+        width: 372
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc090ee336f680b40800000000000000
+      internalID: 5406693824705630415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_43
+      rect:
+        serializedVersion: 2
+        x: 6239
+        y: 1343
+        width: 278
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb1007ef4c05a2cd0800000000000000
+      internalID: -2582162629330992709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_44
+      rect:
+        serializedVersion: 2
+        x: 6525
+        y: 1407
+        width: 110
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8e76cd44bbdf6f00800000000000000
+      internalID: 1112349200429252234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_45
+      rect:
+        serializedVersion: 2
+        x: 7379
+        y: 1343
+        width: 254
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c47adaa5550284810800000000000000
+      internalID: 1749684006199076684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_46
+      rect:
+        serializedVersion: 2
+        x: 7737
+        y: 1515
+        width: 50
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf7bbceba63973ed0800000000000000
+      internalID: -2434314986893625349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_47
+      rect:
+        serializedVersion: 2
+        x: 8543
+        y: 1343
+        width: 278
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 923bee39e8af8fcb0800000000000000
+      internalID: -4829835110080662743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_48
+      rect:
+        serializedVersion: 2
+        x: 3057
+        y: 1467
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2079879c7c88b04f0800000000000000
+      internalID: -861444512051325182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_49
+      rect:
+        serializedVersion: 2
+        x: 3117
+        y: 1479
+        width: 38
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6d46c89a20c86cf0800000000000000
+      internalID: -258745689389511313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_50
+      rect:
+        serializedVersion: 2
+        x: 7665
+        y: 1467
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6125909f142389100800000000000000
+      internalID: 114897049430348310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_51
+      rect:
+        serializedVersion: 2
+        x: 7725
+        y: 1479
+        width: 38
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2d391597a76a0350800000000000000
+      internalID: 5983709024373783854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_52
+      rect:
+        serializedVersion: 2
+        x: 3153
+        y: 1455
+        width: 38
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8aa3d9eabadffc330800000000000000
+      internalID: 3733481529924205224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_53
+      rect:
+        serializedVersion: 2
+        x: 7761
+        y: 1455
+        width: 38
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ed94a24b70fbfcc0800000000000000
+      internalID: -3676080258628149786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_54
+      rect:
+        serializedVersion: 2
+        x: 3117
+        y: 1431
+        width: 38
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 207e94561db38bb30800000000000000
+      internalID: 4303255214486054658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_55
+      rect:
+        serializedVersion: 2
+        x: 7725
+        y: 1431
+        width: 38
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63527b0dea2aca1e0800000000000000
+      internalID: -2185192847471860426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_56
+      rect:
+        serializedVersion: 2
+        x: 3129
+        y: 1407
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41eb8b6ac20e52f50800000000000000
+      internalID: 6856132490121756180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_57
+      rect:
+        serializedVersion: 2
+        x: 7737
+        y: 1407
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41ca733e94e7581b0800000000000000
+      internalID: -5654974901284000748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_58
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 671
+        width: 372
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76ce55dfe4b5dc150800000000000000
+      internalID: 5894467882113690727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_59
+      rect:
+        serializedVersion: 2
+        x: 1631
+        y: 671
+        width: 278
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3db8f19c9a4140310800000000000000
+      internalID: 1370242906083789779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_60
+      rect:
+        serializedVersion: 2
+        x: 1917
+        y: 735
+        width: 110
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0d9fc1baa0baf4a0800000000000000
+      internalID: -6558735660137603829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_61
+      rect:
+        serializedVersion: 2
+        x: 2771
+        y: 671
+        width: 254
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe9491015607e6840800000000000000
+      internalID: 5219232597533084143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_62
+      rect:
+        serializedVersion: 2
+        x: 3129
+        y: 843
+        width: 50
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0394e6640f5101b0800000000000000
+      internalID: -5692163981508832500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_63
+      rect:
+        serializedVersion: 2
+        x: 3935
+        y: 671
+        width: 278
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6089fccd7f66ad110800000000000000
+      internalID: 1286453858315245574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_64
+      rect:
+        serializedVersion: 2
+        x: 5075
+        y: 671
+        width: 372
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c9abe0daedf6f660800000000000000
+      internalID: 7419396621108750793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_65
+      rect:
+        serializedVersion: 2
+        x: 6239
+        y: 671
+        width: 278
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d95890c3a7812b40800000000000000
+      internalID: 5413757364456675799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_66
+      rect:
+        serializedVersion: 2
+        x: 6525
+        y: 735
+        width: 110
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ac8c93a7f526bcc0800000000000000
+      internalID: -3695724698678817624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_67
+      rect:
+        serializedVersion: 2
+        x: 7379
+        y: 671
+        width: 254
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9603efe5f3eb3d4f0800000000000000
+      internalID: -805090728983252887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_68
+      rect:
+        serializedVersion: 2
+        x: 7737
+        y: 843
+        width: 50
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1fcc97907e3ad8b0800000000000000
+      internalID: -5126716572506992867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_69
+      rect:
+        serializedVersion: 2
+        x: 8543
+        y: 671
+        width: 278
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b808fec88ff7f8690800000000000000
+      internalID: -7597713340857614197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_70
+      rect:
+        serializedVersion: 2
+        x: 3057
+        y: 795
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5fda8db70261da40800000000000000
+      internalID: 5391198014323482460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_71
+      rect:
+        serializedVersion: 2
+        x: 3117
+        y: 807
+        width: 38
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91d3806fdfe2dd1b0800000000000000
+      internalID: -5630292290853913319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_72
+      rect:
+        serializedVersion: 2
+        x: 7665
+        y: 795
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3736c9e55677c650800000000000000
+      internalID: 6253096718993602367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_73
+      rect:
+        serializedVersion: 2
+        x: 7725
+        y: 807
+        width: 38
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b264924bafa412fb0800000000000000
+      internalID: -4674372497608980949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_74
+      rect:
+        serializedVersion: 2
+        x: 3153
+        y: 783
+        width: 38
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c829425a6f7a4e850800000000000000
+      internalID: 6405429247802118796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_75
+      rect:
+        serializedVersion: 2
+        x: 7761
+        y: 783
+        width: 38
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fcd0b552093c0770800000000000000
+      internalID: 8578294072424324336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_76
+      rect:
+        serializedVersion: 2
+        x: 3117
+        y: 759
+        width: 38
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a671ced42e50a2d0800000000000000
+      internalID: -3269509817021925719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_77
+      rect:
+        serializedVersion: 2
+        x: 7725
+        y: 759
+        width: 38
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65a0e825c7935dc20800000000000000
+      internalID: 3230551513831967318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_78
+      rect:
+        serializedVersion: 2
+        x: 3129
+        y: 735
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca56d91c91f440d60800000000000000
+      internalID: 7855490622082082220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_79
+      rect:
+        serializedVersion: 2
+        x: 7737
+        y: 735
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 012ccdd5166acf4d0800000000000000
+      internalID: -3099419506420956656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_80
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 0
+        width: 278
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90c040f626ec98850800000000000000
+      internalID: 6379857269311671305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_81
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 63
+        width: 110
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e24cd454a15ea8760800000000000000
+      internalID: 7461027633687282734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_82
+      rect:
+        serializedVersion: 2
+        x: 1631
+        y: 0
+        width: 278
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c65b606bf62d80f0800000000000000
+      internalID: -1113190671794350394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_83
+      rect:
+        serializedVersion: 2
+        x: 2013
+        y: 171
+        width: 50
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49a033914b5b848a0800000000000000
+      internalID: -6320602291892974956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_84
+      rect:
+        serializedVersion: 2
+        x: 2771
+        y: 0
+        width: 218
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f1bfef11bdf43250800000000000000
+      internalID: 5923638347085885943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_85
+      rect:
+        serializedVersion: 2
+        x: 3923
+        y: 0
+        width: 194
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edbbe447215a17260800000000000000
+      internalID: 7093632386764553182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_86
+      rect:
+        serializedVersion: 2
+        x: 5075
+        y: 0
+        width: 194
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7472515a4e8294d0800000000000000
+      internalID: -3129282341225991044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_87
+      rect:
+        serializedVersion: 2
+        x: 1941
+        y: 123
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8ea98b4bdd0987c0800000000000000
+      internalID: -4068705552836219253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_88
+      rect:
+        serializedVersion: 2
+        x: 2001
+        y: 135
+        width: 38
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93cab4b16d093ef60800000000000000
+      internalID: 8062447007178665017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_89
+      rect:
+        serializedVersion: 2
+        x: 2037
+        y: 111
+        width: 38
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 863a4a0429c218080800000000000000
+      internalID: -9187012758197722264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_90
+      rect:
+        serializedVersion: 2
+        x: 2001
+        y: 87
+        width: 38
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fbb2e8b6a94f7c30800000000000000
+      internalID: 4359283944733195254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_rapid_sheet_91
+      rect:
+        serializedVersion: 2
+        x: 2013
+        y: 63
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3136cafec8af540e0800000000000000
+      internalID: -2286145752597241069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      magic_rapid_sheet_0: 8095803458519050836
+      magic_rapid_sheet_1: -1941205651380580125
+      magic_rapid_sheet_10: -3013121634396103327
+      magic_rapid_sheet_11: -3180905561580010890
+      magic_rapid_sheet_12: -2463267140902595126
+      magic_rapid_sheet_13: 2115374266593803348
+      magic_rapid_sheet_14: -6997655346321685847
+      magic_rapid_sheet_15: 7777843633401749260
+      magic_rapid_sheet_16: 6036470556141574452
+      magic_rapid_sheet_17: 4963452914303375832
+      magic_rapid_sheet_18: 2308496043837180652
+      magic_rapid_sheet_19: -738710545543711503
+      magic_rapid_sheet_2: -245714275083274489
+      magic_rapid_sheet_20: 1392940673236117817
+      magic_rapid_sheet_21: -6247938744463016766
+      magic_rapid_sheet_22: 4649684693765352747
+      magic_rapid_sheet_23: -4745890823922812228
+      magic_rapid_sheet_24: -9027167445953303897
+      magic_rapid_sheet_25: 5805085304769853798
+      magic_rapid_sheet_26: -4181367412367318147
+      magic_rapid_sheet_27: -5130633251842532273
+      magic_rapid_sheet_28: 7522707519722639833
+      magic_rapid_sheet_29: 7081351588210326309
+      magic_rapid_sheet_3: -4176294159292433109
+      magic_rapid_sheet_30: -19452319584947422
+      magic_rapid_sheet_31: 4671778532750902741
+      magic_rapid_sheet_32: 7232594521246097510
+      magic_rapid_sheet_33: 1590453580836214138
+      magic_rapid_sheet_34: 1368569472126246571
+      magic_rapid_sheet_35: -6866506339331447628
+      magic_rapid_sheet_36: 5185338306826667829
+      magic_rapid_sheet_37: 5274596142657613729
+      magic_rapid_sheet_38: 1938181329631307928
+      magic_rapid_sheet_39: -8879602674197078605
+      magic_rapid_sheet_4: -3582395751229299711
+      magic_rapid_sheet_40: -4004632554246044896
+      magic_rapid_sheet_41: -8965140176618948200
+      magic_rapid_sheet_42: 5406693824705630415
+      magic_rapid_sheet_43: -2582162629330992709
+      magic_rapid_sheet_44: 1112349200429252234
+      magic_rapid_sheet_45: 1749684006199076684
+      magic_rapid_sheet_46: -2434314986893625349
+      magic_rapid_sheet_47: -4829835110080662743
+      magic_rapid_sheet_48: -861444512051325182
+      magic_rapid_sheet_49: -258745689389511313
+      magic_rapid_sheet_5: 6825258380883713391
+      magic_rapid_sheet_50: 114897049430348310
+      magic_rapid_sheet_51: 5983709024373783854
+      magic_rapid_sheet_52: 3733481529924205224
+      magic_rapid_sheet_53: -3676080258628149786
+      magic_rapid_sheet_54: 4303255214486054658
+      magic_rapid_sheet_55: -2185192847471860426
+      magic_rapid_sheet_56: 6856132490121756180
+      magic_rapid_sheet_57: -5654974901284000748
+      magic_rapid_sheet_58: 5894467882113690727
+      magic_rapid_sheet_59: 1370242906083789779
+      magic_rapid_sheet_6: -7553600117745964692
+      magic_rapid_sheet_60: -6558735660137603829
+      magic_rapid_sheet_61: 5219232597533084143
+      magic_rapid_sheet_62: -5692163981508832500
+      magic_rapid_sheet_63: 1286453858315245574
+      magic_rapid_sheet_64: 7419396621108750793
+      magic_rapid_sheet_65: 5413757364456675799
+      magic_rapid_sheet_66: -3695724698678817624
+      magic_rapid_sheet_67: -805090728983252887
+      magic_rapid_sheet_68: -5126716572506992867
+      magic_rapid_sheet_69: -7597713340857614197
+      magic_rapid_sheet_7: -4673104320108328945
+      magic_rapid_sheet_70: 5391198014323482460
+      magic_rapid_sheet_71: -5630292290853913319
+      magic_rapid_sheet_72: 6253096718993602367
+      magic_rapid_sheet_73: -4674372497608980949
+      magic_rapid_sheet_74: 6405429247802118796
+      magic_rapid_sheet_75: 8578294072424324336
+      magic_rapid_sheet_76: -3269509817021925719
+      magic_rapid_sheet_77: 3230551513831967318
+      magic_rapid_sheet_78: 7855490622082082220
+      magic_rapid_sheet_79: -3099419506420956656
+      magic_rapid_sheet_8: -7547248623591644610
+      magic_rapid_sheet_80: 6379857269311671305
+      magic_rapid_sheet_81: 7461027633687282734
+      magic_rapid_sheet_82: -1113190671794350394
+      magic_rapid_sheet_83: -6320602291892974956
+      magic_rapid_sheet_84: 5923638347085885943
+      magic_rapid_sheet_85: 7093632386764553182
+      magic_rapid_sheet_86: -3129282341225991044
+      magic_rapid_sheet_87: -4068705552836219253
+      magic_rapid_sheet_88: 8062447007178665017
+      magic_rapid_sheet_89: -9187012758197722264
+      magic_rapid_sheet_9: 304465540684301066
+      magic_rapid_sheet_90: 4359283944733195254
+      magic_rapid_sheet_91: -2286145752597241069
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,559 @@
+fileFormatVersion: 2
+guid: b213bfc4dc3d5b742b4ac8ea4e2e24bd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4890884088271500551
+    second: attack2_gifextract_0
+  - first:
+      213: -391761763372138688
+    second: attack2_gifextract_1
+  - first:
+      213: -2253619377892325489
+    second: attack2_gifextract_2
+  - first:
+      213: 2479476184805626381
+    second: attack2_gifextract_3
+  - first:
+      213: -9188058977657571327
+    second: attack2_gifextract_4
+  - first:
+      213: 6854942679170650540
+    second: attack2_gifextract_5
+  - first:
+      213: -1599123161552353137
+    second: attack2_gifextract_6
+  - first:
+      213: 3346893798827813635
+    second: attack2_gifextract_7
+  - first:
+      213: 2206146167630355586
+    second: attack2_gifextract_8
+  - first:
+      213: 2478217122193436427
+    second: attack2_gifextract_9
+  - first:
+      213: -4504830525136750892
+    second: attack2_gifextract_10
+  - first:
+      213: -5988537369842336508
+    second: attack2_gifextract_11
+  - first:
+      213: -574161822472822290
+    second: attack2_gifextract_12
+  - first:
+      213: 1162354269386019579
+    second: attack2_gifextract_13
+  - first:
+      213: 5329542103693869415
+    second: attack2_gifextract_14
+  - first:
+      213: 2748810937679063012
+    second: attack2_gifextract_15
+  - first:
+      213: 4439635394088603908
+    second: attack2_gifextract_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: attack2_gifextract_0
+      rect:
+        serializedVersion: 2
+        x: 3971
+        y: 479
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 705780f4a29efd340800000000000000
+      internalID: 4890884088271500551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack2_gifextract_1
+      rect:
+        serializedVersion: 2
+        x: 2339
+        y: 0
+        width: 278
+        height: 421
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04f7f9970ce209af0800000000000000
+      internalID: -391761763372138688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack2_gifextract_2
+      rect:
+        serializedVersion: 2
+        x: 2435
+        y: 407
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f878ac1bd1989b0e0800000000000000
+      internalID: -2253619377892325489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack2_gifextract_3
+      rect:
+        serializedVersion: 2
+        x: 3923
+        y: 0
+        width: 302
+        height: 433
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d025168047ed86220800000000000000
+      internalID: 2479476184805626381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack2_gifextract_4
+      rect:
+        serializedVersion: 2
+        x: 4079
+        y: 215
+        width: 182
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 108b16d4a057d7080800000000000000
+      internalID: -9188058977657571327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack2_gifextract_5
+      rect:
+        serializedVersion: 2
+        x: 4151
+        y: 419
+        width: 14
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca191a33c06a12f50800000000000000
+      internalID: 6854942679170650540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack2_gifextract_6
+      rect:
+        serializedVersion: 2
+        x: 5579
+        y: 215
+        width: 242
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f88829305f5cec9e0800000000000000
+      internalID: -1599123161552353137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack2_gifextract_7
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 0
+        width: 314
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30be61c6d2e827e20800000000000000
+      internalID: 3346893798827813635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack2_gifextract_8
+      rect:
+        serializedVersion: 2
+        x: 1835
+        y: 0
+        width: 290
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28c5234304ecd9e10800000000000000
+      internalID: 2206146167630355586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack2_gifextract_9
+      rect:
+        serializedVersion: 2
+        x: 2627
+        y: 227
+        width: 14
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0f61aca755646220800000000000000
+      internalID: 2478217122193436427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack2_gifextract_10
+      rect:
+        serializedVersion: 2
+        x: 3431
+        y: 0
+        width: 242
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d633e74180ab71c0800000000000000
+      internalID: -4504830525136750892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack2_gifextract_11
+      rect:
+        serializedVersion: 2
+        x: 5027
+        y: 0
+        width: 206
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40d3562adf074eca0800000000000000
+      internalID: -5988537369842336508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack2_gifextract_12
+      rect:
+        serializedVersion: 2
+        x: 6623
+        y: 0
+        width: 230
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee1aaef4dda2808f0800000000000000
+      internalID: -574161822472822290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack2_gifextract_13
+      rect:
+        serializedVersion: 2
+        x: 7295
+        y: 263
+        width: 98
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf299e1bc03812010800000000000000
+      internalID: 1162354269386019579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack2_gifextract_14
+      rect:
+        serializedVersion: 2
+        x: 2639
+        y: 143
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76149226e4656f940800000000000000
+      internalID: 5329542103693869415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack2_gifextract_15
+      rect:
+        serializedVersion: 2
+        x: 2111
+        y: 0
+        width: 50
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e7a117ebfcb52620800000000000000
+      internalID: 2748810937679063012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack2_gifextract_16
+      rect:
+        serializedVersion: 2
+        x: 5771
+        y: 11
+        width: 62
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40117e46ed0cc9d30800000000000000
+      internalID: 4439635394088603908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      attack2_gifextract_0: 4890884088271500551
+      attack2_gifextract_1: -391761763372138688
+      attack2_gifextract_10: -4504830525136750892
+      attack2_gifextract_11: -5988537369842336508
+      attack2_gifextract_12: -574161822472822290
+      attack2_gifextract_13: 1162354269386019579
+      attack2_gifextract_14: 5329542103693869415
+      attack2_gifextract_15: 2748810937679063012
+      attack2_gifextract_16: 4439635394088603908
+      attack2_gifextract_2: -2253619377892325489
+      attack2_gifextract_3: 2479476184805626381
+      attack2_gifextract_4: -9188058977657571327
+      attack2_gifextract_5: 6854942679170650540
+      attack2_gifextract_6: -1599123161552353137
+      attack2_gifextract_7: 3346893798827813635
+      attack2_gifextract_8: 2206146167630355586
+      attack2_gifextract_9: 2478217122193436427
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

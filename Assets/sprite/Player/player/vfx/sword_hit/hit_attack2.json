@@ -1,0 +1,13 @@
+{
+ "frames": 6,
+ "frameW": 108,
+ "frameH": 108,
+ "dots": 36,
+ "frameMs": 50,
+ "pivot": [
+  54.0,
+  54.0
+ ],
+ "pivotKind": "cell_center",
+ "note": "cut direction -75deg (up=+, screen).  Flip for left, rotate 90deg for up/down. Placeholder draft."
+}
