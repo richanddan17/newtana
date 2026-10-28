@@ -272,14 +272,15 @@ public class PlayerStateController : MonoBehaviour
         UpdateDash();
     }
 
-    PlayerState DetermineDesiredMoveState()
+    PlayerState DetermineDesiredMoveState(bool ignoreStickyState = false)
     {
         // 외부 속도(대시/넉백) 중이면 이동 상태 강제 고정
         if (isDashing) return PlayerState.Dash;
         if (externalVelocityTimer > 0f && externalVelocity.sqrMagnitude > 0.01f) return PlayerState.Dash; // 넉백도 Dash 상태로 처리
 
         // Hurt/Death는 입력 무시
-        if (currentMoveState == PlayerState.Hurt || currentMoveState == PlayerState.Death)
+        // ignoreStickyState: Hurt 종료 시처럼 현재 상태를 무시하고 실제 조건으로 복귀해야 할 때 사용
+        if (!ignoreStickyState && (currentMoveState == PlayerState.Hurt || currentMoveState == PlayerState.Death))
             return currentMoveState;
 
         // Crouch 포함 모든 상태에서 실제 조건으로 직접 판단 (Crouch 고정 반환 버그 수정)
@@ -496,7 +497,8 @@ public class PlayerStateController : MonoBehaviour
     {
         if (currentMoveState != PlayerState.Hurt) return;
         // DetermineDesiredMoveState가 실제 조건(지상/공중, 입력)으로 판단
-        SetMoveState(DetermineDesiredMoveState());
+        // ignoreStickyState=true 필수: 그렇지 않으면 현재 상태(Hurt)를 그대로 반환해 영구 피격 경직에 갇힌다
+        SetMoveState(DetermineDesiredMoveState(true));
     }
 
     /// <summary>사망 시 호출</summary>

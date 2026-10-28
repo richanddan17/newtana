@@ -170,7 +170,7 @@ public class EnemyAI : MonoBehaviour
         CheckDetection();
     }
 
-    void FixedUpdate()
+    protected virtual void FixedUpdate()
     {
         if (health != null && health.IsDead) return;
         if (currentState == AIState.Dead) return;
@@ -1287,7 +1287,7 @@ public class EnemyAI : MonoBehaviour
     }
 
     /// <summary>체크포인트 리셋 - 체력/상태/타이머를 초기화 (Room에서 호출)</summary>
-    public void ResetState()
+    public virtual void ResetState()
     {
         // 체력 복구 + 사망 시 비활성화된 오브젝트 재활성화
         health?.ResetHealth();
