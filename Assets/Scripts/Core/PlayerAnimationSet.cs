@@ -144,6 +144,7 @@ public class PlayerAnimationSet : ScriptableObject
     public PlayerAnimationClip jumpDust;
     public PlayerAnimationClip landDust;
     public PlayerAnimationClip dashDust;
+    public PlayerAnimationClip dashFx;
     public PlayerAnimationClip airJumpRing;
 
     public PlayerAnimationClip Get(PlayerAnimationClipId clipId)

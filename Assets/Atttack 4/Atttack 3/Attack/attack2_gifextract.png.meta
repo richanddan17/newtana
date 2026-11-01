@@ -184,15 +184,15 @@ TextureImporter:
         width: 1584
         height: 828
       alignment: 9
-      pivot: {x: 0.26136, y: 0}
+      pivot: {x: 0.26136, y: 0.17391}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 
-      internalID: 0
+      spriteID: 8075b8ebc8d495c70800000000000000
+      internalID: 8960278200517875464
       vertices: []
       indices: 
       edges: []
@@ -206,15 +206,15 @@ TextureImporter:
         width: 1584
         height: 828
       alignment: 9
-      pivot: {x: 0.26136, y: 0}
+      pivot: {x: 0.26136, y: 0.17391}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 
-      internalID: 0
+      spriteID: 828be9c161ea7cdd0800000000000000
+      internalID: -2465810860969379800
       vertices: []
       indices: 
       edges: []
@@ -228,15 +228,15 @@ TextureImporter:
         width: 1584
         height: 828
       alignment: 9
-      pivot: {x: 0.26136, y: 0}
+      pivot: {x: 0.26136, y: 0.17391}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 
-      internalID: 0
+      spriteID: d8f0284123c5d6540800000000000000
+      internalID: 5002756131240677261
       vertices: []
       indices: 
       edges: []
@@ -250,15 +250,15 @@ TextureImporter:
         width: 1584
         height: 828
       alignment: 9
-      pivot: {x: 0.26136, y: 0}
+      pivot: {x: 0.26136, y: 0.17391}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 
-      internalID: 0
+      spriteID: c6b23cf33cf61cbc0800000000000000
+      internalID: -3764604929125962900
       vertices: []
       indices: 
       edges: []
@@ -272,15 +272,15 @@ TextureImporter:
         width: 1584
         height: 828
       alignment: 9
-      pivot: {x: 0.26136, y: 0}
+      pivot: {x: 0.26136, y: 0.17391}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 
-      internalID: 0
+      spriteID: 36bf8b3f7857a3350800000000000000
+      internalID: 5997235080567257955
       vertices: []
       indices: 
       edges: []

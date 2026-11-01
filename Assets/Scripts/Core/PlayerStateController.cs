@@ -63,8 +63,9 @@ public class PlayerStateController : MonoBehaviour
     Vector2 externalVelocity;
     float externalVelocityTimer;
 
-    // 입력 버퍼 참조
+    // 입력 버퍼 참조 (비직렬화 — 도메인 리로드/핫리로드 시 null이 될 수 있음)
     PlayerInputBuffer inputBuffer;
+    bool inputHandlerBound;
 
     // 이벤트 구독 해제용
     Action<PlayerState, PlayerState> moveStateChangedHandler;
@@ -120,25 +121,7 @@ public class PlayerStateController : MonoBehaviour
     void Awake()
     {
         if (health == null) health = GetComponent<Health>();
-
-        inputBuffer = new PlayerInputBuffer(coyoteTime, jumpBufferTime);
-        inputBuffer.shootBufferDuration = shootBufferDuration;
-        inputBuffer.shootBufferEnabled = shootBufferEnabled;
-        inputBuffer.dashBufferEnabled = dashBufferEnabled;
-
-        // Input System 액션 연결
-        if (inputHandler != null)
-        {
-            inputHandler.OnMoveInput += inputBuffer.SetMoveInput;
-            inputHandler.OnJumpPressed += inputBuffer.SetJumpPressed;
-            inputHandler.OnJumpReleased += inputBuffer.SetJumpReleased;
-            inputHandler.OnDashPressed += inputBuffer.SetDashPressed;
-            inputHandler.OnShootPressed += inputBuffer.SetShootPressed;
-            inputHandler.OnShootReleased += inputBuffer.SetShootReleased;
-            // OnReloadPressed: 비활성 (에셋에 재장전 클립 없음)
-            inputHandler.OnAimInput += inputBuffer.SetAimInput;
-            inputHandler.OnCrouchPressed += inputBuffer.SetCrouchHeld;
-        }
+        EnsureInputBuffer();
 
         // 이벤트 핸들러 캐시
         moveStateChangedHandler = OnMoveStateChanged;
@@ -147,14 +130,62 @@ public class PlayerStateController : MonoBehaviour
         PlayerStateEvents.OnOverlayChanged += overlayChangedHandler;
     }
 
+    void OnEnable()
+    {
+        EnsureInputBuffer();
+    }
+
     void OnDestroy()
     {
         PlayerStateEvents.OnMoveStateChanged -= moveStateChangedHandler;
         PlayerStateEvents.OnOverlayChanged -= overlayChangedHandler;
+        UnbindInputHandler();
+    }
+
+    void EnsureInputBuffer()
+    {
+        if (inputBuffer == null)
+        {
+            inputBuffer = new PlayerInputBuffer(coyoteTime, jumpBufferTime);
+            inputBuffer.shootBufferDuration = shootBufferDuration;
+            inputBuffer.shootBufferEnabled = shootBufferEnabled;
+            inputBuffer.dashBufferEnabled = dashBufferEnabled;
+            inputHandlerBound = false;
+        }
+
+        if (inputHandler == null) inputHandler = GetComponent<PlayerInputHandler>();
+        if (inputHandler == null || inputHandlerBound) return;
+
+        inputHandler.OnMoveInput += inputBuffer.SetMoveInput;
+        inputHandler.OnJumpPressed += inputBuffer.SetJumpPressed;
+        inputHandler.OnJumpReleased += inputBuffer.SetJumpReleased;
+        inputHandler.OnDashPressed += inputBuffer.SetDashPressed;
+        inputHandler.OnShootPressed += inputBuffer.SetShootPressed;
+        inputHandler.OnShootReleased += inputBuffer.SetShootReleased;
+        // OnReloadPressed: 비활성 (에셋에 재장전 클립 없음)
+        inputHandler.OnAimInput += inputBuffer.SetAimInput;
+        inputHandler.OnCrouchPressed += inputBuffer.SetCrouchHeld;
+        inputHandlerBound = true;
+    }
+
+    void UnbindInputHandler()
+    {
+        if (!inputHandlerBound || inputHandler == null || inputBuffer == null) return;
+        inputHandler.OnMoveInput -= inputBuffer.SetMoveInput;
+        inputHandler.OnJumpPressed -= inputBuffer.SetJumpPressed;
+        inputHandler.OnJumpReleased -= inputBuffer.SetJumpReleased;
+        inputHandler.OnDashPressed -= inputBuffer.SetDashPressed;
+        inputHandler.OnShootPressed -= inputBuffer.SetShootPressed;
+        inputHandler.OnShootReleased -= inputBuffer.SetShootReleased;
+        inputHandler.OnAimInput -= inputBuffer.SetAimInput;
+        inputHandler.OnCrouchPressed -= inputBuffer.SetCrouchHeld;
+        inputHandlerBound = false;
     }
 
     void Update()
     {
+        EnsureInputBuffer();
+
         // 타이머 업데이트
         UpdateTimers();
 
@@ -518,6 +549,7 @@ public class PlayerStateController : MonoBehaviour
         coyoteTimer = 0f;
         movementLocked = false;
         health?.RemoveInvincibility(DashSourceId); // 대시 강제 종료 시 무적 해제
+        EnsureInputBuffer();
         inputBuffer.ClearAll();
 
         if (logStateChanges)
@@ -527,6 +559,7 @@ public class PlayerStateController : MonoBehaviour
     /// <summary>입력 차단 (컷신, 일시정지, 부활 연출 등)</summary>
     public void SetInputBlocked(bool blocked)
     {
+        EnsureInputBuffer();
         inputBuffer.SetBlocked(blocked);
     }
 

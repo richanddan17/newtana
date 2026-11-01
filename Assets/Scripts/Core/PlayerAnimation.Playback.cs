@@ -11,6 +11,7 @@ public partial class PlayerAnimation
     PlayerAnimationClip activeClip;
     int activeFrame;
     float activeTimer;
+    float debugClipPlaybackSpeed;
     int debugLoopStartFrame;
     int debugLoopEndFrame = -1;
     int lastDebugFrame = -1;
@@ -48,7 +49,7 @@ public partial class PlayerAnimation
         bool finished = false;
         while (true)
         {
-            float interval = GetFrameInterval(clip, activeFrame) / PlaybackSpeed;
+            float interval = GetFrameInterval(clip, activeFrame) / GetPlaybackSpeed(clip);
             if (interval <= 0f)
             {
                 activeTimer = 0f;
@@ -82,6 +83,10 @@ public partial class PlayerAnimation
         {
             ClearDebugClip();
             OnDebugClipFinished?.Invoke(clip);
+        }
+        else if (finished && stateController != null && stateController.CurrentMoveState == PlayerState.Hurt)
+        {
+            hurtAnimationDone = true;
         }
     }
 

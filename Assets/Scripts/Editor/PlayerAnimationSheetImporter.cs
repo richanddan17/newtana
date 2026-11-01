@@ -174,12 +174,20 @@ public static class PlayerAnimationSheetImporter
         return manifest;
     }
 
+    static int FrameCountOf(PlayerSheetGridDetector.SheetEntry entry)
+    {
+        if (entry == null) return 0;
+        if (entry.rects != null && entry.rects.Length >= 4) return entry.rects.Length / 4;
+        return entry.cells == null ? 0 : entry.cells.Length / 2;
+    }
+
     /// <summary>시트 하나를 Multiple 스프라이트로 슬라이스하고, 로드된 프레임 수를 반환한다.</summary>
     static int ApplySheet(string defaultDir, PlayerSheetGridDetector.SheetEntry entry, int ppu, List<string> log)
     {
         string dir = ResolveEntryDir(defaultDir, entry);
         string assetPath = ResolveAssetPath(dir, entry.file);
-        int cellCount = entry.cells == null ? 0 : entry.cells.Length / 2;
+        bool explicitRects = entry.rects != null && entry.rects.Length >= 4;
+        int cellCount = FrameCountOf(entry);
         if (cellCount == 0)
         {
             log.Add("스킵 (프레임 없음): " + assetPath);
@@ -198,8 +206,6 @@ public static class PlayerAnimationSheetImporter
         var metas = new SpriteMetaData[cellCount];
         for (int i = 0; i < cellCount; i++)
         {
-            int col = entry.cells[i * 2];
-            int row = entry.cells[i * 2 + 1];
             var meta = new SpriteMetaData
             {
                 name = entry.id + "_" + i,
@@ -207,11 +213,24 @@ public static class PlayerAnimationSheetImporter
                 pivot = new Vector2(entry.pivot[0], entry.pivot[1]),
                 border = Vector4.zero
             };
-            meta.rect = new Rect(
-                col * entry.cellW,
-                entry.texH - (row + 1) * entry.cellH,
-                entry.cellW,
-                entry.cellH);
+            if (explicitRects)
+            {
+                meta.rect = new Rect(
+                    entry.rects[i * 4],
+                    entry.rects[i * 4 + 1],
+                    entry.rects[i * 4 + 2],
+                    entry.rects[i * 4 + 3]);
+            }
+            else
+            {
+                int col = entry.cells[i * 2];
+                int row = entry.cells[i * 2 + 1];
+                meta.rect = new Rect(
+                    col * entry.cellW,
+                    entry.texH - (row + 1) * entry.cellH,
+                    entry.cellW,
+                    entry.cellH);
+            }
             metas[i] = meta;
         }
 
@@ -250,7 +269,7 @@ public static class PlayerAnimationSheetImporter
     {
         string dir = ResolveEntryDir(defaultDir, entry);
         string assetPath = ResolveAssetPath(dir, entry.file);
-        int cellCount = entry.cells == null ? 0 : entry.cells.Length / 2;
+        int cellCount = FrameCountOf(entry);
         if (cellCount == 0) return 0;
         if (!File.Exists(assetPath))
         {
@@ -386,6 +405,7 @@ public static class PlayerAnimationSheetImporter
         set.jumpDust = Clip(set, "jumpDust", manifest, frameCounts, 0.04f, false);
         set.landDust = Clip(set, "landDust", manifest, frameCounts, 0.04f, false);
         set.dashDust = Clip(set, "dashDust", manifest, frameCounts, 0.04f, false);
+        set.dashFx = Clip(set, "dashFx", manifest, frameCounts, 0.035f, false);
         set.airJumpRing = Clip(set, "airJumpRing", manifest, frameCounts, 0.04f, false);
 
         EditorUtility.SetDirty(set);
@@ -407,7 +427,7 @@ public static class PlayerAnimationSheetImporter
         var byName = AssetDatabase.LoadAllAssetsAtPath(assetPath).OfType<Sprite>()
             .GroupBy(s => s.name).ToDictionary(g => g.Key, g => g.First());
 
-        int count = entry.cells == null ? 0 : entry.cells.Length / 2;
+        int count = FrameCountOf(entry);
         var frames = new List<Sprite>(count);
         for (int i = 0; i < count; i++)
         {

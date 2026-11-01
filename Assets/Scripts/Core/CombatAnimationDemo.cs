@@ -20,7 +20,6 @@ public class CombatAnimationDemo : MonoBehaviour
     [SerializeField] float comboChainDelay = 0.03f;
     [SerializeField] float heavyLungeDistance = 1.6f;
     [SerializeField] float heavyLungeDuration = 0.18f;
-    [SerializeField] float castMuzzleYOffset = 0.35f;
 
     WeaponMode weaponMode = WeaponMode.Sword;
     int comboStep = -1;
@@ -37,6 +36,7 @@ public class CombatAnimationDemo : MonoBehaviour
 
     BowState bowState = BowState.None;
     bool bowActive;
+    bool bowHoldDown; // draw 중 버튼 유지 여부 (홀드 루프 진입용)
     int rapidCount = 0;
     bool magicFiredThisState = false;
 
@@ -84,6 +84,7 @@ public class CombatAnimationDemo : MonoBehaviour
         attackHeld = false;
         bowActive = false;
         bowState = BowState.None;
+        bowHoldDown = false;
         attackLocked = false;
         attackQueued = false;
         chainTimer = 0f;
@@ -140,7 +141,7 @@ public class CombatAnimationDemo : MonoBehaviour
     {
         if (weaponMode == mode) return;
         weaponMode = mode;
-        attackHeld = false; bowActive = false; bowState = BowState.None;
+        attackHeld = false; bowActive = false; bowState = BowState.None; bowHoldDown = false;
         attackLocked = false; attackQueued = false; chainTimer = 0f; comboStep = -1; lastAttackTime = -999f;
         ResetHeavy(); ResetCast(); if (castFx != null) castFx.StopAll();
         if (playerAnimation != null) { playerAnimation.FreezeFacing = false; playerAnimation.ClearDebugClip(); }
@@ -176,13 +177,15 @@ public class CombatAnimationDemo : MonoBehaviour
             if (bowActive && bowState == BowState.HoldLoop) ReleaseBow();
             else if (bowActive && bowState == BowState.Draw) ReleaseBow();
             else StopBow();
+            bowHoldDown = false;
             return;
         }
         if (weaponMode == WeaponMode.Cast) { if (castActive) ReleaseCast(); return; }
         if (weaponMode == WeaponMode.Sword)
         {
             attackHeld = false;
-            if (heavyCharging && !heavyLooping) { ResetHeavy(); if (playerAnimation != null) playerAnimation.FreezeFacing = false; }
+            if (heavyLooping) ReleaseHeavy();
+            else if (heavyCharging) CancelHeavy();
         }
     }
 
@@ -212,7 +215,7 @@ public class CombatAnimationDemo : MonoBehaviour
     }
     void StopBow()
     {
-        bowActive = false; bowState = BowState.None; attackLocked = false;
+        bowActive = false; bowState = BowState.None; bowHoldDown = false; attackLocked = false;
         if (playerAnimation != null) { playerAnimation.FreezeFacing = false; playerAnimation.ClearDebugClip(); }
     }
     void PlayRangeReverse(PlayerAnimationClip clip, int startFrame, int endFrame, bool loop, string id)
@@ -221,9 +224,9 @@ public class CombatAnimationDemo : MonoBehaviour
         if (startFrame < 0) startFrame = 0; if (endFrame >= clip.frames.Length) endFrame = clip.frames.Length - 1;
         int count = Mathf.Abs(startFrame - endFrame) + 1; if (count <= 0) return;
         Sprite[] frames = new Sprite[count]; float[] durs = new float[count];
-        for (int i = 0; i < count; i++) { int src = startFrame - i; if (src < endFrame) src = endFrame; frames[i] = clip.frames[src]; durs[i] = clip.GetFrameDuration(src) / (playerAnimation != null ? playerAnimation.PlaybackSpeed : 1f); }
+        for (int i = 0; i < count; i++) { int src = startFrame - i; if (src < endFrame) src = endFrame; frames[i] = clip.frames[src]; durs[i] = clip.GetFrameDuration(src); }
         var pb = new PlayerAnimationClip { id = id, frames = frames, frameInterval = clip.frameInterval, frameDurations = durs, loop = loop };
-        if (playerAnimation != null) { playerAnimation.PlayDebugClip(pb); playerAnimation.FreezeFacing = true; }
+        if (playerAnimation != null) { playerAnimation.PlayDebugClip(pb, 0, -1, playerAnimation.GetPlaybackSpeed(clip)); playerAnimation.FreezeFacing = true; }
     }
     #endregion
 
@@ -237,8 +240,8 @@ public class CombatAnimationDemo : MonoBehaviour
         if (castMode == CastMode.Rapid)
         {
             rapidCount++;
-            if (rapidCount == 1) { magicState = MagicState.RapidFirst; if (set.magicRapid != null) PlayRange(set.magicRapid, 0, 8, false, "magicRapidFirst"); }
-            else { magicState = MagicState.RapidLoop; if (set.magicRapid != null) PlayRange(set.magicRapid, 9, 11, true, "magicRapidLoop"); }
+            if (rapidCount == 1) { magicState = MagicState.RapidFirst; if (set.magicRapid != null) PlayRange(set.magicRapid, 0, 10, false, "magicRapidFirst"); }
+            else { magicState = MagicState.RapidLoop; if (set.magicRapid != null) PlayRange(set.magicRapid, 11, 14, true, "magicRapidLoop"); }
             return;
         }
         if (castMode == CastMode.Charge) { magicState = MagicState.BigLoop; if (set.magicBig != null) PlayRange(set.magicBig, 16, 32, true, "magicBigLoop"); return; }
@@ -261,7 +264,7 @@ public class CombatAnimationDemo : MonoBehaviour
         }
         ResetCast(); if (playerAnimation != null) { playerAnimation.FreezeFacing = false; playerAnimation.ClearDebugClip(); } attackLocked = false;
     }
-    void ResetCast() { castActive = false; magicState = MagicState.None; magicFiredThisState = false; if (castFx != null) castFx.HideAura(); }
+    void ResetCast() { castActive = false; magicState = MagicState.None; magicFiredThisState = false; rapidCount = 0; if (castFx != null) castFx.HideAura(); }
     void ToggleCastMode() { if (castActive) return; castMode = castMode == CastMode.Charge ? CastMode.Rapid : CastMode.Charge; rapidCount = 0; }
     #endregion
 
@@ -276,7 +279,7 @@ public class CombatAnimationDemo : MonoBehaviour
         if (weaponMode == WeaponMode.Cast && castActive)
         {
             if (magicState == MagicState.RapidFirst && frame == 6 && !magicFiredThisState) { magicFiredThisState = true; FireCast(CastShotType.Rapid); }
-            if (magicState == MagicState.RapidLoop && frame == 0 && !magicFiredThisState) { magicFiredThisState = true; FireCast(CastShotType.Rapid); }
+            if (magicState == MagicState.RapidLoop && frame == 0) { magicFiredThisState = true; FireCast(CastShotType.Rapid); }
             if (magicState == MagicState.BasicPlay && frame == 12 && !magicFiredThisState) { magicFiredThisState = true; FireCast(CastShotType.Basic); }
             if (magicState == MagicState.BigRelease && frame == 3 && !magicFiredThisState) { magicFiredThisState = true; FireCast(CastShotType.Big); }
         }
@@ -288,10 +291,10 @@ public class CombatAnimationDemo : MonoBehaviour
         string id = clip.id;
         if (id == "bowDraw") { if (bowActive && bowHoldDown) PlayBowHold(GetAnimationSet()); else if (bowActive) ReleaseBow(); return; }
         if (id == "bowRelease") { StopBow(); return; }
-        if (id == "magicRapidFirst") { if (castActive && castMode == CastMode.Rapid) { magicState = MagicState.RapidLoop; var s = GetAnimationSet(); if (s != null && s.magicRapid != null) PlayRange(s.magicRapid, 9, 11, true, "magicRapidLoop"); } return; }
+        if (id == "magicRapidFirst") { if (castActive && castMode == CastMode.Rapid) { magicState = MagicState.RapidLoop; var s = GetAnimationSet(); if (s != null && s.magicRapid != null) PlayRange(s.magicRapid, 11, 14, true, "magicRapidLoop"); } return; }
         if (id == "magicBasic") { ResetCast(); if (playerAnimation != null) { playerAnimation.FreezeFacing = false; playerAnimation.ClearDebugClip(); } attackLocked = false; return; }
         if (id == "magicBigRelease") { ResetCast(); if (playerAnimation != null) { playerAnimation.FreezeFacing = false; playerAnimation.ClearDebugClip(); } attackLocked = false; return; }
-        if (id == "heavyRelease") { attackLocked = false; attackQueued = false; chainTimer = 0f; if (playerAnimation != null) playerAnimation.FreezeFacing = false; return; }
+        if (id == "heavyRelease") { ResetHeavy(); attackLocked = false; attackQueued = false; chainTimer = 0f; if (playerAnimation != null) playerAnimation.FreezeFacing = false; return; }
         if (id == "attack1" || id == "attack2" || id == "attack3" || id == "jumpAttack" || id == "upAttack" || id == "downAttack") { attackLocked = false; lastAttackTime = Time.time; if (attackQueued) chainTimer = comboChainDelay; else if (playerAnimation != null) playerAnimation.FreezeFacing = false; return; }
     }
     #endregion
@@ -318,6 +321,37 @@ public class CombatAnimationDemo : MonoBehaviour
         PlayRange(set.heavyAttack, 0, 2, false, "heavyWindup");
     }
     void PlayHeavyLoop() { var set = GetAnimationSet(); if (set == null || set.heavyAttack == null) { ResetHeavy(); return; } PlayRange(set.heavyAttack, 3, 20, true, "heavyLoop"); }
+    void ReleaseHeavy()
+    {
+        var set = GetAnimationSet();
+        if (set == null || set.heavyAttack == null || set.heavyAttack.frames == null)
+        {
+            CancelHeavy();
+            return;
+        }
+        heavyCharging = false;
+        heavyLooping = false;
+        heavyWindupTimer = 0f;
+        attackLocked = true;
+        attackQueued = false;
+        chainTimer = 0f;
+        if (playerAnimation != null) playerAnimation.FreezeFacing = true;
+        PlayRange(set.heavyAttack, 21, set.heavyAttack.frames.Length - 1, false, "heavyRelease");
+        if (playerMovement != null && heavyLungeDistance > 0f)
+            playerMovement.ApplyLunge(new Vector2(playerMovement.FacingDirection, 0f), heavyLungeDistance, heavyLungeDuration);
+    }
+    void CancelHeavy()
+    {
+        ResetHeavy();
+        attackLocked = false;
+        attackQueued = false;
+        chainTimer = 0f;
+        if (playerAnimation != null)
+        {
+            playerAnimation.FreezeFacing = false;
+            playerAnimation.ClearDebugClip();
+        }
+    }
     void ResetHeavy() { heavyCharging = false; heavyLooping = false; heavyWindupTimer = 0f; }
     void PlayRange(PlayerAnimationClip clip, int start, int end, bool loop, string id)
     {
@@ -325,24 +359,43 @@ public class CombatAnimationDemo : MonoBehaviour
         if (start < 0) start = 0; if (end >= clip.frames.Length) end = clip.frames.Length - 1;
         int count = end - start + 1; if (count <= 0) return;
         Sprite[] frames = new Sprite[count]; float[] durs = new float[count];
-        for (int i = 0; i < count; i++) { frames[i] = clip.frames[start + i]; durs[i] = clip.GetFrameDuration(start + i) / (playerAnimation != null ? playerAnimation.PlaybackSpeed : 1f); }
+        for (int i = 0; i < count; i++) { frames[i] = clip.frames[start + i]; durs[i] = clip.GetFrameDuration(start + i); }
         var pb = new PlayerAnimationClip { id = id, frames = frames, frameInterval = clip.frameInterval, frameDurations = durs, loop = loop };
-        if (playerAnimation != null) { playerAnimation.PlayDebugClip(pb); playerAnimation.FreezeFacing = true; }
+        if (playerAnimation != null) { playerAnimation.PlayDebugClip(pb, 0, -1, playerAnimation.GetPlaybackSpeed(clip)); playerAnimation.FreezeFacing = true; }
     }
     void FireBow()
     {
         var set = GetAnimationSet(); if (set == null || playerAnimation == null) return;
         Vector2 dir = playerAnimation.GetCurrentAimDirectionVector(); if (dir.sqrMagnitude < 0.0001f) dir = Vector2.right;
-        Vector3 tip = PlayerBowShot.GetBowTip(playerAnimation.BodyRenderer, dir, playerAnimation.GetMuzzleWorldPosition());
-        PlayerBowShot.Fire(set, tip, dir, gameObject, playerAnimation.BodyRenderer);
+        FaceAimDirection(dir);
+        PlayerBowShot.Fire(set, GetFireOrigin(dir), dir, gameObject, playerAnimation.BodyRenderer);
     }
     void FireCast(CastShotType type)
     {
         var set = GetAnimationSet(); if (set == null || playerAnimation == null) return;
-        float facing = transform.localScale.x < 0f ? -1f : 1f;
-        Vector2 dir = new Vector2(facing, 0f);
-        Vector3 origin = playerAnimation.GetMuzzleWorldPosition(); origin.y -= castMuzzleYOffset;
-        PlayerCastShot.Fire(set, type, origin, dir, gameObject, playerAnimation.BodyRenderer);
+        Vector2 dir = playerAnimation.GetCurrentAimDirectionVector(); if (dir.sqrMagnitude < 0.0001f) dir = Vector2.right;
+        FaceAimDirection(dir);
+        PlayerCastShot.Fire(set, type, GetFireOrigin(dir), dir, gameObject, playerAnimation.BodyRenderer);
+    }
+    void FaceAimDirection(Vector2 dir)
+    {
+        if (playerMovement == null || Mathf.Abs(dir.x) <= 0.0001f) return;
+        playerMovement.FaceDirection(dir.x >= 0f ? 1 : -1);
+    }
+    Vector3 GetFireOrigin(Vector2 dir)
+    {
+        Collider2D own = GetComponent<Collider2D>();
+        Vector2 aim = dir.sqrMagnitude > 0.0001f ? dir.normalized : Vector2.right;
+        if (own == null) return playerAnimation != null ? playerAnimation.GetMuzzleWorldPosition() : transform.position;
+
+        Bounds bounds = own.bounds;
+        float tx = Mathf.Abs(aim.x) > 0.0001f ? bounds.extents.x / Mathf.Abs(aim.x) : float.PositiveInfinity;
+        float ty = Mathf.Abs(aim.y) > 0.0001f ? bounds.extents.y / Mathf.Abs(aim.y) : float.PositiveInfinity;
+        float t = Mathf.Min(tx, ty);
+        if (float.IsInfinity(t)) t = 0f;
+
+        Vector2 edge = (Vector2)bounds.center + aim * t;
+        return new Vector3(edge.x, edge.y, transform.position.z);
     }
     #endregion
 
@@ -350,7 +403,7 @@ public class CombatAnimationDemo : MonoBehaviour
     {
         if (!enableDemo) return;
         GUILayout.BeginArea(new Rect(10,10,560,80));
-        GUILayout.Label("Sword: LMB combo/Hold heavy   Bow: 2-10 draw->hold 11-16 (fire)   Cast: Rapid first 0-8 fire6 / loop 9-11 fire9   Big hold 16-32 release 33+ fire36   Basic 0-12 fire12");
+        GUILayout.Label("Sword: LMB combo/Hold heavy   Bow: 2-10 draw->hold 11-16 (fire)   Cast: Rapid first 0-10 fire6 / loop 11-14 fire11   Big hold 16-32 release 33+ fire36   Basic 0-12 fire12");
         GUILayout.EndArea();
     }
 }

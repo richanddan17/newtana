@@ -1,5 +1,16 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
+
+/// <summary>클립별 재생 속도 설정. Inspector에서 애니메이션마다 따로 조정한다.</summary>
+[Serializable]
+public class ClipPlaybackSpeed
+{
+    public PlayerAnimationClipId clip;
+
+    [Tooltip("1 = 원본, 작을수록 느려진다.")]
+    [Range(0.1f, 3f)] public float speed = 0.75f;
+}
 
 /// <summary>
 /// 플레이어 애니메이션 (v5 player_1).
@@ -27,8 +38,12 @@ public partial class PlayerAnimation : MonoBehaviour
 
     [Header("Options")]
     [SerializeField] bool useAimDirectionForFlip = true;
-    [Tooltip("전체 애니메이션 재생 속도. 1 = 원본, 작을수록 느려진다.")]
-    [SerializeField, Range(0.2f, 2f)] float playbackSpeed = 0.55f;
+
+    [Header("Playback Speed (per clip)")]
+    [Tooltip("목록에 없는 클립에 적용되는 기본 속도. 1 = 원본, 작을수록 느려진다.")]
+    [SerializeField, Range(0.1f, 3f)] float defaultPlaybackSpeed = 0.75f;
+    [Tooltip("클립별 재생 속도. 목록에 있는 클립은 기본 속도 대신 이 값을 쓴다.")]
+    [SerializeField] ClipPlaybackSpeed[] clipPlaybackSpeeds = new ClipPlaybackSpeed[0];
 
     public event Action<int> OnAimDirectionChanged;
     public event Action<PlayerAnimationClip> OnDebugClipFinished;
@@ -42,12 +57,52 @@ public partial class PlayerAnimation : MonoBehaviour
     /// <summary>공격/차지 중 좌우 방향 고정. PlayerMovement 가 이 값을 보고 flip 을 멈춘다.</summary>
     public bool FreezeFacing { get; set; }
 
-    public float PlaybackSpeed => Mathf.Max(0.01f, playbackSpeed);
+    /// <summary>현재 재생 중인 클립의 재생 속도.</summary>
+    public float PlaybackSpeed => GetPlaybackSpeed(activeClip);
+
+    /// <summary>지정한 클립의 재생 속도. 클립별 설정 → 기본값 순으로 찾는다.</summary>
+    public float GetPlaybackSpeed(PlayerAnimationClip clip)
+    {
+        if (clip != null && ReferenceEquals(clip, debugClipOverride) && debugClipPlaybackSpeed > 0f)
+            return Mathf.Max(0.01f, debugClipPlaybackSpeed);
+
+        if (clip != null && clipPlaybackSpeeds != null && animationSet != null)
+        {
+            for (int i = 0; i < clipPlaybackSpeeds.Length; i++)
+            {
+                ClipPlaybackSpeed entry = clipPlaybackSpeeds[i];
+                if (entry == null) continue;
+                if (ReferenceEquals(animationSet.Get(entry.clip), clip))
+                    return Mathf.Max(0.01f, entry.speed);
+            }
+        }
+
+        return Mathf.Max(0.01f, ResolveUnlistedPlaybackSpeed(clip));
+    }
+
+    float ResolveUnlistedPlaybackSpeed(PlayerAnimationClip clip)
+    {
+        return IsSwordAttackClip(clip) ? SwordAttackPlaybackSpeed : defaultPlaybackSpeed;
+    }
+
+    bool IsSwordAttackClip(PlayerAnimationClip clip)
+    {
+        if (clip == null || animationSet == null) return false;
+
+        return ReferenceEquals(animationSet.Get(PlayerAnimationClipId.Attack1), clip)
+            || ReferenceEquals(animationSet.Get(PlayerAnimationClipId.Attack2), clip)
+            || ReferenceEquals(animationSet.Get(PlayerAnimationClipId.Attack3), clip)
+            || ReferenceEquals(animationSet.Get(PlayerAnimationClipId.JumpAttack), clip)
+            || ReferenceEquals(animationSet.Get(PlayerAnimationClipId.UpAttack), clip)
+            || ReferenceEquals(animationSet.Get(PlayerAnimationClipId.DownAttack), clip)
+            || ReferenceEquals(animationSet.Get(PlayerAnimationClipId.HeavyAttack), clip);
+    }
 
     public PlayerAnimationSet AnimationSet => animationSet;
 
     int currentAimDirIndex = PlayerStateController.AimDirFront;
     PlayerAnimationClip hurtClipOverride;
+    bool hurtAnimationDone;
     PlayerAnimationClip debugClipOverride;
 
     void Awake()
@@ -104,6 +159,7 @@ public partial class PlayerAnimation : MonoBehaviour
 
         if (moveState == PlayerState.Hurt)
         {
+            if (hurtAnimationDone) return WithFallback(animationSet.idle, null);
             if (hurtClipOverride != null && HasFrames(hurtClipOverride)) return hurtClipOverride;
             return WithFallback(animationSet.hurt, animationSet.idle);
         }
@@ -165,6 +221,17 @@ public partial class PlayerAnimation : MonoBehaviour
             OnHurtAnimationStart?.Invoke();
             ResolveHurtVariant();
         }
+        else if (to == PlayerState.Dash)
+        {
+            SpawnDashDust();
+        }
+    }
+
+    void SpawnDashDust()
+    {
+        if (animationSet == null) return;
+        PlayerBowShot.SpawnFootOneShot(animationSet.dashDust, spriteRenderer, transform.position, 8);
+        PlayerBowShot.SpawnFootOneShot(animationSet.dashFx, spriteRenderer, transform.position, 6);
     }
 
     void OnOverlayChanged(PlayerState overlay, bool active)
@@ -176,11 +243,10 @@ public partial class PlayerAnimation : MonoBehaviour
     void ResolveHurtVariant()
     {
         hurtClipOverride = null;
+        hurtAnimationDone = false;
         if (animationSet == null) return;
 
-        bool knockedBack = stateController != null && stateController.Velocity.sqrMagnitude > 0.25f;
-        PlayerAnimationClip candidate = knockedBack ? animationSet.hurtKnockback : animationSet.hurt;
-        if (HasFrames(candidate)) hurtClipOverride = candidate;
+        if (HasFrames(animationSet.hurt)) hurtClipOverride = animationSet.hurt;
     }
 
     #endregion
@@ -198,6 +264,7 @@ public partial class PlayerAnimation : MonoBehaviour
         FreezeFacing = false;
         hurtClipOverride = null;
         debugClipOverride = null;
+        debugClipPlaybackSpeed = 0f;
         debugLoopStartFrame = 0;
         debugLoopEndFrame = -1;
         lastDebugFrame = -1;
@@ -216,22 +283,28 @@ public partial class PlayerAnimation : MonoBehaviour
 
     public float CurrentFrameInterval =>
         activeClip != null
-            ? activeClip.GetFrameDuration(activeFrame) / PlaybackSpeed
-            : 0.05f / PlaybackSpeed;
+            ? activeClip.GetFrameDuration(activeFrame) / GetPlaybackSpeed(activeClip)
+            : 0.05f / GetPlaybackSpeed(null);
 
     public void PlayDebugClip(PlayerAnimationClip clip)
     {
-        PlayDebugClip(clip, 0, -1);
+        PlayDebugClip(clip, 0, -1, 0f);
     }
 
     public void PlayDebugClip(PlayerAnimationClip clip, int loopStartFrame)
     {
-        PlayDebugClip(clip, loopStartFrame, -1);
+        PlayDebugClip(clip, loopStartFrame, -1, 0f);
     }
 
     public void PlayDebugClip(PlayerAnimationClip clip, int loopStartFrame, int loopEndFrame)
     {
+        PlayDebugClip(clip, loopStartFrame, loopEndFrame, 0f);
+    }
+
+    public void PlayDebugClip(PlayerAnimationClip clip, int loopStartFrame, int loopEndFrame, float playbackSpeed)
+    {
         debugClipOverride = clip;
+        debugClipPlaybackSpeed = playbackSpeed;
         debugLoopStartFrame = Mathf.Max(0, loopStartFrame);
         debugLoopEndFrame = loopEndFrame;
         lastDebugFrame = -1;
@@ -243,6 +316,7 @@ public partial class PlayerAnimation : MonoBehaviour
     public void ClearDebugClip()
     {
         debugClipOverride = null;
+        debugClipPlaybackSpeed = 0f;
         debugLoopStartFrame = 0;
         debugLoopEndFrame = -1;
         lastDebugFrame = -1;
@@ -283,6 +357,65 @@ public partial class PlayerAnimation : MonoBehaviour
     {
         var child = transform.Find(childName);
         return child != null ? child.GetComponent<SpriteRenderer>() : null;
+    }
+
+    void Reset()
+    {
+        EnsureClipSpeedEntries();
+    }
+
+    void OnValidate()
+    {
+        EnsureClipSpeedEntries();
+    }
+
+    void EnsureClipSpeedEntries()
+    {
+        PlayerAnimationClipId[] ids = (PlayerAnimationClipId[])Enum.GetValues(typeof(PlayerAnimationClipId));
+        var entries = new List<ClipPlaybackSpeed>(clipPlaybackSpeeds ?? new ClipPlaybackSpeed[0]);
+        bool added = false;
+
+        for (int i = 0; i < ids.Length; i++)
+        {
+            bool exists = false;
+            for (int j = 0; j < entries.Count; j++)
+            {
+                if (entries[j] != null && entries[j].clip == ids[i])
+                {
+                    exists = true;
+                    break;
+                }
+            }
+            if (exists) continue;
+
+            entries.Add(new ClipPlaybackSpeed
+            {
+                clip = ids[i],
+                speed = IsSwordAttack(ids[i]) ? SwordAttackPlaybackSpeed : defaultPlaybackSpeed
+            });
+            added = true;
+        }
+
+        if (added) clipPlaybackSpeeds = entries.ToArray();
+    }
+
+    const float SwordAttackPlaybackSpeed = 1.1f;
+
+    static bool IsSwordAttack(PlayerAnimationClipId clipId)
+    {
+        switch (clipId)
+        {
+            case PlayerAnimationClipId.Attack1:
+            case PlayerAnimationClipId.Attack2:
+            case PlayerAnimationClipId.Attack3:
+            case PlayerAnimationClipId.JumpAttack:
+            case PlayerAnimationClipId.UpAttack:
+            case PlayerAnimationClipId.DownAttack:
+            case PlayerAnimationClipId.HeavyAttack:
+                return true;
+            default:
+                return false;
+        }
     }
 
     void OnDrawGizmosSelected()

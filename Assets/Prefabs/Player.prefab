@@ -557,7 +557,58 @@ MonoBehaviour:
   muzzleFxRenderer: {fileID: 3625653224464976719}
   muzzleOffset: {x: 0.08, y: 0.04}
   useAimDirectionForFlip: 1
-  playbackSpeed: 0.55
+  defaultPlaybackSpeed: 0.75
+  clipPlaybackSpeeds:
+  - clip: 0
+    speed: 0.75
+  - clip: 1
+    speed: 0.75
+  - clip: 2
+    speed: 0.75
+  - clip: 3
+    speed: 0.75
+  - clip: 4
+    speed: 0.75
+  - clip: 5
+    speed: 0.75
+  - clip: 6
+    speed: 1.1
+  - clip: 7
+    speed: 1.1
+  - clip: 8
+    speed: 1.1
+  - clip: 9
+    speed: 1.1
+  - clip: 10
+    speed: 1.1
+  - clip: 11
+    speed: 1.1
+  - clip: 12
+    speed: 1.1
+  - clip: 13
+    speed: 0.75
+  - clip: 14
+    speed: 0.75
+  - clip: 15
+    speed: 0.75
+  - clip: 16
+    speed: 0.75
+  - clip: 17
+    speed: 0.75
+  - clip: 18
+    speed: 0.75
+  - clip: 19
+    speed: 0.75
+  - clip: 20
+    speed: 0.75
+  - clip: 21
+    speed: 0.75
+  - clip: 22
+    speed: 0.75
+  - clip: 23
+    speed: 0.75
+  - clip: 24
+    speed: 0.75
 --- !u!114 &8462336289497188404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -658,12 +709,9 @@ MonoBehaviour:
   heavyHoldThreshold: 0.22
   comboResetWindow: 0.55
   castHoldThreshold: 0.5
-  rapidShotInterval: 0.2
   comboChainDelay: 0.03
   heavyLungeDistance: 1.6
   heavyLungeDuration: 0.18
-  castMuzzleYOffset: 0.35
-  weaponScrollCooldown: 0.15
 --- !u!114 &1145104338415782764
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -712,6 +760,8 @@ MonoBehaviour:
   heavyShakeAmplitude: 0.16
   heavyShakeDuration: 0.42
   enableCameraShake: 1
+  hitVfxYOffset: 0.4
+  hitVfxRandomRadius: 0.2
 --- !u!1 &5484917965615205049
 GameObject:
   m_ObjectHideFlags: 0

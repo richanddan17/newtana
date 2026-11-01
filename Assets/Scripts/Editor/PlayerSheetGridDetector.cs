@@ -27,6 +27,7 @@ public static class PlayerSheetGridDetector
         public float[] pivot;
         public int[] contentUnion;
         public int[] cells; // {col,row,col,row,...} row-major
+        public int[] rects; // optional explicit rects {x,y,w,h,...} in texture pixels (Unity rect, y from bottom); overrides the uniform cells grid
         public int[] durationsMs; // optional per-frame durations; empty = frameInterval
         public int loopStartFrame = -1; // -1/0 = first frame
         public int loopEndFrame = -1; // -1 = last frame
@@ -216,11 +217,24 @@ public static class PlayerSheetGridDetector
                 sb.Append("      \"loopStartFrame\": ").Append(Math.Max(0, e.loopStartFrame)).Append(",\n");
                 sb.Append("      \"loopEndFrame\": ").Append(e.loopEndFrame).Append(",\n");
             }
-            sb.Append("      \"cells\": [");
-            for (int k = 0; k < e.cells.Length; k++)
+            if (e.rects != null && e.rects.Length > 0)
             {
-                if (k > 0) sb.Append(", ");
-                sb.Append(e.cells[k]);
+                sb.Append("      \"rects\": [");
+                for (int k = 0; k < e.rects.Length; k++)
+                {
+                    if (k > 0) sb.Append(", ");
+                    sb.Append(e.rects[k]);
+                }
+                sb.Append("],\n");
+            }
+            sb.Append("      \"cells\": [");
+            if (e.cells != null)
+            {
+                for (int k = 0; k < e.cells.Length; k++)
+                {
+                    if (k > 0) sb.Append(", ");
+                    sb.Append(e.cells[k]);
+                }
             }
             sb.Append("]\n");
             sb.Append("    }");

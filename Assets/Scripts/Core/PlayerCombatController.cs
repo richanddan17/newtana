@@ -59,6 +59,10 @@ public class PlayerCombatController : MonoBehaviour
     [SerializeField] float heavyShakeDuration = 0.42f;
     [SerializeField] bool enableCameraShake = true;
 
+    [Header("Hit VFX")]
+    [SerializeField] float hitVfxYOffset = 0.4f;
+    [SerializeField] float hitVfxRandomRadius = 0.2f;
+
     readonly HashSet<int> hitTargets = new();
     PlayerAnimationClip activeClip;
     bool hitResolved;
@@ -116,21 +120,36 @@ public class PlayerCombatController : MonoBehaviour
         {
             case Attack1Clip:
                 if (frame == 0) TryAttack1Dash();
-                if (frame == Attack1HitFrame) ApplyAttack(attack1Damage, attack1Radius, attack1Knockback, attack1HitStop, 0f, 0f);
+                if (frame == Attack1HitFrame) ApplyAttack(attack1Damage, attack1Radius, attack1Knockback, attack1HitStop, 0f, 0f, HitClipFor(Attack1Clip));
                 break;
 
             case Attack2Clip:
-                if (frame == Attack2HitFrame) ApplyAttack(attack2Damage, attack2Radius, attack2Knockback, attack2HitStop, 0f, 0f);
+                if (frame == Attack2HitFrame) ApplyAttack(attack2Damage, attack2Radius, attack2Knockback, attack2HitStop, 0f, 0f, HitClipFor(Attack2Clip));
                 break;
 
             case Attack3Clip:
                 if (frame == attack3TeleportFrame) TryAttack3Teleport();
-                if (frame == Attack3HitFrame) ApplyAttack(attack3Damage, attack3Radius, attack3Knockback, attack3HitStop, attack3ShakeAmplitude, attack3ShakeDuration);
+                if (frame == Attack3HitFrame) ApplyAttack(attack3Damage, attack3Radius, attack3Knockback, attack3HitStop, attack3ShakeAmplitude, attack3ShakeDuration, HitClipFor(Attack3Clip));
                 break;
 
             case HeavyReleaseClip:
-                if (frame == HeavyReleaseHitFrame) ApplyAttack(heavyDamage, heavyRadius, heavyKnockback, heavyHitStop, heavyShakeAmplitude, heavyShakeDuration);
+                if (frame == HeavyReleaseHitFrame) ApplyAttack(heavyDamage, heavyRadius, heavyKnockback, heavyHitStop, heavyShakeAmplitude, heavyShakeDuration, HitClipFor(HeavyReleaseClip));
                 break;
+        }
+    }
+
+    PlayerAnimationClip HitClipFor(string clipId)
+    {
+        PlayerAnimationSet set = playerAnimation != null ? playerAnimation.AnimationSet : null;
+        if (set == null) return null;
+
+        switch (clipId)
+        {
+            case Attack1Clip: return set.attack1HitFx;
+            case Attack2Clip: return set.attack2HitFx;
+            case Attack3Clip: return set.attack3HitFx;
+            case HeavyReleaseClip: return set.heavyHitFx;
+            default: return null;
         }
     }
 
@@ -163,6 +182,17 @@ public class PlayerCombatController : MonoBehaviour
         int facing = dx >= 0f ? 1 : -1;
         playerMovement.FaceDirection(facing);
         playerMovement.ApplyLunge(new Vector2(facing, 0f), distance, attack1DashDuration);
+        SpawnDashDust();
+    }
+
+    void SpawnDashDust()
+    {
+        if (playerAnimation == null) return;
+
+        PlayerAnimationSet set = playerAnimation.AnimationSet;
+        if (set == null) return;
+
+        PlayerBowShot.SpawnFootOneShot(set.dashDust, playerAnimation.BodyRenderer, transform.position, 8);
     }
 
     void TryAttack3Teleport()
@@ -188,7 +218,7 @@ public class PlayerCombatController : MonoBehaviour
         if (playerMovement != null) playerMovement.FaceDirection(-towardTarget);
     }
 
-    void ApplyAttack(float damage, float radius, float knockback, float hitStop, float shakeAmplitude, float shakeDuration)
+    void ApplyAttack(float damage, float radius, float knockback, float hitStop, float shakeAmplitude, float shakeDuration, PlayerAnimationClip hitClip)
     {
         if (hitResolved || radius <= 0f) return;
 
@@ -212,7 +242,17 @@ public class PlayerCombatController : MonoBehaviour
             if (!hitTargets.Add(hurtbox.GetInstanceID())) continue;
 
             DamageInfo info = new DamageInfo(damage, gameObject, new Vector2(facing, 0f), knockback, HitType.Melee);
-            if (damageable.TakeDamage(info) > 0f) confirmed = true;
+            if (damageable.TakeDamage(info) <= 0f) continue;
+
+            confirmed = true;
+            if (hitClip != null)
+            {
+                SpriteRenderer reference = playerAnimation != null ? playerAnimation.BodyRenderer : null;
+                Vector2 point = overlap.bounds.center;
+                point.y -= hitVfxYOffset;
+                point += Random.insideUnitCircle * hitVfxRandomRadius;
+                PlayerBowShot.SpawnImpact(hitClip, point, new Vector2(facing, 0f), reference);
+            }
         }
 
         if (!confirmed) return;

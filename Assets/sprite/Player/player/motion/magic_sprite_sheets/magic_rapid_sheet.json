@@ -50,9 +50,9 @@
  },
  "px_per_dot": 12,
  "hold_loop": {
-  "loop_start": 8,
-  "loop_end": 11,
+  "loop_start": 11,
+  "loop_end": 14,
   "release_frame": 32,
-  "note": "4프레임 주기, 카메라 흔들림 4단계 주기와 동일"
+  "note": "첫 공격 0~10(첫발 6), 11~14 반복, 15~31 미사용, 해제 32~"
  }
 }

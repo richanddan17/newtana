@@ -29,6 +29,11 @@ public class CameraShake : MonoBehaviour
     [SerializeField] float maxTrauma = 1f;
     [SerializeField] float traumaDecay = 1f;
 
+    [Header("Rapid Cast Shake (rapid 전용, 1200ms 측정 패턴)")]
+    [SerializeField] bool enableRapidCastShake = true;
+    [SerializeField] float rapidDotWorld = 0.01f;
+    [SerializeField] float rapidImpulseGain = 2.5f;
+
     // 임펄스 기반 상태
     class ShakeImpulse
     {
@@ -45,6 +50,10 @@ public class CameraShake : MonoBehaviour
     Vector3 originalPosition;
     Quaternion originalRotation;
     float trauma = 0f;
+
+    float rapidTimerMs = -1f;
+    int rapidStepIndex = -1;
+    Vector3 scriptedOffset;
 
     CinemachineImpulseSource impulseSource;
 
@@ -123,6 +132,9 @@ public class CameraShake : MonoBehaviour
     {
         impulses.Clear();
         trauma = 0f;
+        rapidTimerMs = -1f;
+        rapidStepIndex = -1;
+        scriptedOffset = Vector3.zero;
         if (useCinemachine)
         {
             CinemachineImpulseManager.Instance.Clear();
@@ -137,6 +149,8 @@ public class CameraShake : MonoBehaviour
 
     void LateUpdate()
     {
+        UpdateRapidCast();
+
         if (cameraTransform == null) return;
 
         // Cinemachine 경로는 리스너(vcam)가 처리 — 카메라 트랜스폼 직접 조작 시 Brain과 경합하므로 금지
@@ -236,7 +250,7 @@ public class CameraShake : MonoBehaviour
         }
 
         // 적용 (로컬 포지션에 덧셈)
-        cameraTransform.localPosition = originalPosition + offset;
+        cameraTransform.localPosition = originalPosition + offset + scriptedOffset;
     }
 
     #endregion
@@ -277,11 +291,98 @@ public class CameraShake : MonoBehaviour
         float z = Mathf.PerlinNoise(Time.unscaledTime * 10f, Time.unscaledTime * 10f) * 2f - 1f;
 
         Vector3 shakeOffset = new Vector3(x, y, z) * shakeAmount * defaultAmplitude;
-        cameraTransform.localPosition = originalPosition + shakeOffset;
+        cameraTransform.localPosition = originalPosition + shakeOffset + scriptedOffset;
 
         // 회전도 약간 흔들림
         float rotZ = Mathf.PerlinNoise(Time.unscaledTime * 5f, 5f) * 2f - 1f;
         cameraTransform.localRotation = originalRotation * Quaternion.Euler(0, 0, rotZ * shakeAmount * 5f);
+    }
+
+    #endregion
+
+    #region Rapid Cast (measured pattern)
+
+    // rapid_camera_shake.json: 1 dot = 12px @1200ppu. 스텝 오프셋은 카메라 이동량(씬 반대 방향).
+    static readonly Vector2[] RapidCastCameraOffsets =
+    {
+        new Vector2(1f, 0f), new Vector2(1f, 1f), Vector2.zero,
+        new Vector2(1f, 0f), Vector2.zero, new Vector2(1f, 1f), Vector2.zero,
+        new Vector2(1f, 0f), Vector2.zero, new Vector2(1f, 1f), Vector2.zero,
+        new Vector2(1f, 0f), Vector2.zero, new Vector2(1f, 1f), Vector2.zero,
+        new Vector2(1f, 0f), Vector2.zero, new Vector2(1f, 1f), Vector2.zero,
+        new Vector2(1f, 0f), Vector2.zero, new Vector2(1f, 1f), Vector2.zero,
+        new Vector2(1f, 0f), Vector2.zero
+    };
+
+    static readonly float[] RapidCastStepMs =
+    {
+        40f, 60f, 40f, 60f, 40f, 60f, 40f, 60f, 40f, 60f, 40f, 60f, 40f,
+        60f, 40f, 60f, 40f, 60f, 40f, 60f, 40f, 60f, 40f, 60f, 40f
+    };
+
+    /// <summary>rapid 캐스트 전용 카메라 흔들림 (rapid_camera_shake.json 측정 패턴, 1200ms)</summary>
+    public static void OnRapidCast()
+    {
+        var instance = EnsureInstance();
+        if (instance == null || !instance.enableRapidCastShake) return;
+
+        instance.rapidTimerMs = 0f;
+        instance.rapidStepIndex = -1;
+    }
+
+    static CameraShake EnsureInstance()
+    {
+        if (Instance != null) return Instance;
+
+        Camera mainCamera = Camera.main;
+        if (mainCamera == null) return null;
+
+        return mainCamera.gameObject.AddComponent<CameraShake>();
+    }
+
+    void UpdateRapidCast()
+    {
+        if (rapidTimerMs < 0f) return;
+
+        rapidTimerMs += Time.unscaledDeltaTime * 1000f;
+
+        int step = 0;
+        float startMs = 0f;
+        while (step < RapidCastStepMs.Length && startMs + RapidCastStepMs[step] <= rapidTimerMs)
+        {
+            startMs += RapidCastStepMs[step];
+            step++;
+        }
+
+        if (step >= RapidCastStepMs.Length)
+        {
+            rapidTimerMs = -1f;
+            rapidStepIndex = -1;
+            scriptedOffset = Vector3.zero;
+            return;
+        }
+
+        if (step == rapidStepIndex) return;
+        rapidStepIndex = step;
+
+        Vector2 cameraDelta = RapidCastCameraOffsets[step] * rapidDotWorld;
+        if (cameraDelta.sqrMagnitude <= 0f)
+        {
+            scriptedOffset = Vector3.zero;
+            return;
+        }
+
+        if (useCinemachine)
+        {
+            var source = EnsureImpulseSource();
+            if (source == null) return;
+
+            source.m_ImpulseDefinition.m_ImpulseDuration = Mathf.Max(0.05f, RapidCastStepMs[step] / 1000f);
+            source.GenerateImpulse(cameraDelta.normalized * (cameraDelta.magnitude * rapidImpulseGain));
+            return;
+        }
+
+        scriptedOffset = new Vector3(cameraDelta.x, cameraDelta.y, 0f);
     }
 
     #endregion

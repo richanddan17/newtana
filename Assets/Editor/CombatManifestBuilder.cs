@@ -10,6 +10,8 @@ public static class CombatManifestBuilder
 {
     const string ManifestPath = "Assets/sprite/Player/player/player_animation_manifest.json";
     const string VfxDir = "Assets/sprite/Player/player/vfx";
+    const string VfxProjectileDir = VfxDir + "/vfx_projectiles/sprites_1x";
+    const string VfxRainbowDir = VfxDir + "/vfx_rainbow_pack/sprites_1x";
     const string CombatRoot = "Assets/Atttack 4/Atttack 3";
     const string SwordDir = CombatRoot + "/Attack";
     const string MagicDir = CombatRoot + "/magic_sprite_sheets";
@@ -29,6 +31,7 @@ public static class CombatManifestBuilder
         public float[] pivot;
         public string pivotMode;
         public int[] durationsMs;
+        public int[] rects; // optional explicit rects {x,y,w,h,...}; non-uniform sheets that cannot be sliced by a grid
     }
 
     class MotionSpec
@@ -113,7 +116,7 @@ public static class CombatManifestBuilder
             cellW = 1152, cellH = 672, cols = 8, rows = 5, frames = 37, ppu = 1200,
             pivot = new[] { 0.5f, 0f }, pivotMode = "feet",
             durationsPath = MagicDir + "/magic_rapid_sheet.json",
-            loopStartFrame = 8, loopEndFrame = 11
+            loopStartFrame = 11, loopEndFrame = 14
         },
         new MotionSpec
         {
@@ -127,28 +130,20 @@ public static class CombatManifestBuilder
 
     static readonly VfxSpec[] VfxSpecs =
     {
-        new VfxSpec { id = "gather", file = "01_gather.png", cellW = 127, cellH = 109, cols = 10, rows = 1, frames = 10, pivot = new[] { 0.5f, 0.5f }, pivotMode = "center" },
-        new VfxSpec { id = "chargeLoop", file = "02_charge_loop.png", cellW = 82, cellH = 52, cols = 8, rows = 1, frames = 8, pivot = new[] { 0.5f, 0.5f }, pivotMode = "center" },
-        new VfxSpec { id = "release", file = "03_release.png", cellW = 103, cellH = 100, cols = 6, rows = 1, frames = 6, pivot = new[] { 0.5f, 0.5f }, pivotMode = "center" },
-        new VfxSpec { id = "bigLoop", file = "04_big_loop.png", cellW = 112, cellH = 82, cols = 8, rows = 1, frames = 8, pivot = new[] { 0.5f, 0.5f }, pivotMode = "center" },
-        new VfxSpec { id = "bigRelease", file = "05_big_release.png", cellW = 121, cellH = 121, cols = 6, rows = 1, frames = 6, pivot = new[] { 0.5f, 0.5f }, pivotMode = "center" },
-        new VfxSpec { id = "aura", file = "06_aura.png", cellW = 88, cellH = 103, cols = 16, rows = 1, frames = 16, pivot = new[] { 0.5f, 0.5f }, pivotMode = "center" },
-        new VfxSpec { id = "basicMuzzle", file = "08_basic_muzzle.png", cellW = 49, cellH = 43, cols = 4, rows = 3, frames = 12, pivot = new[] { 0.2755f, 0.5116f }, pivotMode = "center" },
-        new VfxSpec { id = "basicBolt", file = "09_basic_bolt.png", cellW = 48, cellH = 15, cols = 4, rows = 1, frames = 4, pivot = new[] { 0.5f, 0.5f }, pivotMode = "center" },
-        new VfxSpec { id = "basicImpact", file = "10_basic_impact.png", cellW = 91, cellH = 94, cols = 7, rows = 1, frames = 7, pivot = new[] { 0.5f, 0.5f }, pivotMode = "center" },
-        new VfxSpec { id = "rapidMuzzle", file = "11_rapid_muzzle.png", cellW = 49, cellH = 37, cols = 3, rows = 4, frames = 12, pivot = new[] { 0.2143f, 0.5135f }, pivotMode = "center" },
-        new VfxSpec { id = "rapidBolt", file = "12_rapid_bolt.png", cellW = 42, cellH = 15, cols = 4, rows = 1, frames = 4, pivot = new[] { 0.5f, 0.5f }, pivotMode = "center" },
-        new VfxSpec { id = "rapidImpact", file = "13_rapid_impact.png", cellW = 49, cellH = 49, cols = 5, rows = 1, frames = 5, pivot = new[] { 0.5f, 0.5f }, pivotMode = "center" },
-        new VfxSpec { id = "bigMuzzle", file = "14_big_muzzle.png", cellW = 121, cellH = 109, cols = 6, rows = 1, frames = 6, pivot = new[] { 0.2851f, 0.5046f }, pivotMode = "center" },
-        new VfxSpec { id = "bigOrb", file = "15_big_orb.png", cellW = 82, cellH = 39, cols = 6, rows = 1, frames = 6, pivot = new[] { 0.5f, 0.5f }, pivotMode = "center" },
-        new VfxSpec { id = "bigImpact", file = "16_big_impact.png", cellW = 166, cellH = 160, cols = 8, rows = 1, frames = 8, pivot = new[] { 0.5f, 0.5f }, pivotMode = "center" },
-        new VfxSpec { id = "arrowRelease", file = "17_arrow_release.png", cellW = 21, cellH = 27, cols = 3, rows = 1, frames = 3, pivot = new[] { 0.5f, 0.5f }, pivotMode = "center" },
-        new VfxSpec { id = "energyArrow", file = "18_energy_arrow.png", cellW = 66, cellH = 15, cols = 3, rows = 1, frames = 3, pivot = new[] { 0.5f, 0.5f }, pivotMode = "center" },
-        new VfxSpec { id = "arrowImpact", file = "19_arrow_impact.png", cellW = 48, cellH = 51, cols = 4, rows = 1, frames = 4, pivot = new[] { 0.5f, 0.5f }, pivotMode = "center" },
-        new VfxSpec { id = "jumpDust", file = "20_jump_dust.png", cellW = 73, cellH = 37, cols = 6, rows = 1, frames = 6, pivot = new[] { 0.49315f, 0.08108f }, pivotMode = "bottom" },
-        new VfxSpec { id = "landDust", file = "21_land_dust.png", cellW = 127, cellH = 28, cols = 7, rows = 1, frames = 7, pivot = new[] { 0.49606f, 0.10714f }, pivotMode = "bottom" },
-        new VfxSpec { id = "dashDust", file = "22_dash_dust.png", cellW = 70, cellH = 40, cols = 7, rows = 1, frames = 7, pivot = new[] { 0.49286f, 0.075f }, pivotMode = "bottom" },
-        new VfxSpec { id = "airJumpRing", file = "23_air_jump_ring.png", cellW = 67, cellH = 37, cols = 7, rows = 1, frames = 7, pivot = new[] { 0.5f, 0.5f }, pivotMode = "center" },
+        new VfxSpec { id = "aura", file = "06_aura.png", dir = VfxRainbowDir, cellW = 88, cellH = 103, cols = 16, rows = 1, frames = 16, pivot = new[] { 0.5f, 0.5f }, pivotMode = "center" },
+        new VfxSpec { id = "basicBolt", file = "09_basic_bolt.png", dir = VfxProjectileDir, cellW = 48, cellH = 15, cols = 4, rows = 1, frames = 4, pivot = new[] { 0.5f, 0.5f }, pivotMode = "center" },
+        new VfxSpec { id = "basicImpact", file = "10_basic_impact.png", dir = VfxRainbowDir, cellW = 91, cellH = 94, cols = 7, rows = 1, frames = 7, pivot = new[] { 0.5f, 0.5f }, pivotMode = "center" },
+        new VfxSpec { id = "rapidBolt", file = "12_rapid_bolt.png", dir = VfxProjectileDir, cellW = 42, cellH = 15, cols = 4, rows = 1, frames = 4, pivot = new[] { 0.5f, 0.5f }, pivotMode = "center" },
+        new VfxSpec { id = "rapidImpact", file = "13_rapid_impact.png", dir = VfxRainbowDir, cellW = 49, cellH = 49, cols = 5, rows = 1, frames = 5, pivot = new[] { 0.5f, 0.5f }, pivotMode = "center" },
+        new VfxSpec { id = "bigOrb", file = "15_big_orb.png", dir = VfxProjectileDir, cellW = 82, cellH = 39, cols = 6, rows = 1, frames = 6, pivot = new[] { 0.5f, 0.5f }, pivotMode = "center" },
+        new VfxSpec { id = "bigImpact", file = "16_big_impact.png", dir = VfxRainbowDir, cellW = 166, cellH = 160, cols = 8, rows = 1, frames = 8, pivot = new[] { 0.5f, 0.5f }, pivotMode = "center" },
+        new VfxSpec { id = "energyArrow", file = "18_energy_arrow.png", dir = VfxProjectileDir, cellW = 66, cellH = 15, cols = 3, rows = 1, frames = 3, pivot = new[] { 0.5f, 0.5f }, pivotMode = "center" },
+        new VfxSpec { id = "arrowImpact", file = "19_arrow_impact.png", dir = VfxProjectileDir, cellW = 48, cellH = 51, cols = 4, rows = 1, frames = 4, pivot = new[] { 0.5f, 0.5f }, pivotMode = "center" },
+        new VfxSpec { id = "jumpDust", file = "20_jump_dust.png", dir = VfxRainbowDir, cellW = 73, cellH = 37, cols = 6, rows = 1, frames = 6, pivot = new[] { 0.49315f, 0.08108f }, pivotMode = "bottom" },
+        new VfxSpec { id = "landDust", file = "21_land_dust.png", dir = VfxRainbowDir, cellW = 127, cellH = 28, cols = 7, rows = 1, frames = 7, pivot = new[] { 0.49606f, 0.10714f }, pivotMode = "bottom" },
+        new VfxSpec { id = "dashDust", file = "22_dash_dust.png", dir = VfxRainbowDir, cellW = 70, cellH = 40, cols = 7, rows = 1, frames = 7, pivot = new[] { 0.49286f, 0.075f }, pivotMode = "bottom" },
+        new VfxSpec { id = "dashFx", file = "dash.PNG", dir = VfxRainbowDir, ppu = 1800, pivot = new[] { 0.5f, 0.5f }, pivotMode = "center", rects = new[] { 59, 71, 146, 326, 383, 59, 314, 338, 839, 35, 242, 374, 1223, 23, 242, 386, 1583, 35, 266, 386, 2003, 11, 206, 350 } },
+        new VfxSpec { id = "airJumpRing", file = "23_air_jump_ring.png", dir = VfxRainbowDir, cellW = 67, cellH = 37, cols = 7, rows = 1, frames = 7, pivot = new[] { 0.5f, 0.5f }, pivotMode = "center" },
         new VfxSpec { id = "attack1Hit", file = "hit_attack1_1x.png", dir = HitDir, cellW = 96, cellH = 96, cols = 6, rows = 1, frames = 6, ppu = 300, pivot = new[] { 0.5f, 0.5f }, pivotMode = "center", durationsMs = Repeat(6, 50) },
         new VfxSpec { id = "attack2Hit", file = "hit_attack2_1x.png", dir = HitDir, cellW = 108, cellH = 108, cols = 6, rows = 1, frames = 6, ppu = 300, pivot = new[] { 0.5f, 0.5f }, pivotMode = "center", durationsMs = Repeat(6, 50) },
         new VfxSpec { id = "attack3Hit", file = "hit_attack3_1x.png", dir = HitDir, cellW = 156, cellH = 156, cols = 6, rows = 1, frames = 6, ppu = 300, pivot = new[] { 0.5f, 0.5f }, pivotMode = "center", durationsMs = Repeat(6, 50) },
@@ -294,13 +289,41 @@ public static class CombatManifestBuilder
             return null;
         }
 
-        int expectedW = spec.cellW * spec.cols;
-        int expectedH = spec.cellH * spec.rows;
-        if (width != expectedW || height != expectedH)
+        bool explicitRects = spec.rects != null && spec.rects.Length >= 4;
+        if (!explicitRects)
         {
-            Debug.LogWarning("[CombatManifestBuilder] vfx size mismatch: " + path +
-                             " actual=" + width + "x" + height +
-                             " expected=" + expectedW + "x" + expectedH);
+            int expectedW = spec.cellW * spec.cols;
+            int expectedH = spec.cellH * spec.rows;
+            if (width != expectedW || height != expectedH)
+            {
+                Debug.LogWarning("[CombatManifestBuilder] vfx size mismatch: " + path +
+                                 " actual=" + width + "x" + height +
+                                 " expected=" + expectedW + "x" + expectedH);
+            }
+        }
+
+        if (explicitRects)
+        {
+            // 비정규 아틀라스(프레임 크기가 제각각): 그리드 대신 명시 rect로 슬라이스한다.
+            return new PlayerSheetGridDetector.SheetEntry
+            {
+                id = spec.id,
+                file = spec.file,
+                dir = dir,
+                pivotMode = spec.pivotMode,
+                texW = width,
+                texH = height,
+                cellW = 0,
+                cellH = 0,
+                cols = spec.rects.Length / 4,
+                rows = 1,
+                ppu = spec.ppu > 0 ? spec.ppu : 300,
+                pivot = spec.pivot,
+                contentUnion = UnionOfRects(spec.rects, width, height),
+                cells = null,
+                rects = spec.rects,
+                durationsMs = spec.durationsMs
+            };
         }
 
         return new PlayerSheetGridDetector.SheetEntry
@@ -321,6 +344,24 @@ public static class CombatManifestBuilder
             cells = Cells(spec.cols, spec.rows, spec.frames),
             durationsMs = spec.durationsMs
         };
+    }
+
+    static int[] UnionOfRects(int[] rects, int width, int height)
+    {
+        int x0 = int.MaxValue, y0 = int.MaxValue, x1 = int.MinValue, y1 = int.MinValue;
+        for (int i = 0; i + 3 < rects.Length; i += 4)
+        {
+            int x = rects[i], y = rects[i + 1], w = rects[i + 2], h = rects[i + 3];
+            x0 = Mathf.Min(x0, x);
+            y0 = Mathf.Min(y0, y);
+            x1 = Mathf.Max(x1, x + w);
+            y1 = Mathf.Max(y1, y + h);
+        }
+        x0 = Mathf.Clamp(x0, 0, width);
+        y0 = Mathf.Clamp(y0, 0, height);
+        x1 = Mathf.Clamp(x1, 0, width);
+        y1 = Mathf.Clamp(y1, 0, height);
+        return new[] { x0, y0, x1 - x0, y1 - y0 };
     }
 
     static bool TryGetTextureSize(string path, out int width, out int height)

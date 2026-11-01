@@ -29,20 +29,23 @@ public static class PlayerCastShot
 
         PlayerBowShot.SpawnOneShot(muzzle, origin, dir, reference, 10);
 
+        if (type == CastShotType.Rapid) CameraShake.OnRapidCast();
+
         if (!HasFrames(bolt)) return;
 
         Sprite boltSprite = bolt.frames[0];
         if (boltSprite == null) return;
 
         GameObject boltObject = new GameObject(type == CastShotType.Big ? "BigOrb" : "CastBolt");
-        boltObject.transform.localScale = Vector3.one * PlayerBowShot.VfxScale;
+        float vfxScale = PlayerBowShot.ResolveScale(reference);
+        boltObject.transform.localScale = Vector3.one * vfxScale;
         SpriteRenderer boltRenderer = boltObject.AddComponent<SpriteRenderer>();
         boltRenderer.sprite = boltSprite;
         ApplySorting(boltRenderer, reference, 5);
 
         // Firepoint sits just past the muzzle flash's leading edge so the bolt
         // appears to leave the muzzle the instant the flash fires.
-        float muzzleEdge = GetForwardExtent(muzzle) * PlayerBowShot.VfxScale;
+        float muzzleEdge = GetForwardExtent(muzzle) * vfxScale;
         Vector3 firePoint = origin + (Vector3)(dir * Mathf.Max(0f, muzzleEdge + 0.03f));
 
         float leftOffset = -boltSprite.bounds.min.x * Mathf.Abs(boltObject.transform.lossyScale.x);
