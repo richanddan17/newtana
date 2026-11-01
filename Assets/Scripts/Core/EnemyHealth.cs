@@ -266,7 +266,7 @@ public class EnemyHealth : MonoBehaviour, IDamageable
         if (spriteRenderer == null) yield break;
         Color original = spriteRenderer.color;
         spriteRenderer.color = Color.white;
-        yield return new WaitForSeconds(0.05f);
+        yield return new WaitForSeconds(0.1f);
         spriteRenderer.color = original;
     }
 

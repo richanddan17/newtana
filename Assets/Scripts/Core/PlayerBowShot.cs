@@ -39,7 +39,7 @@ public static class PlayerBowShot
         return new Vector3(center.x, center.y, fallback.z);
     }
 
-    public static void Fire(PlayerAnimationSet set, Vector3 origin, Vector2 direction, GameObject owner, SpriteRenderer reference)
+    public static void Fire(PlayerAnimationSet set, Vector3 origin, Vector2 direction, GameObject owner, SpriteRenderer reference, float damage = 10f)
     {
         if (set == null) return;
 
@@ -58,7 +58,7 @@ public static class PlayerBowShot
         boltObject.transform.right = dir;
 
         BowProjectile projectile = boltObject.AddComponent<BowProjectile>();
-        projectile.Initialize(set.energyArrow, dir, owner, set.arrowImpact, boltRenderer);
+        projectile.Initialize(set.energyArrow, dir, owner, set.arrowImpact, boltRenderer, damage);
     }
 
     public static void SpawnImpact(PlayerAnimationClip clip, Vector3 position, Vector2 direction, SpriteRenderer reference)

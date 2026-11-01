@@ -260,7 +260,10 @@ public class PlayerCombatController : MonoBehaviour
         hitResolved = true;
         if (hitStop > 0f) HitStop.Request(hitStop);
         if (enableCameraShake && shakeAmplitude > 0f && shakeDuration > 0f)
-            CameraShake.Shake(new Vector2(facing, 0f), shakeAmplitude, shakeDuration);
+        {
+            Vector2 shakeDir = clipId == HeavyReleaseClip ? new Vector2(0f, 1f) : new Vector2(facing, 0f);
+            CameraShake.Shake(shakeDir, shakeAmplitude, shakeDuration);
+        }
     }
 
     Vector2 GetHitCenter(float radius, int facing)

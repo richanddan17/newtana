@@ -368,7 +368,7 @@ public class CombatAnimationDemo : MonoBehaviour
         var set = GetAnimationSet(); if (set == null || playerAnimation == null) return;
         Vector2 dir = playerAnimation.GetCurrentAimDirectionVector(); if (dir.sqrMagnitude < 0.0001f) dir = Vector2.right;
         FaceAimDirection(dir);
-        PlayerBowShot.Fire(set, GetFireOrigin(dir), dir, gameObject, playerAnimation.BodyRenderer);
+        PlayerBowShot.Fire(set, GetFireOrigin(dir), dir, gameObject, playerAnimation.BodyRenderer, 10f);
     }
     void FireCast(CastShotType type)
     {

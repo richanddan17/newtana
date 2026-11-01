@@ -16,10 +16,11 @@ public class BowProjectile : MonoBehaviour
     float traveledDistance;
     float speed = Speed;
     float maxDistance = MaxDistance;
+    float damage = 10f;
 
     public void Initialize(PlayerAnimationClip arrow, Vector2 travelDirection, GameObject shotOwner,
         PlayerAnimationClip impact, SpriteRenderer renderer, float travelSpeed = Speed,
-        float travelDistance = MaxDistance)
+        float travelDistance = MaxDistance, float damage = 10f)
     {
         arrowClip = arrow;
         direction = travelDirection.sqrMagnitude > 0.0001f ? travelDirection.normalized : Vector2.right;
@@ -28,6 +29,7 @@ public class BowProjectile : MonoBehaviour
         spriteRenderer = renderer;
         speed = travelSpeed > 0f ? travelSpeed : Speed;
         maxDistance = travelDistance > 0f ? travelDistance : MaxDistance;
+        this.damage = damage;
         frame = 0;
         frameTimer = 0f;
         traveledDistance = 0f;
@@ -56,7 +58,14 @@ public class BowProjectile : MonoBehaviour
             IDamageable damageable = hitCollider.GetComponentInParent<IDamageable>();
             if (damageable == null && hitCollider.isTrigger) continue;
 
-            Hit(hits[i].point);
+            Hurtbox hurtbox = hitCollider.GetComponentInParent<Hurtbox>();
+            if (hurtbox == null || damageable == null || damageable.IsDead) continue;
+
+            Team targetTeam = hurtbox.GetTeam();
+            if (targetTeam == Team.None) targetTeam = damageable.Team;
+            if (!targetTeam.IsHostileTo(owner != null ? owner.GetComponent<TeamComponent>()?.Team ?? Team.Player : Team.Player)) continue;
+
+            Hit(hits[i].point, damageable);
             return;
         }
 
@@ -80,8 +89,10 @@ public class BowProjectile : MonoBehaviour
         spriteRenderer.sprite = arrowClip.frames[frame];
     }
 
-    void Hit(Vector2 point)
+    void Hit(Vector2 point, IDamageable damageable)
     {
+        var info = new DamageInfo(damage, owner, point - (Vector2)owner.transform.position, 1f, HitType.Bullet);
+        damageable.TakeDamage(info);
         PlayerBowShot.SpawnImpact(impactClip, point, direction, spriteRenderer);
         Destroy(gameObject);
     }
